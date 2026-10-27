@@ -1,0 +1,27 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><title>Humanoid-GPT: Scaling Data and Structure for Zero-Shot Motion Tracking</title><style>body{max-width:900px;margin:3em auto;padding:0 1em;line-height:1.65;font-family:system-ui}img{max-width:100%}pre{white-space:pre-wrap}section{border-top:1px solid #ccc;margin-top:2em}img{height:auto}.image-unavailable{padding:12px;border:1px dashed #c7d3c9;color:#606c68;font-size:13px}</style><h1>Humanoid-GPT: Scaling Data and Structure for Zero-Shot Motion Tracking</h1><p>Source: Zotero note; match: first-page title.<a href="zotero://select/library/items/ZHB2IBH3">Open item in Zotero</a></p>
+<section><h2>Comment: Accepted at CVPR 2026</h2><div class="zotero-note znv1"><div data-schema-version="9"><p>Comment: Accepted at CVPR 2026</p>
+<p>Humanoid-GPT: Motion Tracking, Transformer, 2B-frame retargeted corpus pretraining, data and model capacity scaling</p>
+<p></p>
+<p>Not Scaled:</p>
+<p style="padding-left: 40px;" data-indent="1">current - Robot Motion In-betweening -7.2M frames, 10^4 trajectories, agility and generalization trade-off</p>
+<p style="padding-left: 40px;" data-indent="1">topics - insufficient scale and mismatched training design</p>
+<p style="padding-left: 40px;" data-indent="1"></p>
+<p>What’s Done in Brief:</p>
+<p style="padding-left: 40px;" data-indent="1">Scaled Dataset - LAFAN1, AMASS, Motion-X++, PHUMA, MotionMillion - 2B G1-retargeted</p>
+<p style="padding-left: 40px;" data-indent="1">Modern Structure - causal - no future observations at test time + scalable transformer with GPT-style causal attention</p>
+<p style="padding-left: 40px;" data-indent="1">Balanced Diversity - Harmonica Motion Embedding</p>
+<p style="padding-left: 40px;" data-indent="1"><p class="image-unavailable" role="note">This image was not available in the exported notes.</p></p>
+<p style="padding-left: 40px;" data-indent="1"></p>
+<p>1.Data Scaling up</p>
+<p style="padding-left: 40px;" data-indent="1">a. Curation - AMASS, LAFAN1, MotionMillion, PHUMA → Filtering(Object Interactions) + Retargeting (Into 29DoF Unitree-G)<img alt="" width="526" data-attachment-key="2325ATRF" loading="lazy" src="../../../../assets/note-images/2325ATRF.png"></p>
+<p style="padding-left: 40px;" data-indent="1">b. Harmonic Motion Embedding</p>
+<p style="padding-left: 80px;" data-indent="2">Periodic AutoEncoders + HME vector + K-Means clustering</p>
+<p style="padding-left: 80px;" data-indent="2"></p>
+<p>2. Scalable Generative Tracker</p>
+<p style="padding-left: 40px;" data-indent="1">PPO</p>
+<p>Some Works to Read</p>
+<p><p class="image-unavailable" role="note">This image was not available in the exported notes.</p></p>
+<p style="padding-left: 40px;" data-indent="1">Dataset: motions - 9, 24, 17 &nbsp;multimodal - 20, 43, 7, 25 &nbsp;contact - 16</p>
+<p style="padding-left: 40px;" data-indent="1">Motion Tracking: Early 21, 22, 6, 44 &nbsp;Real-world Deployment - 8, 10, 5, 14, 40, 39, 18, 29, 42, 45 &nbsp;Generalization: GMT, UniTracker(teacher-student), HumanPlus(Transformer)</p>
+</div></div></section>
+</html>

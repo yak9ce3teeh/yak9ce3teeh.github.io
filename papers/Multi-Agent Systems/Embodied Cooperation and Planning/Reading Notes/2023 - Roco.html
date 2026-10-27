@@ -1,0 +1,157 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><title>RoCo: Dialectic Multi-Robot Collaboration with Large Language Models</title><style>body{max-width:900px;margin:3em auto;padding:0 1em;line-height:1.65;font-family:system-ui}img{max-width:100%}pre{white-space:pre-wrap}section{border-top:1px solid #ccc;margin-top:2em}img{height:auto}.image-unavailable{padding:12px;border:1px dashed #c7d3c9;color:#606c68;font-size:13px}</style><h1>RoCo: Dialectic Multi-Robot Collaboration with Large Language Models</h1><p>Source: Zotero note; match: identical attachment.<a href="zotero://select/library/items/R29CVEXS">Open item in Zotero</a></p>
+<section><h2>RoCo: Dialectic Multi-Robot Collaboration with Large Language Models</h2><div class="zotero-note znv1"><div data-schema-version="9"><h1><span style="color: rgb(25, 60, 71);"><span style="background-color: rgb(238, 249, 253);">RoCo: Dialectic Multi-Robot Collaboration with Large Language Models</span></span></h1>
+<h2>⚙️ Metadata</h2>
+<ul>
+<li>
+<strong>Item Type:</strong> conferencePaper
+</li>
+<li>
+<strong>Author:</strong> [[Zhao Mandi]], [[Shreeya Jain]], [[Shuran Song]]
+</li>
+<li>
+<strong>Date Added:</strong> 2026/5/13 23:23:01
+</li>
+<li>
+<strong>DOI: </strong><a href="https://doi.org/10.1109/ICRA57147.2024.10610855" rel="noopener noreferrer nofollow">10.1109/ICRA57147.2024.10610855</a>
+</li>
+<li>
+<strong>Cite key:</strong>
+</li>
+<li>
+<strong>Journal:</strong>
+</li>
+<li>
+<strong>Journal Tags:</strong>
+</li>
+<li>
+<strong>Publication Date: </strong>2024-5-13
+</li>
+<li>
+<strong>Tags:</strong> #, #zotero
+</li>
+<li>
+<strong>PDF Attachments: </strong><a href="zotero://open-pdf/library/items/Q484VU8F" rel="noopener noreferrer nofollow">Mandi 等 - 2024 - RoCo Dialectic Multi-Robot Collaboration with Large Language Models.pdf</a>
+</li>
+<li>
+<strong>Related Items: </strong><span style="color: gray;">无相关条目</span>
+</li>
+</ul>
+<h2>📜 Abstract</h2>
+<p> We propose a novel approach to multi-robot collaboration that harnesses the power of pre-trained large language models (LLMs) for both high-level communication and low-level path planning. Robots are equipped with LLMs to discuss and collectively reason task strategies. They then generate sub-task plans and task space waypoint paths, which are used by a multi-arm motion planner to accelerate trajectory planning. We also provide feedback from the environment, such as collision checking, and prompt the LLM agents to improve their plan and waypoints in-context. For evaluation, we introduce RoCoBench, a 6-task benchmark covering a wide range of multi-robot collaboration scenarios, accompanied by a text-only dataset for agent representation and reasoning. We experimentally demonstrate the effectiveness of our approach – it achieves high success rates across all tasks in RoCoBench and adapts to variations in task semantics. Our dialog setup offers high interpretability and flexibility – in real world experiments, we show RoCo easily incorporates human-in-the-loop, where a user can communicate and collaborate with a robot agent to complete tasks together. See project website project-roco.github.io for videos and code.</p>
+<h2>📚 Zotero links</h2>
+<ul>
+<li>
+<a href="zotero://select/items/1_R29CVEXS" rel="noopener noreferrer nofollow">Local library</a>
+</li>
+</ul>
+<h1>Notes</h1>
+<p>ABSTRACT : LLM -&gt; 高级通信（集体讨论策略） + 低级路径规划（任务空间路径）+ 环境碰撞检测prompt</p>
+<p></p>
+<p>TASK ASSUMPTION:我们考虑一个由 N 个机器人组成的协作多智能体任务环境，有限的时间范围 T 和完整的观察空间 O。每个智能体 n 都有观察空间 Ωn ⊂ O。手动定义描述函数 f，将时间步 t 处的任务语义和观察结果转换为自然语言提示：ltn = f n(ot), ot ∈ Ωn。将 LLM 输出（例如文本字符串“PICK object”）映射到相应子任务的解析函数，该子任务可以通过一个或多个夹具目标配置来描述。</p>
+<p>MUTI-ARM PATH PLANNING:给定一个子任务，我们使用集中式运动规划来找到所有机器人达到其目标配置的轨迹。设X ∈ Rd 表示所有N 个机械臂的关节配置空间，Xob 为配置空间中的障碍物区域，则无碰撞空间Xfree = X \Xob。给定初始条件 xinit ∈ Xfree，目标区域 Xgoal ∈ Xfree，运动规划器找到最佳 σ* : [0, 1] → X 满足： σ*(0) = xinit, σ*(1) ∈ xgoal。由此产生的 σ* 由机器人手臂关节控制器用于开环执行。</p>
+<p>METHOD: </p>
+<p><img alt="" width="946" data-attachment-key="IXQG9S67" loading="lazy" src="../../../../assets/note-images/IXQG9S67.png"></p>
+<p>假设：多智能体观测不对称 ——&gt;（LLM专属代理 Structured Agent-specific Content）Dialogue ——&gt;沟通协议：要求每个代理（在提示的通信指令部分给出说明）通过在两个选项之间做出决定来结束他们的响应：1）指示其他人继续讨论； 2）总结每个人的行动并提出最终的行动建议；仅当每个代理在当前对话轮中至少响应一次时才允许这样做。该协议旨在允许智能体自由讨论，同时保证在有限次数的交换内提出一个子任务计划</p>
+<p>——&gt;生成子任务：最后一个发言代理总结生成，分配给每个代理一个子任务，先验证再执行，若失败则会附加到每个代理提示中并开始下一轮谈话：验证方法如下：</p>
+<ol>
+<li>
+文本解析确保计划遵循所需的格式并包含所有必需的关键字 2. 任务约束检查每个动作是否符合任务和代理约束 3. IK 通过逆运动学检查每个机器人手臂的目标位姿是否可行 4. 碰撞检查检查 IK 求解的手臂连接配置是否会导致碰撞 5. 有效路点（可选），如果任务需要路径规划，则每个中间路点必须是 IK 可解且无碰撞的，并且所有路径点都必须是 IK 可解且无碰撞的台阶间距应均匀
+</li>
+</ol>
+<p>——&gt;LLM子任务计划 + 可选 task-space waypoint PATH</p>
+<p>EXPERIMENTS: CENTRAL PLAN：全局观察 + LLM 3D Waypoints</p>
+<p>BENCHMARK: RoCoBench</p>
+<p>LIMITATIONS: 完美感知 + 开环执行 + 查询效率</p>
+<h2>🤔 Personal Summary</h2>
+<h3>💭 Thought Inspiration</h3>
+<blockquote>
+<p>Tips: What aspects did you question, how do you think it can be improved?</p>
+</blockquote>
+<p></p>
+<h3>📜 Conclusion</h3>
+<blockquote>
+<p>Tips: What was done, what problem was solved, innovations and shortcomings?</p>
+</blockquote>
+<p></p>
+</div></div></section>
+<section><h2>RoCo: Dialectic Multi-Robot Collaboration with Large Language Models</h2><div class="zotero-note znv1"><div data-schema-version="9">
+
+        <h1 style="color:#193c47; background-color:#eef9fd; padding:8px;">
+        RoCo: Dialectic Multi-Robot Collaboration with Large Language Models
+        </h1>
+    
+    <h2>⚙️ Metadata</h2>
+    
+    <ul>
+        <li><b>Item Type:</b>
+        conferencePaper
+        </li>
+    
+        <li><b>Author:</b> 
+        [[Zhao Mandi]], [[Shreeya Jain]], [[Shuran Song]]
+        </li>
+    
+    
+        <li><b>Date Added:</b>
+        2026/5/14 16:23:13
+        </li>
+    
+        <li> 
+        <b>DOI: </b> <a href="https://doi.org/10.1109/ICRA57147.2024.10610855">10.1109/ICRA57147.2024.10610855</a>
+        </li>
+    
+        <li><b>Cite key: </b>
+        
+        </li>
+    
+        <li><b>Journal: </b>
+        
+        </li>
+    
+        <li><b>Journal Tags: </b> 
+        
+        </li>
+    
+    <li><b>Publication Date: </b> 
+        2024-5-13
+        </li>
+    
+        <li><b>Tags:</b> 
+        #, #zotero
+        </li>
+    
+        <li> <b>PDF Attachments: </b>
+        <a href="zotero://open-pdf/library/items/Q484VU8F">Mandi 等 - 2024 - RoCo Dialectic Multi-Robot Collaboration with Large Language Models.pdf</a>
+        </li>
+        <li> <b>Related Items: </b>
+        <span style="color: gray;">无相关条目</span>
+        </li>
+    </ul>
+    
+        <h2 >📜 Abstract</h2>
+    
+            We propose a novel approach to multi-robot collaboration that harnesses the power of pre-trained large language models (LLMs) for both high-level communication and low-level path planning. Robots are equipped with LLMs to discuss and collectively reason task strategies. They then generate sub-task plans and task space waypoint paths, which are used by a multi-arm motion planner to accelerate trajectory planning. We also provide feedback from the environment, such as collision checking, and prompt the LLM agents to improve their plan and waypoints in-context. For evaluation, we introduce RoCoBench, a 6-task benchmark covering a wide range of multi-robot collaboration scenarios, accompanied by a text-only dataset for agent representation and reasoning. We experimentally demonstrate the effectiveness of our approach – it achieves high success rates across all tasks in RoCoBench and adapts to variations in task semantics. Our dialog setup offers high interpretability and flexibility – in real world experiments, we show RoCo easily incorporates human-in-the-loop, where a user can communicate and collaborate with a robot agent to complete tasks together. See project website project-roco.github.io for videos and code.
+        
+    
+    <h2>📚 Zotero links</h2>
+    
+    <ul>
+    <li>
+        <a href="zotero://select/items/1_R29CVEXS">Local library</a>
+        </li>  
+    </ul>
+
+    <h1>Notes</h1>
+
+    <h2>🤔 Personal Summary</h2>
+    
+        <h3>💭 Thought Inspiration</h3>
+        <blockquote>Tips: What aspects did you question, how do you think it can be improved?</blockquote>
+        <p></p>
+    
+        <h3>📜 Conclusion</h3>
+        <blockquote>Tips: What was done, what problem was solved, innovations and shortcomings?</blockquote>
+        <p></p>
+    
+</div></div></section>
+</html>

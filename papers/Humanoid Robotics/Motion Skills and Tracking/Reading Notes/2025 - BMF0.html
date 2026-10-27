@@ -1,0 +1,38 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><title>BFM-Zero: A Promptable Behavioral Foundation Model for Humanoid Control Using Unsupervised Reinforcement Learning</title><style>body{max-width:900px;margin:3em auto;padding:0 1em;line-height:1.65;font-family:system-ui}img{max-width:100%}pre{white-space:pre-wrap}section{border-top:1px solid #ccc;margin-top:2em}img{height:auto}.image-unavailable{padding:12px;border:1px dashed #c7d3c9;color:#606c68;font-size:13px}</style><h1>BFM-Zero: A Promptable Behavioral Foundation Model for Humanoid Control Using Unsupervised Reinforcement Learning</h1><p>Source: Zotero note; match: first-page title.<a href="zotero://select/library/items/B24ZPVK2">Open item in Zotero</a></p>
+<section><h2>BFM0 : Behavioral Foundation Models - 1. Shared Latent Representations (Motions, Goals, Rewards) 2. versatile and robust</h2><div class="zotero-note znv1"><div data-schema-version="9"><p>BFM0 : Behavioral Foundation Models - 1. Shared Latent Representations (Motions, Goals, Rewards) 2. versatile and robust whole-body skills 3. Unsupervised RL and forward-backward model</p>
+<p style="padding-left: 40px;" data-indent="1">Goal: Solve a wide range of downstream tasks specified by rewards, goals or demonstrations without retraining</p>
+<p style="padding-left: 40px;" data-indent="1">Methods: Motion Capture, Domain Randomization</p>
+<p style="padding-left: 40px;" data-indent="1"></p>
+<p>BMF0 for Humanoid Whole-Body Control</p>
+<p style="padding-left: 40px;" data-indent="1"><img alt="" width="902" data-attachment-key="GU5ENPUR" loading="lazy" src="../../../../assets/note-images/GU5ENPUR.png"> 29-degree-of-freedom</p>
+<p>1.Unsupervised RL with Forward-Backward Representations</p>
+<p style="padding-left: 40px;" data-indent="1">Pretraining phase - Online reward-free interactions in simulator + offline dataset of unlabeled behaviors</p>
+<p style="padding-left: 40px;" data-indent="1">a. FB representations and FB-CPR - FB: finite-rank approximation of long-term policy dynamics, B: low-frequency features that best summarize long-range temporal dependencies between states</p>
+<p style="padding-left: 40px;" data-indent="1"></p>
+<p style="padding-left: 40px;" data-indent="1"></p>
+<p style="padding-left: 40px;" data-indent="1"><img alt="" width="1073" data-attachment-key="KZDNJYZZ" loading="lazy" src="../../../../assets/note-images/KZDNJYZZ.png"></p>
+<p style="padding-left: 40px;" data-indent="1">*Forward: 从目前的状态s和动作action并执行z(latent)之后对应的未来长期状态趋势是什么， Backward:未来状态s’大致的特征是什么</p>
+<p style="padding-left: 40px;" data-indent="1">b. Pre-training for Humanoid Control</p>
+<p style="padding-left: 80px;" data-indent="2">1）Asymmetric Training(sim2real gap) - Policy: Observation History, Critics: privileged information</p>
+<p style="padding-left: 80px;" data-indent="2">2) &nbsp;Scaling up to Massively Parallel Environment</p>
+<p style="padding-left: 80px;" data-indent="2">3) Domain Randomization - key physical parameters/ perturbations/ sensor noises - enhance robustness and adaptability</p>
+<p style="padding-left: 80px;" data-indent="2">4) Reward Regularization - avoid undesirable behaviors</p>
+<p style="padding-left: 80px;" data-indent="2">Off-policy actor-critic scheme</p>
+<p style="padding-left: 120px;" data-indent="3">FB Objective:</p>
+<p><img alt="" width="1065" data-attachment-key="QICPT2LS" loading="lazy" src="../../../../assets/note-images/QICPT2LS.png"></p>
+<p style="padding-left: 120px;" data-indent="3">Naux penalty reward for safety and physical feasibility constraints ( QR )</p>
+<p><img alt="" width="1047" data-attachment-key="TVVB45K2" loading="lazy" src="../../../../assets/note-images/TVVB45K2.png"></p>
+<p style="padding-left: 120px;" data-indent="3">QD : Privileged discriminator critic</p>
+<p><img alt="" width="1100" data-attachment-key="G6TGH4TA" loading="lazy" src="../../../../assets/note-images/G6TGH4TA.png"></p>
+<p style="padding-left: 80px;" data-indent="2">final actor loss</p>
+<p><img alt="" width="989" data-attachment-key="FSFZSL9R" loading="lazy" src="../../../../assets/note-images/FSFZSL9R.png"></p>
+<p>Inference ( Zero-shot ) reward </p>
+<p><img alt="" width="1061" data-attachment-key="ISKS4XPH" loading="lazy" src="../../../../assets/note-images/ISKS4XPH.png"></p>
+<p>few-shot adaptation:</p>
+<p><img alt="" width="1089" data-attachment-key="X6MTPPG6" loading="lazy" src="../../../../assets/note-images/X6MTPPG6.png"></p>
+<p></p>
+<p></p>
+<p>Latent Space Structure:</p>
+<p><img alt="" width="1151" data-attachment-key="I2YEBM5E" loading="lazy" src="../../../../assets/note-images/I2YEBM5E.png"></p>
+</div></div></section>
+</html>

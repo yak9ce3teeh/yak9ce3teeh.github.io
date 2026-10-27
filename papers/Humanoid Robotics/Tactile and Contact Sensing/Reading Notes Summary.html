@@ -1,0 +1,48 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><title>Reading Notes</title><style>body{max-width:900px;margin:3em auto;padding:0 1em;line-height:1.7;font-family:system-ui}img{max-width:100%}section{border-top:2px solid #ccc;margin-top:2em}img{height:auto}.image-unavailable{padding:12px;border:1px dashed #c7d3c9;color:#606c68;font-size:13px}</style><h1>Humanoid Robotics/Tactile and Contact Sensing — Reading Notes</h1><p>Original Zotero notes associated with papers in this category. Available note images are included. Missing images are marked below.</p>
+<section><h2>TactileStep: Sole Tactile Learning for Regulating Foot-Terrain Interaction in Humanoid Locomotion</h2><p><a href="2026%20-%20tactilestep.pdf">Paper PDF</a> · <a href="zotero://select/library/items/B9CDIHUG">Zotero item</a></p>
+<section><h2>TactileStep</h2><div class="zotero-note znv1"><div data-schema-version="9"><p>TactileStep</p>
+<p style="padding-left: 40px;" data-indent="1">Issues beforehand: harsh landings, edge contacts, unstable stance contacts</p>
+<p style="padding-left: 40px;" data-indent="1">Method: real pressure insole for real tactile sensing</p>
+<p style="padding-left: 40px;" data-indent="1">compact features: normal force, contact area, center of pressure</p>
+<p style="padding-left: 40px;" data-indent="1"></p>
+<p>prior sim2real:</p>
+<p style="padding-left: 40px;" data-indent="1">[26] Z.-H. Yin, B. Huang, Y. Qin, Q. Chen, and X. Wang. Rotating without seeing: Towards in-hand dexterity through touch. arXiv preprint arXiv:2303.10880, 2023.</p>
+<p style="padding-left: 40px;" data-indent="1">⁨[27] L. Yang, B. Huang, Q. Li, Y.-Y. Tsai, W. W. Lee, C. Song, and J. Pan. Tacgnn: Learning tactile-based in-hand manipulation with a blind robot using hierarchical graph neural network. IEEE Robotics and Automation Letters, 8(6):3605–3612, 2023.</p>
+<p style="padding-left: 40px;" data-indent="1">⁨[28] J. Yin, H. Qi, J. Malik, J. Pikul, M. Yim, and T. Hellebrekers. Learning in-hand translation using tactile skin with shear and normal force sensing. In 2025 IEEE International Conference on Robotics and Automation (ICRA), pages 5850–5856. IEEE, 2025.</p>
+<p style="padding-left: 40px;" data-indent="1">[29] C. Lin, Y. R. Song, B. Huo, M. Yu, Y. Wang, S. Liu, Y. Yang, W. Yu, T. Zhang, J. Tan, et al. Locotouch: Learning dynamic quadrupedal transport with tactile sensing. arXiv preprint arXiv:2505.23175, 2025.</p>
+<p style="padding-left: 40px;" data-indent="1">[30] S. Wang, M. Lambeta, P.-W. Chou, and R. Calandra. Tacto: A fast, flexible, and open-source simulator for high-resolution vision-based tactile sensors. IEEE Robotics and Automation Letters, 7(2):3930–3937, 2022.</p>
+<p style="padding-left: 40px;" data-indent="1">[31] Z. Si and W. Yuan. Taxim: An example-based simulation model for gelsight tactile sensors. IEEE Robotics and Automation Letters, 7(2):2361–2368, 2022.</p>
+<p>Framework</p>
+<p><img alt="" width="1030" data-attachment-key="9UWWK49N" loading="lazy" src="../../../assets/note-images/9UWWK49N.png"></p>
+<p style="padding-left: 40px;" data-indent="1">formulation: POMDP + PPO</p>
+<p style="padding-left: 40px;" data-indent="1"><img alt="" width="959" data-attachment-key="URDBIP6X" loading="lazy" src="../../../assets/note-images/URDBIP6X.png"></p>
+<p style="padding-left: 40px;" data-indent="1"><img alt="" width="720" data-attachment-key="GQ5C9TZ9" loading="lazy" src="../../../assets/note-images/GQ5C9TZ9.png"><br>Action Space : at (29DoF)</p>
+<p style="padding-left: 40px;" data-indent="1">Reward Functions:<img alt="" width="266" data-attachment-key="54P5DMU4" loading="lazy" src="../../../assets/note-images/54P5DMU4.png"></p>
+<p style="padding-left: 40px;" data-indent="1"><img alt="" width="321" data-attachment-key="7JUJDG7X" loading="lazy" src="../../../assets/note-images/7JUJDG7X.png"></p>
+<p style="padding-left: 80px;" data-indent="2">（Details at B.3)</p>
+<p style="padding-left: 80px;" data-indent="2"></p>
+<p style="padding-left: 80px;" data-indent="2">Simulation:</p>
+<p style="padding-left: 120px;" data-indent="3">Force Distribution - 60 Taxels(tactile pixel) on the sole</p>
+<p style="padding-left: 120px;" data-indent="3"><img alt="" width="841" data-attachment-key="56M5N4QX" loading="lazy" src="../../../assets/note-images/56M5N4QX.png"></p>
+<p style="padding-left: 120px;" data-indent="3"><img alt="" width="236" data-attachment-key="MVQPANFA" loading="lazy" src="../../../assets/note-images/MVQPANFA.png"></p>
+<p style="padding-left: 120px;" data-indent="3">Spatial Diffusion - smooth in-betweening</p>
+<p style="padding-left: 120px;" data-indent="3"><img alt="" width="827" data-attachment-key="67M297HR" loading="lazy" src="../../../assets/note-images/67M297HR.png"></p>
+<p style="padding-left: 120px;" data-indent="3">Feature extraction</p>
+<p style="padding-left: 120px;" data-indent="3"><img alt="" width="767" data-attachment-key="49ALGWA6" loading="lazy" src="../../../assets/note-images/49ALGWA6.png"></p>
+<p style="padding-left: 120px;" data-indent="3">Sim2Real Alignment</p>
+<p style="padding-left: 120px;" data-indent="3"><img alt="" width="697" data-attachment-key="6H65VWT3" loading="lazy" src="../../../assets/note-images/6H65VWT3.png"></p>
+<p style="padding-left: 120px;" data-indent="3">same features as in simulation + hardware calibration with MLP</p>
+<p></p>
+<p style="padding-left: 40px;" data-indent="1">Phase-aware - Swing Prelanding Landing Stance</p>
+<p style="padding-left: 80px;" data-indent="2">In general:</p>
+<p style="padding-left: 80px;" data-indent="2"><img alt="" width="1093" data-attachment-key="ZZGLKRIH" loading="lazy" src="../../../assets/note-images/ZZGLKRIH.png"></p>
+<p style="padding-left: 80px;" data-indent="2">Soft-landing</p>
+<p style="padding-left: 80px;" data-indent="2"><img alt="" width="1146" data-attachment-key="7XUBZ899" loading="lazy" src="../../../assets/note-images/7XUBZ899.png"></p>
+<p style="padding-left: 80px;" data-indent="2">Support-Stability</p>
+<p style="padding-left: 80px;" data-indent="2"><img alt="" width="1125" data-attachment-key="E7YCNJY5" loading="lazy" src="../../../assets/note-images/E7YCNJY5.png"></p>
+<p style="padding-left: 80px;" data-indent="2"></p>
+<p style="padding-left: 40px;" data-indent="1"></p>
+<p style="padding-left: 40px;" data-indent="1"></p>
+</div></div></section>
+</section>
+</html>

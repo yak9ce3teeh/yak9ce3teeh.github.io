@@ -1,0 +1,125 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><title>Foundation Models for Embodied Navigation: A Survey</title><style>body{max-width:900px;margin:3em auto;padding:0 1em;line-height:1.65;font-family:system-ui}img{max-width:100%}pre{white-space:pre-wrap}section{border-top:1px solid #ccc;margin-top:2em}img{height:auto}.image-unavailable{padding:12px;border:1px dashed #c7d3c9;color:#606c68;font-size:13px}</style><h1>Foundation Models for Embodied Navigation: A Survey</h1><p>Source: Zotero note; match: identical attachment.<a href="zotero://select/library/items/WDBR8WLW">Open item in Zotero</a></p>
+<section><h2>Foundation Models for Embodied Navigation: A Survey</h2><div class="zotero-note znv1"><div data-schema-version="9"><h1><span style="color: rgb(25, 60, 71);"><span style="background-color: rgb(238, 249, 253);">Foundation Models for Embodied Navigation: A Survey</span></span></h1>
+<h2>⚙️ Metadata</h2>
+<ul>
+<li>
+<strong>Item Type:</strong> journalArticle
+</li>
+<li>
+<strong>Author:</strong> [[Longxi Gao]], [[Weikai Xie]], [[Haoze Qian]], [[Rongjie Yi]], [[Shihe Wang]], [[Jiaye Song]], [[Dongqi Cai]], [[Jinliang Yuan]], [[Yunhao Liu]], [[Xuanzhe Liu]], [[et al.]]
+</li>
+<li>
+<strong>Date Added:</strong> 2026/5/4 16:12:19
+</li>
+<li>
+<strong>URL:</strong>
+</li>
+<li>
+<strong>Cite key:</strong>
+</li>
+<li>
+<strong>Journal:</strong>
+</li>
+<li>
+<strong>Journal Tags:</strong>
+</li>
+<li>
+<strong>Publication Date:</strong>
+</li>
+<li>
+<strong>Tags:</strong> #, #zotero
+</li>
+<li>
+<strong>PDF Attachments: </strong><a href="zotero://open-pdf/library/items/W85F9UCM" rel="noopener noreferrer nofollow">Gao 等 - Foundation Models for Embodied Navigation A Survey.pdf</a>
+</li>
+<li>
+<strong>Related Items: </strong><span style="color: gray;">无相关条目</span>
+</li>
+</ul>
+<h2>📜 Abstract</h2>
+<p>The remarkable advancements of embodied navigation, the process of physically situated agents perceiving and reasoning through egocentric observations to reach target locations, have recently been reshaped by the emergence of foundation models. Departing from traditional, task-specific policies trained from scratch on limited datasets, this new paradigm leverages the reasoning and multimodal capabilities of Large Language Models (LLMs), Vision-Language Models (VLMs), and Video Generation Models (VGMs), achieving superior generalization and flexible decision-making in unseen environments. For the first time, this survey systematically reviews the landscape of foundation models for embodied navigation, focusing on systems where these models play a central role in perception, long-horizon memory management, and action generation. The survey aims to categorize and interpret existing embodied navigation research through the lens of design paradigms, data sources, and training strategies. Through this analysis, we offer a synthesized outlook on the evolution of navigation brains, highlight the bottlenecks of dataset bias, and contribute guidance for future research, hoping to bring the field closer to robust, general-purpose embodied intelligence.</p>
+<h2>📚 Zotero links</h2>
+<ul>
+<li>
+<a href="zotero://select/items/1_WDBR8WLW" rel="noopener noreferrer nofollow">Local library</a>
+</li>
+</ul>
+<h1>Notes</h1>
+<ol>
+<li>
+<p>Problem Formulation and Taxonomy</p>
+<ul>
+<li>
+Perceiving surroundings
+</li>
+<li>
+Reasoning about a navigation objective
+</li>
+<li>
+Make sequential decisions and execute actions
+</li>
+</ul>
+</li>
+</ol>
+<p>semantic navigation- VLN, ObjectNav, RegionNav</p>
+<p>geometric navigation- PointNav, ImageNav, FrontierNav</p>
+<p>interactive navigation- Embodied Visual Tracking, SocialNav, Multi-Agent Navigation</p>
+<p>2. Embodiment Taxonomy</p>
+<p>wheeled robots</p>
+<p style="padding-left: 40px;" data-indent="1">·for flat and structured environments</p>
+<p>legged robots</p>
+<p style="padding-left: 40px;" data-indent="1">·for wheel-unfriendly environments</p>
+<p>UAV</p>
+<p style="padding-left: 40px;" data-indent="1">·fully 3D space, move freely in both vertical and horizontal directions</p>
+<p>3. Key Design Dimensions</p>
+<p><img alt="" width="1348" data-attachment-key="LVC4845S" loading="lazy" src="../../../../assets/note-images/LVC4845S.png"></p>
+<p>(1)Observations and Representations</p>
+<p>·Raw Visual Observations - RGB-based observations (Ego-centric or Multi-view), Depth-aware observations - depth-maps incorporated</p>
+<p>·Map-augmented Representations - BEV - Floor maps, Occupancy maps, Value maps</p>
+<p>·Camera Intrinsics and Extrinsics - Geometric cues</p>
+<p>(2) Memory Mechanisms</p>
+<p>·Visual-based Memory - Historical frame selection, Visual memory compression（NavFoM，Uni-NaVid， Nav-R2）, Effective memory storage（KV cache form）</p>
+<p>·Text-based Memory - On-the-fly Memory, Serialized textual memory (template-based)</p>
+<p>·Map-augmented Memory - Map memory as a parallel input branch, Relevant map memory injected into the current visual context</p>
+<p>(3) Decision-making and Motion Control</p>
+<p>·Action Space Design - semantic target or direction selection(get the target or direction), discrete action prediction, continuous action prediction</p>
+<p>·Reasoning Mechanism - Explicit Reasoning with CoT, Adaptive Reasoning with CoT(Faster), CoT as Training Supervision</p>
+<p>(4) System Architectures</p>
+<p><img alt="" width="1247" data-attachment-key="L7JY7PLE" loading="lazy" src="../../../../assets/note-images/L7JY7PLE.png"></p>
+<p>·Modular Systems - perception, mapping, planning, control (CogNav, InstructNav)</p>
+<p>·Single-policy systems - discrete action outputs(NaVid, Uni-NaVid), continuous action outputs(Direct actions from backbone tokens, MLP-based action decoding, Diffusion-based action decoding)</p>
+<p>·Dual-system architectures (slow thinking: high-level semantic reasoning and long-horizon planning, fast thinking for low-level action generation and real-time control)</p>
+<p>·World-model-based systems</p>
+<p>-In Modular Settings - WMNav, PlanVLM, ReasonVLM</p>
+<p>-In End-to-end Single-Policy Systems - predict next actions + model future states, scene dynamics and intermediate spatial representations</p>
+<p>4. Data Collection and Training Strategies</p>
+<p>(1) Data Source:</p>
+<p><img alt="" width="1365" data-attachment-key="985SRQ8K" loading="lazy" src="../../../../assets/note-images/985SRQ8K.png"></p>
+<p><img alt="" width="1082" data-attachment-key="QQM69QF2" loading="lazy" src="../../../../assets/note-images/QQM69QF2.png"><img alt="" width="1132" data-attachment-key="JNE8MLEB" loading="lazy" src="../../../../assets/note-images/JNE8MLEB.png"><img alt="" width="1167" data-attachment-key="322I4WBP" loading="lazy" src="../../../../assets/note-images/322I4WBP.png"><img alt="" width="1010" data-attachment-key="XWZS58YH" loading="lazy" src="../../../../assets/note-images/XWZS58YH.png">(2) Training Strategies</p>
+<p>·Navigation Capability Acquisition - Discrete action learning(Uni-NaVid, StreamVLN)， Continuous action learning(NaVid, NaVILA, Hydra-Nav), Reward-driven policy refinement</p>
+<p>·Auxiliary Task Learning - Grounded intermediate targets and control-oriented auxiliaries，Reasoning, planning, and task decomposition. - CoT as an auxiliary supervision signal，World models, future prediction, and map learning，Reward-based auxiliary alignment</p>
+<p>·Vision-Language Task Learning</p>
+<p>5. Efficient Deployment</p>
+<p></p>
+<p>(1)Embodiment-specific deployment</p>
+<p><img alt="" width="1146" data-attachment-key="8QMJVBL7" loading="lazy" src="../../../../assets/note-images/8QMJVBL7.png"></p>
+<p>(2)Acceleration Techniques</p>
+<p><img alt="" width="1108" data-attachment-key="A3FFIVAH" loading="lazy" src="../../../../assets/note-images/A3FFIVAH.png"></p>
+<p>6. Benchmarks and Evaluation Metrics</p>
+<p>（1）Benchmark Categories</p>
+<p><img alt="" width="1076" data-attachment-key="VL8XZH2E" loading="lazy" src="../../../../assets/note-images/VL8XZH2E.png"></p>
+<p>(2)Evaluation Metrics - Omitted (Check it when you need it)</p>
+<p></p>
+<h2>🤔 Personal Summary</h2>
+<h3>💭 Thought Inspiration</h3>
+<blockquote>
+<p>Tips: What aspects did you question, how do you think it can be improved?</p>
+</blockquote>
+<p></p>
+<h3>📜 Conclusion</h3>
+<blockquote>
+<p>Tips: What was done, what problem was solved, innovations and shortcomings?</p>
+</blockquote>
+<p></p>
+</div></div></section>
+</html>
