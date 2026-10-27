@@ -1,6 +1,6 @@
-# Research Notebook
+# Personal Homepage
 
-Personal research homepage and public paper library for yak9ce3teeh, hosted by the AnonChongqing GitHub account.
+Personal homepage for yak9ce3teeh, hosted by the AnonChongqing GitHub account. The homepage contains one entry to the separate paper library. All library files and images are contained in `papers/` so the root remains available for future personal content.
 
 - Homepage: https://anonchongqing.github.io/yak9ce3teeh.github.io/
 - Paper library: https://anonchongqing.github.io/yak9ce3teeh.github.io/papers/
