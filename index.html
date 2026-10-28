@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="yak9ce3teeh's personal homepage.">
+  <meta name="description" content="yak9ce3teeh's personal homepage: research papers, YakBot, and currently watching.">
   <title>yak9ce3teeh — Personal Homepage</title>
   <link rel="icon" href="data:,">
   <style>
@@ -14,13 +14,24 @@
     .eyebrow { margin: 0 0 12px; font-size: 11px; color: var(--muted); letter-spacing: .12em; text-transform: uppercase; }
     h1 { margin: 0; font-size: clamp(34px, 6vw, 54px); font-weight: 600; line-height: 1.2; letter-spacing: -.04em; overflow-wrap: anywhere; }
     .tagline { margin: 16px 0 0; color: var(--muted); font-size: 12px; letter-spacing: .12em; }
-    .entry { display: flex; align-items: center; justify-content: space-between; gap: 20px; max-width: 480px; padding: 20px 22px; margin-top: 48px; border: 1px solid var(--line); border-radius: 8px; background: white; text-decoration: none; color: var(--ink); }
-    .entry:hover { border-color: var(--accent); }
+    .entries { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin-top: 48px; }
+    .entry { display: flex; align-items: center; justify-content: space-between; gap: 20px; min-width: 0; padding: 20px 22px; border: 1px solid var(--line); border-radius: 8px; background: white; text-decoration: none; color: var(--ink); }
+    a.entry:hover { border-color: var(--accent); }
     .entry:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
+    .entry-text { min-width: 0; }
     .entry-title { display: block; color: var(--accent); font-size: 16px; font-weight: 600; }
     .entry-description { display: block; font-size: 12px; color: var(--muted); margin-top: 4px; }
+    .entry-pending { background: #fafaf7; }
+    .entry-status { flex-shrink: 0; padding: 4px 9px; border: 1px solid var(--line); border-radius: 999px; color: var(--muted); font-size: 10px; white-space: nowrap; }
     .arrow { color: var(--accent); font-size: 20px; }
-    @media (max-width: 600px) { main { padding: 75px 22px; } .entry { margin-top: 36px; padding: 18px; } }
+    .watching { margin-top: 52px; }
+    h2 { margin: 0; font-size: 17px; font-weight: 600; letter-spacing: -.02em; }
+    .watch-list { list-style: none; margin: 16px 0 0; padding: 0; border-top: 1px solid var(--line); }
+    .watch-list li { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 16px 0; border-bottom: 1px solid var(--line); }
+    .anime-title { min-width: 0; font-size: 14px; overflow-wrap: anywhere; }
+    .watch-status { display: inline-flex; align-items: center; gap: 7px; flex-shrink: 0; color: var(--muted); font-size: 11px; }
+    .watch-status::before { content: ""; width: 5px; height: 5px; border-radius: 50%; background: var(--accent); }
+    @media (max-width: 600px) { main { padding: 75px 22px; } .entries { grid-template-columns: 1fr; margin-top: 36px; gap: 12px; } .entry { padding: 18px; } .watching { margin-top: 40px; } }
   </style>
 </head>
 <body>
@@ -28,10 +39,25 @@
     <p class="eyebrow">Personal homepage</p>
     <h1>yak9ce3teeh</h1>
     <p class="tagline">WE VIBE THE VIBES</p>
-    <a class="entry" href="papers/">
-      <span><span class="entry-title">Paper Library</span><span class="entry-description">Research papers and reading notes.</span></span>
-      <span class="arrow" aria-hidden="true">→</span>
-    </a>
+    <section class="entries" aria-label="Projects">
+      <a class="entry" href="papers/">
+        <span class="entry-text"><span class="entry-title">Paper Library</span><span class="entry-description">Research papers and reading notes.</span></span>
+        <span class="arrow" aria-hidden="true">→</span>
+      </a>
+      <article class="entry entry-pending" aria-labelledby="yakbot-title">
+        <span class="entry-text"><span class="entry-title" id="yakbot-title">YakBot</span><span class="entry-description">Shared knowledge across platforms.</span></span>
+        <span class="entry-status">Coming soon</span>
+      </article>
+    </section>
+    <section class="watching" aria-labelledby="watching-title">
+      <h2 id="watching-title">Currently watching</h2>
+      <ul class="watch-list">
+        <li><span class="anime-title" lang="ja">CLANNAD</span><span class="watch-status">Watching</span></li>
+        <li><span class="anime-title" lang="ja">ゆるキャン△</span><span class="watch-status">Watching</span></li>
+        <li><span class="anime-title" lang="ja">生徒会にも穴はある！</span><span class="watch-status">Watching</span></li>
+        <li><span class="anime-title" lang="ja">FX戦士くるみちゃん</span><span class="watch-status">Watching</span></li>
+      </ul>
+    </section>
   </main>
 </body>
 </html>
