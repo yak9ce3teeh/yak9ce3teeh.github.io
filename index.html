@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="yak9ce3teeh's personal homepage: research papers, YakBot, and currently watching.">
+  <meta name="description" content="yak9ce3teeh's personal homepage: research papers, YakBot, and a personal anime log.">
   <title>yak9ce3teeh — Personal Homepage</title>
   <link rel="icon" href="data:,">
   <style>
@@ -26,12 +26,25 @@
     .arrow { color: var(--accent); font-size: 20px; }
     .watching { margin-top: 52px; }
     h2 { margin: 0; font-size: 17px; font-weight: 600; letter-spacing: -.02em; }
-    .watch-list { list-style: none; margin: 16px 0 0; padding: 0; border-top: 1px solid var(--line); }
-    .watch-list li { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 16px 0; border-bottom: 1px solid var(--line); }
-    .anime-title { min-width: 0; font-size: 14px; overflow-wrap: anywhere; }
-    .watch-status { display: inline-flex; align-items: center; gap: 7px; flex-shrink: 0; color: var(--muted); font-size: 11px; }
-    .watch-status::before { content: ""; width: 5px; height: 5px; border-radius: 50%; background: var(--accent); }
-    @media (max-width: 600px) { main { padding: 75px 22px; } .entries { grid-template-columns: 1fr; margin-top: 36px; gap: 12px; } .entry { padding: 18px; } .watching { margin-top: 40px; } }
+    .watch-month { margin-top: 28px; }
+    .watch-month h3 { margin: 0 0 10px; font: 500 12px/1.6 ui-monospace, monospace; color: var(--muted); letter-spacing: .06em; }
+    .watch-table { width: 100%; table-layout: fixed; border-collapse: collapse; }
+    .status-column { width: 110px; }
+    .rating-column { width: 80px; }
+    .watch-table th { padding: 8px 0; border-bottom: 1px solid var(--line); color: var(--muted); font-size: 10px; font-weight: 400; text-align: left; }
+    .watch-table td { padding: 15px 0; border-bottom: 1px solid var(--line); vertical-align: middle; }
+    .watch-table td:first-child { padding-right: 16px; }
+    .watch-table .rating { text-align: right; }
+    .anime-title { font-size: 14px; overflow-wrap: anywhere; }
+    .watch-status { display: inline-flex; align-items: center; gap: 7px; padding: 4px 9px; border: 1px solid; border-radius: 999px; font-size: 10px; white-space: nowrap; }
+    .status-dot { width: 5px; height: 5px; border-radius: 50%; background: currentColor; flex-shrink: 0; }
+    .status-watching { color: #246c43; background: #eaf4ed; border-color: #cfe3d4; }
+    .status-watching .status-dot { animation: live-pulse 2s ease-out infinite; }
+    .status-watched { color: #747975; background: #eff0ec; border-color: #dddfd9; }
+    .rating-slot { display: inline-block; width: 40px; min-height: 1em; border-bottom: 1px dotted #bdc3bc; }
+    @keyframes live-pulse { 0% { box-shadow: 0 0 0 0 rgba(36, 108, 67, .25); } 75%, 100% { box-shadow: 0 0 0 5px rgba(36, 108, 67, 0); } }
+    @media (prefers-reduced-motion: reduce) { .status-watching .status-dot { animation: none; } }
+    @media (max-width: 600px) { main { padding: 75px 22px; } .entries { grid-template-columns: 1fr; margin-top: 36px; gap: 12px; } .entry { padding: 18px; } .watching { margin-top: 40px; } .status-column { width: 92px; } .rating-column { width: 46px; } .watch-table td:first-child { padding-right: 10px; } .rating-slot { width: 28px; } }
   </style>
 </head>
 <body>
@@ -50,13 +63,43 @@
       </article>
     </section>
     <section class="watching" aria-labelledby="watching-title">
-      <h2 id="watching-title">Currently watching</h2>
-      <ul class="watch-list">
-        <li><span class="anime-title" lang="ja">CLANNAD</span><span class="watch-status">Watching</span></li>
-        <li><span class="anime-title" lang="ja">ゆるキャン△</span><span class="watch-status">Watching</span></li>
-        <li><span class="anime-title" lang="ja">生徒会にも穴はある！</span><span class="watch-status">Watching</span></li>
-        <li><span class="anime-title" lang="ja">FX戦士くるみちゃん</span><span class="watch-status">Watching</span></li>
-      </ul>
+      <h2 id="watching-title">Anime log</h2>
+      <section class="watch-month" aria-labelledby="month-202610">
+        <h3 id="month-202610"><time datetime="2026-10">2026.10</time></h3>
+        <table class="watch-table" aria-labelledby="month-202610">
+          <colgroup><col><col class="status-column"><col class="rating-column"></colgroup>
+          <thead><tr><th scope="col">Title</th><th scope="col">Status</th><th scope="col" class="rating">My rating</th></tr></thead>
+          <tbody>
+            <tr><td class="anime-title" lang="ja">CLANNAD</td><td><span class="watch-status status-watching"><span class="status-dot" aria-hidden="true"></span>Watching</span></td><td class="rating"><span class="rating-slot" aria-label="Not rated"></span></td></tr>
+            <tr><td class="anime-title" lang="ja">ゆるキャン△</td><td><span class="watch-status status-watching"><span class="status-dot" aria-hidden="true"></span>Watching</span></td><td class="rating"><span class="rating-slot" aria-label="Not rated"></span></td></tr>
+            <tr><td class="anime-title" lang="ja">生徒会にも穴はある！</td><td><span class="watch-status status-watching"><span class="status-dot" aria-hidden="true"></span>Watching</span></td><td class="rating"><span class="rating-slot" aria-label="Not rated"></span></td></tr>
+            <tr><td class="anime-title" lang="ja">FX戦士くるみちゃん</td><td><span class="watch-status status-watching"><span class="status-dot" aria-hidden="true"></span>Watching</span></td><td class="rating"><span class="rating-slot" aria-label="Not rated"></span></td></tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="watch-month" aria-labelledby="month-202607">
+        <h3 id="month-202607"><time datetime="2026-07">2026.07</time></h3>
+        <table class="watch-table" aria-labelledby="month-202607">
+          <colgroup><col><col class="status-column"><col class="rating-column"></colgroup>
+          <thead><tr><th scope="col">Title</th><th scope="col">Status</th><th scope="col" class="rating">My rating</th></tr></thead>
+          <tbody>
+            <tr><td class="anime-title" lang="ja">バンドリ！ ゆめ∞みた</td><td><span class="watch-status status-watched"><span class="status-dot" aria-hidden="true"></span>Watched</span></td><td class="rating"><span class="rating-slot" aria-label="Not rated"></span></td></tr>
+            <tr><td class="anime-title" lang="ja">ぐらんぶる Season 3</td><td><span class="watch-status status-watched"><span class="status-dot" aria-hidden="true"></span>Watched</span></td><td class="rating"><span class="rating-slot" aria-label="Not rated"></span></td></tr>
+            <tr><td class="anime-title" lang="ja">ヤニねこ</td><td><span class="watch-status status-watched"><span class="status-dot" aria-hidden="true"></span>Watched</span></td><td class="rating"><span class="rating-slot" aria-label="Not rated"></span></td></tr>
+            <tr><td class="anime-title" lang="ja">スーパーの裏でヤニ吸うふたり</td><td><span class="watch-status status-watched"><span class="status-dot" aria-hidden="true"></span>Watched</span></td><td class="rating"><span class="rating-slot" aria-label="Not rated"></span></td></tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="watch-month" aria-labelledby="month-202604">
+        <h3 id="month-202604"><time datetime="2026-04">2026.04</time></h3>
+        <table class="watch-table" aria-labelledby="month-202604">
+          <colgroup><col><col class="status-column"><col class="rating-column"></colgroup>
+          <thead><tr><th scope="col">Title</th><th scope="col">Status</th><th scope="col" class="rating">My rating</th></tr></thead>
+          <tbody>
+            <tr><td class="anime-title" lang="ja">上伊那ぼたん、酔へる姿は百合の花</td><td><span class="watch-status status-watched"><span class="status-dot" aria-hidden="true"></span>Watched</span></td><td class="rating"><span class="rating-slot" aria-label="Not rated"></span></td></tr>
+          </tbody>
+        </table>
+      </section>
     </section>
   </main>
 </body>

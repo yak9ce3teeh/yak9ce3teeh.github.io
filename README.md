@@ -1,6 +1,6 @@
 # Personal Homepage
 
-Personal homepage for the yak9ce3teeh GitHub account. The homepage includes the Paper Library entry, a YakBot placeholder marked "Coming soon", and a "Currently watching" anime list. Interface text is in English, while anime titles use their original Japanese names. The YakBot placeholder has no destination until a website is available. All library files and images remain in `papers/`.
+Personal homepage for the yak9ce3teeh GitHub account. The homepage includes the Paper Library entry, a YakBot placeholder marked "Coming soon", and a month-grouped anime log for 2026.10, 2026.07, and 2026.04. Watching entries have green live indicators, watched entries are gray, and personal rating fields are intentionally blank. Interface text is in English, while anime titles use their original Japanese names. The YakBot placeholder has no destination until a website is available. All library files and images remain in `papers/`.
 
 - Homepage: https://yak9ce3teeh.github.io/
 - Paper library: https://yak9ce3teeh.github.io/papers/
