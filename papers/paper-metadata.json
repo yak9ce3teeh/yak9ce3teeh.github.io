@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-10-27T12:23:08+00:00",
+  "checked_at": "2026-10-28T08:41:34+00:00",
   "citation_provider": "Semantic Scholar",
   "records": [
     {
@@ -2745,6 +2745,61 @@
       "code_checked_at": "2026-10-27T11:47:16.775Z",
       "stars_checked_at": "2026-10-27T11:47:16.775Z",
       "code_project_url": null
+    },
+    {
+      "file_id": 74,
+      "dest": "Humanoid Robotics\\Whole-Body Control and Loco-Manipulation\\2026-10 - FLoRe.pdf",
+      "title": "Learning Force-Reactive Humanoid Loco-Manipulation",
+      "arxiv_id": "2610.35862",
+      "arxiv_version": "v1",
+      "paper_url": "https://arxiv.org/abs/2610.35862v1",
+      "publication_date": "2026-10-26",
+      "date_precision": "day",
+      "date_basis": "arXiv first submission (v1)",
+      "date_source": "https://arxiv.org/abs/2610.35862v1",
+      "date_checked_at": "2026-10-28T08:41:34+00:00",
+      "citation_count": null,
+      "citation_source": "Semantic Scholar",
+      "citation_url": null,
+      "citations_checked_at": "2026-10-28T08:41:34+00:00",
+      "citation_note": "Semantic Scholar API returned HTTP 429 during this check; no citation count was verified.",
+      "kind": "paper",
+      "metadata_checked_at": "2026-10-28T08:41:34+00:00",
+      "keywords": [
+        "Loco-manipulation",
+        "Whole-body control",
+        "Force sensing",
+        "Force tracking",
+        "Diffusion policy",
+        "Contact-rich manipulation",
+        "Robot-free demonstrations"
+      ],
+      "keywords_source": "Editorial tags based on the paper abstract, method and author project page",
+      "code_status": "not_released",
+      "code_available": false,
+      "repository_kind": null,
+      "repository": null,
+      "repository_url": null,
+      "repository_stars": null,
+      "repository_license": null,
+      "license_note": null,
+      "code_note": "The author project page states Code (coming soon). An interactive browser demo is available, but a source-code repository was not linked.",
+      "code_source": "https://louis-leee.github.io/FLoRe/",
+      "code_checked_at": "2026-10-28T08:41:34+00:00",
+      "stars_checked_at": null,
+      "code_project_url": "https://louis-leee.github.io/FLoRe/",
+      "paper_license": "CC-BY-4.0",
+      "paper_license_source": "https://arxiv.org/html/2610.35862v1",
+      "authors": [
+        "Sihang Li",
+        "Xiaofeng Guo",
+        "Jinkun Cao",
+        "Charlie Cheng",
+        "Ruihan Yang",
+        "Chen Feng",
+        "Guanya Shi",
+        "Haozhi Qi"
+      ]
     }
   ]
 }
