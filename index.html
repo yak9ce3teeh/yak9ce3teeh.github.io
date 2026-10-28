@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="yak9ce3teeh's personal homepage: research papers, YakBot, and a personal anime log.">
+  <meta name="description" content="yak9ce3teeh's personal homepage: research papers, YakBot, BanG Dream! favorites, and a personal anime log.">
   <title>yak9ce3teeh — Personal Homepage</title>
   <link rel="icon" href="data:,">
   <style>
@@ -24,7 +24,17 @@
     .entry-pending { background: #fafaf7; }
     .entry-status { flex-shrink: 0; padding: 4px 9px; border: 1px solid var(--line); border-radius: 999px; color: var(--muted); font-size: 10px; white-space: nowrap; }
     .arrow { color: var(--accent); font-size: 20px; }
-    .watching { margin-top: 52px; }
+    .bangdream, .watching { margin-top: 52px; }
+    .band-list { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0 0; padding: 0; list-style: none; }
+    .band-list li { padding: 5px 11px; border: 1px solid var(--line); border-radius: 999px; font-size: 13px; }
+    .fan-card { display: flex; align-items: center; justify-content: space-between; gap: 24px; margin-top: 16px; padding: 20px 22px; border: 1px solid #d6dfd3; border-left: 3px solid var(--accent); border-radius: 8px; background: #edf1e9; color: var(--ink); text-decoration: none; }
+    .fan-card:hover { border-color: var(--accent); }
+    .fan-card:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
+    .fan-card-copy { min-width: 0; }
+    .fan-card-label { display: block; color: var(--muted); font-size: 11px; letter-spacing: .1em; text-transform: uppercase; }
+    .fan-card-title { display: block; margin-top: 4px; font-size: 20px; font-weight: 600; }
+    .fan-card-description { display: block; margin-top: 6px; color: var(--muted); font-size: 13px; }
+    .fan-card-cta { flex-shrink: 0; color: var(--accent); font-size: 13px; font-weight: 600; white-space: nowrap; }
     h2 { margin: 0; font-size: 17px; font-weight: 600; letter-spacing: -.02em; }
     .watch-month { margin-top: 28px; }
     .watch-month h3 { margin: 0 0 10px; font: 500 12px/1.6 ui-monospace, monospace; color: var(--muted); letter-spacing: .06em; }
@@ -44,7 +54,7 @@
     .rating-slot { display: inline-block; width: 40px; min-height: 1em; border-bottom: 1px dotted #bdc3bc; }
     @keyframes live-pulse { 0% { box-shadow: 0 0 0 0 rgba(36, 108, 67, .25); } 75%, 100% { box-shadow: 0 0 0 5px rgba(36, 108, 67, 0); } }
     @media (prefers-reduced-motion: reduce) { .status-watching .status-dot { animation: none; } }
-    @media (max-width: 600px) { main { padding: 75px 22px; } .entries { grid-template-columns: 1fr; margin-top: 36px; gap: 12px; } .entry { padding: 18px; } .watching { margin-top: 40px; } .status-column { width: 92px; } .rating-column { width: 46px; } .watch-table td:first-child { padding-right: 10px; } .rating-slot { width: 28px; } }
+    @media (max-width: 600px) { main { padding: 75px 22px; } .entries { grid-template-columns: 1fr; margin-top: 36px; gap: 12px; } .entry { padding: 18px; } .bangdream, .watching { margin-top: 40px; } .fan-card { padding: 18px; flex-direction: column; align-items: flex-start; gap: 14px; } .status-column { width: 92px; } .rating-column { width: 46px; } .watch-table td:first-child { padding-right: 10px; } .rating-slot { width: 28px; } }
   </style>
 </head>
 <body>
@@ -61,6 +71,22 @@
         <span class="entry-text"><span class="entry-title" id="yakbot-title">YakBot</span><span class="entry-description">Shared knowledge across platforms.</span></span>
         <span class="entry-status">Coming soon</span>
       </article>
+    </section>
+    <section class="bangdream" aria-labelledby="bangdream-title">
+      <h2 id="bangdream-title">BanG Dream!</h2>
+      <ul class="band-list" aria-label="Favorite bands">
+        <li>Ave Mujica</li>
+        <li>Mugendai MewType</li>
+        <li>millsage</li>
+      </ul>
+      <a class="fan-card" href="https://millsage-website.onrender.com/" target="_blank" rel="noopener noreferrer">
+        <span class="fan-card-copy">
+          <span class="fan-card-label">UNOFFICIAL FAN PROJECT</span>
+          <span class="fan-card-title">millsage fan site</span>
+          <span class="fan-card-description">Hey, we built a millsage fan site — check it out!</span>
+        </span>
+        <span class="fan-card-cta">Visit site <span aria-hidden="true">↗</span></span>
+      </a>
     </section>
     <section class="watching" aria-labelledby="watching-title">
       <h2 id="watching-title">Anime log</h2>
