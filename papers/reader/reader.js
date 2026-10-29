@@ -10,6 +10,8 @@ const WASM = new URL('./assets/vendor/pdfjs/wasm/', import.meta.url).href;
 const $ = (id) => document.getElementById(id);
 const LS = (() => { try { const k='__pl_probe'; localStorage.setItem(k,'1'); localStorage.removeItem(k); return true; } catch { return false; } })();
 const STATUS_KEY='plr.status', SETTINGS_KEY='plr.settings', TRANS_KEY='plr.translation', TOKEN_KEY='plr.token';
+const CONNECTION_KEY='plr.connection', CONNECTION_TTL=8*60*60*1000;
+let connectionGeneration=0, fragmentSession=null;
 const paperKey = (id, suffix) => `plr.p${id}.${suffix}`;
 
 function lsGet(key){ try { return LS ? localStorage.getItem(key) : null; } catch { return null; } }
@@ -110,9 +112,10 @@ async function boot(){
   await consumeFragment();
   loadSettings();
   const params = new URLSearchParams(location.search);
+  if(params.get('connect')==='1') $('settingsDialog').showModal();
   const idRaw = params.get('id');
   const id = idRaw!=null ? Number(idRaw) : NaN;
-  if(!Number.isInteger(id) || id<0){ $('paperTitle').textContent='Choose a paper'; $('pdfLoading').hidden=true; $('pdfDirect').hidden=true; $('btnNewNote').disabled=true; showPdfError('Choose a paper from the library to start reading.'); return; }
+  if(!Number.isInteger(id) || id<0){ $('paperTitle').textContent='Choose a paper'; $('pdfLoading').hidden=true; $('pdfDirect').hidden=true; $('btnNewNote').disabled=true; showPdfError('Choose a paper from the library to start reading.'); renderStateChips(); await maybeConnectFromToken(); return; }
   state.fileId=id;
   setStatusMsg('Loading paper data\u2026');
   await restoreSplit();
@@ -136,7 +139,7 @@ async function consumeFragment(){
     const frag = new URLSearchParams(location.hash.slice(1));
     const tok = frag.get('token');
     if(tok){
-      try{ sessionStorage.setItem(TOKEN_KEY, tok); }catch{}
+      fragmentSession={token:tok,url:['127.0.0.1','localhost'].includes(location.hostname)?location.origin:null};
       history.replaceState(null,'',location.pathname+location.search);
     }
   }catch{}
@@ -144,19 +147,25 @@ async function consumeFragment(){
 
 function loadSettings(){
   try{ const s=JSON.parse(lsGet(SETTINGS_KEY)||'{}'); state.companion.url=s.url||null; }catch{}
-  try{ state.companion.token = sessionStorage.getItem(TOKEN_KEY)||null; }catch{ state.companion.token=null; }
+  const shared=readSharedConnection();
+  if(shared) adoptSharedConnection(shared);
+  else if(lsGet(CONNECTION_KEY)!==null) clearConnectionState();
+  else try{ state.companion.token = sessionStorage.getItem(TOKEN_KEY)||null; }catch{ state.companion.token=null; }
+  if(fragmentSession){ state.companion.token=fragmentSession.token; state.companion.url=fragmentSession.url||state.companion.url; }
   if(state.companion.token) $('tokenInput').value=state.companion.token;
   if(state.companion.url) $('localUrlInput').value=state.companion.url;
   try{ const t=JSON.parse(lsGet(TRANS_KEY)||'{}'); state.translateEnabled=!!t.enabled; }catch{}
   $('chkTranslate').checked=state.translateEnabled;
 }
 function saveSettings(){ lsSet(SETTINGS_KEY, JSON.stringify({url:state.companion.url})); }
-function saveToken(t){ try{ if(t) sessionStorage.setItem(TOKEN_KEY,t); else sessionStorage.removeItem(TOKEN_KEY); }catch{} state.companion.token=t||null; }
+function clearLegacyToken(){ try{ sessionStorage.removeItem(TOKEN_KEY); }catch{} }
 
 async function maybeConnectFromToken(){
   if(!state.companion.token) return;
   const url = state.companion.url || (['127.0.0.1','localhost'].includes(location.hostname) ? location.origin : 'http://127.0.0.1:23120');
-  await connectCompanion(url, state.companion.token, true);
+  const shared=readSharedConnection();
+  await connectCompanion(url, state.companion.token, true, fragmentSession?null:shared);
+  fragmentSession=null;
 }
 
 /* ---------------- Paper + snapshot ---------------- */
@@ -1098,13 +1107,15 @@ async function doTranslate(){
   const text=$('transSource').value.trim();
   if(!text){ $('transStatus').textContent='Nothing to translate.'; return; }
   if(text.length>4000){ $('transStatus').textContent='Text too long (max 4000 characters).'; return; }
-  const c=state.companion;
-  const setupMessage=translationSetupMessage();
-  if(setupMessage){ $('transStatus').textContent=setupMessage; renderStateChips(); $('settingsDialog').showModal(); return; }
-  const t=c.status&&c.status.translation;
   state.translationBusy=true;
-  $('btnTranslate').disabled=true; $('transStatus').textContent='Translating\u2026';
+  $('btnTranslate').disabled=true;
   try{
+    const shared=refreshSharedConnection();
+    if(shared && !state.companion.connected) await connectCompanion(shared.url,shared.token,true,shared);
+    const c=state.companion,setupMessage=translationSetupMessage();
+    if(setupMessage){ $('transStatus').textContent=setupMessage; $('settingsDialog').showModal(); return; }
+    const t=c.status&&c.status.translation;
+    $('transStatus').textContent='Translating\u2026';
     const res=await apiFetch('/api/translate',{method:'POST',body:{text,targetLanguage:'zh-CN',sourceLanguage:'auto'}});
     const out=res&&res.text?res.text:'';
     state.translation={original:text,translated:out,model:res.model||t.model||''};
@@ -1135,38 +1146,111 @@ function addTranslationToNote(){
 }
 
 /* ---------------- Companion / API ---------------- */
-async function apiFetch(path,opts={}){
+function validatedCompanionUrl(value){
+  if(typeof value!=='string' || value!==value.trim()) throw new Error('Invalid local companion URL');
+  const parsed=new URL(value);
+  if(parsed.protocol!=='http:' || !['127.0.0.1','localhost'].includes(parsed.hostname) || parsed.username || parsed.password || parsed.pathname!=='/' || parsed.search || parsed.hash || ![parsed.origin,parsed.origin+'/'].includes(value)) throw new Error('Use a localhost companion address, such as http://127.0.0.1:23120.');
+  return parsed.origin;
+}
+function clearConnectionState(){
+  state.companion.connected=false; state.companion.status=null; state.companion.token=null; state.companion.sharedRecord=null; state.companion.tabOnlyRecord=null;
+  clearLegacyToken(); $('tokenInput').value='';
+}
+function readSharedConnection(){
+  const raw=lsGet(CONNECTION_KEY);
+  if(raw===null) return null;
+  try{
+    const record=JSON.parse(raw);
+    if(record.disconnected) return null;
+    const url=validatedCompanionUrl(record.url),now=Date.now();
+    if(typeof record.token!=='string' || !/^[A-Za-z0-9_-]{1,4096}$/.test(record.token) || !Number.isFinite(record.createdAt) || !Number.isFinite(record.expiresAt) || record.createdAt>now || record.expiresAt<=now || record.expiresAt<=record.createdAt || record.expiresAt-record.createdAt>CONNECTION_TTL) throw new Error('Expired or invalid connection');
+    return {...record,url};
+  }catch{
+    // A tombstone suppresses legacy sessionStorage credentials in every tab.
+    if(lsGet(CONNECTION_KEY)===raw) lsSet(CONNECTION_KEY,JSON.stringify({disconnected:true,at:Date.now()}));
+    return null;
+  }
+}
+function adoptSharedConnection(record){
   const c=state.companion;
+  if(c.url!==record.url || c.token!==record.token){ connectionGeneration++; c.connected=false; c.status=null; }
+  c.url=record.url; c.token=record.token; c.sharedRecord=record; c.tabOnlyRecord=null;
+  clearLegacyToken(); $('localUrlInput').value=record.url; $('tokenInput').value=record.token;
+}
+function refreshSharedConnection(){
+  // Quota/storage failure may leave an older shared record behind. Keep the
+  // newly authenticated tab connection until a real storage event replaces it.
+  if(state.companion.tabOnlyRecord){
+    if(state.companion.tabOnlyRecord.expiresAt<=Date.now()) clearConnectionState();
+    return null;
+  }
+  const record=readSharedConnection();
+  if(record) adoptSharedConnection(record);
+  else if(lsGet(CONNECTION_KEY)!==null || state.companion.sharedRecord) clearConnectionState();
+  return record;
+}
+function rejectSharedConnection(rejected){
+  const current=readSharedConnection();
+  if(current && current.url===rejected.url && current.token===rejected.token) lsSet(CONNECTION_KEY,JSON.stringify({disconnected:true,at:Date.now()}));
+  if(state.companion.url===rejected.url && state.companion.token===rejected.token){ connectionGeneration++; clearConnectionState(); renderStateChips(); }
+}
+function bindConnectionSharing(){
+  window.addEventListener('storage',async event=>{
+    if(event.key!==CONNECTION_KEY && event.key!==null) return;
+    connectionGeneration++;
+    const record=readSharedConnection();
+    if(!record){ clearConnectionState(); $('connectStatus').textContent='Library connection disconnected or expired. Connect again to continue.'; renderStateChips(); return; }
+    adoptSharedConnection(record);
+    await connectCompanion(record.url,record.token,true,record);
+  });
+}
+async function apiFetch(path,opts={},candidate=null){
+  if(!candidate) refreshSharedConnection();
+  const c=candidate||state.companion;
   if(!c.url) throw new Error('No local companion URL configured');
   if(!c.token) throw new Error('No session token');
-  const url=c.url.replace(/\/$/,'')+path;
-  const headers={'Authorization':'Bearer '+c.token};
+  const session={url:validatedCompanionUrl(c.url),token:c.token};
+  if(!/^\/api\/[A-Za-z0-9_/?=&%.-]+$/.test(path)) throw new Error('Invalid companion API path');
+  const url=session.url+path;
+  const headers={'Authorization':'Bearer '+session.token};
   let body;
   if(opts.body!==undefined){ headers['Content-Type']='application/json'; body=JSON.stringify(opts.body); }
   let res;
   try{
-    res=await fetch(url,{method:opts.method||'GET',headers,body,mode:'cors',credentials:'omit',cache:'no-store'});
+    res=await fetch(url,{method:opts.method||'GET',headers,body,mode:'cors',credentials:'omit',cache:'no-store',redirect:'error'});
   }catch(e){
     throw new Error('Could not reach local companion at '+c.url+'. Start it locally, or use Open local reader / export drafts.');
   }
-  if(res.status===401) throw new Error('Authorization rejected by local companion (token expired?). Open the local reader again for a fresh token.');
+  if(res.status===401){ rejectSharedConnection(session); throw new Error('Authorization rejected by local companion (token expired?). Open the local reader again for a fresh token.'); }
   if(res.status===403) throw new Error('Local companion refused the request (origin or host not allowed).');
   let data=null; try{ data=await res.json(); }catch{}
+  if(!candidate){
+    refreshSharedConnection();
+    if(state.companion.url!==session.url || state.companion.token!==session.token) throw new Error('Library connection changed while this request was running. Try again with the current connection.');
+  }
   if(!res.ok){ const msg=data?.error?.message||data?.message||(typeof data?.error==='string'?data.error:null)||('HTTP '+res.status); throw new Error(msg); }
   return data;
 }
 
-async function connectCompanion(url,token,quiet){
+async function connectCompanion(url,token,quiet,sharedRecord=null){
   if(!url){ toast('Enter a local companion URL.','error'); return; }
   if(!token){ toast('Enter the per-launch session token.','error'); return; }
-  if(token.startsWith('http://')) { try { const sessionLink=new URL(token); token=new URLSearchParams(sessionLink.hash.slice(1)).get('token')||''; url=sessionLink.origin; } catch { toast('Invalid local session link.','error'); return; } }
+  if(token.startsWith('http://')) { try { const sessionLink=new URL(token); validatedCompanionUrl(sessionLink.origin); if(sessionLink.username||sessionLink.password||sessionLink.pathname!=='/reader/'||sessionLink.search && !/^\?id=\d*$/.test(sessionLink.search)) throw new Error(); token=new URLSearchParams(sessionLink.hash.slice(1)).get('token')||''; url=sessionLink.origin; } catch { toast('Invalid local session link.','error'); return; } }
   if(!token){ toast('The session link does not contain a token. Open the local workspace again.','error'); return; }
-  try { const parsed=new URL(url); if(parsed.protocol!=='http:' || !['127.0.0.1','localhost'].includes(parsed.hostname) || parsed.username || parsed.password || parsed.pathname!=='/') throw new Error(); url=parsed.origin; }
+  try { url=validatedCompanionUrl(url); if(!/^[A-Za-z0-9_-]{1,4096}$/.test(token)) throw new Error(); }
   catch { toast('Use a localhost companion address, such as http://127.0.0.1:23120.','error'); return; }
-  state.companion.url=url.replace(/\/$/,''); state.companion.token=token; saveToken(token); saveSettings();
+  const generation=++connectionGeneration, candidate={url,token};
   $('connectStatus').textContent='Connecting\u2026';
   try{
-    const st=await apiFetch('/api/status');
+    // Authenticate the explicit candidate; an older shared record must not replace it.
+    const st=await apiFetch('/api/status',{},candidate);
+    if(connectionGeneration!==generation) return;
+    if(sharedRecord){ const current=readSharedConnection(); if(!current || current.token!==token || current.url!==url) return; }
+    const now=Date.now(),record=sharedRecord||{url,token,createdAt:now,expiresAt:now+CONNECTION_TTL};
+    const sharedSaved=!!sharedRecord || lsSet(CONNECTION_KEY,JSON.stringify(record));
+    adoptSharedConnection(record); saveSettings();
+    if(!sharedSaved){ state.companion.sharedRecord=null; state.companion.tabOnlyRecord=record; }
+    const acceptedGeneration=connectionGeneration;
     state.companion.status=st; state.companion.connected=true;
     if(st.zotero && st.zotero.serverId){
       const prev=state.companion.serverId;
@@ -1174,14 +1258,16 @@ async function connectCompanion(url,token,quiet){
         setStatusMsg('A different Zotero library is open. Use Review new Zotero library before syncing.');
         state.companion.serverMismatch=true;
         await persistLocal({quiet:true});
+        if(connectionGeneration!==acceptedGeneration) return;
       }
       if(!prev || prev===st.zotero.serverId) state.companion.serverId=st.zotero.serverId;
     }
-    $('connectStatus').textContent='Connected to local companion.';
+    $('connectStatus').textContent=sharedSaved?'Library connection ready for all papers and tabs on this site (up to 8 hours).':'Connected in this tab only; browser storage is unavailable for sharing.';
     renderStateChips();
     if(state.data?.zotero?.parentKey && !state.companion.serverMismatch) await pullFromZotero(true);
     if(!quiet) toast('Connected to local companion.','ok');
   }catch(e){
+    if(connectionGeneration!==generation) return;
     state.companion.connected=false; state.companion.status=null;
     $('connectStatus').textContent='Connection failed: '+e.message;
     renderStateChips();
@@ -1189,9 +1275,11 @@ async function connectCompanion(url,token,quiet){
   }
 }
 function disconnectCompanion(){
-  state.companion.connected=false; state.companion.status=null; state.companion.token=null; saveToken(null);
-  $('connectStatus').textContent='Disconnected.';
-  $('tokenInput').value='';
+  connectionGeneration++;
+  fragmentSession=null;
+  lsSet(CONNECTION_KEY,JSON.stringify({disconnected:true,at:Date.now()}));
+  clearConnectionState();
+  $('connectStatus').textContent='Library connection disconnected for all papers and tabs on this site.';
   renderStateChips();
 }
 
@@ -1611,6 +1699,7 @@ function localReaderUrl(){
 /* ---------------- Events ---------------- */
 function bindEvents(){
   setupDivider();
+  bindConnectionSharing();
   window.addEventListener('beforeunload',()=>{ flushNoteSaveSync(); persistLocal({quiet:true}); });
   document.addEventListener('visibilitychange',()=>{ if(document.hidden) { flushNoteSaveSync(); persistLocal({quiet:true}); } });
   window.addEventListener('resize',debounce(()=>{ applySplit(); if(state.fitMode) requestRerender(); else reRenderAll(); updateCurrentPageFromScroll(); },250));

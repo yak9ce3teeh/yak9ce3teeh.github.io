@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Paper Library Reader</title>
 <link rel="stylesheet" href="./assets/vendor/pdfjs/web/pdf_viewer.css">
-<link rel="stylesheet" href="./reader.css?v=20261029-connect-2">
+<link rel="stylesheet" href="./reader.css?v=20261029-global-2">
 <script type="importmap">
 {"imports":{"pdfjs-dist/build/pdf.mjs":"./assets/vendor/pdfjs/build/pdf.mjs"}}
 </script>
@@ -140,9 +140,10 @@
   </aside>
 </main>
 
-<dialog id="settingsDialog" class="dialog" aria-label="Settings and local companion connection">
+<dialog id="settingsDialog" class="dialog" aria-label="Library connection">
   <form method="dialog" class="dialog-inner">
-    <h2>Settings / Connect</h2>
+    <h2>Library connection</h2>
+    <p class="hint">Connection applies to all papers and tabs on this site (up to 8 hours). The public site and local reader each need one connection. Disconnect clears this site's shared connection. Only the temporary local session token is shared; your DeepSeek API key stays on the companion.</p>
     <p class="hint">Read and edit browser-local drafts from the published snapshot. Translation and native Zotero sync require the local workspace running on your computer.</p>
     <fieldset>
       <legend>Local companion</legend>
@@ -204,6 +205,6 @@
 </dialog>
 
 <div id="toast" class="toast" role="status" aria-live="assertive" hidden></div>
-<script type="module" src="./reader.js?v=20261029-connect-2"></script>
+<script type="module" src="./reader.js?v=20261029-global-2"></script>
 </body>
 </html>
