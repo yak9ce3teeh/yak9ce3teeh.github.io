@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Paper Library Reader</title>
 <link rel="stylesheet" href="./assets/vendor/pdfjs/web/pdf_viewer.css">
-<link rel="stylesheet" href="./reader.css">
+<link rel="stylesheet" href="./reader.css?v=20261029-connect-2">
 <script type="importmap">
 {"imports":{"pdfjs-dist/build/pdf.mjs":"./assets/vendor/pdfjs/build/pdf.mjs"}}
 </script>
@@ -125,7 +125,7 @@
         <span class="hint">Translation is sent only when you press Translate. It requires the local companion service with a configured API key.</span>
       </div>
       <div class="trans-block">
-        <p class="hint" id="transSetupStatus" role="status"></p>
+        <p class="hint" id="transSetupStatus" role="status">Connect this reader to the existing local DeepSeek service through Settings / Connect. Start Paper Reader.cmd on this computer if needed. API keys stay on the companion.</p>
         <button class="btn small" id="btnTranslationSetup" type="button">Settings / Connect</button>
         <label class="sr-only" for="transSource">Text to translate</label>
         <textarea id="transSource" rows="4" class="trans-text" maxlength="4000" placeholder="Select text in the PDF, then press Translate selection" aria-label="Source text"></textarea>
@@ -204,6 +204,6 @@
 </dialog>
 
 <div id="toast" class="toast" role="status" aria-live="assertive" hidden></div>
-<script type="module" src="./reader.js"></script>
+<script type="module" src="./reader.js?v=20261029-connect-2"></script>
 </body>
 </html>

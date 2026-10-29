@@ -49,7 +49,7 @@ const state = {
   scale:1.15, fitMode:'width', rotation:0, split:64, splitMin:20, splitMax:85,
   annotations:[], notes:[], pending:[], baselines:{}, tombstones:{}, keyMap:{},
   selectedAnno:null, selectedNote:null, activeNoteDraftId:null,
-  tool:null, translateEnabled:false, translation:null,
+  tool:null, translateEnabled:false, translation:null, translationBusy:false,
   companion:{url:null, token:null, status:null, serverId:null, connected:false},
   syncState:'snapshot', dirty:false, saveTimer:null, snapRevision:null,
   renderGen:0, scrollObserver:null, lastSelection:null, editorDirty:false, conflicts:[]
@@ -96,7 +96,7 @@ function renderStateChips(){
   if(t) setChip('translationChip', t.available?'ok':'warn', t.available?`Translation: ${t.model||'available'}`:'Translation: unavailable');
   else setChip('translationChip','off','Translation: needs local companion');
   const translationHelp=translationSetupMessage();
-  $('btnTranslate').disabled = !!translationHelp || !$('transSource').value.trim();
+  $('btnTranslate').disabled = state.translationBusy || !$('transSource').value.trim();
   $('btnTranslateSel').disabled = !selectedTranslationText();
   const translateAction=$('selPopup').querySelector('[data-act="translate"]'); if(translateAction) translateAction.hidden=false;
   $('transSetupStatus').textContent=translationHelp;
@@ -1071,8 +1071,9 @@ function bindTranslationControls(){
 }
 function translationSetupMessage(){
   const c=state.companion;
-  if(!c.connected || !c.url || !c.token) return 'Start Paper Reader.cmd on this computer, then open Settings / Connect to connect the local companion. Translation keys stay on the companion.';
-  if(!c.status?.translation?.available) return 'Translation is unavailable on the local companion. Configure its DeepSeek API key, restart the companion, then reconnect in Settings / Connect.';
+  if(!c.connected || !c.url || !c.token) return 'This reader is not connected to the local companion. Start Paper Reader.cmd on this computer, then use Settings / Connect to connect to the existing DeepSeek service. Translation keys stay on the companion.';
+  if(!c.status?.translation) return 'Translation status is not available yet. Refresh status in Settings / Connect to check the existing DeepSeek service.';
+  if(!c.status.translation.available) return 'The connected companion has no configured DeepSeek API key. Check its existing local configuration, restart it, then reconnect in Settings / Connect. Keys stay on the companion.';
   return '';
 }
 function translateSelection(){
@@ -1093,13 +1094,15 @@ function openTranslate(text){
 }
 function constrainText(){ const el=$('transSource'); if(el.value.length>4000) el.value=el.value.slice(0,4000); }
 async function doTranslate(){
+  if(state.translationBusy) return;
   const text=$('transSource').value.trim();
   if(!text){ $('transStatus').textContent='Nothing to translate.'; return; }
   if(text.length>4000){ $('transStatus').textContent='Text too long (max 4000 characters).'; return; }
   const c=state.companion;
   const setupMessage=translationSetupMessage();
-  if(setupMessage){ $('transStatus').textContent=setupMessage; return; }
+  if(setupMessage){ $('transStatus').textContent=setupMessage; renderStateChips(); $('settingsDialog').showModal(); return; }
   const t=c.status&&c.status.translation;
+  state.translationBusy=true;
   $('btnTranslate').disabled=true; $('transStatus').textContent='Translating\u2026';
   try{
     const res=await apiFetch('/api/translate',{method:'POST',body:{text,targetLanguage:'zh-CN',sourceLanguage:'auto'}});
@@ -1113,7 +1116,7 @@ async function doTranslate(){
     $('btnAddTransToNote').disabled=false;
     $('transStatus').textContent='Done.';
   }catch(e){ $('transStatus').textContent='Translation failed: '+e.message; }
-  finally{ $('btnTranslate').disabled=false; renderStateChips(); }
+  finally{ state.translationBusy=false; renderStateChips(); }
 }
 function addTranslationToNote(){
   if(!state.translation) return;
