@@ -1,0 +1,1048 @@
+{
+  "schemaVersion": 1,
+  "fileId": 51,
+  "pdf": {
+    "url": "../Scene%20Understanding%20and%20Memory/3D%20Scene%20Graphs/2024%20-%20hovsg.pdf",
+    "sha256": "c921e6697889f42bfc4210b1faa1306316faad48c8cfeb4eee180f75f1c04cab"
+  },
+  "zotero": {
+    "libraryType": "user",
+    "libraryId": 1,
+    "parentKey": "CBUXTEUU",
+    "attachmentKey": "GJU8Q7QM"
+  },
+  "mapping": {
+    "status": "matched",
+    "basis": "sha256"
+  },
+  "annotations": [
+    {
+      "id": "H5C2ZEEU",
+      "key": "H5C2ZEEU",
+      "version": 0,
+      "type": "highlight",
+      "text": "Habitat-Semantics dataset (HM3DSem)",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "6",
+      "sortIndex": "00005|004725|00609",
+      "position": {
+        "pageIndex": 5,
+        "rects": [
+          [
+            489.427,
+            173.955,
+            563.031,
+            182.593
+          ],
+          [
+            311.973,
+            162.0,
+            394.712,
+            170.638
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-14T02:09:34Z",
+      "readOnly": false,
+      "parentItem": "GJU8Q7QM",
+      "contentHash": "6acb6507e62518e932a61bdc4ffd569981ec9bdbec0642976c00dd37d3ff3650",
+      "raw": null
+    },
+    {
+      "id": "WKLANP2L",
+      "key": "WKLANP2L",
+      "version": 0,
+      "type": "highlight",
+      "text": "PGT",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "6",
+      "sortIndex": "00005|002924|00142",
+      "position": {
+        "pageIndex": 5,
+        "rects": [
+          [
+            419.652,
+            639.511,
+            437.49,
+            649.162
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-14T02:07:19Z",
+      "readOnly": false,
+      "parentItem": "GJU8Q7QM",
+      "contentHash": "3e4e196ffd55ec973c8bed3d051b133539a8906fe6d3b781a5b88d9593d5096c",
+      "raw": null
+    },
+    {
+      "id": "DSYDAR6T",
+      "key": "DSYDAR6T",
+      "version": 0,
+      "type": "highlight",
+      "text": "Ppred",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "6",
+      "sortIndex": "00005|002826|00118",
+      "position": {
+        "pageIndex": 5,
+        "rects": [
+          [
+            444.898,
+            663.421,
+            467.777,
+            673.073
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-14T02:07:15Z",
+      "readOnly": false,
+      "parentItem": "GJU8Q7QM",
+      "contentHash": "d0b086dadce5954de168a313900ee3fd80ce73764a223fada73ff114ac8c9a83",
+      "raw": null
+    },
+    {
+      "id": "IRGCUMB9",
+      "key": "IRGCUMB9",
+      "version": 0,
+      "type": "highlight",
+      "text": "[ymin + δ1, ymin + δ2]",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "5",
+      "sortIndex": "00004|003434|00450",
+      "position": {
+        "pageIndex": 4,
+        "rects": [
+          [
+            413.407,
+            331.417,
+            507.775,
+            341.068
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-14T02:06:45Z",
+      "readOnly": false,
+      "parentItem": "GJU8Q7QM",
+      "contentHash": "8578dde97e37322286c213d36d1461abc2698c49f865c64c643aa4099aa427f3",
+      "raw": null
+    },
+    {
+      "id": "BML5U5LE",
+      "key": "BML5U5LE",
+      "version": 0,
+      "type": "highlight",
+      "text": "large-scale",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "6",
+      "sortIndex": "00005|001524|00454",
+      "position": {
+        "pageIndex": 5,
+        "rects": [
+          [
+            257.048,
+            329.023,
+            300.017,
+            337.661
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-14T02:03:23Z",
+      "readOnly": false,
+      "parentItem": "GJU8Q7QM",
+      "contentHash": "d961dd5f3227b2b6be598ff6d8ba48c86849214a9e12d4e13eb5f8eb768756a7",
+      "raw": null
+    },
+    {
+      "id": "99XPDF89",
+      "key": "99XPDF89",
+      "version": 0,
+      "type": "highlight",
+      "text": "language-grounded navigation in the real-world",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "6",
+      "sortIndex": "00005|001535|00466",
+      "position": {
+        "pageIndex": 5,
+        "rects": [
+          [
+            48.959,
+            317.068,
+            246.029,
+            325.706
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-14T02:03:19Z",
+      "readOnly": false,
+      "parentItem": "GJU8Q7QM",
+      "contentHash": "c9bb95a17bce28edbac0ad048de5b92965873e7293fb9f569639393f28fa4659",
+      "raw": null
+    },
+    {
+      "id": "SUQ7JUYI",
+      "key": "SUQ7JUYI",
+      "version": 0,
+      "type": "highlight",
+      "text": "semantic and geometric accuracy of HOV-SG at the floor, room, and object level",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "6",
+      "sortIndex": "00005|001389|00430",
+      "position": {
+        "pageIndex": 5,
+        "rects": [
+          [
+            264.599,
+            364.889,
+            300.017,
+            373.527
+          ],
+          [
+            48.959,
+            352.933,
+            300.017,
+            361.571
+          ],
+          [
+            48.959,
+            340.978,
+            96.59,
+            349.616
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-14T02:03:00Z",
+      "readOnly": false,
+      "parentItem": "GJU8Q7QM",
+      "contentHash": "9a7be0a604f13024e51fe8a665788b96ae6574f5017a89dd61163d25d2096cde",
+      "raw": null
+    },
+    {
+      "id": "V2JPJ4LH",
+      "key": "V2JPJ4LH",
+      "version": 0,
+      "type": "highlight",
+      "text": "recent open-vocabulary map representations",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "6",
+      "sortIndex": "00005|001268|00394",
+      "position": {
+        "pageIndex": 5,
+        "rects": [
+          [
+            183.514,
+            388.799,
+            300.017,
+            397.437
+          ],
+          [
+            48.959,
+            376.844,
+            109.273,
+            385.482
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-14T02:02:37Z",
+      "readOnly": false,
+      "parentItem": "GJU8Q7QM",
+      "contentHash": "be91bc48729164dd3d33d20432fbc2a1ef46a94588d66fab9fdf4215dd52418f",
+      "raw": null
+    },
+    {
+      "id": "3CNYF5NB",
+      "key": "3CNYF5NB",
+      "version": 0,
+      "type": "highlight",
+      "text": "project them as 2D points onto a BEV map of each floor",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "5",
+      "sortIndex": "00004|002359|00705",
+      "position": {
+        "pageIndex": 4,
+        "rects": [
+          [
+            91.539,
+            78.314,
+            300.017,
+            86.952
+          ],
+          [
+            48.959,
+            66.358,
+            67.778,
+            74.996
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-14T01:49:59Z",
+      "readOnly": false,
+      "parentItem": "GJU8Q7QM",
+      "contentHash": "e52f16ccab4bed7b95c50f31f1c9dd7314a9a80e93f3e27a66329fd17f62bb24",
+      "raw": null
+    },
+    {
+      "id": "I7AZXFC8",
+      "key": "I7AZXFC8",
+      "version": 0,
+      "type": "highlight",
+      "text": "in the bird’s-eye-view.",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "5",
+      "sortIndex": "00004|001288|00442",
+      "position": {
+        "pageIndex": 4,
+        "rects": [
+          [
+            210.782,
+            341.304,
+            300.017,
+            349.942
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-14T01:41:53Z",
+      "readOnly": false,
+      "parentItem": "GJU8Q7QM",
+      "contentHash": "3eb35099ecee8e12e754482fea512625e23d25aefea635d1829a764d83bf3c6e",
+      "raw": null
+    },
+    {
+      "id": "3ZEHX24X",
+      "key": "3ZEHX24X",
+      "version": 0,
+      "type": "highlight",
+      "text": "each room node (Nf , Nf,r) ∈ EF R",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "5",
+      "sortIndex": "00004|001055|00381",
+      "position": {
+        "pageIndex": 4,
+        "rects": [
+          [
+            180.296,
+            400.36,
+            300.018,
+            410.012
+          ],
+          [
+            48.959,
+            388.405,
+            66.345,
+            398.057
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-14T01:36:42Z",
+      "readOnly": false,
+      "parentItem": "GJU8Q7QM",
+      "contentHash": "a290c4da566dfa4e4993222464c4e7bcc0c9c94253e09a287d501de7fd7391c9",
+      "raw": null
+    },
+    {
+      "id": "7CNW4P4S",
+      "key": "7CNW4P4S",
+      "version": 0,
+      "type": "highlight",
+      "text": "k representative embeddings and the room point cloud attribute the room node Nf,r of room r on floor f",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "5",
+      "sortIndex": "00004|000944|00358",
+      "position": {
+        "pageIndex": 4,
+        "rects": [
+          [
+            88.441,
+            424.966,
+            300.018,
+            433.922
+          ],
+          [
+            48.959,
+            412.315,
+            280.879,
+            421.967
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-14T01:36:36Z",
+      "readOnly": false,
+      "parentItem": "GJU8Q7QM",
+      "contentHash": "497c5ee914cd0ea252f038668b475380d9c85397a16e75dabb7f927064b0dfd9",
+      "raw": null
+    },
+    {
+      "id": "IZLK4JET",
+      "key": "IZLK4JET",
+      "version": 0,
+      "type": "highlight",
+      "text": "Watershed algorithm",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "4",
+      "sortIndex": "00003|004048|00620",
+      "position": {
+        "pageIndex": 3,
+        "rects": [
+          [
+            467.001,
+            162.641,
+            551.414,
+            171.279
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-14T01:23:43Z",
+      "readOnly": false,
+      "parentItem": "GJU8Q7QM",
+      "contentHash": "c1bcdc9b59e430bfce63ebaa1fb136b206285f94b69d8a887401760625699889",
+      "raw": null
+    },
+    {
+      "id": "36PE4XJW",
+      "key": "36PE4XJW",
+      "version": 0,
+      "type": "highlight",
+      "text": "point clouds for each floor Pl where l is the floor number.",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "4",
+      "sortIndex": "00003|003536|00500",
+      "position": {
+        "pageIndex": 3,
+        "rects": [
+          [
+            311.973,
+            282.139,
+            551.391,
+            291.79
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-14T01:17:09Z",
+      "readOnly": false,
+      "parentItem": "GJU8Q7QM",
+      "contentHash": "259a8873999f516142cdc23a3b68962abf9b9729b5bb5fd65fa0cd78fc5e190a",
+      "raw": null
+    },
+    {
+      "id": "Z8HWPZZM",
+      "key": "Z8HWPZZM",
+      "version": 0,
+      "type": "highlight",
+      "text": "exceed a minimum of 90% of the highest intensity peak.",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "4",
+      "sortIndex": "00003|003235|00428",
+      "position": {
+        "pageIndex": 3,
+        "rects": [
+          [
+            330.314,
+            354.566,
+            563.031,
+            363.204
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-14T01:13:57Z",
+      "readOnly": false,
+      "parentItem": "GJU8Q7QM",
+      "contentHash": "80ad32373d8c9660156612839b78697127f653d856eae872ae00c5624854a9bb",
+      "raw": null
+    },
+    {
+      "id": "SDI97J4K",
+      "key": "SDI97J4K",
+      "version": 0,
+      "type": "highlight",
+      "text": "The edges can be written as E = ESF ∪ EF R ∪ ERO.",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "4",
+      "sortIndex": "00003|002719|00296",
+      "position": {
+        "pageIndex": 3,
+        "rects": [
+          [
+            425.278,
+            486.714,
+            563.032,
+            495.67
+          ],
+          [
+            311.973,
+            474.063,
+            391.371,
+            483.715
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-13T15:49:01Z",
+      "readOnly": false,
+      "parentItem": "GJU8Q7QM",
+      "contentHash": "dad664f743a179c959901d719e0a0372811afc39e1c3563f4d38d5c1064ff6e0",
+      "raw": null
+    },
+    {
+      "id": "D8TJH4XK",
+      "key": "D8TJH4XK",
+      "version": 0,
+      "type": "highlight",
+      "text": "N = NS ∪ NF ∪ NR ∪ NO",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "4",
+      "sortIndex": "00003|002514|00248",
+      "position": {
+        "pageIndex": 3,
+        "rects": [
+          [
+            324.909,
+            533.839,
+            448.098,
+            543.491
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-13T15:47:38Z",
+      "readOnly": false,
+      "parentItem": "GJU8Q7QM",
+      "contentHash": "d3e0977696f087902ebea0317aa0af787a942c0b0d4080fc37dbbc0fb1447392",
+      "raw": null
+    },
+    {
+      "id": "WNPX7SG2",
+      "key": "WNPX7SG2",
+      "version": 0,
+      "type": "highlight",
+      "text": "graph as G = (N , E)",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "4",
+      "sortIndex": "00003|002435|00224",
+      "position": {
+        "pageIndex": 3,
+        "rects": [
+          [
+            393.507,
+            558.445,
+            476.989,
+            567.401
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-13T15:45:17Z",
+      "readOnly": false,
+      "parentItem": "GJU8Q7QM",
+      "contentHash": "e3fcc87c7fc0630ce531a59f6653cf485fa23ad7768f0ad8ac1ade56c879c312",
+      "raw": null
+    },
+    {
+      "id": "HH5ACGWZ",
+      "key": "HH5ACGWZ",
+      "version": 0,
+      "type": "highlight",
+      "text": "fi = wgfg + wlfl + wmfm,",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "4",
+      "sortIndex": "00003|000980|00351",
+      "position": {
+        "pageIndex": 3,
+        "rects": [
+          [
+            116.914,
+            430.961,
+            232.064,
+            440.613
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-13T15:34:34Z",
+      "readOnly": false,
+      "parentItem": "GJU8Q7QM",
+      "contentHash": "9d10de6cd3c1cbe480e8852e03e9d3b6829487068cb1d993b3c02b577c16c243",
+      "raw": null
+    },
+    {
+      "id": "LK49SIQ5",
+      "key": "LK49SIQ5",
+      "version": 0,
+      "type": "highlight",
+      "text": "image crop based on its bounding box as well as an image of the isolated mask without background",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "3",
+      "sortIndex": "00002|004700|00705",
+      "position": {
+        "pageIndex": 2,
+        "rects": [
+          [
+            311.973,
+            78.313,
+            563.031,
+            86.951
+          ],
+          [
+            311.973,
+            66.358,
+            479.355,
+            74.996
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-13T15:26:06Z",
+      "readOnly": false,
+      "parentItem": "GJU8Q7QM",
+      "contentHash": "0c1eeae330402a88ed0ec5813d5d09076b87143e8e7a4b66b6da44e9a1e8e279",
+      "raw": null
+    },
+    {
+      "id": "QJ8DL98T",
+      "key": "QJ8DL98T",
+      "version": 0,
+      "type": "highlight",
+      "text": "either initialized as new global segments or merged with existing ones based on an overlap metric:",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "3",
+      "sortIndex": "00002|003848|00459",
+      "position": {
+        "pageIndex": 2,
+        "rects": [
+          [
+            440.311,
+            324.195,
+            563.031,
+            332.833
+          ],
+          [
+            311.973,
+            312.24,
+            563.031,
+            320.878
+          ],
+          [
+            311.973,
+            300.285,
+            340.197,
+            308.923
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-13T07:37:47Z",
+      "readOnly": false,
+      "parentItem": "GJU8Q7QM",
+      "contentHash": "511bb5808e2409a537f0a8d6c9f7556cc474a56e7547c0cd9feed1bf5344b607",
+      "raw": null
+    },
+    {
+      "id": "43TWYE8F",
+      "key": "43TWYE8F",
+      "version": 0,
+      "type": "highlight",
+      "text": "create a list of 3D point clouds",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "3",
+      "sortIndex": "00002|003021|00717",
+      "position": {
+        "pageIndex": 2,
+        "rects": [
+          [
+            91.669,
+            66.358,
+            221.342,
+            74.996
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-13T07:31:30Z",
+      "readOnly": false,
+      "parentItem": "GJU8Q7QM",
+      "contentHash": "f99dd7b760c18c05c4c2888e05e23b8b295eebf1d5acc4e64048e3d6cb51b4aa",
+      "raw": null
+    },
+    {
+      "id": "82XFSAFR",
+      "key": "82XFSAFR",
+      "version": 0,
+      "type": "highlight",
+      "text": "the graph should be actionable",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "3",
+      "sortIndex": "00002|002262|00510",
+      "position": {
+        "pageIndex": 2,
+        "rects": [
+          [
+            168.45,
+            272.71,
+            300.017,
+            281.348
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-13T07:27:46Z",
+      "readOnly": false,
+      "parentItem": "GJU8Q7QM",
+      "contentHash": "a207d071941ed2364947344115478bba89c5a365123692fd897bda0a0d973d2a",
+      "raw": null
+    },
+    {
+      "id": "I78TWWQ9",
+      "key": "I78TWWQ9",
+      "version": 0,
+      "type": "highlight",
+      "text": "facilitate the indexing of multi-level semantic concepts through natural language queries",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "3",
+      "sortIndex": "00002|002052|00462",
+      "position": {
+        "pageIndex": 2,
+        "rects": [
+          [
+            146.682,
+            320.531,
+            300.017,
+            329.169
+          ],
+          [
+            48.959,
+            308.576,
+            264.649,
+            317.214
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-13T07:26:23Z",
+      "readOnly": false,
+      "parentItem": "GJU8Q7QM",
+      "contentHash": "1cf3b1030a1f5cd8a4d63f624b7dbb0bbf0ddea24e3b8a2802dd517e34af6063",
+      "raw": null
+    },
+    {
+      "id": "CQ2CWQSC",
+      "key": "CQ2CWQSC",
+      "version": 0,
+      "type": "highlight",
+      "text": "C. Scene Graphs for Planning",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "2",
+      "sortIndex": "00001|003993|00462",
+      "position": {
+        "pageIndex": 1,
+        "rects": [
+          [
+            311.973,
+            321.37,
+            437.681,
+            329.958
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-13T07:15:16Z",
+      "readOnly": false,
+      "parentItem": "GJU8Q7QM",
+      "contentHash": "a241e8842126cacef2b5f6eeadb05fdf781e134bf60c26af66768791db3f0542",
+      "raw": null
+    },
+    {
+      "id": "B8P9SRG2",
+      "key": "B8P9SRG2",
+      "version": 0,
+      "type": "highlight",
+      "text": "ConceptGraphs",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "2",
+      "sortIndex": "00001|003796|00394",
+      "position": {
+        "pageIndex": 1,
+        "rects": [
+          [
+            352.162,
+            389.064,
+            414.139,
+            397.702
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-13T07:15:03Z",
+      "readOnly": false,
+      "parentItem": "GJU8Q7QM",
+      "contentHash": "c229250bacb9d43f6119b7065c1aa9ab258696f68aec86190f9b09149f3fb32d",
+      "raw": null
+    },
+    {
+      "id": "BTRBZ8A7",
+      "key": "BTRBZ8A7",
+      "version": 0,
+      "type": "highlight",
+      "text": "B. 3D Scene Graphs",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "2",
+      "sortIndex": "00001|002613|00103",
+      "position": {
+        "pageIndex": 1,
+        "rects": [
+          [
+            311.973,
+            680.109,
+            397.651,
+            688.697
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-13T07:14:41Z",
+      "readOnly": false,
+      "parentItem": "GJU8Q7QM",
+      "contentHash": "26d1c8a45c92161a7c25c1574513a68b16ae709969b05f5e2beedd2b843f3eba",
+      "raw": null
+    },
+    {
+      "id": "ZLZDIAE8",
+      "key": "ZLZDIAE8",
+      "version": 0,
+      "type": "highlight",
+      "text": "A. Semantic 3D Mapping",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "2",
+      "sortIndex": "00001|001365|00448",
+      "position": {
+        "pageIndex": 1,
+        "rects": [
+          [
+            48.959,
+            334.554,
+            154.164,
+            343.142
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-13T06:41:29Z",
+      "readOnly": false,
+      "parentItem": "GJU8Q7QM",
+      "contentHash": "e7148bc80e6fe1d0f75de548bfeab438c08d12c54fe391f50162b47054478f11",
+      "raw": null
+    },
+    {
+      "id": "VVWJ92JQ",
+      "key": "VVWJ92JQ",
+      "version": 0,
+      "type": "highlight",
+      "text": "a considerable hurdle.",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "1",
+      "sortIndex": "00000|002816|00464",
+      "position": {
+        "pageIndex": 0,
+        "rects": [
+          [
+            406.349,
+            318.478,
+            498.104,
+            327.116
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-13T06:16:33Z",
+      "readOnly": false,
+      "parentItem": "GJU8Q7QM",
+      "contentHash": "67bd68343c1902dbbc7c137ecf88f3a4a9990c3ecc2070a877f90b9fa907c32d",
+      "raw": null
+    },
+    {
+      "id": "C2BSZMN4",
+      "key": "C2BSZMN4",
+      "version": 0,
+      "type": "highlight",
+      "text": "represent multistory buildings and allows robotic traversal of those using a cross-floor Voronoi graph",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "1",
+      "sortIndex": "00000|000944|00332",
+      "position": {
+        "pageIndex": 0,
+        "rects": [
+          [
+            236.258,
+            451.194,
+            300.018,
+            459.255
+          ],
+          [
+            48.959,
+            441.232,
+            300.018,
+            449.293
+          ],
+          [
+            48.959,
+            431.269,
+            147.607,
+            439.33
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-13T03:05:42Z",
+      "readOnly": false,
+      "parentItem": "GJU8Q7QM",
+      "contentHash": "f743caf5f7374e5e9f6ac462e9f0786d991f37563c0b3040f7e6cbd71621e16c",
+      "raw": null
+    },
+    {
+      "id": "5MVUXYA3",
+      "key": "5MVUXYA3",
+      "version": 0,
+      "type": "highlight",
+      "text": "state-of-the-art open-vocabulary segment-level maps in 3D and",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "1",
+      "sortIndex": "00000|000747|00302",
+      "position": {
+        "pageIndex": 0,
+        "rects": [
+          [
+            48.959,
+            481.082,
+            300.018,
+            489.143
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-13T03:00:31Z",
+      "readOnly": false,
+      "parentItem": "GJU8Q7QM",
+      "contentHash": "342a767f7fcc85c56bbd7e1d8d2f3ac114ce24416e3e932daed96d84a27347d4",
+      "raw": null
+    },
+    {
+      "id": "V956GC39",
+      "key": "V956GC39",
+      "version": 0,
+      "type": "highlight",
+      "text": "certain language concept, largescale environments and abstract queries beyond the object level",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "1",
+      "sortIndex": "00000|000396|00233",
+      "position": {
+        "pageIndex": 0,
+        "rects": [
+          [
+            178.308,
+            550.821,
+            300.018,
+            558.882
+          ],
+          [
+            48.959,
+            540.858,
+            300.018,
+            548.919
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-13T02:55:03Z",
+      "readOnly": false,
+      "parentItem": "GJU8Q7QM",
+      "contentHash": "396180126b54b1132c789c89db2f4d9f6f4e3906ed3fa414d268b70dbadeeaef",
+      "raw": null
+    },
+    {
+      "id": "ZVKEJNLP",
+      "key": "ZVKEJNLP",
+      "version": 0,
+      "type": "highlight",
+      "text": "pose a considerable hurdle",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "1",
+      "sortIndex": "00000|000485|00253",
+      "position": {
+        "pageIndex": 0,
+        "rects": [
+          [
+            67.708,
+            530.896,
+            177.268,
+            538.957
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-13T02:54:46Z",
+      "readOnly": false,
+      "parentItem": "GJU8Q7QM",
+      "contentHash": "05193d6e58d46cb51f1b1d795588be3b123d086380d3dd71ee417388114f4d8f",
+      "raw": null
+    }
+  ],
+  "notes": [
+    {
+      "id": "B9IA24T7",
+      "key": "B9IA24T7",
+      "version": 0,
+      "html": "Comment: Code and video are available at http://hovsg.github.io/",
+      "tags": [],
+      "dateModified": "2026-03-13T02:45:53Z",
+      "parentItem": "CBUXTEUU",
+      "contentHash": "16959aadd2fa2e63a4e3252499a4c320520aa3272a10e8753b47838340ca0403",
+      "displayHtml": "Comment: Code and video are available at http://hovsg.github.io/"
+    }
+  ],
+  "exportedAt": "2026-10-29T07:58:15+00:00"
+}

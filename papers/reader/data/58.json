@@ -1,0 +1,1030 @@
+{
+  "schemaVersion": 1,
+  "fileId": 58,
+  "pdf": {
+    "url": "../Scene%20Understanding%20and%20Memory/3D%20Scene%20Graphs/2024%20-%20SG-Nav.pdf",
+    "sha256": "c79eb95338ef42030d6b64423f2cd908406695ce195bc81dd87e3fe1077c005c"
+  },
+  "zotero": {
+    "libraryType": "user",
+    "libraryId": 1,
+    "parentKey": "VYUSNMWR",
+    "attachmentKey": "E9YMJBLV"
+  },
+  "mapping": {
+    "status": "matched",
+    "basis": "sha256"
+  },
+  "annotations": [
+    {
+      "id": "5DKMUAQ4",
+      "key": "5DKMUAQ4",
+      "version": 0,
+      "type": "highlight",
+      "text": "where Nmax is a pre-defined maximum number of steps. If succeed, the agent will navigate to this goal object without any further exploration or perception. Otherwise, it will give up this object and continue the exploration.",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "6",
+      "sortIndex": "00005|002494|00552",
+      "position": {
+        "pageIndex": 5,
+        "rects": [
+          [
+            107.641,
+            229.956,
+            504.004,
+            239.607
+          ],
+          [
+            108.0,
+            219.742,
+            503.996,
+            228.38
+          ],
+          [
+            108.0,
+            208.833,
+            207.188,
+            217.471
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-07T01:53:18Z",
+      "readOnly": false,
+      "parentItem": "E9YMJBLV",
+      "contentHash": "a077106c57198ee38a8d17b48c09e310f58b1dcf3bc920022888504630edcf62",
+      "raw": null
+    },
+    {
+      "id": "66SNPIWP",
+      "key": "66SNPIWP",
+      "version": 0,
+      "type": "highlight",
+      "text": "where Ck is the confidence score of this goal object, Dj is the distance between the central object node of the j-th subgraph and this object. The success condition for our re-perception mechanism is:",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "6",
+      "sortIndex": "00005|002354|00498",
+      "position": {
+        "pageIndex": 5,
+        "rects": [
+          [
+            107.641,
+            294.546,
+            503.996,
+            304.198
+          ],
+          [
+            108.0,
+            284.333,
+            505.384,
+            293.289
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-07T01:53:04Z",
+      "readOnly": false,
+      "parentItem": "E9YMJBLV",
+      "contentHash": "2956cf275e873ecd255ff38d38269a9c48a880bdc969cb2515f53e3096eebc57",
+      "raw": null
+    },
+    {
+      "id": "UHYEFZ2C",
+      "key": "UHYEFZ2C",
+      "version": 0,
+      "type": "highlight",
+      "text": "For the k-th RGB-D observation since this moment, we compute the credibility of it by:",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "6",
+      "sortIndex": "00005|002180|00421",
+      "position": {
+        "pageIndex": 5,
+        "rects": [
+          [
+            420.375,
+            361.188,
+            504.001,
+            370.144
+          ],
+          [
+            108.0,
+            350.279,
+            374.788,
+            358.917
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-07T01:51:19Z",
+      "readOnly": false,
+      "parentItem": "E9YMJBLV",
+      "contentHash": "44d309afe824d0c608ae0930ed306261b583fe3f059c5137e6ee29e4ccb31cc2",
+      "raw": null
+    },
+    {
+      "id": "K3LEX2C9",
+      "key": "K3LEX2C9",
+      "version": 0,
+      "type": "highlight",
+      "text": "When the agent detects out a goal object, it will approach to this object, observe it from multiple perspectives and accumulate a credibility score S.",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "6",
+      "sortIndex": "00005|002054|00411",
+      "position": {
+        "pageIndex": 5,
+        "rects": [
+          [
+            207.525,
+            372.097,
+            505.247,
+            380.735
+          ],
+          [
+            108.0,
+            361.188,
+            415.924,
+            370.144
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-07T01:51:12Z",
+      "readOnly": false,
+      "parentItem": "E9YMJBLV",
+      "contentHash": "cc80a31e498c1b6600506933204e28c237944b61e7c59bcb07cb3173383c314f",
+      "raw": null
+    },
+    {
+      "id": "D2NWU8WH",
+      "key": "D2NWU8WH",
+      "version": 0,
+      "type": "highlight",
+      "text": "we prompt LLM to summarize the conversation and predict P , with the prompt Based on the above conversation, determine the most likely distance between this subgraph and [goal].",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "6",
+      "sortIndex": "00005|001383|00312",
+      "position": {
+        "pageIndex": 5,
+        "rects": [
+          [
+            492.357,
+            481.238,
+            503.997,
+            489.876
+          ],
+          [
+            108.0,
+            470.329,
+            503.999,
+            479.285
+          ],
+          [
+            108.0,
+            459.42,
+            444.057,
+            469.95
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-07T01:43:11Z",
+      "readOnly": false,
+      "parentItem": "E9YMJBLV",
+      "contentHash": "45b35cbad03cb5ac3982a5d006f7576e15d6345706bd75bb4a1171e1a041c411",
+      "raw": null
+    },
+    {
+      "id": "YRNAQF8Q",
+      "key": "YRNAQF8Q",
+      "version": 0,
+      "type": "highlight",
+      "text": "we prompt LLM to answer those questions according to the information of subgraph, with the prompt: Given [nodes] and [edges] of subgraph, answer above [questions]",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "6",
+      "sortIndex": "00005|001139|00280",
+      "position": {
+        "pageIndex": 5,
+        "rects": [
+          [
+            130.105,
+            503.056,
+            503.996,
+            511.694
+          ],
+          [
+            108.0,
+            492.147,
+            410.441,
+            500.964
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-07T01:43:00Z",
+      "readOnly": false,
+      "parentItem": "E9YMJBLV",
+      "contentHash": "f168da501ce28e2976b1e15900f3c900d3d911d49f6b9f4cd15e728cb82d755c",
+      "raw": null
+    },
+    {
+      "id": "FA7D27ZP",
+      "key": "FA7D27ZP",
+      "version": 0,
+      "type": "highlight",
+      "text": "Then we prompt LLM to ask question related to the navigation goal, with the prompt: Ask questions about the [object] and [goal] for predicting their distance",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "6",
+      "sortIndex": "00005|000970|00258",
+      "position": {
+        "pageIndex": 5,
+        "rects": [
+          [
+            107.691,
+            524.874,
+            503.996,
+            533.691
+          ],
+          [
+            108.0,
+            513.965,
+            352.657,
+            522.782
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-07T01:42:46Z",
+      "readOnly": false,
+      "parentItem": "E9YMJBLV",
+      "contentHash": "7b565d551dfae104d68abfd6ca4f37dfdad17c7f92de264683bcfb6b2285b206",
+      "raw": null
+    },
+    {
+      "id": "L58KP898",
+      "key": "L58KP898",
+      "version": 0,
+      "type": "highlight",
+      "text": "for each subgraph, LLM is first prompted with Predict the most likely distance between [object] and [goal],",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "6",
+      "sortIndex": "00005|000828|00236",
+      "position": {
+        "pageIndex": 5,
+        "rects": [
+          [
+            211.316,
+            546.692,
+            503.999,
+            555.509
+          ],
+          [
+            108.0,
+            535.783,
+            257.691,
+            544.6
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-07T01:42:35Z",
+      "readOnly": false,
+      "parentItem": "E9YMJBLV",
+      "contentHash": "21bffb2d88373bf8faf387b6daa58e49e48f0a771ae25b6ede36f64fc9fd98b9",
+      "raw": null
+    },
+    {
+      "id": "M6YBG5MV",
+      "key": "M6YBG5MV",
+      "version": 0,
+      "type": "highlight",
+      "text": "each subgraph, we predict P sub,",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "6",
+      "sortIndex": "00005|000348|00117",
+      "position": {
+        "pageIndex": 5,
+        "rects": [
+          [
+            223.233,
+            664.249,
+            352.977,
+            674.779
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-07T01:41:14Z",
+      "readOnly": false,
+      "parentItem": "E9YMJBLV",
+      "contentHash": "c03d8b3b1a4fded1ea4365de7c791cfcf1599d1c67ff7a750f623294b1c6c566",
+      "raw": null
+    },
+    {
+      "id": "HTT6W8HY",
+      "key": "HTT6W8HY",
+      "version": 0,
+      "type": "highlight",
+      "text": "compute the probability P fro of each frontier by prompting LLM with our 3D scene graph",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "6",
+      "sortIndex": "00005|000132|00084",
+      "position": {
+        "pageIndex": 5,
+        "rects": [
+          [
+            350.909,
+            696.976,
+            504.001,
+            707.507
+          ],
+          [
+            108.0,
+            685.372,
+            321.572,
+            695.023
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-07T01:40:56Z",
+      "readOnly": false,
+      "parentItem": "E9YMJBLV",
+      "contentHash": "d3a06be6242119bd165c49811dfeb7dc9500a57eed29b0d37fc1fdc314e97b13",
+      "raw": null
+    },
+    {
+      "id": "PAVC4PDW",
+      "key": "PAVC4PDW",
+      "version": 0,
+      "type": "highlight",
+      "text": "Hierarchical Chain-of-thought Prompting.",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "6",
+      "sortIndex": "00005|000000|00075",
+      "position": {
+        "pageIndex": 5,
+        "rects": [
+          [
+            108.0,
+            707.885,
+            287.868,
+            716.911
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-07T01:40:45Z",
+      "readOnly": false,
+      "parentItem": "E9YMJBLV",
+      "contentHash": "e9ab2d86c9f366019bed01412fd18c2a4d33c2c0feee419f969b4a20bd16b836",
+      "raw": null
+    },
+    {
+      "id": "CCSCWD3N",
+      "key": "CCSCWD3N",
+      "version": 0,
+      "type": "highlight",
+      "text": "(2) once the frontier to be explore is chosen, we simply apply local policy like Fast Marching Method [34] for path planning and output a.",
+      "comment": "",
+      "color": "#5fb236",
+      "pageLabel": "5",
+      "sortIndex": "00004|003668|00683",
+      "position": {
+        "pageIndex": 4,
+        "rects": [
+          [
+            313.638,
+            99.055,
+            504.004,
+            108.011
+          ],
+          [
+            108.0,
+            88.146,
+            465.134,
+            97.102
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-07T01:39:59Z",
+      "readOnly": false,
+      "parentItem": "E9YMJBLV",
+      "contentHash": "4a94416e81de172235ab1cabf1fd8e77a90e4b2eca55bbf24435b187a6cb1ac2",
+      "raw": null
+    },
+    {
+      "id": "29K87T54",
+      "key": "29K87T54",
+      "version": 0,
+      "type": "highlight",
+      "text": "(1) synchronous with the 3D scene graph, we build an online occupancy map to indicate explored, unexplored and occupied area in BEV, based on which we compute the frontiers of explored area.",
+      "comment": "",
+      "color": "#5fb236",
+      "pageLabel": "5",
+      "sortIndex": "00004|003339|00640",
+      "position": {
+        "pageIndex": 4,
+        "rects": [
+          [
+            287.496,
+            142.691,
+            503.998,
+            151.329
+          ],
+          [
+            108.0,
+            131.782,
+            503.996,
+            140.42
+          ],
+          [
+            107.641,
+            120.873,
+            281.429,
+            129.511
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-07T01:39:35Z",
+      "readOnly": false,
+      "parentItem": "E9YMJBLV",
+      "contentHash": "e5e170561e3448ece13352955ef4871f56072b3d0dd38b869b0a587dd76b31ad",
+      "raw": null
+    },
+    {
+      "id": "2IZ3XKLK",
+      "key": "2IZ3XKLK",
+      "version": 0,
+      "type": "highlight",
+      "text": "Frontier-based Exploration (FBE) strategy to divide the decision",
+      "comment": "",
+      "color": "#ff6666",
+      "pageLabel": "5",
+      "sortIndex": "00004|003270|00629",
+      "position": {
+        "pageIndex": 4,
+        "rects": [
+          [
+            366.83,
+            153.6,
+            504.665,
+            162.556
+          ],
+          [
+            108.0,
+            142.691,
+            227.975,
+            151.329
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-07T01:39:23Z",
+      "readOnly": false,
+      "parentItem": "E9YMJBLV",
+      "contentHash": "67ef9c1231c60b250e518955589802fa5b8f63c7112f0a19200642d01d7716e5",
+      "raw": null
+    },
+    {
+      "id": "2P24ZYE9",
+      "key": "2P24ZYE9",
+      "version": 0,
+      "type": "highlight",
+      "text": "For room-group node pair, we connect them if all objects in this group belongs to the room. We do not additionally connect group and object nodes since the former is registered based on the latter.",
+      "comment": "",
+      "color": "#2ea8e5",
+      "pageLabel": "5",
+      "sortIndex": "00004|000823|00200",
+      "position": {
+        "pageIndex": 4,
+        "rects": [
+          [
+            247.09,
+            593.315,
+            503.999,
+            601.953
+          ],
+          [
+            108.0,
+            582.406,
+            504.166,
+            591.044
+          ],
+          [
+            108.0,
+            571.497,
+            233.469,
+            580.135
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-07T01:37:19Z",
+      "readOnly": false,
+      "parentItem": "E9YMJBLV",
+      "contentHash": "93aab2cd63360f27e915f58f41275d167c28c73f8914e7cd7aed01116fa07d5d",
+      "raw": null
+    },
+    {
+      "id": "5CCAZAQ7",
+      "key": "5CCAZAQ7",
+      "version": 0,
+      "type": "highlight",
+      "text": "For room-object node pair, we think the object belongs to the room if the instance mask of this object on the point clouds is contained in the instance mask of this room.",
+      "comment": "",
+      "color": "#ff6666",
+      "pageLabel": "5",
+      "sortIndex": "00004|000631|00168",
+      "position": {
+        "pageIndex": 4,
+        "rects": [
+          [
+            358.992,
+            615.133,
+            504.25,
+            623.771
+          ],
+          [
+            108.0,
+            604.224,
+            503.997,
+            612.862
+          ],
+          [
+            108.0,
+            593.315,
+            243.991,
+            601.953
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-07T01:37:13Z",
+      "readOnly": false,
+      "parentItem": "E9YMJBLV",
+      "contentHash": "e6616f7740e139e60dfa7abb3f74c1dba8d4accc4e20c3449d31f452fe1f5804",
+      "raw": null
+    },
+    {
+      "id": "QJUGNGYX",
+      "key": "QJUGNGYX",
+      "version": 0,
+      "type": "highlight",
+      "text": "pre-define a dictionary to tell which pair of categories are related by LLM",
+      "comment": "",
+      "color": "#ff6666",
+      "pageLabel": "5",
+      "sortIndex": "00004|000235|00097",
+      "position": {
+        "pageIndex": 4,
+        "rects": [
+          [
+            464.421,
+            686.067,
+            504.001,
+            694.705
+          ],
+          [
+            108.0,
+            675.158,
+            356.492,
+            683.796
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-07T01:35:16Z",
+      "readOnly": false,
+      "parentItem": "E9YMJBLV",
+      "contentHash": "e12c9bf06c0cd525b5921e40eb51229d09db3979fcf087f2ea1b3ad66d28d1eb",
+      "raw": null
+    },
+    {
+      "id": "3YIW9UZ6",
+      "key": "3YIW9UZ6",
+      "version": 0,
+      "type": "highlight",
+      "text": "If two object nodes are connected by an edge and their categories are related, we register a group for them.",
+      "comment": "",
+      "color": "#ff6666",
+      "pageLabel": "5",
+      "sortIndex": "00004|000085|00086",
+      "position": {
+        "pageIndex": 4,
+        "rects": [
+          [
+            137.776,
+            696.976,
+            503.996,
+            705.932
+          ],
+          [
+            108.0,
+            686.067,
+            168.933,
+            694.705
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-07T01:35:04Z",
+      "readOnly": false,
+      "parentItem": "E9YMJBLV",
+      "contentHash": "9a5e94e01ee4ec8d12b96dfd3faa769acf60ce3dd5a2b7676078761aedbd6342",
+      "raw": null
+    },
+    {
+      "id": "5FIAXJWL",
+      "key": "5FIAXJWL",
+      "version": 0,
+      "type": "highlight",
+      "text": "For object nodes, we leverage online open-vocabulary 3D instance segmentation method [12] to acquire the 3D instance",
+      "comment": "",
+      "color": "#ff6666",
+      "pageLabel": "4",
+      "sortIndex": "00003|003018|00658",
+      "position": {
+        "pageIndex": 3,
+        "rects": [
+          [
+            357.862,
+            124.393,
+            504.004,
+            133.031
+          ],
+          [
+            108.0,
+            113.484,
+            431.248,
+            122.122
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-07T01:34:21Z",
+      "readOnly": false,
+      "parentItem": "E9YMJBLV",
+      "contentHash": "e96ea48a1fc951fc4640fcb4c90f998cb5b90d29edd553d35addeefbbdd7d34b",
+      "raw": null
+    },
+    {
+      "id": "GU7QXBHA",
+      "key": "GU7QXBHA",
+      "version": 0,
+      "type": "highlight",
+      "text": "Incremental Updating and Pruning.",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "4",
+      "sortIndex": "00003|002573|00554",
+      "position": {
+        "pageIndex": 3,
+        "rects": [
+          [
+            108.0,
+            228.055,
+            266.86,
+            237.081
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-07T01:33:05Z",
+      "readOnly": false,
+      "parentItem": "E9YMJBLV",
+      "contentHash": "e410de2ea37fe6288d66d3e0b2a5be25c38e848d0fc6ef6ddb542b66e4117f99",
+      "raw": null
+    },
+    {
+      "id": "VWVIUVXK",
+      "key": "VWVIUVXK",
+      "version": 0,
+      "type": "highlight",
+      "text": "Hierarchical 3D Scene Graph.",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "4",
+      "sortIndex": "00003|001922|00363",
+      "position": {
+        "pageIndex": 3,
+        "rects": [
+          [
+            108.0,
+            418.989,
+            241.263,
+            428.015
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-07T01:33:00Z",
+      "readOnly": false,
+      "parentItem": "E9YMJBLV",
+      "contentHash": "7aca9bb8302a0e7b9c9a8463f732d414472eeed96ce032c38ed20a9868191826",
+      "raw": null
+    },
+    {
+      "id": "L682CJ5S",
+      "key": "L682CJ5S",
+      "version": 0,
+      "type": "highlight",
+      "text": "indicates a set of related objects,",
+      "comment": "",
+      "color": "#ff6666",
+      "pageLabel": "4",
+      "sortIndex": "00003|002110|00418",
+      "position": {
+        "pageIndex": 3,
+        "rects": [
+          [
+            133.909,
+            364.443,
+            264.298,
+            373.081
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-07T01:31:44Z",
+      "readOnly": false,
+      "parentItem": "E9YMJBLV",
+      "contentHash": "44368565ab437326d951089861f95e6a188e7ff61170572db3b92f9cb58964a0",
+      "raw": null
+    },
+    {
+      "id": "4QP23S65",
+      "key": "4QP23S65",
+      "version": 0,
+      "type": "highlight",
+      "text": "object, group and room",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "4",
+      "sortIndex": "00003|002038|00397",
+      "position": {
+        "pageIndex": 3,
+        "rects": [
+          [
+            172.465,
+            386.261,
+            266.192,
+            394.899
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-07T01:28:20Z",
+      "readOnly": false,
+      "parentItem": "E9YMJBLV",
+      "contentHash": "6de4b22167dd5b32b6b74af69c988c4564cb29e8ae6548cd6d009f3202e233b1",
+      "raw": null
+    },
+    {
+      "id": "ERY456IN",
+      "key": "ERY456IN",
+      "version": 0,
+      "type": "highlight",
+      "text": "A mobile agent is tasked with navigating to an object o specified by its category c in an unknown environment.",
+      "comment": "",
+      "color": "#ff6666",
+      "pageLabel": "4",
+      "sortIndex": "00003|000045|00095",
+      "position": {
+        "pageIndex": 3,
+        "rects": [
+          [
+            192.771,
+            687.738,
+            504.351,
+            696.764
+          ],
+          [
+            108.0,
+            676.828,
+            230.985,
+            685.784
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-07T01:26:17Z",
+      "readOnly": false,
+      "parentItem": "E9YMJBLV",
+      "contentHash": "cc0116768bee13e96d0e34b2cb65fe56502e89b9b2c958652a87f63db7eae97f",
+      "raw": null
+    },
+    {
+      "id": "AWCI6ZB8",
+      "key": "AWCI6ZB8",
+      "version": 0,
+      "type": "highlight",
+      "text": "the definition of zero-shot object navigation",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "3",
+      "sortIndex": "00002|002942|00680",
+      "position": {
+        "pageIndex": 2,
+        "rects": [
+          [
+            232.029,
+            102.575,
+            403.896,
+            111.213
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-07T01:25:49Z",
+      "readOnly": false,
+      "parentItem": "E9YMJBLV",
+      "contentHash": "6792b5820662541f44d221ca21f06fef3aeff3cc560fd9ac59391af297671e18",
+      "raw": null
+    },
+    {
+      "id": "23K3238A",
+      "key": "23K3238A",
+      "version": 0,
+      "type": "highlight",
+      "text": "design a re-perception mechanism to empower",
+      "comment": "",
+      "color": "#ff6666",
+      "pageLabel": "1",
+      "sortIndex": "00000|000896|00390",
+      "position": {
+        "pageIndex": 0,
+        "rects": [
+          [
+            143.866,
+            393.027,
+            333.842,
+            401.665
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-07T01:15:23Z",
+      "readOnly": false,
+      "parentItem": "E9YMJBLV",
+      "contentHash": "b7961f8d1182965785f5e3b9ffa60028b1935391d81c32fd562611cdb01aaff1",
+      "raw": null
+    },
+    {
+      "id": "EDK2IKIV",
+      "key": "EDK2IKIV",
+      "version": 0,
+      "type": "highlight",
+      "text": "hierarchical chain-of-thought prompt to help LLM reason the goal location according to scene context by traversing the nodes and edges",
+      "comment": "",
+      "color": "#ff6666",
+      "pageLabel": "1",
+      "sortIndex": "00000|000724|00357",
+      "position": {
+        "pageIndex": 0,
+        "rects": [
+          [
+            309.139,
+            425.755,
+            468.131,
+            434.393
+          ],
+          [
+            143.866,
+            414.846,
+            468.131,
+            423.484
+          ],
+          [
+            143.866,
+            403.937,
+            207.464,
+            412.575
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-07T01:14:23Z",
+      "readOnly": false,
+      "parentItem": "E9YMJBLV",
+      "contentHash": "9277be7bcbc66a4696aca700e26f4fd4fc902e0adff07557764051265ac56e33",
+      "raw": null
+    },
+    {
+      "id": "NWBA7N36",
+      "key": "NWBA7N36",
+      "version": 0,
+      "type": "highlight",
+      "text": "3D scene graph",
+      "comment": "",
+      "color": "#ff6666",
+      "pageLabel": "1",
+      "sortIndex": "00000|000602|00335",
+      "position": {
+        "pageIndex": 0,
+        "rects": [
+          [
+            361.973,
+            447.573,
+            423.06,
+            456.211
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-07T01:14:01Z",
+      "readOnly": false,
+      "parentItem": "E9YMJBLV",
+      "contentHash": "fb85edd16be9c227ca0dfa00cd0e597f7502947aee6d00bfa20dcf569b5b5994",
+      "raw": null
+    },
+    {
+      "id": "AAVD42IT",
+      "key": "AAVD42IT",
+      "version": 0,
+      "type": "highlight",
+      "text": "in-depth reasoning.",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "1",
+      "sortIndex": "00000|000461|00313",
+      "position": {
+        "pageIndex": 0,
+        "rects": [
+          [
+            343.242,
+            469.391,
+            423.134,
+            478.029
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-07T01:13:36Z",
+      "readOnly": false,
+      "parentItem": "E9YMJBLV",
+      "contentHash": "a3ec0d0eab9f4efc1586c7726289314058c1b5a8d73f68f351d94f54bc5d8e30",
+      "raw": null
+    },
+    {
+      "id": "MHJSBI88",
+      "key": "MHJSBI88",
+      "version": 0,
+      "type": "highlight",
+      "text": "text of spatially closed objects",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "1",
+      "sortIndex": "00000|000401|00303",
+      "position": {
+        "pageIndex": 0,
+        "rects": [
+          [
+            378.94,
+            480.3,
+            468.134,
+            488.938
+          ],
+          [
+            143.866,
+            469.391,
+            172.655,
+            478.029
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-07T01:13:31Z",
+      "readOnly": false,
+      "parentItem": "E9YMJBLV",
+      "contentHash": "7e41b665a069f7c0d17b4d40e9841e142afc76bd2b2f81dac98b5c0f53175950",
+      "raw": null
+    }
+  ],
+  "notes": [
+    {
+      "id": "STVRNZJB",
+      "key": "STVRNZJB",
+      "version": 0,
+      "html": "Comment: Accepted to NeurIPS 2024. Project page: https://bagh2178.github.io/SG-Nav/",
+      "tags": [],
+      "dateModified": "2026-04-06T08:40:44Z",
+      "parentItem": "VYUSNMWR",
+      "contentHash": "0d060b3bccb795697b86766515a0e16a8bc7270d56fbc1879da6e823b3ed33d8",
+      "displayHtml": "Comment: Accepted to NeurIPS 2024. Project page: https://bagh2178.github.io/SG-Nav/"
+    }
+  ],
+  "exportedAt": "2026-10-29T07:58:15+00:00"
+}

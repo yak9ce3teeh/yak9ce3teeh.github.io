@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Paper Library Reader</title>
+<link rel="stylesheet" href="./assets/vendor/pdfjs/web/pdf_viewer.css">
+<link rel="stylesheet" href="./reader.css">
+<script type="importmap">
+{"imports":{"pdfjs-dist/build/pdf.mjs":"./assets/vendor/pdfjs/build/pdf.mjs"}}
+</script>
+</head>
+<body>
+<a class="skip" href="#notesPane">Skip to notes</a>
+<header class="topbar">
+  <div class="title-wrap">
+    <a class="back" id="backLink" href="../index.html" aria-label="Back to paper library">&larr; Library</a>
+    <h1 id="paperTitle" class="paper-title">Loading paper&hellip;</h1>
+  </div>
+  <div class="top-actions">
+    <button class="btn" id="btnUndoDelete" type="button" disabled>Undo local deletion</button>
+    <a class="btn" id="pdfDirect" href="#" target="_blank" rel="noopener" aria-label="Open PDF file directly">Open PDF</a>
+    <button class="btn" id="btnSettings" type="button" aria-haspopup="dialog" aria-controls="settingsDialog">Settings / Connect</button>
+  </div>
+</header>
+
+<div class="statusbar" role="status" aria-live="polite">
+  <span class="chip" id="stateChip" data-state="snapshot">Published snapshot</span>
+  <span class="chip" id="zoteroChip" data-state="off">Zotero: not connected</span>
+  <span class="chip" id="translationChip" data-state="off">Translation: unknown</span>
+  <span class="status-msg" id="statusMsg"></span>
+</div>
+
+<main class="workspace" id="workspace">
+  <section class="pdf-pane" id="pdfPane" aria-label="PDF document">
+    <div class="toolbar" role="toolbar" aria-label="PDF controls">
+      <button class="tb" id="btnFirst" type="button" title="First page" aria-label="First page">&#8676;</button>
+      <button class="tb" id="btnPrev" type="button" title="Previous page" aria-label="Previous page">&#8592;</button>
+      <label class="page-input-wrap" for="pageInput">Page
+        <input id="pageInput" class="page-input" type="number" min="1" step="1" inputmode="numeric" value="1" aria-label="Page number">
+      </label>
+      <span class="page-total" id="pageTotal" aria-live="polite">of ?</span>
+      <button class="tb" id="btnNext" type="button" title="Next page" aria-label="Next page">&#8594;</button>
+      <button class="tb" id="btnLast" type="button" title="Last page" aria-label="Last page">&#8677;</button>
+      <span class="sep" aria-hidden="true"></span>
+      <button class="tb" id="btnZoomOut" type="button" title="Zoom out" aria-label="Zoom out">&minus;</button>
+      <span class="zoom-val" id="zoomVal">100%</span>
+      <button class="tb" id="btnZoomIn" type="button" title="Zoom in" aria-label="Zoom in">+</button>
+      <button class="tb tb-wide" id="btnFitWidth" type="button" title="Fit width" aria-pressed="false">Fit width</button>
+      <button class="tb tb-wide" id="btnFitPage" type="button" title="Fit page" aria-pressed="false">Fit page</button>
+      <button class="tb" id="btnRotate" type="button" title="Rotate clockwise" aria-label="Rotate page clockwise">&#8635;</button>
+      <span class="sep" aria-hidden="true"></span>
+      <button class="tb" id="btnHighlight" type="button" title="Highlight selected text" aria-pressed="false">Highlight</button>
+      <button class="tb" id="btnUnderline" type="button" title="Underline selected text" aria-pressed="false">Underline</button>
+      <button class="tb" id="btnPointNote" type="button" title="Place a point note on the page" aria-pressed="false">Point note</button>
+      <button class="tb" id="btnCopy" type="button" title="Copy selected text">Copy</button>
+      <label class="tb-check" title="Enable translate action for selected text"><input type="checkbox" id="chkTranslate"> Translate</label>
+      <button class="tb" id="btnTranslateSel" type="button" title="Translate selected text (requires local companion)" disabled>Translate selection</button>
+    </div>
+    <div class="pdf-scroll" id="pdfScroll" tabindex="0" aria-label="Scrollable PDF pages">
+      <div class="pages" id="pagesContainer"></div>
+      <div class="loading-overlay" id="pdfLoading" hidden><div class="spinner" aria-hidden="true"></div><span>Loading PDF&hellip;</span></div>
+      <div class="pdf-error" id="pdfError" hidden role="alert"></div>
+    </div>
+    <div class="sel-popup" id="selPopup" hidden role="dialog" aria-label="Selection actions">
+      <button type="button" data-act="highlight">Highlight</button>
+      <button type="button" data-act="underline">Underline</button>
+      <button type="button" data-act="copy">Copy</button>
+      <button type="button" data-act="translate">Translate</button>
+    </div>
+  </section>
+
+  <div class="divider" id="divider" role="separator" aria-orientation="vertical" aria-label="Resize PDF and notes panes" aria-valuemin="20" aria-valuemax="85" aria-valuenow="64" tabindex="0"></div>
+
+  <aside class="notes-pane" id="notesPane" aria-label="Notes and annotations">
+    <div class="pane-tabs" role="tablist" aria-label="Side panel">
+      <button role="tab" id="tabAnno" class="pane-tab active" aria-selected="true" aria-controls="annoPanel" type="button">Annotations <span class="count" id="annoCount">0</span></button>
+      <button role="tab" id="tabNotes" class="pane-tab" aria-selected="false" aria-controls="notesPanel" type="button">Notes <span class="count" id="noteCount">0</span></button>
+      <button role="tab" id="tabTrans" class="pane-tab" aria-selected="false" aria-controls="transPanel" type="button">Translation</button>
+    </div>
+
+    <div class="pane-body" id="annoPanel" role="tabpanel" aria-labelledby="tabAnno">
+      <div class="pane-head">
+        <span class="hint">Select text in the PDF to highlight or underline.</span>
+        <div class="pane-head-actions">
+          <button class="btn small" id="btnInvertPending" type="button" title="Discard unsynced local changes by reloading snapshot (keeps drafts) - local only">Revert view</button>
+        </div>
+      </div>
+      <div class="anno-list" id="annoList"></div>
+    </div>
+
+    <div class="pane-body" id="notesPanel" role="tabpanel" aria-labelledby="tabNotes" hidden>
+      <div class="pane-head">
+        <button class="btn small primary" id="btnNewNote" type="button">New note</button>
+        <span class="hint" id="noteSaveState" aria-live="polite">Saved</span>
+      </div>
+      <div class="note-editor">
+        <div class="note-toolbar" role="toolbar" aria-label="Note formatting">
+          <select id="noteBlock" class="note-select" aria-label="Block format" title="Paragraph style">
+            <option value="p">Paragraph</option>
+            <option value="h1">Heading 1</option>
+            <option value="h2">Heading 2</option>
+            <option value="h3">Heading 3</option>
+          </select>
+          <button class="tb" type="button" data-cmd="bold" title="Bold" aria-label="Bold"><b>B</b></button>
+          <button class="tb" type="button" data-cmd="italic" title="Italic" aria-label="Italic"><i>I</i></button>
+          <button class="tb" type="button" data-cmd="insertUnorderedList" title="Bulleted list" aria-label="Bulleted list">&#8226; List</button>
+          <button class="tb" type="button" data-cmd="insertOrderedList" title="Numbered list" aria-label="Numbered list">1. List</button>
+          <button class="tb" type="button" data-cmd="createLink" title="Insert link" aria-label="Insert link">Link</button>
+          <button class="tb" type="button" id="btnInsertQuote" title="Insert selected annotation quote" disabled>Quote</button>
+        </div>
+        <div id="noteEditor" class="note-content" contenteditable="false" role="textbox" aria-multiline="true" aria-label="Note content" data-placeholder="Create or select a note to write here&hellip;"></div>
+        <div class="note-foot">
+          <label class="sr-only" for="noteSelect">Select note</label>
+          <select id="noteSelect" class="note-select grow" aria-label="Choose note to edit"></select>
+          <button class="btn small danger" id="btnDeleteNote" type="button">Delete note</button>
+        </div>
+      </div>
+      <div class="pane-head sub"><span class="hint">Existing notes from the published snapshot are shown below and open by default.</span></div>
+      <div class="anno-list" id="noteList"></div>
+    </div>
+
+    <div class="pane-body" id="transPanel" role="tabpanel" aria-labelledby="tabTrans" hidden>
+      <div class="pane-head">
+        <span class="hint">Translation is sent only when you press Translate. It requires the local companion service with a configured API key.</span>
+      </div>
+      <div class="trans-block">
+        <label class="sr-only" for="transSource">Text to translate</label>
+        <textarea id="transSource" rows="4" class="trans-text" maxlength="4000" placeholder="Select text in the PDF, then press Translate selection" aria-label="Source text"></textarea>
+        <div class="trans-actions">
+          <button class="btn small primary" id="btnTranslate" type="button" disabled>Translate</button>
+          <button class="btn small" id="btnAddTransToNote" type="button" disabled>Add to note</button>
+          <span class="status-msg" id="transStatus"></span>
+        </div>
+        <div class="trans-result" id="transResult" hidden></div>
+      </div>
+    </div>
+  </aside>
+</main>
+
+<dialog id="settingsDialog" class="dialog" aria-label="Settings and local companion connection">
+  <form method="dialog" class="dialog-inner">
+    <h2>Settings / Connect</h2>
+    <p class="hint">Read and edit browser-local drafts from the published snapshot. Translation and native Zotero sync require the local workspace running on your computer.</p>
+    <fieldset>
+      <legend>Local companion</legend>
+      <label for="tokenInput">Local session link or token</label>
+      <input id="tokenInput" type="password" autocomplete="off" spellcheck="false" placeholder="Paste the link copied from your local workspace" class="wide-input">
+      <label for="localUrlInput">Local companion URL</label>
+      <input id="localUrlInput" type="text" value="http://127.0.0.1:23120" class="wide-input" spellcheck="false">
+      <div class="dialog-actions">
+        <button type="button" class="btn primary" id="btnConnect">Connect</button>
+        <button type="button" class="btn" id="btnDisconnect">Disconnect</button>
+        <button type="button" class="btn" id="btnOpenLocal">Open local reader</button>
+        <button type="button" class="btn" id="btnCopySession">Copy local session link</button>
+      </div>
+      <p class="hint" id="connectStatus" aria-live="polite"></p>
+    </fieldset>
+    <fieldset>
+      <legend>Zotero</legend>
+      <div class="dialog-actions">
+        <button type="button" class="btn" id="btnAuthorize">Authorize Zotero</button>
+        <button type="button" class="btn" id="btnPull">Pull from Zotero</button>
+        <button type="button" class="btn" id="btnReconcile">Review new Zotero library</button>
+        <button type="button" class="btn primary" id="btnSync">Sync with Zotero</button>
+      </div>
+      <p class="hint" id="zoteroStatusDialog" aria-live="polite"></p>
+    </fieldset>
+    <fieldset>
+      <legend>Drafts and recovery</legend>
+      <div class="dialog-actions">
+        <button type="button" class="btn" id="btnExportDrafts">Export drafts (JSON)</button>
+        <label class="btn file-label" for="draftImportInput">Import drafts (JSON)</label>
+        <input id="draftImportInput" type="file" accept="application/json,.json" hidden>
+      </div>
+      <p class="hint">Browser drafts are stored locally and are never published by this page.</p>
+    </fieldset>
+    <fieldset>
+      <legend>Starting the local companion</legend>
+      <ol class="setup-steps">
+        <li>Double-click <strong>Paper Reader.cmd</strong> in your Papers folder to open the private local workspace.</li>
+        <li>Ensure Zotero 10 is open; use <em>Authorize Zotero</em> to grant access when prompted.</li>
+        <li>The launcher connects automatically. For a public-page connection, copy the temporary session link from the local workspace and use its token here only if your browser allows localhost access.</li>
+        <li>Translation needs a configured DeepSeek key on the companion; keys are never requested by this page.</li>
+      </ol>
+    </fieldset>
+    <div class="dialog-actions end">
+      <button type="submit" class="btn" value="close">Close</button>
+    </div>
+  </form>
+</dialog>
+
+<dialog id="conflictDialog" class="dialog" aria-label="Resolve sync conflicts">
+  <form method="dialog" class="dialog-inner">
+    <h2>Sync conflicts</h2>
+    <p class="hint">These items changed both locally and in Zotero. Nothing was overwritten. Choose how to resolve each one.</p>
+    <div id="conflictList" class="conflict-list"></div>
+    <div class="dialog-actions end">
+      <button type="button" class="btn" id="btnConflictClose">Close</button>
+    </div>
+  </form>
+</dialog>
+
+<div id="toast" class="toast" role="status" aria-live="assertive" hidden></div>
+<script type="module" src="./reader.js"></script>
+</body>
+</html>

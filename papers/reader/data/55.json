@@ -1,0 +1,597 @@
+{
+  "schemaVersion": 1,
+  "fileId": 55,
+  "pdf": {
+    "url": "../Scene%20Understanding%20and%20Memory/Retrieval%20and%20Embodied%20Memory/2025%20-%20Open-World%203D%20Scene%20Graph%20Generation%20RAR.pdf",
+    "sha256": "ae099ecab9ae7879755b700ea17a084fbb76426ef8f98c91aefb1f0a205f48ab"
+  },
+  "zotero": {
+    "libraryType": "user",
+    "libraryId": 1,
+    "parentKey": "CNZHHHPC",
+    "attachmentKey": "KJZIDYDT"
+  },
+  "mapping": {
+    "status": "matched",
+    "basis": "sha256"
+  },
+  "annotations": [
+    {
+      "id": "4EU8JWDB",
+      "key": "4EU8JWDB",
+      "version": 0,
+      "type": "highlight",
+      "text": "Task IV: Open-Scene Task Planning",
+      "comment": "",
+      "color": "#ff6666",
+      "pageLabel": "5",
+      "sortIndex": "00004|002973|00377",
+      "position": {
+        "pageIndex": 4,
+        "rects": [
+          [
+            319.5,
+            405.58,
+            482.946,
+            414.606
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-05T01:53:38Z",
+      "readOnly": false,
+      "parentItem": "KJZIDYDT",
+      "contentHash": "7a229179af5da5d992e20d84fbfacab94129fdf0c73de750f4952c57833eef07",
+      "raw": null
+    },
+    {
+      "id": "APNAWC5R",
+      "key": "APNAWC5R",
+      "version": 0,
+      "type": "highlight",
+      "text": "Task III: Multimodal Instance Retrieval",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "5",
+      "sortIndex": "00004|002631|00271",
+      "position": {
+        "pageIndex": 4,
+        "rects": [
+          [
+            319.5,
+            511.704,
+            494.354,
+            520.73
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-05T01:51:30Z",
+      "readOnly": false,
+      "parentItem": "KJZIDYDT",
+      "contentHash": "de1f31292c671e6dc64cedfaf51535aa11ebc5d1b3b508981929392140ccee17",
+      "raw": null
+    },
+    {
+      "id": "9GY6BPNF",
+      "key": "9GY6BPNF",
+      "version": 0,
+      "type": "highlight",
+      "text": "Task II: Text-to-Visual Scene Grounding",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "5",
+      "sortIndex": "00004|002280|00165",
+      "position": {
+        "pageIndex": 4,
+        "rects": [
+          [
+            319.5,
+            617.828,
+            489.88,
+            626.854
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-05T01:50:49Z",
+      "readOnly": false,
+      "parentItem": "KJZIDYDT",
+      "contentHash": "df92c49c943e9c935afb6646bc34178d805515f7ec210d0e77f10105920e61b2",
+      "raw": null
+    },
+    {
+      "id": "WHKYHQQR",
+      "key": "WHKYHQQR",
+      "version": 0,
+      "type": "highlight",
+      "text": "Scene-Driven Multimodal Interaction",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "5",
+      "sortIndex": "00004|001522|00579",
+      "position": {
+        "pageIndex": 4,
+        "rects": [
+          [
+            54.0,
+            203.095,
+            228.917,
+            212.902
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-03T16:00:36Z",
+      "readOnly": false,
+      "parentItem": "KJZIDYDT",
+      "contentHash": "983a9af9f256ff532be8b67c0aceeff4d3d92e3b41a4629a348e9901de8a2919",
+      "raw": null
+    },
+    {
+      "id": "URN9ZIMU",
+      "key": "URN9ZIMU",
+      "version": 0,
+      "type": "highlight",
+      "text": "Grounded Prompt-Based Reasoning.",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "4",
+      "sortIndex": "00003|003356|00624",
+      "position": {
+        "pageIndex": 3,
+        "rects": [
+          [
+            319.5,
+            158.582,
+            487.001,
+            167.608
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-03T15:58:23Z",
+      "readOnly": false,
+      "parentItem": "KJZIDYDT",
+      "contentHash": "570b5c1fa1d0fecb8e6d7fdc8705e9009c6ab3632b1db6d9eac1e0c4e3ecec92",
+      "raw": null
+    },
+    {
+      "id": "4HVFBKD2",
+      "key": "4HVFBKD2",
+      "version": 0,
+      "type": "highlight",
+      "text": "semantic consistency",
+      "comment": "",
+      "color": "#ff6666",
+      "pageLabel": "4",
+      "sortIndex": "00003|002945|00488",
+      "position": {
+        "pageIndex": 3,
+        "rects": [
+          [
+            430.414,
+            294.669,
+            516.73,
+            303.307
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-03T15:57:56Z",
+      "readOnly": false,
+      "parentItem": "KJZIDYDT",
+      "contentHash": "8cac237625553a9d739b044268f913d61e1138acf8f1848b984fc84d35081e02",
+      "raw": null
+    },
+    {
+      "id": "BVNPTX39",
+      "key": "BVNPTX39",
+      "version": 0,
+      "type": "highlight",
+      "text": "Vector Database Construction.",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "4",
+      "sortIndex": "00003|002276|00313",
+      "position": {
+        "pageIndex": 3,
+        "rects": [
+          [
+            319.5,
+            469.013,
+            449.582,
+            478.039
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-03T15:57:11Z",
+      "readOnly": false,
+      "parentItem": "KJZIDYDT",
+      "contentHash": "63f140c7b1ad5a85d7eaf4cf53b32b4ecdba17debf16c9d59fc672cdbf998857",
+      "raw": null
+    },
+    {
+      "id": "3Y467AEI",
+      "key": "3Y467AEI",
+      "version": 0,
+      "type": "highlight",
+      "text": "Retrieval-Augmented Semantic Reasoning",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "4",
+      "sortIndex": "00003|002125|00261",
+      "position": {
+        "pageIndex": 3,
+        "rects": [
+          [
+            319.5,
+            520.89,
+            516.235,
+            530.697
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-03T15:56:40Z",
+      "readOnly": false,
+      "parentItem": "KJZIDYDT",
+      "contentHash": "fba4cdf2f892a28cc6e607fc1d1ca3006d7a9bfb15899b3732f3453c4c07f18b",
+      "raw": null
+    },
+    {
+      "id": "YHC9SDNR",
+      "key": "YHC9SDNR",
+      "version": 0,
+      "type": "highlight",
+      "text": "Semantic Relationship Extraction.",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "4",
+      "sortIndex": "00003|001443|00057",
+      "position": {
+        "pageIndex": 3,
+        "rects": [
+          [
+            319.5,
+            725.885,
+            464.406,
+            734.911
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-03T15:56:28Z",
+      "readOnly": false,
+      "parentItem": "KJZIDYDT",
+      "contentHash": "d3b098d13214c0fc9387c9845b949ef1f5fc039cd5b95a785c76a830e2b74032",
+      "raw": null
+    },
+    {
+      "id": "A9DLLL6L",
+      "key": "A9DLLL6L",
+      "version": 0,
+      "type": "highlight",
+      "text": "Qwen2VL-72B-Instruct-GPTQ-Int4",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "4",
+      "sortIndex": "00003|001535|00068",
+      "position": {
+        "pageIndex": 3,
+        "rects": [
+          [
+            525.915,
+            714.926,
+            558.005,
+            723.564
+          ],
+          [
+            319.5,
+            703.968,
+            435.156,
+            712.606
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-03T15:56:20Z",
+      "readOnly": false,
+      "parentItem": "KJZIDYDT",
+      "contentHash": "c7578ba40589bd1bc9deaffecb12027512d41dffe098516e2bc60ebf4c1c714b",
+      "raw": null
+    },
+    {
+      "id": "HNA44L3R",
+      "key": "HNA44L3R",
+      "version": 0,
+      "type": "highlight",
+      "text": "Reliable Object Filtering.",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "4",
+      "sortIndex": "00003|000950|00489",
+      "position": {
+        "pageIndex": 3,
+        "rects": [
+          [
+            54.0,
+            293.364,
+            163.808,
+            302.39
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-03T15:55:57Z",
+      "readOnly": false,
+      "parentItem": "KJZIDYDT",
+      "contentHash": "8444942fbd4c012767750e695cf721d8d9799385ac4dbfb692057247c8875115",
+      "raw": null
+    },
+    {
+      "id": "KU9BPLL4",
+      "key": "KU9BPLL4",
+      "version": 0,
+      "type": "highlight",
+      "text": "Best-View Selection and Labeling.",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "4",
+      "sortIndex": "00003|000502|00320",
+      "position": {
+        "pageIndex": 3,
+        "rects": [
+          [
+            54.0,
+            462.079,
+            200.022,
+            471.105
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-03T15:55:13Z",
+      "readOnly": false,
+      "parentItem": "KJZIDYDT",
+      "contentHash": "b7d17c2dba32a5f0bc253d5ec96dcc8fe92d6d8622f088af87c52bde64b5b8cb",
+      "raw": null
+    },
+    {
+      "id": "UND2LQLC",
+      "key": "UND2LQLC",
+      "version": 0,
+      "type": "highlight",
+      "text": "Lie Algebra",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "3",
+      "sortIndex": "00002|002711|00469",
+      "position": {
+        "pageIndex": 2,
+        "rects": [
+          [
+            344.407,
+            313.212,
+            392.267,
+            322.248
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-03T15:52:16Z",
+      "readOnly": false,
+      "parentItem": "KJZIDYDT",
+      "contentHash": "6b6689044c2308554dd1cd3ca97d2ee7b53c1a9a281744c1f734a2b7dd8f9d26",
+      "raw": null
+    },
+    {
+      "id": "DI6ZIV9U",
+      "key": "DI6ZIV9U",
+      "version": 0,
+      "type": "highlight",
+      "text": "Multi-Frame Object Detection",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "3",
+      "sortIndex": "00002|002183|00566",
+      "position": {
+        "pageIndex": 2,
+        "rects": [
+          [
+            54.0,
+            216.314,
+            189.84,
+            225.34
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-03T15:50:15Z",
+      "readOnly": false,
+      "parentItem": "KJZIDYDT",
+      "contentHash": "2f3b35edb9a66df53f0bf5da1f0bdcf0d531fec0efcaf76bcf3702ab737ad4ee",
+      "raw": null
+    },
+    {
+      "id": "6DCE9RVH",
+      "key": "6DCE9RVH",
+      "version": 0,
+      "type": "highlight",
+      "text": "question answering, visual grounding, instance retrieval, and task planning",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "3",
+      "sortIndex": "00002|001815|00463",
+      "position": {
+        "pageIndex": 2,
+        "rects": [
+          [
+            147.519,
+            319.434,
+            292.505,
+            328.072
+          ],
+          [
+            54.0,
+            308.475,
+            214.378,
+            317.113
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-03T15:50:01Z",
+      "readOnly": false,
+      "parentItem": "KJZIDYDT",
+      "contentHash": "452ed4c5b1064c595dd9c39249762ab3c96d337c048381238f06b0abf2ef97e6",
+      "raw": null
+    },
+    {
+      "id": "B3MF8NZZ",
+      "key": "B3MF8NZZ",
+      "version": 0,
+      "type": "highlight",
+      "text": "(2) a retrieval-augmented reasoning pipeline that encodes scene graphs into a vector database to support text/image-conditioned queries.",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "1",
+      "sortIndex": "00000|000898|00367",
+      "position": {
+        "pageIndex": 0,
+        "rects": [
+          [
+            119.698,
+            426.282,
+            282.537,
+            434.056
+          ],
+          [
+            63.963,
+            416.319,
+            282.537,
+            424.093
+          ],
+          [
+            63.963,
+            406.357,
+            178.213,
+            414.131
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-03T14:39:09Z",
+      "readOnly": false,
+      "parentItem": "KJZIDYDT",
+      "contentHash": "04d9ee1fd27d0391f5b757e203d3ce255fcf9e5b90810dcd1dbccbd278165444",
+      "raw": null
+    },
+    {
+      "id": "WVA3S5AY",
+      "key": "WVA3S5AY",
+      "version": 0,
+      "type": "highlight",
+      "text": "(1) a dynamic scene graph generation module that detects objects and infers semantic relationships without fixed label sets",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "1",
+      "sortIndex": "00000|000749|00338",
+      "position": {
+        "pageIndex": 0,
+        "rects": [
+          [
+            97.39,
+            446.207,
+            282.537,
+            453.981
+          ],
+          [
+            63.963,
+            436.245,
+            282.537,
+            444.019
+          ],
+          [
+            63.963,
+            426.282,
+            98.062,
+            434.056
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-03T14:39:05Z",
+      "readOnly": false,
+      "parentItem": "KJZIDYDT",
+      "contentHash": "b142a0c193d365181ddc3bdb39e0b463e233573e2325a88b693f1b16cbba2f1c",
+      "raw": null
+    },
+    {
+      "id": "445GAWEL",
+      "key": "445GAWEL",
+      "version": 0,
+      "type": "highlight",
+      "text": "a unified framework for Open-World 3D Scene Graph Generation with RetrievalAugmented Reasoning",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "1",
+      "sortIndex": "00000|000430|00268",
+      "position": {
+        "pageIndex": 0,
+        "rects": [
+          [
+            210.402,
+            515.946,
+            282.537,
+            523.72
+          ],
+          [
+            63.963,
+            505.983,
+            282.537,
+            513.757
+          ],
+          [
+            63.963,
+            496.02,
+            146.508,
+            503.794
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-03T14:17:22Z",
+      "readOnly": false,
+      "parentItem": "KJZIDYDT",
+      "contentHash": "dbf31b9c2c0188da9009cab943d610b99f75152ab00cd7e1dc609acbe5ca7b29",
+      "raw": null
+    }
+  ],
+  "notes": [
+    {
+      "id": "BVK3JENR",
+      "key": "BVK3JENR",
+      "version": 0,
+      "html": "<div data-schema-version=\"9\"><h1><span style=\"color: rgb(25, 60, 71);\"><span style=\"background-color: rgb(238, 249, 253);\">Open-World 3D Scene Graph Generation for Retrieval-Augmented Reasoning</span></span></h1>\n<h2>⚙️ Metadata</h2>\n<ul>\n<li>\n<strong>Item Type:</strong> preprint\n</li>\n<li>\n<strong>Author:</strong> [[Fei Yu]], [[Quan Deng]], [[Shengeng Tang]], [[Yuehua Li]], [[Lechao Cheng]]\n</li>\n<li>\n<strong>Date Added:</strong> 2026/4/3 17:07:41\n</li>\n<li>\n<strong>DOI: </strong><a href=\"https://doi.org/10.48550/arXiv.2511.05894\" rel=\"noopener noreferrer nofollow\">10.48550/arXiv.2511.05894</a>\n</li>\n<li>\n<strong>Cite key:</strong>\n</li>\n<li>\n<strong>Journal:</strong>\n</li>\n<li>\n<strong>Journal Tags:</strong>\n</li>\n<li>\n<strong>Publication Date: </strong>2025-11-08\n</li>\n<li>\n<strong>Tags:</strong> #Computer Science - Computer Vision and Pattern Recognition, #zotero\n</li>\n<li>\n<strong>PDF Attachments: </strong><a href=\"zotero://open-pdf/library/items/KJZIDYDT\" rel=\"noopener noreferrer nofollow\">Yu 等 - 2025 - Open-World 3D Scene Graph Generation for Retrieval-Augmented Reasoning.pdf</a>\n</li>\n<li>\n<strong>Related Items: </strong><span style=\"color: gray;\">无相关条目</span>\n</li>\n</ul>\n<h2>📜 Abstract</h2>\n<p> Understanding 3D scenes in open-world settings poses fundamental challenges for vision and robotics, particularly due to the limitations of closed-vocabulary supervision and static annotations. To address this, we propose a unified framework for Open-World 3D Scene Graph Generation with RetrievalAugmented Reasoning, which enables generalizable and interactive 3D scene understanding. Our method integrates Vision-Language Models (VLMs) with retrieval-based reasoning to support multimodal exploration and languageguided interaction. The framework comprises two key components: (1) a dynamic scene graph generation module that detects objects and infers semantic relationships without fixed label sets, and (2) a retrieval-augmented reasoning pipeline that encodes scene graphs into a vector database to support text/image-conditioned queries. We evaluate our method on 3DSSG and Replica benchmarks across four tasks—scene question answering, visual grounding, instance retrieval, and task planning—demonstrating robust generalization and superior performance in diverse environments. Our results highlight the effectiveness of combining open-vocabulary perception with retrieval-based reasoning for scalable 3D scene understanding.</p>\n<h2>📚 Zotero links</h2>\n<ul>\n<li>\n<a href=\"zotero://select/items/1_CNZHHHPC\" rel=\"noopener noreferrer nofollow\">Local library</a>\n</li>\n</ul>\n<h1>Notes</h1>\n<h2>🤔 Personal Summary</h2>\n<p>1.Tags: unified framework for Open-World 3D Scene Graph Generation</p>\n<p>2. Methodology</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\"><img alt=\"\" width=\"1346\" height=\"866\" data-attachment-key=\"CJG9VU4S\"></p>\n<h3>💭 Thought Inspiration</h3>\n<blockquote>\n<p>Tips: What aspects did you question, how do you think it can be improved?</p>\n</blockquote>\n<p></p>\n<h3>📜 Conclusion</h3>\n<blockquote>\n<p>Tips: What was done, what problem was solved, innovations and shortcomings?</p>\n</blockquote>\n<p></p>\n</div>",
+      "tags": [],
+      "dateModified": "2026-04-05T01:53:53Z",
+      "parentItem": "CNZHHHPC",
+      "contentHash": "48faca4db0dbdb9f83cc8f6eaecca1d222de47d0c1a20370a2d63719abe2716e",
+      "displayHtml": "<div data-schema-version=\"9\"><h1><span style=\"color: rgb(25, 60, 71);\"><span style=\"background-color: rgb(238, 249, 253);\">Open-World 3D Scene Graph Generation for Retrieval-Augmented Reasoning</span></span></h1>\n<h2>⚙️ Metadata</h2>\n<ul>\n<li>\n<strong>Item Type:</strong> preprint\n</li>\n<li>\n<strong>Author:</strong> [[Fei Yu]], [[Quan Deng]], [[Shengeng Tang]], [[Yuehua Li]], [[Lechao Cheng]]\n</li>\n<li>\n<strong>Date Added:</strong> 2026/4/3 17:07:41\n</li>\n<li>\n<strong>DOI: </strong><a href=\"https://doi.org/10.48550/arXiv.2511.05894\" rel=\"noopener noreferrer nofollow\">10.48550/arXiv.2511.05894</a>\n</li>\n<li>\n<strong>Cite key:</strong>\n</li>\n<li>\n<strong>Journal:</strong>\n</li>\n<li>\n<strong>Journal Tags:</strong>\n</li>\n<li>\n<strong>Publication Date: </strong>2025-11-08\n</li>\n<li>\n<strong>Tags:</strong> #Computer Science - Computer Vision and Pattern Recognition, #zotero\n</li>\n<li>\n<strong>PDF Attachments: </strong><a href=\"zotero://open-pdf/library/items/KJZIDYDT\" rel=\"noopener noreferrer nofollow\">Yu 等 - 2025 - Open-World 3D Scene Graph Generation for Retrieval-Augmented Reasoning.pdf</a>\n</li>\n<li>\n<strong>Related Items: </strong><span style=\"color: gray;\">无相关条目</span>\n</li>\n</ul>\n<h2>📜 Abstract</h2>\n<p> Understanding 3D scenes in open-world settings poses fundamental challenges for vision and robotics, particularly due to the limitations of closed-vocabulary supervision and static annotations. To address this, we propose a unified framework for Open-World 3D Scene Graph Generation with RetrievalAugmented Reasoning, which enables generalizable and interactive 3D scene understanding. Our method integrates Vision-Language Models (VLMs) with retrieval-based reasoning to support multimodal exploration and languageguided interaction. The framework comprises two key components: (1) a dynamic scene graph generation module that detects objects and infers semantic relationships without fixed label sets, and (2) a retrieval-augmented reasoning pipeline that encodes scene graphs into a vector database to support text/image-conditioned queries. We evaluate our method on 3DSSG and Replica benchmarks across four tasks—scene question answering, visual grounding, instance retrieval, and task planning—demonstrating robust generalization and superior performance in diverse environments. Our results highlight the effectiveness of combining open-vocabulary perception with retrieval-based reasoning for scalable 3D scene understanding.</p>\n<h2>📚 Zotero links</h2>\n<ul>\n<li>\n<a href=\"zotero://select/items/1_CNZHHHPC\" rel=\"noopener noreferrer nofollow\">Local library</a>\n</li>\n</ul>\n<h1>Notes</h1>\n<h2>🤔 Personal Summary</h2>\n<p>1.Tags: unified framework for Open-World 3D Scene Graph Generation</p>\n<p>2. Methodology</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\"><img alt=\"\" width=\"1346\" height=\"866\" data-attachment-key=\"CJG9VU4S\" src=\"assets/note-images/CJG9VU4S/image.png\"></p>\n<h3>💭 Thought Inspiration</h3>\n<blockquote>\n<p>Tips: What aspects did you question, how do you think it can be improved?</p>\n</blockquote>\n<p></p>\n<h3>📜 Conclusion</h3>\n<blockquote>\n<p>Tips: What was done, what problem was solved, innovations and shortcomings?</p>\n</blockquote>\n<p></p>\n</div>"
+    },
+    {
+      "id": "LQUERS5G",
+      "key": "LQUERS5G",
+      "version": 0,
+      "html": "Comment: Accepted by AAAI 2026",
+      "tags": [],
+      "dateModified": "2026-03-21T00:50:58Z",
+      "parentItem": "CNZHHHPC",
+      "contentHash": "784be92e183a50a2cb7352c32aba9bd1e8fbed186ae3f60ca2d67b2f06fb9642",
+      "displayHtml": "Comment: Accepted by AAAI 2026"
+    }
+  ],
+  "exportedAt": "2026-10-29T07:58:15+00:00"
+}

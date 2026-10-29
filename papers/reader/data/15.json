@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "fileId": 15,
+  "pdf": {
+    "url": "../Humanoid%20Robotics/Motion%20Skills%20and%20Tracking/2026%20-%20HumanoidGPT.pdf",
+    "sha256": "e96ea94a53c1c8f72eb99aa2b1ea8f6559e48a1bb22acdf2a72898cb4e214ea1"
+  },
+  "zotero": {
+    "libraryType": "user",
+    "libraryId": 1,
+    "parentKey": "ZHB2IBH3",
+    "attachmentKey": "XEBJIBQB"
+  },
+  "mapping": {
+    "status": "matched",
+    "basis": "sha256"
+  },
+  "annotations": [
+    {
+      "id": "B5C97V44",
+      "key": "B5C97V44",
+      "version": 46,
+      "type": "highlight",
+      "text": "that videoestimated motion can materially improve tracking when the model and the training set are scaled appropriately.",
+      "comment": "",
+      "color": "#ff6666",
+      "pageLabel": "2",
+      "sortIndex": "00001|002600|00232",
+      "position": {
+        "pageIndex": 1,
+        "rects": [
+          [
+            494.454,
+            573.548,
+            542.199,
+            583.511
+          ],
+          [
+            314.388,
+            561.593,
+            541.133,
+            571.556
+          ],
+          [
+            314.854,
+            549.638,
+            542.798,
+            559.601
+          ],
+          [
+            315.213,
+            537.683,
+            365.073,
+            547.646
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-09-22T04:15:19Z",
+      "readOnly": false,
+      "parentItem": "XEBJIBQB",
+      "contentHash": "94e7cb550cf8af26919782802443616a9c6c60a641dc20d99896890e2bd00b0d",
+      "raw": null
+    }
+  ],
+  "notes": [
+    {
+      "id": "IR8SYRXM",
+      "key": "IR8SYRXM",
+      "version": 42,
+      "html": "<div data-schema-version=\"9\"><p>Comment: Accepted at CVPR 2026</p>\n<p>Humanoid-GPT: Motion Tracking, Transformer, 2B-frame retargeted corpus pretraining, data and model capacity scaling</p>\n<p></p>\n<p>Not Scaled:</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">current - Robot Motion In-betweening -7.2M frames, 10^4 trajectories, agility and generalization trade-off</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">topics - insufficient scale and mismatched training design</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\"></p>\n<p>What’s Done in Brief:</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">Scaled Dataset - LAFAN1, AMASS, Motion-X++, PHUMA, MotionMillion - 2B G1-retargeted</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">Modern Structure - causal - no future observations at test time + scalable transformer with GPT-style causal attention</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">Balanced Diversity - Harmonica Motion Embedding</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\"><img alt=\"\" width=\"1042\" height=\"707\" data-attachment-key=\"LMWTI7LF\"></p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\"></p>\n<p>1.Data Scaling up</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">a. Curation - AMASS, LAFAN1, MotionMillion, PHUMA → Filtering(Object Interactions) + Retargeting (Into 29DoF Unitree-G)<img alt=\"\" width=\"526\" height=\"279\" data-attachment-key=\"2325ATRF\"></p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">b. Harmonic Motion Embedding</p>\n<p style=\"padding-left: 80px;\" data-indent=\"2\">Periodic AutoEncoders + HME vector + K-Means clustering</p>\n<p style=\"padding-left: 80px;\" data-indent=\"2\"></p>\n<p>2. Scalable Generative Tracker</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">PPO</p>\n<p>Some Works to Read</p>\n<p><img alt=\"\" width=\"526\" height=\"279\" data-attachment-key=\"Q7TXWKI3\"></p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">Dataset: motions - 9, 24, 17 &nbsp;multimodal - 20, 43, 7, 25 &nbsp;contact - 16</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">Motion Tracking: Early 21, 22, 6, 44 &nbsp;Real-world Deployment - 8, 10, 5, 14, 40, 39, 18, 29, 42, 45 &nbsp;Generalization: GMT, UniTracker(teacher-student), HumanPlus(Transformer)</p>\n</div>",
+      "tags": [],
+      "dateModified": "2026-09-23T08:14:30Z",
+      "parentItem": "ZHB2IBH3",
+      "contentHash": "a6ec0db974cda55d7fc009b5f6a193f4fd24cf71d61d9aa07c06eabfaa269d42",
+      "displayHtml": "<div data-schema-version=\"9\"><p>Comment: Accepted at CVPR 2026</p>\n<p>Humanoid-GPT: Motion Tracking, Transformer, 2B-frame retargeted corpus pretraining, data and model capacity scaling</p>\n<p></p>\n<p>Not Scaled:</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">current - Robot Motion In-betweening -7.2M frames, 10^4 trajectories, agility and generalization trade-off</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">topics - insufficient scale and mismatched training design</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\"></p>\n<p>What’s Done in Brief:</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">Scaled Dataset - LAFAN1, AMASS, Motion-X++, PHUMA, MotionMillion - 2B G1-retargeted</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">Modern Structure - causal - no future observations at test time + scalable transformer with GPT-style causal attention</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">Balanced Diversity - Harmonica Motion Embedding</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\"><span class=\"image-unavailable\" role=\"note\">This image was not available in the Zotero attachment storage.</span></p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\"></p>\n<p>1.Data Scaling up</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">a. Curation - AMASS, LAFAN1, MotionMillion, PHUMA → Filtering(Object Interactions) + Retargeting (Into 29DoF Unitree-G)<img alt=\"\" width=\"526\" height=\"279\" data-attachment-key=\"2325ATRF\" src=\"assets/note-images/2325ATRF/image.png\"></p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">b. Harmonic Motion Embedding</p>\n<p style=\"padding-left: 80px;\" data-indent=\"2\">Periodic AutoEncoders + HME vector + K-Means clustering</p>\n<p style=\"padding-left: 80px;\" data-indent=\"2\"></p>\n<p>2. Scalable Generative Tracker</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">PPO</p>\n<p>Some Works to Read</p>\n<p><span class=\"image-unavailable\" role=\"note\">This image was not available in the Zotero attachment storage.</span></p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">Dataset: motions - 9, 24, 17 &nbsp;multimodal - 20, 43, 7, 25 &nbsp;contact - 16</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">Motion Tracking: Early 21, 22, 6, 44 &nbsp;Real-world Deployment - 8, 10, 5, 14, 40, 39, 18, 29, 42, 45 &nbsp;Generalization: GMT, UniTracker(teacher-student), HumanPlus(Transformer)</p>\n</div>"
+    }
+  ],
+  "exportedAt": "2026-10-29T07:58:15+00:00"
+}

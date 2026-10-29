@@ -1,0 +1,256 @@
+{
+  "schemaVersion": 1,
+  "fileId": 1,
+  "pdf": {
+    "url": "../Embodied%20Navigation/Navigation%20Methods%20and%20Surveys/2026%20-%20FocusNav.pdf",
+    "sha256": "5b7e6e32e0a63f29ad5fe1343a839e07954c1505a8159cfbaa15639bca9a6aa3"
+  },
+  "zotero": {
+    "libraryType": "user",
+    "libraryId": 1,
+    "parentKey": "BNJGWPZU",
+    "attachmentKey": "3XKH3WIG"
+  },
+  "mapping": {
+    "status": "matched",
+    "basis": "sha256"
+  },
+  "annotations": [
+    {
+      "id": "VN9LCZ57",
+      "key": "VN9LCZ57",
+      "version": 0,
+      "type": "highlight",
+      "text": "Fast-LIO",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "7",
+      "sortIndex": "00006|001979|00617",
+      "position": {
+        "pageIndex": 6,
+        "rects": [
+          [
+            120.959,
+            166.214,
+            157.332,
+            174.852
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-06-07T00:56:33Z",
+      "readOnly": false,
+      "parentItem": "3XKH3WIG",
+      "contentHash": "319a2ecc871aeac00ebaf32496b0f23642d1d059d827ce4b6646c1fdcfa060d8",
+      "raw": null
+    },
+    {
+      "id": "DSLINLZ7",
+      "key": "DSLINLZ7",
+      "version": 0,
+      "type": "highlight",
+      "text": "Spatially-Aligned Position Embedding (PE) mechanism",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "6",
+      "sortIndex": "00005|002271|00633",
+      "position": {
+        "pageIndex": 5,
+        "rects": [
+          [
+            229.172,
+            150.044,
+            300.017,
+            158.682
+          ],
+          [
+            48.959,
+            138.089,
+            201.666,
+            146.727
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-06-07T00:50:07Z",
+      "readOnly": false,
+      "parentItem": "3XKH3WIG",
+      "contentHash": "ffadae150b8a21a7b15fbfb392cd052aaa0c224ed1f2de7838c34ca524b019bf",
+      "raw": null
+    },
+    {
+      "id": "Z8I78WEK",
+      "key": "Z8I78WEK",
+      "version": 0,
+      "type": "highlight",
+      "text": "mimics selective attention by dynamically focusing on navigation-relevant spatial cues, thereby enhancing the control robustness of humanoid robots in unstructured terrains",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "6",
+      "sortIndex": "00005|001767|00525",
+      "position": {
+        "pageIndex": 5,
+        "rects": [
+          [
+            81.567,
+            270.235,
+            300.017,
+            278.873
+          ],
+          [
+            48.959,
+            258.28,
+            300.017,
+            266.918
+          ],
+          [
+            48.959,
+            246.325,
+            272.231,
+            254.963
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-06-07T00:48:42Z",
+      "readOnly": false,
+      "parentItem": "3XKH3WIG",
+      "contentHash": "844bea7f12104a1f8d704040bda2825ca883085bcfc90cadaf17aed65db88498",
+      "raw": null
+    },
+    {
+      "id": "H2UBAZ6W",
+      "key": "H2UBAZ6W",
+      "version": 0,
+      "type": "highlight",
+      "text": "backward prediction paradigm explicitly generates waypoints starting from the navigation target gn back to the robot’s current position",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "5",
+      "sortIndex": "00004|003262|00475",
+      "position": {
+        "pageIndex": 4,
+        "rects": [
+          [
+            407.614,
+            308.162,
+            563.031,
+            316.8
+          ],
+          [
+            311.973,
+            296.207,
+            562.461,
+            304.845
+          ],
+          [
+            311.973,
+            284.252,
+            453.292,
+            292.89
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-06-07T00:39:23Z",
+      "readOnly": false,
+      "parentItem": "3XKH3WIG",
+      "contentHash": "69f33c4bef534b8fd9b1acc2b91d7ed43ed07f56b09bceff6d7ab4485710fc7d",
+      "raw": null
+    },
+    {
+      "id": "VTPIQSKQ",
+      "key": "VTPIQSKQ",
+      "version": 0,
+      "type": "highlight",
+      "text": "To augment latent features with semantic traversability, a traversability decoder upsamples the Fbev into a traversability map Iˆt ∈ RHt ×Wt . The network is optimized via the Binary Cross-Entropy loss:",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "5",
+      "sortIndex": "00004|002697|00301",
+      "position": {
+        "pageIndex": 4,
+        "rects": [
+          [
+            429.601,
+            494.029,
+            563.031,
+            502.667
+          ],
+          [
+            311.973,
+            482.074,
+            563.031,
+            490.712
+          ],
+          [
+            312.262,
+            469.191,
+            563.029,
+            481.029
+          ],
+          [
+            311.973,
+            458.163,
+            497.008,
+            466.801
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-06-07T00:37:10Z",
+      "readOnly": false,
+      "parentItem": "3XKH3WIG",
+      "contentHash": "b295f9d619338a67670d48c1697c2bd0d56befb5b5a01be08b8c35b186fdb017",
+      "raw": null
+    },
+    {
+      "id": "ZSS5H2P5",
+      "key": "ZSS5H2P5",
+      "version": 0,
+      "type": "highlight",
+      "text": "a high-dimensional latent representation for each non-empty voxel, effectively capturing local geometric primitives.",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "5",
+      "sortIndex": "00004|002096|00131",
+      "position": {
+        "pageIndex": 4,
+        "rects": [
+          [
+            311.973,
+            652.162,
+            563.031,
+            660.8
+          ],
+          [
+            311.973,
+            640.206,
+            542.537,
+            648.844
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-06-07T00:36:18Z",
+      "readOnly": false,
+      "parentItem": "3XKH3WIG",
+      "contentHash": "0acbcf28eb16c60280524e5e636aef3cd699c47f16f32d709201d17fd3efb44c",
+      "raw": null
+    }
+  ],
+  "notes": [
+    {
+      "id": "3PVI5IFZ",
+      "key": "3PVI5IFZ",
+      "version": 0,
+      "html": "<div data-citation-items=\"%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FBNJGWPZU%22%5D%2C%22itemData%22%3A%7B%22id%22%3A%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FBNJGWPZU%22%2C%22type%22%3A%22article%22%2C%22abstract%22%3A%22Robust%20local%20navigation%20in%20unstructured%20and%20dynamic%20environments%20remains%20a%20significant%20challenge%20for%20humanoid%20robots%2C%20requiring%20a%20delicate%20balance%20between%20long-range%20navigation%20targets%20and%20immediate%20motion%20stability.%20In%20this%20paper%2C%20we%20propose%20FocusNav%2C%20a%20spatial%20selective%20attention%20framework%20that%20adaptively%20modulates%20the%20robot%E2%80%99s%20perceptual%20field%20based%20on%20navigational%20intent%20and%20real-time%20stability.%20FocusNav%20features%20a%20Waypoint-Guided%20Spatial%20Cross-Attention%20(WGSCA)%20mechanism%20that%20anchors%20environmental%20feature%20aggregation%20to%20a%20sequence%20of%20predicted%20collision-free%20waypoints%2C%20ensuring%20task-relevant%20perception%20along%20the%20planned%20trajectory.%20To%20enhance%20robustness%20in%20complex%20terrains%2C%20the%20Stability-Aware%20Selective%20Gating%20(SASG)%20module%20autonomously%20truncates%20distal%20information%20when%20detecting%20instability%2C%20compelling%20the%20policy%20to%20prioritize%20immediate%20foothold%20safety.%20Extensive%20experiments%20on%20the%20Unitree%20G1%20humanoid%20robot%20demonstrate%20that%20FocusNav%20significantly%20improves%20navigation%20success%20rates%20in%20challenging%20scenarios%2C%20outperforming%20baselines%20in%20both%20collision%20avoidance%20and%20motion%20stability%2C%20achieving%20robust%20navigation%20in%20dynamic%20and%20complex%20environments.%22%2C%22DOI%22%3A%2210.48550%2FarXiv.2601.12790%22%2C%22language%22%3A%22en%22%2C%22note%22%3A%22arXiv%3A2601.12790%20%5Bcs.RO%5D%22%2C%22number%22%3A%22arXiv%3A2601.12790%22%2C%22publisher%22%3A%22arXiv%22%2C%22source%22%3A%22arXiv.org%22%2C%22title%22%3A%22FocusNav%3A%20Spatial%20Selective%20Attention%20with%20Waypoint%20Guidance%20for%20Humanoid%20Local%20Navigation%22%2C%22title-short%22%3A%22FocusNav%22%2C%22URL%22%3A%22http%3A%2F%2Farxiv.org%2Fabs%2F2601.12790%22%2C%22author%22%3A%5B%7B%22family%22%3A%22Zhang%22%2C%22given%22%3A%22Yang%22%7D%2C%7B%22family%22%3A%22Ma%22%2C%22given%22%3A%22Jianming%22%7D%2C%7B%22family%22%3A%22Yan%22%2C%22given%22%3A%22Liyun%22%7D%2C%7B%22family%22%3A%22Cao%22%2C%22given%22%3A%22Zhanxiang%22%7D%2C%7B%22family%22%3A%22Zhang%22%2C%22given%22%3A%22Yazhou%22%7D%2C%7B%22family%22%3A%22Li%22%2C%22given%22%3A%22Haoyang%22%7D%2C%7B%22family%22%3A%22Gao%22%2C%22given%22%3A%22Yue%22%7D%5D%2C%22accessed%22%3A%7B%22date-parts%22%3A%5B%5B%222026%22%2C6%2C6%5D%5D%7D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222026%22%2C1%2C19%5D%5D%7D%7D%7D%5D\" data-schema-version=\"9\"><p>Key Words: Local navigation in unstructured and dynamic environments, Waypoint-Guided Spatial Cross-Attention Stability-Aware Selective Gating</p>\n<p></p>\n<p>WGSCA + SASG</p>\n<p></p>\n<p>1.Learning Oracle Policy for Waypoint Tracking</p>\n<p>Reward:<img alt=\"\" width=\"709\" height=\"236\" data-attachment-key=\"UN6EGGWS\"></p>\n<p><img alt=\"\" width=\"1313\" height=\"909\" data-attachment-key=\"WWFXC46N\"></p>\n<p>2. FocusNav: Local Navigation with Spatial Selective Attention</p>\n<p>a. multi-modal perception encoder</p>\n<p>(1)sensor simulation: LiDAR + depth camera + BVH</p>\n<p>raycasting:<img alt=\"\" width=\"636\" height=\"73\" data-attachment-key=\"Y9LQ74XN\"><br>(2)cross-modal spatial alignment</p>\n<p><img alt=\"\" width=\"631\" height=\"584\" data-attachment-key=\"4L6EZ8FD\"></p>\n<p>compensate the blind point of LiDAR1</p>\n<p>(3)BEV feature extraction - lightweight perception encoder</p>\n<p>b. collision-free waypoint predictor</p>\n<p>(1)backward prediction paradigm</p>\n<p><span class=\"highlight\" data-annotation=\"%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2F3XKH3WIG%22%2C%22annotationKey%22%3A%22H2UBAZ6W%22%2C%22color%22%3A%22%23ffd400%22%2C%22pageLabel%22%3A%225%22%2C%22position%22%3A%7B%22pageIndex%22%3A4%2C%22rects%22%3A%5B%5B407.614%2C308.162%2C563.031%2C316.8%5D%2C%5B311.973%2C296.207%2C562.461%2C304.845%5D%2C%5B311.973%2C284.252%2C453.292%2C292.89%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FBNJGWPZU%22%5D%2C%22locator%22%3A%225%22%7D%7D\">“backward prediction paradigm explicitly generates waypoints starting from the navigation target gn back to the robot’s current position”</span> <span class=\"citation\" data-citation=\"%7B%22citationItems%22%3A%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FBNJGWPZU%22%5D%2C%22locator%22%3A%225%22%7D%5D%2C%22properties%22%3A%7B%7D%7D\">(<span class=\"citation-item\">Zhang 等, 2026, p. 5</span>)</span></p>\n<p><img alt=\"\" width=\"641\" height=\"89\" data-attachment-key=\"5GVEQ5YU\"></p>\n<p>(2)autoregressive network with latent consistency - Transformer </p>\n<p>Loss:<img alt=\"\" width=\"678\" height=\"219\" data-attachment-key=\"ZZVPHM63\"></p>\n<p>c. dual-layer spatial selective attention</p>\n<p>(1) Waypoint-guided spatial cross-attention</p>\n<p>waypoints + PE mechanism &nbsp;-&gt; &nbsp;waypoint focused map</p>\n<p><img alt=\"\" width=\"673\" height=\"101\" data-attachment-key=\"R35HH2QW\"></p>\n<p>(2) Stability-aware selective gating<br><img alt=\"\" width=\"664\" height=\"100\" data-attachment-key=\"EI3WQBUK\"></p>\n<p><img alt=\"\" width=\"684\" height=\"148\" data-attachment-key=\"E2Y5RYX7\"></p>\n<p>Stability metrics<img alt=\"\" width=\"740\" height=\"411\" data-attachment-key=\"JUQ4CHBB\"></p>\n</div>",
+      "tags": [],
+      "dateModified": "2026-06-07T00:53:18Z",
+      "parentItem": "BNJGWPZU",
+      "contentHash": "20bcc5e9dc0658c2e66c6d91c007b62b80f76b5fb76e2b0460a4c4b088c8b677",
+      "displayHtml": "<div data-citation-items=\"%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FBNJGWPZU%22%5D%2C%22itemData%22%3A%7B%22id%22%3A%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FBNJGWPZU%22%2C%22type%22%3A%22article%22%2C%22abstract%22%3A%22Robust%20local%20navigation%20in%20unstructured%20and%20dynamic%20environments%20remains%20a%20significant%20challenge%20for%20humanoid%20robots%2C%20requiring%20a%20delicate%20balance%20between%20long-range%20navigation%20targets%20and%20immediate%20motion%20stability.%20In%20this%20paper%2C%20we%20propose%20FocusNav%2C%20a%20spatial%20selective%20attention%20framework%20that%20adaptively%20modulates%20the%20robot%E2%80%99s%20perceptual%20field%20based%20on%20navigational%20intent%20and%20real-time%20stability.%20FocusNav%20features%20a%20Waypoint-Guided%20Spatial%20Cross-Attention%20(WGSCA)%20mechanism%20that%20anchors%20environmental%20feature%20aggregation%20to%20a%20sequence%20of%20predicted%20collision-free%20waypoints%2C%20ensuring%20task-relevant%20perception%20along%20the%20planned%20trajectory.%20To%20enhance%20robustness%20in%20complex%20terrains%2C%20the%20Stability-Aware%20Selective%20Gating%20(SASG)%20module%20autonomously%20truncates%20distal%20information%20when%20detecting%20instability%2C%20compelling%20the%20policy%20to%20prioritize%20immediate%20foothold%20safety.%20Extensive%20experiments%20on%20the%20Unitree%20G1%20humanoid%20robot%20demonstrate%20that%20FocusNav%20significantly%20improves%20navigation%20success%20rates%20in%20challenging%20scenarios%2C%20outperforming%20baselines%20in%20both%20collision%20avoidance%20and%20motion%20stability%2C%20achieving%20robust%20navigation%20in%20dynamic%20and%20complex%20environments.%22%2C%22DOI%22%3A%2210.48550%2FarXiv.2601.12790%22%2C%22language%22%3A%22en%22%2C%22note%22%3A%22arXiv%3A2601.12790%20%5Bcs.RO%5D%22%2C%22number%22%3A%22arXiv%3A2601.12790%22%2C%22publisher%22%3A%22arXiv%22%2C%22source%22%3A%22arXiv.org%22%2C%22title%22%3A%22FocusNav%3A%20Spatial%20Selective%20Attention%20with%20Waypoint%20Guidance%20for%20Humanoid%20Local%20Navigation%22%2C%22title-short%22%3A%22FocusNav%22%2C%22URL%22%3A%22http%3A%2F%2Farxiv.org%2Fabs%2F2601.12790%22%2C%22author%22%3A%5B%7B%22family%22%3A%22Zhang%22%2C%22given%22%3A%22Yang%22%7D%2C%7B%22family%22%3A%22Ma%22%2C%22given%22%3A%22Jianming%22%7D%2C%7B%22family%22%3A%22Yan%22%2C%22given%22%3A%22Liyun%22%7D%2C%7B%22family%22%3A%22Cao%22%2C%22given%22%3A%22Zhanxiang%22%7D%2C%7B%22family%22%3A%22Zhang%22%2C%22given%22%3A%22Yazhou%22%7D%2C%7B%22family%22%3A%22Li%22%2C%22given%22%3A%22Haoyang%22%7D%2C%7B%22family%22%3A%22Gao%22%2C%22given%22%3A%22Yue%22%7D%5D%2C%22accessed%22%3A%7B%22date-parts%22%3A%5B%5B%222026%22%2C6%2C6%5D%5D%7D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222026%22%2C1%2C19%5D%5D%7D%7D%7D%5D\" data-schema-version=\"9\"><p>Key Words: Local navigation in unstructured and dynamic environments, Waypoint-Guided Spatial Cross-Attention Stability-Aware Selective Gating</p>\n<p></p>\n<p>WGSCA + SASG</p>\n<p></p>\n<p>1.Learning Oracle Policy for Waypoint Tracking</p>\n<p>Reward:<img alt=\"\" width=\"709\" height=\"236\" data-attachment-key=\"UN6EGGWS\" src=\"assets/note-images/UN6EGGWS/image.png\"></p>\n<p><img alt=\"\" width=\"1313\" height=\"909\" data-attachment-key=\"WWFXC46N\" src=\"assets/note-images/WWFXC46N/image.png\"></p>\n<p>2. FocusNav: Local Navigation with Spatial Selective Attention</p>\n<p>a. multi-modal perception encoder</p>\n<p>(1)sensor simulation: LiDAR + depth camera + BVH</p>\n<p>raycasting:<img alt=\"\" width=\"636\" height=\"73\" data-attachment-key=\"Y9LQ74XN\" src=\"assets/note-images/Y9LQ74XN/image.png\"><br>(2)cross-modal spatial alignment</p>\n<p><img alt=\"\" width=\"631\" height=\"584\" data-attachment-key=\"4L6EZ8FD\" src=\"assets/note-images/4L6EZ8FD/image.png\"></p>\n<p>compensate the blind point of LiDAR1</p>\n<p>(3)BEV feature extraction - lightweight perception encoder</p>\n<p>b. collision-free waypoint predictor</p>\n<p>(1)backward prediction paradigm</p>\n<p><span class=\"highlight\" data-annotation=\"%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2F3XKH3WIG%22%2C%22annotationKey%22%3A%22H2UBAZ6W%22%2C%22color%22%3A%22%23ffd400%22%2C%22pageLabel%22%3A%225%22%2C%22position%22%3A%7B%22pageIndex%22%3A4%2C%22rects%22%3A%5B%5B407.614%2C308.162%2C563.031%2C316.8%5D%2C%5B311.973%2C296.207%2C562.461%2C304.845%5D%2C%5B311.973%2C284.252%2C453.292%2C292.89%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FBNJGWPZU%22%5D%2C%22locator%22%3A%225%22%7D%7D\">“backward prediction paradigm explicitly generates waypoints starting from the navigation target gn back to the robot’s current position”</span> <span class=\"citation\" data-citation=\"%7B%22citationItems%22%3A%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FBNJGWPZU%22%5D%2C%22locator%22%3A%225%22%7D%5D%2C%22properties%22%3A%7B%7D%7D\">(<span class=\"citation-item\">Zhang 等, 2026, p. 5</span>)</span></p>\n<p><img alt=\"\" width=\"641\" height=\"89\" data-attachment-key=\"5GVEQ5YU\" src=\"assets/note-images/5GVEQ5YU/image.png\"></p>\n<p>(2)autoregressive network with latent consistency - Transformer </p>\n<p>Loss:<img alt=\"\" width=\"678\" height=\"219\" data-attachment-key=\"ZZVPHM63\" src=\"assets/note-images/ZZVPHM63/image.png\"></p>\n<p>c. dual-layer spatial selective attention</p>\n<p>(1) Waypoint-guided spatial cross-attention</p>\n<p>waypoints + PE mechanism &nbsp;-&gt; &nbsp;waypoint focused map</p>\n<p><img alt=\"\" width=\"673\" height=\"101\" data-attachment-key=\"R35HH2QW\" src=\"assets/note-images/R35HH2QW/image.png\"></p>\n<p>(2) Stability-aware selective gating<br><img alt=\"\" width=\"664\" height=\"100\" data-attachment-key=\"EI3WQBUK\" src=\"assets/note-images/EI3WQBUK/image.png\"></p>\n<p><img alt=\"\" width=\"684\" height=\"148\" data-attachment-key=\"E2Y5RYX7\" src=\"assets/note-images/E2Y5RYX7/image.png\"></p>\n<p>Stability metrics<img alt=\"\" width=\"740\" height=\"411\" data-attachment-key=\"JUQ4CHBB\" src=\"assets/note-images/JUQ4CHBB/image.png\"></p>\n</div>"
+    }
+  ],
+  "exportedAt": "2026-10-29T07:58:15+00:00"
+}

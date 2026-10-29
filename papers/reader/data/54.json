@@ -1,0 +1,320 @@
+{
+  "schemaVersion": 1,
+  "fileId": 54,
+  "pdf": {
+    "url": "../Scene%20Understanding%20and%20Memory/Retrieval%20and%20Embodied%20Memory/2025%20-%20Embodied-RAG.pdf",
+    "sha256": "71853cd64a212fc0b6136b620294cf7fafe7c9efb761c92a9b19ffc1d39762ba"
+  },
+  "zotero": {
+    "libraryType": "user",
+    "libraryId": 1,
+    "parentKey": "ZH9Q5ZJX",
+    "attachmentKey": "69EQC6J4"
+  },
+  "mapping": {
+    "status": "matched",
+    "basis": "sha256"
+  },
+  "annotations": [
+    {
+      "id": "A3T6ZFQL",
+      "key": "A3T6ZFQL",
+      "version": 0,
+      "type": "highlight",
+      "text": "employ a topological graph",
+      "comment": "🔤使用拓扑图🔤",
+      "color": "#ffd400",
+      "pageLabel": "3",
+      "sortIndex": "00002|003629|00326",
+      "position": {
+        "pageIndex": 2,
+        "rects": [
+          [
+            405.618,
+            456.246,
+            518.813,
+            465.272
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-25T03:33:42Z",
+      "readOnly": false,
+      "parentItem": "69EQC6J4",
+      "contentHash": "291800463d86e4ba7f75c32de952a0d5b8211cf5647d108bfa1eb51532aff9af",
+      "raw": null
+    },
+    {
+      "id": "D27DNBJ9",
+      "key": "D27DNBJ9",
+      "version": 0,
+      "type": "highlight",
+      "text": "generate semantic summaries",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "4",
+      "sortIndex": "00003|001299|00503",
+      "position": {
+        "pageIndex": 3,
+        "rects": [
+          [
+            266.279,
+            279.929,
+            300.022,
+            288.567
+          ],
+          [
+            48.964,
+            267.974,
+            131.534,
+            276.612
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-23T02:09:04Z",
+      "readOnly": false,
+      "parentItem": "69EQC6J4",
+      "contentHash": "be6598ed6174c0066a4d5a69e74ee0e88f7d190831777b8ae29162cf398b8a74",
+      "raw": null
+    },
+    {
+      "id": "3WJ53VL8",
+      "key": "3WJ53VL8",
+      "version": 0,
+      "type": "highlight",
+      "text": "complete-linkage hierarchical clustering",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "3",
+      "sortIndex": "00002|004892|00667",
+      "position": {
+        "pageIndex": 2,
+        "rects": [
+          [
+            398.174,
+            115.696,
+            563.035,
+            124.334
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-23T02:06:44Z",
+      "readOnly": false,
+      "parentItem": "69EQC6J4",
+      "contentHash": "78136737a30974a3cd813eb88e353725c989c3eac8d712b18ed46f6fa82ba045",
+      "raw": null
+    },
+    {
+      "id": "2ERR7I4X",
+      "key": "2ERR7I4X",
+      "version": 0,
+      "type": "highlight",
+      "text": "with exponential decay:",
+      "comment": "",
+      "color": "#ff6666",
+      "pageLabel": "4",
+      "sortIndex": "00003|000931|00354",
+      "position": {
+        "pageIndex": 3,
+        "rects": [
+          [
+            192.774,
+            428.403,
+            289.8,
+            437.041
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-23T02:01:26Z",
+      "readOnly": false,
+      "parentItem": "69EQC6J4",
+      "contentHash": "cfa66ed8924eab464996045593b8b2e2b849a740e905be72b2e02cb270aad510",
+      "raw": null
+    },
+    {
+      "id": "7YRMHFI4",
+      "key": "7YRMHFI4",
+      "version": 0,
+      "type": "highlight",
+      "text": "using the haversine distance",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "4",
+      "sortIndex": "00003|000906|00354",
+      "position": {
+        "pageIndex": 3,
+        "rects": [
+          [
+            74.588,
+            428.403,
+            189.287,
+            437.041
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-23T02:01:18Z",
+      "readOnly": false,
+      "parentItem": "69EQC6J4",
+      "contentHash": "3eff388fb8f67311d4da1e781079a32bde6b513e78541ef6f059e4d9a1c2ddc3",
+      "raw": null
+    },
+    {
+      "id": "578R36UB",
+      "key": "578R36UB",
+      "version": 0,
+      "type": "highlight",
+      "text": "The components of the similarity metric",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "4",
+      "sortIndex": "00003|000798|00330",
+      "position": {
+        "pageIndex": 3,
+        "rects": [
+          [
+            58.927,
+            452.538,
+            224.127,
+            461.176
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-23T02:00:22Z",
+      "readOnly": false,
+      "parentItem": "69EQC6J4",
+      "contentHash": "0733eb420b5d4f8f4fd5dc55676f7ad5ec54716eaf9a3d82493e8607bfe33dad",
+      "raw": null
+    },
+    {
+      "id": "8JRFFD2R",
+      "key": "8JRFFD2R",
+      "version": 0,
+      "type": "highlight",
+      "text": "Captions",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "3",
+      "sortIndex": "00002|003914|00436",
+      "position": {
+        "pageIndex": 2,
+        "rects": [
+          [
+            326.922,
+            346.697,
+            362.349,
+            355.335
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-22T08:17:28Z",
+      "readOnly": false,
+      "parentItem": "69EQC6J4",
+      "contentHash": "1016673e040a086d95728cb093b6ad484ea54b1341cbc9278661e3325ec61413",
+      "raw": null
+    },
+    {
+      "id": "2VRP3FVL",
+      "key": "2VRP3FVL",
+      "version": 0,
+      "type": "highlight",
+      "text": "Images",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "3",
+      "sortIndex": "00002|003888|00421",
+      "position": {
+        "pageIndex": 2,
+        "rects": [
+          [
+            326.922,
+            361.641,
+            355.694,
+            370.279
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-22T08:17:20Z",
+      "readOnly": false,
+      "parentItem": "69EQC6J4",
+      "contentHash": "0e9e18f05fb3f52c4ca596cc34c49ca160ec305993f09351764c096996d6d37b",
+      "raw": null
+    },
+    {
+      "id": "TVVXC2WN",
+      "key": "TVVXC2WN",
+      "version": 0,
+      "type": "highlight",
+      "text": "Timestamps",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "3",
+      "sortIndex": "00002|003877|00406",
+      "position": {
+        "pageIndex": 2,
+        "rects": [
+          [
+            326.922,
+            376.585,
+            375.28,
+            385.223
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-22T08:17:12Z",
+      "readOnly": false,
+      "parentItem": "69EQC6J4",
+      "contentHash": "c3d25b41cfa66eff430b1eec00c756ffb92007224ce3de8eca2458fb1a98edea",
+      "raw": null
+    },
+    {
+      "id": "33YE4ECC",
+      "key": "33YE4ECC",
+      "version": 0,
+      "type": "highlight",
+      "text": "Pose information",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "3",
+      "sortIndex": "00002|003695|00353",
+      "position": {
+        "pageIndex": 2,
+        "rects": [
+          [
+            326.922,
+            429.387,
+            395.255,
+            438.343
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-22T08:17:08Z",
+      "readOnly": false,
+      "parentItem": "69EQC6J4",
+      "contentHash": "543c3809476c7d72bca23545e97d08e929c015a2aba91c9c668e36aaf98d5516",
+      "raw": null
+    }
+  ],
+  "notes": [
+    {
+      "id": "AHJ63VI8",
+      "key": "AHJ63VI8",
+      "version": 0,
+      "html": "Comment: Web: https://quanting-xie.github.io/Embodied-RAG-web/",
+      "tags": [],
+      "dateModified": "2026-03-21T00:50:53Z",
+      "parentItem": "ZH9Q5ZJX",
+      "contentHash": "b26be60c83b6550eeaaef28311814e6b56ea0c615aebae49f266c467f963ace2",
+      "displayHtml": "Comment: Web: https://quanting-xie.github.io/Embodied-RAG-web/"
+    }
+  ],
+  "exportedAt": "2026-10-29T07:58:15+00:00"
+}

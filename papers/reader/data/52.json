@@ -1,0 +1,430 @@
+{
+  "schemaVersion": 1,
+  "fileId": 52,
+  "pdf": {
+    "url": "../Scene%20Understanding%20and%20Memory/Retrieval%20and%20Embodied%20Memory/2024%20-%20EmbodiedRAG.pdf",
+    "sha256": "fb9779194ae9e01e1323459771e1b25b41d258859fb6f2e8cb8bc78563bfcddb"
+  },
+  "zotero": {
+    "libraryType": "user",
+    "libraryId": 1,
+    "parentKey": "SGNT5Q5F",
+    "attachmentKey": "B3PQHF6G"
+  },
+  "mapping": {
+    "status": "matched",
+    "basis": "sha256"
+  },
+  "annotations": [
+    {
+      "id": "IVA9ZLY8",
+      "key": "IVA9ZLY8",
+      "version": 0,
+      "type": "highlight",
+      "text": "pass in the thought to identify key entities and their attributes",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "6",
+      "sortIndex": "00005|001114|00147",
+      "position": {
+        "pageIndex": 5,
+        "rects": [
+          [
+            145.111,
+            636.154,
+            335.635,
+            644.792
+          ],
+          [
+            108.0,
+            624.199,
+            166.052,
+            632.837
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-21T01:44:14Z",
+      "readOnly": false,
+      "parentItem": "B3PQHF6G",
+      "contentHash": "2b3af11768ebe71f373da52d7d4cbf50d0269acd43869bd8a3f4a5713ed5a0a1",
+      "raw": null
+    },
+    {
+      "id": "YFGNAH4U",
+      "key": "YFGNAH4U",
+      "version": 0,
+      "type": "highlight",
+      "text": "generate a structured query from the original prompt in order to identify important semantics and perform metadata filtering.",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "6",
+      "sortIndex": "00005|001009|00123",
+      "position": {
+        "pageIndex": 5,
+        "rects": [
+          [
+            145.689,
+            672.02,
+            335.635,
+            680.658
+          ],
+          [
+            108.0,
+            660.065,
+            335.635,
+            668.703
+          ],
+          [
+            108.0,
+            648.11,
+            202.316,
+            656.748
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-21T01:41:25Z",
+      "readOnly": false,
+      "parentItem": "B3PQHF6G",
+      "contentHash": "e8de8b5a45da58c57fe28c39f2a5b0dd955289a7f666420a1098fb0345dc89a0",
+      "raw": null
+    },
+    {
+      "id": "KSZ9I6Q6",
+      "key": "KSZ9I6Q6",
+      "version": 0,
+      "type": "highlight",
+      "text": "x ̃t = {l, p, G′1, (a1, τ1), . . . , Gt′−1, (at−1, τt−1)}",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "5",
+      "sortIndex": "00004|002825|00552",
+      "position": {
+        "pageIndex": 4,
+        "rects": [
+          [
+            108.0,
+            226.828,
+            298.452,
+            239.032
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-21T01:38:31Z",
+      "readOnly": false,
+      "parentItem": "B3PQHF6G",
+      "contentHash": "239d74ec6bf486e33bb859e8dc37a94225c28d5474a52df4ef2acbfaefdc1088",
+      "raw": null
+    },
+    {
+      "id": "IHLBPTCQ",
+      "key": "IHLBPTCQ",
+      "version": 0,
+      "type": "highlight",
+      "text": "a ReAct-style LLM",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "5",
+      "sortIndex": "00004|002531|00507",
+      "position": {
+        "pageIndex": 4,
+        "rects": [
+          [
+            205.046,
+            276.322,
+            286.131,
+            284.96
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-21T01:38:15Z",
+      "readOnly": false,
+      "parentItem": "B3PQHF6G",
+      "contentHash": "c91260f85a5721eae56088bbba9e52352da531282444f8c7a3a1ac6bdc4ffd68",
+      "raw": null
+    },
+    {
+      "id": "3QK5HPLM",
+      "key": "3QK5HPLM",
+      "version": 0,
+      "type": "highlight",
+      "text": "π(at|Gt′, x ̃t).",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "5",
+      "sortIndex": "00004|002500|00493",
+      "position": {
+        "pageIndex": 4,
+        "rects": [
+          [
+            453.119,
+            286.614,
+            504.0,
+            298.808
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-21T01:38:03Z",
+      "readOnly": false,
+      "parentItem": "B3PQHF6G",
+      "contentHash": "baa6a5a142c733dd2277f82da299f380af04f144d434d0049e6e4089d01d4a13",
+      "raw": null
+    },
+    {
+      "id": "9GJ243ZC",
+      "key": "9GJ243ZC",
+      "version": 0,
+      "type": "highlight",
+      "text": "the original query and retrieved documents are provided to an LLM in order to answer the query",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "5",
+      "sortIndex": "00004|002340|00471",
+      "position": {
+        "pageIndex": 4,
+        "rects": [
+          [
+            431.217,
+            312.188,
+            504.003,
+            320.826
+          ],
+          [
+            108.0,
+            300.233,
+            425.787,
+            308.871
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-21T01:37:49Z",
+      "readOnly": false,
+      "parentItem": "B3PQHF6G",
+      "contentHash": "8a9c5b4c54ec0c41e1e3e0ba864692f8ebfa060946729d2768fe22ce4d33ce3d",
+      "raw": null
+    },
+    {
+      "id": "32UHG8TT",
+      "key": "32UHG8TT",
+      "version": 0,
+      "type": "highlight",
+      "text": "the original query and retrieved documents are provided to an LLM in order to answer the quer",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "5",
+      "sortIndex": "00004|002340|00471",
+      "position": {
+        "pageIndex": 4,
+        "rects": [
+          [
+            431.217,
+            312.188,
+            504.003,
+            320.826
+          ],
+          [
+            108.0,
+            300.233,
+            420.806,
+            308.871
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-21T01:37:36Z",
+      "readOnly": false,
+      "parentItem": "B3PQHF6G",
+      "contentHash": "43655eeefc01fed58b1cb304d740bf5bf09d468aea845e7e725d633a9ed0a76f",
+      "raw": null
+    },
+    {
+      "id": "BFHACA4K",
+      "key": "BFHACA4K",
+      "version": 0,
+      "type": "highlight",
+      "text": "induced subgraph Gt′ with filtered task-relevant attributes and serialize it to JSON format",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "5",
+      "sortIndex": "00004|002162|00417",
+      "position": {
+        "pageIndex": 4,
+        "rects": [
+          [
+            124.747,
+            362.171,
+            475.501,
+            374.365
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-21T01:36:52Z",
+      "readOnly": false,
+      "parentItem": "B3PQHF6G",
+      "contentHash": "49bb01dd15a455b65b73776f8f7411b39a416708911adb358e07d08be4e0b668",
+      "raw": null
+    },
+    {
+      "id": "FK44U4HS",
+      "key": "FK44U4HS",
+      "version": 0,
+      "type": "highlight",
+      "text": "Next, we take the induced subgraph from these nodes to capture the relationships between the retrieved entities.",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "5",
+      "sortIndex": "00004|001581|00335",
+      "position": {
+        "pageIndex": 4,
+        "rects": [
+          [
+            182.082,
+            447.521,
+            504.003,
+            456.159
+          ],
+          [
+            108.0,
+            435.566,
+            230.42,
+            444.204
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-21T01:36:11Z",
+      "readOnly": false,
+      "parentItem": "B3PQHF6G",
+      "contentHash": "7a4a6fd37cae8ddfcbdd7b03e575331004fb9c003816ef5002f97d67b6603f33",
+      "raw": null
+    },
+    {
+      "id": "M5IEBRJY",
+      "key": "M5IEBRJY",
+      "version": 0,
+      "type": "highlight",
+      "text": "To construct subgraph Gt′, we first retrieve a thresholded, top-k similarity documents to the pre-retrieved entities {oˆr}.",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "5",
+      "sortIndex": "00004|001347|00298",
+      "position": {
+        "pageIndex": 4,
+        "rects": [
+          [
+            251.033,
+            481.723,
+            503.687,
+            493.917
+          ],
+          [
+            108.0,
+            470.736,
+            328.528,
+            480.387
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-21T01:35:17Z",
+      "readOnly": false,
+      "parentItem": "B3PQHF6G",
+      "contentHash": "4761b7e8f1f0caeaed43e74676f206cc427e3090d384cfed96b95a6a798807ca",
+      "raw": null
+    },
+    {
+      "id": "4E4A92RY",
+      "key": "4E4A92RY",
+      "version": 0,
+      "type": "highlight",
+      "text": "we ask an LLM prior to planning and any knowledge about the environment, i.e., no access to Gt, to suggest a set of relevant entities {oˆr}r=1...R that would be useful for the natural language task l.",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "5",
+      "sortIndex": "00004|000011|00075",
+      "position": {
+        "pageIndex": 4,
+        "rects": [
+          [
+            157.026,
+            707.885,
+            504.003,
+            716.523
+          ],
+          [
+            108.0,
+            695.235,
+            503.995,
+            704.886
+          ],
+          [
+            108.0,
+            683.975,
+            170.31,
+            692.931
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-21T01:33:40Z",
+      "readOnly": false,
+      "parentItem": "B3PQHF6G",
+      "contentHash": "33ba996f5d1a5845938d045e75c356ceda582f9f905b0625ef71447fed3948ba",
+      "raw": null
+    },
+    {
+      "id": "MC6DKWRW",
+      "key": "MC6DKWRW",
+      "version": 0,
+      "type": "highlight",
+      "text": "an entity-oriented abstraction from the natural language task l and the attributes that will be maintained in the 3DSG.",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "4",
+      "sortIndex": "00003|003550|00698",
+      "position": {
+        "pageIndex": 3,
+        "rects": [
+          [
+            432.073,
+            84.653,
+            504.003,
+            93.291
+          ],
+          [
+            108.0,
+            72.698,
+            504.0,
+            81.654
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-21T01:33:03Z",
+      "readOnly": false,
+      "parentItem": "B3PQHF6G",
+      "contentHash": "66227d4163db6deea428088945ba202a1bbb89e8af2a2c7535784ef4965e833a",
+      "raw": null
+    }
+  ],
+  "notes": [
+    {
+      "id": "SBHDIJH4",
+      "key": "SBHDIJH4",
+      "version": 0,
+      "html": "<div data-schema-version=\"9\"><h1><span style=\"color: rgb(25, 60, 71);\"><span style=\"background-color: rgb(238, 249, 253);\">EmbodiedRAG: Dynamic 3D Scene Graph Retrieval for Efficient and Scalable Robot Task Planning</span></span></h1>\n<p> </p>\n<h2>⚙️ Metadata</h2>\n<ul>\n<li>\n<strong>Item Type:</strong> preprint\n</li>\n<li>\n<strong>Author:</strong> [[Meghan Booker]], [[Grayson Byrd]], [[Bethany Kemp]], [[Aurora Schmidt]], [[Corban Rivera]]\n</li>\n<li>\n<strong>Date Added:</strong> 2026/3/21 08:52:52\n</li>\n<li>\n<strong>DOI: </strong><a href=\"https://doi.org/10.48550/arXiv.2410.23968\" rel=\"noopener noreferrer nofollow\">10.48550/arXiv.2410.23968</a>\n</li>\n<li>\n<strong>Cite key:</strong>\n</li>\n<li>\n<strong>Journal:</strong>\n</li>\n<li>\n<strong>Journal Tags:</strong>\n</li>\n<li>\n<strong>Publication Date: </strong>2024-10-31\n</li>\n<li>\n<strong>Tags:</strong> #Computer Science - Robotics, #zotero\n</li>\n<li>\n<strong>PDF Attachments: </strong><a href=\"zotero://open-pdf/library/items/B3PQHF6G\" rel=\"noopener noreferrer nofollow\">Booker 等 - 2024 - EmbodiedRAG Dynamic 3D Scene Graph Retrieval for Efficient and Scalable Robot Task Planning.pdf</a>\n</li>\n<li>\n<strong>Related Items: </strong><span style=\"color: gray;\">无相关条目</span>\n</li>\n</ul>\n<h2>📜 Abstract</h2>\n<p> Recent advances in Large Language Models (LLMs) have helped facilitate exciting progress for robotic planning in real, open-world environments. 3D scene graphs (3DSGs) offer a promising environment representation for grounding such LLM-based planners as they are compact and semantically rich. However, as the robot’s environment scales (e.g., number of entities tracked) and the complexity of scene graph information increases (e.g., maintaining more attributes), providing a 3DSG as-is to an LLM-based planner quickly becomes infeasible due to input token count limits and attentional biases present in LLMs. Inspired by the successes of Retrieval-Augmented Generation (RAG) methods that retrieve query-relevant document chunks for LLM question and answering, we adapt the paradigm for our embodied domain. Specifically, we propose a 3D scene subgraph retrieval framework, called EMBODIEDRAG, that we augment an LLMbased planner with for executing natural language robotic tasks. Notably, our retrieved subgraphs adapt to changes in the environment as well as changes in taskrelevancy as the robot executes its plan. We demonstrate EMBODIEDRAG ’s ability to significantly reduce input token counts (by an order of magnitude) and planning time (up to 70% reduction in average time per planning step) while improving success rates on AI2Thor simulated household tasks with a single-arm, mobile manipulator. Additionally, we implement EMBODIEDRAG on a quadruped with a manipulator to highlight the performance benefits for robot deployment at the edge in real environments. </p>\n<h2>📚 Zotero links</h2>\n<ul>\n<li>\n<a href=\"zotero://select/items/1_SGNT5Q5F\" rel=\"noopener noreferrer nofollow\">Local library</a>\n</li>\n</ul>\n<h1>Notes</h1>\n<h2>🤔 Personal Summary</h2>\n<h3>💭 Thought Inspiration</h3>\n<blockquote>\n<p>Tips: What aspects did you question, how do you think it can be improved?</p>\n</blockquote>\n<p></p>\n<h3>📜 Conclusion</h3>\n<blockquote>\n<p>Tips: What was done, what problem was solved, innovations and shortcomings?</p>\n</blockquote>\n<p></p>\n</div>",
+      "tags": [],
+      "dateModified": "2026-03-21T00:52:53Z",
+      "parentItem": "SGNT5Q5F",
+      "contentHash": "a16047e105c13cd34ecf59e9db86a0947c7b4fa3e69254225d5f2bc8b2492e3b",
+      "displayHtml": "<div data-schema-version=\"9\"><h1><span style=\"color: rgb(25, 60, 71);\"><span style=\"background-color: rgb(238, 249, 253);\">EmbodiedRAG: Dynamic 3D Scene Graph Retrieval for Efficient and Scalable Robot Task Planning</span></span></h1>\n<p> </p>\n<h2>⚙️ Metadata</h2>\n<ul>\n<li>\n<strong>Item Type:</strong> preprint\n</li>\n<li>\n<strong>Author:</strong> [[Meghan Booker]], [[Grayson Byrd]], [[Bethany Kemp]], [[Aurora Schmidt]], [[Corban Rivera]]\n</li>\n<li>\n<strong>Date Added:</strong> 2026/3/21 08:52:52\n</li>\n<li>\n<strong>DOI: </strong><a href=\"https://doi.org/10.48550/arXiv.2410.23968\" rel=\"noopener noreferrer nofollow\">10.48550/arXiv.2410.23968</a>\n</li>\n<li>\n<strong>Cite key:</strong>\n</li>\n<li>\n<strong>Journal:</strong>\n</li>\n<li>\n<strong>Journal Tags:</strong>\n</li>\n<li>\n<strong>Publication Date: </strong>2024-10-31\n</li>\n<li>\n<strong>Tags:</strong> #Computer Science - Robotics, #zotero\n</li>\n<li>\n<strong>PDF Attachments: </strong><a href=\"zotero://open-pdf/library/items/B3PQHF6G\" rel=\"noopener noreferrer nofollow\">Booker 等 - 2024 - EmbodiedRAG Dynamic 3D Scene Graph Retrieval for Efficient and Scalable Robot Task Planning.pdf</a>\n</li>\n<li>\n<strong>Related Items: </strong><span style=\"color: gray;\">无相关条目</span>\n</li>\n</ul>\n<h2>📜 Abstract</h2>\n<p> Recent advances in Large Language Models (LLMs) have helped facilitate exciting progress for robotic planning in real, open-world environments. 3D scene graphs (3DSGs) offer a promising environment representation for grounding such LLM-based planners as they are compact and semantically rich. However, as the robot’s environment scales (e.g., number of entities tracked) and the complexity of scene graph information increases (e.g., maintaining more attributes), providing a 3DSG as-is to an LLM-based planner quickly becomes infeasible due to input token count limits and attentional biases present in LLMs. Inspired by the successes of Retrieval-Augmented Generation (RAG) methods that retrieve query-relevant document chunks for LLM question and answering, we adapt the paradigm for our embodied domain. Specifically, we propose a 3D scene subgraph retrieval framework, called EMBODIEDRAG, that we augment an LLMbased planner with for executing natural language robotic tasks. Notably, our retrieved subgraphs adapt to changes in the environment as well as changes in taskrelevancy as the robot executes its plan. We demonstrate EMBODIEDRAG ’s ability to significantly reduce input token counts (by an order of magnitude) and planning time (up to 70% reduction in average time per planning step) while improving success rates on AI2Thor simulated household tasks with a single-arm, mobile manipulator. Additionally, we implement EMBODIEDRAG on a quadruped with a manipulator to highlight the performance benefits for robot deployment at the edge in real environments. </p>\n<h2>📚 Zotero links</h2>\n<ul>\n<li>\n<a href=\"zotero://select/items/1_SGNT5Q5F\" rel=\"noopener noreferrer nofollow\">Local library</a>\n</li>\n</ul>\n<h1>Notes</h1>\n<h2>🤔 Personal Summary</h2>\n<h3>💭 Thought Inspiration</h3>\n<blockquote>\n<p>Tips: What aspects did you question, how do you think it can be improved?</p>\n</blockquote>\n<p></p>\n<h3>📜 Conclusion</h3>\n<blockquote>\n<p>Tips: What was done, what problem was solved, innovations and shortcomings?</p>\n</blockquote>\n<p></p>\n</div>"
+    }
+  ],
+  "exportedAt": "2026-10-29T07:58:15+00:00"
+}

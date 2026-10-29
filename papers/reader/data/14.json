@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "fileId": 14,
+  "pdf": {
+    "url": "../Humanoid%20Robotics/Whole-Body%20Control%20and%20Loco-Manipulation/2026%20-%20HiWET.pdf",
+    "sha256": "0482c6f4e546eb8d78c004df3f46cedb228ff030ccdb8b10548262409370c645"
+  },
+  "zotero": {
+    "libraryType": "user",
+    "libraryId": 1,
+    "parentKey": "3DE52ECH",
+    "attachmentKey": "BFI9FSAP"
+  },
+  "mapping": {
+    "status": "matched",
+    "basis": "sha256"
+  },
+  "annotations": [],
+  "notes": [
+    {
+      "id": "7DSFBAB8",
+      "key": "7DSFBAB8",
+      "version": 0,
+      "html": "<div data-schema-version=\"9\"><p>HiWET: End-Effector Tracking for Long-Horizon Humanoid</p>\n</div>",
+      "tags": [],
+      "dateModified": "2026-06-07T09:20:25Z",
+      "parentItem": "3DE52ECH",
+      "contentHash": "62899ec3f078fb7de4259b849f00a1f3cba2b0a2411987130cbd64ff382245a2",
+      "displayHtml": "<div data-schema-version=\"9\"><p>HiWET: End-Effector Tracking for Long-Horizon Humanoid</p>\n</div>"
+    }
+  ],
+  "exportedAt": "2026-10-29T07:58:15+00:00"
+}

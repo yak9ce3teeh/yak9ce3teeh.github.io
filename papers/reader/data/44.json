@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "fileId": 44,
+  "pdf": {
+    "url": "../World%20Models%20and%20World%20Action%20Models/Surveys%20and%20Foundation%20Models/2026%20-%20World%20Model%20for%20Robot%20Learning.pdf",
+    "sha256": "1b035d79d5c135fd437e1bbe7625a7e284a405e0451a240e816ce5dcaf35f586"
+  },
+  "zotero": {
+    "libraryType": "user",
+    "libraryId": 1,
+    "parentKey": "SZTWBJQR",
+    "attachmentKey": "KYD3R5K8"
+  },
+  "mapping": {
+    "status": "matched",
+    "basis": "sha256"
+  },
+  "annotations": [],
+  "notes": [
+    {
+      "id": "RJKWH2EI",
+      "key": "RJKWH2EI",
+      "version": 0,
+      "html": "<h2>Other</h2>\n43 pages, 6 figures",
+      "tags": [],
+      "dateModified": "2026-05-25T02:08:45Z",
+      "parentItem": "SZTWBJQR",
+      "contentHash": "127cdc612fdeb1da53d33bbe02363d9297bacfe6091d0abac42e425aa13b664e",
+      "displayHtml": "<h2>Other</h2>\n43 pages, 6 figures"
+    }
+  ],
+  "exportedAt": "2026-10-29T07:58:15+00:00"
+}

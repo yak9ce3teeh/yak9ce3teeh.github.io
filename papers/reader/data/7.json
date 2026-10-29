@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "fileId": 7,
+  "pdf": {
+    "url": "../Humanoid%20Robotics/Motion%20Skills%20and%20Tracking/2025%20-%20Keep%20On%20Going.pdf",
+    "sha256": "013c1c85dab73726f06e6dbcb530ac8b450cd18e2b374689b4ca277d9b7c6d03"
+  },
+  "zotero": {
+    "libraryType": "user",
+    "libraryId": 1,
+    "parentKey": "NEWY7PMK",
+    "attachmentKey": "BHX6FNVJ"
+  },
+  "mapping": {
+    "status": "matched",
+    "basis": "sha256"
+  },
+  "annotations": [],
+  "notes": [
+    {
+      "id": "EEI22AEQ",
+      "key": "EEI22AEQ",
+      "version": 0,
+      "html": "<div data-schema-version=\"9\"><h2>Keep on going - Selective Adversarial Attack for Robust Training</h2>\n<p><img alt=\"\" width=\"813\" height=\"366\" data-attachment-key=\"RFXD7VW9\"></p>\n<p> </p>\n</div>",
+      "tags": [],
+      "dateModified": "2026-06-07T04:45:21Z",
+      "parentItem": "NEWY7PMK",
+      "contentHash": "0e8d09b0bfe6678b6cb890b88ff72b74e34df093d71c6f1d97c7c7dd45aa77a7",
+      "displayHtml": "<div data-schema-version=\"9\"><h2>Keep on going - Selective Adversarial Attack for Robust Training</h2>\n<p><img alt=\"\" width=\"813\" height=\"366\" data-attachment-key=\"RFXD7VW9\" src=\"assets/note-images/RFXD7VW9/image.png\"></p>\n<p> </p>\n</div>"
+    }
+  ],
+  "exportedAt": "2026-10-29T07:58:15+00:00"
+}

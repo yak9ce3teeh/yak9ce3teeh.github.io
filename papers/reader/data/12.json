@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "fileId": 12,
+  "pdf": {
+    "url": "../Humanoid%20Robotics/Behavior%20Foundation%20Models%20and%20Zero-Shot%20RL/2026%20-%20crossbfm.pdf",
+    "sha256": "5adc93dc8676f903ad950b6cf0e8d406fc0ff536f64b3df8abbd9282177f663a"
+  },
+  "zotero": {
+    "libraryType": "user",
+    "libraryId": 1,
+    "parentKey": "6DBTHPS3"
+  },
+  "mapping": {
+    "status": "unmatched",
+    "basis": "none"
+  },
+  "annotations": [],
+  "notes": [
+    {
+      "id": "BJFCDJGG",
+      "key": "BJFCDJGG",
+      "version": 67,
+      "html": "<div data-schema-version=\"9\"><p>Comment: Project Website: https://dotandung.github.io/crossbfm/</p>\n<p>CrossBFM: Latent Editing - Embodiment level diversity, No robot-specific parameters</p>\n<p>(&lt;1 GPU-hour), Unified encoder for all embodiments</p>\n<p></p>\n<p>Methods:</p>\n<p><img alt=\"\" width=\"1066\" height=\"588\" data-attachment-key=\"FPUYS6JV\"></p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">1.Setup</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">Backward Map Only</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\"><img alt=\"\" width=\"392\" height=\"54\" data-attachment-key=\"85XRCK7V\">Latent Label for Every Frame t from the source model</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">2. Unified Encoder</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">fixed-width, robot-independent input</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\"><img alt=\"\" width=\"861\" height=\"481\" data-attachment-key=\"E7HMSRLA\"></p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">3.architecture - Backward Map Regression</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\"><img alt=\"\" width=\"691\" height=\"513\" data-attachment-key=\"G9IBNFV2\"></p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\"><img alt=\"\" width=\"875\" height=\"43\" data-attachment-key=\"5TLT2KKA\"></p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\"><img alt=\"\" width=\"493\" height=\"83\" data-attachment-key=\"QKLBX25J\"></p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">4. Latent-conditioned Policies</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">PPO + Behavior Latent and Proprioception Input</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">Rectified Flow Model to increase modalities</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">5. Deployment</p>\n<p style=\"padding-left: 80px;\" data-indent=\"2\">Distillation with retargeted dataset for distribution approximation</p>\n<p style=\"padding-left: 80px;\" data-indent=\"2\">Embodiment Difference<img alt=\"\" width=\"304\" height=\"43\" data-attachment-key=\"IFL8D6VX\"></p>\n</div>",
+      "tags": [],
+      "dateModified": "2026-10-02T12:50:55Z",
+      "parentItem": "6DBTHPS3",
+      "contentHash": "583e3f11e5485d0858c8a5c72a03f7c45abce37affaa25100f42c3c41ff2f139",
+      "displayHtml": "<div data-schema-version=\"9\"><p>Comment: Project Website: https://dotandung.github.io/crossbfm/</p>\n<p>CrossBFM: Latent Editing - Embodiment level diversity, No robot-specific parameters</p>\n<p>(&lt;1 GPU-hour), Unified encoder for all embodiments</p>\n<p></p>\n<p>Methods:</p>\n<p><span class=\"image-unavailable\" role=\"note\">This image was not available in the Zotero attachment storage.</span></p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">1.Setup</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">Backward Map Only</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\"><span class=\"image-unavailable\" role=\"note\">This image was not available in the Zotero attachment storage.</span>Latent Label for Every Frame t from the source model</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">2. Unified Encoder</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">fixed-width, robot-independent input</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\"><span class=\"image-unavailable\" role=\"note\">This image was not available in the Zotero attachment storage.</span></p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">3.architecture - Backward Map Regression</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\"><span class=\"image-unavailable\" role=\"note\">This image was not available in the Zotero attachment storage.</span></p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\"><span class=\"image-unavailable\" role=\"note\">This image was not available in the Zotero attachment storage.</span></p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\"><span class=\"image-unavailable\" role=\"note\">This image was not available in the Zotero attachment storage.</span></p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">4. Latent-conditioned Policies</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">PPO + Behavior Latent and Proprioception Input</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">Rectified Flow Model to increase modalities</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">5. Deployment</p>\n<p style=\"padding-left: 80px;\" data-indent=\"2\">Distillation with retargeted dataset for distribution approximation</p>\n<p style=\"padding-left: 80px;\" data-indent=\"2\">Embodiment Difference<span class=\"image-unavailable\" role=\"note\">This image was not available in the Zotero attachment storage.</span></p>\n</div>"
+    }
+  ],
+  "exportedAt": "2026-10-29T07:58:15+00:00"
+}

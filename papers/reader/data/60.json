@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "fileId": 60,
+  "pdf": {
+    "url": "../Scene%20Understanding%20and%20Memory/Spatial%20Reasoning/2024%20-%20Spatial%20VLM.pdf",
+    "sha256": "ab1469aa1fc95f37710e743891a20954404a5ed63f588128a95252593408430b"
+  },
+  "zotero": {
+    "libraryType": "user",
+    "libraryId": 1,
+    "parentKey": "AE48S43T",
+    "attachmentKey": "GJTNH8BQ"
+  },
+  "mapping": {
+    "status": "matched",
+    "basis": "sha256"
+  },
+  "annotations": [
+    {
+      "id": "A49NQ5AX",
+      "key": "A49NQ5AX",
+      "version": 0,
+      "type": "highlight",
+      "text": "s using CLIP similarity score",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "14457",
+      "sortIndex": "00002|000760|00349",
+      "position": {
+        "pageIndex": 2,
+        "rects": [
+          [
+            176.877,
+            434.893,
+            275.209,
+            442.667
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-05T07:30:26Z",
+      "readOnly": false,
+      "parentItem": "GJTNH8BQ",
+      "contentHash": "1fe5c00a4d5d53a511bc2b0f4b1445fc3375f58252cce2e8999c70568c998936",
+      "raw": null
+    }
+  ],
+  "notes": [
+    {
+      "id": "SQT35472",
+      "key": "SQT35472",
+      "version": 0,
+      "html": "<div data-schema-version=\"9\">\n\n        <h1 style=\"color:#193c47; background-color:#eef9fd; padding:8px;\">\n        SpatialVLM: Endowing Vision-Language Models with Spatial Reasoning Capabilities\n        </h1>\n    \n    <h2>⚙️ Metadata</h2>\n    \n    <ul>\n        <li><b>Item Type:</b>\n        conferencePaper\n        </li>\n    \n        <li><b>Author:</b> \n        [[Boyuan Chen]], [[Zhuo Xu]], [[Sean Kirmani]], [[Brian Ichter]], [[Dorsa Sadigh]], [[Leonidas Guibas]], [[Fei Xia]]\n        </li>\n    \n    \n        <li><b>Date Added:</b>\n        2026/4/5 15:26:04\n        </li>\n    \n        <li> \n        <b>DOI: </b> <a href=\"https://doi.org/10.1109/CVPR52733.2024.01370\">10.1109/CVPR52733.2024.01370</a>\n        </li>\n    \n        <li><b>Cite key: </b>\n        \n        </li>\n    \n        <li><b>Journal: </b>\n        \n        </li>\n    \n        <li><b>Journal Tags: </b> \n        \n        </li>\n    \n    <li><b>Publication Date: </b> \n        2024-6-16\n        </li>\n    \n        <li><b>Tags:</b> \n        #, #zotero\n        </li>\n    \n        <li> <b>PDF Attachments: </b>\n        <a href=\"zotero://open-pdf/library/items/GJTNH8BQ\">Chen 等 - 2024 - SpatialVLM Endowing Vision-Language Models with Spatial Reasoning Capabilities.pdf</a>\n        </li>\n        <li> <b>Related Items: </b>\n        <span style=\"color: gray;\">无相关条目</span>\n        </li>\n    </ul>\n    \n        <h2 >📜 Abstract</h2>\n    \n            \n        \n    \n    <h2>📚 Zotero links</h2>\n    \n    <ul>\n    <li>\n        <a href=\"zotero://select/items/1_AE48S43T\">Local library</a>\n        </li>  \n    </ul>\n\n    <h1>Notes</h1>\n\n    <h2>🤔 Personal Summary</h2>\n    \n        <h3>💭 Thought Inspiration</h3>\n        <blockquote>Tips: What aspects did you question, how do you think it can be improved?</blockquote>\n        <p></p>\n    \n        <h3>📜 Conclusion</h3>\n        <blockquote>Tips: What was done, what problem was solved, innovations and shortcomings?</blockquote>\n        <p></p>\n    \n</div>",
+      "tags": [],
+      "dateModified": "2026-04-05T07:26:04Z",
+      "parentItem": "AE48S43T",
+      "contentHash": "3702bd433bee55aabb0e28be24ff555d7fdae57bbcd0466cb792b8efa9278efb",
+      "displayHtml": "<div data-schema-version=\"9\">\n\n        <h1 style=\"color:#193c47; background-color:#eef9fd; padding:8px;\">\n        SpatialVLM: Endowing Vision-Language Models with Spatial Reasoning Capabilities\n        </h1>\n    \n    <h2>⚙️ Metadata</h2>\n    \n    <ul>\n        <li><b>Item Type:</b>\n        conferencePaper\n        </li>\n    \n        <li><b>Author:</b> \n        [[Boyuan Chen]], [[Zhuo Xu]], [[Sean Kirmani]], [[Brian Ichter]], [[Dorsa Sadigh]], [[Leonidas Guibas]], [[Fei Xia]]\n        </li>\n    \n    \n        <li><b>Date Added:</b>\n        2026/4/5 15:26:04\n        </li>\n    \n        <li> \n        <b>DOI: </b> <a href=\"https://doi.org/10.1109/CVPR52733.2024.01370\">10.1109/CVPR52733.2024.01370</a>\n        </li>\n    \n        <li><b>Cite key: </b>\n        \n        </li>\n    \n        <li><b>Journal: </b>\n        \n        </li>\n    \n        <li><b>Journal Tags: </b> \n        \n        </li>\n    \n    <li><b>Publication Date: </b> \n        2024-6-16\n        </li>\n    \n        <li><b>Tags:</b> \n        #, #zotero\n        </li>\n    \n        <li> <b>PDF Attachments: </b>\n        <a href=\"zotero://open-pdf/library/items/GJTNH8BQ\">Chen 等 - 2024 - SpatialVLM Endowing Vision-Language Models with Spatial Reasoning Capabilities.pdf</a>\n        </li>\n        <li> <b>Related Items: </b>\n        <span style=\"color: gray;\">无相关条目</span>\n        </li>\n    </ul>\n    \n        <h2 >📜 Abstract</h2>\n    \n            \n        \n    \n    <h2>📚 Zotero links</h2>\n    \n    <ul>\n    <li>\n        <a href=\"zotero://select/items/1_AE48S43T\">Local library</a>\n        </li>  \n    </ul>\n\n    <h1>Notes</h1>\n\n    <h2>🤔 Personal Summary</h2>\n    \n        <h3>💭 Thought Inspiration</h3>\n        <blockquote>Tips: What aspects did you question, how do you think it can be improved?</blockquote>\n        <p></p>\n    \n        <h3>📜 Conclusion</h3>\n        <blockquote>Tips: What was done, what problem was solved, innovations and shortcomings?</blockquote>\n        <p></p>\n    \n</div>"
+    }
+  ],
+  "exportedAt": "2026-10-29T07:58:15+00:00"
+}

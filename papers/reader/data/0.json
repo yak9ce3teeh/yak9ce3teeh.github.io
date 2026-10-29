@@ -1,0 +1,2058 @@
+{
+  "schemaVersion": 1,
+  "fileId": 0,
+  "pdf": {
+    "url": "../Foundations%20and%20Surveys/Efficient%20Foundation%20Models/2025%20-%20Resource-efficient%20Algorithms%20and%20Systems%20of%20Foundation%20Models.pdf",
+    "sha256": "61ab0659e06a6adf800e01541db6f260598ecee9d3f132d3a77631f5753ccbe7"
+  },
+  "zotero": {
+    "libraryType": "user",
+    "libraryId": 1,
+    "parentKey": "DQLNTHIJ",
+    "attachmentKey": "LHPILU4I"
+  },
+  "mapping": {
+    "status": "matched",
+    "basis": "sha256"
+  },
+  "annotations": [
+    {
+      "id": "7YGGZNI9",
+      "key": "7YGGZNI9",
+      "version": 0,
+      "type": "highlight",
+      "text": "In contrast, the decoding phase generates one token at a time, making it more bandwidth-bound [314].",
+      "comment": "",
+      "color": "#f19837",
+      "pageLabel": "22",
+      "sortIndex": "00021|002621|00525",
+      "position": {
+        "pageIndex": 21,
+        "rects": [
+          [
+            310.404,
+            185.861,
+            440.305,
+            194.887
+          ],
+          [
+            45.774,
+            173.9,
+            332.681,
+            182.926
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-05-04T07:59:39Z",
+      "readOnly": false,
+      "parentItem": "LHPILU4I",
+      "contentHash": "8ae71b27bf340ab53e7fa598d5db7a251d555619d4822f175df191edf53417c1",
+      "raw": null
+    },
+    {
+      "id": "MPY4BISH",
+      "key": "MPY4BISH",
+      "version": 0,
+      "type": "highlight",
+      "text": "The prefill phase often processes a long sequence of input tokens in parallel",
+      "comment": "",
+      "color": "#f19837",
+      "pageLabel": "22",
+      "sortIndex": "00021|002464|00501",
+      "position": {
+        "pageIndex": 21,
+        "rects": [
+          [
+            349.131,
+            209.765,
+            440.311,
+            218.791
+          ],
+          [
+            45.774,
+            197.813,
+            265.484,
+            206.839
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-05-04T07:59:21Z",
+      "readOnly": false,
+      "parentItem": "LHPILU4I",
+      "contentHash": "7374c42413c83ecf910f781facf7036bdd3404b293e3dbf05eb4c809def34287",
+      "raw": null
+    },
+    {
+      "id": "A3Z6FU3Q",
+      "key": "A3Z6FU3Q",
+      "version": 0,
+      "type": "highlight",
+      "text": "Its core is an entropy-based early exit prediction for dynamic DVFS at a sentence granularity.",
+      "comment": "",
+      "color": "#2ea8e5",
+      "pageLabel": "22",
+      "sortIndex": "00021|001670|00369",
+      "position": {
+        "pageIndex": 21,
+        "rects": [
+          [
+            111.845,
+            341.274,
+            440.336,
+            350.3
+          ],
+          [
+            45.774,
+            329.321,
+            93.178,
+            338.348
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-05-04T07:57:40Z",
+      "readOnly": false,
+      "parentItem": "LHPILU4I",
+      "contentHash": "11e4c3fe2ee230d48fb779591e6e115727951f010705eb0e4a5afa3758afd992",
+      "raw": null
+    },
+    {
+      "id": "P5BIDNDK",
+      "key": "P5BIDNDK",
+      "version": 0,
+      "type": "highlight",
+      "text": "Training on specialized high-performance GPU clusters is impossible for most people or enterprises.",
+      "comment": "",
+      "color": "#2ea8e5",
+      "pageLabel": "22",
+      "sortIndex": "00021|000134|00106",
+      "position": {
+        "pageIndex": 21,
+        "rects": [
+          [
+            152.443,
+            604.291,
+            440.284,
+            613.317
+          ],
+          [
+            45.774,
+            592.339,
+            172.798,
+            601.365
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-05-04T07:50:29Z",
+      "readOnly": false,
+      "parentItem": "LHPILU4I",
+      "contentHash": "f402b52b9ba2df5ec64ee876a1a720f549fff3863eb4c6b490cc7c5d3414e90b",
+      "raw": null
+    },
+    {
+      "id": "D6NECLQF",
+      "key": "D6NECLQF",
+      "version": 0,
+      "type": "highlight",
+      "text": "MoE is an efficient approach to scaling up DNN models. The goals of optimizing MoE training systems are mainly efficiency and scalability.",
+      "comment": "",
+      "color": "#2ea8e5",
+      "pageLabel": "22",
+      "sortIndex": "00021|000570|00178",
+      "position": {
+        "pageIndex": 21,
+        "rects": [
+          [
+            145.801,
+            532.56,
+            440.286,
+            541.587
+          ],
+          [
+            45.774,
+            520.608,
+            345.043,
+            529.634
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-05-04T07:50:18Z",
+      "readOnly": false,
+      "parentItem": "LHPILU4I",
+      "contentHash": "2b74d0b323f8e9fe1519911c59c89cb4954dccae25500b31dd99d866b9451059",
+      "raw": null
+    },
+    {
+      "id": "QGMQLI7J",
+      "key": "QGMQLI7J",
+      "version": 0,
+      "type": "highlight",
+      "text": "Large FMs require a significant amount of storage resources, such as GPU memory for model states, host memory for model analysis, and disk for dataset and checkpoint. Various approaches have been proposed to alleviate the storage constraints for efficiency.",
+      "comment": "",
+      "color": "#2ea8e5",
+      "pageLabel": "21",
+      "sortIndex": "00020|003395|00584",
+      "position": {
+        "pageIndex": 20,
+        "rects": [
+          [
+            93.736,
+            126.08,
+            440.756,
+            135.111
+          ],
+          [
+            45.945,
+            114.133,
+            440.492,
+            123.159
+          ],
+          [
+            45.945,
+            102.172,
+            378.21,
+            111.198
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-05-04T07:48:19Z",
+      "readOnly": false,
+      "parentItem": "LHPILU4I",
+      "contentHash": "77ec7dcf1fc13f2272002aeb469b5481acfd2423adcb08f83b735577e3431eea",
+      "raw": null
+    },
+    {
+      "id": "684G27AC",
+      "key": "684G27AC",
+      "version": 0,
+      "type": "highlight",
+      "text": "We summarize the optimization of communication into two categories: reducing the communication time directly and hiding the communication.",
+      "comment": "",
+      "color": "#2ea8e5",
+      "pageLabel": "21",
+      "sortIndex": "00020|002951|00513",
+      "position": {
+        "pageIndex": 20,
+        "rects": [
+          [
+            88.888,
+            197.811,
+            440.496,
+            206.837
+          ],
+          [
+            45.943,
+            185.859,
+            301.341,
+            194.885
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-05-04T07:42:47Z",
+      "readOnly": false,
+      "parentItem": "LHPILU4I",
+      "contentHash": "5de8ecbf5f66eb52ea7b73c5b34e64b4165fcbd54df9bb51ea51f37b14d5cac8",
+      "raw": null
+    },
+    {
+      "id": "A2ZCMGKE",
+      "key": "A2ZCMGKE",
+      "version": 0,
+      "type": "highlight",
+      "text": "Parallelism plays a crucial role in distributed training, especially for large FMs. Three types of parallelism are commonly employed for training large FMs. Data parallelism involves distributing the data across workers to scale up distributed training.",
+      "comment": "",
+      "color": "#2ea8e5",
+      "pageLabel": "21",
+      "sortIndex": "00020|001652|00321",
+      "position": {
+        "pageIndex": 20,
+        "rects": [
+          [
+            113.011,
+            401.051,
+            442.034,
+            410.077
+          ],
+          [
+            45.646,
+            389.099,
+            442.154,
+            398.175
+          ],
+          [
+            45.691,
+            377.138,
+            344.902,
+            386.164
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-05-04T07:42:17Z",
+      "readOnly": false,
+      "parentItem": "LHPILU4I",
+      "contentHash": "357e7c3ba500cd1dfb00ecd6e008cdb5a62a4b5c6d0b59e0e0a898acfbb993b5",
+      "raw": null
+    },
+    {
+      "id": "AXUW5FIB",
+      "key": "AXUW5FIB",
+      "version": 0,
+      "type": "highlight",
+      "text": "The increasing size and duration of training for large FMs have led to a rise in failures, emphasizing the importance of resilient training [261]. Fault tolerance approaches for large FMs primarily manifest in four forms.",
+      "comment": "",
+      "color": "#2ea8e5",
+      "pageLabel": "21",
+      "sortIndex": "00020|000524|00154",
+      "position": {
+        "pageIndex": 20,
+        "rects": [
+          [
+            104.625,
+            556.474,
+            442.161,
+            565.5
+          ],
+          [
+            45.944,
+            544.513,
+            440.467,
+            553.539
+          ],
+          [
+            45.944,
+            532.56,
+            200.303,
+            541.587
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-05-04T07:41:00Z",
+      "readOnly": false,
+      "parentItem": "LHPILU4I",
+      "contentHash": "ae98560b94fc460f7b8e27bb45cb067b54738e5444ade1ff1b7e198f4d6253d7",
+      "raw": null
+    },
+    {
+      "id": "XEQ6QA4A",
+      "key": "XEQ6QA4A",
+      "version": 0,
+      "type": "highlight",
+      "text": "(1) distributed training, (2) hardware-aware optimizations, (3) serving in cloud, and (4) serving in edge.",
+      "comment": "",
+      "color": "#a28ae5",
+      "pageLabel": "20",
+      "sortIndex": "00019|003560|00548",
+      "position": {
+        "pageIndex": 19,
+        "rects": [
+          [
+            334.195,
+            162.425,
+            440.881,
+            171.451
+          ],
+          [
+            45.771,
+            150.473,
+            356.75,
+            159.499
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-05-04T07:17:49Z",
+      "readOnly": false,
+      "parentItem": "LHPILU4I",
+      "contentHash": "88c2e6148eb8bc38e2173c63ce053fa104cea36a26d4e77f9eedf81df67e58bc",
+      "raw": null
+    },
+    {
+      "id": "5HKVX6TY",
+      "key": "5HKVX6TY",
+      "version": 0,
+      "type": "highlight",
+      "text": "LoRD approximates the weight matrix in large FMs by decomposing a given weight matrix into two or more smaller matrices.",
+      "comment": "",
+      "color": "#2ea8e5",
+      "pageLabel": "20",
+      "sortIndex": "00019|002035|00297",
+      "position": {
+        "pageIndex": 19,
+        "rects": [
+          [
+            221.112,
+            413.806,
+            440.555,
+            422.833
+          ],
+          [
+            45.773,
+            401.854,
+            343.329,
+            410.88
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-05-04T07:11:14Z",
+      "readOnly": false,
+      "parentItem": "LHPILU4I",
+      "contentHash": "d1cf8b99510d4e508d26524570f1bf474edd5eea16313ed63ec69f3677ab80cc",
+      "raw": null
+    },
+    {
+      "id": "TMSHP9C6",
+      "key": "TMSHP9C6",
+      "version": 0,
+      "type": "highlight",
+      "text": "Quantizing both weights and activation facilitates deployment on hardware accelerators.",
+      "comment": "",
+      "color": "#2ea8e5",
+      "pageLabel": "19",
+      "sortIndex": "00018|001785|00369",
+      "position": {
+        "pageIndex": 18,
+        "rects": [
+          [
+            203.932,
+            341.273,
+            442.171,
+            350.348
+          ],
+          [
+            45.945,
+            329.32,
+            179.77,
+            338.347
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-05-04T07:07:00Z",
+      "readOnly": false,
+      "parentItem": "LHPILU4I",
+      "contentHash": "aef2f10c0ef201565eef3f251340548793eb840fe4348de5ccbd4af24e2a68a4",
+      "raw": null
+    },
+    {
+      "id": "VKWIV3JW",
+      "key": "VKWIV3JW",
+      "version": 0,
+      "type": "highlight",
+      "text": "converts a trained full-precision model to a low-precision model without retraining. The advantage of PTQ lies in compressing models without altering the model structure or necessitating retraining, thereby reducing the storage and computational costs of models. Due to its low deployment cost, PTQ is also the most easily deployable and widely applicable technique in model compression.",
+      "comment": "",
+      "color": "#2ea8e5",
+      "pageLabel": "18",
+      "sortIndex": "00017|003346|00606",
+      "position": {
+        "pageIndex": 17,
+        "rects": [
+          [
+            206.579,
+            140.031,
+            440.301,
+            149.057
+          ],
+          [
+            45.775,
+            128.07,
+            440.269,
+            137.096
+          ],
+          [
+            45.775,
+            116.118,
+            440.293,
+            125.144
+          ],
+          [
+            45.775,
+            104.166,
+            440.304,
+            113.192
+          ],
+          [
+            45.407,
+            92.205,
+            257.709,
+            101.231
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-05-04T07:00:32Z",
+      "readOnly": false,
+      "parentItem": "LHPILU4I",
+      "contentHash": "fd78ae9893ce74b0afa0506d1c4325c6f9427992488c5e55eb1237d17bf3fb8d",
+      "raw": null
+    },
+    {
+      "id": "2YQRCLCM",
+      "key": "2YQRCLCM",
+      "version": 0,
+      "type": "highlight",
+      "text": "it quantizes weights, activations, and KV cache, thereby improving training throughput",
+      "comment": "",
+      "color": "#2ea8e5",
+      "pageLabel": "18",
+      "sortIndex": "00017|002393|00451",
+      "position": {
+        "pageIndex": 17,
+        "rects": [
+          [
+            275.609,
+            259.579,
+            440.646,
+            268.605
+          ],
+          [
+            45.775,
+            247.627,
+            237.156,
+            256.653
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-05-04T06:49:12Z",
+      "readOnly": false,
+      "parentItem": "LHPILU4I",
+      "contentHash": "06c6062994f8bdc6d979a976c26f6f50f62b832d0c8f7017c6835271ea158a82",
+      "raw": null
+    },
+    {
+      "id": "GVUPFSLW",
+      "key": "GVUPFSLW",
+      "version": 0,
+      "type": "highlight",
+      "text": "it adapts its parameters to the lower precision introduced by quantization.",
+      "comment": "",
+      "color": "#2ea8e5",
+      "pageLabel": "18",
+      "sortIndex": "00017|002094|00415",
+      "position": {
+        "pageIndex": 17,
+        "rects": [
+          [
+            45.775,
+            295.445,
+            347.402,
+            304.471
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-05-04T06:48:39Z",
+      "readOnly": false,
+      "parentItem": "LHPILU4I",
+      "contentHash": "eacd725c27058a742cc04ad3dcbd7a633d25ce6b235e9dd94a016168ff41958c",
+      "raw": null
+    },
+    {
+      "id": "JTU3I52G",
+      "key": "JTU3I52G",
+      "version": 0,
+      "type": "highlight",
+      "text": "Quantization is a well-established model compression method to mitigate the storage and computational demands. Compared to traditional DNNs, LLMs exhibit a higher frequency of activation outliers, which are crucial for maintaining model accuracy.",
+      "comment": "",
+      "color": "#2ea8e5",
+      "pageLabel": "18",
+      "sortIndex": "00017|001784|00367",
+      "position": {
+        "pageIndex": 17,
+        "rects": [
+          [
+            140.842,
+            355.223,
+            440.309,
+            364.249
+          ],
+          [
+            45.775,
+            343.271,
+            440.514,
+            352.297
+          ],
+          [
+            45.775,
+            331.31,
+            378.02,
+            340.336
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-05-04T06:44:40Z",
+      "readOnly": false,
+      "parentItem": "LHPILU4I",
+      "contentHash": "5997bd999ccb76174dda4c21d99ff423e1a3e169c6189cda9a6d207fcb2ca674",
+      "raw": null
+    },
+    {
+      "id": "B6WBRIRK",
+      "key": "B6WBRIRK",
+      "version": 0,
+      "type": "highlight",
+      "text": "white-box KD not only has access to the output results of the teacher model but also to its structure and intermediate results. Therefore, whitebox KD can better leverage the structure of the teacher model, enabling smaller student models to replicate and learn the capabilities of larger teacher models.",
+      "comment": "",
+      "color": "#2ea8e5",
+      "pageLabel": "18",
+      "sortIndex": "00017|000586|00166",
+      "position": {
+        "pageIndex": 17,
+        "rects": [
+          [
+            243.6,
+            556.474,
+            440.329,
+            565.5
+          ],
+          [
+            45.775,
+            544.513,
+            441.979,
+            553.539
+          ],
+          [
+            45.775,
+            532.56,
+            440.309,
+            541.587
+          ],
+          [
+            45.775,
+            520.608,
+            288.308,
+            529.634
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-05-04T06:40:59Z",
+      "readOnly": false,
+      "parentItem": "LHPILU4I",
+      "contentHash": "864315bc8020915c488b98f715384c79f1cdc5c5c77f9da5fd8e875b72663a2a",
+      "raw": null
+    },
+    {
+      "id": "EPITJ8RY",
+      "key": "EPITJ8RY",
+      "version": 0,
+      "type": "highlight",
+      "text": "Assuming that the internal structure of the teacher’s large base model is not visible, this approach fine-tunes the student model using prompt-response pairs generated by large FMs’ API. The goal is to imbue the student model with the capabilities of the teacher model.",
+      "comment": "",
+      "color": "#2ea8e5",
+      "pageLabel": "17",
+      "sortIndex": "00016|002850|00511",
+      "position": {
+        "pageIndex": 16,
+        "rects": [
+          [
+            120.905,
+            199.801,
+            442.135,
+            208.827
+          ],
+          [
+            45.943,
+            187.849,
+            440.459,
+            196.875
+          ],
+          [
+            45.943,
+            175.896,
+            424.318,
+            184.923
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-05-04T06:37:54Z",
+      "readOnly": false,
+      "parentItem": "LHPILU4I",
+      "contentHash": "ade8dd350e9981d7ebc10f01c2f0960d1e48914c7cecd5fd53a19864c389722e",
+      "raw": null
+    },
+    {
+      "id": "WVZBPJVZ",
+      "key": "WVZBPJVZ",
+      "version": 0,
+      "type": "highlight",
+      "text": "KD transfers knowledge from a complex, heavy model (i.e., teacher model) to a simpler corresponding model (i.e., student model) for model compression.",
+      "comment": "",
+      "color": "#2ea8e5",
+      "pageLabel": "17",
+      "sortIndex": "00016|002575|00463",
+      "position": {
+        "pageIndex": 16,
+        "rects": [
+          [
+            181.583,
+            247.627,
+            441.582,
+            256.653
+          ],
+          [
+            45.943,
+            235.666,
+            429.389,
+            244.692
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-05-04T03:36:23Z",
+      "readOnly": false,
+      "parentItem": "LHPILU4I",
+      "contentHash": "c0af668c5446a605463f880105537d72d1fc7de765e871ef7201ed771a43024b",
+      "raw": null
+    },
+    {
+      "id": "HJW62T73",
+      "key": "HJW62T73",
+      "version": 0,
+      "type": "highlight",
+      "text": "removes redundant or non-essential connections, neurons, or layers from a neural network. The primary objective is to reduce the model size, subsequently decreasing computational and storage costs, while maintaining model accuracy.",
+      "comment": "",
+      "color": "#2ea8e5",
+      "pageLabel": "16",
+      "sortIndex": "00015|000902|00441",
+      "position": {
+        "pageIndex": 15,
+        "rects": [
+          [
+            226.789,
+            293.548,
+            441.4,
+            302.574
+          ],
+          [
+            45.773,
+            281.587,
+            441.387,
+            290.613
+          ],
+          [
+            45.773,
+            269.635,
+            441.844,
+            278.661
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-05-04T03:15:46Z",
+      "readOnly": false,
+      "parentItem": "LHPILU4I",
+      "contentHash": "c2ac92917e260e0eef33c986b788b8a26c353561beefde004a206d36c871c08f",
+      "raw": null
+    },
+    {
+      "id": "5YGFB94E",
+      "key": "5YGFB94E",
+      "version": 0,
+      "type": "highlight",
+      "text": "To effectively process long sequences, transformers need to adapt their positional encoding to enhance their capability to capture long-range information. Due to the quadratic computational cost associated with attention mechanisms, various resource-efficient optimizations have been proposed to handle long inputs.",
+      "comment": "",
+      "color": "#2ea8e5",
+      "pageLabel": "15",
+      "sortIndex": "00014|002223|00429",
+      "position": {
+        "pageIndex": 14,
+        "rects": [
+          [
+            143.308,
+            305.408,
+            440.659,
+            314.434
+          ],
+          [
+            45.945,
+            293.456,
+            440.482,
+            302.482
+          ],
+          [
+            45.945,
+            281.495,
+            442.144,
+            290.521
+          ],
+          [
+            45.945,
+            269.543,
+            266.802,
+            278.569
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-05-03T11:51:07Z",
+      "readOnly": false,
+      "parentItem": "LHPILU4I",
+      "contentHash": "241fc698aca3fe7e7b20d2136a6f8a611c70c7f4d40a1ce249160b01c1c95fc2",
+      "raw": null
+    },
+    {
+      "id": "UJKEB3BC",
+      "key": "UJKEB3BC",
+      "version": 0,
+      "type": "highlight",
+      "text": "An alternative approach involves leveraging sparse attention",
+      "comment": "",
+      "color": "#2ea8e5",
+      "pageLabel": "15",
+      "sortIndex": "00014|000728|00196",
+      "position": {
+        "pageIndex": 14,
+        "rects": [
+          [
+            215.21,
+            514.624,
+            442.154,
+            523.65
+          ],
+          [
+            45.945,
+            502.672,
+            75.221,
+            511.698
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-05-03T11:40:50Z",
+      "readOnly": false,
+      "parentItem": "LHPILU4I",
+      "contentHash": "4eb25330fcd706999d5c27c57641b6ee078c9b918198c6f09d95f2a856e67786",
+      "raw": null
+    },
+    {
+      "id": "W5BMYK4Z",
+      "key": "W5BMYK4Z",
+      "version": 0,
+      "type": "highlight",
+      "text": "This method includes directly filtering raw data (i.e., prompt filtering) or filtering hidden activations of FMs (i.e., token pruning).",
+      "comment": "",
+      "color": "#2ea8e5",
+      "pageLabel": "14",
+      "sortIndex": "00013|001774|00368",
+      "position": {
+        "pageIndex": 13,
+        "rects": [
+          [
+            220.113,
+            342.471,
+            441.403,
+            351.497
+          ],
+          [
+            45.772,
+            330.519,
+            352.619,
+            339.545
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-05-03T09:35:20Z",
+      "readOnly": false,
+      "parentItem": "LHPILU4I",
+      "contentHash": "bdd9b52e1520d6171e27132fb6698df64bae1a3524f133acf967c6d747eb7e8d",
+      "raw": null
+    },
+    {
+      "id": "NCMFL6JG",
+      "key": "NCMFL6JG",
+      "version": 0,
+      "type": "highlight",
+      "text": "The autoregressive mechanism significantly hinders the inference efficiency of large FMs. To address this, various approaches aim to replace autoregressive decoding with more efficient non-autoregressive techniques.",
+      "comment": "",
+      "color": "#2ea8e5",
+      "pageLabel": "14",
+      "sortIndex": "00013|000228|00132",
+      "position": {
+        "pageIndex": 13,
+        "rects": [
+          [
+            184.033,
+            577.994,
+            441.98,
+            587.02
+          ],
+          [
+            45.774,
+            566.033,
+            441.962,
+            575.059
+          ],
+          [
+            45.774,
+            554.081,
+            283.194,
+            563.107
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-05-03T09:33:04Z",
+      "readOnly": false,
+      "parentItem": "LHPILU4I",
+      "contentHash": "fcbcb81b65c61474b8a62c77480dfed514d271994be9ed0481660cdc48f3b716",
+      "raw": null
+    },
+    {
+      "id": "P5H4ZDLH",
+      "key": "P5H4ZDLH",
+      "version": 0,
+      "type": "highlight",
+      "text": "adapts large FMs by targeting a significantly smaller subspace than the original, expansive training space. This approach involves fine-tuning low-rank matrix parameters, a technique that effectively reduces the overall training cost.",
+      "comment": "",
+      "color": "#2ea8e5",
+      "pageLabel": "13",
+      "sortIndex": "00012|001128|00369",
+      "position": {
+        "pageIndex": 12,
+        "rects": [
+          [
+            260.011,
+            341.805,
+            440.747,
+            350.831
+          ],
+          [
+            45.945,
+            329.844,
+            440.465,
+            338.87
+          ],
+          [
+            45.945,
+            317.892,
+            421.278,
+            326.918
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-05-03T09:30:01Z",
+      "readOnly": false,
+      "parentItem": "LHPILU4I",
+      "contentHash": "a307a272f6ca69ec38b6e3b7155100c8bce0daa9221994f607e468e6a0684893",
+      "raw": null
+    },
+    {
+      "id": "6PNZPD33",
+      "key": "6PNZPD33",
+      "version": 0,
+      "type": "highlight",
+      "text": "freezing the majority of parameters in large FMs and selectively updating only a small portion of the parameters.",
+      "comment": "",
+      "color": "#2ea8e5",
+      "pageLabel": "13",
+      "sortIndex": "00012|000202|00218",
+      "position": {
+        "pageIndex": 12,
+        "rects": [
+          [
+            136.009,
+            492.295,
+            440.502,
+            501.321
+          ],
+          [
+            45.945,
+            480.343,
+            207.338,
+            489.369
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-05-03T09:22:38Z",
+      "readOnly": false,
+      "parentItem": "LHPILU4I",
+      "contentHash": "801f03361c2bbbb31341a7cfec6ca39a73ba3da1eb71c5dc296b9a4d858740f2",
+      "raw": null
+    },
+    {
+      "id": "2TFANCUQ",
+      "key": "2TFANCUQ",
+      "version": 0,
+      "type": "highlight",
+      "text": "a trainable, task-specific prefix part to each layer of large FMs. This technique aims to reduce the tuning cost by limiting the updates to the parameters in this prefix.",
+      "comment": "",
+      "color": "#2ea8e5",
+      "pageLabel": "12",
+      "sortIndex": "00011|001852|00546",
+      "position": {
+        "pageIndex": 11,
+        "rects": [
+          [
+            157.773,
+            176.681,
+            440.292,
+            185.756
+          ],
+          [
+            45.776,
+            164.728,
+            441.977,
+            173.755
+          ],
+          [
+            45.776,
+            152.776,
+            58.428,
+            161.802
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-05-03T09:21:08Z",
+      "readOnly": false,
+      "parentItem": "LHPILU4I",
+      "contentHash": "20ecf62c73154cbb6095fe84f9936bcc56576b7e13b3a7947ee5bb5d89de223f",
+      "raw": null
+    },
+    {
+      "id": "2I5UMTFB",
+      "key": "2I5UMTFB",
+      "version": 0,
+      "type": "highlight",
+      "text": "designing a task-specific prompt for each task, with the aim of replacing the traditional fine-tuning of pre-trained large FMs parameters.",
+      "comment": "",
+      "color": "#2ea8e5",
+      "pageLabel": "12",
+      "sortIndex": "00011|000733|00378",
+      "position": {
+        "pageIndex": 11,
+        "rects": [
+          [
+            150.898,
+            332.103,
+            440.309,
+            341.179
+          ],
+          [
+            45.774,
+            320.151,
+            306.467,
+            329.177
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-05-03T09:19:48Z",
+      "readOnly": false,
+      "parentItem": "LHPILU4I",
+      "contentHash": "bcc1c0e4bd303309360a4a421f30dcaa0fb88cd96080252bc07061c38fbc57d7",
+      "raw": null
+    },
+    {
+      "id": "H3TWESSR",
+      "key": "H3TWESSR",
+      "version": 0,
+      "type": "highlight",
+      "text": "by introducing adapter modules to specific layers (or all layers) of pre-trained large FMs.",
+      "comment": "",
+      "color": "#2ea8e5",
+      "pageLabel": "11",
+      "sortIndex": "00010|002730|00536",
+      "position": {
+        "pageIndex": 10,
+        "rects": [
+          [
+            244.945,
+            174.566,
+            442.127,
+            183.642
+          ],
+          [
+            45.942,
+            162.614,
+            231.92,
+            171.64
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-05-03T09:16:32Z",
+      "readOnly": false,
+      "parentItem": "LHPILU4I",
+      "contentHash": "da521089119aa45d1911ceddfd08e10ef299cc7847fc09c1dea3a3e4e29eed4d",
+      "raw": null
+    },
+    {
+      "id": "727DLB9B",
+      "key": "727DLB9B",
+      "version": 0,
+      "type": "highlight",
+      "text": "treats the diffusion process as solving differential equations on manifolds, greatly accelerating the inference process.",
+      "comment": "",
+      "color": "#2ea8e5",
+      "pageLabel": "8",
+      "sortIndex": "00007|002372|00447",
+      "position": {
+        "pageIndex": 7,
+        "rects": [
+          [
+            251.568,
+            263.567,
+            441.981,
+            272.593
+          ],
+          [
+            45.775,
+            251.615,
+            332.897,
+            260.641
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-05-03T08:34:06Z",
+      "readOnly": false,
+      "parentItem": "LHPILU4I",
+      "contentHash": "b602a72b864dca7de79e4d57e8c9e1a0bedf3d40078ab08b3742cb19357b9726",
+      "raw": null
+    },
+    {
+      "id": "RZPA9H4Z",
+      "key": "RZPA9H4Z",
+      "version": 0,
+      "type": "highlight",
+      "text": "non-Markovian, deterministic approach to sampling",
+      "comment": "",
+      "color": "#2ea8e5",
+      "pageLabel": "8",
+      "sortIndex": "00007|002155|00411",
+      "position": {
+        "pageIndex": 7,
+        "rects": [
+          [
+            375.722,
+            299.433,
+            441.374,
+            308.459
+          ],
+          [
+            45.775,
+            287.481,
+            189.703,
+            296.507
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-05-03T08:32:54Z",
+      "readOnly": false,
+      "parentItem": "LHPILU4I",
+      "contentHash": "29171d54a18dd09020eb22ce438c3c4df9dda60809cf10508ca20b032cf586b2",
+      "raw": null
+    },
+    {
+      "id": "6N6REPYB",
+      "key": "6N6REPYB",
+      "version": 0,
+      "type": "highlight",
+      "text": "learning the variances of the reverse diffusion process and employing a hybrid training objective",
+      "comment": "",
+      "color": "#2ea8e5",
+      "pageLabel": "8",
+      "sortIndex": "00007|001871|00375",
+      "position": {
+        "pageIndex": 7,
+        "rects": [
+          [
+            142.925,
+            335.298,
+            440.28,
+            344.324
+          ],
+          [
+            45.775,
+            323.346,
+            147.435,
+            332.372
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-05-03T08:31:46Z",
+      "readOnly": false,
+      "parentItem": "LHPILU4I",
+      "contentHash": "59058e795682479c7c3b96d96d7e4d29325bc7e427fd0763e003823750318085",
+      "raw": null
+    },
+    {
+      "id": "4XFVJYLF",
+      "key": "4XFVJYLF",
+      "version": 0,
+      "type": "highlight",
+      "text": "resource efficiency.",
+      "comment": "",
+      "color": "#2ea8e5",
+      "pageLabel": "8",
+      "sortIndex": "00007|001749|00351",
+      "position": {
+        "pageIndex": 7,
+        "rects": [
+          [
+            339.678,
+            359.211,
+            416.572,
+            368.237
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-05-03T08:31:17Z",
+      "readOnly": false,
+      "parentItem": "LHPILU4I",
+      "contentHash": "b63d639fd24d17179955554e58d48ccb88166e1f7a22d862ec7976b409a554b4",
+      "raw": null
+    },
+    {
+      "id": "5PXG9NYA",
+      "key": "5PXG9NYA",
+      "version": 0,
+      "type": "highlight",
+      "text": "a strategy that allows a model to terminate its computational process prematurely when it attains high confidence in the prediction or encounters resource constraints.",
+      "comment": "",
+      "color": "#2ea8e5",
+      "pageLabel": "7",
+      "sortIndex": "00006|001970|00562",
+      "position": {
+        "pageIndex": 6,
+        "rects": [
+          [
+            371.054,
+            148.971,
+            442.14,
+            157.998
+          ],
+          [
+            45.943,
+            137.019,
+            440.483,
+            146.045
+          ],
+          [
+            45.943,
+            125.058,
+            265.402,
+            134.084
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-05-03T08:24:28Z",
+      "readOnly": false,
+      "parentItem": "LHPILU4I",
+      "contentHash": "6ad7a68e7b814730cccaa5bf20f66d0e82fbbd6d4b3b04826bcff5c88b8ff029",
+      "raw": null
+    },
+    {
+      "id": "C62ZVUD7",
+      "key": "C62ZVUD7",
+      "version": 0,
+      "type": "highlight",
+      "text": "This model utilizes routed sparse parameters during inference.",
+      "comment": "",
+      "color": "#2ea8e5",
+      "pageLabel": "7",
+      "sortIndex": "00006|000653|00364",
+      "position": {
+        "pageIndex": 6,
+        "rects": [
+          [
+            80.407,
+            346.729,
+            336.841,
+            355.755
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-05-03T08:22:46Z",
+      "readOnly": false,
+      "parentItem": "LHPILU4I",
+      "contentHash": "1017d260f34c9547b47188cde4852df465b5fdaa2cea7dbfddf7f08fcca59e5d",
+      "raw": null
+    },
+    {
+      "id": "599NQDJ5",
+      "key": "599NQDJ5",
+      "version": 0,
+      "type": "highlight",
+      "text": "low-rank approximations of the self-attention matrix and innovative reformulations of the self-attention",
+      "comment": "",
+      "color": "#2ea8e5",
+      "pageLabel": "6",
+      "sortIndex": "00005|000584|00357",
+      "position": {
+        "pageIndex": 5,
+        "rects": [
+          [
+            337.814,
+            353.605,
+            440.321,
+            362.631
+          ],
+          [
+            45.774,
+            341.644,
+            369.78,
+            350.67
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-05-03T08:05:30Z",
+      "readOnly": false,
+      "parentItem": "LHPILU4I",
+      "contentHash": "3061774d07e97045925cfea70046cade71ff70e1dbfab860e01fed888ee08f50",
+      "raw": null
+    },
+    {
+      "id": "KGZWSC56",
+      "key": "KGZWSC56",
+      "version": 0,
+      "type": "highlight",
+      "text": "to retain the empirical advantages of a fully quadratic self-attention scheme while employing a reduced number of inner products.",
+      "comment": "",
+      "color": "#2ea8e5",
+      "pageLabel": "5",
+      "sortIndex": "00004|002335|00564",
+      "position": {
+        "pageIndex": 4,
+        "rects": [
+          [
+            234.393,
+            146.828,
+            442.161,
+            155.854
+          ],
+          [
+            45.947,
+            134.876,
+            386.123,
+            143.902
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-05-03T07:56:32Z",
+      "readOnly": false,
+      "parentItem": "LHPILU4I",
+      "contentHash": "689a3703169aa1c8359b8572eef20f7ac7ac062347c5bc323e6f8e2275739206",
+      "raw": null
+    },
+    {
+      "id": "I5A48SVI",
+      "key": "I5A48SVI",
+      "version": 0,
+      "type": "highlight",
+      "text": "the computation complexity of attention is O(T 2D), whereas that of the FFN is O(T D2)",
+      "comment": "",
+      "color": "#ff6666",
+      "pageLabel": "5",
+      "sortIndex": "00004|000828|00268",
+      "position": {
+        "pageIndex": 4,
+        "rects": [
+          [
+            287.37,
+            442.02,
+            442.167,
+            451.046
+          ],
+          [
+            45.945,
+            429.988,
+            253.014,
+            440.927
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-05-03T07:52:13Z",
+      "readOnly": false,
+      "parentItem": "LHPILU4I",
+      "contentHash": "b89a12bc9ec80ba30290e9c5f8d07efabab2cfb8b8cfc247b59004a3469fb887",
+      "raw": null
+    },
+    {
+      "id": "2KSH7YS3",
+      "key": "2KSH7YS3",
+      "version": 0,
+      "type": "highlight",
+      "text": "FFN",
+      "comment": "",
+      "color": "#ff6666",
+      "pageLabel": "5",
+      "sortIndex": "00004|000597|00233",
+      "position": {
+        "pageIndex": 4,
+        "rects": [
+          [
+            364.044,
+            477.885,
+            380.674,
+            486.912
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-05-03T07:51:58Z",
+      "readOnly": false,
+      "parentItem": "LHPILU4I",
+      "contentHash": "7655832fbf31053ce679b3b8e240805ea7c70f2cf8c23a60ff4768d3fb0ede6d",
+      "raw": null
+    },
+    {
+      "id": "E2ASLBDE",
+      "key": "E2ASLBDE",
+      "version": 0,
+      "type": "highlight",
+      "text": "The attention mechanism",
+      "comment": "",
+      "color": "#ff6666",
+      "pageLabel": "5",
+      "sortIndex": "00004|000239|00185",
+      "position": {
+        "pageIndex": 4,
+        "rects": [
+          [
+            208.089,
+            525.712,
+            314.362,
+            534.738
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-05-03T07:49:47Z",
+      "readOnly": false,
+      "parentItem": "LHPILU4I",
+      "contentHash": "88aad9ebdaba1bcfb5673ca5d57a1b9833256f3ab7c2c20ba27bd759146ebcb9",
+      "raw": null
+    },
+    {
+      "id": "2SSLYS8E",
+      "key": "2SSLYS8E",
+      "version": 0,
+      "type": "highlight",
+      "text": "This embedding overhead is almost negligible compared to the following compute-intensive transformer encoder (e.g., <5%).",
+      "comment": "",
+      "color": "#2ea8e5",
+      "pageLabel": "3",
+      "sortIndex": "00002|003131|00586",
+      "position": {
+        "pageIndex": 2,
+        "rects": [
+          [
+            295.963,
+            124.012,
+            440.451,
+            133.397
+          ],
+          [
+            45.939,
+            112.131,
+            406.489,
+            121.157
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-05-03T07:47:42Z",
+      "readOnly": false,
+      "parentItem": "LHPILU4I",
+      "contentHash": "dcc23175e323fad4a12c5f844fabed16b191a60922cf505a517a5f6c89e5265c",
+      "raw": null
+    },
+    {
+      "id": "9LUYH7CD",
+      "key": "9LUYH7CD",
+      "version": 0,
+      "type": "highlight",
+      "text": "(2) diffusion models [218] to generate high-quality image pixels.",
+      "comment": "",
+      "color": "#2ea8e5",
+      "pageLabel": "4",
+      "sortIndex": "00003|000659|00458",
+      "position": {
+        "pageIndex": 3,
+        "rects": [
+          [
+            203.139,
+            252.633,
+            440.298,
+            261.659
+          ],
+          [
+            45.773,
+            240.672,
+            71.686,
+            249.698
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-05-03T07:43:27Z",
+      "readOnly": false,
+      "parentItem": "LHPILU4I",
+      "contentHash": "75d16aa1cfcd042e736ee182a29da9d266134aa54349be1372f67cd8c71b8cc8",
+      "raw": null
+    },
+    {
+      "id": "8DSBMRWU",
+      "key": "8DSBMRWU",
+      "version": 0,
+      "type": "highlight",
+      "text": "(1) reuse the LLM to generate text",
+      "comment": "",
+      "color": "#2ea8e5",
+      "pageLabel": "4",
+      "sortIndex": "00003|000629|00458",
+      "position": {
+        "pageIndex": 3,
+        "rects": [
+          [
+            45.477,
+            252.633,
+            187.927,
+            261.659
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-05-03T07:43:16Z",
+      "readOnly": false,
+      "parentItem": "LHPILU4I",
+      "contentHash": "8ac10d436ffd4555ddd0cc548ee9239bcab7e81d290a1b9a89ad3a4f1a72c18e",
+      "raw": null
+    },
+    {
+      "id": "CDHKYYWJ",
+      "key": "CDHKYYWJ",
+      "version": 0,
+      "type": "highlight",
+      "text": "two specific goals: encoding input data in different modalities into the same latent space, or generating output data in different modalities",
+      "comment": "",
+      "color": "#a28ae5",
+      "pageLabel": "4",
+      "sortIndex": "00003|000082|00374",
+      "position": {
+        "pageIndex": 3,
+        "rects": [
+          [
+            248.173,
+            336.316,
+            441.989,
+            345.342
+          ],
+          [
+            45.773,
+            324.364,
+            403.274,
+            333.39
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-05-03T07:42:10Z",
+      "readOnly": false,
+      "parentItem": "LHPILU4I",
+      "contentHash": "85913815692fae0c6447b90a936a2c6c0c40d89162681a44fe40dbb85f6a5d05",
+      "raw": null
+    },
+    {
+      "id": "KRQRX6WK",
+      "key": "KRQRX6WK",
+      "version": 0,
+      "type": "highlight",
+      "text": "ViT first splits an image into fixed-size patches (i.e., tokens) by a convolutional embedding layer",
+      "comment": "",
+      "color": "#2ea8e5",
+      "pageLabel": "3",
+      "sortIndex": "00002|002952|00562",
+      "position": {
+        "pageIndex": 2,
+        "rects": [
+          [
+            228.925,
+            147.996,
+            441.591,
+            157.022
+          ],
+          [
+            45.939,
+            136.044,
+            226.949,
+            145.07
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-05-03T07:37:56Z",
+      "readOnly": false,
+      "parentItem": "LHPILU4I",
+      "contentHash": "8ac657449f8d3b4332d6b55efcb28666aea97b93534301fb1c68595abc67e04b",
+      "raw": null
+    },
+    {
+      "id": "WBRIYS6M",
+      "key": "WBRIYS6M",
+      "version": 0,
+      "type": "highlight",
+      "text": "e.g., SAM, seggpt [125, 254]",
+      "comment": "",
+      "color": "#5fb236",
+      "pageLabel": "3",
+      "sortIndex": "00002|002721|00527",
+      "position": {
+        "pageIndex": 2,
+        "rects": [
+          [
+            289.377,
+            183.861,
+            400.169,
+            192.888
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-05-03T07:29:21Z",
+      "readOnly": false,
+      "parentItem": "LHPILU4I",
+      "contentHash": "fd24e52d0ffd56bd4768e63d5abab0c26080544c94ddec954fe38f7cd84d5448",
+      "raw": null
+    },
+    {
+      "id": "P7VQZFP8",
+      "key": "P7VQZFP8",
+      "version": 0,
+      "type": "highlight",
+      "text": "Vision FMs.",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "3",
+      "sortIndex": "00002|002596|00515",
+      "position": {
+        "pageIndex": 2,
+        "rects": [
+          [
+            55.903,
+            195.823,
+            107.969,
+            204.899
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-05-03T07:28:30Z",
+      "readOnly": false,
+      "parentItem": "LHPILU4I",
+      "contentHash": "5d1e588334799192f01b9e2d23569ac3ab50304201cecca44d04e0dc058f020b",
+      "raw": null
+    },
+    {
+      "id": "JJ9I656M",
+      "key": "JJ9I656M",
+      "version": 0,
+      "type": "highlight",
+      "text": "each position-wise vector undergoes transformation through a feedforward network (FFN)",
+      "comment": "",
+      "color": "#2ea8e5",
+      "pageLabel": "3",
+      "sortIndex": "00002|002222|00443",
+      "position": {
+        "pageIndex": 2,
+        "rects": [
+          [
+            319.438,
+            267.553,
+            442.155,
+            276.579
+          ],
+          [
+            45.94,
+            255.592,
+            312.822,
+            264.618
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-05-03T07:28:19Z",
+      "readOnly": false,
+      "parentItem": "LHPILU4I",
+      "contentHash": "1d7ed61b5ae6a10a874b785283a2aea623eeec014a92657192e01a326dc6edb6",
+      "raw": null
+    },
+    {
+      "id": "YRILKVZ2",
+      "key": "YRILKVZ2",
+      "version": 0,
+      "type": "highlight",
+      "text": "layer normalization is applied to the output, ensuring stabilization and standardization of the activations",
+      "comment": "",
+      "color": "#2ea8e5",
+      "pageLabel": "3",
+      "sortIndex": "00002|002114|00431",
+      "position": {
+        "pageIndex": 2,
+        "rects": [
+          [
+            223.251,
+            279.505,
+            440.458,
+            288.532
+          ],
+          [
+            45.94,
+            267.553,
+            254.794,
+            276.579
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-05-03T07:26:17Z",
+      "readOnly": false,
+      "parentItem": "LHPILU4I",
+      "contentHash": "d8eed4d7247d94a608e0fa9cfc2cd6953f8badaa5e956f05056ed80c90a9cd37",
+      "raw": null
+    },
+    {
+      "id": "RMQMEC8R",
+      "key": "RMQMEC8R",
+      "version": 0,
+      "type": "highlight",
+      "text": "converting input words into high-dimensional vectors through an embedding layer.",
+      "comment": "",
+      "color": "#2ea8e5",
+      "pageLabel": "3",
+      "sortIndex": "00002|001929|00407",
+      "position": {
+        "pageIndex": 2,
+        "rects": [
+          [
+            143.484,
+            303.419,
+            442.157,
+            312.445
+          ],
+          [
+            45.94,
+            291.458,
+            88.13,
+            300.484
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-05-03T07:25:10Z",
+      "readOnly": false,
+      "parentItem": "LHPILU4I",
+      "contentHash": "cb781064eefdf4eb528a1c7375cc58b263bf9f72d893e054d676a5d8b77e408b",
+      "raw": null
+    },
+    {
+      "id": "46YWFK64",
+      "key": "46YWFK64",
+      "version": 0,
+      "type": "highlight",
+      "text": "During processing, attention mechanisms assign varying weights to different segments of these input vectors",
+      "comment": "",
+      "color": "#2ea8e5",
+      "pageLabel": "3",
+      "sortIndex": "00002|002001|00419",
+      "position": {
+        "pageIndex": 2,
+        "rects": [
+          [
+            90.186,
+            291.458,
+            440.439,
+            300.484
+          ],
+          [
+            45.94,
+            279.505,
+            133.892,
+            288.532
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-05-03T07:25:01Z",
+      "readOnly": false,
+      "parentItem": "LHPILU4I",
+      "contentHash": "9c5601807e21199c31384e05236052374a4779ba3061c495180b9f7ac6600dd5",
+      "raw": null
+    },
+    {
+      "id": "A8RB6Q3N",
+      "key": "A8RB6Q3N",
+      "version": 0,
+      "type": "highlight",
+      "text": "attention-based transformer architecture",
+      "comment": "",
+      "color": "#2ea8e5",
+      "pageLabel": "3",
+      "sortIndex": "00002|001864|00395",
+      "position": {
+        "pageIndex": 2,
+        "rects": [
+          [
+            252.567,
+            315.371,
+            417.01,
+            324.397
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-05-03T07:24:26Z",
+      "readOnly": false,
+      "parentItem": "LHPILU4I",
+      "contentHash": "76a73715f1a1516fff8ee111d363a9a2ee644d82d701f82b42996a2a2872087f",
+      "raw": null
+    },
+    {
+      "id": "VBAM2UUJ",
+      "key": "VBAM2UUJ",
+      "version": 0,
+      "type": "highlight",
+      "text": "Language FMs",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "3",
+      "sortIndex": "00002|001826|00395",
+      "position": {
+        "pageIndex": 2,
+        "rects": [
+          [
+            55.903,
+            315.371,
+            118.792,
+            324.397
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-05-03T07:24:16Z",
+      "readOnly": false,
+      "parentItem": "LHPILU4I",
+      "contentHash": "8e223bc2d01d77223fbe05e23a1abd7ab9d25ff98bb88f448cfbb2e8f08886c2",
+      "raw": null
+    },
+    {
+      "id": "WGA9V9QE",
+      "key": "WGA9V9QE",
+      "version": 0,
+      "type": "highlight",
+      "text": "huge resource demand",
+      "comment": "",
+      "color": "#ff6666",
+      "pageLabel": "2",
+      "sortIndex": "00001|001652|00348",
+      "position": {
+        "pageIndex": 1,
+        "rects": [
+          [
+            226.725,
+            362.198,
+            317.821,
+            371.224
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-05-03T07:03:58Z",
+      "readOnly": false,
+      "parentItem": "LHPILU4I",
+      "contentHash": "a949d610b0e57d8973a5a98a17ad01bf3683b77d0441b5f968267f085dc00859",
+      "raw": null
+    },
+    {
+      "id": "AC93TXL3",
+      "key": "AC93TXL3",
+      "version": 0,
+      "type": "highlight",
+      "text": "accuracy and generalization ability can continuously expand with more data or parameters, without altering the underlying algorithms and architectures",
+      "comment": "",
+      "color": "#2ea8e5",
+      "pageLabel": "2",
+      "sortIndex": "00001|001120|00265",
+      "position": {
+        "pageIndex": 1,
+        "rects": [
+          [
+            80.228,
+            445.881,
+            442.004,
+            454.907
+          ],
+          [
+            45.776,
+            433.929,
+            314.896,
+            442.955
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-05-03T07:03:39Z",
+      "readOnly": false,
+      "parentItem": "LHPILU4I",
+      "contentHash": "c593def515ad169958d7ae72d5f195dcf8785bc40ca266e674db78d1df9ca097",
+      "raw": null
+    },
+    {
+      "id": "KZFK8XIN",
+      "key": "KZFK8XIN",
+      "version": 0,
+      "type": "highlight",
+      "text": "multimodal models",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "2",
+      "sortIndex": "00001|000714|00193",
+      "position": {
+        "pageIndex": 1,
+        "rects": [
+          [
+            265.094,
+            517.612,
+            343.584,
+            526.638
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-05-03T07:00:22Z",
+      "readOnly": false,
+      "parentItem": "LHPILU4I",
+      "contentHash": "4d1f39b07f83a16d70e588704b36ff78697f7a076bcd1f36fe091241527becbd",
+      "raw": null
+    },
+    {
+      "id": "JMNSNJW9",
+      "key": "JMNSNJW9",
+      "version": 0,
+      "type": "highlight",
+      "text": "latent diffusion models (LDMs)",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "2",
+      "sortIndex": "00001|000599|00181",
+      "position": {
+        "pageIndex": 1,
+        "rects": [
+          [
+            86.439,
+            529.573,
+            229.664,
+            538.599
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-05-03T06:59:57Z",
+      "readOnly": false,
+      "parentItem": "LHPILU4I",
+      "contentHash": "22a1d850ae98de9a4aa92ec296e3cac3966cf576583317cf6441f90cd4c86fd6",
+      "raw": null
+    },
+    {
+      "id": "7HFNRN46",
+      "key": "7HFNRN46",
+      "version": 0,
+      "type": "highlight",
+      "text": "(2) vision transformers models (ViTs)",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "2",
+      "sortIndex": "00001|000489|00157",
+      "position": {
+        "pageIndex": 1,
+        "rects": [
+          [
+            302.943,
+            553.477,
+            440.309,
+            562.503
+          ],
+          [
+            45.469,
+            541.525,
+            72.194,
+            550.551
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-05-03T06:59:27Z",
+      "readOnly": false,
+      "parentItem": "LHPILU4I",
+      "contentHash": "7887525b10cedbeb14b23a9ae72c5f1ec22eb98cbda7b5e6e3b90e23eb19d429",
+      "raw": null
+    },
+    {
+      "id": "2PYVWRPI",
+      "key": "2PYVWRPI",
+      "version": 0,
+      "type": "highlight",
+      "text": "(1) large language models (LLMs)",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "2",
+      "sortIndex": "00001|000397|00145",
+      "position": {
+        "pageIndex": 1,
+        "rects": [
+          [
+            222.742,
+            565.438,
+            367.62,
+            574.464
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-05-03T06:57:27Z",
+      "readOnly": false,
+      "parentItem": "LHPILU4I",
+      "contentHash": "611678501f95fd0a979880e11151cf7e8e19411fcedee31becf548b66cf234e3",
+      "raw": null
+    }
+  ],
+  "notes": [
+    {
+      "id": "8TPXFMAY",
+      "key": "8TPXFMAY",
+      "version": 0,
+      "html": "<div data-citation-items=\"%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FDQLNTHIJ%22%5D%2C%22itemData%22%3A%7B%22id%22%3A%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FDQLNTHIJ%22%2C%22type%22%3A%22article-journal%22%2C%22abstract%22%3A%22Large%20foundation%20models%2C%20including%20large%20language%20models%2C%20vision%20transformers%2C%20diffusion%2C%20and%20large%20language%20model%20based%20multimodal%20models%2C%20are%20revolutionizing%20the%20entire%20machine%20learning%20lifecycle%2C%20from%20training%20to%20deployment.%20However%2C%20the%20substantial%20advancements%20in%20versatility%20and%20performance%20these%20models%20offer%20come%20at%20a%20significant%20cost%20in%20terms%20of%20hardware%20resources.%20To%20support%20the%20growth%20of%20these%20large%20models%20in%20a%20scalable%20and%20environmentally%20sustainable%20way%2C%20there%20has%20been%20a%20considerable%20focus%20on%20developing%20resource-efficient%20strategies.%20This%20survey%20delves%20into%20the%20critical%20importance%20of%20such%20research%2C%20examining%20both%20algorithmic%20and%20systemic%20aspects.%20It%20offers%20a%20comprehensive%20analysis%20and%20valuable%20insights%20gleaned%20from%20existing%20literature%2C%20encompassing%20a%20broad%20array%20of%20topics%20from%20cutting-edge%20model%20architectures%20and%20training%2Fserving%20algorithms%20to%20practical%20system%20designs%20and%20implementations.%20The%20goal%20of%20this%20survey%20is%20to%20provide%20an%20overarching%20understanding%20of%20how%20current%20approaches%20are%20tackling%20the%20resource%20challenges%20posed%20by%20large%20foundation%20models%20and%20to%20potentially%20inspire%20future%20breakthroughs%20in%20this%20field.%22%2C%22container-title%22%3A%22ACM%20Computing%20Surveys%22%2C%22DOI%22%3A%2210.1145%2F3706418%22%2C%22ISSN%22%3A%220360-0300%2C%201557-7341%22%2C%22issue%22%3A%225%22%2C%22journalAbbreviation%22%3A%22ACM%20Comput.%20Surv.%22%2C%22language%22%3A%22en%22%2C%22page%22%3A%221-39%22%2C%22source%22%3A%22DOI.org%20(Crossref)%22%2C%22title%22%3A%22Resource-efficient%20Algorithms%20and%20Systems%20of%20Foundation%20Models%3A%20A%20Survey%22%2C%22title-short%22%3A%22Resource-efficient%20Algorithms%20and%20Systems%20of%20Foundation%20Models%22%2C%22URL%22%3A%22https%3A%2F%2Fdl.acm.org%2Fdoi%2F10.1145%2F3706418%22%2C%22volume%22%3A%2257%22%2C%22author%22%3A%5B%7B%22family%22%3A%22Xu%22%2C%22given%22%3A%22Mengwei%22%7D%2C%7B%22family%22%3A%22Cai%22%2C%22given%22%3A%22Dongqi%22%7D%2C%7B%22family%22%3A%22Yin%22%2C%22given%22%3A%22Wangsong%22%7D%2C%7B%22family%22%3A%22Wang%22%2C%22given%22%3A%22Shangguang%22%7D%2C%7B%22family%22%3A%22Jin%22%2C%22given%22%3A%22Xin%22%7D%2C%7B%22family%22%3A%22Liu%22%2C%22given%22%3A%22Xuanzhe%22%7D%5D%2C%22accessed%22%3A%7B%22date-parts%22%3A%5B%5B%222026%22%2C5%2C3%5D%5D%7D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222025%22%2C5%2C31%5D%5D%7D%7D%7D%5D\" data-schema-version=\"9\"><h1><span style=\"color: rgb(25, 60, 71);\"><span style=\"background-color: rgb(238, 249, 253);\">Resource-efficient Algorithms and Systems of Foundation Models: A Survey</span></span></h1>\n<h2>⚙️ Metadata</h2>\n<ul>\n<li>\n<strong>Item Type:</strong> journalArticle\n</li>\n<li>\n<strong>Author:</strong> [[Mengwei Xu]], [[Dongqi Cai]], [[Wangsong Yin]], [[Shangguang Wang]], [[Xin Jin]], [[Xuanzhe Liu]]\n</li>\n<li>\n<strong>Date Added:</strong> 2026/5/3 14:42:37\n</li>\n<li>\n<strong>DOI: </strong><a href=\"https://doi.org/10.1145/3706418\" rel=\"noopener noreferrer nofollow\">10.1145/3706418</a>\n</li>\n<li>\n<strong>Cite key:</strong>\n</li>\n<li>\n<strong>Journal: </strong>ACM Computing Surveys\n</li>\n<li>\n<strong>Journal Tags:</strong>\n</li>\n<li>\n<strong>Publication Date: </strong>2025-05-31\n</li>\n<li>\n<strong>Tags:</strong> #, #zotero\n</li>\n<li>\n<strong>PDF Attachments: </strong><a href=\"zotero://open-pdf/library/items/LHPILU4I\" rel=\"noopener noreferrer nofollow\">Xu 等 - 2025 - Resource-efficient Algorithms and Systems of Foundation Models A Survey.pdf</a>\n</li>\n<li>\n<strong>Related Items: </strong><span style=\"color: gray;\">无相关条目</span>\n</li>\n</ul>\n<h2>📜 Abstract</h2>\n<p> Large foundation models, including large language models, vision transformers, diffusion, and large language model based multimodal models, are revolutionizing the entire machine learning lifecycle, from training to deployment. However, the substantial advancements in versatility and performance these models offer come at a significant cost in terms of hardware resources. To support the growth of these large models in a scalable and environmentally sustainable way, there has been a considerable focus on developing resource-efficient strategies. This survey delves into the critical importance of such research, examining both algorithmic and systemic aspects. It offers a comprehensive analysis and valuable insights gleaned from existing literature, encompassing a broad array of topics from cutting-edge model architectures and training/serving algorithms to practical system designs and implementations. The goal of this survey is to provide an overarching understanding of how current approaches are tackling the resource challenges posed by large foundation models and to potentially inspire future breakthroughs in this field.</p>\n<h2>📚 Zotero links</h2>\n<ul>\n<li>\n<a href=\"zotero://select/items/1_DQLNTHIJ\" rel=\"noopener noreferrer nofollow\">Local library</a>\n</li>\n</ul>\n<h1>Notes</h1>\n<ol>\n<li>\n<p>One-size-fits-all foundation models:</p>\n<p>LLM、ViT、LDM、 Multimodal Model -&gt; Scalability -&gt; Resource Demand</p>\n<p>e.g Pretraining LLaMa-2-70B -&gt; 1.7 mil GPU hours + 2.5e12 J Energy</p>\n</li>\n</ol>\n<p>2. FM Overview</p>\n<p>(1) Language FMs - Attention-based Transformer Architecture - Discrimination, Generative</p>\n<p>(2) Vision FMs - ViT Architecture - Discrimination, Generation</p>\n<p>(3) Multimodal FMs - multiple transformer encoders for each modality</p>\n<p>(4) Cost Analysis</p>\n<p><img alt=\"\" width=\"989\" height=\"226\" data-attachment-key=\"UGNUB7IH\"></p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">high cost: Attention Mechanism、FFN </p>\n<p>3 Resource-Efficient Architectures</p>\n<p>(1) Efficient Attention</p>\n<p>·Sparse Attention</p>\n<p><span class=\"highlight\" data-annotation=\"%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FLHPILU4I%22%2C%22pageLabel%22%3A%225%22%2C%22position%22%3A%7B%22pageIndex%22%3A4%2C%22rects%22%3A%5B%5B148.70910647999983%2C146.82835119999996%2C442.1614745200003%2C155.85446679999995%5D%2C%5B45.94687999999994%2C134.87622119999997%2C386.12284578000003%2C143.90233679999997%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FDQLNTHIJ%22%5D%2C%22locator%22%3A%225%22%7D%7D\">“This approach aims to retain the empirical advantages of a fully quadratic self-attention scheme while employing a reduced number of inner products.”</span> </p>\n<p>·Approximate Attention</p>\n<p><span class=\"highlight\" data-annotation=\"%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FLHPILU4I%22%2C%22pageLabel%22%3A%226%22%2C%22position%22%3A%7B%22pageIndex%22%3A5%2C%22rects%22%3A%5B%5B178.57844989999973%2C353.60517080000045%2C440.3208584000004%2C362.6312864000005%5D%2C%5B45.77399989999972%2C341.64407080000046%2C371.97243788000003%2C350.6701864000005%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FDQLNTHIJ%22%5D%2C%22locator%22%3A%226%22%7D%7D\">“Approximate attention mainly includes low-rank approximations of the self-attention matrix and innovative reformulations of the self-attention.”</span></p>\n<p>·Attention-free Approaches - Hyena、SSM、Recurrent-style Transformers</p>\n<p>(2) Dynamic Neural Network</p>\n<p><img alt=\"\" width=\"980\" height=\"471\" data-attachment-key=\"TLWKKYIP\"></p>\n<p>·MoE </p>\n<p><span class=\"highlight\" data-annotation=\"%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FLHPILU4I%22%2C%22annotationKey%22%3A%22C62ZVUD7%22%2C%22color%22%3A%22%232ea8e5%22%2C%22pageLabel%22%3A%227%22%2C%22position%22%3A%7B%22pageIndex%22%3A6%2C%22rects%22%3A%5B%5B80.407%2C346.729%2C336.841%2C355.755%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FDQLNTHIJ%22%5D%2C%22locator%22%3A%227%22%7D%7D\">“This model utilizes routed sparse parameters during inference.”</span></p>\n<p>·Early Exiting</p>\n<p><span class=\"highlight\" data-annotation=\"%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FLHPILU4I%22%2C%22pageLabel%22%3A%227%22%2C%22position%22%3A%7B%22pageIndex%22%3A6%2C%22rects%22%3A%5B%5B371.0541701600001%2C148.9713907999997%2C442.14030994%2C157.9975063999997%5D%2C%5B45.94265000000006%2C137.0192607999997%2C440.4825314600004%2C146.0453763999997%5D%2C%5B45.94265000000006%2C125.05816079999971%2C265.40179158%2C134.0842763999997%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FDQLNTHIJ%22%5D%2C%22locator%22%3A%227%22%7D%7D\">“a strategy that allows a model to terminate its computational process prematurely when it attains high confidence in the prediction or encounters resource constraints.”</span></p>\n<p>(3) Diffusion-Specific Optimization</p>\n<p>·Efficient Sampling - Nichol and Dhariwal, DDIM, PNDM, DPM-Solver</p>\n<p>·Diffusion in Latent Space</p>\n<p>·Diffusion Architecture Variants</p>\n<p><img alt=\"\" width=\"494\" height=\"459\" data-attachment-key=\"B85EAMWS\"></p>\n<p>(4) ViT-Specific Optimizations</p>\n<p>4. Resource-Efficient Algorithms</p>\n<p>(1)Pre-Training Algorithm</p>\n<p>·Training Data Quality Control - DataComp, DFN, DataCompDR</p>\n<p>·Training Data Reduction - Deduplicating text datasets, Image patch removal</p>\n<p>·Progressive Learning</p>\n<p><span class=\"highlight\" data-annotation=\"%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FLHPILU4I%22%2C%22pageLabel%22%3A%2211%22%2C%22position%22%3A%7B%22pageIndex%22%3A10%2C%22rects%22%3A%5B%5B365.44359068000034%2C596.9836108%2C440.48687518000065%2C606.0097264%5D%2C%5B45.944%2C585.0314807999999%2C419.9908132600003%2C594.0575964%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FDQLNTHIJ%22%5D%2C%22locator%22%3A%2211%22%7D%7D\">“begins by training a small model and then gradually increases the model size, throughout the training process.”</span></p>\n<p>·Mixed Precision Training</p>\n<p><span class=\"highlight\" data-annotation=\"%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FLHPILU4I%22%2C%22pageLabel%22%3A%2211%22%2C%22position%22%3A%7B%22pageIndex%22%3A10%2C%22rects%22%3A%5B%5B188.68415%2C386.4360208%2C442.1307014800001%2C395.4621364%5D%2C%5B45.94301%2C374.4838808%2C258.1812590999998%2C383.50999640000003%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FDQLNTHIJ%22%5D%2C%22locator%22%3A%2211%22%7D%7D\">“Mixed precision training often utilizes half-precision floatingpoint data representation instead of single precision.”</span></p>\n<p>(2) Fine-tuning Algorithm</p>\n<p><img alt=\"\" width=\"883\" height=\"502\" data-attachment-key=\"3V6JTWNJ\"></p>\n<p>·Additive Tuning - Adapter tuning, Prompt tuning, Prefix tuning</p>\n<p>·Selective Tuning</p>\n<p><span class=\"highlight\" data-annotation=\"%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FLHPILU4I%22%2C%22annotationKey%22%3A%226PNZPD33%22%2C%22color%22%3A%22%232ea8e5%22%2C%22pageLabel%22%3A%2213%22%2C%22position%22%3A%7B%22pageIndex%22%3A12%2C%22rects%22%3A%5B%5B136.009%2C492.295%2C440.502%2C501.321%5D%2C%5B45.945%2C480.343%2C207.338%2C489.369%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FDQLNTHIJ%22%5D%2C%22locator%22%3A%2213%22%7D%7D\">“freezing the majority of parameters in large FMs and selectively updating only a small portion of the parameters.”</span></p>\n<p>·Re-parameter Tuning - LoRA</p>\n<p><span class=\"highlight\" data-annotation=\"%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FLHPILU4I%22%2C%22annotationKey%22%3A%22P5H4ZDLH%22%2C%22color%22%3A%22%232ea8e5%22%2C%22pageLabel%22%3A%2213%22%2C%22position%22%3A%7B%22pageIndex%22%3A12%2C%22rects%22%3A%5B%5B260.011%2C341.805%2C440.747%2C350.831%5D%2C%5B45.945%2C329.844%2C440.465%2C338.87%5D%2C%5B45.945%2C317.892%2C421.278%2C326.918%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FDQLNTHIJ%22%5D%2C%22locator%22%3A%2213%22%7D%7D\">“adapts large FMs by targeting a significantly smaller subspace than the original, expansive training space. This approach involves fine-tuning low-rank matrix parameters, a technique that effectively reduces the overall training cost.”</span></p>\n<p>(3) Inference Algorithm</p>\n<p>·Optimistic Decoding</p>\n<p><span class=\"highlight\" data-annotation=\"%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FLHPILU4I%22%2C%22annotationKey%22%3A%22NCMFL6JG%22%2C%22color%22%3A%22%232ea8e5%22%2C%22pageLabel%22%3A%2214%22%2C%22position%22%3A%7B%22pageIndex%22%3A13%2C%22rects%22%3A%5B%5B184.033%2C577.994%2C441.98%2C587.02%5D%2C%5B45.774%2C566.033%2C441.962%2C575.059%5D%2C%5B45.774%2C554.081%2C283.194%2C563.107%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FDQLNTHIJ%22%5D%2C%22locator%22%3A%2214%22%7D%7D\">“The autoregressive mechanism significantly hinders the inference efficiency of large FMs. To address this, various approaches aim to replace autoregressive decoding with more efficient non-autoregressive techniques.”</span></p>\n<p>·Input Filtering and Compression</p>\n<p>“This method includes directly filtering raw data (i.e., prompt filtering) or filtering hidden activations of FMs (i.e., token pruning).”</p>\n<p>·KV Cache - Memory Efficient Sparse Attention, Long Context</p>\n<p>(4) Model Compression</p>\n<p></p>\n<p><img alt=\"\" width=\"996\" height=\"712\" data-attachment-key=\"UWRMGMVG\"></p>\n<p>·Pruning - Structured Pruning, Unstructured Pruning, Contextual Pruning</p>\n<p><span class=\"highlight\" data-annotation=\"%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FLHPILU4I%22%2C%22annotationKey%22%3A%22HJW62T73%22%2C%22color%22%3A%22%232ea8e5%22%2C%22pageLabel%22%3A%2216%22%2C%22position%22%3A%7B%22pageIndex%22%3A15%2C%22rects%22%3A%5B%5B226.789%2C293.548%2C441.4%2C302.574%5D%2C%5B45.773%2C281.587%2C441.387%2C290.613%5D%2C%5B45.773%2C269.635%2C441.844%2C278.661%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FDQLNTHIJ%22%5D%2C%22locator%22%3A%2216%22%7D%7D\">“removes redundant or non-essential connections, neurons, or layers from a neural network. The primary objective is to reduce the model size, subsequently decreasing computational and storage costs, while maintaining model accuracy.”</span></p>\n<p>·Knowledge Distillation - Black-Box KD. White-Box KD</p>\n<p><span class=\"highlight\" data-annotation=\"%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FLHPILU4I%22%2C%22annotationKey%22%3A%22WVZBPJVZ%22%2C%22color%22%3A%22%232ea8e5%22%2C%22pageLabel%22%3A%2217%22%2C%22position%22%3A%7B%22pageIndex%22%3A16%2C%22rects%22%3A%5B%5B181.583%2C247.627%2C441.582%2C256.653%5D%2C%5B45.943%2C235.666%2C429.389%2C244.692%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FDQLNTHIJ%22%5D%2C%22locator%22%3A%2217%22%7D%7D\">“KD transfers knowledge from a complex, heavy model (i.e., teacher model) to a simpler corresponding model (i.e., student model) for model compression.”</span></p>\n<p>·Quantization - Quantization-aware training, Post-training quantization, Weight-only Quantization, LoRD</p>\n<p><span class=\"highlight\" data-annotation=\"%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FLHPILU4I%22%2C%22annotationKey%22%3A%22JTU3I52G%22%2C%22color%22%3A%22%232ea8e5%22%2C%22pageLabel%22%3A%2218%22%2C%22position%22%3A%7B%22pageIndex%22%3A17%2C%22rects%22%3A%5B%5B140.842%2C355.223%2C440.309%2C364.249%5D%2C%5B45.775%2C343.271%2C440.514%2C352.297%5D%2C%5B45.775%2C331.31%2C378.02%2C340.336%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FDQLNTHIJ%22%5D%2C%22locator%22%3A%2218%22%7D%7D\">“Quantization is a well-established model compression method to mitigate the storage and computational demands. Compared to traditional DNNs, LLMs exhibit a higher frequency of activation outliers, which are crucial for maintaining model accuracy.”</span></p>\n<p></p>\n<p>5. Resource-Efficient Systems</p>\n<p>(1)Distributed Training</p>\n<p>·Resilience</p>\n<p><span class=\"highlight\" data-annotation=\"%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FLHPILU4I%22%2C%22annotationKey%22%3A%22AXUW5FIB%22%2C%22color%22%3A%22%232ea8e5%22%2C%22pageLabel%22%3A%2221%22%2C%22position%22%3A%7B%22pageIndex%22%3A20%2C%22rects%22%3A%5B%5B104.625%2C556.474%2C442.161%2C565.5%5D%2C%5B45.944%2C544.513%2C440.467%2C553.539%5D%2C%5B45.944%2C532.56%2C200.303%2C541.587%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FDQLNTHIJ%22%5D%2C%22locator%22%3A%2221%22%7D%7D\">“The increasing size and duration of training for large FMs have led to a rise in failures, emphasizing the importance of resilient training [261]. Fault tolerance approaches for large FMs primarily manifest in four forms.”</span></p>\n<p>·Parallelism</p>\n<p><span class=\"highlight\" data-annotation=\"%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FLHPILU4I%22%2C%22annotationKey%22%3A%22A2ZCMGKE%22%2C%22color%22%3A%22%232ea8e5%22%2C%22pageLabel%22%3A%2221%22%2C%22position%22%3A%7B%22pageIndex%22%3A20%2C%22rects%22%3A%5B%5B113.011%2C401.051%2C442.034%2C410.077%5D%2C%5B45.646%2C389.099%2C442.154%2C398.175%5D%2C%5B45.691%2C377.138%2C344.902%2C386.164%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FDQLNTHIJ%22%5D%2C%22locator%22%3A%2221%22%7D%7D\">“Parallelism plays a crucial role in distributed training, especially for large FMs. Three types of parallelism are commonly employed for training large FMs. Data parallelism involves distributing the data across workers to scale up distributed training.”</span></p>\n<p>·Communication - parallelism-aware communication, heterogeneity-aware traffic reduction</p>\n<p><span class=\"highlight\" data-annotation=\"%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FLHPILU4I%22%2C%22annotationKey%22%3A%22684G27AC%22%2C%22color%22%3A%22%232ea8e5%22%2C%22pageLabel%22%3A%2221%22%2C%22position%22%3A%7B%22pageIndex%22%3A20%2C%22rects%22%3A%5B%5B88.888%2C197.811%2C440.496%2C206.837%5D%2C%5B45.943%2C185.859%2C301.341%2C194.885%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FDQLNTHIJ%22%5D%2C%22locator%22%3A%2221%22%7D%7D\">“We summarize the optimization of communication into two categories: reducing the communication time directly and hiding the communication.”</span></p>\n<p>·Storage - Offloading</p>\n<p>·Heterogeneous GPUs</p>\n<p>·Mix-of-Experts</p>\n<p>(2)Hardware-Aware Optimizations</p>\n<p>(3)Serving on Cloud - Inference Acceleration, Memory Saving</p>\n<p>(4)Serving on Edge - Edge-Cloud Collaboration, On-Device MoE, Memory Optimization, I\\O Optimization, Kernel Optimization</p>\n<h2>🤔 Personal Summary</h2>\n<h3>💭 Thought Inspiration</h3>\n<blockquote>\n<p>Tips: What aspects did you question, how do you think it can be improved?</p>\n</blockquote>\n<p></p>\n<h3>📜 Conclusion</h3>\n<blockquote>\n<p>Tips: What was done, what problem was solved, innovations and shortcomings?</p>\n</blockquote>\n<p></p>\n</div>",
+      "tags": [],
+      "dateModified": "2026-05-13T15:22:46Z",
+      "parentItem": "DQLNTHIJ",
+      "contentHash": "0066deb4e6569bf4f5c0448b3d9f52127959ae4e97c781aa786aa7020b56ba5b",
+      "displayHtml": "<div data-citation-items=\"%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FDQLNTHIJ%22%5D%2C%22itemData%22%3A%7B%22id%22%3A%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FDQLNTHIJ%22%2C%22type%22%3A%22article-journal%22%2C%22abstract%22%3A%22Large%20foundation%20models%2C%20including%20large%20language%20models%2C%20vision%20transformers%2C%20diffusion%2C%20and%20large%20language%20model%20based%20multimodal%20models%2C%20are%20revolutionizing%20the%20entire%20machine%20learning%20lifecycle%2C%20from%20training%20to%20deployment.%20However%2C%20the%20substantial%20advancements%20in%20versatility%20and%20performance%20these%20models%20offer%20come%20at%20a%20significant%20cost%20in%20terms%20of%20hardware%20resources.%20To%20support%20the%20growth%20of%20these%20large%20models%20in%20a%20scalable%20and%20environmentally%20sustainable%20way%2C%20there%20has%20been%20a%20considerable%20focus%20on%20developing%20resource-efficient%20strategies.%20This%20survey%20delves%20into%20the%20critical%20importance%20of%20such%20research%2C%20examining%20both%20algorithmic%20and%20systemic%20aspects.%20It%20offers%20a%20comprehensive%20analysis%20and%20valuable%20insights%20gleaned%20from%20existing%20literature%2C%20encompassing%20a%20broad%20array%20of%20topics%20from%20cutting-edge%20model%20architectures%20and%20training%2Fserving%20algorithms%20to%20practical%20system%20designs%20and%20implementations.%20The%20goal%20of%20this%20survey%20is%20to%20provide%20an%20overarching%20understanding%20of%20how%20current%20approaches%20are%20tackling%20the%20resource%20challenges%20posed%20by%20large%20foundation%20models%20and%20to%20potentially%20inspire%20future%20breakthroughs%20in%20this%20field.%22%2C%22container-title%22%3A%22ACM%20Computing%20Surveys%22%2C%22DOI%22%3A%2210.1145%2F3706418%22%2C%22ISSN%22%3A%220360-0300%2C%201557-7341%22%2C%22issue%22%3A%225%22%2C%22journalAbbreviation%22%3A%22ACM%20Comput.%20Surv.%22%2C%22language%22%3A%22en%22%2C%22page%22%3A%221-39%22%2C%22source%22%3A%22DOI.org%20(Crossref)%22%2C%22title%22%3A%22Resource-efficient%20Algorithms%20and%20Systems%20of%20Foundation%20Models%3A%20A%20Survey%22%2C%22title-short%22%3A%22Resource-efficient%20Algorithms%20and%20Systems%20of%20Foundation%20Models%22%2C%22URL%22%3A%22https%3A%2F%2Fdl.acm.org%2Fdoi%2F10.1145%2F3706418%22%2C%22volume%22%3A%2257%22%2C%22author%22%3A%5B%7B%22family%22%3A%22Xu%22%2C%22given%22%3A%22Mengwei%22%7D%2C%7B%22family%22%3A%22Cai%22%2C%22given%22%3A%22Dongqi%22%7D%2C%7B%22family%22%3A%22Yin%22%2C%22given%22%3A%22Wangsong%22%7D%2C%7B%22family%22%3A%22Wang%22%2C%22given%22%3A%22Shangguang%22%7D%2C%7B%22family%22%3A%22Jin%22%2C%22given%22%3A%22Xin%22%7D%2C%7B%22family%22%3A%22Liu%22%2C%22given%22%3A%22Xuanzhe%22%7D%5D%2C%22accessed%22%3A%7B%22date-parts%22%3A%5B%5B%222026%22%2C5%2C3%5D%5D%7D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222025%22%2C5%2C31%5D%5D%7D%7D%7D%5D\" data-schema-version=\"9\"><h1><span style=\"color: rgb(25, 60, 71);\"><span style=\"background-color: rgb(238, 249, 253);\">Resource-efficient Algorithms and Systems of Foundation Models: A Survey</span></span></h1>\n<h2>⚙️ Metadata</h2>\n<ul>\n<li>\n<strong>Item Type:</strong> journalArticle\n</li>\n<li>\n<strong>Author:</strong> [[Mengwei Xu]], [[Dongqi Cai]], [[Wangsong Yin]], [[Shangguang Wang]], [[Xin Jin]], [[Xuanzhe Liu]]\n</li>\n<li>\n<strong>Date Added:</strong> 2026/5/3 14:42:37\n</li>\n<li>\n<strong>DOI: </strong><a href=\"https://doi.org/10.1145/3706418\" rel=\"noopener noreferrer nofollow\">10.1145/3706418</a>\n</li>\n<li>\n<strong>Cite key:</strong>\n</li>\n<li>\n<strong>Journal: </strong>ACM Computing Surveys\n</li>\n<li>\n<strong>Journal Tags:</strong>\n</li>\n<li>\n<strong>Publication Date: </strong>2025-05-31\n</li>\n<li>\n<strong>Tags:</strong> #, #zotero\n</li>\n<li>\n<strong>PDF Attachments: </strong><a href=\"zotero://open-pdf/library/items/LHPILU4I\" rel=\"noopener noreferrer nofollow\">Xu 等 - 2025 - Resource-efficient Algorithms and Systems of Foundation Models A Survey.pdf</a>\n</li>\n<li>\n<strong>Related Items: </strong><span style=\"color: gray;\">无相关条目</span>\n</li>\n</ul>\n<h2>📜 Abstract</h2>\n<p> Large foundation models, including large language models, vision transformers, diffusion, and large language model based multimodal models, are revolutionizing the entire machine learning lifecycle, from training to deployment. However, the substantial advancements in versatility and performance these models offer come at a significant cost in terms of hardware resources. To support the growth of these large models in a scalable and environmentally sustainable way, there has been a considerable focus on developing resource-efficient strategies. This survey delves into the critical importance of such research, examining both algorithmic and systemic aspects. It offers a comprehensive analysis and valuable insights gleaned from existing literature, encompassing a broad array of topics from cutting-edge model architectures and training/serving algorithms to practical system designs and implementations. The goal of this survey is to provide an overarching understanding of how current approaches are tackling the resource challenges posed by large foundation models and to potentially inspire future breakthroughs in this field.</p>\n<h2>📚 Zotero links</h2>\n<ul>\n<li>\n<a href=\"zotero://select/items/1_DQLNTHIJ\" rel=\"noopener noreferrer nofollow\">Local library</a>\n</li>\n</ul>\n<h1>Notes</h1>\n<ol>\n<li>\n<p>One-size-fits-all foundation models:</p>\n<p>LLM、ViT、LDM、 Multimodal Model -&gt; Scalability -&gt; Resource Demand</p>\n<p>e.g Pretraining LLaMa-2-70B -&gt; 1.7 mil GPU hours + 2.5e12 J Energy</p>\n</li>\n</ol>\n<p>2. FM Overview</p>\n<p>(1) Language FMs - Attention-based Transformer Architecture - Discrimination, Generative</p>\n<p>(2) Vision FMs - ViT Architecture - Discrimination, Generation</p>\n<p>(3) Multimodal FMs - multiple transformer encoders for each modality</p>\n<p>(4) Cost Analysis</p>\n<p><img alt=\"\" width=\"989\" height=\"226\" data-attachment-key=\"UGNUB7IH\" src=\"assets/note-images/UGNUB7IH/image.png\"></p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">high cost: Attention Mechanism、FFN </p>\n<p>3 Resource-Efficient Architectures</p>\n<p>(1) Efficient Attention</p>\n<p>·Sparse Attention</p>\n<p><span class=\"highlight\" data-annotation=\"%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FLHPILU4I%22%2C%22pageLabel%22%3A%225%22%2C%22position%22%3A%7B%22pageIndex%22%3A4%2C%22rects%22%3A%5B%5B148.70910647999983%2C146.82835119999996%2C442.1614745200003%2C155.85446679999995%5D%2C%5B45.94687999999994%2C134.87622119999997%2C386.12284578000003%2C143.90233679999997%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FDQLNTHIJ%22%5D%2C%22locator%22%3A%225%22%7D%7D\">“This approach aims to retain the empirical advantages of a fully quadratic self-attention scheme while employing a reduced number of inner products.”</span> </p>\n<p>·Approximate Attention</p>\n<p><span class=\"highlight\" data-annotation=\"%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FLHPILU4I%22%2C%22pageLabel%22%3A%226%22%2C%22position%22%3A%7B%22pageIndex%22%3A5%2C%22rects%22%3A%5B%5B178.57844989999973%2C353.60517080000045%2C440.3208584000004%2C362.6312864000005%5D%2C%5B45.77399989999972%2C341.64407080000046%2C371.97243788000003%2C350.6701864000005%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FDQLNTHIJ%22%5D%2C%22locator%22%3A%226%22%7D%7D\">“Approximate attention mainly includes low-rank approximations of the self-attention matrix and innovative reformulations of the self-attention.”</span></p>\n<p>·Attention-free Approaches - Hyena、SSM、Recurrent-style Transformers</p>\n<p>(2) Dynamic Neural Network</p>\n<p><img alt=\"\" width=\"980\" height=\"471\" data-attachment-key=\"TLWKKYIP\" src=\"assets/note-images/TLWKKYIP/image.png\"></p>\n<p>·MoE </p>\n<p><span class=\"highlight\" data-annotation=\"%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FLHPILU4I%22%2C%22annotationKey%22%3A%22C62ZVUD7%22%2C%22color%22%3A%22%232ea8e5%22%2C%22pageLabel%22%3A%227%22%2C%22position%22%3A%7B%22pageIndex%22%3A6%2C%22rects%22%3A%5B%5B80.407%2C346.729%2C336.841%2C355.755%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FDQLNTHIJ%22%5D%2C%22locator%22%3A%227%22%7D%7D\">“This model utilizes routed sparse parameters during inference.”</span></p>\n<p>·Early Exiting</p>\n<p><span class=\"highlight\" data-annotation=\"%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FLHPILU4I%22%2C%22pageLabel%22%3A%227%22%2C%22position%22%3A%7B%22pageIndex%22%3A6%2C%22rects%22%3A%5B%5B371.0541701600001%2C148.9713907999997%2C442.14030994%2C157.9975063999997%5D%2C%5B45.94265000000006%2C137.0192607999997%2C440.4825314600004%2C146.0453763999997%5D%2C%5B45.94265000000006%2C125.05816079999971%2C265.40179158%2C134.0842763999997%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FDQLNTHIJ%22%5D%2C%22locator%22%3A%227%22%7D%7D\">“a strategy that allows a model to terminate its computational process prematurely when it attains high confidence in the prediction or encounters resource constraints.”</span></p>\n<p>(3) Diffusion-Specific Optimization</p>\n<p>·Efficient Sampling - Nichol and Dhariwal, DDIM, PNDM, DPM-Solver</p>\n<p>·Diffusion in Latent Space</p>\n<p>·Diffusion Architecture Variants</p>\n<p><img alt=\"\" width=\"494\" height=\"459\" data-attachment-key=\"B85EAMWS\" src=\"assets/note-images/B85EAMWS/image.png\"></p>\n<p>(4) ViT-Specific Optimizations</p>\n<p>4. Resource-Efficient Algorithms</p>\n<p>(1)Pre-Training Algorithm</p>\n<p>·Training Data Quality Control - DataComp, DFN, DataCompDR</p>\n<p>·Training Data Reduction - Deduplicating text datasets, Image patch removal</p>\n<p>·Progressive Learning</p>\n<p><span class=\"highlight\" data-annotation=\"%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FLHPILU4I%22%2C%22pageLabel%22%3A%2211%22%2C%22position%22%3A%7B%22pageIndex%22%3A10%2C%22rects%22%3A%5B%5B365.44359068000034%2C596.9836108%2C440.48687518000065%2C606.0097264%5D%2C%5B45.944%2C585.0314807999999%2C419.9908132600003%2C594.0575964%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FDQLNTHIJ%22%5D%2C%22locator%22%3A%2211%22%7D%7D\">“begins by training a small model and then gradually increases the model size, throughout the training process.”</span></p>\n<p>·Mixed Precision Training</p>\n<p><span class=\"highlight\" data-annotation=\"%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FLHPILU4I%22%2C%22pageLabel%22%3A%2211%22%2C%22position%22%3A%7B%22pageIndex%22%3A10%2C%22rects%22%3A%5B%5B188.68415%2C386.4360208%2C442.1307014800001%2C395.4621364%5D%2C%5B45.94301%2C374.4838808%2C258.1812590999998%2C383.50999640000003%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FDQLNTHIJ%22%5D%2C%22locator%22%3A%2211%22%7D%7D\">“Mixed precision training often utilizes half-precision floatingpoint data representation instead of single precision.”</span></p>\n<p>(2) Fine-tuning Algorithm</p>\n<p><img alt=\"\" width=\"883\" height=\"502\" data-attachment-key=\"3V6JTWNJ\" src=\"assets/note-images/3V6JTWNJ/image.png\"></p>\n<p>·Additive Tuning - Adapter tuning, Prompt tuning, Prefix tuning</p>\n<p>·Selective Tuning</p>\n<p><span class=\"highlight\" data-annotation=\"%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FLHPILU4I%22%2C%22annotationKey%22%3A%226PNZPD33%22%2C%22color%22%3A%22%232ea8e5%22%2C%22pageLabel%22%3A%2213%22%2C%22position%22%3A%7B%22pageIndex%22%3A12%2C%22rects%22%3A%5B%5B136.009%2C492.295%2C440.502%2C501.321%5D%2C%5B45.945%2C480.343%2C207.338%2C489.369%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FDQLNTHIJ%22%5D%2C%22locator%22%3A%2213%22%7D%7D\">“freezing the majority of parameters in large FMs and selectively updating only a small portion of the parameters.”</span></p>\n<p>·Re-parameter Tuning - LoRA</p>\n<p><span class=\"highlight\" data-annotation=\"%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FLHPILU4I%22%2C%22annotationKey%22%3A%22P5H4ZDLH%22%2C%22color%22%3A%22%232ea8e5%22%2C%22pageLabel%22%3A%2213%22%2C%22position%22%3A%7B%22pageIndex%22%3A12%2C%22rects%22%3A%5B%5B260.011%2C341.805%2C440.747%2C350.831%5D%2C%5B45.945%2C329.844%2C440.465%2C338.87%5D%2C%5B45.945%2C317.892%2C421.278%2C326.918%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FDQLNTHIJ%22%5D%2C%22locator%22%3A%2213%22%7D%7D\">“adapts large FMs by targeting a significantly smaller subspace than the original, expansive training space. This approach involves fine-tuning low-rank matrix parameters, a technique that effectively reduces the overall training cost.”</span></p>\n<p>(3) Inference Algorithm</p>\n<p>·Optimistic Decoding</p>\n<p><span class=\"highlight\" data-annotation=\"%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FLHPILU4I%22%2C%22annotationKey%22%3A%22NCMFL6JG%22%2C%22color%22%3A%22%232ea8e5%22%2C%22pageLabel%22%3A%2214%22%2C%22position%22%3A%7B%22pageIndex%22%3A13%2C%22rects%22%3A%5B%5B184.033%2C577.994%2C441.98%2C587.02%5D%2C%5B45.774%2C566.033%2C441.962%2C575.059%5D%2C%5B45.774%2C554.081%2C283.194%2C563.107%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FDQLNTHIJ%22%5D%2C%22locator%22%3A%2214%22%7D%7D\">“The autoregressive mechanism significantly hinders the inference efficiency of large FMs. To address this, various approaches aim to replace autoregressive decoding with more efficient non-autoregressive techniques.”</span></p>\n<p>·Input Filtering and Compression</p>\n<p>“This method includes directly filtering raw data (i.e., prompt filtering) or filtering hidden activations of FMs (i.e., token pruning).”</p>\n<p>·KV Cache - Memory Efficient Sparse Attention, Long Context</p>\n<p>(4) Model Compression</p>\n<p></p>\n<p><img alt=\"\" width=\"996\" height=\"712\" data-attachment-key=\"UWRMGMVG\" src=\"assets/note-images/UWRMGMVG/image.png\"></p>\n<p>·Pruning - Structured Pruning, Unstructured Pruning, Contextual Pruning</p>\n<p><span class=\"highlight\" data-annotation=\"%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FLHPILU4I%22%2C%22annotationKey%22%3A%22HJW62T73%22%2C%22color%22%3A%22%232ea8e5%22%2C%22pageLabel%22%3A%2216%22%2C%22position%22%3A%7B%22pageIndex%22%3A15%2C%22rects%22%3A%5B%5B226.789%2C293.548%2C441.4%2C302.574%5D%2C%5B45.773%2C281.587%2C441.387%2C290.613%5D%2C%5B45.773%2C269.635%2C441.844%2C278.661%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FDQLNTHIJ%22%5D%2C%22locator%22%3A%2216%22%7D%7D\">“removes redundant or non-essential connections, neurons, or layers from a neural network. The primary objective is to reduce the model size, subsequently decreasing computational and storage costs, while maintaining model accuracy.”</span></p>\n<p>·Knowledge Distillation - Black-Box KD. White-Box KD</p>\n<p><span class=\"highlight\" data-annotation=\"%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FLHPILU4I%22%2C%22annotationKey%22%3A%22WVZBPJVZ%22%2C%22color%22%3A%22%232ea8e5%22%2C%22pageLabel%22%3A%2217%22%2C%22position%22%3A%7B%22pageIndex%22%3A16%2C%22rects%22%3A%5B%5B181.583%2C247.627%2C441.582%2C256.653%5D%2C%5B45.943%2C235.666%2C429.389%2C244.692%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FDQLNTHIJ%22%5D%2C%22locator%22%3A%2217%22%7D%7D\">“KD transfers knowledge from a complex, heavy model (i.e., teacher model) to a simpler corresponding model (i.e., student model) for model compression.”</span></p>\n<p>·Quantization - Quantization-aware training, Post-training quantization, Weight-only Quantization, LoRD</p>\n<p><span class=\"highlight\" data-annotation=\"%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FLHPILU4I%22%2C%22annotationKey%22%3A%22JTU3I52G%22%2C%22color%22%3A%22%232ea8e5%22%2C%22pageLabel%22%3A%2218%22%2C%22position%22%3A%7B%22pageIndex%22%3A17%2C%22rects%22%3A%5B%5B140.842%2C355.223%2C440.309%2C364.249%5D%2C%5B45.775%2C343.271%2C440.514%2C352.297%5D%2C%5B45.775%2C331.31%2C378.02%2C340.336%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FDQLNTHIJ%22%5D%2C%22locator%22%3A%2218%22%7D%7D\">“Quantization is a well-established model compression method to mitigate the storage and computational demands. Compared to traditional DNNs, LLMs exhibit a higher frequency of activation outliers, which are crucial for maintaining model accuracy.”</span></p>\n<p></p>\n<p>5. Resource-Efficient Systems</p>\n<p>(1)Distributed Training</p>\n<p>·Resilience</p>\n<p><span class=\"highlight\" data-annotation=\"%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FLHPILU4I%22%2C%22annotationKey%22%3A%22AXUW5FIB%22%2C%22color%22%3A%22%232ea8e5%22%2C%22pageLabel%22%3A%2221%22%2C%22position%22%3A%7B%22pageIndex%22%3A20%2C%22rects%22%3A%5B%5B104.625%2C556.474%2C442.161%2C565.5%5D%2C%5B45.944%2C544.513%2C440.467%2C553.539%5D%2C%5B45.944%2C532.56%2C200.303%2C541.587%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FDQLNTHIJ%22%5D%2C%22locator%22%3A%2221%22%7D%7D\">“The increasing size and duration of training for large FMs have led to a rise in failures, emphasizing the importance of resilient training [261]. Fault tolerance approaches for large FMs primarily manifest in four forms.”</span></p>\n<p>·Parallelism</p>\n<p><span class=\"highlight\" data-annotation=\"%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FLHPILU4I%22%2C%22annotationKey%22%3A%22A2ZCMGKE%22%2C%22color%22%3A%22%232ea8e5%22%2C%22pageLabel%22%3A%2221%22%2C%22position%22%3A%7B%22pageIndex%22%3A20%2C%22rects%22%3A%5B%5B113.011%2C401.051%2C442.034%2C410.077%5D%2C%5B45.646%2C389.099%2C442.154%2C398.175%5D%2C%5B45.691%2C377.138%2C344.902%2C386.164%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FDQLNTHIJ%22%5D%2C%22locator%22%3A%2221%22%7D%7D\">“Parallelism plays a crucial role in distributed training, especially for large FMs. Three types of parallelism are commonly employed for training large FMs. Data parallelism involves distributing the data across workers to scale up distributed training.”</span></p>\n<p>·Communication - parallelism-aware communication, heterogeneity-aware traffic reduction</p>\n<p><span class=\"highlight\" data-annotation=\"%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FLHPILU4I%22%2C%22annotationKey%22%3A%22684G27AC%22%2C%22color%22%3A%22%232ea8e5%22%2C%22pageLabel%22%3A%2221%22%2C%22position%22%3A%7B%22pageIndex%22%3A20%2C%22rects%22%3A%5B%5B88.888%2C197.811%2C440.496%2C206.837%5D%2C%5B45.943%2C185.859%2C301.341%2C194.885%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FDQLNTHIJ%22%5D%2C%22locator%22%3A%2221%22%7D%7D\">“We summarize the optimization of communication into two categories: reducing the communication time directly and hiding the communication.”</span></p>\n<p>·Storage - Offloading</p>\n<p>·Heterogeneous GPUs</p>\n<p>·Mix-of-Experts</p>\n<p>(2)Hardware-Aware Optimizations</p>\n<p>(3)Serving on Cloud - Inference Acceleration, Memory Saving</p>\n<p>(4)Serving on Edge - Edge-Cloud Collaboration, On-Device MoE, Memory Optimization, I\\O Optimization, Kernel Optimization</p>\n<h2>🤔 Personal Summary</h2>\n<h3>💭 Thought Inspiration</h3>\n<blockquote>\n<p>Tips: What aspects did you question, how do you think it can be improved?</p>\n</blockquote>\n<p></p>\n<h3>📜 Conclusion</h3>\n<blockquote>\n<p>Tips: What was done, what problem was solved, innovations and shortcomings?</p>\n</blockquote>\n<p></p>\n</div>"
+    }
+  ],
+  "exportedAt": "2026-10-29T07:58:15+00:00"
+}

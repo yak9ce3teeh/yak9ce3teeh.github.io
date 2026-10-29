@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "fileId": 28,
+  "pdf": {
+    "url": "../Humanoid%20Robotics/Behavior%20Foundation%20Models%20and%20Zero-Shot%20RL/2026%20-%20TDJepa.pdf",
+    "sha256": "c39d3b2034403fc26ec5b0e746b997bda2ad7925bc78c29a5787932bb80cdd13"
+  },
+  "zotero": {
+    "libraryType": "user",
+    "libraryId": 1,
+    "parentKey": "PKHFFRCW",
+    "attachmentKey": "M82ZW4N6"
+  },
+  "mapping": {
+    "status": "matched",
+    "basis": "sha256"
+  },
+  "annotations": [],
+  "notes": [],
+  "exportedAt": "2026-10-29T02:49:37Z"
+}

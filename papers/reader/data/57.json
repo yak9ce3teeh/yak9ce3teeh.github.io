@@ -1,0 +1,834 @@
+{
+  "schemaVersion": 1,
+  "fileId": 57,
+  "pdf": {
+    "url": "../Scene%20Understanding%20and%20Memory/3D%20Scene%20Graphs/2024%20-%203DGraphLLM.pdf",
+    "sha256": "385e78b3a468b0ee3e6c2950e99c9d9e03dad6d14f8234a5fc070b22b783d767"
+  },
+  "zotero": {
+    "libraryType": "user",
+    "libraryId": 1,
+    "parentKey": "TESTI9SC",
+    "attachmentKey": "PZ7BN7T4"
+  },
+  "mapping": {
+    "status": "matched",
+    "basis": "sha256"
+  },
+  "annotations": [
+    {
+      "id": "NBNY7H48",
+      "key": "NBNY7H48",
+      "version": 0,
+      "type": "highlight",
+      "text": "L(θ) = −  l  X  i=1  log P (sres  i |sres  [1,...,i−1], sprefix),",
+      "comment": "",
+      "color": "#ff6666",
+      "pageLabel": "5",
+      "sortIndex": "00004|002505|00116",
+      "position": {
+        "pageIndex": 4,
+        "rects": [
+          [
+            349.634,
+            664.905,
+            390.149,
+            673.642
+          ],
+          [
+            397.337,
+            677.939,
+            400.672,
+            684.055
+          ],
+          [
+            391.81,
+            673.812,
+            406.201,
+            676.702
+          ],
+          [
+            392.552,
+            653.731,
+            405.459,
+            659.847
+          ],
+          [
+            407.86,
+            664.905,
+            446.845,
+            675.492
+          ],
+          [
+            438.714,
+            663.022,
+            462.911,
+            675.492
+          ],
+          [
+            454.78,
+            662.694,
+            521.116,
+            675.492
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-06T11:42:02Z",
+      "readOnly": false,
+      "parentItem": "PZ7BN7T4",
+      "contentHash": "8eff4e0373d3a4782fc17b66d5f6456497c6a90796fe4bd7507fdb15f6ff98bb",
+      "raw": null
+    },
+    {
+      "id": "UISC44DC",
+      "key": "UISC44DC",
+      "version": 0,
+      "type": "highlight",
+      "text": "Following the strategy used in Chat-Scene",
+      "comment": "",
+      "color": "#ff6666",
+      "pageLabel": "5",
+      "sortIndex": "00004|001788|00573",
+      "position": {
+        "pageIndex": 4,
+        "rects": [
+          [
+            58.5,
+            210.355,
+            232.654,
+            218.993
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-06T11:41:55Z",
+      "readOnly": false,
+      "parentItem": "PZ7BN7T4",
+      "contentHash": "58a370f4cbc17356182f8071f761181740a9ed1b8b4dc958ddef2a155d7d5afe",
+      "raw": null
+    },
+    {
+      "id": "6WISXMJW",
+      "key": "6WISXMJW",
+      "version": 0,
+      "type": "highlight",
+      "text": "bors.",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "5",
+      "sortIndex": "00004|000499|00211",
+      "position": {
+        "pageIndex": 4,
+        "rects": [
+          [
+            58.5,
+            572.252,
+            78.5,
+            580.89
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-06T11:40:48Z",
+      "readOnly": false,
+      "parentItem": "PZ7BN7T4",
+      "contentHash": "9b9afe27a156e7ee6a725eaf2b303dbb661657d0f2f5d5a8bdfacc2de297c723",
+      "raw": null
+    },
+    {
+      "id": "I889MEZS",
+      "key": "I889MEZS",
+      "version": 0,
+      "type": "highlight",
+      "text": "Therefore, for each object, we consider a subgraph of its k nearest neigh",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "4",
+      "sortIndex": "00003|004128|00704",
+      "position": {
+        "pageIndex": 3,
+        "rects": [
+          [
+            497.369,
+            90.803,
+            553.666,
+            99.441
+          ],
+          [
+            317.25,
+            78.848,
+            555.152,
+            87.665
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-06T11:40:43Z",
+      "readOnly": false,
+      "parentItem": "PZ7BN7T4",
+      "contentHash": "b027f92523b5d074a21a6c20415d41547fafbc689d3f98d2f59dc913ac85b161",
+      "raw": null
+    },
+    {
+      "id": "K8IUTDRD",
+      "key": "K8IUTDRD",
+      "version": 0,
+      "type": "highlight",
+      "text": "2D/3D object, and semantic relation projection",
+      "comment": "",
+      "color": "#2ea8e5",
+      "pageLabel": "4",
+      "sortIndex": "00003|003170|00431",
+      "position": {
+        "pageIndex": 3,
+        "rects": [
+          [
+            329.205,
+            351.176,
+            535.145,
+            360.202
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-06T11:39:07Z",
+      "readOnly": false,
+      "parentItem": "PZ7BN7T4",
+      "contentHash": "1e96ffee082631f612afbfa25299436466c2b066d0487086332c4ee35d1900fd",
+      "raw": null
+    },
+    {
+      "id": "MIHB9I8W",
+      "key": "MIHB9I8W",
+      "version": 0,
+      "type": "highlight",
+      "text": "VL-SAT",
+      "comment": "",
+      "color": "#ff6666",
+      "pageLabel": "4",
+      "sortIndex": "00003|002421|00644",
+      "position": {
+        "pageIndex": 3,
+        "rects": [
+          [
+            58.141,
+            138.624,
+            93.159,
+            147.262
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-06T11:38:40Z",
+      "readOnly": false,
+      "parentItem": "PZ7BN7T4",
+      "contentHash": "b9e391b84dcb7de3a0c4b04862b8d56fe2c3f6ac02e43ad37ec15f1ab4f6243e",
+      "raw": null
+    },
+    {
+      "id": "39TY22NV",
+      "key": "39TY22NV",
+      "version": 0,
+      "type": "highlight",
+      "text": "2D Object Encoder.",
+      "comment": "",
+      "color": "#2ea8e5",
+      "pageLabel": "4",
+      "sortIndex": "00003|001291|00350",
+      "position": {
+        "pageIndex": 3,
+        "rects": [
+          [
+            70.455,
+            432.534,
+            155.136,
+            441.56
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-06T11:38:10Z",
+      "readOnly": false,
+      "parentItem": "PZ7BN7T4",
+      "contentHash": "192ac4c690b5e308ea0bb1c1b82dde8be9405f145de736321f2c89e34cdc3a9e",
+      "raw": null
+    },
+    {
+      "id": "QW8UDU56",
+      "key": "QW8UDU56",
+      "version": 0,
+      "type": "highlight",
+      "text": "3D Object Encoder.",
+      "comment": "",
+      "color": "#2ea8e5",
+      "pageLabel": "4",
+      "sortIndex": "00003|001659|00448",
+      "position": {
+        "pageIndex": 3,
+        "rects": [
+          [
+            70.455,
+            334.564,
+            156.81,
+            343.59
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-06T11:38:07Z",
+      "readOnly": false,
+      "parentItem": "PZ7BN7T4",
+      "contentHash": "dcedf4696d285f69bb1b6782a9eff8caa29644437c83cd1727b5ab3bec95316f",
+      "raw": null
+    },
+    {
+      "id": "6GIHH8A4",
+      "key": "6GIHH8A4",
+      "version": 0,
+      "type": "highlight",
+      "text": "Edge Feature Encoder.",
+      "comment": "",
+      "color": "#2ea8e5",
+      "pageLabel": "4",
+      "sortIndex": "00003|001981|00534",
+      "position": {
+        "pageIndex": 3,
+        "rects": [
+          [
+            70.455,
+            248.549,
+            171.22,
+            257.575
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-06T11:38:04Z",
+      "readOnly": false,
+      "parentItem": "PZ7BN7T4",
+      "contentHash": "86e35b05a977fe0e2e79859d67103810b6449b6d869ad918900d18cf34ee285a",
+      "raw": null
+    },
+    {
+      "id": "FI4C23ND",
+      "key": "FI4C23ND",
+      "version": 0,
+      "type": "highlight",
+      "text": "Uni3D [63] encoder",
+      "comment": "",
+      "color": "#ff6666",
+      "pageLabel": "4",
+      "sortIndex": "00003|001715|00460",
+      "position": {
+        "pageIndex": 3,
+        "rects": [
+          [
+            114.482,
+            322.609,
+            197.929,
+            331.247
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-06T11:37:56Z",
+      "readOnly": false,
+      "parentItem": "PZ7BN7T4",
+      "contentHash": "94f929b64cb9eff2595bf4b9ad671ecbb62cf32c797a36f1db66f9f4f4565efd",
+      "raw": null
+    },
+    {
+      "id": "9G7SNTNE",
+      "key": "9G7SNTNE",
+      "version": 0,
+      "type": "highlight",
+      "text": "2D DINOv2",
+      "comment": "",
+      "color": "#ff6666",
+      "pageLabel": "4",
+      "sortIndex": "00003|001361|00362",
+      "position": {
+        "pageIndex": 3,
+        "rects": [
+          [
+            179.477,
+            420.579,
+            230.378,
+            429.217
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-06T11:37:49Z",
+      "readOnly": false,
+      "parentItem": "PZ7BN7T4",
+      "contentHash": "b11639c5fde780e881967b137da57fb7e91b2aebc9efb650b64809925692d8e6",
+      "raw": null
+    },
+    {
+      "id": "G7CLVW6P",
+      "key": "G7CLVW6P",
+      "version": 0,
+      "type": "highlight",
+      "text": "the set V of vertices of the graph consists of n point clouds {Pi}n  i=1,  where Pi ∈ Rmi×6",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "3",
+      "sortIndex": "00002|004487|00596",
+      "position": {
+        "pageIndex": 2,
+        "rects": [
+          [
+            504.391,
+            198.4,
+            553.5,
+            207.356
+          ],
+          [
+            317.001,
+            185.749,
+            543.726,
+            196.975
+          ],
+          [
+            538.801,
+            184.65,
+            554.745,
+            195.083
+          ],
+          [
+            316.891,
+            173.794,
+            392.994,
+            185.02
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-06T11:33:53Z",
+      "readOnly": false,
+      "parentItem": "PZ7BN7T4",
+      "contentHash": "f538d58abff082697b160540a0390cf388e7ef1f930ae992ec809b4469b03e32",
+      "raw": null
+    },
+    {
+      "id": "FGFKJCDU",
+      "key": "FGFKJCDU",
+      "version": 0,
+      "type": "highlight",
+      "text": "2D images, 3D point clouds, and point clouds semantic relationships,",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "3",
+      "sortIndex": "00002|003623|00393",
+      "position": {
+        "pageIndex": 2,
+        "rects": [
+          [
+            541.566,
+            401.638,
+            553.497,
+            410.276
+          ],
+          [
+            317.25,
+            389.682,
+            555.149,
+            398.32
+          ],
+          [
+            317.25,
+            377.727,
+            355.533,
+            386.365
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-06T11:27:24Z",
+      "readOnly": false,
+      "parentItem": "PZ7BN7T4",
+      "contentHash": "3d853db618e1aacaeada3bb0b33a0695eeae1ae903ee245194d3b3f65ab850a2",
+      "raw": null
+    },
+    {
+      "id": "WR6T9UJY",
+      "key": "WR6T9UJY",
+      "version": 0,
+      "type": "highlight",
+      "text": "as triplets (objecti, relationij, objectj)",
+      "comment": "",
+      "color": "#ff6666",
+      "pageLabel": "3",
+      "sortIndex": "00002|003115|00249",
+      "position": {
+        "pageIndex": 2,
+        "rects": [
+          [
+            342.654,
+            533.145,
+            501.554,
+            542.796
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-06T11:22:53Z",
+      "readOnly": false,
+      "parentItem": "PZ7BN7T4",
+      "contentHash": "3e0e65d4323b9f2255270139553efde286ab8e2b988df375e99b30ed4b77e6fb",
+      "raw": null
+    },
+    {
+      "id": "AJXNU57I",
+      "key": "AJXNU57I",
+      "version": 0,
+      "type": "highlight",
+      "text": "a set of point clouds",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "3",
+      "sortIndex": "00002|002574|00118",
+      "position": {
+        "pageIndex": 2,
+        "rects": [
+          [
+            394.711,
+            665.347,
+            475.792,
+            673.985
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-06T11:17:24Z",
+      "readOnly": false,
+      "parentItem": "PZ7BN7T4",
+      "contentHash": "fd4eb68f80e61269f3b1d662d36e52c42051323a8cd323a194fe5fefdf70ec55",
+      "raw": null
+    },
+    {
+      "id": "3L6GGHK2",
+      "key": "3L6GGHK2",
+      "version": 0,
+      "type": "highlight",
+      "text": "The representation consists of a list of learnable embeddings for scene objects, where each object is modeled as a local subgraph that includes the object itself and its nearest neighbors. These subgraphs are provided to the LLM as a sequence of triplets (object1, relation, object2). Semantic relations are encoded using features derived from the semantic edges of the scene graph, generated by state-of-the-art methods such as VL-SAT",
+      "comment": "",
+      "color": "#ff6666",
+      "pageLabel": "2",
+      "sortIndex": "00001|000932|00324",
+      "position": {
+        "pageIndex": 1,
+        "rects": [
+          [
+            183.907,
+            506.998,
+            294.753,
+            515.636
+          ],
+          [
+            58.5,
+            495.043,
+            294.753,
+            503.681
+          ],
+          [
+            58.5,
+            483.088,
+            294.753,
+            491.726
+          ],
+          [
+            58.5,
+            471.133,
+            294.747,
+            479.771
+          ],
+          [
+            58.5,
+            459.177,
+            296.494,
+            467.994
+          ],
+          [
+            58.5,
+            447.222,
+            296.401,
+            456.039
+          ],
+          [
+            58.5,
+            435.267,
+            295.993,
+            443.905
+          ],
+          [
+            58.5,
+            423.312,
+            274.956,
+            431.95
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-06T09:22:26Z",
+      "readOnly": false,
+      "parentItem": "PZ7BN7T4",
+      "contentHash": "264ee9009d6008f27dfb68f3bfa91b7987f2366c4a1c7a4737fdd88873b97c93",
+      "raw": null
+    },
+    {
+      "id": "XC2N3GTI",
+      "key": "XC2N3GTI",
+      "version": 0,
+      "type": "highlight",
+      "text": "on spatial coordinates and fail to incorporate semantic relationships between objects",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "2",
+      "sortIndex": "00001|000505|00205",
+      "position": {
+        "pageIndex": 1,
+        "rects": [
+          [
+            160.23,
+            577.554,
+            294.753,
+            586.192
+          ],
+          [
+            58.5,
+            565.599,
+            256.296,
+            574.237
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-06T09:21:17Z",
+      "readOnly": false,
+      "parentItem": "PZ7BN7T4",
+      "contentHash": "64881a4a28a09611deeb76b0d445aeb925758c9145a913acecf1cadd53ae278c",
+      "raw": null
+    },
+    {
+      "id": "KV3A44NP",
+      "key": "KV3A44NP",
+      "version": 0,
+      "type": "highlight",
+      "text": "embeddings",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "2",
+      "sortIndex": "00001|000208|00134",
+      "position": {
+        "pageIndex": 1,
+        "rects": [
+          [
+            195.294,
+            649.285,
+            242.481,
+            657.923
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-06T09:20:54Z",
+      "readOnly": false,
+      "parentItem": "PZ7BN7T4",
+      "contentHash": "f642844786eb5cda3702fb699e79ee042207719746a080749408107f2999300d",
+      "raw": null
+    },
+    {
+      "id": "82AUTYVT",
+      "key": "82AUTYVT",
+      "version": 0,
+      "type": "highlight",
+      "text": "a implicit learnable representation",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "2",
+      "sortIndex": "00001|000098|00110",
+      "position": {
+        "pageIndex": 1,
+        "rects": [
+          [
+            196.436,
+            673.195,
+            296.403,
+            681.833
+          ],
+          [
+            58.5,
+            661.24,
+            93.755,
+            669.878
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-06T09:20:48Z",
+      "readOnly": false,
+      "parentItem": "PZ7BN7T4",
+      "contentHash": "05cadf4cfaef70efac47d5ac310b7791476cfb8087491945e2525c25f4568a81",
+      "raw": null
+    },
+    {
+      "id": "MYI4VWBE",
+      "key": "MYI4VWBE",
+      "version": 0,
+      "type": "highlight",
+      "text": "text",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "2",
+      "sortIndex": "00001|000071|00110",
+      "position": {
+        "pageIndex": 1,
+        "rects": [
+          [
+            68.693,
+            673.195,
+            83.182,
+            681.833
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-06T09:20:39Z",
+      "readOnly": false,
+      "parentItem": "PZ7BN7T4",
+      "contentHash": "bbf193f4922b356798f5bae9689506dcf7662974fc6004567723667a0e1d3568",
+      "raw": null
+    },
+    {
+      "id": "A4MBNREK",
+      "key": "A4MBNREK",
+      "version": 0,
+      "type": "highlight",
+      "text": "3D referred object grounding task, 3D dense scene captioning and 3D visual question answering.",
+      "comment": "",
+      "color": "#ff6666",
+      "pageLabel": "1",
+      "sortIndex": "00000|001421|00596",
+      "position": {
+        "pageIndex": 0,
+        "rects": [
+          [
+            177.07,
+            186.445,
+            294.753,
+            195.083
+          ],
+          [
+            58.5,
+            174.489,
+            294.753,
+            183.127
+          ],
+          [
+            58.5,
+            162.534,
+            102.198,
+            171.172
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-06T09:14:00Z",
+      "readOnly": false,
+      "parentItem": "PZ7BN7T4",
+      "contentHash": "c4781d5535d8c2fd34c2ffa310a7c086ea53a74935beac989a93413d1159ae9c",
+      "raw": null
+    },
+    {
+      "id": "VT8XVTNH",
+      "key": "VT8XVTNH",
+      "version": 0,
+      "type": "highlight",
+      "text": "that explicitly incorporates semantic relationships",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "1",
+      "sortIndex": "00000|000949|00436",
+      "position": {
+        "pageIndex": 0,
+        "rects": [
+          [
+            187.869,
+            347.156,
+            294.751,
+            355.744
+          ],
+          [
+            58.5,
+            335.201,
+            147.994,
+            343.789
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-06T09:12:57Z",
+      "readOnly": false,
+      "parentItem": "PZ7BN7T4",
+      "contentHash": "45026d96a81d50e019e05601dbc2c6ffb9a3de1904f2015455570b88b5204f70",
+      "raw": null
+    },
+    {
+      "id": "E5YK8H29",
+      "key": "E5YK8H29",
+      "version": 0,
+      "type": "highlight",
+      "text": "rely only on geometric information, such as object coordinates, and overlook the rich semantic relationships between objects.",
+      "comment": "",
+      "color": "#ff6666",
+      "pageLabel": "1",
+      "sortIndex": "00000|000746|00388",
+      "position": {
+        "pageIndex": 0,
+        "rects": [
+          [
+            155.384,
+            394.977,
+            296.498,
+            403.565
+          ],
+          [
+            58.5,
+            383.022,
+            296.399,
+            391.61
+          ],
+          [
+            58.5,
+            371.066,
+            192.686,
+            379.654
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-06T09:12:39Z",
+      "readOnly": false,
+      "parentItem": "PZ7BN7T4",
+      "contentHash": "fb61181b0157095dc82854bc8d0b27742dfc82c22bef2a84413decebc82c9524",
+      "raw": null
+    }
+  ],
+  "notes": [
+    {
+      "id": "RTIN3DJE",
+      "key": "RTIN3DJE",
+      "version": 0,
+      "html": "<div data-schema-version=\"9\">\n\n        <h1 style=\"color:#193c47; background-color:#eef9fd; padding:8px;\">\n        3DGraphLLM: Combining Semantic Graphs and Large Language Models for 3D Scene Understanding\n        </h1>\n    \n    <h2>⚙️ Metadata</h2>\n    \n    <ul>\n        <li><b>Item Type:</b>\n        preprint\n        </li>\n    \n        <li><b>Author:</b> \n        [[Tatiana Zemskova]], [[Dmitry Yudin]]\n        </li>\n    \n    \n        <li><b>Date Added:</b>\n        2026/4/6 16:42:00\n        </li>\n    \n        <li> \n        <b>DOI: </b> <a href=\"https://doi.org/10.48550/arXiv.2412.18450\">10.48550/arXiv.2412.18450</a>\n        </li>\n    \n        <li><b>Cite key: </b>\n        \n        </li>\n    \n        <li><b>Journal: </b>\n        \n        </li>\n    \n        <li><b>Journal Tags: </b> \n        \n        </li>\n    \n    <li><b>Publication Date: </b> \n        2025-08-06\n        </li>\n    \n        <li><b>Tags:</b> \n        #Computer Science - Computer Vision and Pattern Recognition, #zotero\n        </li>\n    \n        <li> <b>PDF Attachments: </b>\n        <a href=\"zotero://open-pdf/library/items/PZ7BN7T4\">Zemskova和Yudin - 2025 - 3DGraphLLM Combining Semantic Graphs and Large Language Models for 3D Scene Understanding.pdf</a>\n        </li>\n        <li> <b>Related Items: </b>\n        <span style=\"color: gray;\">无相关条目</span>\n        </li>\n    </ul>\n    \n        <h2 >📜 Abstract</h2>\n    \n            A 3D scene graph represents a compact scene model by capturing both the objects present and the semantic relationships between them, making it a promising structure for robotic applications. To effectively interact with users, an embodied intelligent agent should be able to answer a wide range of natural language queries about the surrounding 3D environment. Large Language Models (LLMs) are beneficial solutions for user-robot interaction due to their natural language understanding and reasoning abilities. Recent methods for learning scene representations have shown that adapting these representations to the 3D world can significantly improve the quality of LLM responses. However, existing methods typically rely only on geometric information, such as object coordinates, and overlook the rich semantic relationships between objects. In this work, we propose 3DGraphLLM, a method for constructing a learnable representation of a 3D scene graph that explicitly incorporates semantic relationships. This representation is used as input to LLMs for performing 3D vision-language tasks. In our experiments on popular ScanRefer, Multi3DRefer, ScanQA, Sqa3D, and Scan2cap datasets, we demonstrate that our approach outperforms baselines that do not leverage semantic relationships between objects. The code is publicly available at https://github.com/CognitiveAISystems/ 3DGraphLLM .\n        \n    \n    <h2>📚 Zotero links</h2>\n    \n    <ul>\n    <li>\n        <a href=\"zotero://select/items/1_TESTI9SC\">Local library</a>\n        </li>  \n    </ul>\n\n    <h1>Notes</h1>\n\n    <h2>🤔 Personal Summary</h2>\n    \n        <h3>💭 Thought Inspiration</h3>\n        <blockquote>Tips: What aspects did you question, how do you think it can be improved?</blockquote>\n        <p></p>\n    \n        <h3>📜 Conclusion</h3>\n        <blockquote>Tips: What was done, what problem was solved, innovations and shortcomings?</blockquote>\n        <p></p>\n    \n</div>",
+      "tags": [],
+      "dateModified": "2026-04-06T08:42:01Z",
+      "parentItem": "TESTI9SC",
+      "contentHash": "f5f04e90d04d8fcdc0a8893dd639ca2baa9238e56600a56d2a7e1957f8168399",
+      "displayHtml": "<div data-schema-version=\"9\">\n\n        <h1 style=\"color:#193c47; background-color:#eef9fd; padding:8px;\">\n        3DGraphLLM: Combining Semantic Graphs and Large Language Models for 3D Scene Understanding\n        </h1>\n    \n    <h2>⚙️ Metadata</h2>\n    \n    <ul>\n        <li><b>Item Type:</b>\n        preprint\n        </li>\n    \n        <li><b>Author:</b> \n        [[Tatiana Zemskova]], [[Dmitry Yudin]]\n        </li>\n    \n    \n        <li><b>Date Added:</b>\n        2026/4/6 16:42:00\n        </li>\n    \n        <li> \n        <b>DOI: </b> <a href=\"https://doi.org/10.48550/arXiv.2412.18450\">10.48550/arXiv.2412.18450</a>\n        </li>\n    \n        <li><b>Cite key: </b>\n        \n        </li>\n    \n        <li><b>Journal: </b>\n        \n        </li>\n    \n        <li><b>Journal Tags: </b> \n        \n        </li>\n    \n    <li><b>Publication Date: </b> \n        2025-08-06\n        </li>\n    \n        <li><b>Tags:</b> \n        #Computer Science - Computer Vision and Pattern Recognition, #zotero\n        </li>\n    \n        <li> <b>PDF Attachments: </b>\n        <a href=\"zotero://open-pdf/library/items/PZ7BN7T4\">Zemskova和Yudin - 2025 - 3DGraphLLM Combining Semantic Graphs and Large Language Models for 3D Scene Understanding.pdf</a>\n        </li>\n        <li> <b>Related Items: </b>\n        <span style=\"color: gray;\">无相关条目</span>\n        </li>\n    </ul>\n    \n        <h2 >📜 Abstract</h2>\n    \n            A 3D scene graph represents a compact scene model by capturing both the objects present and the semantic relationships between them, making it a promising structure for robotic applications. To effectively interact with users, an embodied intelligent agent should be able to answer a wide range of natural language queries about the surrounding 3D environment. Large Language Models (LLMs) are beneficial solutions for user-robot interaction due to their natural language understanding and reasoning abilities. Recent methods for learning scene representations have shown that adapting these representations to the 3D world can significantly improve the quality of LLM responses. However, existing methods typically rely only on geometric information, such as object coordinates, and overlook the rich semantic relationships between objects. In this work, we propose 3DGraphLLM, a method for constructing a learnable representation of a 3D scene graph that explicitly incorporates semantic relationships. This representation is used as input to LLMs for performing 3D vision-language tasks. In our experiments on popular ScanRefer, Multi3DRefer, ScanQA, Sqa3D, and Scan2cap datasets, we demonstrate that our approach outperforms baselines that do not leverage semantic relationships between objects. The code is publicly available at https://github.com/CognitiveAISystems/ 3DGraphLLM .\n        \n    \n    <h2>📚 Zotero links</h2>\n    \n    <ul>\n    <li>\n        <a href=\"zotero://select/items/1_TESTI9SC\">Local library</a>\n        </li>  \n    </ul>\n\n    <h1>Notes</h1>\n\n    <h2>🤔 Personal Summary</h2>\n    \n        <h3>💭 Thought Inspiration</h3>\n        <blockquote>Tips: What aspects did you question, how do you think it can be improved?</blockquote>\n        <p></p>\n    \n        <h3>📜 Conclusion</h3>\n        <blockquote>Tips: What was done, what problem was solved, innovations and shortcomings?</blockquote>\n        <p></p>\n    \n</div>"
+    }
+  ],
+  "exportedAt": "2026-10-29T07:58:15+00:00"
+}

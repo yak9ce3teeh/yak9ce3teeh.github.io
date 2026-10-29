@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "fileId": 10,
+  "pdf": {
+    "url": "../Humanoid%20Robotics/Behavior%20Foundation%20Models%20and%20Zero-Shot%20RL/2025%20-%20Zero%20shot%20control%20w%20BFM.pdf",
+    "sha256": "490821522c0db55b145615a4a3a748e672992bdbad2a58e608582574c1e15435"
+  },
+  "zotero": {
+    "libraryType": "user",
+    "libraryId": 1,
+    "parentKey": "3V8ENGTS",
+    "attachmentKey": "X4Y9UU43"
+  },
+  "mapping": {
+    "status": "matched",
+    "basis": "sha256"
+  },
+  "annotations": [],
+  "notes": [
+    {
+      "id": "7JTNREID",
+      "key": "7JTNREID",
+      "version": 0,
+      "html": "<div data-schema-version=\"9\"><p>Comment: Published at ICLR 2025</p>\n<p></p>\n<p></p>\n</div>",
+      "tags": [],
+      "dateModified": "2026-07-24T12:36:53Z",
+      "parentItem": "3V8ENGTS",
+      "contentHash": "21a1f738b0857b3d04222af51b61deb5c73f068e72d0d0b79310bece4141c44c",
+      "displayHtml": "<div data-schema-version=\"9\"><p>Comment: Published at ICLR 2025</p>\n<p></p>\n<p></p>\n</div>"
+    }
+  ],
+  "exportedAt": "2026-10-29T07:58:15+00:00"
+}

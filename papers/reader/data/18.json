@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "fileId": 18,
+  "pdf": {
+    "url": "../Humanoid%20Robotics/Behavior%20Foundation%20Models%20and%20Zero-Shot%20RL/2026%20-%20Maximum%20Entropy%20Behavior%20Exploration.pdf",
+    "sha256": "959bd615e6c72632279cb1d572f0998564204aec9b4d3e9143bcb1ddd5fc241e"
+  },
+  "zotero": {
+    "libraryType": "user",
+    "libraryId": 1,
+    "parentKey": "BV77JN4T",
+    "attachmentKey": "Q4S2CIR2"
+  },
+  "mapping": {
+    "status": "matched",
+    "basis": "sha256"
+  },
+  "annotations": [
+    {
+      "id": "DY5PICIZ",
+      "key": "DY5PICIZ",
+      "version": 0,
+      "type": "highlight",
+      "text": "Consequently, rather than predicting future outcomes, FB-MEBE steers the achieved behavior distribution towards uniformity by sampling exploration behaviors zrE that have the minimum density in the current buffer.",
+      "comment": "",
+      "color": "#ff6666",
+      "pageLabel": "6",
+      "sortIndex": "00005|001430|00367",
+      "position": {
+        "pageIndex": 5,
+        "rects": [
+          [
+            241.349,
+            412.352,
+            503.754,
+            424.356
+          ],
+          [
+            108.0,
+            398.989,
+            503.119,
+            412.4
+          ],
+          [
+            108.0,
+            388.441,
+            315.013,
+            400.445
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-07-26T08:53:07Z",
+      "readOnly": false,
+      "parentItem": "Q4S2CIR2",
+      "contentHash": "d3c50701e1d0ab7662da80149e2201dcdfee9904201cdaabf69acee9d1df6b60",
+      "raw": null
+    }
+  ],
+  "notes": [
+    {
+      "id": "R3CBHN2H",
+      "key": "R3CBHN2H",
+      "version": 0,
+      "html": "<div data-citation-items=\"%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FBV77JN4T%22%5D%2C%22itemData%22%3A%7B%22id%22%3A%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FBV77JN4T%22%2C%22type%22%3A%22article%22%2C%22abstract%22%3A%22Zero-shot%20reinforcement%20learning%20(RL)%20algorithms%20aim%20to%20learn%20a%20family%20of%20policies%20from%20a%20reward-free%20dataset%2C%20and%20recover%20optimal%20policies%20for%20any%20reward%20function%20directly%20at%20test%20time.%20Naturally%2C%20the%20quality%20of%20the%20pretraining%20dataset%20determines%20the%20performance%20of%20the%20recovered%20policies%20across%20tasks.%20However%2C%20pre-collecting%20a%20relevant%2C%20diverse%20dataset%20without%20prior%20knowledge%20of%20the%20downstream%20tasks%20of%20interest%20remains%20a%20challenge.%20In%20this%20work%2C%20we%20study%20online%20zero-shot%20RL%20for%20quadrupedal%20control%20on%20real%20robotic%20systems%2C%20building%20upon%20the%20Forward-Backward%20(FB)%20algorithm.%20We%20observe%20that%20undirected%20exploration%20yields%20low-diversity%20data%2C%20leading%20to%20poor%20downstream%20performance%20and%20rendering%20policies%20impractical%20for%20direct%20hardware%20deployment.%20Therefore%2C%20we%20introduce%20FB-MEBE%2C%20an%20online%20zero-shot%20RL%20algorithm%20that%20combines%20an%20unsupervised%20behavior%20exploration%20strategy%20with%20a%20regularization%20critic.%20FB-MEBE%20promotes%20exploration%20by%20maximizing%20the%20entropy%20of%20the%20achieved%20behavior%20distribution.%20Additionally%2C%20a%20regularization%20critic%20shapes%20the%20recovered%20policies%20toward%20more%20natural%20and%20physically%20plausible%20behaviors.%20We%20empirically%20demonstrate%20that%20FB-MEBE%20achieves%20and%20improved%20performance%20compared%20to%20other%20exploration%20strategies%20in%20a%20range%20of%20simulated%20downstream%20tasks%2C%20and%20that%20it%20renders%20natural%20policies%20that%20can%20be%20seamlessly%20deployed%20to%20hardware%20without%20further%20finetuning.%20Videos%20and%20code%20available%20on%20our%20website.%22%2C%22DOI%22%3A%2210.48550%2FarXiv.2603.25464%22%2C%22language%22%3A%22en%22%2C%22note%22%3A%22arXiv%3A2603.25464%20%5Bcs.LG%5D%22%2C%22number%22%3A%22arXiv%3A2603.25464%22%2C%22publisher%22%3A%22arXiv%22%2C%22source%22%3A%22arXiv.org%22%2C%22title%22%3A%22Maximum%20Entropy%20Behavior%20Exploration%20for%20Sim2Real%20Zero-Shot%20Reinforcement%20Learning%22%2C%22URL%22%3A%22http%3A%2F%2Farxiv.org%2Fabs%2F2603.25464%22%2C%22author%22%3A%5B%7B%22family%22%3A%22Hu%22%2C%22given%22%3A%22Jiajun%22%7D%2C%7B%22family%22%3A%22Urpi%22%2C%22given%22%3A%22Nuria%20Armengol%22%7D%2C%7B%22family%22%3A%22Cheng%22%2C%22given%22%3A%22Jin%22%7D%2C%7B%22family%22%3A%22Coros%22%2C%22given%22%3A%22Stelian%22%7D%5D%2C%22accessed%22%3A%7B%22date-parts%22%3A%5B%5B%222026%22%2C7%2C22%5D%5D%7D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222026%22%2C3%2C26%5D%5D%7D%7D%7D%5D\" data-schema-version=\"9\"><p>Maximum Entropy Behavior Exploration for Sim2Real Zero-shot RL:</p>\n<p>Zero-shot rl for robotic manipulation: BFM</p>\n<p>Quadrupedal Control - online zero-shot RL, FB-MEBE (Directed FB)</p>\n<p>Limitations of Regularized Undirected Exploration</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">a.Finite d and Insufficient data distributions - FB representation collapse</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">b. undirected exploration strategy - performance degradation and entropy stagnation</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">-ground the unsupervised policy learning by adding a regularizer</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\"><img alt=\"\" width=\"653\" height=\"59\" data-attachment-key=\"8GGI6QLV\"></p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">Qreg - Sections F and G</p>\n<p style=\"padding-left: 80px;\" data-indent=\"2\">a. Less foot dragging</p>\n<p style=\"padding-left: 80px;\" data-indent=\"2\">b. lower exploration - poorer entropy and performance</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">FB-MEBE</p>\n<p style=\"padding-left: 80px;\" data-indent=\"2\">1.density-inverse exploration for online FB</p>\n<p style=\"padding-left: 120px;\" data-indent=\"3\"><img alt=\"\" width=\"312\" height=\"55\" data-attachment-key=\"NBCSNC6E\"></p>\n<p style=\"padding-left: 120px;\" data-indent=\"3\">-&gt; no access to the desired behavior distribution:</p>\n<p style=\"padding-left: 120px;\" data-indent=\"3\"><img alt=\"\" width=\"261\" height=\"55\" data-attachment-key=\"84FGHBA3\"></p>\n<p style=\"padding-left: 240px;\" data-indent=\"6\">optimizing policy:</p>\n<p style=\"padding-left: 240px;\" data-indent=\"6\"><img alt=\"\" width=\"422\" height=\"71\" data-attachment-key=\"4UEYGGSA\"></p>\n<p><span class=\"highlight\" data-annotation=\"%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FQ4S2CIR2%22%2C%22pageLabel%22%3A%226%22%2C%22position%22%3A%7B%22pageIndex%22%3A5%2C%22rects%22%3A%5B%5B241.34940099999992%2C412.35150940000045%2C503.75432239999935%2C424.35644240000045%5D%2C%5B107.99999999999986%2C398.98855000000043%2C503.11892605999986%2C412.40044240000043%5D%2C%5B107.99999999999989%2C388.4405094000004%2C315.01286539999995%2C400.4454424000004%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FBV77JN4T%22%5D%2C%22locator%22%3A%226%22%7D%7D\">“Consequently, rather than predicting future outcomes, FB-MEBE steers the achieved behavior distribution towards uniformity by sampling exploration behaviors zrE that have the minimum density in the current buffer.”</span> </p>\n<p style=\"padding-left: 80px;\" data-indent=\"2\">2. pratical FB-MEBE</p>\n<p style=\"padding-left: 80px;\" data-indent=\"2\">state density - KDE, VAE, KNN, RND -&gt; NF(Normalizing Flows)</p>\n<p style=\"padding-left: 120px;\" data-indent=\"3\"><img alt=\"\" width=\"411\" height=\"52\" data-attachment-key=\"A9SPDU3C\"></p>\n<p>Main Results:</p>\n<p><img alt=\"\" width=\"908\" height=\"689\" data-attachment-key=\"XAWZU4UR\"></p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\"></p>\n</div>",
+      "tags": [],
+      "dateModified": "2026-07-26T09:21:35Z",
+      "parentItem": "BV77JN4T",
+      "contentHash": "2d5ca2f37efcdce8bf85a6cd70ecebea4179c46e8b995a58a9a8fd6545e36de9",
+      "displayHtml": "<div data-citation-items=\"%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FBV77JN4T%22%5D%2C%22itemData%22%3A%7B%22id%22%3A%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FBV77JN4T%22%2C%22type%22%3A%22article%22%2C%22abstract%22%3A%22Zero-shot%20reinforcement%20learning%20(RL)%20algorithms%20aim%20to%20learn%20a%20family%20of%20policies%20from%20a%20reward-free%20dataset%2C%20and%20recover%20optimal%20policies%20for%20any%20reward%20function%20directly%20at%20test%20time.%20Naturally%2C%20the%20quality%20of%20the%20pretraining%20dataset%20determines%20the%20performance%20of%20the%20recovered%20policies%20across%20tasks.%20However%2C%20pre-collecting%20a%20relevant%2C%20diverse%20dataset%20without%20prior%20knowledge%20of%20the%20downstream%20tasks%20of%20interest%20remains%20a%20challenge.%20In%20this%20work%2C%20we%20study%20online%20zero-shot%20RL%20for%20quadrupedal%20control%20on%20real%20robotic%20systems%2C%20building%20upon%20the%20Forward-Backward%20(FB)%20algorithm.%20We%20observe%20that%20undirected%20exploration%20yields%20low-diversity%20data%2C%20leading%20to%20poor%20downstream%20performance%20and%20rendering%20policies%20impractical%20for%20direct%20hardware%20deployment.%20Therefore%2C%20we%20introduce%20FB-MEBE%2C%20an%20online%20zero-shot%20RL%20algorithm%20that%20combines%20an%20unsupervised%20behavior%20exploration%20strategy%20with%20a%20regularization%20critic.%20FB-MEBE%20promotes%20exploration%20by%20maximizing%20the%20entropy%20of%20the%20achieved%20behavior%20distribution.%20Additionally%2C%20a%20regularization%20critic%20shapes%20the%20recovered%20policies%20toward%20more%20natural%20and%20physically%20plausible%20behaviors.%20We%20empirically%20demonstrate%20that%20FB-MEBE%20achieves%20and%20improved%20performance%20compared%20to%20other%20exploration%20strategies%20in%20a%20range%20of%20simulated%20downstream%20tasks%2C%20and%20that%20it%20renders%20natural%20policies%20that%20can%20be%20seamlessly%20deployed%20to%20hardware%20without%20further%20finetuning.%20Videos%20and%20code%20available%20on%20our%20website.%22%2C%22DOI%22%3A%2210.48550%2FarXiv.2603.25464%22%2C%22language%22%3A%22en%22%2C%22note%22%3A%22arXiv%3A2603.25464%20%5Bcs.LG%5D%22%2C%22number%22%3A%22arXiv%3A2603.25464%22%2C%22publisher%22%3A%22arXiv%22%2C%22source%22%3A%22arXiv.org%22%2C%22title%22%3A%22Maximum%20Entropy%20Behavior%20Exploration%20for%20Sim2Real%20Zero-Shot%20Reinforcement%20Learning%22%2C%22URL%22%3A%22http%3A%2F%2Farxiv.org%2Fabs%2F2603.25464%22%2C%22author%22%3A%5B%7B%22family%22%3A%22Hu%22%2C%22given%22%3A%22Jiajun%22%7D%2C%7B%22family%22%3A%22Urpi%22%2C%22given%22%3A%22Nuria%20Armengol%22%7D%2C%7B%22family%22%3A%22Cheng%22%2C%22given%22%3A%22Jin%22%7D%2C%7B%22family%22%3A%22Coros%22%2C%22given%22%3A%22Stelian%22%7D%5D%2C%22accessed%22%3A%7B%22date-parts%22%3A%5B%5B%222026%22%2C7%2C22%5D%5D%7D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222026%22%2C3%2C26%5D%5D%7D%7D%7D%5D\" data-schema-version=\"9\"><p>Maximum Entropy Behavior Exploration for Sim2Real Zero-shot RL:</p>\n<p>Zero-shot rl for robotic manipulation: BFM</p>\n<p>Quadrupedal Control - online zero-shot RL, FB-MEBE (Directed FB)</p>\n<p>Limitations of Regularized Undirected Exploration</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">a.Finite d and Insufficient data distributions - FB representation collapse</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">b. undirected exploration strategy - performance degradation and entropy stagnation</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">-ground the unsupervised policy learning by adding a regularizer</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\"><img alt=\"\" width=\"653\" height=\"59\" data-attachment-key=\"8GGI6QLV\" src=\"assets/note-images/8GGI6QLV/image.png\"></p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">Qreg - Sections F and G</p>\n<p style=\"padding-left: 80px;\" data-indent=\"2\">a. Less foot dragging</p>\n<p style=\"padding-left: 80px;\" data-indent=\"2\">b. lower exploration - poorer entropy and performance</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">FB-MEBE</p>\n<p style=\"padding-left: 80px;\" data-indent=\"2\">1.density-inverse exploration for online FB</p>\n<p style=\"padding-left: 120px;\" data-indent=\"3\"><img alt=\"\" width=\"312\" height=\"55\" data-attachment-key=\"NBCSNC6E\" src=\"assets/note-images/NBCSNC6E/image.png\"></p>\n<p style=\"padding-left: 120px;\" data-indent=\"3\">-&gt; no access to the desired behavior distribution:</p>\n<p style=\"padding-left: 120px;\" data-indent=\"3\"><img alt=\"\" width=\"261\" height=\"55\" data-attachment-key=\"84FGHBA3\" src=\"assets/note-images/84FGHBA3/image.png\"></p>\n<p style=\"padding-left: 240px;\" data-indent=\"6\">optimizing policy:</p>\n<p style=\"padding-left: 240px;\" data-indent=\"6\"><img alt=\"\" width=\"422\" height=\"71\" data-attachment-key=\"4UEYGGSA\" src=\"assets/note-images/4UEYGGSA/image.png\"></p>\n<p><span class=\"highlight\" data-annotation=\"%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FQ4S2CIR2%22%2C%22pageLabel%22%3A%226%22%2C%22position%22%3A%7B%22pageIndex%22%3A5%2C%22rects%22%3A%5B%5B241.34940099999992%2C412.35150940000045%2C503.75432239999935%2C424.35644240000045%5D%2C%5B107.99999999999986%2C398.98855000000043%2C503.11892605999986%2C412.40044240000043%5D%2C%5B107.99999999999989%2C388.4405094000004%2C315.01286539999995%2C400.4454424000004%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FBV77JN4T%22%5D%2C%22locator%22%3A%226%22%7D%7D\">“Consequently, rather than predicting future outcomes, FB-MEBE steers the achieved behavior distribution towards uniformity by sampling exploration behaviors zrE that have the minimum density in the current buffer.”</span> </p>\n<p style=\"padding-left: 80px;\" data-indent=\"2\">2. pratical FB-MEBE</p>\n<p style=\"padding-left: 80px;\" data-indent=\"2\">state density - KDE, VAE, KNN, RND -&gt; NF(Normalizing Flows)</p>\n<p style=\"padding-left: 120px;\" data-indent=\"3\"><img alt=\"\" width=\"411\" height=\"52\" data-attachment-key=\"A9SPDU3C\" src=\"assets/note-images/A9SPDU3C/image.png\"></p>\n<p>Main Results:</p>\n<p><img alt=\"\" width=\"908\" height=\"689\" data-attachment-key=\"XAWZU4UR\" src=\"assets/note-images/XAWZU4UR/image.png\"></p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\"></p>\n</div>"
+    }
+  ],
+  "exportedAt": "2026-10-29T07:58:15+00:00"
+}

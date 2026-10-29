@@ -1,0 +1,188 @@
+{
+  "schemaVersion": 1,
+  "fileId": 27,
+  "pdf": {
+    "url": "../Humanoid%20Robotics/Tactile%20and%20Contact%20Sensing/2026%20-%20tactilestep.pdf",
+    "sha256": "d08d4cfbcd719d59aadf34325c7763c9b8c6b029e8c85435a5f652705c798426"
+  },
+  "zotero": {
+    "libraryType": "user",
+    "libraryId": 1,
+    "parentKey": "B9CDIHUG",
+    "attachmentKey": "9HV5BHSA"
+  },
+  "mapping": {
+    "status": "matched",
+    "basis": "sha256"
+  },
+  "annotations": [
+    {
+      "id": "9ZLNS98C",
+      "key": "9ZLNS98C",
+      "version": 345,
+      "type": "highlight",
+      "text": "the method approximates the plantar pressure distribution by distributing the resultant foot contact force over a set of sole taxels",
+      "comment": "",
+      "color": "#ff6666",
+      "pageLabel": "4",
+      "sortIndex": "00003|002318|00593",
+      "position": {
+        "pageIndex": 3,
+        "rects": [
+          [
+            246.231,
+            214.163,
+            323.76,
+            222.801
+          ],
+          [
+            108.0,
+            202.208,
+            323.76,
+            210.846
+          ],
+          [
+            108.0,
+            190.253,
+            323.76,
+            198.891
+          ],
+          [
+            108.0,
+            178.298,
+            119.068,
+            186.936
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-10-04T03:33:18Z",
+      "readOnly": false,
+      "parentItem": "9HV5BHSA",
+      "contentHash": "5eed3b8269b52204b6f340bb0bc960d77d6e9645e2e66e8575ea5f7f4a86d0ad",
+      "raw": null
+    },
+    {
+      "id": "QJTZDGDA",
+      "key": "QJTZDGDA",
+      "version": 249,
+      "type": "highlight",
+      "text": "distributing rigid-body contact forces over sole taxels and extracting normal force, contact area, and CoP.",
+      "comment": "",
+      "color": "#2ea8e5",
+      "pageLabel": "3",
+      "sortIndex": "00002|001794|00463",
+      "position": {
+        "pageIndex": 2,
+        "rects": [
+          [
+            467.67,
+            332.153,
+            504.003,
+            340.791
+          ],
+          [
+            108.0,
+            320.197,
+            504.003,
+            328.835
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-10-04T02:50:57Z",
+      "readOnly": false,
+      "parentItem": "9HV5BHSA",
+      "contentHash": "3005d5e5055f72ae84c86cfe92bee24cd9931f7d64709aae97a4a6c02880057b",
+      "raw": null
+    },
+    {
+      "id": "DPKY68Q3",
+      "key": "DPKY68Q3",
+      "version": 245,
+      "type": "highlight",
+      "text": "simpler abstractions ease scalable learning and transfer, while richer models retain more contact information at higher simulation complexity",
+      "comment": "",
+      "color": "#ff6666",
+      "pageLabel": "3",
+      "sortIndex": "00002|001622|00439",
+      "position": {
+        "pageIndex": 2,
+        "rects": [
+          [
+            458.056,
+            356.063,
+            504.003,
+            364.701
+          ],
+          [
+            108.0,
+            344.108,
+            504.003,
+            352.746
+          ],
+          [
+            108.0,
+            332.153,
+            235.521,
+            340.791
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-10-04T02:50:25Z",
+      "readOnly": false,
+      "parentItem": "9HV5BHSA",
+      "contentHash": "253fd56acd2063ff538a7aba5e4861ac221ac3c4d2483cd90d1efd2a6de42121",
+      "raw": null
+    },
+    {
+      "id": "J8BQ7N5N",
+      "key": "J8BQ7N5N",
+      "version": 185,
+      "type": "highlight",
+      "text": "Our key idea is that sole tactile sensing can turn the contact state under the foot into a deployable policy observation",
+      "comment": "",
+      "color": "#ff6666",
+      "pageLabel": "2",
+      "sortIndex": "00001|001737|00366",
+      "position": {
+        "pageIndex": 1,
+        "rects": [
+          [
+            108.0,
+            416.774,
+            504.003,
+            425.78
+          ],
+          [
+            108.0,
+            404.818,
+            181.982,
+            413.824
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-10-03T15:43:42Z",
+      "readOnly": false,
+      "parentItem": "9HV5BHSA",
+      "contentHash": "a0185c205e0746950ff7edbcaf6d13f926e770a6534478c9c0d1606f91fdf92a",
+      "raw": null
+    }
+  ],
+  "notes": [
+    {
+      "id": "UTA86DG3",
+      "key": "UTA86DG3",
+      "version": 472,
+      "html": "<div data-schema-version=\"9\"><p>TactileStep</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">Issues beforehand: harsh landings, edge contacts, unstable stance contacts</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">Method: real pressure insole for real tactile sensing</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">compact features: normal force, contact area, center of pressure</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\"></p>\n<p>prior sim2real:</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">[26] Z.-H. Yin, B. Huang, Y. Qin, Q. Chen, and X. Wang. Rotating without seeing: Towards in-hand dexterity through touch. arXiv preprint arXiv:2303.10880, 2023.</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">⁨[27] L. Yang, B. Huang, Q. Li, Y.-Y. Tsai, W. W. Lee, C. Song, and J. Pan. Tacgnn: Learning tactile-based in-hand manipulation with a blind robot using hierarchical graph neural network. IEEE Robotics and Automation Letters, 8(6):3605–3612, 2023.</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">⁨[28] J. Yin, H. Qi, J. Malik, J. Pikul, M. Yim, and T. Hellebrekers. Learning in-hand translation using tactile skin with shear and normal force sensing. In 2025 IEEE International Conference on Robotics and Automation (ICRA), pages 5850–5856. IEEE, 2025.</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">[29] C. Lin, Y. R. Song, B. Huo, M. Yu, Y. Wang, S. Liu, Y. Yang, W. Yu, T. Zhang, J. Tan, et al. Locotouch: Learning dynamic quadrupedal transport with tactile sensing. arXiv preprint arXiv:2505.23175, 2025.</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">[30] S. Wang, M. Lambeta, P.-W. Chou, and R. Calandra. Tacto: A fast, flexible, and open-source simulator for high-resolution vision-based tactile sensors. IEEE Robotics and Automation Letters, 7(2):3930–3937, 2022.</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">[31] Z. Si and W. Yuan. Taxim: An example-based simulation model for gelsight tactile sensors. IEEE Robotics and Automation Letters, 7(2):2361–2368, 2022.</p>\n<p>Framework</p>\n<p><img alt=\"\" width=\"1030\" height=\"502\" data-attachment-key=\"9UWWK49N\"></p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">formulation: POMDP + PPO</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\"><img alt=\"\" width=\"959\" height=\"204\" data-attachment-key=\"URDBIP6X\"></p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\"><img alt=\"\" width=\"720\" height=\"89\" data-attachment-key=\"GQ5C9TZ9\"><br>Action Space : at (29DoF)</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">Reward Functions:<img alt=\"\" width=\"266\" height=\"28\" data-attachment-key=\"54P5DMU4\"></p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\"><img alt=\"\" width=\"321\" height=\"100\" data-attachment-key=\"7JUJDG7X\"></p>\n<p style=\"padding-left: 80px;\" data-indent=\"2\">（Details at B.3)</p>\n<p style=\"padding-left: 80px;\" data-indent=\"2\"></p>\n<p style=\"padding-left: 80px;\" data-indent=\"2\">Simulation:</p>\n<p style=\"padding-left: 120px;\" data-indent=\"3\">Force Distribution - 60 Taxels(tactile pixel) on the sole</p>\n<p style=\"padding-left: 120px;\" data-indent=\"3\"><img alt=\"\" width=\"841\" height=\"95\" data-attachment-key=\"56M5N4QX\"></p>\n<p style=\"padding-left: 120px;\" data-indent=\"3\"><img alt=\"\" width=\"236\" height=\"53\" data-attachment-key=\"MVQPANFA\"></p>\n<p style=\"padding-left: 120px;\" data-indent=\"3\">Spatial Diffusion - smooth in-betweening</p>\n<p style=\"padding-left: 120px;\" data-indent=\"3\"><img alt=\"\" width=\"827\" height=\"229\" data-attachment-key=\"67M297HR\"></p>\n<p style=\"padding-left: 120px;\" data-indent=\"3\">Feature extraction</p>\n<p style=\"padding-left: 120px;\" data-indent=\"3\"><img alt=\"\" width=\"767\" height=\"193\" data-attachment-key=\"49ALGWA6\"></p>\n<p style=\"padding-left: 120px;\" data-indent=\"3\">Sim2Real Alignment</p>\n<p style=\"padding-left: 120px;\" data-indent=\"3\"><img alt=\"\" width=\"697\" height=\"497\" data-attachment-key=\"6H65VWT3\"></p>\n<p style=\"padding-left: 120px;\" data-indent=\"3\">same features as in simulation + hardware calibration with MLP</p>\n<p></p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">Phase-aware - Swing Prelanding Landing Stance</p>\n<p style=\"padding-left: 80px;\" data-indent=\"2\">In general:</p>\n<p style=\"padding-left: 80px;\" data-indent=\"2\"><img alt=\"\" width=\"1093\" height=\"96\" data-attachment-key=\"ZZGLKRIH\"></p>\n<p style=\"padding-left: 80px;\" data-indent=\"2\">Soft-landing</p>\n<p style=\"padding-left: 80px;\" data-indent=\"2\"><img alt=\"\" width=\"1146\" height=\"599\" data-attachment-key=\"7XUBZ899\"></p>\n<p style=\"padding-left: 80px;\" data-indent=\"2\">Support-Stability</p>\n<p style=\"padding-left: 80px;\" data-indent=\"2\"><img alt=\"\" width=\"1125\" height=\"315\" data-attachment-key=\"E7YCNJY5\"></p>\n<p style=\"padding-left: 80px;\" data-indent=\"2\"></p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\"></p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\"></p>\n</div>",
+      "tags": [],
+      "dateModified": "2026-10-04T04:04:41Z",
+      "parentItem": "B9CDIHUG",
+      "contentHash": "f4ec551bc60fc3ae8995e7223c9e1e526e0fe6aa20e955f71a41851743a516f4",
+      "displayHtml": "<div data-schema-version=\"9\"><p>TactileStep</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">Issues beforehand: harsh landings, edge contacts, unstable stance contacts</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">Method: real pressure insole for real tactile sensing</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">compact features: normal force, contact area, center of pressure</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\"></p>\n<p>prior sim2real:</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">[26] Z.-H. Yin, B. Huang, Y. Qin, Q. Chen, and X. Wang. Rotating without seeing: Towards in-hand dexterity through touch. arXiv preprint arXiv:2303.10880, 2023.</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">⁨[27] L. Yang, B. Huang, Q. Li, Y.-Y. Tsai, W. W. Lee, C. Song, and J. Pan. Tacgnn: Learning tactile-based in-hand manipulation with a blind robot using hierarchical graph neural network. IEEE Robotics and Automation Letters, 8(6):3605–3612, 2023.</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">⁨[28] J. Yin, H. Qi, J. Malik, J. Pikul, M. Yim, and T. Hellebrekers. Learning in-hand translation using tactile skin with shear and normal force sensing. In 2025 IEEE International Conference on Robotics and Automation (ICRA), pages 5850–5856. IEEE, 2025.</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">[29] C. Lin, Y. R. Song, B. Huo, M. Yu, Y. Wang, S. Liu, Y. Yang, W. Yu, T. Zhang, J. Tan, et al. Locotouch: Learning dynamic quadrupedal transport with tactile sensing. arXiv preprint arXiv:2505.23175, 2025.</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">[30] S. Wang, M. Lambeta, P.-W. Chou, and R. Calandra. Tacto: A fast, flexible, and open-source simulator for high-resolution vision-based tactile sensors. IEEE Robotics and Automation Letters, 7(2):3930–3937, 2022.</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">[31] Z. Si and W. Yuan. Taxim: An example-based simulation model for gelsight tactile sensors. IEEE Robotics and Automation Letters, 7(2):2361–2368, 2022.</p>\n<p>Framework</p>\n<p><img alt=\"\" width=\"1030\" height=\"502\" data-attachment-key=\"9UWWK49N\" src=\"assets/note-images/9UWWK49N/image.png\"></p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">formulation: POMDP + PPO</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\"><img alt=\"\" width=\"959\" height=\"204\" data-attachment-key=\"URDBIP6X\" src=\"assets/note-images/URDBIP6X/image.png\"></p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\"><img alt=\"\" width=\"720\" height=\"89\" data-attachment-key=\"GQ5C9TZ9\" src=\"assets/note-images/GQ5C9TZ9/image.png\"><br>Action Space : at (29DoF)</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">Reward Functions:<img alt=\"\" width=\"266\" height=\"28\" data-attachment-key=\"54P5DMU4\" src=\"assets/note-images/54P5DMU4/image.png\"></p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\"><img alt=\"\" width=\"321\" height=\"100\" data-attachment-key=\"7JUJDG7X\" src=\"assets/note-images/7JUJDG7X/image.png\"></p>\n<p style=\"padding-left: 80px;\" data-indent=\"2\">（Details at B.3)</p>\n<p style=\"padding-left: 80px;\" data-indent=\"2\"></p>\n<p style=\"padding-left: 80px;\" data-indent=\"2\">Simulation:</p>\n<p style=\"padding-left: 120px;\" data-indent=\"3\">Force Distribution - 60 Taxels(tactile pixel) on the sole</p>\n<p style=\"padding-left: 120px;\" data-indent=\"3\"><img alt=\"\" width=\"841\" height=\"95\" data-attachment-key=\"56M5N4QX\" src=\"assets/note-images/56M5N4QX/image.png\"></p>\n<p style=\"padding-left: 120px;\" data-indent=\"3\"><img alt=\"\" width=\"236\" height=\"53\" data-attachment-key=\"MVQPANFA\" src=\"assets/note-images/MVQPANFA/image.png\"></p>\n<p style=\"padding-left: 120px;\" data-indent=\"3\">Spatial Diffusion - smooth in-betweening</p>\n<p style=\"padding-left: 120px;\" data-indent=\"3\"><img alt=\"\" width=\"827\" height=\"229\" data-attachment-key=\"67M297HR\" src=\"assets/note-images/67M297HR/image.png\"></p>\n<p style=\"padding-left: 120px;\" data-indent=\"3\">Feature extraction</p>\n<p style=\"padding-left: 120px;\" data-indent=\"3\"><img alt=\"\" width=\"767\" height=\"193\" data-attachment-key=\"49ALGWA6\" src=\"assets/note-images/49ALGWA6/image.png\"></p>\n<p style=\"padding-left: 120px;\" data-indent=\"3\">Sim2Real Alignment</p>\n<p style=\"padding-left: 120px;\" data-indent=\"3\"><img alt=\"\" width=\"697\" height=\"497\" data-attachment-key=\"6H65VWT3\" src=\"assets/note-images/6H65VWT3/image.png\"></p>\n<p style=\"padding-left: 120px;\" data-indent=\"3\">same features as in simulation + hardware calibration with MLP</p>\n<p></p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">Phase-aware - Swing Prelanding Landing Stance</p>\n<p style=\"padding-left: 80px;\" data-indent=\"2\">In general:</p>\n<p style=\"padding-left: 80px;\" data-indent=\"2\"><img alt=\"\" width=\"1093\" height=\"96\" data-attachment-key=\"ZZGLKRIH\" src=\"assets/note-images/ZZGLKRIH/image.png\"></p>\n<p style=\"padding-left: 80px;\" data-indent=\"2\">Soft-landing</p>\n<p style=\"padding-left: 80px;\" data-indent=\"2\"><img alt=\"\" width=\"1146\" height=\"599\" data-attachment-key=\"7XUBZ899\" src=\"assets/note-images/7XUBZ899/image.png\"></p>\n<p style=\"padding-left: 80px;\" data-indent=\"2\">Support-Stability</p>\n<p style=\"padding-left: 80px;\" data-indent=\"2\"><img alt=\"\" width=\"1125\" height=\"315\" data-attachment-key=\"E7YCNJY5\" src=\"assets/note-images/E7YCNJY5/image.png\"></p>\n<p style=\"padding-left: 80px;\" data-indent=\"2\"></p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\"></p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\"></p>\n</div>"
+    }
+  ],
+  "exportedAt": "2026-10-29T07:58:15+00:00"
+}

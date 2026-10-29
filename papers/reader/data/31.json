@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "fileId": 31,
+  "pdf": {
+    "url": "../Agent%20Foundations/Robot%20Task%20Planning/2022%20-%20ProgPrompt.pdf",
+    "sha256": "f9106cad86a1e73ecb93366a85cf4845989207ae21a176693a7ecdb02403692a"
+  },
+  "zotero": {
+    "libraryType": "user",
+    "libraryId": 1,
+    "parentKey": "5SD2WZM4",
+    "attachmentKey": "SQRKTGES"
+  },
+  "mapping": {
+    "status": "matched",
+    "basis": "sha256"
+  },
+  "annotations": [],
+  "notes": [
+    {
+      "id": "WYG4P3L7",
+      "key": "WYG4P3L7",
+      "version": 0,
+      "html": "<div data-schema-version=\"9\"><h1><span style=\"color: rgb(25, 60, 71);\"><span style=\"background-color: rgb(238, 249, 253);\">ProgPrompt: Generating Situated Robot Task Plans using Large Language Models</span></span></h1>\n<h2>⚙️ Metadata</h2>\n<ul>\n<li>\n<strong>Item Type:</strong> conferencePaper\n</li>\n<li>\n<strong>Author:</strong> [[Ishika Singh]], [[Valts Blukis]], [[Arsalan Mousavian]], [[Ankit Goyal]], [[Danfei Xu]], [[Jonathan Tremblay]], [[Dieter Fox]], [[Jesse Thomason]], [[Animesh Garg]]\n</li>\n<li>\n<strong>Date Added:</strong> 2026/5/14 17:09:53\n</li>\n<li>\n<strong>DOI: </strong><a href=\"https://doi.org/10.1109/ICRA48891.2023.10161317\" rel=\"noopener noreferrer nofollow\">10.1109/ICRA48891.2023.10161317</a>\n</li>\n<li>\n<strong>Cite key:</strong>\n</li>\n<li>\n<strong>Journal:</strong>\n</li>\n<li>\n<strong>Journal Tags:</strong>\n</li>\n<li>\n<strong>Publication Date: </strong>2023-5-29\n</li>\n<li>\n<strong>Tags:</strong> #, #zotero\n</li>\n<li>\n<strong>PDF Attachments: </strong><a href=\"zotero://open-pdf/library/items/SQRKTGES\" rel=\"noopener noreferrer nofollow\">Singh 等 - 2023 - ProgPrompt Generating Situated Robot Task Plans using Large Language Models.pdf</a>\n</li>\n<li>\n<strong>Related Items: </strong><span style=\"color: gray;\">无相关条目</span>\n</li>\n</ul>\n<h2>📜 Abstract</h2>\n<h2>📚 Zotero links</h2>\n<ul>\n<li>\n<a href=\"zotero://select/items/1_5SD2WZM4\" rel=\"noopener noreferrer nofollow\">Local library</a>\n</li>\n</ul>\n<h1>Notes</h1>\n<p>用注释为后续任务提供自然语言摘要</p>\n<p>运用断言提供环境反馈机制，以确保前提都成立</p>\n<h2>🤔 Personal Summary</h2>\n<h3>💭 Thought Inspiration</h3>\n<blockquote>\n<p>Tips: What aspects did you question, how do you think it can be improved?</p>\n</blockquote>\n<p></p>\n<h3>📜 Conclusion</h3>\n<blockquote>\n<p>Tips: What was done, what problem was solved, innovations and shortcomings?</p>\n</blockquote>\n<p></p>\n</div>",
+      "tags": [],
+      "dateModified": "2026-05-14T09:27:17Z",
+      "parentItem": "5SD2WZM4",
+      "contentHash": "dd24602aafacf5f94a04588f783d00b5e5e52eef92ffb2b29d0c554544309707",
+      "displayHtml": "<div data-schema-version=\"9\"><h1><span style=\"color: rgb(25, 60, 71);\"><span style=\"background-color: rgb(238, 249, 253);\">ProgPrompt: Generating Situated Robot Task Plans using Large Language Models</span></span></h1>\n<h2>⚙️ Metadata</h2>\n<ul>\n<li>\n<strong>Item Type:</strong> conferencePaper\n</li>\n<li>\n<strong>Author:</strong> [[Ishika Singh]], [[Valts Blukis]], [[Arsalan Mousavian]], [[Ankit Goyal]], [[Danfei Xu]], [[Jonathan Tremblay]], [[Dieter Fox]], [[Jesse Thomason]], [[Animesh Garg]]\n</li>\n<li>\n<strong>Date Added:</strong> 2026/5/14 17:09:53\n</li>\n<li>\n<strong>DOI: </strong><a href=\"https://doi.org/10.1109/ICRA48891.2023.10161317\" rel=\"noopener noreferrer nofollow\">10.1109/ICRA48891.2023.10161317</a>\n</li>\n<li>\n<strong>Cite key:</strong>\n</li>\n<li>\n<strong>Journal:</strong>\n</li>\n<li>\n<strong>Journal Tags:</strong>\n</li>\n<li>\n<strong>Publication Date: </strong>2023-5-29\n</li>\n<li>\n<strong>Tags:</strong> #, #zotero\n</li>\n<li>\n<strong>PDF Attachments: </strong><a href=\"zotero://open-pdf/library/items/SQRKTGES\" rel=\"noopener noreferrer nofollow\">Singh 等 - 2023 - ProgPrompt Generating Situated Robot Task Plans using Large Language Models.pdf</a>\n</li>\n<li>\n<strong>Related Items: </strong><span style=\"color: gray;\">无相关条目</span>\n</li>\n</ul>\n<h2>📜 Abstract</h2>\n<h2>📚 Zotero links</h2>\n<ul>\n<li>\n<a href=\"zotero://select/items/1_5SD2WZM4\" rel=\"noopener noreferrer nofollow\">Local library</a>\n</li>\n</ul>\n<h1>Notes</h1>\n<p>用注释为后续任务提供自然语言摘要</p>\n<p>运用断言提供环境反馈机制，以确保前提都成立</p>\n<h2>🤔 Personal Summary</h2>\n<h3>💭 Thought Inspiration</h3>\n<blockquote>\n<p>Tips: What aspects did you question, how do you think it can be improved?</p>\n</blockquote>\n<p></p>\n<h3>📜 Conclusion</h3>\n<blockquote>\n<p>Tips: What was done, what problem was solved, innovations and shortcomings?</p>\n</blockquote>\n<p></p>\n</div>"
+    }
+  ],
+  "exportedAt": "2026-10-29T07:58:15+00:00"
+}

@@ -1,0 +1,634 @@
+{
+  "schemaVersion": 1,
+  "fileId": 63,
+  "pdf": {
+    "url": "../Embodied%20Navigation/Language-Vision%20Navigation%20and%20Reasoning/2025%20-%20NavCoT.pdf",
+    "sha256": "b6cecf66f11d577be59f2c23002e49dd3ab9c34a6f92fb1c5a90a4ff543cc0ae"
+  },
+  "zotero": {
+    "libraryType": "user",
+    "libraryId": 1,
+    "parentKey": "ZFCEFWIJ",
+    "attachmentKey": "IIUBEQEL"
+  },
+  "mapping": {
+    "status": "matched",
+    "basis": "sha256"
+  },
+  "annotations": [
+    {
+      "id": "AIZF8ATP",
+      "key": "AIZF8ATP",
+      "version": 0,
+      "type": "highlight",
+      "text": "Action Prediction (AP):",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "5948",
+      "sortIndex": "00003|002442|00496",
+      "position": {
+        "pageIndex": 3,
+        "rects": [
+          [
+            315.099,
+            286.714,
+            409.961,
+            295.471
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-05T14:37:07Z",
+      "readOnly": false,
+      "parentItem": "IIUBEQEL",
+      "contentHash": "ec0f6f3831074adef9f65e05efda077d6e4390c7d068e43cddf7ff4fa75d5ba9",
+      "raw": null
+    },
+    {
+      "id": "MREAZWSM",
+      "key": "MREAZWSM",
+      "version": 0,
+      "type": "highlight",
+      "text": "Visual Information Filter (VIF)",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "5948",
+      "sortIndex": "00003|002081|00400",
+      "position": {
+        "pageIndex": 3,
+        "rects": [
+          [
+            315.099,
+            382.357,
+            441.493,
+            391.114
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-05T14:36:42Z",
+      "readOnly": false,
+      "parentItem": "IIUBEQEL",
+      "contentHash": "eefa10759f0717978fccf0bb5cc271b0e69fe7873d96057b87fea38c95eb7542",
+      "raw": null
+    },
+    {
+      "id": "MTQT65JQ",
+      "key": "MTQT65JQ",
+      "version": 0,
+      "type": "highlight",
+      "text": "Future Imagination (FI)",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "5948",
+      "sortIndex": "00003|001886|00341",
+      "position": {
+        "pageIndex": 3,
+        "rects": [
+          [
+            315.099,
+            442.133,
+            410.744,
+            450.89
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-05T14:35:52Z",
+      "readOnly": false,
+      "parentItem": "IIUBEQEL",
+      "contentHash": "6ac31f45fe251424b4f2a24146f0cc4e4149eb06e89f06596250d7aacdc062c3",
+      "raw": null
+    },
+    {
+      "id": "7RSG89X2",
+      "key": "7RSG89X2",
+      "version": 0,
+      "type": "highlight",
+      "text": "each timestep t, the LLM receives the prompt consisting of a chain-of-thought reasoning example and a query navigation input",
+      "comment": "",
+      "color": "#ff6666",
+      "pageLabel": "5948",
+      "sortIndex": "00003|001377|00615",
+      "position": {
+        "pageIndex": 3,
+        "rects": [
+          [
+            150.299,
+            166.621,
+            293.153,
+            176.584
+          ],
+          [
+            42.119,
+            154.998,
+            293.14,
+            163.755
+          ],
+          [
+            42.119,
+            143.046,
+            156.532,
+            151.803
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-05T14:34:05Z",
+      "readOnly": false,
+      "parentItem": "IIUBEQEL",
+      "contentHash": "11d2f6438b969bc8b1f585b81d05974225c263fc109b3991e6ca3c521313826d",
+      "raw": null
+    },
+    {
+      "id": "AWLMWN4V",
+      "key": "AWLMWN4V",
+      "version": 0,
+      "type": "highlight",
+      "text": "Dt,n = cat (Dta,n, Dtv,n  ) ,",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "5948",
+      "sortIndex": "00003|000439|00352",
+      "position": {
+        "pageIndex": 3,
+        "rects": [
+          [
+            116.802,
+            419.766,
+            208.982,
+            439.511
+          ],
+          [
+            209.502,
+            421.476,
+            218.489,
+            439.511
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-05T14:30:18Z",
+      "readOnly": false,
+      "parentItem": "IIUBEQEL",
+      "contentHash": "2b81a5c0135cd7945bd48bb106c47879f269f3856c37609313225665049a1380",
+      "raw": null
+    },
+    {
+      "id": "3NF39K59",
+      "key": "3NF39K59",
+      "version": 0,
+      "type": "highlight",
+      "text": "At,n into the textual represented direction space containing six basic directions such as “turn left” and “go up”",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "5947",
+      "sortIndex": "00002|004814|00699",
+      "position": {
+        "pageIndex": 2,
+        "rects": [
+          [
+            442.154,
+            82.194,
+            551.977,
+            92.903
+          ],
+          [
+            300.925,
+            71.308,
+            551.954,
+            80.065
+          ],
+          [
+            300.925,
+            59.356,
+            394.22,
+            68.113
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-05T14:27:26Z",
+      "readOnly": false,
+      "parentItem": "IIUBEQEL",
+      "contentHash": "3bd96be49e20f4eeeb535d03e1c7342a3a0aa9aff7d01a8c35045a78dd00b34d",
+      "raw": null
+    },
+    {
+      "id": "TS4L4723",
+      "key": "TS4L4723",
+      "version": 0,
+      "type": "highlight",
+      "text": "an RGB image Bt,n and the direction information At,n = {ψt,n, θt,n}, where ψt,n and θt,n",
+      "comment": "",
+      "color": "#ff6666",
+      "pageLabel": "5947",
+      "sortIndex": "00002|004386|00569",
+      "position": {
+        "pageIndex": 2,
+        "rects": [
+          [
+            518.189,
+            224.187,
+            551.97,
+            234.896
+          ],
+          [
+            300.925,
+            212.226,
+            551.977,
+            222.935
+          ],
+          [
+            300.925,
+            200.274,
+            383.708,
+            210.983
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-05T14:25:43Z",
+      "readOnly": false,
+      "parentItem": "IIUBEQEL",
+      "contentHash": "736d342cc50b6539ad69705e86ef2db01d4ed489e8105492aa0816ae9573d17f",
+      "raw": null
+    },
+    {
+      "id": "USN3VIWC",
+      "key": "USN3VIWC",
+      "version": 0,
+      "type": "highlight",
+      "text": "observation Ot,n",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "5947",
+      "sortIndex": "00002|004343|00557",
+      "position": {
+        "pageIndex": 2,
+        "rects": [
+          [
+            330.279,
+            224.187,
+            398.297,
+            234.896
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-05T14:25:28Z",
+      "readOnly": false,
+      "parentItem": "IIUBEQEL",
+      "contentHash": "594e616118798a79ddabe58b4f514c8ec287032ba596bdd80d6f704ea162a94f",
+      "raw": null
+    },
+    {
+      "id": "U9KU7K99",
+      "key": "U9KU7K99",
+      "version": 0,
+      "type": "highlight",
+      "text": "introduce smaller open-source LLMs which can be deployed and trained locally",
+      "comment": "",
+      "color": "#ff6666",
+      "pageLabel": "5947",
+      "sortIndex": "00002|002904|00143",
+      "position": {
+        "pageIndex": 2,
+        "rects": [
+          [
+            432.63,
+            640.223,
+            551.962,
+            648.98
+          ],
+          [
+            300.923,
+            628.271,
+            508.863,
+            637.028
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-05T13:46:21Z",
+      "readOnly": false,
+      "parentItem": "IIUBEQEL",
+      "contentHash": "ea5873e86d20bd65ccf3cbe1fad8ed986fda0b3972793d520af302765e189afd",
+      "raw": null
+    },
+    {
+      "id": "LZB38S6R",
+      "key": "LZB38S6R",
+      "version": 0,
+      "type": "highlight",
+      "text": "closed-source LLMs such as GPT-4 [16] in an offline way",
+      "comment": "",
+      "color": "#ff6666",
+      "pageLabel": "5947",
+      "sortIndex": "00002|002777|00119",
+      "position": {
+        "pageIndex": 2,
+        "rects": [
+          [
+            300.923,
+            664.136,
+            535.017,
+            672.893
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-05T13:46:07Z",
+      "readOnly": false,
+      "parentItem": "IIUBEQEL",
+      "contentHash": "3f6bbfaeb57fde3506f696c9310c8d5737cd393bf31e1c134b7194e18fa90a73",
+      "raw": null
+    },
+    {
+      "id": "B4WUN6LB",
+      "key": "B4WUN6LB",
+      "version": 0,
+      "type": "highlight",
+      "text": "observation Ot containing K single-view observations Ot,k, i.e., Ot = {Ot,k}kK=1.  There are N navigable views among K views.",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "5947",
+      "sortIndex": "00002|002240|00673",
+      "position": {
+        "pageIndex": 2,
+        "rects": [
+          [
+            208.673,
+            118.059,
+            288.952,
+            128.767
+          ],
+          [
+            37.909,
+            104.775,
+            288.97,
+            118.183
+          ],
+          [
+            37.909,
+            94.892,
+            228.464,
+            104.855
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-05T13:44:59Z",
+      "readOnly": false,
+      "parentItem": "IIUBEQEL",
+      "contentHash": "a04554626920bcae086fb9d8a027abdb45b95679500c8baf36ee308068812e9e",
+      "raw": null
+    },
+    {
+      "id": "HIRUAHW6",
+      "key": "HIRUAHW6",
+      "version": 0,
+      "type": "highlight",
+      "text": "trainable way and constrain the LLM to produce CoT outputs with the unified format",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "5947",
+      "sortIndex": "00002|001849|00528",
+      "position": {
+        "pageIndex": 2,
+        "rects": [
+          [
+            139.418,
+            254.637,
+            288.958,
+            263.394
+          ],
+          [
+            37.91,
+            242.684,
+            232.86,
+            251.442
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-05T13:43:16Z",
+      "readOnly": false,
+      "parentItem": "IIUBEQEL",
+      "contentHash": "e6b09af34c6072dd7d3745985dc9d8282070ce10b005c6f8c5bd9f49796fa6ad",
+      "raw": null
+    },
+    {
+      "id": "5TNKYLSE",
+      "key": "5TNKYLSE",
+      "version": 0,
+      "type": "highlight",
+      "text": "world model into the CoT mechanism",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "5947",
+      "sortIndex": "00002|001817|00516",
+      "position": {
+        "pageIndex": 2,
+        "rects": [
+          [
+            220.942,
+            266.598,
+            288.976,
+            275.355
+          ],
+          [
+            37.91,
+            254.637,
+            118.787,
+            263.394
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-05T13:35:49Z",
+      "readOnly": false,
+      "parentItem": "IIUBEQEL",
+      "contentHash": "fd1bcbdac898a42b249f0a3f148ca47ae800f88eb8e77470b74536cc791f8af2",
+      "raw": null
+    },
+    {
+      "id": "ZJXF24MV",
+      "key": "ZJXF24MV",
+      "version": 0,
+      "type": "highlight",
+      "text": "3) determining the action based on the reasoning from the prior steps.",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "5945",
+      "sortIndex": "00000|001188|00337",
+      "position": {
+        "pageIndex": 0,
+        "rects": [
+          [
+            194.307,
+            446.385,
+            288.967,
+            454.284
+          ],
+          [
+            37.908,
+            436.421,
+            220.276,
+            444.321
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-05T13:21:57Z",
+      "readOnly": false,
+      "parentItem": "IIUBEQEL",
+      "contentHash": "8830cff1820e41024573a55b85e56b3002b0d11726b0234547ef3ffebc610ba1",
+      "raw": null
+    },
+    {
+      "id": "7NK52Y5Z",
+      "key": "7NK52Y5Z",
+      "version": 0,
+      "type": "highlight",
+      "text": "2) selecting the candidate observation that best aligns with the imagination,",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "5945",
+      "sortIndex": "00000|001118|00327",
+      "position": {
+        "pageIndex": 0,
+        "rects": [
+          [
+            146.972,
+            456.348,
+            288.972,
+            464.247
+          ],
+          [
+            37.908,
+            446.385,
+            176.515,
+            454.284
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-05T13:21:46Z",
+      "readOnly": false,
+      "parentItem": "IIUBEQEL",
+      "contentHash": "df30d209ba236fc0a99a05482d1bfb4b0df58e77a5f501a4020bcb2e1307823b",
+      "raw": null
+    },
+    {
+      "id": "FGIDVEN5",
+      "key": "FGIDVEN5",
+      "version": 0,
+      "type": "highlight",
+      "text": "1) acting as a world model to imagine the next observation according to the instruction,",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "5945",
+      "sortIndex": "00000|001044|00317",
+      "position": {
+        "pageIndex": 0,
+        "rects": [
+          [
+            53.875,
+            466.311,
+            288.967,
+            474.211
+          ],
+          [
+            37.908,
+            456.348,
+            145.047,
+            464.247
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-05T13:21:39Z",
+      "readOnly": false,
+      "parentItem": "IIUBEQEL",
+      "contentHash": "9560aec506f53aeb3333f1dd0b82a8f155c0cb7538dcf39dfe89f2ad737140d2",
+      "raw": null
+    },
+    {
+      "id": "7NN4HJHR",
+      "key": "7NN4HJHR",
+      "version": 0,
+      "type": "highlight",
+      "text": "parameter-efficient in-domain training to enable self-guided navigational decision",
+      "comment": "",
+      "color": "#ff6666",
+      "pageLabel": "5945",
+      "sortIndex": "00000|000813|00277",
+      "position": {
+        "pageIndex": 0,
+        "rects": [
+          [
+            37.908,
+            506.165,
+            288.978,
+            514.065
+          ],
+          [
+            37.908,
+            496.202,
+            101.929,
+            504.101
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-05T13:21:23Z",
+      "readOnly": false,
+      "parentItem": "IIUBEQEL",
+      "contentHash": "be9d493a549d3ed70f5162a0e82d18eebc479eff5994d2c2cfe33d0d6da0be2d",
+      "raw": null
+    },
+    {
+      "id": "X2SNRH4B",
+      "key": "X2SNRH4B",
+      "version": 0,
+      "type": "highlight",
+      "text": "use in an offline manner usually suffers from substantial domain gap between the VLN task and the LLM training corpus",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "5945",
+      "sortIndex": "00000|000654|00248",
+      "position": {
+        "pageIndex": 0,
+        "rects": [
+          [
+            155.299,
+            546.019,
+            288.969,
+            553.919
+          ],
+          [
+            37.908,
+            536.056,
+            288.982,
+            543.955
+          ],
+          [
+            37.908,
+            526.092,
+            137.328,
+            533.992
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-05T13:19:10Z",
+      "readOnly": false,
+      "parentItem": "IIUBEQEL",
+      "contentHash": "6f15d7020e17d9656a95a369249ebbf57d7234505ff6af75536b8b1f3851adf0",
+      "raw": null
+    }
+  ],
+  "notes": [],
+  "exportedAt": "2026-10-29T07:58:15+00:00"
+}

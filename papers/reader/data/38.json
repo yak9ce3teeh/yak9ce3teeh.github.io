@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "fileId": 38,
+  "pdf": {
+    "url": "../Robotic%20Manipulation/Dexterous%20Manipulation%20and%20Human%20Data/2026%20-%20Unidex.pdf",
+    "sha256": "2ccb2df92e35428fd2d1d3949366ff7161c0ca0ef4fd5498c9b03e7e62530975"
+  },
+  "zotero": {
+    "libraryType": "user",
+    "libraryId": 1,
+    "parentKey": "EFWQZ3Y5",
+    "attachmentKey": "PGI55FT4"
+  },
+  "mapping": {
+    "status": "matched",
+    "basis": "sha256"
+  },
+  "annotations": [],
+  "notes": [
+    {
+      "id": "ESJTB6YI",
+      "key": "ESJTB6YI",
+      "version": 0,
+      "html": "<h2>Other</h2>\nAccepted by CVPR 2026",
+      "tags": [],
+      "dateModified": "2026-07-02T01:29:52Z",
+      "parentItem": "EFWQZ3Y5",
+      "contentHash": "cd94faf71265966abacbe0eb8fb545fd83e7f77ca59363a242236d5eaa519701",
+      "displayHtml": "<h2>Other</h2>\nAccepted by CVPR 2026"
+    }
+  ],
+  "exportedAt": "2026-10-29T07:58:15+00:00"
+}

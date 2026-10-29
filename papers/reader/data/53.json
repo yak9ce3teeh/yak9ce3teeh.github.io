@@ -1,0 +1,430 @@
+{
+  "schemaVersion": 1,
+  "fileId": 53,
+  "pdf": {
+    "url": "../Scene%20Understanding%20and%20Memory/Retrieval%20and%20Embodied%20Memory/2025%20-%20Affordance%20RAG.pdf",
+    "sha256": "304b5d165e95dbbfd74e5d26cfff6160adfe1cd0bd191967c6e4f53ca54b4bb1"
+  },
+  "zotero": {
+    "libraryType": "user",
+    "libraryId": 1,
+    "parentKey": "3UT9NXAL",
+    "attachmentKey": "6GHHJNDI"
+  },
+  "mapping": {
+    "status": "matched",
+    "basis": "sha256"
+  },
+  "annotations": [
+    {
+      "id": "ZZM2BJCQ",
+      "key": "ZZM2BJCQ",
+      "version": 0,
+      "type": "highlight",
+      "text": "3) Affordance-Aware Reranking:",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "2709",
+      "sortIndex": "00003|003809|00291",
+      "position": {
+        "pageIndex": 3,
+        "rects": [
+          [
+            310.889,
+            491.436,
+            445.833,
+            500.193
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-03T08:59:54Z",
+      "readOnly": false,
+      "parentItem": "6GHHJNDI",
+      "contentHash": "d98c6f016751e1ae79c3b7d802c764e480b9e1b45b4c0db0f617ceac32f871e1",
+      "raw": null
+    },
+    {
+      "id": "P3LTNBFB",
+      "key": "P3LTNBFB",
+      "version": 0,
+      "type": "highlight",
+      "text": "This represents a weighted sum of regional semantics obtained via hierarchical traversal and visual semantics derived from a multimodal foundation model.",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "2709",
+      "sortIndex": "00003|003442|00208",
+      "position": {
+        "pageIndex": 3,
+        "rects": [
+          [
+            300.925,
+            587.08,
+            551.953,
+            595.837
+          ],
+          [
+            300.925,
+            575.128,
+            551.991,
+            583.885
+          ],
+          [
+            300.925,
+            563.176,
+            422.073,
+            571.933
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-03T08:59:01Z",
+      "readOnly": false,
+      "parentItem": "6GHHJNDI",
+      "contentHash": "9706261a8081eaa45658f2ccbb51073d2be5a032b77ec25c7e683443fa977544",
+      "raw": null
+    },
+    {
+      "id": "IBJ25ZV9",
+      "key": "IBJ25ZV9",
+      "version": 0,
+      "type": "highlight",
+      "text": "1) Recursive Top-Down Traversal:",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "2709",
+      "sortIndex": "00003|002102|00551",
+      "position": {
+        "pageIndex": 3,
+        "rects": [
+          [
+            47.871,
+            231.885,
+            191.638,
+            240.642
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-03T08:57:07Z",
+      "readOnly": false,
+      "parentItem": "6GHHJNDI",
+      "contentHash": "65fb5fd04d863d0cc2aa3158d1af0680e44af84902ab1cfdf4ac5f3bad5ab6fe",
+      "raw": null
+    },
+    {
+      "id": "EUYC6SG2",
+      "key": "EUYC6SG2",
+      "version": 0,
+      "type": "highlight",
+      "text": "B. Hierarchical Multimodal Retrieval",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "2709",
+      "sortIndex": "00003|001548|00414",
+      "position": {
+        "pageIndex": 3,
+        "rects": [
+          [
+            37.908,
+            368.49,
+            190.591,
+            377.038
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-03T08:56:58Z",
+      "readOnly": false,
+      "parentItem": "6GHHJNDI",
+      "contentHash": "afb5a43162fdfbb6688a408e582be904dc73639202f9450cc75a864f68cef657",
+      "raw": null
+    },
+    {
+      "id": "N22PAYH2",
+      "key": "N22PAYH2",
+      "version": 0,
+      "type": "highlight",
+      "text": "using a text-aligned image encoder from a multimodal foundation model",
+      "comment": "",
+      "color": "#ff6666",
+      "pageLabel": "2709",
+      "sortIndex": "00003|000174|00076",
+      "position": {
+        "pageIndex": 3,
+        "rects": [
+          [
+            145.289,
+            704.66,
+            288.943,
+            715.99
+          ],
+          [
+            37.909,
+            691.953,
+            182.843,
+            702.662
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-03T08:45:17Z",
+      "readOnly": false,
+      "parentItem": "6GHHJNDI",
+      "contentHash": "dfd71aaf153801f86d8dc97d824d983802abb3d9df50194f58894fd46c8ef1eb",
+      "raw": null
+    },
+    {
+      "id": "KXVKC3ZQ",
+      "key": "KXVKC3ZQ",
+      "version": 0,
+      "type": "highlight",
+      "text": "1) Affordance Proposer (Level 1-2):",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "2708",
+      "sortIndex": "00002|002228|00376",
+      "position": {
+        "pageIndex": 2,
+        "rects": [
+          [
+            315.097,
+            406.266,
+            462.026,
+            415.023
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-03T08:43:46Z",
+      "readOnly": false,
+      "parentItem": "6GHHJNDI",
+      "contentHash": "f2f1e1314e5efa70e74d24044bb59b41f33f6073bd8a1893a06bdc8e154a184f",
+      "raw": null
+    },
+    {
+      "id": "VBFC7X5Q",
+      "key": "VBFC7X5Q",
+      "version": 0,
+      "type": "highlight",
+      "text": "Affordance Proposer, Multi-Level Representation, and Area Summarizer.",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "2708",
+      "sortIndex": "00002|000235|00283",
+      "position": {
+        "pageIndex": 2,
+        "rects": [
+          [
+            219.083,
+            501.563,
+            449.118,
+            508.568
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-03T08:33:06Z",
+      "readOnly": false,
+      "parentItem": "6GHHJNDI",
+      "contentHash": "6563381dc93346ea569501970755a60b106d542f4c7c83c1b05fae66c4d250a3",
+      "raw": null
+    },
+    {
+      "id": "BUQF5JGQ",
+      "key": "BUQF5JGQ",
+      "version": 0,
+      "type": "highlight",
+      "text": "During the action execution phase, the robot is expected to pick up the target object and transport it to the designated receptacle.",
+      "comment": "",
+      "color": "#ff6666",
+      "pageLabel": "2707",
+      "sortIndex": "00001|004137|00637",
+      "position": {
+        "pageIndex": 1,
+        "rects": [
+          [
+            352.695,
+            145.494,
+            551.996,
+            154.251
+          ],
+          [
+            300.924,
+            133.542,
+            551.987,
+            142.299
+          ],
+          [
+            300.924,
+            120.746,
+            388.052,
+            131.225
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-03T08:25:11Z",
+      "readOnly": false,
+      "parentItem": "6GHHJNDI",
+      "contentHash": "5939c725f196859ae8ad4ee6d22168fd95a32a9e2e3535c966c5fec10f699496",
+      "raw": null
+    },
+    {
+      "id": "J7PCQHHH",
+      "key": "J7PCQHHH",
+      "version": 0,
+      "type": "highlight",
+      "text": "During the multimodal retrieval phase, it is expected that the images of the target object and the receptacle are ranked highly in their respective retrieved image lists.",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "2707",
+      "sortIndex": "00001|004012|00613",
+      "position": {
+        "pageIndex": 1,
+        "rects": [
+          [
+            459.722,
+            181.359,
+            551.963,
+            190.116
+          ],
+          [
+            300.924,
+            169.407,
+            551.971,
+            178.164
+          ],
+          [
+            300.924,
+            157.455,
+            551.954,
+            166.212
+          ],
+          [
+            300.924,
+            145.494,
+            348.256,
+            154.251
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-03T08:25:01Z",
+      "readOnly": false,
+      "parentItem": "6GHHJNDI",
+      "contentHash": "5856c1dcb2e42d4dbf9122432fcdbc7ac8ea0d8864605e4ea6de50e2a0b7c7d2",
+      "raw": null
+    },
+    {
+      "id": "C6W82MQV",
+      "key": "C6W82MQV",
+      "version": 0,
+      "type": "highlight",
+      "text": "and those more suitable for execution.",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "2707",
+      "sortIndex": "00001|000489|00349",
+      "position": {
+        "pageIndex": 1,
+        "rects": [
+          [
+            37.908,
+            433.612,
+            193.134,
+            442.369
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-03T07:53:25Z",
+      "readOnly": false,
+      "parentItem": "6GHHJNDI",
+      "contentHash": "e2aee7e00a591a614326593b8eb6b06479231d75033e3fbbfa2b6f0c8eaab94b",
+      "raw": null
+    },
+    {
+      "id": "AMLYMA9L",
+      "key": "AMLYMA9L",
+      "version": 0,
+      "type": "highlight",
+      "text": "their inability to distinguish between semantically relevant candidates",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "2706",
+      "sortIndex": "00000|004929|00695",
+      "position": {
+        "pageIndex": 0,
+        "rects": [
+          [
+            537.926,
+            87.908,
+            556.187,
+            96.665
+          ],
+          [
+            305.138,
+            75.956,
+            556.135,
+            84.713
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-03T07:53:20Z",
+      "readOnly": false,
+      "parentItem": "6GHHJNDI",
+      "contentHash": "d297d53834b368317a7e82bbca927d2deccefa5210ad511ac4939e9698c1e461",
+      "raw": null
+    },
+    {
+      "id": "N3K99JCQ",
+      "key": "N3K99JCQ",
+      "version": 0,
+      "type": "highlight",
+      "text": "To tackle these challenges, we propose Affordance RAG, a zero-shot hierarchical multimodal retrieval framework that constructs Affordance-Aware Embodied Memory from pre-explored images.",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "2706",
+      "sortIndex": "00000|000552|00253",
+      "position": {
+        "pageIndex": 0,
+        "rects": [
+          [
+            74.122,
+            541.038,
+            293.176,
+            548.937
+          ],
+          [
+            42.12,
+            531.075,
+            293.198,
+            538.975
+          ],
+          [
+            42.12,
+            521.113,
+            293.191,
+            529.012
+          ],
+          [
+            42.12,
+            511.15,
+            70.759,
+            519.05
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-03T07:41:25Z",
+      "readOnly": false,
+      "parentItem": "6GHHJNDI",
+      "contentHash": "a97ad6ea40db6cad101953a32e21a7040d2ca3902f202428ecc7e5039eec4a13",
+      "raw": null
+    }
+  ],
+  "notes": [],
+  "exportedAt": "2026-10-29T07:58:15+00:00"
+}

@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "fileId": 42,
+  "pdf": {
+    "url": "../World%20Models%20and%20World%20Action%20Models/World%20Action%20Model%20Methods/2026%20-%20OpenWAM.pdf",
+    "sha256": "09606aafdd27a377b669331c2d11ad87c11dbba31066689c8d48d9fd2f28151b"
+  },
+  "zotero": {
+    "libraryType": "user",
+    "libraryId": 1,
+    "parentKey": "V6VPGX3G",
+    "attachmentKey": "GTQ2M7I2"
+  },
+  "mapping": {
+    "status": "matched",
+    "basis": "sha256"
+  },
+  "annotations": [],
+  "notes": [
+    {
+      "id": "UCWZXATC",
+      "key": "UCWZXATC",
+      "version": 0,
+      "html": "<div data-schema-version=\"9\"><p>Comment: Project Page: https://openwam-official.github.io/; Code: https://github.com/OpenWAM-Official/OpenWAM; Model &amp; Data: https://huggingface.co/OpenWAM</p>\n<p></p>\n<p>OpenWAM - Open research stack that turns world-action pretraining into a controlled experimental program</p>\n</div>",
+      "tags": [],
+      "dateModified": "2026-09-11T09:20:01Z",
+      "parentItem": "V6VPGX3G",
+      "contentHash": "75c9d584a9c98e3cf56167e8e8c060eb2f41871d16db6637124902eb03da3840",
+      "displayHtml": "<div data-schema-version=\"9\"><p>Comment: Project Page: https://openwam-official.github.io/; Code: https://github.com/OpenWAM-Official/OpenWAM; Model &amp; Data: https://huggingface.co/OpenWAM</p>\n<p></p>\n<p>OpenWAM - Open research stack that turns world-action pretraining into a controlled experimental program</p>\n</div>"
+    }
+  ],
+  "exportedAt": "2026-10-29T07:58:15+00:00"
+}

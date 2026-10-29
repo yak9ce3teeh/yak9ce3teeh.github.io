@@ -1,0 +1,334 @@
+{
+  "schemaVersion": 1,
+  "fileId": 13,
+  "pdf": {
+    "url": "../Humanoid%20Robotics/Motion%20Skills%20and%20Tracking/2026%20-%20GEAR%20SONIC.pdf",
+    "sha256": "772a2b296d0c2b640950deafd658001b51058bc4b129ef56ce531504b8adc1e5"
+  },
+  "zotero": {
+    "libraryType": "user",
+    "libraryId": 1,
+    "parentKey": "AY7VRXJB",
+    "attachmentKey": "5DXYV3XX"
+  },
+  "mapping": {
+    "status": "matched",
+    "basis": "sha256"
+  },
+  "annotations": [
+    {
+      "id": "2XAIQDCK",
+      "key": "2XAIQDCK",
+      "version": 0,
+      "type": "highlight",
+      "text": "FSQ avoids codebook collapse",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "19",
+      "sortIndex": "00018|001311|00626",
+      "position": {
+        "pageIndex": 18,
+        "rects": [
+          [
+            252.106,
+            205.884,
+            377.497,
+            215.847
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-06-11T02:22:01Z",
+      "readOnly": false,
+      "parentItem": "5DXYV3XX",
+      "contentHash": "907315f180ab3ec1dce3c99840157bb981f7b0a3440b82aa7947e09eb6233c69",
+      "raw": null
+    },
+    {
+      "id": "GYK53VAS",
+      "key": "GYK53VAS",
+      "version": 0,
+      "type": "highlight",
+      "text": "For entertainment tasks such as boxing, target keyframes are determined by selecting the most expressive segment (e.g., the frames with maximal arm extension for a punch) from motion clips that match the desired style.",
+      "comment": "",
+      "color": "#ff6666",
+      "pageLabel": "18",
+      "sortIndex": "00017|000679|00263",
+      "position": {
+        "pageIndex": 17,
+        "rects": [
+          [
+            62.362,
+            568.897,
+            532.917,
+            578.86
+          ],
+          [
+            62.362,
+            555.148,
+            532.914,
+            565.111
+          ],
+          [
+            62.362,
+            541.4,
+            85.866,
+            551.363
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-06-11T02:12:18Z",
+      "readOnly": false,
+      "parentItem": "5DXYV3XX",
+      "contentHash": "02d3c573517cb0c4d9cc34f2f87c77a7839c2b88d628b65352d6dbecbe1a4acb",
+      "raw": null
+    },
+    {
+      "id": "GGQZPUQ3",
+      "key": "GGQZPUQ3",
+      "version": 0,
+      "type": "highlight",
+      "text": "the pelvis-relative joint positions and global joint rotations",
+      "comment": "",
+      "color": "#ff6666",
+      "pageLabel": "16",
+      "sortIndex": "00015|003018|00604",
+      "position": {
+        "pageIndex": 15,
+        "rects": [
+          [
+            231.484,
+            227.522,
+            493.954,
+            237.485
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-06-11T01:52:17Z",
+      "readOnly": false,
+      "parentItem": "5DXYV3XX",
+      "contentHash": "095738829105e01c88d8da04bf72aabcfaeb93f39d827e3974c813bd9e4d83b2",
+      "raw": null
+    },
+    {
+      "id": "J8RVB5JE",
+      "key": "J8RVB5JE",
+      "version": 0,
+      "type": "highlight",
+      "text": "encoder outputs, ensuring that the same motion produces similar tokens for robot motion",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "16",
+      "sortIndex": "00015|000066|00087",
+      "position": {
+        "pageIndex": 15,
+        "rects": [
+          [
+            62.362,
+            744.397,
+            443.14,
+            754.36
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-06-10T16:19:52Z",
+      "readOnly": false,
+      "parentItem": "5DXYV3XX",
+      "contentHash": "1c015c23bb0fcbc2d695d3f7084443e487f728cff8a7c74d36105e73309ec448",
+      "raw": null
+    },
+    {
+      "id": "TWKF3BCH",
+      "key": "TWKF3BCH",
+      "version": 0,
+      "type": "highlight",
+      "text": "enforces pairwise alignment between all three",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "15",
+      "sortIndex": "00014|003521|00740",
+      "position": {
+        "pageIndex": 14,
+        "rects": [
+          [
+            326.711,
+            90.003,
+            532.915,
+            100.968
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-06-10T16:19:44Z",
+      "readOnly": false,
+      "parentItem": "5DXYV3XX",
+      "contentHash": "72ab870ebe8a031fb399d81a70b08bb6a213ce9c73f19e6a1cc3952e120138ab",
+      "raw": null
+    },
+    {
+      "id": "3BD36T33",
+      "key": "3BD36T33",
+      "version": 0,
+      "type": "highlight",
+      "text": "end-effector position reward that directly optimizes end-effector position errors on key body points (head, both wrists, both ankles)",
+      "comment": "",
+      "color": "#ff6666",
+      "pageLabel": "14",
+      "sortIndex": "00013|002349|00586",
+      "position": {
+        "pageIndex": 13,
+        "rects": [
+          [
+            386.773,
+            243.888,
+            533.083,
+            255.165
+          ],
+          [
+            62.362,
+            231.453,
+            493.072,
+            241.416
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-06-10T16:13:41Z",
+      "readOnly": false,
+      "parentItem": "5DXYV3XX",
+      "contentHash": "cac219b8e9a3ed238d3f9433696127f55e2a5b86de7a784db7b558063ff18f71",
+      "raw": null
+    },
+    {
+      "id": "4W6HDMYQ",
+      "key": "4W6HDMYQ",
+      "version": 0,
+      "type": "highlight",
+      "text": "proprioceptive sensing sp  t and motion command  sg  t .",
+      "comment": "",
+      "color": "#ff6666",
+      "pageLabel": "14",
+      "sortIndex": "00013|001107|00380",
+      "position": {
+        "pageIndex": 13,
+        "rects": [
+          [
+            330.407,
+            451.071,
+            437.2,
+            464.111
+          ],
+          [
+            433.357,
+            450.113,
+            532.913,
+            461.39
+          ],
+          [
+            62.362,
+            438.237,
+            71.302,
+            450.362
+          ],
+          [
+            67.655,
+            436.365,
+            74.625,
+            450.362
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-06-10T16:07:14Z",
+      "readOnly": false,
+      "parentItem": "5DXYV3XX",
+      "contentHash": "d12ee891610b7acd6efee54982f48d9961d895ec34a2b52450c835051fcc5a3d",
+      "raw": null
+    },
+    {
+      "id": "3ZTNWET4",
+      "key": "3ZTNWET4",
+      "version": 0,
+      "type": "highlight",
+      "text": "seamlessly handle robot motion, human motion, and hybrid motion (combining upper-body keypoints with lower-body robot motions) through a shared latent representation",
+      "comment": "",
+      "color": "#ff6666",
+      "pageLabel": "12",
+      "sortIndex": "00011|003084|00733",
+      "position": {
+        "pageIndex": 11,
+        "rects": [
+          [
+            179.091,
+            97.979,
+            532.917,
+            107.942
+          ],
+          [
+            62.362,
+            84.231,
+            462.945,
+            94.194
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-06-10T15:54:23Z",
+      "readOnly": false,
+      "parentItem": "5DXYV3XX",
+      "contentHash": "4bb78aa18630a694e9b5245dd2e1934d9c6170e1116cc265d2ce0ff118a38762",
+      "raw": null
+    },
+    {
+      "id": "FJRZ7B65",
+      "key": "FJRZ7B65",
+      "version": 0,
+      "type": "highlight",
+      "text": "In summary, scaling motion tracking yields reliable, general whole-body control; pairing it with a planner, a universal token space, and an efficient onboard stack makes it usable as a system.",
+      "comment": "",
+      "color": "#ff6666",
+      "pageLabel": "11",
+      "sortIndex": "00010|002492|00526",
+      "position": {
+        "pageIndex": 10,
+        "rects": [
+          [
+            62.362,
+            305.231,
+            532.916,
+            315.194
+          ],
+          [
+            62.362,
+            291.482,
+            404.401,
+            301.445
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-06-10T15:41:48Z",
+      "readOnly": false,
+      "parentItem": "5DXYV3XX",
+      "contentHash": "0143b63a60798e53159e14b56903d7fb131a59ad14f2e7afd349570dd2fede91",
+      "raw": null
+    }
+  ],
+  "notes": [
+    {
+      "id": "78MDUJJJ",
+      "key": "78MDUJJJ",
+      "version": 0,
+      "html": "<div data-citation-items=\"%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FAY7VRXJB%22%5D%2C%22itemData%22%3A%7B%22id%22%3A%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FAY7VRXJB%22%2C%22type%22%3A%22article%22%2C%22abstract%22%3A%22Despite%20the%20rise%20of%20billion-parameter%20foundation%20models%20trained%20across%20thousands%20of%20GPUs%2C%20similar%20scaling%20gains%20have%20not%20been%20shown%20for%20humanoid%20control.%20Current%20neural%20controllers%20for%20humanoids%20remain%20modest%20in%20size%2C%20target%20a%20limited%20set%20of%20behaviors%2C%20and%20are%20trained%20on%20a%20handful%20of%20GPUs.%20We%20show%20that%20scaling%20model%20capacity%2C%20data%2C%20and%20compute%20yields%20a%20generalist%20humanoid%20controller%20capable%20of%20natural%2C%20robust%20whole-body%20movements.%20We%20position%20motion%20tracking%20as%20a%20scalable%20task%20for%20humanoid%20control%2C%20leveraging%20dense%20supervision%20from%20diverse%20motion-capture%20data%20to%20acquire%20human%20motion%20priors%20without%20manual%20reward%20engineering.%20We%20build%20a%20foundation%20model%20for%20motion%20tracking%20by%20scaling%20along%20three%20axes%3A%20network%20size%20(1.2M%20to%2042M%20parameters)%2C%20dataset%20volume%20(100M%2B%20frames%20from%20700%20hours%20of%20motion%20capture)%2C%20and%20compute%20(21k%20GPU%20hours).%20Beyond%20demonstrating%20the%20benefits%20of%20scale%2C%20we%20further%20show%20downstream%20utility%20through%3A%20(1)%20a%20real-time%20kinematic%20planner%20bridging%20motion%20tracking%20to%20tasks%20such%20as%20navigation%2C%20enabling%20natural%20and%20interactive%20control%2C%20and%20(2)%20a%20unified%20token%20space%20supporting%20VR%20teleoperation%20and%20vision-language-action%20(VLA)%20models%20with%20a%20single%20policy.%20Through%20this%20interface%2C%20we%20demonstrate%20autonomous%20VLA-driven%20whole-body%20loco-manipulation%20requiring%20coordinated%20hand%20and%20foot%20placement.%20Scaling%20motion%20tracking%20exhibits%20favorable%20properties%3A%20performance%20improves%20steadily%20with%20compute%20and%20data%20diversity%2C%20and%20learned%20policies%20generalize%20to%20unseen%20motions%2C%20establishing%20motion%20tracking%20at%20scale%20as%20a%20practical%20foundation%20for%20humanoid%20control.%22%2C%22DOI%22%3A%2210.48550%2FarXiv.2511.07820%22%2C%22language%22%3A%22en%22%2C%22note%22%3A%22arXiv%3A2511.07820%20%5Bcs.RO%5D%22%2C%22number%22%3A%22arXiv%3A2511.07820%22%2C%22publisher%22%3A%22arXiv%22%2C%22source%22%3A%22arXiv.org%22%2C%22title%22%3A%22SONIC%3A%20Supersizing%20Motion%20Tracking%20for%20Natural%20Humanoid%20Whole-Body%20Control%22%2C%22title-short%22%3A%22SONIC%22%2C%22URL%22%3A%22http%3A%2F%2Farxiv.org%2Fabs%2F2511.07820%22%2C%22author%22%3A%5B%7B%22family%22%3A%22Luo%22%2C%22given%22%3A%22Zhengyi%22%7D%2C%7B%22family%22%3A%22Yuan%22%2C%22given%22%3A%22Ye%22%7D%2C%7B%22family%22%3A%22Wang%22%2C%22given%22%3A%22Tingwu%22%7D%2C%7B%22family%22%3A%22Li%22%2C%22given%22%3A%22Chenran%22%7D%2C%7B%22family%22%3A%22Casta%C3%B1eda%22%2C%22given%22%3A%22Fernando%22%7D%2C%7B%22family%22%3A%22Chen%22%2C%22given%22%3A%22Sirui%22%7D%2C%7B%22family%22%3A%22Cao%22%2C%22given%22%3A%22Zi-Ang%22%7D%2C%7B%22family%22%3A%22Li%22%2C%22given%22%3A%22Jiefeng%22%7D%2C%7B%22family%22%3A%22Minor%22%2C%22given%22%3A%22David%22%7D%2C%7B%22family%22%3A%22Ben%22%2C%22given%22%3A%22Qingwei%22%7D%2C%7B%22family%22%3A%22Park%22%2C%22given%22%3A%22Jinhyung%22%7D%2C%7B%22family%22%3A%22Sami%22%2C%22given%22%3A%22David%22%7D%2C%7B%22family%22%3A%22Wang%22%2C%22given%22%3A%22Zi%22%7D%2C%7B%22family%22%3A%22Da%22%2C%22given%22%3A%22Xingye%22%7D%2C%7B%22family%22%3A%22Ding%22%2C%22given%22%3A%22Runyu%22%7D%2C%7B%22family%22%3A%22Hogg%22%2C%22given%22%3A%22Cyrus%22%7D%2C%7B%22family%22%3A%22Song%22%2C%22given%22%3A%22Lina%22%7D%2C%7B%22family%22%3A%22Lim%22%2C%22given%22%3A%22Edy%22%7D%2C%7B%22family%22%3A%22Jeong%22%2C%22given%22%3A%22Eugene%22%7D%2C%7B%22family%22%3A%22He%22%2C%22given%22%3A%22Tairan%22%7D%2C%7B%22family%22%3A%22Xue%22%2C%22given%22%3A%22Haoru%22%7D%2C%7B%22family%22%3A%22Xiao%22%2C%22given%22%3A%22Wenli%22%7D%2C%7B%22family%22%3A%22Yuen%22%2C%22given%22%3A%22Simon%22%7D%2C%7B%22family%22%3A%22Kautz%22%2C%22given%22%3A%22Jan%22%7D%2C%7B%22family%22%3A%22Chang%22%2C%22given%22%3A%22Yan%22%7D%2C%7B%22family%22%3A%22Iqbal%22%2C%22given%22%3A%22Umar%22%7D%2C%7B%22family%22%3A%22Fan%22%2C%22given%22%3A%22Linxi%20%5C%22Jim%5C%22%22%7D%2C%7B%22family%22%3A%22Zhu%22%2C%22given%22%3A%22Yuke%22%7D%5D%2C%22accessed%22%3A%7B%22date-parts%22%3A%5B%5B%222026%22%2C6%2C10%5D%5D%7D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222026%22%2C5%2C21%5D%5D%7D%7D%7D%5D\" data-schema-version=\"9\"><p>Comment: Project page: https://nvlabs.github.io/SONIC/ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Scaling model capacity, data and compute </p>\n<p>GEAR-SONIC: Motion Tracking, a real-time kinematic planner bridging motion tracking to tasks, a unified token space supporting VR teleoperation and VLA model with a single policy</p>\n<p>RESULTS:</p>\n<p><img alt=\"\" width=\"957\" height=\"1027\" data-attachment-key=\"KUZP6TWN\"></p>\n<ol>\n<li>\nTracking\n</li>\n</ol>\n<p>Scaling up</p>\n<p>2. Interactive Motion Control</p>\n<p><span class=\"highlight\" data-annotation=\"%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2F5DXYV3XX%22%2C%22pageLabel%22%3A%226%22%2C%22position%22%3A%7B%22pageIndex%22%3A5%2C%22rects%22%3A%5B%5B62.362%2C477.82734999999997%2C532.9105273080003%2C487.78995%5D%2C%5B62.362%2C464.07935%2C534.300523852%2C474.04195%5D%2C%5B62.362%2C450.33135%2C533.0996320479998%2C460.29395%5D%2C%5B62.362%2C436.58234999999996%2C532.9163202080002%2C446.54495%5D%2C%5B62.362%2C422.83435%2C533.1018314912001%2C432.79695%5D%2C%5B62.362%2C409.08635%2C156.25950500000002%2C419.04895%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FAY7VRXJB%22%5D%2C%22locator%22%3A%226%22%7D%7D\">“SONIC supports a variety of applications, including: (1) navigation control with arbitrary velocity, direction, and style commands; (2) interactive entertainment tasks such as boxing; (3) locomotion skills such as squatting, crawling, kneeling, etc., which are useful for downstream applications like teleoperation, because both our kinematic planner and tracking policy are trained on the same large-scale dataset.”</span> <span class=\"citation\" data-citation=\"%7B%22citationItems%22%3A%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FAY7VRXJB%22%5D%2C%22locator%22%3A%226%22%7D%5D%2C%22properties%22%3A%7B%7D%7D\">(<span class=\"citation-item\">Luo 等, 2026, p. 6</span>)</span></p>\n<p><img alt=\"\" width=\"905\" height=\"1118\" data-attachment-key=\"PZC3QNZB\"></p>\n<p>3. Video Teleoperation and Multi-modal Control<br><img alt=\"\" width=\"956\" height=\"931\" data-attachment-key=\"FZMHD4JB\"></p>\n<p>4. VR based Teleoperation</p>\n<p><span class=\"highlight\" data-annotation=\"%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2F5DXYV3XX%22%2C%22pageLabel%22%3A%229%22%2C%22position%22%3A%7B%22pageIndex%22%3A8%2C%22rects%22%3A%5B%5B317.331359972%2C727.39135%2C534.2945115984004%2C737.3539499999999%5D%2C%5B62.362%2C713.6423500000001%2C534.2929522760003%2C723.60495%5D%2C%5B62.362%2C699.5380828%2C532.9083000039997%2C709.85695%5D%2C%5B61.535%2C686.14635%2C534.301117034%2C696.1089499999999%5D%2C%5B62.362%2C672.3973500000001%2C402.0930360639998%2C682.35995%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FAY7VRXJB%22%5D%2C%22locator%22%3A%229%22%7D%7D\">“(1) Whole-body teleoperation uses a PICO headset, ankle trackers, and handheld controllers (Zhao et al., 2025) to stream full-body SMPL (Loper et al., 2015) poses, encoded via the human motion encoder Eh. (2) 3-point teleoperation uses only the headset and controllers (no ankle trackers), outputting three upper-body SE(3) poses (head, both wrists), finger joints, waist height, and a navigation command; the kinematic planner generates the lower body.”</span> <span class=\"citation\" data-citation=\"%7B%22citationItems%22%3A%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FAY7VRXJB%22%5D%2C%22locator%22%3A%229%22%7D%5D%2C%22properties%22%3A%7B%7D%7D\">(<span class=\"citation-item\">Luo 等, 2026, p. 9</span>)</span></p>\n<p>5. Foundation-Model-Driven Loco-Manipulation - Gr00t N1.5</p>\n<p>VLA predicts 78-dimension(64 universal motion token + 14 hand joints)</p>\n<p></p>\n<p>MATERIALS and METHODS - Isaac Lab</p>\n<p>1.Humanoid Motion Dataset</p>\n<p><img alt=\"\" width=\"1056\" height=\"584\" data-attachment-key=\"7AXHPV2V\"></p>\n<p>700 hours of human motion</p>\n<p>public as BONES-SEED dataset in Unitree G1 Formats</p>\n<p></p>\n<p>2. Universal Humanoid Motion Tracking</p>\n<p>Formulation: MDP + PPO(Training)</p>\n<p><img alt=\"\" width=\"1113\" height=\"530\" data-attachment-key=\"FNEQJPYC\"></p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">States - Proprioceptive sensing + Motion command</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">Actions: policy outputs target joint positions as actions (PD controller)</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">Rewards: rt = R(sp t , sg t ) + P(sp t , at)</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">Encoders: Human motion and robot demonstrations into the same latent representation</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">Quantizer: latent representations into universal token z</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">Decoders : Dc + Dr</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">*SONIC 中的 shared latent representation 与 BFM-Zero 的 latent representation 在形式上相似，都是作为 policy 的条件变量，用来调制同一个 humanoid controller 的行为输出。但二者的语义和训练目标不同。BFM-Zero 的 latent 是由 Forward-Backward framework 学到的 task-centric behavior embedding，它可以将 reward、goal 和 motion 映射到共同空间，并通过 <code>r_z(s)=φ(s)^Tz</code> 定义任务奖励；而 SONIC 的 shared latent 更偏 motion-centric，它主要用于统一 robot motion、human motion 与 hybrid motion，使不同来源、不同骨架或不同身体部分的参考运动可以被同一个 whole-body policy 无缝处理。因此，BFM-Zero 关注的是“如何用 latent 表示任务和行为目标”，SONIC 关注的是“如何用 latent 表示和融合不同类型的运动输入。</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\"></p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">Training:</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\"><img alt=\"\" width=\"1279\" height=\"300\" data-attachment-key=\"SD72QUG8\"></p>\n<p>Generative Kinematic Motion Planner - large-scale latent generative model</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">1.Motion Representation</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">2.Generative Neural Backbone in Latent Space</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\"><img alt=\"\" width=\"411\" height=\"84\" data-attachment-key=\"VZARGGZ6\"></p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\"><img alt=\"\" width=\"1249\" height=\"290\" data-attachment-key=\"RWH5YAHG\"></p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">3. Root Trajectory Spring Model</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\"><img alt=\"\" width=\"1309\" height=\"219\" data-attachment-key=\"LWHC9CGU\"></p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">4. Keyframe Module and Application Integration</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\"></p>\n<p>4. Multi-modal Motion Generation - GEM</p>\n<p>Validations:</p>\n<p><img alt=\"\" width=\"1297\" height=\"596\" data-attachment-key=\"TWYZU5VR\"></p>\n<p>Rewards:</p>\n<p><img alt=\"\" width=\"1436\" height=\"609\" data-attachment-key=\"KFJKHHNK\"></p>\n<p>Domain Randomization:</p>\n<p><img alt=\"\" width=\"1246\" height=\"533\" data-attachment-key=\"8ZAHTBMF\"></p>\n</div>",
+      "tags": [],
+      "dateModified": "2026-06-11T02:40:27Z",
+      "parentItem": "AY7VRXJB",
+      "contentHash": "c0746bbf6e4b7b5d7060072f790c76253ec8dd1bd525862fed7e9594c60d3634",
+      "displayHtml": "<div data-citation-items=\"%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FAY7VRXJB%22%5D%2C%22itemData%22%3A%7B%22id%22%3A%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FAY7VRXJB%22%2C%22type%22%3A%22article%22%2C%22abstract%22%3A%22Despite%20the%20rise%20of%20billion-parameter%20foundation%20models%20trained%20across%20thousands%20of%20GPUs%2C%20similar%20scaling%20gains%20have%20not%20been%20shown%20for%20humanoid%20control.%20Current%20neural%20controllers%20for%20humanoids%20remain%20modest%20in%20size%2C%20target%20a%20limited%20set%20of%20behaviors%2C%20and%20are%20trained%20on%20a%20handful%20of%20GPUs.%20We%20show%20that%20scaling%20model%20capacity%2C%20data%2C%20and%20compute%20yields%20a%20generalist%20humanoid%20controller%20capable%20of%20natural%2C%20robust%20whole-body%20movements.%20We%20position%20motion%20tracking%20as%20a%20scalable%20task%20for%20humanoid%20control%2C%20leveraging%20dense%20supervision%20from%20diverse%20motion-capture%20data%20to%20acquire%20human%20motion%20priors%20without%20manual%20reward%20engineering.%20We%20build%20a%20foundation%20model%20for%20motion%20tracking%20by%20scaling%20along%20three%20axes%3A%20network%20size%20(1.2M%20to%2042M%20parameters)%2C%20dataset%20volume%20(100M%2B%20frames%20from%20700%20hours%20of%20motion%20capture)%2C%20and%20compute%20(21k%20GPU%20hours).%20Beyond%20demonstrating%20the%20benefits%20of%20scale%2C%20we%20further%20show%20downstream%20utility%20through%3A%20(1)%20a%20real-time%20kinematic%20planner%20bridging%20motion%20tracking%20to%20tasks%20such%20as%20navigation%2C%20enabling%20natural%20and%20interactive%20control%2C%20and%20(2)%20a%20unified%20token%20space%20supporting%20VR%20teleoperation%20and%20vision-language-action%20(VLA)%20models%20with%20a%20single%20policy.%20Through%20this%20interface%2C%20we%20demonstrate%20autonomous%20VLA-driven%20whole-body%20loco-manipulation%20requiring%20coordinated%20hand%20and%20foot%20placement.%20Scaling%20motion%20tracking%20exhibits%20favorable%20properties%3A%20performance%20improves%20steadily%20with%20compute%20and%20data%20diversity%2C%20and%20learned%20policies%20generalize%20to%20unseen%20motions%2C%20establishing%20motion%20tracking%20at%20scale%20as%20a%20practical%20foundation%20for%20humanoid%20control.%22%2C%22DOI%22%3A%2210.48550%2FarXiv.2511.07820%22%2C%22language%22%3A%22en%22%2C%22note%22%3A%22arXiv%3A2511.07820%20%5Bcs.RO%5D%22%2C%22number%22%3A%22arXiv%3A2511.07820%22%2C%22publisher%22%3A%22arXiv%22%2C%22source%22%3A%22arXiv.org%22%2C%22title%22%3A%22SONIC%3A%20Supersizing%20Motion%20Tracking%20for%20Natural%20Humanoid%20Whole-Body%20Control%22%2C%22title-short%22%3A%22SONIC%22%2C%22URL%22%3A%22http%3A%2F%2Farxiv.org%2Fabs%2F2511.07820%22%2C%22author%22%3A%5B%7B%22family%22%3A%22Luo%22%2C%22given%22%3A%22Zhengyi%22%7D%2C%7B%22family%22%3A%22Yuan%22%2C%22given%22%3A%22Ye%22%7D%2C%7B%22family%22%3A%22Wang%22%2C%22given%22%3A%22Tingwu%22%7D%2C%7B%22family%22%3A%22Li%22%2C%22given%22%3A%22Chenran%22%7D%2C%7B%22family%22%3A%22Casta%C3%B1eda%22%2C%22given%22%3A%22Fernando%22%7D%2C%7B%22family%22%3A%22Chen%22%2C%22given%22%3A%22Sirui%22%7D%2C%7B%22family%22%3A%22Cao%22%2C%22given%22%3A%22Zi-Ang%22%7D%2C%7B%22family%22%3A%22Li%22%2C%22given%22%3A%22Jiefeng%22%7D%2C%7B%22family%22%3A%22Minor%22%2C%22given%22%3A%22David%22%7D%2C%7B%22family%22%3A%22Ben%22%2C%22given%22%3A%22Qingwei%22%7D%2C%7B%22family%22%3A%22Park%22%2C%22given%22%3A%22Jinhyung%22%7D%2C%7B%22family%22%3A%22Sami%22%2C%22given%22%3A%22David%22%7D%2C%7B%22family%22%3A%22Wang%22%2C%22given%22%3A%22Zi%22%7D%2C%7B%22family%22%3A%22Da%22%2C%22given%22%3A%22Xingye%22%7D%2C%7B%22family%22%3A%22Ding%22%2C%22given%22%3A%22Runyu%22%7D%2C%7B%22family%22%3A%22Hogg%22%2C%22given%22%3A%22Cyrus%22%7D%2C%7B%22family%22%3A%22Song%22%2C%22given%22%3A%22Lina%22%7D%2C%7B%22family%22%3A%22Lim%22%2C%22given%22%3A%22Edy%22%7D%2C%7B%22family%22%3A%22Jeong%22%2C%22given%22%3A%22Eugene%22%7D%2C%7B%22family%22%3A%22He%22%2C%22given%22%3A%22Tairan%22%7D%2C%7B%22family%22%3A%22Xue%22%2C%22given%22%3A%22Haoru%22%7D%2C%7B%22family%22%3A%22Xiao%22%2C%22given%22%3A%22Wenli%22%7D%2C%7B%22family%22%3A%22Yuen%22%2C%22given%22%3A%22Simon%22%7D%2C%7B%22family%22%3A%22Kautz%22%2C%22given%22%3A%22Jan%22%7D%2C%7B%22family%22%3A%22Chang%22%2C%22given%22%3A%22Yan%22%7D%2C%7B%22family%22%3A%22Iqbal%22%2C%22given%22%3A%22Umar%22%7D%2C%7B%22family%22%3A%22Fan%22%2C%22given%22%3A%22Linxi%20%5C%22Jim%5C%22%22%7D%2C%7B%22family%22%3A%22Zhu%22%2C%22given%22%3A%22Yuke%22%7D%5D%2C%22accessed%22%3A%7B%22date-parts%22%3A%5B%5B%222026%22%2C6%2C10%5D%5D%7D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222026%22%2C5%2C21%5D%5D%7D%7D%7D%5D\" data-schema-version=\"9\"><p>Comment: Project page: https://nvlabs.github.io/SONIC/ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Scaling model capacity, data and compute </p>\n<p>GEAR-SONIC: Motion Tracking, a real-time kinematic planner bridging motion tracking to tasks, a unified token space supporting VR teleoperation and VLA model with a single policy</p>\n<p>RESULTS:</p>\n<p><img alt=\"\" width=\"957\" height=\"1027\" data-attachment-key=\"KUZP6TWN\" src=\"assets/note-images/KUZP6TWN/image.png\"></p>\n<ol>\n<li>\nTracking\n</li>\n</ol>\n<p>Scaling up</p>\n<p>2. Interactive Motion Control</p>\n<p><span class=\"highlight\" data-annotation=\"%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2F5DXYV3XX%22%2C%22pageLabel%22%3A%226%22%2C%22position%22%3A%7B%22pageIndex%22%3A5%2C%22rects%22%3A%5B%5B62.362%2C477.82734999999997%2C532.9105273080003%2C487.78995%5D%2C%5B62.362%2C464.07935%2C534.300523852%2C474.04195%5D%2C%5B62.362%2C450.33135%2C533.0996320479998%2C460.29395%5D%2C%5B62.362%2C436.58234999999996%2C532.9163202080002%2C446.54495%5D%2C%5B62.362%2C422.83435%2C533.1018314912001%2C432.79695%5D%2C%5B62.362%2C409.08635%2C156.25950500000002%2C419.04895%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FAY7VRXJB%22%5D%2C%22locator%22%3A%226%22%7D%7D\">“SONIC supports a variety of applications, including: (1) navigation control with arbitrary velocity, direction, and style commands; (2) interactive entertainment tasks such as boxing; (3) locomotion skills such as squatting, crawling, kneeling, etc., which are useful for downstream applications like teleoperation, because both our kinematic planner and tracking policy are trained on the same large-scale dataset.”</span> <span class=\"citation\" data-citation=\"%7B%22citationItems%22%3A%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FAY7VRXJB%22%5D%2C%22locator%22%3A%226%22%7D%5D%2C%22properties%22%3A%7B%7D%7D\">(<span class=\"citation-item\">Luo 等, 2026, p. 6</span>)</span></p>\n<p><img alt=\"\" width=\"905\" height=\"1118\" data-attachment-key=\"PZC3QNZB\" src=\"assets/note-images/PZC3QNZB/image.png\"></p>\n<p>3. Video Teleoperation and Multi-modal Control<br><img alt=\"\" width=\"956\" height=\"931\" data-attachment-key=\"FZMHD4JB\" src=\"assets/note-images/FZMHD4JB/image.png\"></p>\n<p>4. VR based Teleoperation</p>\n<p><span class=\"highlight\" data-annotation=\"%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2F5DXYV3XX%22%2C%22pageLabel%22%3A%229%22%2C%22position%22%3A%7B%22pageIndex%22%3A8%2C%22rects%22%3A%5B%5B317.331359972%2C727.39135%2C534.2945115984004%2C737.3539499999999%5D%2C%5B62.362%2C713.6423500000001%2C534.2929522760003%2C723.60495%5D%2C%5B62.362%2C699.5380828%2C532.9083000039997%2C709.85695%5D%2C%5B61.535%2C686.14635%2C534.301117034%2C696.1089499999999%5D%2C%5B62.362%2C672.3973500000001%2C402.0930360639998%2C682.35995%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FAY7VRXJB%22%5D%2C%22locator%22%3A%229%22%7D%7D\">“(1) Whole-body teleoperation uses a PICO headset, ankle trackers, and handheld controllers (Zhao et al., 2025) to stream full-body SMPL (Loper et al., 2015) poses, encoded via the human motion encoder Eh. (2) 3-point teleoperation uses only the headset and controllers (no ankle trackers), outputting three upper-body SE(3) poses (head, both wrists), finger joints, waist height, and a navigation command; the kinematic planner generates the lower body.”</span> <span class=\"citation\" data-citation=\"%7B%22citationItems%22%3A%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FAY7VRXJB%22%5D%2C%22locator%22%3A%229%22%7D%5D%2C%22properties%22%3A%7B%7D%7D\">(<span class=\"citation-item\">Luo 等, 2026, p. 9</span>)</span></p>\n<p>5. Foundation-Model-Driven Loco-Manipulation - Gr00t N1.5</p>\n<p>VLA predicts 78-dimension(64 universal motion token + 14 hand joints)</p>\n<p></p>\n<p>MATERIALS and METHODS - Isaac Lab</p>\n<p>1.Humanoid Motion Dataset</p>\n<p><img alt=\"\" width=\"1056\" height=\"584\" data-attachment-key=\"7AXHPV2V\" src=\"assets/note-images/7AXHPV2V/image.png\"></p>\n<p>700 hours of human motion</p>\n<p>public as BONES-SEED dataset in Unitree G1 Formats</p>\n<p></p>\n<p>2. Universal Humanoid Motion Tracking</p>\n<p>Formulation: MDP + PPO(Training)</p>\n<p><img alt=\"\" width=\"1113\" height=\"530\" data-attachment-key=\"FNEQJPYC\" src=\"assets/note-images/FNEQJPYC/image.png\"></p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">States - Proprioceptive sensing + Motion command</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">Actions: policy outputs target joint positions as actions (PD controller)</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">Rewards: rt = R(sp t , sg t ) + P(sp t , at)</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">Encoders: Human motion and robot demonstrations into the same latent representation</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">Quantizer: latent representations into universal token z</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">Decoders : Dc + Dr</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">*SONIC 中的 shared latent representation 与 BFM-Zero 的 latent representation 在形式上相似，都是作为 policy 的条件变量，用来调制同一个 humanoid controller 的行为输出。但二者的语义和训练目标不同。BFM-Zero 的 latent 是由 Forward-Backward framework 学到的 task-centric behavior embedding，它可以将 reward、goal 和 motion 映射到共同空间，并通过 <code>r_z(s)=φ(s)^Tz</code> 定义任务奖励；而 SONIC 的 shared latent 更偏 motion-centric，它主要用于统一 robot motion、human motion 与 hybrid motion，使不同来源、不同骨架或不同身体部分的参考运动可以被同一个 whole-body policy 无缝处理。因此，BFM-Zero 关注的是“如何用 latent 表示任务和行为目标”，SONIC 关注的是“如何用 latent 表示和融合不同类型的运动输入。</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\"></p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">Training:</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\"><img alt=\"\" width=\"1279\" height=\"300\" data-attachment-key=\"SD72QUG8\" src=\"assets/note-images/SD72QUG8/image.png\"></p>\n<p>Generative Kinematic Motion Planner - large-scale latent generative model</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">1.Motion Representation</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">2.Generative Neural Backbone in Latent Space</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\"><img alt=\"\" width=\"411\" height=\"84\" data-attachment-key=\"VZARGGZ6\" src=\"assets/note-images/VZARGGZ6/image.png\"></p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\"><img alt=\"\" width=\"1249\" height=\"290\" data-attachment-key=\"RWH5YAHG\" src=\"assets/note-images/RWH5YAHG/image.png\"></p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">3. Root Trajectory Spring Model</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\"><img alt=\"\" width=\"1309\" height=\"219\" data-attachment-key=\"LWHC9CGU\" src=\"assets/note-images/LWHC9CGU/image.png\"></p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">4. Keyframe Module and Application Integration</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\"></p>\n<p>4. Multi-modal Motion Generation - GEM</p>\n<p>Validations:</p>\n<p><img alt=\"\" width=\"1297\" height=\"596\" data-attachment-key=\"TWYZU5VR\" src=\"assets/note-images/TWYZU5VR/image.png\"></p>\n<p>Rewards:</p>\n<p><img alt=\"\" width=\"1436\" height=\"609\" data-attachment-key=\"KFJKHHNK\" src=\"assets/note-images/KFJKHHNK/image.png\"></p>\n<p>Domain Randomization:</p>\n<p><img alt=\"\" width=\"1246\" height=\"533\" data-attachment-key=\"8ZAHTBMF\" src=\"assets/note-images/8ZAHTBMF/image.png\"></p>\n</div>"
+    }
+  ],
+  "exportedAt": "2026-10-29T07:58:15+00:00"
+}

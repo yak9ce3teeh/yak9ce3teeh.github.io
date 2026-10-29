@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "fileId": 4,
+  "pdf": {
+    "url": "../Humanoid%20Robotics/Motion%20Skills%20and%20Tracking/2025%20-%20AACF.pdf",
+    "sha256": "743c519d6db4fa9ccf9490bea929d3db481dc94b83698d4538163326089c7d1b"
+  },
+  "zotero": {
+    "libraryType": "user",
+    "libraryId": 1,
+    "parentKey": "XZQ4885R",
+    "attachmentKey": "PE7HV5CT"
+  },
+  "mapping": {
+    "status": "matched",
+    "basis": "sha256"
+  },
+  "annotations": [],
+  "notes": [
+    {
+      "id": "PXIDTEXD",
+      "key": "PXIDTEXD",
+      "version": 0,
+      "html": "<div data-schema-version=\"9\"><h2>A2CF - dual agent system, state-dependent forces, reduce assistance as proficiency improves</h2>\n<p>Problem Statement</p>\n<p>-POMDP</p>\n<p><img alt=\"\" width=\"475\" height=\"199\" data-attachment-key=\"8XIAARB5\"></p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">Action Space<img alt=\"\" width=\"478\" height=\"191\" data-attachment-key=\"Q7JQ25PC\"></p>\n<p>-A2CF</p>\n<p>1) Expanded Action Space<img alt=\"\" width=\"147\" height=\"30\" data-attachment-key=\"9IW2ABZV\"></p>\n<p>2) Assistive Force Curriculum</p>\n<p><img alt=\"\" width=\"436\" height=\"41\" data-attachment-key=\"FBPLS2RQ\"></p>\n<p><img alt=\"\" width=\"448\" height=\"328\" data-attachment-key=\"6EUGYIKY\"></p>\n<p>3) Initial Distribution of Spatial Force - walking skills (xy based)</p>\n<p>4) Assistive Force Agent with Privileged Information - Terrain, force bound, robot linear velocity, domain randomization parameters</p>\n<p>5) Random Mask of Spatial Force - reduce overly dependence</p>\n<p></p>\n<p>Training Architecture - AAC</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">-Motion policy agent: take observation, historical information</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">-Critic : full state, privileged information + VAE</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">shared latent representation zt</p>\n<p>Task-specific training framework</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">1) Walking<img alt=\"\" width=\"450\" height=\"320\" data-attachment-key=\"AIYA6SIL\">2) Backflip - phase-based training approach</p>\n<p><img alt=\"\" width=\"468\" height=\"395\" data-attachment-key=\"KW7T85RS\"></p>\n<p>3) Dancing</p>\n<p><img alt=\"\" width=\"467\" height=\"275\" data-attachment-key=\"C3XXX8LB\"></p>\n</div>",
+      "tags": [],
+      "dateModified": "2026-06-07T03:29:08Z",
+      "parentItem": "XZQ4885R",
+      "contentHash": "da487f747fcbc41e957f0e5563af9264976dd4835226207ae7ba31fcd5a4deb2",
+      "displayHtml": "<div data-schema-version=\"9\"><h2>A2CF - dual agent system, state-dependent forces, reduce assistance as proficiency improves</h2>\n<p>Problem Statement</p>\n<p>-POMDP</p>\n<p><img alt=\"\" width=\"475\" height=\"199\" data-attachment-key=\"8XIAARB5\" src=\"assets/note-images/8XIAARB5/image.png\"></p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">Action Space<img alt=\"\" width=\"478\" height=\"191\" data-attachment-key=\"Q7JQ25PC\" src=\"assets/note-images/Q7JQ25PC/image.png\"></p>\n<p>-A2CF</p>\n<p>1) Expanded Action Space<img alt=\"\" width=\"147\" height=\"30\" data-attachment-key=\"9IW2ABZV\" src=\"assets/note-images/9IW2ABZV/image.png\"></p>\n<p>2) Assistive Force Curriculum</p>\n<p><img alt=\"\" width=\"436\" height=\"41\" data-attachment-key=\"FBPLS2RQ\" src=\"assets/note-images/FBPLS2RQ/image.png\"></p>\n<p><img alt=\"\" width=\"448\" height=\"328\" data-attachment-key=\"6EUGYIKY\" src=\"assets/note-images/6EUGYIKY/image.png\"></p>\n<p>3) Initial Distribution of Spatial Force - walking skills (xy based)</p>\n<p>4) Assistive Force Agent with Privileged Information - Terrain, force bound, robot linear velocity, domain randomization parameters</p>\n<p>5) Random Mask of Spatial Force - reduce overly dependence</p>\n<p></p>\n<p>Training Architecture - AAC</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">-Motion policy agent: take observation, historical information</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">-Critic : full state, privileged information + VAE</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">shared latent representation zt</p>\n<p>Task-specific training framework</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">1) Walking<img alt=\"\" width=\"450\" height=\"320\" data-attachment-key=\"AIYA6SIL\" src=\"assets/note-images/AIYA6SIL/image.png\">2) Backflip - phase-based training approach</p>\n<p><img alt=\"\" width=\"468\" height=\"395\" data-attachment-key=\"KW7T85RS\" src=\"assets/note-images/KW7T85RS/image.png\"></p>\n<p>3) Dancing</p>\n<p><img alt=\"\" width=\"467\" height=\"275\" data-attachment-key=\"C3XXX8LB\" src=\"assets/note-images/C3XXX8LB/image.png\"></p>\n</div>"
+    }
+  ],
+  "exportedAt": "2026-10-29T07:58:15+00:00"
+}

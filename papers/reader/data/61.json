@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "fileId": 61,
+  "pdf": {
+    "url": "../Scene%20Understanding%20and%20Memory/Spatial%20Reasoning/2025%20-%20Multimodal%20Spatial%20Reasoning%20in%20the%20Large%20Model%20Era.pdf",
+    "sha256": "59101f29b2eb73d8dfb0e59b48a2919fb8f1d1edeccf4426cd661cc55552389e"
+  },
+  "zotero": {
+    "libraryType": "user",
+    "libraryId": 1,
+    "parentKey": "DIX84SAA",
+    "attachmentKey": "XELL7ECU"
+  },
+  "mapping": {
+    "status": "matched",
+    "basis": "sha256"
+  },
+  "annotations": [],
+  "notes": [],
+  "exportedAt": "2026-10-29T02:49:37Z"
+}

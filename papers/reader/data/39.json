@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "fileId": 39,
+  "pdf": {
+    "url": "../Embodied%20Navigation/Language-Vision%20Navigation%20and%20Reasoning/2026%20-%20Unilavira.pdf",
+    "sha256": "82f37ca7af87c0bef35888804544de2680231272fbb4d7dd7dc0a78487d2f42c"
+  },
+  "zotero": {
+    "libraryType": "user",
+    "libraryId": 1,
+    "parentKey": "DB8QTQ26",
+    "attachmentKey": "PLXPKMFS"
+  },
+  "mapping": {
+    "status": "matched",
+    "basis": "sha256"
+  },
+  "annotations": [
+    {
+      "id": "ZKKLHMET",
+      "key": "ZKKLHMET",
+      "version": 0,
+      "type": "highlight",
+      "text": "a structured history Ht of previously visited waypoints",
+      "comment": "",
+      "color": "#ff6666",
+      "pageLabel": "5",
+      "sortIndex": "00004|001644|00680",
+      "position": {
+        "pageIndex": 4,
+        "rects": [
+          [
+            68.986,
+            101.85,
+            297.534,
+            111.502
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-08-07T11:43:24Z",
+      "readOnly": false,
+      "parentItem": "PLXPKMFS",
+      "contentHash": "2ba6852de1664146eefc4a6b9bf4644fde1d8923f22bf943dc09ef35e36ea604",
+      "raw": null
+    },
+    {
+      "id": "K5NUDUUT",
+      "key": "K5NUDUUT",
+      "version": 0,
+      "type": "highlight",
+      "text": "the current pose (xt, yt, zt, θt)",
+      "comment": "",
+      "color": "#ff6666",
+      "pageLabel": "5",
+      "sortIndex": "00004|001577|00656",
+      "position": {
+        "pageIndex": 4,
+        "rects": [
+          [
+            68.986,
+            125.761,
+            196.113,
+            135.412
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-08-07T11:43:14Z",
+      "readOnly": false,
+      "parentItem": "PLXPKMFS",
+      "contentHash": "6880079759b3855559aae009a21ea964efdca7c14d3764c309bb00ea6ea60992",
+      "raw": null
+    },
+    {
+      "id": "ALGNX96I",
+      "key": "ALGNX96I",
+      "version": 0,
+      "type": "highlight",
+      "text": "an egocentric observation Ot consisting of RGB and  aligned depth.",
+      "comment": "",
+      "color": "#ff6666",
+      "pageLabel": "5",
+      "sortIndex": "00004|001291|00572",
+      "position": {
+        "pageIndex": 4,
+        "rects": [
+          [
+            68.986,
+            209.447,
+            300.021,
+            219.098
+          ],
+          [
+            68.986,
+            198.187,
+            127.646,
+            206.825
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-08-07T11:43:04Z",
+      "readOnly": false,
+      "parentItem": "PLXPKMFS",
+      "contentHash": "6a642a8192bea31accbacee4326fcd7ec0b5344d47491fdbed216cf41bdbb068",
+      "raw": null
+    },
+    {
+      "id": "EIT9TTWU",
+      "key": "EIT9TTWU",
+      "version": 0,
+      "type": "highlight",
+      "text": "a task specification T",
+      "comment": "",
+      "color": "#ff6666",
+      "pageLabel": "5",
+      "sortIndex": "00004|001113|00525",
+      "position": {
+        "pageIndex": 4,
+        "rects": [
+          [
+            68.986,
+            257.963,
+            153.316,
+            266.919
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-08-07T11:42:56Z",
+      "readOnly": false,
+      "parentItem": "PLXPKMFS",
+      "contentHash": "ad4d69f0eab30c5e484a8ebf2348ef9958d147b2c0da9d868073710c74913950",
+      "raw": null
+    }
+  ],
+  "notes": [
+    {
+      "id": "SGHCQXBJ",
+      "key": "SGHCQXBJ",
+      "version": 0,
+      "html": "<div data-schema-version=\"9\"><p>Comment: Project page: https://xetroubadour.github.io/Uni-LaViRA/</p>\n<p>SCB - Second Chance Backtrack</p>\n<p>TDM - TODO Memory List</p>\n<p><img alt=\"\" width=\"1130\" height=\"947\" data-attachment-key=\"84KK2U8S\"></p>\n<p></p>\n<p></p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">Uni-LaViRA Architecture</p>\n<p style=\"padding-left: 80px;\" data-indent=\"2\">1) Language Action</p>\n<p style=\"padding-left: 80px;\" data-indent=\"2\">2) Vision Action</p>\n<p style=\"padding-left: 80px;\" data-indent=\"2\">3) Robot Action</p>\n<p style=\"padding-left: 80px;\" data-indent=\"2\"></p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">TODO List Memory</p>\n<p style=\"padding-left: 80px;\" data-indent=\"2\">sliding window of recent observations</p>\n<p style=\"padding-left: 120px;\" data-indent=\"3\">1.Representations:<img alt=\"\" width=\"577\" height=\"138\" data-attachment-key=\"5LVJP669\"></p>\n<p style=\"padding-left: 120px;\" data-indent=\"3\">2.Initializaion:</p>\n<p style=\"padding-left: 120px;\" data-indent=\"3\"><img alt=\"\" width=\"556\" height=\"79\" data-attachment-key=\"PJUKEPVL\"></p>\n<p style=\"padding-left: 120px;\" data-indent=\"3\">3.Update:</p>\n<p style=\"padding-left: 160px;\" data-indent=\"4\"><img alt=\"\" width=\"448\" height=\"117\" data-attachment-key=\"WN7DCVW8\">Update, Rewrite, Add</p>\n<p style=\"padding-left: 80px;\" data-indent=\"2\">PROMPT ONLY</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">SCB</p>\n<p style=\"padding-left: 80px;\" data-indent=\"2\">a. backtrack as an explicit action</p>\n<p style=\"padding-left: 80px;\" data-indent=\"2\">b. the second-chance re-decision</p>\n<p></p>\n</div>",
+      "tags": [],
+      "dateModified": "2026-08-07T11:56:05Z",
+      "parentItem": "DB8QTQ26",
+      "contentHash": "f83df0f0e74cf7cd1d0229e119391c523fd55f526ac9a4054a8fcfdc9a03422a",
+      "displayHtml": "<div data-schema-version=\"9\"><p>Comment: Project page: https://xetroubadour.github.io/Uni-LaViRA/</p>\n<p>SCB - Second Chance Backtrack</p>\n<p>TDM - TODO Memory List</p>\n<p><img alt=\"\" width=\"1130\" height=\"947\" data-attachment-key=\"84KK2U8S\" src=\"assets/note-images/84KK2U8S/image.png\"></p>\n<p></p>\n<p></p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">Uni-LaViRA Architecture</p>\n<p style=\"padding-left: 80px;\" data-indent=\"2\">1) Language Action</p>\n<p style=\"padding-left: 80px;\" data-indent=\"2\">2) Vision Action</p>\n<p style=\"padding-left: 80px;\" data-indent=\"2\">3) Robot Action</p>\n<p style=\"padding-left: 80px;\" data-indent=\"2\"></p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">TODO List Memory</p>\n<p style=\"padding-left: 80px;\" data-indent=\"2\">sliding window of recent observations</p>\n<p style=\"padding-left: 120px;\" data-indent=\"3\">1.Representations:<img alt=\"\" width=\"577\" height=\"138\" data-attachment-key=\"5LVJP669\" src=\"assets/note-images/5LVJP669/image.png\"></p>\n<p style=\"padding-left: 120px;\" data-indent=\"3\">2.Initializaion:</p>\n<p style=\"padding-left: 120px;\" data-indent=\"3\"><img alt=\"\" width=\"556\" height=\"79\" data-attachment-key=\"PJUKEPVL\" src=\"assets/note-images/PJUKEPVL/image.png\"></p>\n<p style=\"padding-left: 120px;\" data-indent=\"3\">3.Update:</p>\n<p style=\"padding-left: 160px;\" data-indent=\"4\"><img alt=\"\" width=\"448\" height=\"117\" data-attachment-key=\"WN7DCVW8\" src=\"assets/note-images/WN7DCVW8/image.png\">Update, Rewrite, Add</p>\n<p style=\"padding-left: 80px;\" data-indent=\"2\">PROMPT ONLY</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">SCB</p>\n<p style=\"padding-left: 80px;\" data-indent=\"2\">a. backtrack as an explicit action</p>\n<p style=\"padding-left: 80px;\" data-indent=\"2\">b. the second-chance re-decision</p>\n<p></p>\n</div>"
+    }
+  ],
+  "exportedAt": "2026-10-29T07:58:15+00:00"
+}

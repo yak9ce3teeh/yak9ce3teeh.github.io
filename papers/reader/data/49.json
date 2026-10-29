@@ -1,0 +1,900 @@
+{
+  "schemaVersion": 1,
+  "fileId": 49,
+  "pdf": {
+    "url": "../Embodied%20Navigation/Language-Vision%20Navigation%20and%20Reasoning/2025%20-%20Nav%20A%5E3.pdf",
+    "sha256": "1d223d294c30f6b90cd84ebdd4c5bd3c8521cd28b150b8293eff98a817e6d73b"
+  },
+  "zotero": {
+    "libraryType": "user",
+    "libraryId": 1,
+    "parentKey": "KRC895R6",
+    "attachmentKey": "UUSUAE7H"
+  },
+  "mapping": {
+    "status": "matched",
+    "basis": "sha256"
+  },
+  "annotations": [
+    {
+      "id": "GXSRKJNB",
+      "key": "GXSRKJNB",
+      "version": 0,
+      "type": "highlight",
+      "text": "GPT-4o (Hurst et al. 2024)-based Reasoning-VLM achieves the highest success rate (SR) of 68.0%",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "7",
+      "sortIndex": "00006|002434|00640",
+      "position": {
+        "pageIndex": 6,
+        "rects": [
+          [
+            232.58,
+            142.642,
+            292.505,
+            151.28
+          ],
+          [
+            54.0,
+            131.684,
+            292.505,
+            140.322
+          ],
+          [
+            54.0,
+            120.725,
+            148.117,
+            129.363
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-15T03:15:46Z",
+      "readOnly": false,
+      "parentItem": "UUSUAE7H",
+      "contentHash": "9ad430ccd7e4d0fede66f70f4e093450923f37f1047246823b27eb2829ea61c1",
+      "raw": null
+    },
+    {
+      "id": "GN7T3AYH",
+      "key": "GN7T3AYH",
+      "version": 0,
+      "type": "highlight",
+      "text": "GPT-4o",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "6",
+      "sortIndex": "00005|001913|00440",
+      "position": {
+        "pageIndex": 5,
+        "rects": [
+          [
+            54.0,
+            342.554,
+            85.183,
+            351.192
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-15T03:12:21Z",
+      "readOnly": false,
+      "parentItem": "UUSUAE7H",
+      "contentHash": "e57b458d098a94b67d919d1856f3b58b7dcf95e6dbbddf156ab656f5c570ff6b",
+      "raw": null
+    },
+    {
+      "id": "9W7JAW27",
+      "key": "9W7JAW27",
+      "version": 0,
+      "type": "highlight",
+      "text": "SR across 10 tasks, each tested 5 times (50 trials in total), and report the average SR (Avg. SR)",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "6",
+      "sortIndex": "00005|001640|00372",
+      "position": {
+        "pageIndex": 5,
+        "rects": [
+          [
+            75.051,
+            410.959,
+            292.505,
+            419.597
+          ],
+          [
+            54.0,
+            400.0,
+            234.124,
+            408.638
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-15T03:09:45Z",
+      "readOnly": false,
+      "parentItem": "UUSUAE7H",
+      "contentHash": "70b5ed5fb50d30b4a68276be9a8b4420c89d9c5d4309e881dd7147faa3d65c23",
+      "raw": null
+    },
+    {
+      "id": "C2SRF86X",
+      "key": "C2SRF86X",
+      "version": 0,
+      "type": "highlight",
+      "text": "Navigation Error (NE) and Success Rate (SR)",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "6",
+      "sortIndex": "00005|001358|00306",
+      "position": {
+        "pageIndex": 5,
+        "rects": [
+          [
+            152.48,
+            476.713,
+            292.505,
+            485.351
+          ],
+          [
+            54.0,
+            465.754,
+            93.95,
+            474.392
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-15T03:03:22Z",
+      "readOnly": false,
+      "parentItem": "UUSUAE7H",
+      "contentHash": "891d1b5d7c5bbf0e54e9632acc04cfa83c3664aa656db3c4361df8b5c9148603",
+      "raw": null
+    },
+    {
+      "id": "IYSJ4QIJ",
+      "key": "IYSJ4QIJ",
+      "version": 0,
+      "type": "highlight",
+      "text": "coordinates to robot coordinates",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "5",
+      "sortIndex": "00004|002353|00273",
+      "position": {
+        "pageIndex": 4,
+        "rects": [
+          [
+            396.77,
+            509.853,
+            525.328,
+            518.491
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-15T03:02:51Z",
+      "readOnly": false,
+      "parentItem": "UUSUAE7H",
+      "contentHash": "0a2a79f8abf2718195714e1ed49dbac01a76331f3219a119d640feb77e3abd2f",
+      "raw": null
+    },
+    {
+      "id": "2ZFWP5BJ",
+      "key": "2ZFWP5BJ",
+      "version": 0,
+      "type": "highlight",
+      "text": "camera coordinates to robot coordinates",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "5",
+      "sortIndex": "00004|002604|00383",
+      "position": {
+        "pageIndex": 4,
+        "rects": [
+          [
+            411.904,
+            400.201,
+            557.995,
+            408.839
+          ],
+          [
+            319.5,
+            389.242,
+            339.973,
+            397.88
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-15T03:02:42Z",
+      "readOnly": false,
+      "parentItem": "UUSUAE7H",
+      "contentHash": "93f3ebdbcf5d8c307d7fbd26838c2a11aca09033e876aa79e00d5913bd6bb274",
+      "raw": null
+    },
+    {
+      "id": "263WAES3",
+      "key": "263WAES3",
+      "version": 0,
+      "type": "highlight",
+      "text": "fine-grained object localization",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "5",
+      "sortIndex": "00004|001972|00618",
+      "position": {
+        "pageIndex": 4,
+        "rects": [
+          [
+            84.755,
+            164.56,
+            208.57,
+            173.198
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-15T03:00:00Z",
+      "readOnly": false,
+      "parentItem": "UUSUAE7H",
+      "contentHash": "f5d8e4b55fd763f298d8feeaf977c3abcd334e80386429bb2169dc789a297e7d",
+      "raw": null
+    },
+    {
+      "id": "GGP98UGH",
+      "key": "GGP98UGH",
+      "version": 0,
+      "type": "highlight",
+      "text": "L=−  N  X  i=1  log P (ti|t<i, Q, V ),",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "5",
+      "sortIndex": "00004|001570|00505",
+      "position": {
+        "pageIndex": 4,
+        "rects": [
+          [
+            110.24,
+            277.702,
+            138.144,
+            286.439
+          ],
+          [
+            143.47,
+            290.735,
+            149.781,
+            296.851
+          ],
+          [
+            139.804,
+            286.609,
+            154.195,
+            289.499
+          ],
+          [
+            140.546,
+            266.528,
+            153.453,
+            272.644
+          ],
+          [
+            155.855,
+            276.788,
+            236.26,
+            286.439
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-15T02:59:05Z",
+      "readOnly": false,
+      "parentItem": "UUSUAE7H",
+      "contentHash": "d705efb21c0c3c8e8523b1bf382f9b3caafb84b3b10fad187ebc8c66521ee468",
+      "raw": null
+    },
+    {
+      "id": "GA4PTJZT",
+      "key": "GA4PTJZT",
+      "version": 0,
+      "type": "highlight",
+      "text": "NaviAfford(Q, V ) = fLLM(ftext(Q), fproj(fvision(V ))),",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "5",
+      "sortIndex": "00004|001283|00420",
+      "position": {
+        "pageIndex": 4,
+        "rects": [
+          [
+            60.28,
+            361.829,
+            274.604,
+            371.633
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-15T02:58:23Z",
+      "readOnly": false,
+      "parentItem": "UUSUAE7H",
+      "contentHash": "a2b5310c8f534ec539899040528e7587d3635defe639a9ecf4f53d08b3df94e8",
+      "raw": null
+    },
+    {
+      "id": "MILBU8WS",
+      "key": "MILBU8WS",
+      "version": 0,
+      "type": "highlight",
+      "text": "free spaces that satisfy these constraints, enabling the model to understand available areas for navigation and placement",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "5",
+      "sortIndex": "00004|000902|00328",
+      "position": {
+        "pageIndex": 4,
+        "rects": [
+          [
+            200.464,
+            466.017,
+            292.498,
+            475.023
+          ],
+          [
+            54.0,
+            455.058,
+            292.505,
+            463.696
+          ],
+          [
+            54.0,
+            444.1,
+            200.729,
+            452.738
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-15T02:55:12Z",
+      "readOnly": false,
+      "parentItem": "UUSUAE7H",
+      "contentHash": "a9c855aee0f893fa100661523ceae267ed21510aa7e1a03cdc8fa324007bd6f4",
+      "raw": null
+    },
+    {
+      "id": "Q5WPJ7CT",
+      "key": "Q5WPJ7CT",
+      "version": 0,
+      "type": "highlight",
+      "text": "approximately 50K images and 1.0M questionanswer pairs from the LVIS and Where2Place datasets",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "4",
+      "sortIndex": "00003|003147|00596",
+      "position": {
+        "pageIndex": 3,
+        "rects": [
+          [
+            363.126,
+            187.103,
+            558.005,
+            195.741
+          ],
+          [
+            319.5,
+            176.144,
+            539.514,
+            184.782
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-15T02:52:49Z",
+      "readOnly": false,
+      "parentItem": "UUSUAE7H",
+      "contentHash": "ade53f1b4707aefdbaeeb0a9a308571a2df7c0b2ea0854b945d56a72a64acb41",
+      "raw": null
+    },
+    {
+      "id": "WFNLJ8EK",
+      "key": "WFNLJ8EK",
+      "version": 0,
+      "type": "highlight",
+      "text": "NaviAfford model",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "4",
+      "sortIndex": "00003|003068|00574",
+      "position": {
+        "pageIndex": 3,
+        "rects": [
+          [
+            439.46,
+            209.021,
+            513.99,
+            217.659
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-15T02:52:22Z",
+      "readOnly": false,
+      "parentItem": "UUSUAE7H",
+      "contentHash": "6dd46b68487620fb6136afa1fc31a228b901a9f3685cb653761e31099fbef5cd",
+      "raw": null
+    },
+    {
+      "id": "STGEACXY",
+      "key": "STGEACXY",
+      "version": 0,
+      "type": "highlight",
+      "text": "use Pointing-VLM to guide the agen",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "4",
+      "sortIndex": "00003|002782|00478",
+      "position": {
+        "pageIndex": 3,
+        "rects": [
+          [
+            544.719,
+            302.59,
+            557.999,
+            313.12
+          ],
+          [
+            319.5,
+            291.631,
+            455.001,
+            300.269
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-15T02:50:16Z",
+      "readOnly": false,
+      "parentItem": "UUSUAE7H",
+      "contentHash": "adf5929d9405a1e55a020d19c7ef0d456f37bbd8fc6cc315540a3dfcef1979bd",
+      "raw": null
+    },
+    {
+      "id": "E94ZIHGT",
+      "key": "E94ZIHGT",
+      "version": 0,
+      "type": "highlight",
+      "text": "R∗ = arg maxRj∈Sglobal P (O∗|Rj , Aj ), with P (O∗|Rj , Aj )  representing the conditional probability of finding O∗ with annotation Aj in region Rj.",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "4",
+      "sortIndex": "00003|002582|00445",
+      "position": {
+        "pageIndex": 3,
+        "rects": [
+          [
+            319.5,
+            345.636,
+            558.0,
+            357.581
+          ],
+          [
+            319.5,
+            336.091,
+            558.001,
+            346.622
+          ],
+          [
+            319.5,
+            324.437,
+            430.503,
+            334.089
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-15T02:46:21Z",
+      "readOnly": false,
+      "parentItem": "UUSUAE7H",
+      "contentHash": "0ab3c395e1df1ba6379981df1e672485a284f4ac9aa52fe2b24561e842e7f4d7",
+      "raw": null
+    },
+    {
+      "id": "CRZ9M89P",
+      "key": "CRZ9M89P",
+      "version": 0,
+      "type": "highlight",
+      "text": "O∗ = fsemantic(I).",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "4",
+      "sortIndex": "00003|002441|00401",
+      "position": {
+        "pageIndex": 3,
+        "rects": [
+          [
+            398.061,
+            379.079,
+            473.404,
+            390.457
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-15T02:45:52Z",
+      "readOnly": false,
+      "parentItem": "UUSUAE7H",
+      "contentHash": "5b1071d1e8feb1b02927dd12e206840e02e2f9d64c433230c1d7dd9ae8ec358d",
+      "raw": null
+    },
+    {
+      "id": "UWZBTINK",
+      "key": "UWZBTINK",
+      "version": 0,
+      "type": "highlight",
+      "text": "textual instructions and the visual representation of the annotated global scene to enable hierarchical reasoning.",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "4",
+      "sortIndex": "00003|002275|00370",
+      "position": {
+        "pageIndex": 3,
+        "rects": [
+          [
+            462.344,
+            423.763,
+            557.995,
+            432.401
+          ],
+          [
+            319.5,
+            412.804,
+            558.005,
+            421.442
+          ],
+          [
+            319.5,
+            401.845,
+            441.751,
+            410.483
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-15T02:41:24Z",
+      "readOnly": false,
+      "parentItem": "UUSUAE7H",
+      "contentHash": "c15dbe9aad3451456c2bf41ca2379b3a9fdf36e6bc414f2d082f1baa386d47d5",
+      "raw": null
+    },
+    {
+      "id": "3CYYF7DI",
+      "key": "3CYYF7DI",
+      "version": 0,
+      "type": "highlight",
+      "text": "Reasoning-VLM",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "4",
+      "sortIndex": "00003|001576|00602",
+      "position": {
+        "pageIndex": 3,
+        "rects": [
+          [
+            209.018,
+            180.598,
+            276.535,
+            189.236
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-15T02:27:26Z",
+      "readOnly": false,
+      "parentItem": "UUSUAE7H",
+      "contentHash": "e48e6e53f841873c5ffd334f2c9121f450d767b6289be3f22ad9ebd7c3bb3607",
+      "raw": null
+    },
+    {
+      "id": "93PGUWPQ",
+      "key": "93PGUWPQ",
+      "version": 0,
+      "type": "highlight",
+      "text": "MapNav’s (Zhang et al. 2025b) annotation method to provide room- and region-level semantic annotations,",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "4",
+      "sortIndex": "00003|001037|00391",
+      "position": {
+        "pageIndex": 3,
+        "rects": [
+          [
+            71.076,
+            392.139,
+            292.505,
+            400.777
+          ],
+          [
+            54.0,
+            381.18,
+            270.946,
+            389.818
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-15T02:25:35Z",
+      "readOnly": false,
+      "parentItem": "UUSUAE7H",
+      "contentHash": "7aa00fa8d84f2834daf8652d480ee99c2b1f0ac6fd93e7007952209715bd700e",
+      "raw": null
+    },
+    {
+      "id": "AXILEQQK",
+      "key": "AXILEQQK",
+      "version": 0,
+      "type": "highlight",
+      "text": "trained NaviAfford model (an implementation of Pointing-VLM) for accurate target object identification.",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "2",
+      "sortIndex": "00001|002954|00079",
+      "position": {
+        "pageIndex": 1,
+        "rects": [
+          [
+            373.398,
+            714.927,
+            557.995,
+            723.933
+          ],
+          [
+            319.5,
+            703.968,
+            558.005,
+            712.606
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-15T01:34:44Z",
+      "readOnly": false,
+      "parentItem": "UUSUAE7H",
+      "contentHash": "40e6a0fb24fb68bed0085317d20d361424e2590deef97626c2bc779014207598",
+      "raw": null
+    },
+    {
+      "id": "Z2FNP4Z4",
+      "key": "Z2FNP4Z4",
+      "version": 0,
+      "type": "highlight",
+      "text": "the local policy takes over, focusing on exploration and precise object localization within the identified target area. The VLM, referred to as Pointing-VLM",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "2",
+      "sortIndex": "00001|002698|00673",
+      "position": {
+        "pageIndex": 1,
+        "rects": [
+          [
+            136.411,
+            120.725,
+            292.505,
+            129.363
+          ],
+          [
+            54.0,
+            109.766,
+            292.505,
+            118.404
+          ],
+          [
+            54.0,
+            98.807,
+            276.13,
+            107.813
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-15T01:29:48Z",
+      "readOnly": false,
+      "parentItem": "UUSUAE7H",
+      "contentHash": "d89c047d8fa17473632604c159b0cb56c639d1e3199a1022a77eeeefc389f175",
+      "raw": null
+    },
+    {
+      "id": "364WHNGZ",
+      "key": "364WHNGZ",
+      "version": 0,
+      "type": "highlight",
+      "text": "Reasoning-VLM",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "2",
+      "sortIndex": "00001|002274|00574",
+      "position": {
+        "pageIndex": 1,
+        "rects": [
+          [
+            210.116,
+            208.396,
+            278.758,
+            217.402
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-15T01:29:03Z",
+      "readOnly": false,
+      "parentItem": "UUSUAE7H",
+      "contentHash": "37513e3fffd4b1352f8f1f9d5c2e32b65b3665aca51377f26411b4219925aec9",
+      "raw": null
+    },
+    {
+      "id": "AK4VMMTF",
+      "key": "AK4VMMTF",
+      "version": 0,
+      "type": "highlight",
+      "text": "global policy leverages the powerful reasoning capabilities of the vision language model (VLM)",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "2",
+      "sortIndex": "00001|002144|00553",
+      "position": {
+        "pageIndex": 1,
+        "rects": [
+          [
+            215.645,
+            241.273,
+            292.497,
+            250.09
+          ],
+          [
+            54.0,
+            230.314,
+            292.505,
+            238.952
+          ],
+          [
+            54.0,
+            219.355,
+            136.341,
+            227.993
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-15T01:28:39Z",
+      "readOnly": false,
+      "parentItem": "UUSUAE7H",
+      "contentHash": "611cb36041378eb5228750f077654c2090c470bd13204ac76cec355b20c756e9",
+      "raw": null
+    },
+    {
+      "id": "4E2D8XS3",
+      "key": "4E2D8XS3",
+      "version": 0,
+      "type": "highlight",
+      "text": "gap between current navigation tasks and real-world needs,",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "2",
+      "sortIndex": "00001|001797|00473",
+      "position": {
+        "pageIndex": 1,
+        "rects": [
+          [
+            54.0,
+            309.931,
+            292.505,
+            318.569
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-15T01:22:24Z",
+      "readOnly": false,
+      "parentItem": "UUSUAE7H",
+      "contentHash": "cb7aafea197d7dc75065cc1505af9c84350f6adec18cd35bf23496a4c137866c",
+      "raw": null
+    },
+    {
+      "id": "NUKPGZES",
+      "key": "NUKPGZES",
+      "version": 0,
+      "type": "highlight",
+      "text": "Reasoning-VLM to parse high-level human instructions",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "1",
+      "sortIndex": "00000|002409|00556",
+      "position": {
+        "pageIndex": 0,
+        "rects": [
+          [
+            418.374,
+            227.876,
+            548.04,
+            235.982
+          ],
+          [
+            329.463,
+            217.914,
+            398.334,
+            225.688
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-15T01:10:29Z",
+      "readOnly": false,
+      "parentItem": "UUSUAE7H",
+      "contentHash": "47964483d8b0a79cd9e597fca99c4f72373f45f45af611dff8af02cbe9b7be1e",
+      "raw": null
+    },
+    {
+      "id": "ZIQCXH4L",
+      "key": "ZIQCXH4L",
+      "version": 0,
+      "type": "highlight",
+      "text": "In the local policy",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "1",
+      "sortIndex": "00000|002568|00586",
+      "position": {
+        "pageIndex": 0,
+        "rects": [
+          [
+            448.698,
+            197.988,
+            514.323,
+            205.762
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-15T01:10:23Z",
+      "readOnly": false,
+      "parentItem": "UUSUAE7H",
+      "contentHash": "771603d87303fc067a3591bccbf918fd383dee29998bb10e6a9bc0aa8c5d9ce7",
+      "raw": null
+    },
+    {
+      "id": "JAWQKGLU",
+      "key": "JAWQKGLU",
+      "version": 0,
+      "type": "highlight",
+      "text": "NaviAfford model (PointingVLM)",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "1",
+      "sortIndex": "00000|002669|00605",
+      "position": {
+        "pageIndex": 0,
+        "rects": [
+          [
+            441.034,
+            178.063,
+            548.038,
+            186.169
+          ],
+          [
+            329.463,
+            168.1,
+            352.13,
+            176.206
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-15T01:10:16Z",
+      "readOnly": false,
+      "parentItem": "UUSUAE7H",
+      "contentHash": "c9020a846c372bccd780499b99ff2d6ca536e66240cc862e1709f2d2335cff08",
+      "raw": null
+    }
+  ],
+  "notes": [],
+  "exportedAt": "2026-10-29T07:58:15+00:00"
+}

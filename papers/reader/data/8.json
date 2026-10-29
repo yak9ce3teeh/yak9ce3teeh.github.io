@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "fileId": 8,
+  "pdf": {
+    "url": "../Humanoid%20Robotics/Whole-Body%20Control%20and%20Loco-Manipulation/2025%20-%20LangWBC.pdf",
+    "sha256": "68c37f943ed50e1a1de84f99836bf07e14b6633e3739644b71e5f31196c89892"
+  },
+  "zotero": {
+    "libraryType": "user",
+    "libraryId": 1,
+    "parentKey": "7PT2WHEI",
+    "attachmentKey": "ILG2RKRG"
+  },
+  "mapping": {
+    "status": "matched",
+    "basis": "sha256"
+  },
+  "annotations": [],
+  "notes": [
+    {
+      "id": "7MJP2RR2",
+      "key": "7MJP2RR2",
+      "version": 0,
+      "html": "<div data-schema-version=\"9\"><p>LangWBC:</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">Teacher + Student</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\"><img alt=\"\" width=\"863\" height=\"609\" data-attachment-key=\"4MVWIIP8\"></p>\n</div>",
+      "tags": [],
+      "dateModified": "2026-07-03T13:08:30Z",
+      "parentItem": "7PT2WHEI",
+      "contentHash": "c5968678f67f601a64f61d8d0ae599848a784db89c502d07aaa33f250f9957c0",
+      "displayHtml": "<div data-schema-version=\"9\"><p>LangWBC:</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">Teacher + Student</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\"><img alt=\"\" width=\"863\" height=\"609\" data-attachment-key=\"4MVWIIP8\" src=\"assets/note-images/4MVWIIP8/image.png\"></p>\n</div>"
+    }
+  ],
+  "exportedAt": "2026-10-29T07:58:15+00:00"
+}

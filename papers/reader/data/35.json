@@ -1,0 +1,480 @@
+{
+  "schemaVersion": 1,
+  "fileId": 35,
+  "pdf": {
+    "url": "../Robotic%20Manipulation/VLA%20Surveys%20and%20Efficiency/2025%20-%20VLA%20Overview.pdf",
+    "sha256": "82a6e7d5d17e5d466aa9e22a40a9f812be6fd69238c23836993de5a320fbfd14"
+  },
+  "zotero": {
+    "libraryType": "user",
+    "libraryId": 1,
+    "parentKey": "YE5C3UKL",
+    "attachmentKey": "UM4PWMKS"
+  },
+  "mapping": {
+    "status": "matched",
+    "basis": "sha256"
+  },
+  "annotations": [
+    {
+      "id": "BM98WPPN",
+      "key": "BM98WPPN",
+      "version": 0,
+      "type": "highlight",
+      "text": "SafeVLA",
+      "comment": "",
+      "color": "#2ea8e5",
+      "pageLabel": "10",
+      "sortIndex": "00009|003889|00301",
+      "position": {
+        "pageIndex": 9,
+        "rects": [
+          [
+            480.706,
+            463.125,
+            518.213,
+            472.264
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-05-25T16:01:16Z",
+      "readOnly": false,
+      "parentItem": "UM4PWMKS",
+      "contentHash": "5f578ddce649b7ee21cea6b31e5cb5d6bb6f091e93ce12fe34e71f7a3e987a9f",
+      "raw": null
+    },
+    {
+      "id": "E5DZHD5J",
+      "key": "E5DZHD5J",
+      "version": 0,
+      "type": "highlight",
+      "text": "LangToMo and Evo0 [169], [170] introduce novel intermediate representations and geometry-aware plug-in modules",
+      "comment": "",
+      "color": "#2ea8e5",
+      "pageLabel": "9",
+      "sortIndex": "00008|005119|00601",
+      "position": {
+        "pageIndex": 8,
+        "rects": [
+          [
+            454.335,
+            174.625,
+            541.497,
+            183.764
+          ],
+          [
+            289.5,
+            163.085,
+            541.497,
+            172.224
+          ],
+          [
+            289.5,
+            151.545,
+            452.14,
+            160.684
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-05-25T15:42:03Z",
+      "readOnly": false,
+      "parentItem": "UM4PWMKS",
+      "contentHash": "da2a48a343e9e2fd48337e0aab76757b43562d79059573dfeeadbd9c7b8aedc9",
+      "raw": null
+    },
+    {
+      "id": "45NNQZI9",
+      "key": "45NNQZI9",
+      "version": 0,
+      "type": "highlight",
+      "text": "ForceVLA [146] treat force sensing as a first-class modality, using force-aware mixtureof-experts to integrate tactile feedback with visual-language 9  embeddings, significantly improving contact-rich manipulation.",
+      "comment": "",
+      "color": "#2ea8e5",
+      "pageLabel": "8",
+      "sortIndex": "00007|005425|00705",
+      "position": {
+        "pageIndex": 7,
+        "rects": [
+          [
+            428.875,
+            59.225,
+            541.497,
+            68.364
+          ],
+          [
+            289.5,
+            47.685,
+            541.497,
+            56.824
+          ],
+          [
+            289.5,
+            36.145,
+            541.497,
+            45.284
+          ]
+        ],
+        "nextPageRects": [
+          [
+            537.608,
+            747.946,
+            541.5,
+            754.421
+          ],
+          [
+            25.5,
+            728.545,
+            277.497,
+            737.684
+          ],
+          [
+            25.5,
+            717.005,
+            51.967,
+            726.144
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-05-25T15:08:09Z",
+      "readOnly": false,
+      "parentItem": "UM4PWMKS",
+      "contentHash": "ad2e620baebb4ca2156834c73c9f431baf66d15680aa82db92b32ebf0cea48c1",
+      "raw": null
+    },
+    {
+      "id": "GQCEIV52",
+      "key": "GQCEIV52",
+      "version": 0,
+      "type": "highlight",
+      "text": "fusing heterogeneous modalities while preserving their distinct properties.",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "8",
+      "sortIndex": "00007|004915|00582",
+      "position": {
+        "pageIndex": 7,
+        "rects": [
+          [
+            301.698,
+            182.807,
+            541.497,
+            191.946
+          ],
+          [
+            289.5,
+            171.267,
+            371.381,
+            180.406
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-05-25T15:06:41Z",
+      "readOnly": false,
+      "parentItem": "UM4PWMKS",
+      "contentHash": "bc8e685b188f3bfdca9f83a0f07b508703117d14c41667670d29f952ed72d4cb",
+      "raw": null
+    },
+    {
+      "id": "HGDMGF5T",
+      "key": "HGDMGF5T",
+      "version": 0,
+      "type": "highlight",
+      "text": "scaling attention-based architectures beyond small action heads substantially improves continuous action modeling, with self-attention inductive biases aligning well with the compositionality of robotic behaviors.",
+      "comment": "",
+      "color": "#2ea8e5",
+      "pageLabel": "8",
+      "sortIndex": "00007|004670|00682",
+      "position": {
+        "pageIndex": 7,
+        "rects": [
+          [
+            179.676,
+            82.305,
+            277.497,
+            91.444
+          ],
+          [
+            25.5,
+            70.765,
+            277.497,
+            79.904
+          ],
+          [
+            25.5,
+            59.225,
+            277.497,
+            68.364
+          ],
+          [
+            25.5,
+            47.685,
+            277.497,
+            56.824
+          ],
+          [
+            25.5,
+            36.145,
+            101.006,
+            45.284
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-05-25T15:04:33Z",
+      "readOnly": false,
+      "parentItem": "UM4PWMKS",
+      "contentHash": "93ffb5121b58bca24c29c2e91e3eef9842d3b0c7fb8b3dd60b66cc6575f87a7d",
+      "raw": null
+    },
+    {
+      "id": "LVI3GUZX",
+      "key": "LVI3GUZX",
+      "version": 0,
+      "type": "highlight",
+      "text": "Agentic Robot",
+      "comment": "",
+      "color": "#2ea8e5",
+      "pageLabel": "6",
+      "sortIndex": "00005|001363|00370",
+      "position": {
+        "pageIndex": 5,
+        "rects": [
+          [
+            251.581,
+            394.291,
+            277.497,
+            403.43
+          ],
+          [
+            25.5,
+            382.751,
+            63.956,
+            391.89
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-05-25T11:25:56Z",
+      "readOnly": false,
+      "parentItem": "UM4PWMKS",
+      "contentHash": "71ff4dcce18c813d39d4114ea43d0247c3327a0ed7885317e6c9777fc7475f0c",
+      "raw": null
+    },
+    {
+      "id": "PYBVSTBI",
+      "key": "PYBVSTBI",
+      "version": 0,
+      "type": "highlight",
+      "text": "CoT-VLA [58] 2025 Implemented visual chain-of-thought reasoning with predictive goals.",
+      "comment": "",
+      "color": "#2ea8e5",
+      "pageLabel": "5",
+      "sortIndex": "00004|002532|00355",
+      "position": {
+        "pageIndex": 4,
+        "rects": [
+          [
+            31.478,
+            410.745,
+            432.31,
+            418.441
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-05-25T11:12:01Z",
+      "readOnly": false,
+      "parentItem": "UM4PWMKS",
+      "contentHash": "cde8c274525f437721ddc593905c87c3f22650db837d4cd68c7a02ed87e8627a",
+      "raw": null
+    },
+    {
+      "id": "663WMUVE",
+      "key": "663WMUVE",
+      "version": 0,
+      "type": "highlight",
+      "text": "UniVLA [44] 2025 Learned task-centric latent action representations from diverse videos.",
+      "comment": "Latent Action Representation",
+      "color": "#2ea8e5",
+      "pageLabel": "5",
+      "sortIndex": "00004|001334|00210",
+      "position": {
+        "pageIndex": 4,
+        "rects": [
+          [
+            31.478,
+            556.051,
+            432.958,
+            563.747
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-05-25T11:04:59Z",
+      "readOnly": false,
+      "parentItem": "UM4PWMKS",
+      "contentHash": "ad390efe35363a5833a8ae67f60d5bdfdf69f899c94530a24df1ae2084f17b12",
+      "raw": null
+    },
+    {
+      "id": "MYMTSNJ6",
+      "key": "MYMTSNJ6",
+      "version": 0,
+      "type": "highlight",
+      "text": "By tokenizing multimodal inputs, these models enable step-by-step action generation across heterogeneous tasks.",
+      "comment": "",
+      "color": "#ff6666",
+      "pageLabel": "4",
+      "sortIndex": "00003|003539|00245",
+      "position": {
+        "pageIndex": 3,
+        "rects": [
+          [
+            375.428,
+            518.915,
+            541.497,
+            528.054
+          ],
+          [
+            289.5,
+            507.375,
+            541.497,
+            516.514
+          ],
+          [
+            289.5,
+            495.835,
+            350.576,
+            504.974
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-05-25T10:57:10Z",
+      "readOnly": false,
+      "parentItem": "UM4PWMKS",
+      "contentHash": "652dba1e9812141fd8aeead5b3771383c942477093e54640889df093b00f69ce",
+      "raw": null
+    },
+    {
+      "id": "2HGYF5SI",
+      "key": "2HGYF5SI",
+      "version": 0,
+      "type": "highlight",
+      "text": "these models generate actions step by step, conditioned on prior context, perceptual inputs, and task prompts",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "4",
+      "sortIndex": "00003|002986|00108",
+      "position": {
+        "pageIndex": 3,
+        "rects": [
+          [
+            485.162,
+            667.959,
+            541.497,
+            677.098
+          ],
+          [
+            289.5,
+            656.419,
+            541.497,
+            665.558
+          ],
+          [
+            289.5,
+            644.879,
+            470.636,
+            654.018
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-05-25T10:54:33Z",
+      "readOnly": false,
+      "parentItem": "UM4PWMKS",
+      "contentHash": "5629879ad70c40202380d129a2d39ef5567463bdcefb8984f5dfebfbdf0a295e",
+      "raw": null
+    },
+    {
+      "id": "PLIZSFAY",
+      "key": "PLIZSFAY",
+      "version": 0,
+      "type": "highlight",
+      "text": "dynamic and unstructured settings.",
+      "comment": "Limitations of Traditional Methods",
+      "color": "#ffd400",
+      "pageLabel": "2",
+      "sortIndex": "00001|003175|00446",
+      "position": {
+        "pageIndex": 1,
+        "rects": [
+          [
+            384.035,
+            318.496,
+            541.497,
+            327.635
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-05-25T10:21:56Z",
+      "readOnly": false,
+      "parentItem": "UM4PWMKS",
+      "contentHash": "45aff4b80db468fa01c78a149242a11febb25f4727e14a083beae32e41d82ecf",
+      "raw": null
+    },
+    {
+      "id": "I7PUVQTD",
+      "key": "I7PUVQTD",
+      "version": 0,
+      "type": "highlight",
+      "text": "isolated perception pipelines, hand-engineered control strategies, or task-specific reinforcement learning",
+      "comment": "Traditional Robotics",
+      "color": "#ffd400",
+      "pageLabel": "2",
+      "sortIndex": "00001|002954|00400",
+      "position": {
+        "pageIndex": 1,
+        "rects": [
+          [
+            322.047,
+            364.656,
+            541.497,
+            373.795
+          ],
+          [
+            289.5,
+            353.116,
+            521.595,
+            362.255
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-05-25T10:20:13Z",
+      "readOnly": false,
+      "parentItem": "UM4PWMKS",
+      "contentHash": "8cf5ab7ac650c4e6676054af5325b1d817e444296098eed998c2c483e97a1671",
+      "raw": null
+    }
+  ],
+  "notes": [
+    {
+      "id": "MXAEC847",
+      "key": "MXAEC847",
+      "version": 0,
+      "html": "<div data-citation-items=\"%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FYE5C3UKL%22%5D%2C%22itemData%22%3A%7B%22id%22%3A%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FYE5C3UKL%22%2C%22type%22%3A%22article%22%2C%22abstract%22%3A%22The%20emergence%20of%20Vision%20Language%20Action%20(VLA)%20models%20marks%20a%20paradigm%20shift%20from%20traditional%20policy-based%20control%20to%20generalized%20robotics%2C%20reframing%20Vision%20Language%20Models%20(VLMs)%20from%20passive%20sequence%20generators%20into%20active%20agents%20for%20manipulation%20and%20decision-making%20in%20complex%2C%20dynamic%20environments.%20This%20survey%20delves%20into%20advanced%20VLA%20methods%2C%20aiming%20to%20provide%20a%20clear%20taxonomy%20and%20a%20systematic%2C%20comprehensive%20review%20of%20existing%20research.%20It%20presents%20a%20comprehensive%20analysis%20of%20VLA%20applications%20across%20different%20scenarios%20and%20classifies%20VLA%20approaches%20into%20several%20paradigms%3A%20autoregression-based%2C%20diffusion-based%2C%20reinforcement-based%2C%20hybrid%2C%20and%20specialized%20methods%3B%20while%20examining%20their%20motivations%2C%20core%20strategies%2C%20and%20implementations%20in%20detail.%20In%20addition%2C%20foundational%20datasets%2C%20benchmarks%2C%20and%20simulation%20platforms%20are%20introduced.%20Building%20on%20the%20current%20VLA%20landscape%2C%20the%20review%20further%20proposes%20perspectives%20on%20key%20challenges%20and%20future%20directions%20to%20advance%20research%20in%20VLA%20models%20and%20generalizable%20robotics.%20By%20synthesizing%20insights%20from%20over%20three%20hundred%20recent%20studies%2C%20this%20survey%20maps%20the%20contours%20of%20this%20rapidly%20evolving%20field%20and%20highlights%20the%20opportunities%20and%20challenges%20that%20will%20shape%20the%20development%20of%20scalable%2C%20general-purpose%20VLA%20methods.%22%2C%22DOI%22%3A%2210.48550%2FARXIV.2509.19012%22%2C%22language%22%3A%22en%22%2C%22license%22%3A%22arXiv.org%20perpetual%2C%20non-exclusive%20license%22%2C%22note%22%3A%22version%3A%203%22%2C%22publisher%22%3A%22arXiv%22%2C%22source%22%3A%22DOI.org%20(Datacite)%22%2C%22title%22%3A%22Pure%20Vision%20Language%20Action%20(VLA)%20Models%3A%20A%20Comprehensive%20Survey%22%2C%22title-short%22%3A%22Pure%20Vision%20Language%20Action%20(VLA)%20Models%22%2C%22URL%22%3A%22https%3A%2F%2Farxiv.org%2Fabs%2F2509.19012%22%2C%22author%22%3A%5B%7B%22family%22%3A%22Zhang%22%2C%22given%22%3A%22Dapeng%22%7D%2C%7B%22family%22%3A%22Sun%22%2C%22given%22%3A%22Jing%22%7D%2C%7B%22family%22%3A%22Hu%22%2C%22given%22%3A%22Chenghui%22%7D%2C%7B%22family%22%3A%22Wu%22%2C%22given%22%3A%22Xiaoyan%22%7D%2C%7B%22family%22%3A%22Yuan%22%2C%22given%22%3A%22Zhenlong%22%7D%2C%7B%22family%22%3A%22Zhou%22%2C%22given%22%3A%22Rui%22%7D%2C%7B%22family%22%3A%22Shen%22%2C%22given%22%3A%22Fei%22%7D%2C%7B%22family%22%3A%22Zhou%22%2C%22given%22%3A%22Qingguo%22%7D%5D%2C%22accessed%22%3A%7B%22date-parts%22%3A%5B%5B%222026%22%2C5%2C25%5D%5D%7D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222025%22%5D%5D%7D%7D%7D%5D\" data-schema-version=\"9\"><h1><span style=\"color: rgb(25, 60, 71);\"><span style=\"background-color: rgb(238, 249, 253);\">Pure Vision Language Action (VLA) Models: A Comprehensive Survey</span></span></h1>\n<h2>⚙️ Metadata</h2>\n<ul>\n<li>\n<strong>Item Type:</strong> preprint\n</li>\n<li>\n<strong>Author:</strong> [[Dapeng Zhang]], [[Jing Sun]], [[Chenghui Hu]], [[Xiaoyan Wu]], [[Zhenlong Yuan]], [[Rui Zhou]], [[Fei Shen]], [[Qingguo Zhou]]\n</li>\n<li>\n<strong>Date Added:</strong> 2026/5/25 18:10:07\n</li>\n<li>\n<strong>DOI: </strong><a href=\"https://doi.org/10.48550/ARXIV.2509.19012\" rel=\"noopener noreferrer nofollow\">10.48550/ARXIV.2509.19012</a>\n</li>\n<li>\n<strong>Cite key:</strong>\n</li>\n<li>\n<strong>Journal:</strong>\n</li>\n<li>\n<strong>Journal Tags:</strong>\n</li>\n<li>\n<strong>Publication Date: </strong>2025\n</li>\n<li>\n<strong>Tags:</strong> #Artificial Intelligence (cs.AI), #FOS: Computer and information sciences, #Robotics (cs.RO), #zotero\n</li>\n<li>\n<strong>PDF Attachments: </strong><a href=\"zotero://open-pdf/library/items/UM4PWMKS\" rel=\"noopener noreferrer nofollow\">Zhang 等 - 2025 - Pure Vision Language Action (VLA) Models A Comprehensive Survey.pdf</a>\n</li>\n<li>\n<strong>Related Items: </strong><span style=\"color: gray;\">无相关条目</span>\n</li>\n</ul>\n<h2>📜 Abstract</h2>\n<p>The emergence of Vision Language Action (VLA) models marks a paradigm shift from traditional policy-based control to generalized robotics, reframing Vision Language Models (VLMs) from passive sequence generators into active agents for manipulation and decision-making in complex, dynamic environments. This survey delves into advanced VLA methods, aiming to provide a clear taxonomy and a systematic, comprehensive review of existing research. It presents a comprehensive analysis of VLA applications across different scenarios and classifies VLA approaches into several paradigms: autoregression-based, diffusion-based, reinforcement-based, hybrid, and specialized methods; while examining their motivations, core strategies, and implementations in detail. In addition, foundational datasets, benchmarks, and simulation platforms are introduced. Building on the current VLA landscape, the review further proposes perspectives on key challenges and future directions to advance research in VLA models and generalizable robotics. By synthesizing insights from over three hundred recent studies, this survey maps the contours of this rapidly evolving field and highlights the opportunities and challenges that will shape the development of scalable, general-purpose VLA methods.</p>\n<h2>📚 Zotero links</h2>\n<ul>\n<li>\n<a href=\"zotero://select/items/1_YE5C3UKL\" rel=\"noopener noreferrer nofollow\">Local library</a>\n</li>\n</ul>\n<h1>Notes</h1>\n<p>GENERAL OVERVIEW:</p>\n<p><img alt=\"\" width=\"617\" height=\"664\" data-attachment-key=\"5R39FFH3\"></p>\n<p>BACKGROUND:</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">significant advance toward general-purpose embodied intelligence</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">Traditional Robotics: isolated perception pipeline, hand-engineered strategies and task-specific reinforcement learning</p>\n<ol>\n<li>\n<p>early LLM / VLM FM</p>\n<p>CV : CNN, ViT (Self-attention)</p>\n<p>NLP: Large-scale pretraining - BERT, GPT, T5, GPT-4</p>\n<p>RL: Policy Optimization and Sequential Decision-making - DQN, PPO to Decision Transformer</p>\n<p>VLM: dual-stream or single-stream transformer alignment -&gt; contrast learning (CLIP) -&gt; Instruction-tuned, dialogue-centric multimodal models (BLIP-2, Flamingo. LLaVA)</p>\n</li>\n<li>\n<p>development of VLA - unifying visual perception, language understanding and executable control within a single framework</p>\n<p></p>\n<p>(1) Encode images and instructions as prefix or context tokens</p>\n<p>(2) Robot states and sensory feedback as state tokens</p>\n<p>(3) Autoregressive generation of action tokens as control sequences</p>\n<p></p>\n<p>Data: Datasets + Simulators - OXE, BridgeData | THOR, Habitat, Mujuco, Isaac Gym, CARLA - mitigate the scarcity of real-world robot data and accelerate training</p>\n<p></p>\n<p></p>\n</li>\n<li>\nFuture - Generality\n</li>\n</ol>\n<p></p>\n<p>VLA MODELS</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\"><img alt=\"\" width=\"1483\" height=\"923\" data-attachment-key=\"VRI79X5U\"></p>\n<ol>\n<li>\n<p>Autoregression-based</p>\n<p>generate action step by step, conditioned on prior context, perceptual inputs and task prompts</p>\n<p>(1) Autoregressive Generalist VLA Methodologies - Tokenizing Multimodal Inputs</p>\n<p><img alt=\"\" width=\"1670\" height=\"570\" data-attachment-key=\"LRSG2X49\"><img alt=\"\" width=\"1691\" height=\"553\" data-attachment-key=\"KWV97F7D\"><img alt=\"\" width=\"1660\" height=\"614\" data-attachment-key=\"HUL2RZ7A\"><img alt=\"\" width=\"1649\" height=\"467\" data-attachment-key=\"NTF8HQZG\"></p>\n</li>\n</ol>\n<p>Gato, &nbsp;RT-1 / RT-2 (Scaling), PaLM-E</p>\n<p>Octo, &nbsp;LEO, &nbsp;UniAct - aligning visual-linguistic modalities with action abstractions for cross-platform compatibility</p>\n<p>NORA and RoboMM - combine action generation with language reasoning and adaptive prompting</p>\n<p>(2) Autoregressive Reasoning and Semantic Planning with LLMs</p>\n<p>Inner Monologue - self-talk-style reasoning + pre-action planning and post-action reflection -&gt; Prompt-to-walk, RoboFlamingo, RoboMM</p>\n<p>Hierarchical frameworks - InSpire, CoT-VLA</p>\n<p>Platformization and Systematization - Gemini Robotics, Agentic Robot, pi0.5, fast</p>\n<p>(3) Autoregressive Trajectory Generation and Visual Alignment Modeling</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">LATTE : Language directly to trajectories</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">VIMA, InstructRL: joint tokenization of language, vision, and action</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">MOO, GPT-Based Methods - Pretrained VL backbones for open-world generalization and lightweight trajectory generation</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">GR-1/2 - Video generation pretraining to robotics</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">CronusVLA, WorldVLA - temporal consistency</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">TrackVLA, Uni-Navid - long-horizon prompting</p>\n<p>(4) Structural Optimization and Efficient Inference Mechanisms in Autoregressive VLA</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">HiP - tasks into symbolic planning, video prediction and action execution</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">DeeR-VLA: dynamic and adaptive inference</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">FAST: token-efficient</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">OTTER, ChatVLA: Integrate efficiency with multi-modal reasoning</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\"></p>\n<p>2. Diffusion-based</p>\n<p><img alt=\"\" width=\"1414\" height=\"331\" data-attachment-key=\"MPKH2JI2\"><img alt=\"\" width=\"1426\" height=\"298\" data-attachment-key=\"EKF9BC2R\"><img alt=\"\" width=\"1428\" height=\"694\" data-attachment-key=\"9G2LI9KY\"></p>\n<p>(1) DIffusion Generalist VLA Methodologies</p>\n<p>Enabling multiple valid trajectories from identical observations</p>\n<p>Geometry-aware methods : SE(3) constraints into diffusion</p>\n<p>Reinterpreting policy learning as video generation</p>\n<p><span class=\"highlight\" data-annotation=\"%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FUM4PWMKS%22%2C%22pageLabel%22%3A%227%22%2C%22position%22%3A%7B%22pageIndex%22%3A6%2C%22rects%22%3A%5B%5B303.74999999999994%2C116.92600000000071%2C541.497%2C126.06500000000071%5D%2C%5B289.49999999999994%2C105.3860000000007%2C541.4969999999998%2C114.52500000000072%5D%2C%5B289.49999999999994%2C93.84600000000071%2C541.4970000000001%2C102.98500000000072%5D%2C%5B289.49999999999994%2C82.30600000000072%2C541.4970000000001%2C91.44500000000073%5D%2C%5B289.49999999999994%2C70.76600000000073%2C541.4970000000001%2C79.90500000000074%5D%2C%5B289.49999999999994%2C59.22600000000073%2C541.497%2C68.36500000000073%5D%2C%5B289.49999999999994%2C47.68600000000073%2C541.497%2C56.825000000000735%5D%2C%5B289.49999999999994%2C36.14600000000073%2C475.8425000000001%2C45.285000000000736%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FYE5C3UKL%22%5D%2C%22locator%22%3A%227%22%7D%7D\">“These advances mark three transitions: deterministic to probabilistic generation, Euclidean to geometry-aware representations, and supervised to self-supervised paradigms. This reframing as generative modeling enables multi-task generalization, few-shot adaptation, and natural language interfaces…. However, temporal coherence remains fragile under dynamic environmental shifts.”</span> <span class=\"citation\" data-citation=\"%7B%22citationItems%22%3A%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FYE5C3UKL%22%5D%2C%22locator%22%3A%227%22%7D%5D%2C%22properties%22%3A%7B%7D%7D\">(<span class=\"citation-item\">Zhang 等, 2025, p. 7</span>)</span></p>\n<p>(2) Diffusion-Based Multimodal Architectural Fusion</p>\n<p><span class=\"highlight\" data-annotation=\"%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FUM4PWMKS%22%2C%22pageLabel%22%3A%228%22%2C%22position%22%3A%7B%22pageIndex%22%3A7%2C%22rects%22%3A%5B%5B25.5%2C175.948%2C277.4969999999999%2C185.08700000000002%5D%2C%5B25.5%2C164.40800000000002%2C277.497%2C173.54700000000003%5D%2C%5B25.5%2C152.86800000000002%2C277.4969999999999%2C162.00700000000003%5D%2C%5B25.5%2C141.32800000000003%2C249.11099999999993%2C150.46700000000004%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FYE5C3UKL%22%5D%2C%22locator%22%3A%228%22%7D%7D\">“The integration of Transformers in VLA systems drives unified modeling of vision, language, and action within single frameworks, moving beyond modular pipelines to capture intricate interdependencies in embodied intelligence.”</span> <span class=\"citation\" data-citation=\"%7B%22citationItems%22%3A%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FYE5C3UKL%22%5D%2C%22locator%22%3A%228%22%7D%5D%2C%22properties%22%3A%7B%7D%7D\">(<span class=\"citation-item\">Zhang 等, 2025, p. 8</span>)</span></p>\n<p>Dita, Diffusion Transformer Policy - Scaling attention-based architectures</p>\n<p>M-DiT: token-space alignment</p>\n<p>Force-VLA: Force sensing as a first-class modality + Force-aware MoE</p>\n<p>Diffusion-VLA, CogACT: diffusion policy + explicit reasoning</p>\n<p>PERIA, pi0: repurposing image editing models for zero-shot manipulation</p>\n<p>(3) Application Optimization and Deployment in Diffusion-Based VLA - efficiency, adaptability, robustness</p>\n<p>EFFICIENT</p>\n<p>TinyVLA, SmolVLA: lightweight design</p>\n<p>VQ-VLA: vector-quantized action tokenizers</p>\n<p>ADAPTABILITY</p>\n<p>DexVLG - large-scale curated datasets</p>\n<p>AC-DiT: mobility-to-body conditioning to unify perception and actuation</p>\n<p>ARCHITECTURAL</p>\n<p>MinD, TriVLA - for interpretability</p>\n<p>RUNTIME ROBUSTNESS</p>\n<p>BYOVLA - dynamically editing irrelevant visual regions</p>\n<p>DreamVLA - self-reflective, error-aware</p>\n<p>FOUNDATION MODELS</p>\n<p>FP - 3D policy model pre-trained on 60,000 trajectories</p>\n<p>GR00T N1: multi-modal transformer into a humanoid foundation system</p>\n<p>FINE-TUNING AND GENERALIZATION</p>\n<p>ObjectVLA, SwitchVLA: open-world object manipulation and execution-aware task switching</p>\n<p>LangToMo, Evo-0: novel intermediate representations</p>\n<p></p>\n<p>limitations: Temporal coherence, computationally expensive, safety-critical reliability, diluting modality-specific strengths</p>\n<p></p>\n<p>3. Reinforcement-based Fine-Tune Models in VLA</p>\n<p><img alt=\"\" width=\"1454\" height=\"682\" data-attachment-key=\"XGJCNE43\"></p>\n<p>(1) Reinforcement-based Fine-Tune Strategies in VLA</p>\n<p>Earlier Methods 0 large-scale human video datasets or manipulation datasets + reward strategies</p>\n<p>Language + images -&gt; reward proxies and cross-modal state language representation</p>\n<p>reward function or loss function design - learning from human demonstrations - SafeVLA</p>\n<p>NaVILA - single-stage RL policy fine-tuning</p>\n<p>MoRE - multiple low-rank adaptive modules as distinct experts</p>\n<p>LeVERB - proposing a hierarchical VLA framework for whole-body control (humanoid)</p>\n<p>AutoVLA (Autonomous Driving) - autoregressive generation model equipped with reasoning and action capabilities</p>\n<p>4. Other advanced research</p>\n<p>(1) Hybrid Architectures and Multi-Paradigm Integration</p>\n<p>HybridVLA - diffusion-based continuous trajectory generation + autoregressive token-level reasoning</p>\n<p>Fast-in-Slow - low-latency execution module within a slower yet cognitively richer VLM backbone</p>\n<p>RationalVLA - learnable latent embeddings</p>\n<p>(2) Advanced Multi-Modal Fusion and Spatial Understanding - Feature concatenation to modeling geometry, affordances, spatial constraints</p>\n<p>CLIPort - pick and place heatmap</p>\n<p>VoxPoser - composable 3D value map guided by LLM</p>\n<p>3D-VLA - integrate autoregressive language modeling with diffusion-based action prediction</p>\n<p>Multi-view Perception: RoboUniView, BridgeVLA, ReKep, RoboPoint, GeoManip</p>\n<p></p>\n<p>(3) Specialized Domain Adaptations and Applications</p>\n<p>Safety-critical (autonomous driving):</p>\n<p>CoVLA - large-scale VLA dataset tailored for this domain</p>\n<p>UI: ShowUI</p>\n<p>Humanoid:</p>\n<p>LeVERB - hierarchical architecture where vl policy learns latent action vocabularies from kinematic demonstrations</p>\n<p>Robot Orchestra:</p>\n<p>AutoRT - strategic planning to VLMs</p>\n<p>MoManipVLA - waypoint-based trajectory generation and dual-layer motion optimization</p>\n<p>CubeRobot - dual-loop VisionCoT and Memory Stream to Rubik’s Cube solving</p>\n<p></p>\n<p>(4) FM and Large-Scale Training</p>\n<p>Datasets：DROID, General Flow Framework, ViSA-Flow</p>\n<p>Finetuning strategy:[226]</p>\n<p>Chain of thought reasoning into embedded policy learning: [227]</p>\n<p></p>\n<p>(4) Efficiency, Safety, Human-Robot Collaboration</p>\n<p>Efficiency - RTC (real-time chunking), EdgeVLA, DeeR-VLA(early exit)</p>\n<p>Knowledge Integrity &nbsp;- CEEDVLA, RoboMamba,ReVLA</p>\n<p>Safety Robustness - SAFE (internal VLA feature representations), DyWA</p>\n<p>Human-Robot Collaboration</p>\n<p><img alt=\"\" width=\"1046\" height=\"1057\" data-attachment-key=\"U5XFJUZ2\"></p>\n<p>DATASETS AND BENCHMARKS</p>\n<p><img alt=\"\" width=\"506\" height=\"685\" data-attachment-key=\"PRBL7Z6C\"></p>\n<p>Real-world Datasets and Benchmarks for Embodied Robotics - MIME, RoboNet, MT-Opt / BridgeData, RT- 1, Bc-z, RoboHive, RH20T</p>\n<p>OXE - 22 robot datasets among 21 institutions covering 527 skills and 160,226 tasks</p>\n<p>Simulation Datasets and Benchmarks for Embodied Robotics</p>\n<p>Benchmarks: Meta-world, RLBench, RoboGen, VirtualHome, Relay Policy Learning</p>\n<p>Datasets: ROBOTURK(6-DoF simulated dataset), iGibson0.5, VIMA, CALVIN, LOTA-Bench</p>\n<p></p>\n<p>SIMULATORS</p>\n<p>THOR: photo-realistic 3D indoor scenes</p>\n<p>Habitat: scalable simulation platforms</p>\n<p>ALFRED: long-horizon, compositional tasks with non-reversible state changes</p>\n<p>MuJoCo: open-source physics engine</p>\n<p>Isaac Gym</p>\n<p></p>\n<h2>🤔 Personal Summary</h2>\n<h3>💭 Thought Inspiration</h3>\n<blockquote>\n<p>Tips: What aspects did you question, how do you think it can be improved?</p>\n</blockquote>\n<p></p>\n<h3>📜 Conclusion</h3>\n<blockquote>\n<p>Tips: What was done, what problem was solved, innovations and shortcomings?</p>\n</blockquote>\n<p></p>\n</div>",
+      "tags": [],
+      "dateModified": "2026-06-06T02:19:40Z",
+      "parentItem": "YE5C3UKL",
+      "contentHash": "c4bc9a795435e7adc59caac99ecb237eae19df1fb15651613e995b402cc7a398",
+      "displayHtml": "<div data-citation-items=\"%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FYE5C3UKL%22%5D%2C%22itemData%22%3A%7B%22id%22%3A%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FYE5C3UKL%22%2C%22type%22%3A%22article%22%2C%22abstract%22%3A%22The%20emergence%20of%20Vision%20Language%20Action%20(VLA)%20models%20marks%20a%20paradigm%20shift%20from%20traditional%20policy-based%20control%20to%20generalized%20robotics%2C%20reframing%20Vision%20Language%20Models%20(VLMs)%20from%20passive%20sequence%20generators%20into%20active%20agents%20for%20manipulation%20and%20decision-making%20in%20complex%2C%20dynamic%20environments.%20This%20survey%20delves%20into%20advanced%20VLA%20methods%2C%20aiming%20to%20provide%20a%20clear%20taxonomy%20and%20a%20systematic%2C%20comprehensive%20review%20of%20existing%20research.%20It%20presents%20a%20comprehensive%20analysis%20of%20VLA%20applications%20across%20different%20scenarios%20and%20classifies%20VLA%20approaches%20into%20several%20paradigms%3A%20autoregression-based%2C%20diffusion-based%2C%20reinforcement-based%2C%20hybrid%2C%20and%20specialized%20methods%3B%20while%20examining%20their%20motivations%2C%20core%20strategies%2C%20and%20implementations%20in%20detail.%20In%20addition%2C%20foundational%20datasets%2C%20benchmarks%2C%20and%20simulation%20platforms%20are%20introduced.%20Building%20on%20the%20current%20VLA%20landscape%2C%20the%20review%20further%20proposes%20perspectives%20on%20key%20challenges%20and%20future%20directions%20to%20advance%20research%20in%20VLA%20models%20and%20generalizable%20robotics.%20By%20synthesizing%20insights%20from%20over%20three%20hundred%20recent%20studies%2C%20this%20survey%20maps%20the%20contours%20of%20this%20rapidly%20evolving%20field%20and%20highlights%20the%20opportunities%20and%20challenges%20that%20will%20shape%20the%20development%20of%20scalable%2C%20general-purpose%20VLA%20methods.%22%2C%22DOI%22%3A%2210.48550%2FARXIV.2509.19012%22%2C%22language%22%3A%22en%22%2C%22license%22%3A%22arXiv.org%20perpetual%2C%20non-exclusive%20license%22%2C%22note%22%3A%22version%3A%203%22%2C%22publisher%22%3A%22arXiv%22%2C%22source%22%3A%22DOI.org%20(Datacite)%22%2C%22title%22%3A%22Pure%20Vision%20Language%20Action%20(VLA)%20Models%3A%20A%20Comprehensive%20Survey%22%2C%22title-short%22%3A%22Pure%20Vision%20Language%20Action%20(VLA)%20Models%22%2C%22URL%22%3A%22https%3A%2F%2Farxiv.org%2Fabs%2F2509.19012%22%2C%22author%22%3A%5B%7B%22family%22%3A%22Zhang%22%2C%22given%22%3A%22Dapeng%22%7D%2C%7B%22family%22%3A%22Sun%22%2C%22given%22%3A%22Jing%22%7D%2C%7B%22family%22%3A%22Hu%22%2C%22given%22%3A%22Chenghui%22%7D%2C%7B%22family%22%3A%22Wu%22%2C%22given%22%3A%22Xiaoyan%22%7D%2C%7B%22family%22%3A%22Yuan%22%2C%22given%22%3A%22Zhenlong%22%7D%2C%7B%22family%22%3A%22Zhou%22%2C%22given%22%3A%22Rui%22%7D%2C%7B%22family%22%3A%22Shen%22%2C%22given%22%3A%22Fei%22%7D%2C%7B%22family%22%3A%22Zhou%22%2C%22given%22%3A%22Qingguo%22%7D%5D%2C%22accessed%22%3A%7B%22date-parts%22%3A%5B%5B%222026%22%2C5%2C25%5D%5D%7D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222025%22%5D%5D%7D%7D%7D%5D\" data-schema-version=\"9\"><h1><span style=\"color: rgb(25, 60, 71);\"><span style=\"background-color: rgb(238, 249, 253);\">Pure Vision Language Action (VLA) Models: A Comprehensive Survey</span></span></h1>\n<h2>⚙️ Metadata</h2>\n<ul>\n<li>\n<strong>Item Type:</strong> preprint\n</li>\n<li>\n<strong>Author:</strong> [[Dapeng Zhang]], [[Jing Sun]], [[Chenghui Hu]], [[Xiaoyan Wu]], [[Zhenlong Yuan]], [[Rui Zhou]], [[Fei Shen]], [[Qingguo Zhou]]\n</li>\n<li>\n<strong>Date Added:</strong> 2026/5/25 18:10:07\n</li>\n<li>\n<strong>DOI: </strong><a href=\"https://doi.org/10.48550/ARXIV.2509.19012\" rel=\"noopener noreferrer nofollow\">10.48550/ARXIV.2509.19012</a>\n</li>\n<li>\n<strong>Cite key:</strong>\n</li>\n<li>\n<strong>Journal:</strong>\n</li>\n<li>\n<strong>Journal Tags:</strong>\n</li>\n<li>\n<strong>Publication Date: </strong>2025\n</li>\n<li>\n<strong>Tags:</strong> #Artificial Intelligence (cs.AI), #FOS: Computer and information sciences, #Robotics (cs.RO), #zotero\n</li>\n<li>\n<strong>PDF Attachments: </strong><a href=\"zotero://open-pdf/library/items/UM4PWMKS\" rel=\"noopener noreferrer nofollow\">Zhang 等 - 2025 - Pure Vision Language Action (VLA) Models A Comprehensive Survey.pdf</a>\n</li>\n<li>\n<strong>Related Items: </strong><span style=\"color: gray;\">无相关条目</span>\n</li>\n</ul>\n<h2>📜 Abstract</h2>\n<p>The emergence of Vision Language Action (VLA) models marks a paradigm shift from traditional policy-based control to generalized robotics, reframing Vision Language Models (VLMs) from passive sequence generators into active agents for manipulation and decision-making in complex, dynamic environments. This survey delves into advanced VLA methods, aiming to provide a clear taxonomy and a systematic, comprehensive review of existing research. It presents a comprehensive analysis of VLA applications across different scenarios and classifies VLA approaches into several paradigms: autoregression-based, diffusion-based, reinforcement-based, hybrid, and specialized methods; while examining their motivations, core strategies, and implementations in detail. In addition, foundational datasets, benchmarks, and simulation platforms are introduced. Building on the current VLA landscape, the review further proposes perspectives on key challenges and future directions to advance research in VLA models and generalizable robotics. By synthesizing insights from over three hundred recent studies, this survey maps the contours of this rapidly evolving field and highlights the opportunities and challenges that will shape the development of scalable, general-purpose VLA methods.</p>\n<h2>📚 Zotero links</h2>\n<ul>\n<li>\n<a href=\"zotero://select/items/1_YE5C3UKL\" rel=\"noopener noreferrer nofollow\">Local library</a>\n</li>\n</ul>\n<h1>Notes</h1>\n<p>GENERAL OVERVIEW:</p>\n<p><img alt=\"\" width=\"617\" height=\"664\" data-attachment-key=\"5R39FFH3\" src=\"assets/note-images/5R39FFH3/image.png\"></p>\n<p>BACKGROUND:</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">significant advance toward general-purpose embodied intelligence</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">Traditional Robotics: isolated perception pipeline, hand-engineered strategies and task-specific reinforcement learning</p>\n<ol>\n<li>\n<p>early LLM / VLM FM</p>\n<p>CV : CNN, ViT (Self-attention)</p>\n<p>NLP: Large-scale pretraining - BERT, GPT, T5, GPT-4</p>\n<p>RL: Policy Optimization and Sequential Decision-making - DQN, PPO to Decision Transformer</p>\n<p>VLM: dual-stream or single-stream transformer alignment -&gt; contrast learning (CLIP) -&gt; Instruction-tuned, dialogue-centric multimodal models (BLIP-2, Flamingo. LLaVA)</p>\n</li>\n<li>\n<p>development of VLA - unifying visual perception, language understanding and executable control within a single framework</p>\n<p></p>\n<p>(1) Encode images and instructions as prefix or context tokens</p>\n<p>(2) Robot states and sensory feedback as state tokens</p>\n<p>(3) Autoregressive generation of action tokens as control sequences</p>\n<p></p>\n<p>Data: Datasets + Simulators - OXE, BridgeData | THOR, Habitat, Mujuco, Isaac Gym, CARLA - mitigate the scarcity of real-world robot data and accelerate training</p>\n<p></p>\n<p></p>\n</li>\n<li>\nFuture - Generality\n</li>\n</ol>\n<p></p>\n<p>VLA MODELS</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\"><img alt=\"\" width=\"1483\" height=\"923\" data-attachment-key=\"VRI79X5U\" src=\"assets/note-images/VRI79X5U/image.png\"></p>\n<ol>\n<li>\n<p>Autoregression-based</p>\n<p>generate action step by step, conditioned on prior context, perceptual inputs and task prompts</p>\n<p>(1) Autoregressive Generalist VLA Methodologies - Tokenizing Multimodal Inputs</p>\n<p><img alt=\"\" width=\"1670\" height=\"570\" data-attachment-key=\"LRSG2X49\" src=\"assets/note-images/LRSG2X49/image.png\"><img alt=\"\" width=\"1691\" height=\"553\" data-attachment-key=\"KWV97F7D\" src=\"assets/note-images/KWV97F7D/image.png\"><img alt=\"\" width=\"1660\" height=\"614\" data-attachment-key=\"HUL2RZ7A\" src=\"assets/note-images/HUL2RZ7A/image.png\"><img alt=\"\" width=\"1649\" height=\"467\" data-attachment-key=\"NTF8HQZG\" src=\"assets/note-images/NTF8HQZG/image.png\"></p>\n</li>\n</ol>\n<p>Gato, &nbsp;RT-1 / RT-2 (Scaling), PaLM-E</p>\n<p>Octo, &nbsp;LEO, &nbsp;UniAct - aligning visual-linguistic modalities with action abstractions for cross-platform compatibility</p>\n<p>NORA and RoboMM - combine action generation with language reasoning and adaptive prompting</p>\n<p>(2) Autoregressive Reasoning and Semantic Planning with LLMs</p>\n<p>Inner Monologue - self-talk-style reasoning + pre-action planning and post-action reflection -&gt; Prompt-to-walk, RoboFlamingo, RoboMM</p>\n<p>Hierarchical frameworks - InSpire, CoT-VLA</p>\n<p>Platformization and Systematization - Gemini Robotics, Agentic Robot, pi0.5, fast</p>\n<p>(3) Autoregressive Trajectory Generation and Visual Alignment Modeling</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">LATTE : Language directly to trajectories</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">VIMA, InstructRL: joint tokenization of language, vision, and action</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">MOO, GPT-Based Methods - Pretrained VL backbones for open-world generalization and lightweight trajectory generation</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">GR-1/2 - Video generation pretraining to robotics</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">CronusVLA, WorldVLA - temporal consistency</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">TrackVLA, Uni-Navid - long-horizon prompting</p>\n<p>(4) Structural Optimization and Efficient Inference Mechanisms in Autoregressive VLA</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">HiP - tasks into symbolic planning, video prediction and action execution</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">DeeR-VLA: dynamic and adaptive inference</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">FAST: token-efficient</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">OTTER, ChatVLA: Integrate efficiency with multi-modal reasoning</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\"></p>\n<p>2. Diffusion-based</p>\n<p><img alt=\"\" width=\"1414\" height=\"331\" data-attachment-key=\"MPKH2JI2\" src=\"assets/note-images/MPKH2JI2/image.png\"><img alt=\"\" width=\"1426\" height=\"298\" data-attachment-key=\"EKF9BC2R\" src=\"assets/note-images/EKF9BC2R/image.png\"><img alt=\"\" width=\"1428\" height=\"694\" data-attachment-key=\"9G2LI9KY\" src=\"assets/note-images/9G2LI9KY/image.png\"></p>\n<p>(1) DIffusion Generalist VLA Methodologies</p>\n<p>Enabling multiple valid trajectories from identical observations</p>\n<p>Geometry-aware methods : SE(3) constraints into diffusion</p>\n<p>Reinterpreting policy learning as video generation</p>\n<p><span class=\"highlight\" data-annotation=\"%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FUM4PWMKS%22%2C%22pageLabel%22%3A%227%22%2C%22position%22%3A%7B%22pageIndex%22%3A6%2C%22rects%22%3A%5B%5B303.74999999999994%2C116.92600000000071%2C541.497%2C126.06500000000071%5D%2C%5B289.49999999999994%2C105.3860000000007%2C541.4969999999998%2C114.52500000000072%5D%2C%5B289.49999999999994%2C93.84600000000071%2C541.4970000000001%2C102.98500000000072%5D%2C%5B289.49999999999994%2C82.30600000000072%2C541.4970000000001%2C91.44500000000073%5D%2C%5B289.49999999999994%2C70.76600000000073%2C541.4970000000001%2C79.90500000000074%5D%2C%5B289.49999999999994%2C59.22600000000073%2C541.497%2C68.36500000000073%5D%2C%5B289.49999999999994%2C47.68600000000073%2C541.497%2C56.825000000000735%5D%2C%5B289.49999999999994%2C36.14600000000073%2C475.8425000000001%2C45.285000000000736%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FYE5C3UKL%22%5D%2C%22locator%22%3A%227%22%7D%7D\">“These advances mark three transitions: deterministic to probabilistic generation, Euclidean to geometry-aware representations, and supervised to self-supervised paradigms. This reframing as generative modeling enables multi-task generalization, few-shot adaptation, and natural language interfaces…. However, temporal coherence remains fragile under dynamic environmental shifts.”</span> <span class=\"citation\" data-citation=\"%7B%22citationItems%22%3A%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FYE5C3UKL%22%5D%2C%22locator%22%3A%227%22%7D%5D%2C%22properties%22%3A%7B%7D%7D\">(<span class=\"citation-item\">Zhang 等, 2025, p. 7</span>)</span></p>\n<p>(2) Diffusion-Based Multimodal Architectural Fusion</p>\n<p><span class=\"highlight\" data-annotation=\"%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FUM4PWMKS%22%2C%22pageLabel%22%3A%228%22%2C%22position%22%3A%7B%22pageIndex%22%3A7%2C%22rects%22%3A%5B%5B25.5%2C175.948%2C277.4969999999999%2C185.08700000000002%5D%2C%5B25.5%2C164.40800000000002%2C277.497%2C173.54700000000003%5D%2C%5B25.5%2C152.86800000000002%2C277.4969999999999%2C162.00700000000003%5D%2C%5B25.5%2C141.32800000000003%2C249.11099999999993%2C150.46700000000004%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FYE5C3UKL%22%5D%2C%22locator%22%3A%228%22%7D%7D\">“The integration of Transformers in VLA systems drives unified modeling of vision, language, and action within single frameworks, moving beyond modular pipelines to capture intricate interdependencies in embodied intelligence.”</span> <span class=\"citation\" data-citation=\"%7B%22citationItems%22%3A%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fusers%2F19922179%2Fitems%2FYE5C3UKL%22%5D%2C%22locator%22%3A%228%22%7D%5D%2C%22properties%22%3A%7B%7D%7D\">(<span class=\"citation-item\">Zhang 等, 2025, p. 8</span>)</span></p>\n<p>Dita, Diffusion Transformer Policy - Scaling attention-based architectures</p>\n<p>M-DiT: token-space alignment</p>\n<p>Force-VLA: Force sensing as a first-class modality + Force-aware MoE</p>\n<p>Diffusion-VLA, CogACT: diffusion policy + explicit reasoning</p>\n<p>PERIA, pi0: repurposing image editing models for zero-shot manipulation</p>\n<p>(3) Application Optimization and Deployment in Diffusion-Based VLA - efficiency, adaptability, robustness</p>\n<p>EFFICIENT</p>\n<p>TinyVLA, SmolVLA: lightweight design</p>\n<p>VQ-VLA: vector-quantized action tokenizers</p>\n<p>ADAPTABILITY</p>\n<p>DexVLG - large-scale curated datasets</p>\n<p>AC-DiT: mobility-to-body conditioning to unify perception and actuation</p>\n<p>ARCHITECTURAL</p>\n<p>MinD, TriVLA - for interpretability</p>\n<p>RUNTIME ROBUSTNESS</p>\n<p>BYOVLA - dynamically editing irrelevant visual regions</p>\n<p>DreamVLA - self-reflective, error-aware</p>\n<p>FOUNDATION MODELS</p>\n<p>FP - 3D policy model pre-trained on 60,000 trajectories</p>\n<p>GR00T N1: multi-modal transformer into a humanoid foundation system</p>\n<p>FINE-TUNING AND GENERALIZATION</p>\n<p>ObjectVLA, SwitchVLA: open-world object manipulation and execution-aware task switching</p>\n<p>LangToMo, Evo-0: novel intermediate representations</p>\n<p></p>\n<p>limitations: Temporal coherence, computationally expensive, safety-critical reliability, diluting modality-specific strengths</p>\n<p></p>\n<p>3. Reinforcement-based Fine-Tune Models in VLA</p>\n<p><img alt=\"\" width=\"1454\" height=\"682\" data-attachment-key=\"XGJCNE43\" src=\"assets/note-images/XGJCNE43/image.png\"></p>\n<p>(1) Reinforcement-based Fine-Tune Strategies in VLA</p>\n<p>Earlier Methods 0 large-scale human video datasets or manipulation datasets + reward strategies</p>\n<p>Language + images -&gt; reward proxies and cross-modal state language representation</p>\n<p>reward function or loss function design - learning from human demonstrations - SafeVLA</p>\n<p>NaVILA - single-stage RL policy fine-tuning</p>\n<p>MoRE - multiple low-rank adaptive modules as distinct experts</p>\n<p>LeVERB - proposing a hierarchical VLA framework for whole-body control (humanoid)</p>\n<p>AutoVLA (Autonomous Driving) - autoregressive generation model equipped with reasoning and action capabilities</p>\n<p>4. Other advanced research</p>\n<p>(1) Hybrid Architectures and Multi-Paradigm Integration</p>\n<p>HybridVLA - diffusion-based continuous trajectory generation + autoregressive token-level reasoning</p>\n<p>Fast-in-Slow - low-latency execution module within a slower yet cognitively richer VLM backbone</p>\n<p>RationalVLA - learnable latent embeddings</p>\n<p>(2) Advanced Multi-Modal Fusion and Spatial Understanding - Feature concatenation to modeling geometry, affordances, spatial constraints</p>\n<p>CLIPort - pick and place heatmap</p>\n<p>VoxPoser - composable 3D value map guided by LLM</p>\n<p>3D-VLA - integrate autoregressive language modeling with diffusion-based action prediction</p>\n<p>Multi-view Perception: RoboUniView, BridgeVLA, ReKep, RoboPoint, GeoManip</p>\n<p></p>\n<p>(3) Specialized Domain Adaptations and Applications</p>\n<p>Safety-critical (autonomous driving):</p>\n<p>CoVLA - large-scale VLA dataset tailored for this domain</p>\n<p>UI: ShowUI</p>\n<p>Humanoid:</p>\n<p>LeVERB - hierarchical architecture where vl policy learns latent action vocabularies from kinematic demonstrations</p>\n<p>Robot Orchestra:</p>\n<p>AutoRT - strategic planning to VLMs</p>\n<p>MoManipVLA - waypoint-based trajectory generation and dual-layer motion optimization</p>\n<p>CubeRobot - dual-loop VisionCoT and Memory Stream to Rubik’s Cube solving</p>\n<p></p>\n<p>(4) FM and Large-Scale Training</p>\n<p>Datasets：DROID, General Flow Framework, ViSA-Flow</p>\n<p>Finetuning strategy:[226]</p>\n<p>Chain of thought reasoning into embedded policy learning: [227]</p>\n<p></p>\n<p>(4) Efficiency, Safety, Human-Robot Collaboration</p>\n<p>Efficiency - RTC (real-time chunking), EdgeVLA, DeeR-VLA(early exit)</p>\n<p>Knowledge Integrity &nbsp;- CEEDVLA, RoboMamba,ReVLA</p>\n<p>Safety Robustness - SAFE (internal VLA feature representations), DyWA</p>\n<p>Human-Robot Collaboration</p>\n<p><img alt=\"\" width=\"1046\" height=\"1057\" data-attachment-key=\"U5XFJUZ2\" src=\"assets/note-images/U5XFJUZ2/image.png\"></p>\n<p>DATASETS AND BENCHMARKS</p>\n<p><img alt=\"\" width=\"506\" height=\"685\" data-attachment-key=\"PRBL7Z6C\" src=\"assets/note-images/PRBL7Z6C/image.png\"></p>\n<p>Real-world Datasets and Benchmarks for Embodied Robotics - MIME, RoboNet, MT-Opt / BridgeData, RT- 1, Bc-z, RoboHive, RH20T</p>\n<p>OXE - 22 robot datasets among 21 institutions covering 527 skills and 160,226 tasks</p>\n<p>Simulation Datasets and Benchmarks for Embodied Robotics</p>\n<p>Benchmarks: Meta-world, RLBench, RoboGen, VirtualHome, Relay Policy Learning</p>\n<p>Datasets: ROBOTURK(6-DoF simulated dataset), iGibson0.5, VIMA, CALVIN, LOTA-Bench</p>\n<p></p>\n<p>SIMULATORS</p>\n<p>THOR: photo-realistic 3D indoor scenes</p>\n<p>Habitat: scalable simulation platforms</p>\n<p>ALFRED: long-horizon, compositional tasks with non-reversible state changes</p>\n<p>MuJoCo: open-source physics engine</p>\n<p>Isaac Gym</p>\n<p></p>\n<h2>🤔 Personal Summary</h2>\n<h3>💭 Thought Inspiration</h3>\n<blockquote>\n<p>Tips: What aspects did you question, how do you think it can be improved?</p>\n</blockquote>\n<p></p>\n<h3>📜 Conclusion</h3>\n<blockquote>\n<p>Tips: What was done, what problem was solved, innovations and shortcomings?</p>\n</blockquote>\n<p></p>\n</div>"
+    }
+  ],
+  "exportedAt": "2026-10-29T07:58:15+00:00"
+}

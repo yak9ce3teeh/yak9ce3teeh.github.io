@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "fileId": 23,
+  "pdf": {
+    "url": "../Humanoid%20Robotics/Behavior%20Foundation%20Models%20and%20Zero-Shot%20RL/2026%20-%20scalebfm.pdf",
+    "sha256": "28532a410a13ffdd2810f445234c9ff05c765434b04dfb3cf0e52e2aef57c813"
+  },
+  "zotero": {
+    "libraryType": "user",
+    "libraryId": 1,
+    "parentKey": "9HPZPLK4"
+  },
+  "mapping": {
+    "status": "unmatched",
+    "basis": "none"
+  },
+  "annotations": [],
+  "notes": [
+    {
+      "id": "DYZEQ6TX",
+      "key": "DYZEQ6TX",
+      "version": 78,
+      "html": "",
+      "tags": [],
+      "dateModified": "2026-10-02T10:46:26Z",
+      "parentItem": "9HPZPLK4",
+      "contentHash": "c275a7593429639563e6599ebbac55412bdb7d6a76ca799cf4eada09fa80f18f",
+      "displayHtml": ""
+    }
+  ],
+  "exportedAt": "2026-10-29T07:58:15+00:00"
+}

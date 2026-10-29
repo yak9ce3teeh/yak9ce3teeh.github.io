@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "fileId": 45,
+  "pdf": {
+    "url": "../World%20Models%20and%20World%20Action%20Models/Surveys%20and%20Foundation%20Models/2026%20-%20WM%20Cosmos3.pdf",
+    "sha256": "710be95169d6cdbb463936a0d200b2ea4130d127e2ca34abc0ce45e2b1e9c737"
+  },
+  "zotero": {
+    "libraryType": "user",
+    "libraryId": 1,
+    "parentKey": "MMWG5JDW",
+    "attachmentKey": "IB3QMCE8"
+  },
+  "mapping": {
+    "status": "matched",
+    "basis": "sha256"
+  },
+  "annotations": [
+    {
+      "id": "SUYNQM7A",
+      "key": "SUYNQM7A",
+      "version": 0,
+      "type": "highlight",
+      "text": "ego and effector poses are represented as pseudo-actions derived from state differences",
+      "comment": "",
+      "color": "#2ea8e5",
+      "pageLabel": "8",
+      "sortIndex": "00007|001645|00534",
+      "position": {
+        "pageIndex": 7,
+        "rects": [
+          [
+            462.906,
+            296.143,
+            533.102,
+            307.839
+          ],
+          [
+            62.362,
+            282.395,
+            363.658,
+            294.091
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-07-15T07:49:25Z",
+      "readOnly": false,
+      "parentItem": "IB3QMCE8",
+      "contentHash": "e6fc526c21261e4da2a82606718239e4e1a76ecef800a9cdfb87f642c390a4b6",
+      "raw": null
+    }
+  ],
+  "notes": [
+    {
+      "id": "B7333ENX",
+      "key": "B7333ENX",
+      "version": 0,
+      "html": "<div data-schema-version=\"9\"><p>COSMOS 3 Pretraining</p>\n<p>Architecture:</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\"><img alt=\"\" width=\"1089\" height=\"683\" data-attachment-key=\"R4LDTGNU\"></p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">Actions: Ego poses + Effector poses + Grasp states - domain-specific projection sharing MoT backbone</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">Tokens: AR + DM</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\"><img alt=\"\" width=\"1176\" height=\"414\" data-attachment-key=\"G4DK3HI3\"></p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\"><img alt=\"\" width=\"1121\" height=\"865\" data-attachment-key=\"IA7UDZFK\"></p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">Language, Text-to-Image, Text-to-Video, Image-to-Video/Video-to-Video, Video Transfer, Action.</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\"></p>\n<p>Data</p>\n</div>",
+      "tags": [],
+      "dateModified": "2026-07-17T03:14:41Z",
+      "parentItem": "MMWG5JDW",
+      "contentHash": "96efbb245156f75fd42c02d9a1787117c7e9934ac4e493ba09b57ddbf79e5a86",
+      "displayHtml": "<div data-schema-version=\"9\"><p>COSMOS 3 Pretraining</p>\n<p>Architecture:</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\"><img alt=\"\" width=\"1089\" height=\"683\" data-attachment-key=\"R4LDTGNU\" src=\"assets/note-images/R4LDTGNU/image.png\"></p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">Actions: Ego poses + Effector poses + Grasp states - domain-specific projection sharing MoT backbone</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">Tokens: AR + DM</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\"><img alt=\"\" width=\"1176\" height=\"414\" data-attachment-key=\"G4DK3HI3\" src=\"assets/note-images/G4DK3HI3/image.png\"></p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\"><img alt=\"\" width=\"1121\" height=\"865\" data-attachment-key=\"IA7UDZFK\" src=\"assets/note-images/IA7UDZFK/image.png\"></p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">Language, Text-to-Image, Text-to-Video, Image-to-Video/Video-to-Video, Video Transfer, Action.</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\"></p>\n<p>Data</p>\n</div>"
+    }
+  ],
+  "exportedAt": "2026-10-29T07:58:15+00:00"
+}

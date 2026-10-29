@@ -1,0 +1,481 @@
+{
+  "schemaVersion": 1,
+  "fileId": 64,
+  "pdf": {
+    "url": "../Agent%20Foundations/Reasoning%20and%20Chain%20of%20Thought/2023%20-%20ReAct.pdf",
+    "sha256": "f285b0971ae4a790e402fb93966bed3adde2cf0a04977d08b2b40d6ab0cace69"
+  },
+  "zotero": {
+    "libraryType": "user",
+    "libraryId": 1,
+    "parentKey": "5VQTJKNM",
+    "attachmentKey": "P4XWSINH"
+  },
+  "mapping": {
+    "status": "matched",
+    "basis": "sha256"
+  },
+  "annotations": [
+    {
+      "id": "D7F4DG3U",
+      "key": "D7F4DG3U",
+      "version": 0,
+      "type": "highlight",
+      "text": "A) ReAct → CoT-SC: when ReAct fails to return an answer within given steps, back off to CoT-SC. We set 7 and 5 steps for HotpotQA and FEVER respectively as we find more steps will not improve ReAct performance3. B) CoT-SC → ReAct: when the majority answer among n CoT-SC samples occurs less than n/2 times (i.e. internal knowledge might not support the task confidently), back off to ReAct.",
+      "comment": "",
+      "color": "#2ea8e5",
+      "pageLabel": "5",
+      "sortIndex": "00004|001994|00502",
+      "position": {
+        "pageIndex": 4,
+        "rects": [
+          [
+            384.023,
+            300.817,
+            504.0,
+            309.773
+          ],
+          [
+            108.0,
+            289.859,
+            504.171,
+            298.497
+          ],
+          [
+            108.0,
+            278.9,
+            505.743,
+            289.207
+          ],
+          [
+            108.0,
+            267.941,
+            504.249,
+            276.897
+          ],
+          [
+            108.0,
+            256.982,
+            465.573,
+            265.62
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-05T02:59:56Z",
+      "readOnly": false,
+      "parentItem": "P4XWSINH",
+      "contentHash": "3bf60bd9ae3340e8a0e6b81a11eb9b5eb6a97f7d316656f7f871b54238068632",
+      "raw": null
+    },
+    {
+      "id": "YPCTBNUS",
+      "key": "YPCTBNUS",
+      "version": 0,
+      "type": "highlight",
+      "text": "(3) finish[answer],",
+      "comment": "",
+      "color": "#ff6666",
+      "pageLabel": "4",
+      "sortIndex": "00003|002656|00545",
+      "position": {
+        "pageIndex": 3,
+        "rects": [
+          [
+            382.592,
+            237.386,
+            477.372,
+            246.024
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-05T02:57:52Z",
+      "readOnly": false,
+      "parentItem": "P4XWSINH",
+      "contentHash": "178df3e18a27c6dc40ccbd3fe90d27fcd419e3e52024db7d4e9ffdb9448755d2",
+      "raw": null
+    },
+    {
+      "id": "FRUEEAWE",
+      "key": "FRUEEAWE",
+      "version": 0,
+      "type": "highlight",
+      "text": "(2) lookup[string]",
+      "comment": "",
+      "color": "#ff6666",
+      "pageLabel": "4",
+      "sortIndex": "00003|002539|00535",
+      "position": {
+        "pageIndex": 3,
+        "rects": [
+          [
+            210.884,
+            248.345,
+            303.413,
+            256.983
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-05T02:57:48Z",
+      "readOnly": false,
+      "parentItem": "P4XWSINH",
+      "contentHash": "71b32e78a53376f30f707a69eafa38fc91ad569bed21f7c3187c3547c17f0fb2",
+      "raw": null
+    },
+    {
+      "id": "UPR9BISV",
+      "key": "UPR9BISV",
+      "version": 0,
+      "type": "highlight",
+      "text": "(1) search[entity],",
+      "comment": "",
+      "color": "#ff6666",
+      "pageLabel": "4",
+      "sortIndex": "00003|002384|00513",
+      "position": {
+        "pageIndex": 3,
+        "rects": [
+          [
+            243.844,
+            270.263,
+            339.497,
+            278.901
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-05T02:57:45Z",
+      "readOnly": false,
+      "parentItem": "P4XWSINH",
+      "contentHash": "0d990794c8fe2c29c468906fbdbd8e354964ae3643e1fe2a26b27bc54f88fd99",
+      "raw": null
+    },
+    {
+      "id": "HXHT6225",
+      "key": "HXHT6225",
+      "version": 0,
+      "type": "highlight",
+      "text": "HotPotQA",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "4",
+      "sortIndex": "00003|001751|00400",
+      "position": {
+        "pageIndex": 3,
+        "rects": [
+          [
+            487.03,
+            382.633,
+            505.656,
+            391.659
+          ],
+          [
+            108.0,
+            371.674,
+            136.23,
+            380.312
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-05T02:57:40Z",
+      "readOnly": false,
+      "parentItem": "P4XWSINH",
+      "contentHash": "761f3c4aaf9863dd41bd3fb39f6dbd4eb72ff05591335f55ec142fafd310abb3",
+      "raw": null
+    },
+    {
+      "id": "FJSCXIVK",
+      "key": "FJSCXIVK",
+      "version": 0,
+      "type": "highlight",
+      "text": "FEVER",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "4",
+      "sortIndex": "00003|001871|00422",
+      "position": {
+        "pageIndex": 3,
+        "rects": [
+          [
+            303.717,
+            360.715,
+            335.9,
+            369.353
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-05T02:57:35Z",
+      "readOnly": false,
+      "parentItem": "P4XWSINH",
+      "contentHash": "0d1de794d1e78e3225739d76dc43df48b7f8c7453a0f5bc79af7ee09581291dc",
+      "raw": null
+    },
+    {
+      "id": "6DFT279P",
+      "key": "6DFT279P",
+      "version": 0,
+      "type": "highlight",
+      "text": "with a Wikipedia API,",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "4",
+      "sortIndex": "00003|001511|00331",
+      "position": {
+        "pageIndex": 3,
+        "rects": [
+          [
+            335.752,
+            451.532,
+            429.17,
+            460.17
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-05T02:55:15Z",
+      "readOnly": false,
+      "parentItem": "P4XWSINH",
+      "contentHash": "9435dcb0db0e1ca2f442287488bb97ca3aa07512c5bfead6db7bdad6e8feb1f4",
+      "raw": null
+    },
+    {
+      "id": "VJZWR9V2",
+      "key": "VJZWR9V2",
+      "version": 0,
+      "type": "highlight",
+      "text": "few-shot in-context examples",
+      "comment": "",
+      "color": "#ff6666",
+      "pageLabel": "3",
+      "sortIndex": "00002|003782|00637",
+      "position": {
+        "pageIndex": 2,
+        "rects": [
+          [
+            427.192,
+            144.193,
+            504.0,
+            154.501
+          ],
+          [
+            108.0,
+            133.234,
+            145.254,
+            141.872
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-05T02:53:51Z",
+      "readOnly": false,
+      "parentItem": "P4XWSINH",
+      "contentHash": "1cfe24a885a46a34cc56bc71f620c191f4a9ae963c0a93ed6fe6455059041d4b",
+      "raw": null
+    },
+    {
+      "id": "6ZWM8W5P",
+      "key": "6ZWM8W5P",
+      "version": 0,
+      "type": "highlight",
+      "text": "where a frozen large language model, PaLM-540B (Chowdhery et al., 2022)1",
+      "comment": "",
+      "color": "#ff6666",
+      "pageLabel": "3",
+      "sortIndex": "00002|003705|00628",
+      "position": {
+        "pageIndex": 2,
+        "rects": [
+          [
+            442.569,
+            155.152,
+            503.997,
+            163.79
+          ],
+          [
+            108.0,
+            144.193,
+            352.191,
+            154.501
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-05T02:53:38Z",
+      "readOnly": false,
+      "parentItem": "P4XWSINH",
+      "contentHash": "fee98d8a170e0ce2412a2b3bb8091ddfb2ce032c19267e40f9fb92c637b7451f",
+      "raw": null
+    },
+    {
+      "id": "3GQYDDDF",
+      "key": "3GQYDDDF",
+      "version": 0,
+      "type": "highlight",
+      "text": "At time step t, an agent receives an observation ot ∈ O from the environment and takes an action at ∈ A following some policy π(at|ct), where ct = (o1, a1, · · · , ot−1, at−1, ot) is the context to the agent.",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "3",
+      "sortIndex": "00002|002326|00438",
+      "position": {
+        "pageIndex": 2,
+        "rects": [
+          [
+            472.434,
+            365.999,
+            503.997,
+            374.637
+          ],
+          [
+            108.0,
+            354.344,
+            503.997,
+            363.996
+          ],
+          [
+            108.0,
+            343.385,
+            505.745,
+            353.037
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-05T02:48:06Z",
+      "readOnly": false,
+      "parentItem": "P4XWSINH",
+      "contentHash": "8162d58ca3398dc3671f1dbf30ddfc42ed80d184207ad6b772de23c233e1861e",
+      "raw": null
+    },
+    {
+      "id": "V9SACQLY",
+      "key": "V9SACQLY",
+      "version": 0,
+      "type": "highlight",
+      "text": "maintaining a working memory",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "1",
+      "sortIndex": "00000|001977|00566",
+      "position": {
+        "pageIndex": 0,
+        "rects": [
+          [
+            281.095,
+            216.794,
+            407.879,
+            225.432
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-05T02:07:16Z",
+      "readOnly": false,
+      "parentItem": "P4XWSINH",
+      "contentHash": "9835c08c45d8ba72387ba06a9ea53bfba92407bf74ad0b9b488c05d8a3efbe76",
+      "raw": null
+    },
+    {
+      "id": "PEB5ZMKE",
+      "key": "PEB5ZMKE",
+      "version": 0,
+      "type": "highlight",
+      "text": "actions allow it to interface with and gather additional information from external sources such as knowledge bases or environments",
+      "comment": "",
+      "color": "#ff6666",
+      "pageLabel": "1",
+      "sortIndex": "00000|000835|00342",
+      "position": {
+        "pageIndex": 0,
+        "rects": [
+          [
+            213.585,
+            440.72,
+            468.135,
+            449.358
+          ],
+          [
+            143.865,
+            429.761,
+            406.407,
+            438.399
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-05T02:04:49Z",
+      "readOnly": false,
+      "parentItem": "P4XWSINH",
+      "contentHash": "3cd2d11bb3b8fa2c1d69818cd5c205014ecd46134403e794950d0da231a5b5e5",
+      "raw": null
+    },
+    {
+      "id": "S9GG9ZH4",
+      "key": "S9GG9ZH4",
+      "version": 0,
+      "type": "highlight",
+      "text": "reasoning traces help the model induce, track, and update action plans as well as handle exceptions",
+      "comment": "",
+      "color": "#ff6666",
+      "pageLabel": "1",
+      "sortIndex": "00000|000745|00320",
+      "position": {
+        "pageIndex": 0,
+        "rects": [
+          [
+            429.865,
+            462.638,
+            468.134,
+            471.276
+          ],
+          [
+            143.865,
+            451.679,
+            468.13,
+            460.317
+          ],
+          [
+            143.865,
+            440.72,
+            185.476,
+            449.358
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-05T02:04:40Z",
+      "readOnly": false,
+      "parentItem": "P4XWSINH",
+      "contentHash": "9f1b5fcc8d72b99d6ff15783d9b4e0f517c261d7c4f2bac567f86196d0691782",
+      "raw": null
+    }
+  ],
+  "notes": [
+    {
+      "id": "DLQACVNK",
+      "key": "DLQACVNK",
+      "version": 0,
+      "html": "<div data-schema-version=\"9\"><h1><span style=\"color: rgb(25, 60, 71);\"><span style=\"background-color: rgb(238, 249, 253);\">ReAct: Synergizing Reasoning and Acting in Language Models</span></span></h1>\n<h2>⚙️ Metadata</h2>\n<ul>\n<li>\n<strong>Item Type:</strong> preprint\n</li>\n<li>\n<strong>Author:</strong> [[Shunyu Yao]], [[Jeffrey Zhao]], [[Dian Yu]], [[Nan Du]], [[Izhak Shafran]], [[Karthik Narasimhan]], [[Yuan Cao]]\n</li>\n<li>\n<strong>Date Added:</strong> 2026/4/5 09:54:26\n</li>\n<li>\n<strong>DOI: </strong><a href=\"https://doi.org/10.48550/arXiv.2210.03629\" rel=\"noopener noreferrer nofollow\">10.48550/arXiv.2210.03629</a>\n</li>\n<li>\n<strong>Cite key:</strong>\n</li>\n<li>\n<strong>Journal:</strong>\n</li>\n<li>\n<strong>Journal Tags:</strong>\n</li>\n<li>\n<strong>Publication Date: </strong>2023-03-10\n</li>\n<li>\n<strong>Tags:</strong> #Computer Science - Artificial Intelligence, #Computer Science - Computation and Language, #Computer Science - Machine Learning, #zotero\n</li>\n<li>\n<strong>PDF Attachments: </strong><a href=\"zotero://open-pdf/library/items/P4XWSINH\" rel=\"noopener noreferrer nofollow\">Yao 等 - 2023 - ReAct Synergizing Reasoning and Acting in Language Models.pdf</a>\n</li>\n<li>\n<strong>Related Items: </strong><span style=\"color: gray;\">无相关条目</span>\n</li>\n</ul>\n<h2>📜 Abstract</h2>\n<p> While large language models (LLMs) have demonstrated impressive performance across tasks in language understanding and interactive decision making, their abilities for reasoning (e.g. chain-of-thought prompting) and acting (e.g. action plan generation) have primarily been studied as separate topics. In this paper, we explore the use of LLMs to generate both reasoning traces and task-speciﬁc actions in an interleaved manner, allowing for greater synergy between the two: reasoning traces help the model induce, track, and update action plans as well as handle exceptions, while actions allow it to interface with and gather additional information from external sources such as knowledge bases or environments. We apply our approach, named ReAct, to a diverse set of language and decision making tasks and demonstrate its effectiveness over state-of-the-art baselines in addition to improved human interpretability and trustworthiness. Concretely, on question answering (HotpotQA) and fact veriﬁcation (Fever), ReAct overcomes prevalent issues of hallucination and error propagation in chain-of-thought reasoning by interacting with a simple Wikipedia API, and generating human-like task-solving trajectories that are more interpretable than baselines without reasoning traces. Furthermore, on two interactive decision making benchmarks (ALFWorld and WebShop), ReAct outperforms imitation and reinforcement learning methods by an absolute success rate of 34% and 10% respectively, while being prompted with only one or two in-context examples.</p>\n<h2>📚 Zotero links</h2>\n<ul>\n<li>\n<a href=\"zotero://select/items/1_5VQTJKNM\" rel=\"noopener noreferrer nofollow\">Local library</a>\n</li>\n</ul>\n<h1>Notes</h1>\n<h2>🤔 Personal Summary</h2>\n<p>1.Tags: Interleaved reasoning traces and task-specific actions</p>\n<p><img alt=\"\" width=\"1161\" height=\"1108\" data-attachment-key=\"LTZNKC5H\"></p>\n<h3>💭 Thought Inspiration</h3>\n<blockquote>\n<p>Tips: What aspects did you question, how do you think it can be improved?</p>\n</blockquote>\n<p></p>\n<h3>📜 Conclusion</h3>\n<blockquote>\n<p>Tips: What was done, what problem was solved, innovations and shortcomings?</p>\n</blockquote>\n<p></p>\n</div>",
+      "tags": [],
+      "dateModified": "2026-04-05T02:18:33Z",
+      "parentItem": "5VQTJKNM",
+      "contentHash": "f653fb7fc30d497e8807504d094e296dc64adb73114f90f7bd8c05441e2ba98e",
+      "displayHtml": "<div data-schema-version=\"9\"><h1><span style=\"color: rgb(25, 60, 71);\"><span style=\"background-color: rgb(238, 249, 253);\">ReAct: Synergizing Reasoning and Acting in Language Models</span></span></h1>\n<h2>⚙️ Metadata</h2>\n<ul>\n<li>\n<strong>Item Type:</strong> preprint\n</li>\n<li>\n<strong>Author:</strong> [[Shunyu Yao]], [[Jeffrey Zhao]], [[Dian Yu]], [[Nan Du]], [[Izhak Shafran]], [[Karthik Narasimhan]], [[Yuan Cao]]\n</li>\n<li>\n<strong>Date Added:</strong> 2026/4/5 09:54:26\n</li>\n<li>\n<strong>DOI: </strong><a href=\"https://doi.org/10.48550/arXiv.2210.03629\" rel=\"noopener noreferrer nofollow\">10.48550/arXiv.2210.03629</a>\n</li>\n<li>\n<strong>Cite key:</strong>\n</li>\n<li>\n<strong>Journal:</strong>\n</li>\n<li>\n<strong>Journal Tags:</strong>\n</li>\n<li>\n<strong>Publication Date: </strong>2023-03-10\n</li>\n<li>\n<strong>Tags:</strong> #Computer Science - Artificial Intelligence, #Computer Science - Computation and Language, #Computer Science - Machine Learning, #zotero\n</li>\n<li>\n<strong>PDF Attachments: </strong><a href=\"zotero://open-pdf/library/items/P4XWSINH\" rel=\"noopener noreferrer nofollow\">Yao 等 - 2023 - ReAct Synergizing Reasoning and Acting in Language Models.pdf</a>\n</li>\n<li>\n<strong>Related Items: </strong><span style=\"color: gray;\">无相关条目</span>\n</li>\n</ul>\n<h2>📜 Abstract</h2>\n<p> While large language models (LLMs) have demonstrated impressive performance across tasks in language understanding and interactive decision making, their abilities for reasoning (e.g. chain-of-thought prompting) and acting (e.g. action plan generation) have primarily been studied as separate topics. In this paper, we explore the use of LLMs to generate both reasoning traces and task-speciﬁc actions in an interleaved manner, allowing for greater synergy between the two: reasoning traces help the model induce, track, and update action plans as well as handle exceptions, while actions allow it to interface with and gather additional information from external sources such as knowledge bases or environments. We apply our approach, named ReAct, to a diverse set of language and decision making tasks and demonstrate its effectiveness over state-of-the-art baselines in addition to improved human interpretability and trustworthiness. Concretely, on question answering (HotpotQA) and fact veriﬁcation (Fever), ReAct overcomes prevalent issues of hallucination and error propagation in chain-of-thought reasoning by interacting with a simple Wikipedia API, and generating human-like task-solving trajectories that are more interpretable than baselines without reasoning traces. Furthermore, on two interactive decision making benchmarks (ALFWorld and WebShop), ReAct outperforms imitation and reinforcement learning methods by an absolute success rate of 34% and 10% respectively, while being prompted with only one or two in-context examples.</p>\n<h2>📚 Zotero links</h2>\n<ul>\n<li>\n<a href=\"zotero://select/items/1_5VQTJKNM\" rel=\"noopener noreferrer nofollow\">Local library</a>\n</li>\n</ul>\n<h1>Notes</h1>\n<h2>🤔 Personal Summary</h2>\n<p>1.Tags: Interleaved reasoning traces and task-specific actions</p>\n<p><img alt=\"\" width=\"1161\" height=\"1108\" data-attachment-key=\"LTZNKC5H\" src=\"assets/note-images/LTZNKC5H/image.png\"></p>\n<h3>💭 Thought Inspiration</h3>\n<blockquote>\n<p>Tips: What aspects did you question, how do you think it can be improved?</p>\n</blockquote>\n<p></p>\n<h3>📜 Conclusion</h3>\n<blockquote>\n<p>Tips: What was done, what problem was solved, innovations and shortcomings?</p>\n</blockquote>\n<p></p>\n</div>"
+    },
+    {
+      "id": "EZNSDBS4",
+      "key": "EZNSDBS4",
+      "version": 0,
+      "html": "Comment: v3 is the ICLR camera ready version with some typos fixed. Project site with code: https://react-lm.github.io",
+      "tags": [],
+      "dateModified": "2026-04-05T01:54:12Z",
+      "parentItem": "5VQTJKNM",
+      "contentHash": "de1e3386a57d7a66e992d4f1d44f5fb42f0d00a050423e54b0a5d0f48988d4bf",
+      "displayHtml": "Comment: v3 is the ICLR camera ready version with some typos fixed. Project site with code: https://react-lm.github.io"
+    }
+  ],
+  "exportedAt": "2026-10-29T07:58:15+00:00"
+}

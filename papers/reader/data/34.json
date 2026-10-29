@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "fileId": 34,
+  "pdf": {
+    "url": "../Robotic%20Manipulation/VLA%20and%20Contact-Rich%20Manipulation/2025%20-%20ForceVLA.pdf",
+    "sha256": "1327311916c59b84a866b2b2fd5849bd27bbbf68ccebe302560abfcb9e52e3ca"
+  },
+  "zotero": {
+    "libraryType": "user",
+    "libraryId": 1,
+    "parentKey": "MN5EXD9L",
+    "attachmentKey": "U8Z3YANA"
+  },
+  "mapping": {
+    "status": "matched",
+    "basis": "sha256"
+  },
+  "annotations": [],
+  "notes": [
+    {
+      "id": "L5IQPELB",
+      "key": "L5IQPELB",
+      "version": 12,
+      "html": "",
+      "tags": [],
+      "dateModified": "2026-10-01T01:47:07Z",
+      "parentItem": "MN5EXD9L",
+      "contentHash": "c275a7593429639563e6599ebbac55412bdb7d6a76ca799cf4eada09fa80f18f",
+      "displayHtml": ""
+    },
+    {
+      "id": "G3LULF73",
+      "key": "G3LULF73",
+      "version": 0,
+      "html": "<div data-schema-version=\"9\"><p>Key: FVLMoE, ForceVLA-Data</p>\n<p><img alt=\"\" width=\"1089\" height=\"720\" data-attachment-key=\"BANEF3HR\"></p>\n<p><img alt=\"\" width=\"531\" height=\"529\" data-attachment-key=\"FWH23X6B\"></p>\n<p><img alt=\"\" width=\"1260\" height=\"540\" data-attachment-key=\"I6QC2V37\"></p>\n<p>Formulation: base and hand visual inputs + proprioceptive state + external force-torque readings</p>\n</div>",
+      "tags": [],
+      "dateModified": "2026-06-04T00:56:14Z",
+      "parentItem": "MN5EXD9L",
+      "contentHash": "da4e656b719af0a577aa064c47acedeecf995f99ef4e661eb7a0992eca9d84d2",
+      "displayHtml": "<div data-schema-version=\"9\"><p>Key: FVLMoE, ForceVLA-Data</p>\n<p><img alt=\"\" width=\"1089\" height=\"720\" data-attachment-key=\"BANEF3HR\" src=\"assets/note-images/BANEF3HR/image.png\"></p>\n<p><img alt=\"\" width=\"531\" height=\"529\" data-attachment-key=\"FWH23X6B\" src=\"assets/note-images/FWH23X6B/image.png\"></p>\n<p><img alt=\"\" width=\"1260\" height=\"540\" data-attachment-key=\"I6QC2V37\" src=\"assets/note-images/I6QC2V37/image.png\"></p>\n<p>Formulation: base and hand visual inputs + proprioceptive state + external force-torque readings</p>\n</div>"
+    }
+  ],
+  "exportedAt": "2026-10-29T07:58:15+00:00"
+}

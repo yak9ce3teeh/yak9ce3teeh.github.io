@@ -1,0 +1,186 @@
+{
+  "schemaVersion": 1,
+  "fileId": 59,
+  "pdf": {
+    "url": "../Agent%20Foundations/Reasoning%20and%20Chain%20of%20Thought/2024%20-%20LLaVACoT.pdf",
+    "sha256": "a090e8d2b079f7e061ca77d8bb7b7df72d6eac1781086cf55dafdcc5181d6173"
+  },
+  "zotero": {
+    "libraryType": "user",
+    "libraryId": 1,
+    "parentKey": "4JL5QE63",
+    "attachmentKey": "Y5LN7HX8"
+  },
+  "mapping": {
+    "status": "matched",
+    "basis": "sha256"
+  },
+  "annotations": [
+    {
+      "id": "N4LMTYZH",
+      "key": "N4LMTYZH",
+      "version": 0,
+      "type": "highlight",
+      "text": "Conclusion Stage.",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "4",
+      "sortIndex": "00003|000719|00335",
+      "position": {
+        "pageIndex": 3,
+        "rects": [
+          [
+            66.968,
+            447.115,
+            143.032,
+            456.141
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-05T08:16:31Z",
+      "readOnly": false,
+      "parentItem": "Y5LN7HX8",
+      "contentHash": "a57d7377f7a06a3952ed183a7d701fb6b5fc100f652368f786d329b8b1589bb1",
+      "raw": null
+    },
+    {
+      "id": "SCF5DW89",
+      "key": "SCF5DW89",
+      "version": 0,
+      "type": "highlight",
+      "text": "Reasoning Stage.",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "4",
+      "sortIndex": "00003|000604|00299",
+      "position": {
+        "pageIndex": 3,
+        "rects": [
+          [
+            66.968,
+            482.981,
+            142.355,
+            492.007
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-05T08:16:28Z",
+      "readOnly": false,
+      "parentItem": "Y5LN7HX8",
+      "contentHash": "df3beb099b7cd4082ea9ac2ce5df7f44150a9a32d532ccf33922d519c81e6021",
+      "raw": null
+    },
+    {
+      "id": "LKV8UD92",
+      "key": "LKV8UD92",
+      "version": 0,
+      "type": "highlight",
+      "text": "Caption Stage.",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "4",
+      "sortIndex": "00003|000483|00264",
+      "position": {
+        "pageIndex": 3,
+        "rects": [
+          [
+            66.968,
+            518.847,
+            130.081,
+            527.873
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-05T08:16:21Z",
+      "readOnly": false,
+      "parentItem": "Y5LN7HX8",
+      "contentHash": "a9e1776655f5b234cff53c03d0463ab141026a2c9bf26d243bcd6c798ecdf194",
+      "raw": null
+    },
+    {
+      "id": "MRT6Z7JP",
+      "key": "MRT6Z7JP",
+      "version": 0,
+      "type": "highlight",
+      "text": "Summary Stage",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "4",
+      "sortIndex": "00003|000329|00216",
+      "position": {
+        "pageIndex": 3,
+        "rects": [
+          [
+            66.968,
+            566.667,
+            134.813,
+            575.693
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-05T08:16:17Z",
+      "readOnly": false,
+      "parentItem": "Y5LN7HX8",
+      "contentHash": "54d2ce03941072a8915879a8445fba4417e968e53438e656dcb37c06f2957bd5",
+      "raw": null
+    },
+    {
+      "id": "2ZIH8XML",
+      "key": "2ZIH8XML",
+      "version": 0,
+      "type": "highlight",
+      "text": "independently engages in sequential stages of summarization, visual interpretation, logical reasoning, and conclusion generation.",
+      "comment": "",
+      "color": "#ff6666",
+      "pageLabel": "1",
+      "sortIndex": "00000|000802|00382",
+      "position": {
+        "pageIndex": 0,
+        "rects": [
+          [
+            204.137,
+            412.608,
+            294.747,
+            421.196
+          ],
+          [
+            58.5,
+            400.653,
+            294.753,
+            409.241
+          ],
+          [
+            58.5,
+            388.698,
+            245.209,
+            397.286
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-04-05T08:05:54Z",
+      "readOnly": false,
+      "parentItem": "Y5LN7HX8",
+      "contentHash": "33bca4eab67edc959e0d2c26682a85e019e43ce887b326699dd4429d06a88a75",
+      "raw": null
+    }
+  ],
+  "notes": [
+    {
+      "id": "KUPCI6IC",
+      "key": "KUPCI6IC",
+      "version": 0,
+      "html": "Comment: 17 pages, ICCV 2025",
+      "tags": [],
+      "dateModified": "2026-04-05T07:51:54Z",
+      "parentItem": "4JL5QE63",
+      "contentHash": "69328d96d558d6108c9ccd4fac80da0fe5829e34290e23fb9a67667abac12b38",
+      "displayHtml": "Comment: 17 pages, ICCV 2025"
+    }
+  ],
+  "exportedAt": "2026-10-29T07:58:15+00:00"
+}

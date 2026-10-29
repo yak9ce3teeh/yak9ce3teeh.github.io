@@ -1,0 +1,1242 @@
+{
+  "schemaVersion": 1,
+  "fileId": 48,
+  "pdf": {
+    "url": "../Robotic%20Manipulation/Open-World%20Mobile%20Manipulation/2025%20-%20BUMBLE.pdf",
+    "sha256": "6d6399c4207990c3744159509e7e983f9bbcd374f2bc26ee7fa95097980a1140"
+  },
+  "zotero": {
+    "libraryType": "user",
+    "libraryId": 1,
+    "parentKey": "DL8VRYIH",
+    "attachmentKey": "GVM6CX83"
+  },
+  "mapping": {
+    "status": "matched",
+    "basis": "sha256"
+  },
+  "annotations": [
+    {
+      "id": "UDYRUUJJ",
+      "key": "UDYRUUJJ",
+      "version": 0,
+      "type": "highlight",
+      "text": "i) the predicted subtask, ii) memory of previously made mistakes in predicting the skill parameters, and iii) an SoM-based visual grounding of the possible skill parameters with explanations of each marker",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "13340",
+      "sortIndex": "00003|004394|00498",
+      "position": {
+        "pageIndex": 3,
+        "rects": [
+          [
+            491.132,
+            296.867,
+            558.001,
+            305.773
+          ],
+          [
+            313.2,
+            284.912,
+            558.001,
+            293.819
+          ],
+          [
+            313.2,
+            272.956,
+            558.001,
+            281.863
+          ],
+          [
+            313.2,
+            261.001,
+            558.001,
+            269.908
+          ],
+          [
+            313.2,
+            249.046,
+            376.93,
+            257.953
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-14T04:39:49Z",
+      "readOnly": false,
+      "parentItem": "GVM6CX83",
+      "contentHash": "bf0ace8692feb54fbce504fd7f8a13c0f4f0144a90a07ee92fe40d63de58e49a",
+      "raw": null
+    },
+    {
+      "id": "484ACMW6",
+      "key": "484ACMW6",
+      "version": 0,
+      "type": "highlight",
+      "text": "BUMBLE predicts the parameters needed to correctly instantiate the skill and generate a sequence of low-level robot commands",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "13340",
+      "sortIndex": "00003|004155|00438",
+      "position": {
+        "pageIndex": 3,
+        "rects": [
+          [
+            418.664,
+            356.642,
+            558.0,
+            365.549
+          ],
+          [
+            313.2,
+            344.687,
+            558.001,
+            353.594
+          ],
+          [
+            313.2,
+            332.731,
+            478.41,
+            341.638
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-14T04:35:04Z",
+      "readOnly": false,
+      "parentItem": "GVM6CX83",
+      "contentHash": "83d52c5f8bf9d27a7bd3619541c32f4eb4e5998364726a40a77eae7cb13cbdf6",
+      "raw": null
+    },
+    {
+      "id": "NCHP7NFB",
+      "key": "NCHP7NFB",
+      "version": 0,
+      "type": "highlight",
+      "text": "foreground objects are marked with IDs in the input RGB image, and their distances to the robot, calculated using the perception system",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "13340",
+      "sortIndex": "00003|003578|00282",
+      "position": {
+        "pageIndex": 3,
+        "rects": [
+          [
+            513.887,
+            500.373,
+            558.001,
+            509.279
+          ],
+          [
+            313.2,
+            488.418,
+            558.0,
+            497.324
+          ],
+          [
+            313.2,
+            476.463,
+            558.001,
+            485.369
+          ],
+          [
+            313.2,
+            464.507,
+            340.876,
+            473.413
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-14T04:23:56Z",
+      "readOnly": false,
+      "parentItem": "GVM6CX83",
+      "contentHash": "fc222fc6bc4f97ac428ad32f1f9074bce4cad8d653ce8aa06106570c98c2e43b",
+      "raw": null
+    },
+    {
+      "id": "Q6MTM4MA",
+      "key": "Q6MTM4MA",
+      "version": 0,
+      "type": "highlight",
+      "text": "Naively prompting the VLM with depth images or point clouds does not yield desirable results",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "13340",
+      "sortIndex": "00003|003395|00246",
+      "position": {
+        "pageIndex": 3,
+        "rects": [
+          [
+            388.826,
+            548.194,
+            558.001,
+            557.1
+          ],
+          [
+            313.2,
+            536.239,
+            558.001,
+            545.145
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-14T04:23:16Z",
+      "readOnly": false,
+      "parentItem": "GVM6CX83",
+      "contentHash": "9310726a496e33b1ea218f7a07290c3cdeb4e48d2ea1d14e1ffe36133b651ce1",
+      "raw": null
+    },
+    {
+      "id": "CTGHIEEV",
+      "key": "CTGHIEEV",
+      "version": 0,
+      "type": "highlight",
+      "text": "and instantiates the corresponding motor skill execution.",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "13340",
+      "sortIndex": "00003|002818|00091",
+      "position": {
+        "pageIndex": 3,
+        "rects": [
+          [
+            474.43,
+            691.925,
+            557.996,
+            700.831
+          ],
+          [
+            313.2,
+            679.97,
+            462.549,
+            688.876
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-14T04:18:44Z",
+      "readOnly": false,
+      "parentItem": "GVM6CX83",
+      "contentHash": "721f3e93b53c2c9cbc35b352b626e357af74f7e8b9f5ac3980f2f2e6e18ea0f3",
+      "raw": null
+    },
+    {
+      "id": "AWZ36RP2",
+      "key": "AWZ36RP2",
+      "version": 0,
+      "type": "highlight",
+      "text": "Then, BUMBLE queries the VLM to estimate the best skill parameters",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "13340",
+      "sortIndex": "00003|002748|00079",
+      "position": {
+        "pageIndex": 3,
+        "rects": [
+          [
+            490.033,
+            715.835,
+            557.998,
+            724.901
+          ],
+          [
+            313.2,
+            703.88,
+            558.002,
+            712.946
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-14T04:18:39Z",
+      "readOnly": false,
+      "parentItem": "GVM6CX83",
+      "contentHash": "95888f2bfd5042752d2c0e9bd499656bd6353658a1dec7285a359ebdf826a60b",
+      "raw": null
+    },
+    {
+      "id": "EA8A87MD",
+      "key": "EA8A87MD",
+      "version": 0,
+      "type": "highlight",
+      "text": "and for selecting the skill to handle it",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "13340",
+      "sortIndex": "00003|002684|00055",
+      "position": {
+        "pageIndex": 3,
+        "rects": [
+          [
+            474.992,
+            727.791,
+            558.001,
+            736.697
+          ],
+          [
+            313.2,
+            715.835,
+            381.535,
+            724.901
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-14T04:18:23Z",
+      "readOnly": false,
+      "parentItem": "GVM6CX83",
+      "contentHash": "96d463cd9f8f612f9166713d0fcbe5165c6fe113f62780fccc0bdd906a219652",
+      "raw": null
+    },
+    {
+      "id": "EKHTB4XU",
+      "key": "EKHTB4XU",
+      "version": 0,
+      "type": "highlight",
+      "text": "irst, BUMBLE exploits a VLM to perform perceptual and memory-based reasoning for predicting the next subtask to solve",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "13340",
+      "sortIndex": "00003|002544|00700",
+      "position": {
+        "pageIndex": 3,
+        "rects": [
+          [
+            220.705,
+            82.211,
+            298.801,
+            91.117
+          ],
+          [
+            54.0,
+            70.256,
+            298.801,
+            79.162
+          ],
+          [
+            54.0,
+            58.301,
+            257.775,
+            67.367
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-14T04:18:15Z",
+      "readOnly": false,
+      "parentItem": "GVM6CX83",
+      "contentHash": "174ccab9ab8108a6f50916ad38cc43b382d91cf659fbfef00e8157cf6bb7336f",
+      "raw": null
+    },
+    {
+      "id": "N8GKHMII",
+      "key": "N8GKHMII",
+      "version": 0,
+      "type": "highlight",
+      "text": "a longterm memory of prediction failures collected previously",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "13340",
+      "sortIndex": "00003|002094|00572",
+      "position": {
+        "pageIndex": 3,
+        "rects": [
+          [
+            270.298,
+            210.912,
+            298.8,
+            219.977
+          ],
+          [
+            54.0,
+            198.956,
+            296.957,
+            208.022
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-14T03:45:49Z",
+      "readOnly": false,
+      "parentItem": "GVM6CX83",
+      "contentHash": "ef355602bdc4f08b669b3bf5dcd7fe436a54cc8b2062675e57bb2d0bc7443ffc",
+      "raw": null
+    },
+    {
+      "id": "MHUYR3WQ",
+      "key": "MHUYR3WQ",
+      "version": 0,
+      "type": "highlight",
+      "text": "failing to consider object collisions with the environment",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "13340",
+      "sortIndex": "00003|001904|00524",
+      "position": {
+        "pageIndex": 3,
+        "rects": [
+          [
+            272.889,
+            258.733,
+            298.802,
+            267.639
+          ],
+          [
+            54.0,
+            246.777,
+            267.09,
+            255.683
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-14T03:44:41Z",
+      "readOnly": false,
+      "parentItem": "GVM6CX83",
+      "contentHash": "3f1dd34dfeb026a2de501553bc08ce7e288e7c34e7c83fd7f8cc8d1c54fb244d",
+      "raw": null
+    },
+    {
+      "id": "NPRXZGCB",
+      "key": "NPRXZGCB",
+      "version": 0,
+      "type": "highlight",
+      "text": "stores the scene image, subtask, skill name, parameter, and the systemdetected execution result (success/failure) at each prediction step for the current execution trial.",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "13340",
+      "sortIndex": "00003|001608|00464",
+      "position": {
+        "pageIndex": 3,
+        "rects": [
+          [
+            259.106,
+            330.361,
+            298.798,
+            339.427
+          ],
+          [
+            54.0,
+            318.406,
+            298.802,
+            327.313
+          ],
+          [
+            54.0,
+            306.451,
+            298.801,
+            315.358
+          ],
+          [
+            54.0,
+            294.496,
+            196.848,
+            303.403
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-14T03:44:28Z",
+      "readOnly": false,
+      "parentItem": "GVM6CX83",
+      "contentHash": "13c15a49e7741e69bba9dafa358b6057d7898b96af756a0f69c0b6584b955e89",
+      "raw": null
+    },
+    {
+      "id": "I6TPU488",
+      "key": "I6TPU488",
+      "version": 0,
+      "type": "highlight",
+      "text": "track its state-action history.",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "13340",
+      "sortIndex": "00003|001229|00369",
+      "position": {
+        "pageIndex": 3,
+        "rects": [
+          [
+            182.917,
+            414.048,
+            298.802,
+            422.955
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-14T03:41:43Z",
+      "readOnly": false,
+      "parentItem": "GVM6CX83",
+      "contentHash": "65864b8449d2f19b3a8363ff0865b156c06898f0aa6ed4934999e3a5e9400fbd",
+      "raw": null
+    },
+    {
+      "id": "ESBF42RF",
+      "key": "ESBF42RF",
+      "version": 0,
+      "type": "highlight",
+      "text": "building-specific fixtures",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "13339",
+      "sortIndex": "00002|004071|00629",
+      "position": {
+        "pageIndex": 2,
+        "rects": [
+          [
+            313.2,
+            153.94,
+            413.713,
+            162.846
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-14T03:36:51Z",
+      "readOnly": false,
+      "parentItem": "GVM6CX83",
+      "contentHash": "d548c1c34597f3b1ca0a7e4e1e7936e113ce062cbaff68860030fce3fad7547c",
+      "raw": null
+    },
+    {
+      "id": "CVSA7Z3X",
+      "key": "CVSA7Z3X",
+      "version": 0,
+      "type": "highlight",
+      "text": "more fine-grained behaviors",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "13339",
+      "sortIndex": "00002|003944|00593",
+      "position": {
+        "pageIndex": 2,
+        "rects": [
+          [
+            426.056,
+            189.806,
+            539.839,
+            198.712
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-14T03:34:45Z",
+      "readOnly": false,
+      "parentItem": "GVM6CX83",
+      "contentHash": "147f551afe415fa19183e285ad05ca912ae6d2478320fc122fc9520c3dab9ed8",
+      "raw": null
+    },
+    {
+      "id": "QV8VF4P5",
+      "key": "QV8VF4P5",
+      "version": 0,
+      "type": "highlight",
+      "text": "high-level abstract behaviors",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "13339",
+      "sortIndex": "00002|003888|00581",
+      "position": {
+        "pageIndex": 2,
+        "rects": [
+          [
+            398.908,
+            201.761,
+            517.045,
+            210.667
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-14T03:34:27Z",
+      "readOnly": false,
+      "parentItem": "GVM6CX83",
+      "contentHash": "062ff617e634d570081fc09c7f44a2de61a97c1ff543931ae870544e32015904",
+      "raw": null
+    },
+    {
+      "id": "DBG37GTC",
+      "key": "DBG37GTC",
+      "version": 0,
+      "type": "highlight",
+      "text": "by back-projecting depth images and determine the precise distance between the robot and the detected objects",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "13339",
+      "sortIndex": "00002|003535|00497",
+      "position": {
+        "pageIndex": 2,
+        "rects": [
+          [
+            482.823,
+            297.812,
+            558.001,
+            306.719
+          ],
+          [
+            313.2,
+            285.857,
+            558.001,
+            294.764
+          ],
+          [
+            313.2,
+            273.901,
+            460.627,
+            282.808
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-14T03:32:00Z",
+      "readOnly": false,
+      "parentItem": "GVM6CX83",
+      "contentHash": "958f7c2fa095aec5b6cde66be70c47d0cde64144057edca5f0acdcac6b0b98c6",
+      "raw": null
+    },
+    {
+      "id": "N3395F7S",
+      "key": "N3395F7S",
+      "version": 0,
+      "type": "highlight",
+      "text": "because segmentation models offer pixel-level accuracy",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "13339",
+      "sortIndex": "00002|003348|00449",
+      "position": {
+        "pageIndex": 2,
+        "rects": [
+          [
+            417.031,
+            333.677,
+            558.001,
+            342.584
+          ],
+          [
+            313.2,
+            321.722,
+            394.545,
+            330.629
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-14T03:29:05Z",
+      "readOnly": false,
+      "parentItem": "GVM6CX83",
+      "contentHash": "8d3ed5300fd219ac95724f01d4e747eb9e2fe5c3fd0181e33784a3182eda8185",
+      "raw": null
+    },
+    {
+      "id": "IDHC6GHM",
+      "key": "IDHC6GHM",
+      "version": 0,
+      "type": "highlight",
+      "text": "Grounded-SAM",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "13339",
+      "sortIndex": "00002|003216|00413",
+      "position": {
+        "pageIndex": 2,
+        "rects": [
+          [
+            493.254,
+            369.543,
+            558.001,
+            378.45
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-14T03:20:14Z",
+      "readOnly": false,
+      "parentItem": "GVM6CX83",
+      "contentHash": "91176427a8be93a79b4d0e99e26a7a13ff35b89468db38398a3c8645c0bbfa23",
+      "raw": null
+    },
+    {
+      "id": "FZRJNVI8",
+      "key": "FZRJNVI8",
+      "version": 0,
+      "type": "highlight",
+      "text": "a library of diverse skills",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "13339",
+      "sortIndex": "00002|002739|00688",
+      "position": {
+        "pageIndex": 2,
+        "rects": [
+          [
+            164.087,
+            94.166,
+            263.584,
+            103.072
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-14T03:16:14Z",
+      "readOnly": false,
+      "parentItem": "GVM6CX83",
+      "contentHash": "b031f4bf846daf016a3be667a8902ef9cb94d271516858bcab79af24d318e188",
+      "raw": null
+    },
+    {
+      "id": "BVWY4VVH",
+      "key": "BVWY4VVH",
+      "version": 0,
+      "type": "highlight",
+      "text": "interactive navigation",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "13339",
+      "sortIndex": "00002|001920|00472",
+      "position": {
+        "pageIndex": 2,
+        "rects": [
+          [
+            228.116,
+            310.715,
+            298.8,
+            319.781
+          ],
+          [
+            54.0,
+            298.76,
+            83.34,
+            307.826
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-14T03:09:23Z",
+      "readOnly": false,
+      "parentItem": "GVM6CX83",
+      "contentHash": "24516e85795fad51abf4bdbcf2d75c065d82cbe58bd47e0d5d5fef8fa9fa5452",
+      "raw": null
+    },
+    {
+      "id": "6IU3R4LE",
+      "key": "6IU3R4LE",
+      "version": 0,
+      "type": "highlight",
+      "text": "All aforementioned prior work in mobile manipulation assumes the navigation path is either obstacle-free or that obstacles can be navigated around.",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "13339",
+      "sortIndex": "00002|001791|00448",
+      "position": {
+        "pageIndex": 2,
+        "rects": [
+          [
+            63.963,
+            334.625,
+            298.802,
+            343.531
+          ],
+          [
+            54.0,
+            322.669,
+            298.801,
+            331.576
+          ],
+          [
+            54.0,
+            310.715,
+            207.345,
+            319.781
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-14T03:09:03Z",
+      "readOnly": false,
+      "parentItem": "GVM6CX83",
+      "contentHash": "d02cb10a7b2da78670a7d53152ff5f065d1cc2558bc0010e3591734eec3edd0d",
+      "raw": null
+    },
+    {
+      "id": "8U9DF36I",
+      "key": "8U9DF36I",
+      "version": 0,
+      "type": "highlight",
+      "text": "lack a diverse skill repertoire",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "13338",
+      "sortIndex": "00001|003966|00712",
+      "position": {
+        "pageIndex": 1,
+        "rects": [
+          [
+            475.959,
+            70.253,
+            558.001,
+            79.159
+          ],
+          [
+            313.2,
+            58.298,
+            351.925,
+            67.204
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-14T03:03:42Z",
+      "readOnly": false,
+      "parentItem": "GVM6CX83",
+      "contentHash": "737458dc5a45a8f497145ee1b0e4be1f27143e985b5d2942997d9a8f11a7b5d4",
+      "raw": null
+    },
+    {
+      "id": "8SGCLC77",
+      "key": "8SGCLC77",
+      "version": 0,
+      "type": "highlight",
+      "text": "perception system",
+      "comment": "",
+      "color": "#a28ae5",
+      "pageLabel": "13338",
+      "sortIndex": "00001|002023|00593",
+      "position": {
+        "pageIndex": 1,
+        "rects": [
+          [
+            110.485,
+            189.416,
+            189.1,
+            198.482
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-14T02:55:30Z",
+      "readOnly": false,
+      "parentItem": "GVM6CX83",
+      "contentHash": "ae35a0d37043a333d25a6012547db5cfaf44dacc376abc2e151403e4fe2ba3ba",
+      "raw": null
+    },
+    {
+      "id": "IIFKEZZR",
+      "key": "IIFKEZZR",
+      "version": 0,
+      "type": "highlight",
+      "text": "b) dual-layered memory: short-term memory [29] to maintain robot execution history, and longterm memory [30] to store valuable experience and concepts from past trials;",
+      "comment": "",
+      "color": "#2ea8e5",
+      "pageLabel": "13338",
+      "sortIndex": "00001|001634|00498",
+      "position": {
+        "pageIndex": 1,
+        "rects": [
+          [
+            142.079,
+            308.968,
+            298.796,
+            318.034
+          ],
+          [
+            53.999,
+            297.012,
+            298.797,
+            305.918
+          ],
+          [
+            54.0,
+            285.057,
+            298.801,
+            293.963
+          ],
+          [
+            54.0,
+            273.102,
+            120.869,
+            282.168
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-14T02:55:18Z",
+      "readOnly": false,
+      "parentItem": "GVM6CX83",
+      "contentHash": "0c851a533c7db133431eb45cd6d5315538d621ade8a50ea3a56297fd91ac43b7",
+      "raw": null
+    },
+    {
+      "id": "BULTJQ6K",
+      "key": "BULTJQ6K",
+      "version": 0,
+      "type": "highlight",
+      "text": "diverse skill library of parameterized skills",
+      "comment": "",
+      "color": "#ff6666",
+      "pageLabel": "13338",
+      "sortIndex": "00001|001702|00509",
+      "position": {
+        "pageIndex": 1,
+        "rects": [
+          [
+            143.664,
+            273.102,
+            298.804,
+            282.168
+          ],
+          [
+            54.0,
+            261.147,
+            75.041,
+            270.053
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-14T02:55:09Z",
+      "readOnly": false,
+      "parentItem": "GVM6CX83",
+      "contentHash": "1ebd87216bdd2ae110b6fc19df356bb7a5c656b22a2faf18523ea065138753a3",
+      "raw": null
+    },
+    {
+      "id": "WHMKMWXL",
+      "key": "WHMKMWXL",
+      "version": 0,
+      "type": "highlight",
+      "text": "b) dual-layered memory: short-term memory [29] to maintain robot execution history, and longterm memory [30] to store valuable experience and concepts from past trials;",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "13338",
+      "sortIndex": "00001|001634|00498",
+      "position": {
+        "pageIndex": 1,
+        "rects": [
+          [
+            142.079,
+            308.968,
+            298.796,
+            318.034
+          ],
+          [
+            53.999,
+            297.012,
+            298.797,
+            305.918
+          ],
+          [
+            54.0,
+            285.057,
+            298.801,
+            293.963
+          ],
+          [
+            54.0,
+            273.102,
+            120.869,
+            282.168
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-14T02:54:58Z",
+      "readOnly": false,
+      "parentItem": "GVM6CX83",
+      "contentHash": "45d2b976131e256a2e5ebecb0ded509953d1506e9d3fd969171100c96c327780",
+      "raw": null
+    },
+    {
+      "id": "XWVUH5LZ",
+      "key": "XWVUH5LZ",
+      "version": 0,
+      "type": "highlight",
+      "text": "a) a VLM serving as the central reasoning module connecting perception, memory, and skills;",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "13338",
+      "sortIndex": "00001|001488|00462",
+      "position": {
+        "pageIndex": 1,
+        "rects": [
+          [
+            226.382,
+            332.878,
+            298.799,
+            341.944
+          ],
+          [
+            54.0,
+            320.923,
+            298.801,
+            329.83
+          ],
+          [
+            54.0,
+            308.968,
+            137.138,
+            318.034
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-14T02:54:45Z",
+      "readOnly": false,
+      "parentItem": "GVM6CX83",
+      "contentHash": "38e8ab7a28ac5beb7b44d0e7eeaf7689306ab5ba121392c9d4e019e6510f4b9a",
+      "raw": null
+    },
+    {
+      "id": "Q44RU79G",
+      "key": "Q44RU79G",
+      "version": 0,
+      "type": "highlight",
+      "text": "unifying reasoning and acting through a VLM-based framework",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "13337",
+      "sortIndex": "00000|004054|00641",
+      "position": {
+        "pageIndex": 0,
+        "rects": [
+          [
+            524.238,
+            141.988,
+            558.002,
+            150.894
+          ],
+          [
+            313.2,
+            130.032,
+            533.653,
+            138.939
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-14T02:42:37Z",
+      "readOnly": false,
+      "parentItem": "GVM6CX83",
+      "contentHash": "2a53331c107ddae8c0ed7d44b272c016d5f079b501c474564d7d5bcc252065c5",
+      "raw": null
+    },
+    {
+      "id": "2CWATX4X",
+      "key": "2CWATX4X",
+      "version": 0,
+      "type": "highlight",
+      "text": "falling short in the precise geometric reasoning",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "13337",
+      "sortIndex": "00000|003450|00495",
+      "position": {
+        "pageIndex": 0,
+        "rects": [
+          [
+            405.583,
+            287.434,
+            558.001,
+            296.34
+          ],
+          [
+            313.2,
+            275.479,
+            351.935,
+            284.385
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-14T02:40:13Z",
+      "readOnly": false,
+      "parentItem": "GVM6CX83",
+      "contentHash": "322f6c547a033eb9b55c221efe1cac888210e301a0278be86d8b52a4c7fcf133",
+      "raw": null
+    },
+    {
+      "id": "YYCTCK37",
+      "key": "YYCTCK37",
+      "version": 0,
+      "type": "highlight",
+      "text": "confining their reasoning capabilities to a closed set of objects",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "13337",
+      "sortIndex": "00000|003224|00435",
+      "position": {
+        "pageIndex": 0,
+        "rects": [
+          [
+            499.68,
+            347.209,
+            558.001,
+            356.116
+          ],
+          [
+            313.2,
+            335.254,
+            526.221,
+            344.16
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-14T02:38:52Z",
+      "readOnly": false,
+      "parentItem": "GVM6CX83",
+      "contentHash": "643a9af498f774a9d79230694b7ba04b0f5272e6d6b69bcbee868366411c0016",
+      "raw": null
+    },
+    {
+      "id": "V9RYU3ER",
+      "key": "V9RYU3ER",
+      "version": 0,
+      "type": "highlight",
+      "text": "sequencing multiple skills",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "13337",
+      "sortIndex": "00000|002765|00326",
+      "position": {
+        "pageIndex": 0,
+        "rects": [
+          [
+            429.142,
+            458.669,
+            514.645,
+            465.794
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-14T02:36:22Z",
+      "readOnly": false,
+      "parentItem": "GVM6CX83",
+      "contentHash": "2ea758de075b8120cd2605fc48fce86bc4f5bc23a7d020fbf151b2ce0538082a",
+      "raw": null
+    },
+    {
+      "id": "3KS3NSSC",
+      "key": "3KS3NSSC",
+      "version": 0,
+      "type": "highlight",
+      "text": "dual-layered memory",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "13337",
+      "sortIndex": "00000|000616|00255",
+      "position": {
+        "pageIndex": 0,
+        "rects": [
+          [
+            181.726,
+            528.863,
+            264.37,
+            536.915
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-14T02:25:26Z",
+      "readOnly": false,
+      "parentItem": "GVM6CX83",
+      "contentHash": "3d463f6f3fde9db889277918aa01a09aaa5aa60b6ee25f5b81d5dde5e0be624b",
+      "raw": null
+    },
+    {
+      "id": "VGEB4KHY",
+      "key": "VGEB4KHY",
+      "version": 0,
+      "type": "highlight",
+      "text": "wide spectrum of gross-to-fine motor skills",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "13337",
+      "sortIndex": "00000|000575|00245",
+      "position": {
+        "pageIndex": 0,
+        "rects": [
+          [
+            240.241,
+            538.825,
+            298.8,
+            546.877
+          ],
+          [
+            54.0,
+            528.863,
+            159.597,
+            536.915
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-14T02:25:22Z",
+      "readOnly": false,
+      "parentItem": "GVM6CX83",
+      "contentHash": "de4f9a5998a48adfa319f2dfee97251f5ad833fd38fd7e506ab5a646e5b39392",
+      "raw": null
+    },
+    {
+      "id": "L5Q375SL",
+      "key": "L5Q375SL",
+      "version": 0,
+      "type": "highlight",
+      "text": "open-world RGB-D perception",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "13337",
+      "sortIndex": "00000|000548|00245",
+      "position": {
+        "pageIndex": 0,
+        "rects": [
+          [
+            101.109,
+            538.825,
+            223.967,
+            546.877
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-14T02:25:13Z",
+      "readOnly": false,
+      "parentItem": "GVM6CX83",
+      "contentHash": "2f5bc2bf89d644da91894f8ec4e9b7a30b8519baf7b643ab03295b89953434e9",
+      "raw": null
+    },
+    {
+      "id": "T9V8QLGQ",
+      "key": "T9V8QLGQ",
+      "version": 0,
+      "type": "highlight",
+      "text": "unified Vision-Language Model (VLM)-based framework",
+      "comment": "",
+      "color": "#ffd400",
+      "pageLabel": "13337",
+      "sortIndex": "00000|000491|00235",
+      "position": {
+        "pageIndex": 0,
+        "rects": [
+          [
+            64.49,
+            548.788,
+            298.8,
+            556.84
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-03-14T02:21:38Z",
+      "readOnly": false,
+      "parentItem": "GVM6CX83",
+      "contentHash": "0b3caede3027a023f497bbe8230596c5253f41d1ecd9d761d045ab363bde6089",
+      "raw": null
+    }
+  ],
+  "notes": [],
+  "exportedAt": "2026-10-29T07:58:15+00:00"
+}

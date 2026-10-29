@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "fileId": 9,
+  "pdf": {
+    "url": "../Humanoid%20Robotics/Motion%20Skills%20and%20Tracking/2025%20-%20SE%20Humanoid.pdf",
+    "sha256": "8c677192cba6cbaa66bb09bb1756b072f9eea0521210558ac11287d440aeb17d"
+  },
+  "zotero": {
+    "libraryType": "user",
+    "libraryId": 1,
+    "parentKey": "HA65J9XS",
+    "attachmentKey": "IBXUSL6Z"
+  },
+  "mapping": {
+    "status": "matched",
+    "basis": "sha256"
+  },
+  "annotations": [],
+  "notes": [
+    {
+      "id": "PY7WR7W3",
+      "key": "PY7WR7W3",
+      "version": 0,
+      "html": "<div data-schema-version=\"9\"><h2>Symmetry Equivariant Reinforcement Learning Policy - temporally and spatially coordinated motions with higher task performance, DRL-based</h2>\n<p><img alt=\"\" width=\"921\" height=\"360\" data-attachment-key=\"M7EGWAZC\"></p>\n<p><img alt=\"\" data-attachment-key=\"26XXY9QV\"></p>\n</div>",
+      "tags": [],
+      "dateModified": "2026-06-07T05:43:52Z",
+      "parentItem": "HA65J9XS",
+      "contentHash": "e05a9f28c1143362f7c7c486a2d96f162b3197eb338683b3d20ae4cd1e8a75c2",
+      "displayHtml": "<div data-schema-version=\"9\"><h2>Symmetry Equivariant Reinforcement Learning Policy - temporally and spatially coordinated motions with higher task performance, DRL-based</h2>\n<p><img alt=\"\" width=\"921\" height=\"360\" data-attachment-key=\"M7EGWAZC\" src=\"assets/note-images/M7EGWAZC/image.png\"></p>\n<p><img alt=\"\" data-attachment-key=\"26XXY9QV\" src=\"assets/note-images/26XXY9QV/image.png\"></p>\n</div>"
+    }
+  ],
+  "exportedAt": "2026-10-29T07:58:15+00:00"
+}

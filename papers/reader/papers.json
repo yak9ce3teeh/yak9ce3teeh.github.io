@@ -1,0 +1,852 @@
+{
+  "schemaVersion": 1,
+  "exportedAt": "2026-10-29T07:58:15+00:00",
+  "papers": [
+    {
+      "fileId": 0,
+      "title": "Resource-efficient Algorithms and Systems of Foundation Models: A Survey",
+      "category": "Foundations and Surveys/Efficient Foundation Models",
+      "pdfUrl": "../Foundations%20and%20Surveys/Efficient%20Foundation%20Models/2025%20-%20Resource-efficient%20Algorithms%20and%20Systems%20of%20Foundation%20Models.pdf",
+      "dataUrl": "data/0.json",
+      "zotero": {
+        "libraryType": "user",
+        "libraryId": 1,
+        "parentKey": "DQLNTHIJ",
+        "attachmentKey": "LHPILU4I"
+      }
+    },
+    {
+      "fileId": 1,
+      "title": "FocusNav: Spatial Selective Attention with Waypoint Guidance for Humanoid Local Navigation",
+      "category": "Embodied Navigation/Navigation Methods and Surveys",
+      "pdfUrl": "../Embodied%20Navigation/Navigation%20Methods%20and%20Surveys/2026%20-%20FocusNav.pdf",
+      "dataUrl": "data/1.json",
+      "zotero": {
+        "libraryType": "user",
+        "libraryId": 1,
+        "parentKey": "BNJGWPZU",
+        "attachmentKey": "3XKH3WIG"
+      }
+    },
+    {
+      "fileId": 2,
+      "title": "3D Diffuser Actor: Policy Diffusion with 3D Scene Representations",
+      "category": "Embodied Navigation/Navigation Methods and Surveys",
+      "pdfUrl": "../Embodied%20Navigation/Navigation%20Methods%20and%20Surveys/2024%20-%202402.10885v3.pdf",
+      "dataUrl": "data/2.json",
+      "zotero": null
+    },
+    {
+      "fileId": 3,
+      "title": "Foundation Models for Embodied Navigation: A Survey",
+      "category": "Embodied Navigation/Navigation Methods and Surveys",
+      "pdfUrl": "../Embodied%20Navigation/Navigation%20Methods%20and%20Surveys/2026%20-%20Foundation%20Models%20for%20Embodied%20Navigation.pdf",
+      "dataUrl": "data/3.json",
+      "zotero": {
+        "libraryType": "user",
+        "libraryId": 1,
+        "parentKey": "WDBR8WLW",
+        "attachmentKey": "W85F9UCM"
+      }
+    },
+    {
+      "fileId": 4,
+      "title": "Learning Motion Skills with Adaptive Assistive Curriculum Force in Humanoid Robots",
+      "category": "Humanoid Robotics/Motion Skills and Tracking",
+      "pdfUrl": "../Humanoid%20Robotics/Motion%20Skills%20and%20Tracking/2025%20-%20AACF.pdf",
+      "dataUrl": "data/4.json",
+      "zotero": {
+        "libraryType": "user",
+        "libraryId": 1,
+        "parentKey": "XZQ4885R",
+        "attachmentKey": "PE7HV5CT"
+      }
+    },
+    {
+      "fileId": 5,
+      "title": "BFM-Zero: A Promptable Behavioral Foundation Model for Humanoid Control Using Unsupervised Reinforcement Learning",
+      "category": "Humanoid Robotics/Motion Skills and Tracking",
+      "pdfUrl": "../Humanoid%20Robotics/Motion%20Skills%20and%20Tracking/2025%20-%20BMF0.pdf",
+      "dataUrl": "data/5.json",
+      "zotero": {
+        "libraryType": "user",
+        "libraryId": 1,
+        "parentKey": "B24ZPVK2",
+        "attachmentKey": "Q3DQX37Q"
+      }
+    },
+    {
+      "fileId": 6,
+      "title": "Towards Robust Zero-Shot Reinforcement Learning",
+      "category": "Humanoid Robotics/Motion Skills and Tracking",
+      "pdfUrl": "../Humanoid%20Robotics/Motion%20Skills%20and%20Tracking/2025%20-%20BREEZE.pdf",
+      "dataUrl": "data/6.json",
+      "zotero": null
+    },
+    {
+      "fileId": 7,
+      "title": "Keep on Going: Learning Robust Humanoid Motion Skills via Selective Adversarial Training",
+      "category": "Humanoid Robotics/Motion Skills and Tracking",
+      "pdfUrl": "../Humanoid%20Robotics/Motion%20Skills%20and%20Tracking/2025%20-%20Keep%20On%20Going.pdf",
+      "dataUrl": "data/7.json",
+      "zotero": {
+        "libraryType": "user",
+        "libraryId": 1,
+        "parentKey": "NEWY7PMK",
+        "attachmentKey": "BHX6FNVJ"
+      }
+    },
+    {
+      "fileId": 8,
+      "title": "LangWBC: Language-directed Humanoid Whole-Body Control via End-to-end Learning",
+      "category": "Humanoid Robotics/Whole-Body Control and Loco-Manipulation",
+      "pdfUrl": "../Humanoid%20Robotics/Whole-Body%20Control%20and%20Loco-Manipulation/2025%20-%20LangWBC.pdf",
+      "dataUrl": "data/8.json",
+      "zotero": {
+        "libraryType": "user",
+        "libraryId": 1,
+        "parentKey": "7PT2WHEI",
+        "attachmentKey": "ILG2RKRG"
+      }
+    },
+    {
+      "fileId": 9,
+      "title": "Coordinated Humanoid Robot Locomotion with Symmetry Equivariant Reinforcement Learning Policy",
+      "category": "Humanoid Robotics/Motion Skills and Tracking",
+      "pdfUrl": "../Humanoid%20Robotics/Motion%20Skills%20and%20Tracking/2025%20-%20SE%20Humanoid.pdf",
+      "dataUrl": "data/9.json",
+      "zotero": {
+        "libraryType": "user",
+        "libraryId": 1,
+        "parentKey": "HA65J9XS",
+        "attachmentKey": "IBXUSL6Z"
+      }
+    },
+    {
+      "fileId": 10,
+      "title": "Zero-Shot Whole-Body Humanoid Control via Behavioral Foundation Models",
+      "category": "Humanoid Robotics/Behavior Foundation Models and Zero-Shot RL",
+      "pdfUrl": "../Humanoid%20Robotics/Behavior%20Foundation%20Models%20and%20Zero-Shot%20RL/2025%20-%20Zero%20shot%20control%20w%20BFM.pdf",
+      "dataUrl": "data/10.json",
+      "zotero": {
+        "libraryType": "user",
+        "libraryId": 1,
+        "parentKey": "3V8ENGTS",
+        "attachmentKey": "X4Y9UU43"
+      }
+    },
+    {
+      "fileId": 11,
+      "title": "Zero-Shot Adaptation of Behavioral Foundation Models to Unseen Dynamics",
+      "category": "Humanoid Robotics/Behavior Foundation Models and Zero-Shot RL",
+      "pdfUrl": "../Humanoid%20Robotics/Behavior%20Foundation%20Models%20and%20Zero-Shot%20RL/2026%20-%20BeliefFB.pdf",
+      "dataUrl": "data/11.json",
+      "zotero": null
+    },
+    {
+      "fileId": 12,
+      "title": "CrossBFM: Distilling a Shared Latent Behavior Space Across Humanoid Embodiments",
+      "category": "Humanoid Robotics/Behavior Foundation Models and Zero-Shot RL",
+      "pdfUrl": "../Humanoid%20Robotics/Behavior%20Foundation%20Models%20and%20Zero-Shot%20RL/2026%20-%20crossbfm.pdf",
+      "dataUrl": "data/12.json",
+      "zotero": {
+        "libraryType": "user",
+        "libraryId": 1,
+        "parentKey": "6DBTHPS3"
+      }
+    },
+    {
+      "fileId": 13,
+      "title": "SONIC: Supersizing Motion Tracking for Natural Humanoid Whole-Body Control",
+      "category": "Humanoid Robotics/Motion Skills and Tracking",
+      "pdfUrl": "../Humanoid%20Robotics/Motion%20Skills%20and%20Tracking/2026%20-%20GEAR%20SONIC.pdf",
+      "dataUrl": "data/13.json",
+      "zotero": {
+        "libraryType": "user",
+        "libraryId": 1,
+        "parentKey": "AY7VRXJB",
+        "attachmentKey": "5DXYV3XX"
+      }
+    },
+    {
+      "fileId": 14,
+      "title": "HiWET: Hierarchical World-Frame End-Effector Tracking for Long-Horizon Humanoid Loco-Manipulation",
+      "category": "Humanoid Robotics/Whole-Body Control and Loco-Manipulation",
+      "pdfUrl": "../Humanoid%20Robotics/Whole-Body%20Control%20and%20Loco-Manipulation/2026%20-%20HiWET.pdf",
+      "dataUrl": "data/14.json",
+      "zotero": {
+        "libraryType": "user",
+        "libraryId": 1,
+        "parentKey": "3DE52ECH",
+        "attachmentKey": "BFI9FSAP"
+      }
+    },
+    {
+      "fileId": 15,
+      "title": "Humanoid-GPT: Scaling Data and Structure for Zero-Shot Motion Tracking",
+      "category": "Humanoid Robotics/Motion Skills and Tracking",
+      "pdfUrl": "../Humanoid%20Robotics/Motion%20Skills%20and%20Tracking/2026%20-%20HumanoidGPT.pdf",
+      "dataUrl": "data/15.json",
+      "zotero": {
+        "libraryType": "user",
+        "libraryId": 1,
+        "parentKey": "ZHB2IBH3",
+        "attachmentKey": "XEBJIBQB"
+      }
+    },
+    {
+      "fileId": 16,
+      "title": "HUSKY: Humanoid Skateboarding System via Physics-Aware Whole-Body Control",
+      "category": "Humanoid Robotics/Whole-Body Control and Loco-Manipulation",
+      "pdfUrl": "../Humanoid%20Robotics/Whole-Body%20Control%20and%20Loco-Manipulation/2026%20-%20HUSKY%20skate.pdf",
+      "dataUrl": "data/16.json",
+      "zotero": {
+        "libraryType": "user",
+        "libraryId": 1,
+        "parentKey": "LP6P9TTC",
+        "attachmentKey": "YJN83RLE"
+      }
+    },
+    {
+      "fileId": 17,
+      "title": "I-BFM: Reward-Conditioned Robust Humanoid Interaction via Unsupervised Reinforcement Learning",
+      "category": "Humanoid Robotics/Behavior Foundation Models and Zero-Shot RL",
+      "pdfUrl": "../Humanoid%20Robotics/Behavior%20Foundation%20Models%20and%20Zero-Shot%20RL/2026%20-%20I-BFM.pdf",
+      "dataUrl": "data/17.json",
+      "zotero": null
+    },
+    {
+      "fileId": 18,
+      "title": "Maximum Entropy Behavior Exploration for Sim2Real Zero-Shot Reinforcement Learning",
+      "category": "Humanoid Robotics/Behavior Foundation Models and Zero-Shot RL",
+      "pdfUrl": "../Humanoid%20Robotics/Behavior%20Foundation%20Models%20and%20Zero-Shot%20RL/2026%20-%20Maximum%20Entropy%20Behavior%20Exploration.pdf",
+      "dataUrl": "data/18.json",
+      "zotero": {
+        "libraryType": "user",
+        "libraryId": 1,
+        "parentKey": "BV77JN4T",
+        "attachmentKey": "Q4S2CIR2"
+      }
+    },
+    {
+      "fileId": 19,
+      "title": "MotionBricks: Scalable Real-Time Motions with Modular Latent Generative Model and Smart Primitives",
+      "category": "Humanoid Robotics/Motion Skills and Tracking",
+      "pdfUrl": "../Humanoid%20Robotics/Motion%20Skills%20and%20Tracking/2026%20-%20MotionBricks.pdf",
+      "dataUrl": "data/19.json",
+      "zotero": {
+        "libraryType": "user",
+        "libraryId": 1,
+        "parentKey": "ZES5ADPW",
+        "attachmentKey": "3G8PZ96R"
+      }
+    },
+    {
+      "fileId": 20,
+      "title": "Generate, Track, Improve: Perceptive Multi-Skill Humanoid Locomotion with RL-Fine-Tuned Motion Generators",
+      "category": "Humanoid Robotics/Motion Skills and Tracking",
+      "pdfUrl": "../Humanoid%20Robotics/Motion%20Skills%20and%20Tracking/2026%20-%20Multi%20skill%20loco.pdf",
+      "dataUrl": "data/20.json",
+      "zotero": null
+    },
+    {
+      "fileId": 21,
+      "title": "Can We Really Learn One Representation to Optimize All Rewards?",
+      "category": "Humanoid Robotics/Behavior Foundation Models and Zero-Shot RL",
+      "pdfUrl": "../Humanoid%20Robotics/Behavior%20Foundation%20Models%20and%20Zero-Shot%20RL/2026%20-%20One%20Step%20FB%20Learning.pdf",
+      "dataUrl": "data/21.json",
+      "zotero": null
+    },
+    {
+      "fileId": 22,
+      "title": "$Ψ_0$: An Open Foundation Model Towards Universal Humanoid Loco-Manipulation",
+      "category": "Humanoid Robotics/Whole-Body Control and Loco-Manipulation",
+      "pdfUrl": "../Humanoid%20Robotics/Whole-Body%20Control%20and%20Loco-Manipulation/2026%20-%20Psi0.pdf",
+      "dataUrl": "data/22.json",
+      "zotero": {
+        "libraryType": "user",
+        "libraryId": 1,
+        "parentKey": "SPC5LXWA",
+        "attachmentKey": "SB3KNU2W"
+      }
+    },
+    {
+      "fileId": 23,
+      "title": "Scaling Behavior Foundation Model for Humanoid Robots",
+      "category": "Humanoid Robotics/Behavior Foundation Models and Zero-Shot RL",
+      "pdfUrl": "../Humanoid%20Robotics/Behavior%20Foundation%20Models%20and%20Zero-Shot%20RL/2026%20-%20scalebfm.pdf",
+      "dataUrl": "data/23.json",
+      "zotero": {
+        "libraryType": "user",
+        "libraryId": 1,
+        "parentKey": "9HPZPLK4"
+      }
+    },
+    {
+      "fileId": 24,
+      "title": "Soft Forward-Backward Representations for Zero-shot Reinforcement Learning with General Utilities",
+      "category": "Humanoid Robotics/Behavior Foundation Models and Zero-Shot RL",
+      "pdfUrl": "../Humanoid%20Robotics/Behavior%20Foundation%20Models%20and%20Zero-Shot%20RL/2026%20-%20soft%20FB.pdf",
+      "dataUrl": "data/24.json",
+      "zotero": null
+    },
+    {
+      "fileId": 25,
+      "title": "SuperMimic: Scaling Humanoid Whole-Body Control with One Differentiable World Model",
+      "category": "Humanoid Robotics/Motion Skills and Tracking",
+      "pdfUrl": "../Humanoid%20Robotics/Motion%20Skills%20and%20Tracking/2026%20-%20SuperMimic.pdf",
+      "dataUrl": "data/25.json",
+      "zotero": null
+    },
+    {
+      "fileId": 26,
+      "title": "Switching Successor Measures for Hierarchical Zero-shot Reinforcement Learning",
+      "category": "Humanoid Robotics/Behavior Foundation Models and Zero-Shot RL",
+      "pdfUrl": "../Humanoid%20Robotics/Behavior%20Foundation%20Models%20and%20Zero-Shot%20RL/2026%20-%20switch%20successor%20measure.pdf",
+      "dataUrl": "data/26.json",
+      "zotero": null
+    },
+    {
+      "fileId": 27,
+      "title": "TactileStep: Sole Tactile Learning for Regulating Foot-Terrain Interaction in Humanoid Locomotion",
+      "category": "Humanoid Robotics/Tactile and Contact Sensing",
+      "pdfUrl": "../Humanoid%20Robotics/Tactile%20and%20Contact%20Sensing/2026%20-%20tactilestep.pdf",
+      "dataUrl": "data/27.json",
+      "zotero": {
+        "libraryType": "user",
+        "libraryId": 1,
+        "parentKey": "B9CDIHUG",
+        "attachmentKey": "9HV5BHSA"
+      }
+    },
+    {
+      "fileId": 28,
+      "title": "TD-JEPA: Latent-predictive Representations for Zero-Shot Reinforcement Learning",
+      "category": "Humanoid Robotics/Behavior Foundation Models and Zero-Shot RL",
+      "pdfUrl": "../Humanoid%20Robotics/Behavior%20Foundation%20Models%20and%20Zero-Shot%20RL/2026%20-%20TDJepa.pdf",
+      "dataUrl": "data/28.json",
+      "zotero": {
+        "libraryType": "user",
+        "libraryId": 1,
+        "parentKey": "PKHFFRCW",
+        "attachmentKey": "M82ZW4N6"
+      }
+    },
+    {
+      "fileId": 29,
+      "title": "Vision-Language-Action Models for Robotics: A Review Towards Real-World Applications",
+      "category": "Robotic Manipulation/VLA Surveys and Efficiency",
+      "pdfUrl": "../Robotic%20Manipulation/VLA%20Surveys%20and%20Efficiency/2025%20-%20Vision-Language-Action%20Models%20for%20Robotics%20-%20Original%20Note%20Export.pdf",
+      "dataUrl": "data/29.json",
+      "zotero": {
+        "libraryType": "user",
+        "libraryId": 1,
+        "parentKey": "AE22UQYW"
+      }
+    },
+    {
+      "fileId": 30,
+      "title": "World Action Models: The Next Frontier in Embodied AI",
+      "category": "World Models and World Action Models/Surveys and Foundation Models",
+      "pdfUrl": "../World%20Models%20and%20World%20Action%20Models/Surveys%20and%20Foundation%20Models/2026%20-%20World%20Action%20Models%20-%20Original%20Note%20Export.pdf",
+      "dataUrl": "data/30.json",
+      "zotero": {
+        "libraryType": "user",
+        "libraryId": 1,
+        "parentKey": "8SDGKVLW"
+      }
+    },
+    {
+      "fileId": 31,
+      "title": "ProgPrompt: Generating Situated Robot Task Plans using Large Language Models",
+      "category": "Agent Foundations/Robot Task Planning",
+      "pdfUrl": "../Agent%20Foundations/Robot%20Task%20Planning/2022%20-%20ProgPrompt.pdf",
+      "dataUrl": "data/31.json",
+      "zotero": {
+        "libraryType": "user",
+        "libraryId": 1,
+        "parentKey": "5SD2WZM4",
+        "attachmentKey": "SQRKTGES"
+      }
+    },
+    {
+      "fileId": 32,
+      "title": "Do As I Can, Not As I Say: Grounding Language in Robotic Affordances",
+      "category": "Agent Foundations/Robot Task Planning",
+      "pdfUrl": "../Agent%20Foundations/Robot%20Task%20Planning/2022%20-%20SayCan.pdf",
+      "dataUrl": "data/32.json",
+      "zotero": {
+        "libraryType": "user",
+        "libraryId": 1,
+        "parentKey": "DDZ75LMC",
+        "attachmentKey": "GNT5ED57"
+      }
+    },
+    {
+      "fileId": 33,
+      "title": "RoCo: Dialectic Multi-Robot Collaboration with Large Language Models",
+      "category": "Multi-Agent Systems/Embodied Cooperation and Planning",
+      "pdfUrl": "../Multi-Agent%20Systems/Embodied%20Cooperation%20and%20Planning/2023%20-%20Roco.pdf",
+      "dataUrl": "data/33.json",
+      "zotero": {
+        "libraryType": "user",
+        "libraryId": 1,
+        "parentKey": "R29CVEXS",
+        "attachmentKey": "Q484VU8F"
+      }
+    },
+    {
+      "fileId": 34,
+      "title": "ForceVLA: Enhancing VLA Models with a Force-aware MoE for Contact-rich Manipulation",
+      "category": "Robotic Manipulation/VLA and Contact-Rich Manipulation",
+      "pdfUrl": "../Robotic%20Manipulation/VLA%20and%20Contact-Rich%20Manipulation/2025%20-%20ForceVLA.pdf",
+      "dataUrl": "data/34.json",
+      "zotero": {
+        "libraryType": "user",
+        "libraryId": 1,
+        "parentKey": "MN5EXD9L",
+        "attachmentKey": "U8Z3YANA"
+      }
+    },
+    {
+      "fileId": 35,
+      "title": "Pure Vision Language Action (VLA) Models: A Comprehensive Survey",
+      "category": "Robotic Manipulation/VLA Surveys and Efficiency",
+      "pdfUrl": "../Robotic%20Manipulation/VLA%20Surveys%20and%20Efficiency/2025%20-%20VLA%20Overview.pdf",
+      "dataUrl": "data/35.json",
+      "zotero": {
+        "libraryType": "user",
+        "libraryId": 1,
+        "parentKey": "YE5C3UKL",
+        "attachmentKey": "UM4PWMKS"
+      }
+    },
+    {
+      "fileId": 36,
+      "title": "A Survey on Efficient Vision-Language-Action Models",
+      "category": "Robotic Manipulation/VLA Surveys and Efficiency",
+      "pdfUrl": "../Robotic%20Manipulation/VLA%20Surveys%20and%20Efficiency/2025%20-%20Efficient%20VLA%20Overview.pdf",
+      "dataUrl": "data/36.json",
+      "zotero": null
+    },
+    {
+      "fileId": 37,
+      "title": "Vision-Language-Action Models for Robotics: A Review Towards Real-World Applications",
+      "category": "Robotic Manipulation/VLA Surveys and Efficiency",
+      "pdfUrl": "../Robotic%20Manipulation/VLA%20Surveys%20and%20Efficiency/2025%20-%20VLA%20Overview%20%282%29.pdf",
+      "dataUrl": "data/37.json",
+      "zotero": {
+        "libraryType": "user",
+        "libraryId": 1,
+        "parentKey": "AE22UQYW",
+        "attachmentKey": "TXAEU7QH"
+      }
+    },
+    {
+      "fileId": 38,
+      "title": "UniDex: A Robot Foundation Suite for Universal Dexterous Hand Control from Egocentric Human Videos",
+      "category": "Robotic Manipulation/Dexterous Manipulation and Human Data",
+      "pdfUrl": "../Robotic%20Manipulation/Dexterous%20Manipulation%20and%20Human%20Data/2026%20-%20Unidex.pdf",
+      "dataUrl": "data/38.json",
+      "zotero": {
+        "libraryType": "user",
+        "libraryId": 1,
+        "parentKey": "EFWQZ3Y5",
+        "attachmentKey": "PGI55FT4"
+      }
+    },
+    {
+      "fileId": 39,
+      "title": "Uni-LaViRA: Language-Vision-Robot Actions Translation for Unified Embodied Navigation",
+      "category": "Embodied Navigation/Language-Vision Navigation and Reasoning",
+      "pdfUrl": "../Embodied%20Navigation/Language-Vision%20Navigation%20and%20Reasoning/2026%20-%20Unilavira.pdf",
+      "dataUrl": "data/39.json",
+      "zotero": {
+        "libraryType": "user",
+        "libraryId": 1,
+        "parentKey": "DB8QTQ26",
+        "attachmentKey": "PLXPKMFS"
+      }
+    },
+    {
+      "fileId": 40,
+      "title": "ForceVLA: Enhancing VLA Models with a Force-aware MoE for Contact-rich Manipulation",
+      "category": "Robotic Manipulation/VLA and Contact-Rich Manipulation",
+      "pdfUrl": "../Robotic%20Manipulation/VLA%20and%20Contact-Rich%20Manipulation/2025%20-%20ForceVLA%20%282%29.pdf",
+      "dataUrl": "data/40.json",
+      "zotero": {
+        "libraryType": "user",
+        "libraryId": 1,
+        "parentKey": "MN5EXD9L",
+        "attachmentKey": "U8Z3YANA"
+      }
+    },
+    {
+      "fileId": 41,
+      "title": "Fast-WAM: Do World Action Models Need Test-time Future Imagination?",
+      "category": "World Models and World Action Models/World Action Model Methods",
+      "pdfUrl": "../World%20Models%20and%20World%20Action%20Models/World%20Action%20Model%20Methods/2026%20-%20FastWAM.pdf",
+      "dataUrl": "data/41.json",
+      "zotero": {
+        "libraryType": "user",
+        "libraryId": 1,
+        "parentKey": "3ZFNT8XQ",
+        "attachmentKey": "F3MYFV3W"
+      }
+    },
+    {
+      "fileId": 42,
+      "title": "OpenWAM: An Open, Modular Exploration Towards Systematic World-Action Model Pretraining",
+      "category": "World Models and World Action Models/World Action Model Methods",
+      "pdfUrl": "../World%20Models%20and%20World%20Action%20Models/World%20Action%20Model%20Methods/2026%20-%20OpenWAM.pdf",
+      "dataUrl": "data/42.json",
+      "zotero": {
+        "libraryType": "user",
+        "libraryId": 1,
+        "parentKey": "V6VPGX3G",
+        "attachmentKey": "GTQ2M7I2"
+      }
+    },
+    {
+      "fileId": 43,
+      "title": "World Action Models: The Next Frontier in Embodied AI",
+      "category": "World Models and World Action Models/Surveys and Foundation Models",
+      "pdfUrl": "../World%20Models%20and%20World%20Action%20Models/Surveys%20and%20Foundation%20Models/2026%20-%20World%20Action%20Models.pdf",
+      "dataUrl": "data/43.json",
+      "zotero": {
+        "libraryType": "user",
+        "libraryId": 1,
+        "parentKey": "8SDGKVLW",
+        "attachmentKey": "69MHU2BW"
+      }
+    },
+    {
+      "fileId": 44,
+      "title": "World Model for Robot Learning: A Comprehensive Survey",
+      "category": "World Models and World Action Models/Surveys and Foundation Models",
+      "pdfUrl": "../World%20Models%20and%20World%20Action%20Models/Surveys%20and%20Foundation%20Models/2026%20-%20World%20Model%20for%20Robot%20Learning.pdf",
+      "dataUrl": "data/44.json",
+      "zotero": {
+        "libraryType": "user",
+        "libraryId": 1,
+        "parentKey": "SZTWBJQR",
+        "attachmentKey": "KYD3R5K8"
+      }
+    },
+    {
+      "fileId": 45,
+      "title": "Cosmos 3: Omnimodal World Models for Physical AI",
+      "category": "World Models and World Action Models/Surveys and Foundation Models",
+      "pdfUrl": "../World%20Models%20and%20World%20Action%20Models/Surveys%20and%20Foundation%20Models/2026%20-%20WM%20Cosmos3.pdf",
+      "dataUrl": "data/45.json",
+      "zotero": {
+        "libraryType": "user",
+        "libraryId": 1,
+        "parentKey": "MMWG5JDW",
+        "attachmentKey": "IB3QMCE8"
+      }
+    },
+    {
+      "fileId": 46,
+      "title": "Multi-agent Embodied AI: Advances and Future Directions",
+      "category": "Multi-Agent Systems/Surveys",
+      "pdfUrl": "../Multi-Agent%20Systems/Surveys/Year%20Unknown%20-%20Multi-agent%20Embodied%20AI%20Advances%20and%20Future%20Directions.pdf",
+      "dataUrl": "data/46.json",
+      "zotero": null
+    },
+    {
+      "fileId": 47,
+      "title": "CaPo: Cooperative Plan Optimization for Efficient Embodied Multi-Agent Cooperation",
+      "category": "Multi-Agent Systems/Embodied Cooperation and Planning",
+      "pdfUrl": "../Multi-Agent%20Systems/Embodied%20Cooperation%20and%20Planning/Year%20Unknown%20-%20CaPo%20Cooperative%20Plan%20Opt.pdf",
+      "dataUrl": "data/47.json",
+      "zotero": null
+    },
+    {
+      "fileId": 48,
+      "title": "BUMBLE: Unifying Reasoning and Acting with Vision-Language Models for Building-wide Mobile Manipulation",
+      "category": "Robotic Manipulation/Open-World Mobile Manipulation",
+      "pdfUrl": "../Robotic%20Manipulation/Open-World%20Mobile%20Manipulation/2025%20-%20BUMBLE.pdf",
+      "dataUrl": "data/48.json",
+      "zotero": {
+        "libraryType": "user",
+        "libraryId": 1,
+        "parentKey": "DL8VRYIH",
+        "attachmentKey": "GVM6CX83"
+      }
+    },
+    {
+      "fileId": 49,
+      "title": "$NavA^3$: Understanding Any Instruction, Navigating Anywhere, Finding Anything",
+      "category": "Embodied Navigation/Language-Vision Navigation and Reasoning",
+      "pdfUrl": "../Embodied%20Navigation/Language-Vision%20Navigation%20and%20Reasoning/2025%20-%20Nav%20A%5E3.pdf",
+      "dataUrl": "data/49.json",
+      "zotero": {
+        "libraryType": "user",
+        "libraryId": 1,
+        "parentKey": "KRC895R6",
+        "attachmentKey": "UUSUAE7H"
+      }
+    },
+    {
+      "fileId": 50,
+      "title": "Object-Centric Agentic Robot Policies",
+      "category": "Robotic Manipulation/Open-World Mobile Manipulation",
+      "pdfUrl": "../Robotic%20Manipulation/Open-World%20Mobile%20Manipulation/2025%20-%20OCARP.pdf",
+      "dataUrl": "data/50.json",
+      "zotero": null
+    },
+    {
+      "fileId": 51,
+      "title": "Hierarchical Open-Vocabulary 3D Scene Graphs for Language-Grounded Robot Navigation",
+      "category": "Scene Understanding and Memory/3D Scene Graphs",
+      "pdfUrl": "../Scene%20Understanding%20and%20Memory/3D%20Scene%20Graphs/2024%20-%20hovsg.pdf",
+      "dataUrl": "data/51.json",
+      "zotero": {
+        "libraryType": "user",
+        "libraryId": 1,
+        "parentKey": "CBUXTEUU",
+        "attachmentKey": "GJU8Q7QM"
+      }
+    },
+    {
+      "fileId": 52,
+      "title": "EmbodiedRAG: Dynamic 3D Scene Graph Retrieval for Efficient and Scalable Robot Task Planning",
+      "category": "Scene Understanding and Memory/Retrieval and Embodied Memory",
+      "pdfUrl": "../Scene%20Understanding%20and%20Memory/Retrieval%20and%20Embodied%20Memory/2024%20-%20EmbodiedRAG.pdf",
+      "dataUrl": "data/52.json",
+      "zotero": {
+        "libraryType": "user",
+        "libraryId": 1,
+        "parentKey": "SGNT5Q5F",
+        "attachmentKey": "B3PQHF6G"
+      }
+    },
+    {
+      "fileId": 53,
+      "title": "Affordance RAG: Hierarchical Multimodal Retrieval with Affordance-Aware Embodied Memory for Mobile Manipulation",
+      "category": "Scene Understanding and Memory/Retrieval and Embodied Memory",
+      "pdfUrl": "../Scene%20Understanding%20and%20Memory/Retrieval%20and%20Embodied%20Memory/2025%20-%20Affordance%20RAG.pdf",
+      "dataUrl": "data/53.json",
+      "zotero": {
+        "libraryType": "user",
+        "libraryId": 1,
+        "parentKey": "3UT9NXAL",
+        "attachmentKey": "6GHHJNDI"
+      }
+    },
+    {
+      "fileId": 54,
+      "title": "Embodied-RAG: General Non-parametric Embodied Memory for Retrieval and Generation",
+      "category": "Scene Understanding and Memory/Retrieval and Embodied Memory",
+      "pdfUrl": "../Scene%20Understanding%20and%20Memory/Retrieval%20and%20Embodied%20Memory/2025%20-%20Embodied-RAG.pdf",
+      "dataUrl": "data/54.json",
+      "zotero": {
+        "libraryType": "user",
+        "libraryId": 1,
+        "parentKey": "ZH9Q5ZJX",
+        "attachmentKey": "69EQC6J4"
+      }
+    },
+    {
+      "fileId": 55,
+      "title": "Open-World 3D Scene Graph Generation for Retrieval-Augmented Reasoning",
+      "category": "Scene Understanding and Memory/Retrieval and Embodied Memory",
+      "pdfUrl": "../Scene%20Understanding%20and%20Memory/Retrieval%20and%20Embodied%20Memory/2025%20-%20Open-World%203D%20Scene%20Graph%20Generation%20RAR.pdf",
+      "dataUrl": "data/55.json",
+      "zotero": {
+        "libraryType": "user",
+        "libraryId": 1,
+        "parentKey": "CNZHHHPC",
+        "attachmentKey": "KJZIDYDT"
+      }
+    },
+    {
+      "fileId": 56,
+      "title": "RAG-3DSG: Enhancing 3D Scene Graphs with Re-Shot Guided Retrieval-Augmented Generation",
+      "category": "Scene Understanding and Memory/Retrieval and Embodied Memory",
+      "pdfUrl": "../Scene%20Understanding%20and%20Memory/Retrieval%20and%20Embodied%20Memory/2026%20-%20RAG%203DSG.pdf",
+      "dataUrl": "data/56.json",
+      "zotero": null
+    },
+    {
+      "fileId": 57,
+      "title": "3DGraphLLM: Combining Semantic Graphs and Large Language Models for 3D Scene Understanding",
+      "category": "Scene Understanding and Memory/3D Scene Graphs",
+      "pdfUrl": "../Scene%20Understanding%20and%20Memory/3D%20Scene%20Graphs/2024%20-%203DGraphLLM.pdf",
+      "dataUrl": "data/57.json",
+      "zotero": {
+        "libraryType": "user",
+        "libraryId": 1,
+        "parentKey": "TESTI9SC",
+        "attachmentKey": "PZ7BN7T4"
+      }
+    },
+    {
+      "fileId": 58,
+      "title": "SG-Nav: Online 3D Scene Graph Prompting for LLM-based Zero-shot Object Navigation",
+      "category": "Scene Understanding and Memory/3D Scene Graphs",
+      "pdfUrl": "../Scene%20Understanding%20and%20Memory/3D%20Scene%20Graphs/2024%20-%20SG-Nav.pdf",
+      "dataUrl": "data/58.json",
+      "zotero": {
+        "libraryType": "user",
+        "libraryId": 1,
+        "parentKey": "VYUSNMWR",
+        "attachmentKey": "E9YMJBLV"
+      }
+    },
+    {
+      "fileId": 59,
+      "title": "LLaVA-CoT: Let Vision Language Models Reason Step-by-Step",
+      "category": "Agent Foundations/Reasoning and Chain of Thought",
+      "pdfUrl": "../Agent%20Foundations/Reasoning%20and%20Chain%20of%20Thought/2024%20-%20LLaVACoT.pdf",
+      "dataUrl": "data/59.json",
+      "zotero": {
+        "libraryType": "user",
+        "libraryId": 1,
+        "parentKey": "4JL5QE63",
+        "attachmentKey": "Y5LN7HX8"
+      }
+    },
+    {
+      "fileId": 60,
+      "title": "SpatialVLM: Endowing Vision-Language Models with Spatial Reasoning Capabilities",
+      "category": "Scene Understanding and Memory/Spatial Reasoning",
+      "pdfUrl": "../Scene%20Understanding%20and%20Memory/Spatial%20Reasoning/2024%20-%20Spatial%20VLM.pdf",
+      "dataUrl": "data/60.json",
+      "zotero": {
+        "libraryType": "user",
+        "libraryId": 1,
+        "parentKey": "AE48S43T",
+        "attachmentKey": "GJTNH8BQ"
+      }
+    },
+    {
+      "fileId": 61,
+      "title": "Multimodal Spatial Reasoning in the Large Model Era: A Survey and Benchmarks",
+      "category": "Scene Understanding and Memory/Spatial Reasoning",
+      "pdfUrl": "../Scene%20Understanding%20and%20Memory/Spatial%20Reasoning/2025%20-%20Multimodal%20Spatial%20Reasoning%20in%20the%20Large%20Model%20Era.pdf",
+      "dataUrl": "data/61.json",
+      "zotero": {
+        "libraryType": "user",
+        "libraryId": 1,
+        "parentKey": "DIX84SAA",
+        "attachmentKey": "XELL7ECU"
+      }
+    },
+    {
+      "fileId": 62,
+      "title": "Geometrically-Constrained Agent for Spatial Reasoning",
+      "category": "Scene Understanding and Memory/Spatial Reasoning",
+      "pdfUrl": "../Scene%20Understanding%20and%20Memory/Spatial%20Reasoning/2025%20-%20Geometrically%20Constraine%20Agent%20for%20Spatial%20Reasoning.pdf",
+      "dataUrl": "data/62.json",
+      "zotero": null
+    },
+    {
+      "fileId": 63,
+      "title": "NavCoT: Boosting LLM-Based Vision-and-Language Navigation via Learning Disentangled Reasoning",
+      "category": "Embodied Navigation/Language-Vision Navigation and Reasoning",
+      "pdfUrl": "../Embodied%20Navigation/Language-Vision%20Navigation%20and%20Reasoning/2025%20-%20NavCoT.pdf",
+      "dataUrl": "data/63.json",
+      "zotero": {
+        "libraryType": "user",
+        "libraryId": 1,
+        "parentKey": "ZFCEFWIJ",
+        "attachmentKey": "IIUBEQEL"
+      }
+    },
+    {
+      "fileId": 64,
+      "title": "ReAct: Synergizing Reasoning and Acting in Language Models",
+      "category": "Agent Foundations/Reasoning and Chain of Thought",
+      "pdfUrl": "../Agent%20Foundations/Reasoning%20and%20Chain%20of%20Thought/2023%20-%20ReAct.pdf",
+      "dataUrl": "data/64.json",
+      "zotero": {
+        "libraryType": "user",
+        "libraryId": 1,
+        "parentKey": "5VQTJKNM",
+        "attachmentKey": "P4XWSINH"
+      }
+    },
+    {
+      "fileId": 65,
+      "title": "Spatial Reasoning - Reading Notes",
+      "category": "Scene Understanding and Memory/Spatial Reasoning",
+      "pdfUrl": "../Scene%20Understanding%20and%20Memory/Spatial%20Reasoning/Year%20Unknown%20-%20Spatial%20Reasoning.pdf",
+      "dataUrl": "data/65.json",
+      "zotero": null
+    },
+    {
+      "fileId": 66,
+      "title": "COMBO: Compositional World Models for Embodied Multi-Agent Cooperation",
+      "category": "Multi-Agent Systems/Embodied Cooperation and Planning",
+      "pdfUrl": "../Multi-Agent%20Systems/Embodied%20Cooperation%20and%20Planning/Year%20Unknown%20-%20COMBO%20Compositional%20World%20Model%20for%20Emvodied%20Multiagent%20Cooperation.pdf",
+      "dataUrl": "data/66.json",
+      "zotero": null
+    },
+    {
+      "fileId": 67,
+      "title": "MAS-ZERO: Designing Multi-Agent Systems with Zero Supervision",
+      "category": "Multi-Agent Systems/Communication and System Design",
+      "pdfUrl": "../Multi-Agent%20Systems/Communication%20and%20System%20Design/Year%20Unknown%20-%20MAS0.pdf",
+      "dataUrl": "data/67.json",
+      "zotero": null
+    },
+    {
+      "fileId": 68,
+      "title": "More Agents Is All You Need",
+      "category": "Multi-Agent Systems/Communication and System Design",
+      "pdfUrl": "../Multi-Agent%20Systems/Communication%20and%20System%20Design/Year%20Unknown%20-%20More%20Agents%20is%20all%20you%20need.pdf",
+      "dataUrl": "data/68.json",
+      "zotero": null
+    },
+    {
+      "fileId": 69,
+      "title": "Multi-Agent Consensus Seeking via Large Language Models",
+      "category": "Multi-Agent Systems/Communication and System Design",
+      "pdfUrl": "../Multi-Agent%20Systems/Communication%20and%20System%20Design/Year%20Unknown%20-%20Multi-Agent%20Consensus%20Seeking%20via.pdf",
+      "dataUrl": "data/69.json",
+      "zotero": null
+    },
+    {
+      "fileId": 70,
+      "title": "Thought Communication in Multiagent Collaboration",
+      "category": "Multi-Agent Systems/Communication and System Design",
+      "pdfUrl": "../Multi-Agent%20Systems/Communication%20and%20System%20Design/Year%20Unknown%20-%20Thought%20Communication%20in%20Multiagent%20Collaboration.pdf",
+      "dataUrl": "data/70.json",
+      "zotero": null
+    },
+    {
+      "fileId": 71,
+      "title": "Chain-of-Thought Prompting Elicits Reasoning in Large Language Models",
+      "category": "Agent Foundations/Reasoning and Chain of Thought",
+      "pdfUrl": "../Agent%20Foundations/Reasoning%20and%20Chain%20of%20Thought/Year%20Unknown%20-%20Chain%20of%20Thought%20Prompting%20Elicits%20Reasoning%20in%20Large%20Language%20Models.pdf",
+      "dataUrl": "data/71.json",
+      "zotero": null
+    },
+    {
+      "fileId": 72,
+      "title": "Self-Consistency Improves Chain of Thought Reasoning in Language Models",
+      "category": "Agent Foundations/Reasoning and Chain of Thought",
+      "pdfUrl": "../Agent%20Foundations/Reasoning%20and%20Chain%20of%20Thought/Year%20Unknown%20-%20Self%20Consistency.pdf",
+      "dataUrl": "data/72.json",
+      "zotero": null
+    },
+    {
+      "fileId": 73,
+      "title": "Agent-Oriented Planning in Multi-Agent Systems",
+      "category": "Agent Foundations/Robot Task Planning",
+      "pdfUrl": "../Agent%20Foundations/Robot%20Task%20Planning/Year%20Unknown%20-%2013187%20Agent%20Oriented%20Planning.pdf",
+      "dataUrl": "data/73.json",
+      "zotero": null
+    },
+    {
+      "fileId": 74,
+      "title": "Learning Force-Reactive Humanoid Loco-Manipulation",
+      "category": "Humanoid Robotics/Whole-Body Control and Loco-Manipulation",
+      "pdfUrl": "../Humanoid%20Robotics/Whole-Body%20Control%20and%20Loco-Manipulation/2026-10%20-%20FLoRe.pdf",
+      "dataUrl": "data/74.json",
+      "zotero": null
+    }
+  ]
+}

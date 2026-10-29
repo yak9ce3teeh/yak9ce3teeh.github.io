@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "fileId": 41,
+  "pdf": {
+    "url": "../World%20Models%20and%20World%20Action%20Models/World%20Action%20Model%20Methods/2026%20-%20FastWAM.pdf",
+    "sha256": "4eea24883dcc4d8a5c0f760870f501baabb07db4eb65e5fd6c3b4b500601be8d"
+  },
+  "zotero": {
+    "libraryType": "user",
+    "libraryId": 1,
+    "parentKey": "3ZFNT8XQ",
+    "attachmentKey": "F3MYFV3W"
+  },
+  "mapping": {
+    "status": "matched",
+    "basis": "sha256"
+  },
+  "annotations": [],
+  "notes": [
+    {
+      "id": "NZMB4VUG",
+      "key": "NZMB4VUG",
+      "version": 0,
+      "html": "<div data-schema-version=\"9\"><p>FastWAM:</p>\n</div>",
+      "tags": [],
+      "dateModified": "2026-06-08T15:21:53Z",
+      "parentItem": "3ZFNT8XQ",
+      "contentHash": "befdf5820f0287bd204d682d8e69eeb326b3067067d2435995935f254267dc32",
+      "displayHtml": "<div data-schema-version=\"9\"><p>FastWAM:</p>\n</div>"
+    }
+  ],
+  "exportedAt": "2026-10-29T07:58:15+00:00"
+}

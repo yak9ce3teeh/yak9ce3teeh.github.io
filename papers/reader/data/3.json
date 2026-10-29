@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 1,
+  "fileId": 3,
+  "pdf": {
+    "url": "../Embodied%20Navigation/Navigation%20Methods%20and%20Surveys/2026%20-%20Foundation%20Models%20for%20Embodied%20Navigation.pdf",
+    "sha256": "fdde74cdc782b885ebe8dd30ca35d679685478a59243fbf083d5c88653df7300"
+  },
+  "zotero": {
+    "libraryType": "user",
+    "libraryId": 1,
+    "parentKey": "WDBR8WLW",
+    "attachmentKey": "W85F9UCM"
+  },
+  "mapping": {
+    "status": "matched",
+    "basis": "sha256"
+  },
+  "annotations": [
+    {
+      "id": "TL3X9GCP",
+      "key": "TL3X9GCP",
+      "version": 0,
+      "type": "highlight",
+      "text": "One common pattern is joint multitask training throughout navigation learning",
+      "comment": "",
+      "color": "#2ea8e5",
+      "pageLabel": "27",
+      "sortIndex": "00026|000627|00165",
+      "position": {
+        "pageIndex": 26,
+        "rects": [
+          [
+            194.836,
+            666.688,
+            531.842,
+            676.651
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-05-04T13:32:34Z",
+      "readOnly": false,
+      "parentItem": "W85F9UCM",
+      "contentHash": "5a85c2fbee7acd722aaed0f690635a2e6e72feeee71bda7265d364ac3b42da63",
+      "raw": null
+    },
+    {
+      "id": "IBT8ATLQ",
+      "key": "IBT8ATLQ",
+      "version": 0,
+      "type": "highlight",
+      "text": "Visual-based memory treats past observations as an extended visual context, retaining historical visual inputs or their compressed representations so that the agent can combine past perceptual evidence with the current view.",
+      "comment": "",
+      "color": "#2ea8e5",
+      "pageLabel": "12",
+      "sortIndex": "00011|003723|00672",
+      "position": {
+        "pageIndex": 11,
+        "rects": [
+          [
+            62.053,
+            172.501,
+            532.913,
+            181.418
+          ],
+          [
+            62.362,
+            160.546,
+            533.082,
+            169.463
+          ],
+          [
+            62.113,
+            148.302,
+            84.08,
+            158.265
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-05-04T11:07:51Z",
+      "readOnly": false,
+      "parentItem": "W85F9UCM",
+      "contentHash": "fef69acc3fdd9dedc6f7b0204de948a47fe79cf2e828e3153203d1d730c45633",
+      "raw": null
+    },
+    {
+      "id": "A8RPYTPB",
+      "key": "A8RPYTPB",
+      "version": 0,
+      "type": "highlight",
+      "text": "wheeled robots, legged robots, and UAVs.",
+      "comment": "",
+      "color": "#ff6666",
+      "pageLabel": "8",
+      "sortIndex": "00007|002581|00718",
+      "position": {
+        "pageIndex": 7,
+        "rects": [
+          [
+            123.921,
+            114.148,
+            305.526,
+            123.065
+          ]
+        ]
+      },
+      "tags": [],
+      "dateModified": "2026-05-04T10:15:36Z",
+      "readOnly": false,
+      "parentItem": "W85F9UCM",
+      "contentHash": "801d048d5d39abd1244edcb0ba35e1db343c93d09f4b79f5cfbf042d7a766f7f",
+      "raw": null
+    }
+  ],
+  "notes": [
+    {
+      "id": "IYWK2PQ2",
+      "key": "IYWK2PQ2",
+      "version": 0,
+      "html": "<div data-schema-version=\"9\"><h1><span style=\"color: rgb(25, 60, 71);\"><span style=\"background-color: rgb(238, 249, 253);\">Foundation Models for Embodied Navigation: A Survey</span></span></h1>\n<h2>⚙️ Metadata</h2>\n<ul>\n<li>\n<strong>Item Type:</strong> journalArticle\n</li>\n<li>\n<strong>Author:</strong> [[Longxi Gao]], [[Weikai Xie]], [[Haoze Qian]], [[Rongjie Yi]], [[Shihe Wang]], [[Jiaye Song]], [[Dongqi Cai]], [[Jinliang Yuan]], [[Yunhao Liu]], [[Xuanzhe Liu]], [[et al.]]\n</li>\n<li>\n<strong>Date Added:</strong> 2026/5/4 16:12:19\n</li>\n<li>\n<strong>URL:</strong>\n</li>\n<li>\n<strong>Cite key:</strong>\n</li>\n<li>\n<strong>Journal:</strong>\n</li>\n<li>\n<strong>Journal Tags:</strong>\n</li>\n<li>\n<strong>Publication Date:</strong>\n</li>\n<li>\n<strong>Tags:</strong> #, #zotero\n</li>\n<li>\n<strong>PDF Attachments: </strong><a href=\"zotero://open-pdf/library/items/W85F9UCM\" rel=\"noopener noreferrer nofollow\">Gao 等 - Foundation Models for Embodied Navigation A Survey.pdf</a>\n</li>\n<li>\n<strong>Related Items: </strong><span style=\"color: gray;\">无相关条目</span>\n</li>\n</ul>\n<h2>📜 Abstract</h2>\n<p>The remarkable advancements of embodied navigation, the process of physically situated agents perceiving and reasoning through egocentric observations to reach target locations, have recently been reshaped by the emergence of foundation models. Departing from traditional, task-specific policies trained from scratch on limited datasets, this new paradigm leverages the reasoning and multimodal capabilities of Large Language Models (LLMs), Vision-Language Models (VLMs), and Video Generation Models (VGMs), achieving superior generalization and flexible decision-making in unseen environments. For the first time, this survey systematically reviews the landscape of foundation models for embodied navigation, focusing on systems where these models play a central role in perception, long-horizon memory management, and action generation. The survey aims to categorize and interpret existing embodied navigation research through the lens of design paradigms, data sources, and training strategies. Through this analysis, we offer a synthesized outlook on the evolution of navigation brains, highlight the bottlenecks of dataset bias, and contribute guidance for future research, hoping to bring the field closer to robust, general-purpose embodied intelligence.</p>\n<h2>📚 Zotero links</h2>\n<ul>\n<li>\n<a href=\"zotero://select/items/1_WDBR8WLW\" rel=\"noopener noreferrer nofollow\">Local library</a>\n</li>\n</ul>\n<h1>Notes</h1>\n<ol>\n<li>\n<p>Problem Formulation and Taxonomy</p>\n<ul>\n<li>\nPerceiving surroundings\n</li>\n<li>\nReasoning about a navigation objective\n</li>\n<li>\nMake sequential decisions and execute actions\n</li>\n</ul>\n</li>\n</ol>\n<p>semantic navigation- VLN, ObjectNav, RegionNav</p>\n<p>geometric navigation- PointNav, ImageNav, FrontierNav</p>\n<p>interactive navigation- Embodied Visual Tracking, SocialNav, Multi-Agent Navigation</p>\n<p>2. Embodiment Taxonomy</p>\n<p>wheeled robots</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">·for flat and structured environments</p>\n<p>legged robots</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">·for wheel-unfriendly environments</p>\n<p>UAV</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">·fully 3D space, move freely in both vertical and horizontal directions</p>\n<p>3. Key Design Dimensions</p>\n<p><img alt=\"\" width=\"1348\" height=\"919\" data-attachment-key=\"LVC4845S\"></p>\n<p>(1)Observations and Representations</p>\n<p>·Raw Visual Observations - RGB-based observations (Ego-centric or Multi-view), Depth-aware observations - depth-maps incorporated</p>\n<p>·Map-augmented Representations - BEV - Floor maps, Occupancy maps, Value maps</p>\n<p>·Camera Intrinsics and Extrinsics - Geometric cues</p>\n<p>(2) Memory Mechanisms</p>\n<p>·Visual-based Memory - Historical frame selection, Visual memory compression（NavFoM，Uni-NaVid， Nav-R2）, Effective memory storage（KV cache form）</p>\n<p>·Text-based Memory - On-the-fly Memory, Serialized textual memory (template-based)</p>\n<p>·Map-augmented Memory - Map memory as a parallel input branch, Relevant map memory injected into the current visual context</p>\n<p>(3) Decision-making and Motion Control</p>\n<p>·Action Space Design - semantic target or direction selection(get the target or direction), discrete action prediction, continuous action prediction</p>\n<p>·Reasoning Mechanism - Explicit Reasoning with CoT, Adaptive Reasoning with CoT(Faster), CoT as Training Supervision</p>\n<p>(4) System Architectures</p>\n<p><img alt=\"\" width=\"1247\" height=\"762\" data-attachment-key=\"L7JY7PLE\"></p>\n<p>·Modular Systems - perception, mapping, planning, control (CogNav, InstructNav)</p>\n<p>·Single-policy systems - discrete action outputs(NaVid, Uni-NaVid), continuous action outputs(Direct actions from backbone tokens, MLP-based action decoding, Diffusion-based action decoding)</p>\n<p>·Dual-system architectures (slow thinking: high-level semantic reasoning and long-horizon planning, fast thinking for low-level action generation and real-time control)</p>\n<p>·World-model-based systems</p>\n<p>-In Modular Settings - WMNav, PlanVLM, ReasonVLM</p>\n<p>-In End-to-end Single-Policy Systems - predict next actions + model future states, scene dynamics and intermediate spatial representations</p>\n<p>4. Data Collection and Training Strategies</p>\n<p>(1) Data Source:</p>\n<p><img alt=\"\" width=\"1365\" height=\"636\" data-attachment-key=\"985SRQ8K\"></p>\n<p><img alt=\"\" width=\"1082\" height=\"1097\" data-attachment-key=\"QQM69QF2\"><img alt=\"\" width=\"1132\" height=\"604\" data-attachment-key=\"JNE8MLEB\"><img alt=\"\" width=\"1167\" height=\"1036\" data-attachment-key=\"322I4WBP\"><img alt=\"\" width=\"1010\" height=\"1212\" data-attachment-key=\"XWZS58YH\">(2) Training Strategies</p>\n<p>·Navigation Capability Acquisition - Discrete action learning(Uni-NaVid, StreamVLN)， Continuous action learning(NaVid, NaVILA, Hydra-Nav), Reward-driven policy refinement</p>\n<p>·Auxiliary Task Learning - Grounded intermediate targets and control-oriented auxiliaries，Reasoning, planning, and task decomposition. - CoT as an auxiliary supervision signal，World models, future prediction, and map learning，Reward-based auxiliary alignment</p>\n<p>·Vision-Language Task Learning</p>\n<p>5. Efficient Deployment</p>\n<p></p>\n<p>(1)Embodiment-specific deployment</p>\n<p><img alt=\"\" width=\"1146\" height=\"661\" data-attachment-key=\"8QMJVBL7\"></p>\n<p>(2)Acceleration Techniques</p>\n<p><img alt=\"\" width=\"1108\" height=\"492\" data-attachment-key=\"A3FFIVAH\"></p>\n<p>6. Benchmarks and Evaluation Metrics</p>\n<p>（1）Benchmark Categories</p>\n<p><img alt=\"\" width=\"1076\" height=\"1098\" data-attachment-key=\"VL8XZH2E\"></p>\n<p>(2)Evaluation Metrics - Omitted (Check it when you need it)</p>\n<p></p>\n<h2>🤔 Personal Summary</h2>\n<h3>💭 Thought Inspiration</h3>\n<blockquote>\n<p>Tips: What aspects did you question, how do you think it can be improved?</p>\n</blockquote>\n<p></p>\n<h3>📜 Conclusion</h3>\n<blockquote>\n<p>Tips: What was done, what problem was solved, innovations and shortcomings?</p>\n</blockquote>\n<p></p>\n</div>",
+      "tags": [],
+      "dateModified": "2026-05-09T02:36:03Z",
+      "parentItem": "WDBR8WLW",
+      "contentHash": "34677ec59e3541681a6b73098aec6d7655b426f20da4a9182003149c4bd96489",
+      "displayHtml": "<div data-schema-version=\"9\"><h1><span style=\"color: rgb(25, 60, 71);\"><span style=\"background-color: rgb(238, 249, 253);\">Foundation Models for Embodied Navigation: A Survey</span></span></h1>\n<h2>⚙️ Metadata</h2>\n<ul>\n<li>\n<strong>Item Type:</strong> journalArticle\n</li>\n<li>\n<strong>Author:</strong> [[Longxi Gao]], [[Weikai Xie]], [[Haoze Qian]], [[Rongjie Yi]], [[Shihe Wang]], [[Jiaye Song]], [[Dongqi Cai]], [[Jinliang Yuan]], [[Yunhao Liu]], [[Xuanzhe Liu]], [[et al.]]\n</li>\n<li>\n<strong>Date Added:</strong> 2026/5/4 16:12:19\n</li>\n<li>\n<strong>URL:</strong>\n</li>\n<li>\n<strong>Cite key:</strong>\n</li>\n<li>\n<strong>Journal:</strong>\n</li>\n<li>\n<strong>Journal Tags:</strong>\n</li>\n<li>\n<strong>Publication Date:</strong>\n</li>\n<li>\n<strong>Tags:</strong> #, #zotero\n</li>\n<li>\n<strong>PDF Attachments: </strong><a href=\"zotero://open-pdf/library/items/W85F9UCM\" rel=\"noopener noreferrer nofollow\">Gao 等 - Foundation Models for Embodied Navigation A Survey.pdf</a>\n</li>\n<li>\n<strong>Related Items: </strong><span style=\"color: gray;\">无相关条目</span>\n</li>\n</ul>\n<h2>📜 Abstract</h2>\n<p>The remarkable advancements of embodied navigation, the process of physically situated agents perceiving and reasoning through egocentric observations to reach target locations, have recently been reshaped by the emergence of foundation models. Departing from traditional, task-specific policies trained from scratch on limited datasets, this new paradigm leverages the reasoning and multimodal capabilities of Large Language Models (LLMs), Vision-Language Models (VLMs), and Video Generation Models (VGMs), achieving superior generalization and flexible decision-making in unseen environments. For the first time, this survey systematically reviews the landscape of foundation models for embodied navigation, focusing on systems where these models play a central role in perception, long-horizon memory management, and action generation. The survey aims to categorize and interpret existing embodied navigation research through the lens of design paradigms, data sources, and training strategies. Through this analysis, we offer a synthesized outlook on the evolution of navigation brains, highlight the bottlenecks of dataset bias, and contribute guidance for future research, hoping to bring the field closer to robust, general-purpose embodied intelligence.</p>\n<h2>📚 Zotero links</h2>\n<ul>\n<li>\n<a href=\"zotero://select/items/1_WDBR8WLW\" rel=\"noopener noreferrer nofollow\">Local library</a>\n</li>\n</ul>\n<h1>Notes</h1>\n<ol>\n<li>\n<p>Problem Formulation and Taxonomy</p>\n<ul>\n<li>\nPerceiving surroundings\n</li>\n<li>\nReasoning about a navigation objective\n</li>\n<li>\nMake sequential decisions and execute actions\n</li>\n</ul>\n</li>\n</ol>\n<p>semantic navigation- VLN, ObjectNav, RegionNav</p>\n<p>geometric navigation- PointNav, ImageNav, FrontierNav</p>\n<p>interactive navigation- Embodied Visual Tracking, SocialNav, Multi-Agent Navigation</p>\n<p>2. Embodiment Taxonomy</p>\n<p>wheeled robots</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">·for flat and structured environments</p>\n<p>legged robots</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">·for wheel-unfriendly environments</p>\n<p>UAV</p>\n<p style=\"padding-left: 40px;\" data-indent=\"1\">·fully 3D space, move freely in both vertical and horizontal directions</p>\n<p>3. Key Design Dimensions</p>\n<p><img alt=\"\" width=\"1348\" height=\"919\" data-attachment-key=\"LVC4845S\" src=\"assets/note-images/LVC4845S/image.png\"></p>\n<p>(1)Observations and Representations</p>\n<p>·Raw Visual Observations - RGB-based observations (Ego-centric or Multi-view), Depth-aware observations - depth-maps incorporated</p>\n<p>·Map-augmented Representations - BEV - Floor maps, Occupancy maps, Value maps</p>\n<p>·Camera Intrinsics and Extrinsics - Geometric cues</p>\n<p>(2) Memory Mechanisms</p>\n<p>·Visual-based Memory - Historical frame selection, Visual memory compression（NavFoM，Uni-NaVid， Nav-R2）, Effective memory storage（KV cache form）</p>\n<p>·Text-based Memory - On-the-fly Memory, Serialized textual memory (template-based)</p>\n<p>·Map-augmented Memory - Map memory as a parallel input branch, Relevant map memory injected into the current visual context</p>\n<p>(3) Decision-making and Motion Control</p>\n<p>·Action Space Design - semantic target or direction selection(get the target or direction), discrete action prediction, continuous action prediction</p>\n<p>·Reasoning Mechanism - Explicit Reasoning with CoT, Adaptive Reasoning with CoT(Faster), CoT as Training Supervision</p>\n<p>(4) System Architectures</p>\n<p><img alt=\"\" width=\"1247\" height=\"762\" data-attachment-key=\"L7JY7PLE\" src=\"assets/note-images/L7JY7PLE/image.png\"></p>\n<p>·Modular Systems - perception, mapping, planning, control (CogNav, InstructNav)</p>\n<p>·Single-policy systems - discrete action outputs(NaVid, Uni-NaVid), continuous action outputs(Direct actions from backbone tokens, MLP-based action decoding, Diffusion-based action decoding)</p>\n<p>·Dual-system architectures (slow thinking: high-level semantic reasoning and long-horizon planning, fast thinking for low-level action generation and real-time control)</p>\n<p>·World-model-based systems</p>\n<p>-In Modular Settings - WMNav, PlanVLM, ReasonVLM</p>\n<p>-In End-to-end Single-Policy Systems - predict next actions + model future states, scene dynamics and intermediate spatial representations</p>\n<p>4. Data Collection and Training Strategies</p>\n<p>(1) Data Source:</p>\n<p><img alt=\"\" width=\"1365\" height=\"636\" data-attachment-key=\"985SRQ8K\" src=\"assets/note-images/985SRQ8K/image.png\"></p>\n<p><img alt=\"\" width=\"1082\" height=\"1097\" data-attachment-key=\"QQM69QF2\" src=\"assets/note-images/QQM69QF2/image.png\"><img alt=\"\" width=\"1132\" height=\"604\" data-attachment-key=\"JNE8MLEB\" src=\"assets/note-images/JNE8MLEB/image.png\"><img alt=\"\" width=\"1167\" height=\"1036\" data-attachment-key=\"322I4WBP\" src=\"assets/note-images/322I4WBP/image.png\"><img alt=\"\" width=\"1010\" height=\"1212\" data-attachment-key=\"XWZS58YH\" src=\"assets/note-images/XWZS58YH/image.png\">(2) Training Strategies</p>\n<p>·Navigation Capability Acquisition - Discrete action learning(Uni-NaVid, StreamVLN)， Continuous action learning(NaVid, NaVILA, Hydra-Nav), Reward-driven policy refinement</p>\n<p>·Auxiliary Task Learning - Grounded intermediate targets and control-oriented auxiliaries，Reasoning, planning, and task decomposition. - CoT as an auxiliary supervision signal，World models, future prediction, and map learning，Reward-based auxiliary alignment</p>\n<p>·Vision-Language Task Learning</p>\n<p>5. Efficient Deployment</p>\n<p></p>\n<p>(1)Embodiment-specific deployment</p>\n<p><img alt=\"\" width=\"1146\" height=\"661\" data-attachment-key=\"8QMJVBL7\" src=\"assets/note-images/8QMJVBL7/image.png\"></p>\n<p>(2)Acceleration Techniques</p>\n<p><img alt=\"\" width=\"1108\" height=\"492\" data-attachment-key=\"A3FFIVAH\" src=\"assets/note-images/A3FFIVAH/image.png\"></p>\n<p>6. Benchmarks and Evaluation Metrics</p>\n<p>（1）Benchmark Categories</p>\n<p><img alt=\"\" width=\"1076\" height=\"1098\" data-attachment-key=\"VL8XZH2E\" src=\"assets/note-images/VL8XZH2E/image.png\"></p>\n<p>(2)Evaluation Metrics - Omitted (Check it when you need it)</p>\n<p></p>\n<h2>🤔 Personal Summary</h2>\n<h3>💭 Thought Inspiration</h3>\n<blockquote>\n<p>Tips: What aspects did you question, how do you think it can be improved?</p>\n</blockquote>\n<p></p>\n<h3>📜 Conclusion</h3>\n<blockquote>\n<p>Tips: What was done, what problem was solved, innovations and shortcomings?</p>\n</blockquote>\n<p></p>\n</div>"
+    }
+  ],
+  "exportedAt": "2026-10-29T07:58:15+00:00"
+}
