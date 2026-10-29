@@ -95,9 +95,12 @@ function renderStateChips(){
   const t = c.status && c.status.translation;
   if(t) setChip('translationChip', t.available?'ok':'warn', t.available?`Translation: ${t.model||'available'}`:'Translation: unavailable');
   else setChip('translationChip','off','Translation: needs local companion');
-  $('btnTranslate').disabled = !(t && t.available) || !$('transSource').value.trim();
-  $('btnTranslateSel').disabled = !state.translateEnabled || !(t && t.available) || !getSelectedPdfText();
-  const translateAction=$('selPopup').querySelector('[data-act="translate"]'); if(translateAction) translateAction.hidden=!state.translateEnabled;
+  const translationHelp=translationSetupMessage();
+  $('btnTranslate').disabled = !!translationHelp || !$('transSource').value.trim();
+  $('btnTranslateSel').disabled = !selectedTranslationText();
+  const translateAction=$('selPopup').querySelector('[data-act="translate"]'); if(translateAction) translateAction.hidden=false;
+  $('transSetupStatus').textContent=translationHelp;
+  $('btnTranslationSetup').hidden=!translationHelp;
   $('zoteroStatusDialog').textContent = c.serverMismatch?'Different Zotero library detected. Use Review new Zotero library; local drafts are retained.':(state.conflicts.length?`${state.conflicts.length} conflict(s) retained. Sync opens them for review.`:(c.connected ? (c.status?`Zotero reachable: ${!!(c.status.zotero||{}).reachable}; writable: ${!!(c.status.zotero||{}).writable}`:'Status unknown') : 'Not connected to local companion.'));
 }
 
@@ -713,6 +716,8 @@ function mergeRects(rects){
   return out.map(r=>[r.x1,r.y1,r.x2,r.y2]);
 }
 function getSelectedPdfText(){ const sel=window.getSelection(); return sel?sel.toString().trim():''; }
+// Controls can take focus and collapse the DOM selection before their click fires.
+function selectedTranslationText(){ return state.lastSelection?.text || collectSelectionRects()?.text || ''; }
 
 function showSelPopup(clientRect){
   const pop=$('selPopup');
@@ -727,10 +732,10 @@ function hideSelPopup(){ $('selPopup').hidden=true; }
 function handleSelectionEnd(){
   setTimeout(()=>{
     const info=collectSelectionRects();
-    if(!info || !info.text){ hideSelPopup(); state.lastSelection=null; return; }
+    if(!info || !info.text){ hideSelPopup(); state.lastSelection=null; $('btnTranslateSel').disabled=true; return; }
     state.lastSelection=info;
     showSelPopup(info.clientRect);
-    $('btnTranslateSel').disabled = !($('btnTranslate').disabled===false) || !info.text;
+    $('btnTranslateSel').disabled = !info.text;
   },10);
 }
 
@@ -1046,6 +1051,38 @@ function showTab(kind){
 }
 
 /* ---------------- Translation ---------------- */
+function bindTranslationControls(){
+  $('chkTranslate').addEventListener('change',()=>{
+    state.translateEnabled=$('chkTranslate').checked;
+    lsSet(TRANS_KEY,JSON.stringify({enabled:state.translateEnabled}));
+    renderStateChips();
+    if(state.translateEnabled){ const text=selectedTranslationText(); if(text) openTranslate(text); }
+  });
+  $('btnTranslateSel').addEventListener('click',translateSelection);
+  $('btnTranslationSetup').addEventListener('click',()=>$('settingsDialog').showModal());
+  // Keep the PDF range intact for mouse, pen and touch popup actions.
+  $('selPopup').addEventListener('pointerdown',e=>{ if(e.target.closest('button')) e.preventDefault(); });
+  $('selPopup').addEventListener('click',e=>{ const b=e.target.closest('button'); if(!b) return; const act=b.dataset.act;
+    if(act==='copy'){ const t=getSelectedPdfText(); navigator.clipboard&&navigator.clipboard.writeText(t).then(()=>toast('Copied.','ok')).catch(()=>toast('Copy failed.','error')); hideSelPopup(); }
+    else if(act==='translate'){ translateSelection(); hideSelPopup(); }
+    else if(act==='highlight'){ createAnnoFromSelection('highlight'); }
+    else if(act==='underline'){ createAnnoFromSelection('underline'); }
+  });
+}
+function translationSetupMessage(){
+  const c=state.companion;
+  if(!c.connected || !c.url || !c.token) return 'Start Paper Reader.cmd on this computer, then open Settings / Connect to connect the local companion. Translation keys stay on the companion.';
+  if(!c.status?.translation?.available) return 'Translation is unavailable on the local companion. Configure its DeepSeek API key, restart the companion, then reconnect in Settings / Connect.';
+  return '';
+}
+function translateSelection(){
+  const text=selectedTranslationText();
+  if(!text){ toast('Select text in the PDF first.','error'); return; }
+  state.translateEnabled=true;
+  $('chkTranslate').checked=true;
+  lsSet(TRANS_KEY,JSON.stringify({enabled:true}));
+  openTranslate(text);
+}
 function openTranslate(text){
   showTab('trans');
   $('transSource').value=(text||getSelectedPdfText()||'').slice(0,4000);
@@ -1060,9 +1097,9 @@ async function doTranslate(){
   if(!text){ $('transStatus').textContent='Nothing to translate.'; return; }
   if(text.length>4000){ $('transStatus').textContent='Text too long (max 4000 characters).'; return; }
   const c=state.companion;
-  if(!c.connected || !c.url || !c.token){ $('transStatus').textContent='Translation requires the local companion with a configured key. Open Settings / Connect for setup.'; return; }
+  const setupMessage=translationSetupMessage();
+  if(setupMessage){ $('transStatus').textContent=setupMessage; return; }
   const t=c.status&&c.status.translation;
-  if(!t||!t.available){ $('transStatus').textContent='Translation is disabled on the local companion (missing key or service unavailable).'; return; }
   $('btnTranslate').disabled=true; $('transStatus').textContent='Translating\u2026';
   try{
     const res=await apiFetch('/api/translate',{method:'POST',body:{text,targetLanguage:'zh-CN',sourceLanguage:'auto'}});
@@ -1591,14 +1628,7 @@ function bindEvents(){
   $('btnPointNote').addEventListener('click',togglePointNote);
   $('btnUndoDelete').addEventListener('click',undoLocalDeletion);
   $('btnCopy').addEventListener('click',async()=>{ const t=getSelectedPdfText(); if(!t){ toast('Select text first.','error'); return; } try{ await navigator.clipboard.writeText(t); toast('Copied selected text.','ok'); }catch{ toast('Copy failed; select and copy manually.','error'); } });
-  $('chkTranslate').addEventListener('change',()=>{ state.translateEnabled=$('chkTranslate').checked; lsSet(TRANS_KEY,JSON.stringify({enabled:state.translateEnabled})); renderStateChips(); if(state.translateEnabled){ const t=getSelectedPdfText(); if(t) openTranslate(t); } });
-  $('btnTranslateSel').addEventListener('click',()=>{ const t=getSelectedPdfText(); if(t) openTranslate(t); else toast('Select text in the PDF first.','error'); });
-  $('selPopup').addEventListener('click',e=>{ const b=e.target.closest('button'); if(!b) return; const act=b.dataset.act;
-    if(act==='copy'){ const t=getSelectedPdfText(); navigator.clipboard&&navigator.clipboard.writeText(t).then(()=>toast('Copied.','ok')).catch(()=>toast('Copy failed.','error')); hideSelPopup(); }
-    else if(act==='translate'){ openTranslate(getSelectedPdfText()); hideSelPopup(); }
-    else if(act==='highlight'){ createAnnoFromSelection('highlight'); }
-    else if(act==='underline'){ createAnnoFromSelection('underline'); }
-  });
+  bindTranslationControls();
   document.addEventListener('selectionchange',()=>{ if(!state.pdf) return; const sel=window.getSelection(); if(!sel||sel.isCollapsed){ hideSelPopup(); return; } const an=sel.anchorNode; if(an && pageElementFromNode(an)) handleSelectionEnd(); });
   document.addEventListener('mousedown',e=>{ if(!$('selPopup').hidden && !$('selPopup').contains(e.target)){ const inPdf=pageElementFromNode(e.target); if(!inPdf) hideSelPopup(); } });
   $('pdfScroll').addEventListener('click',e=>{ if(pointToolActive){ placePointNote(e.clientX,e.clientY); return; } });

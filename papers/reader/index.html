@@ -54,8 +54,8 @@
       <button class="tb" id="btnUnderline" type="button" title="Underline selected text" aria-pressed="false">Underline</button>
       <button class="tb" id="btnPointNote" type="button" title="Place a point note on the page" aria-pressed="false">Point note</button>
       <button class="tb" id="btnCopy" type="button" title="Copy selected text">Copy</button>
-      <label class="tb-check" title="Enable translate action for selected text"><input type="checkbox" id="chkTranslate"> Translate</label>
-      <button class="tb" id="btnTranslateSel" type="button" title="Translate selected text (requires local companion)" disabled>Translate selection</button>
+      <label class="tb-check" title="Enable translation for selected text; sends only when you press Translate in the panel"><input type="checkbox" id="chkTranslate"> Translate</label>
+      <button class="tb" id="btnTranslateSel" type="button" title="Open selected text in the translation panel" disabled>Translate selection</button>
     </div>
     <div class="pdf-scroll" id="pdfScroll" tabindex="0" aria-label="Scrollable PDF pages">
       <div class="pages" id="pagesContainer"></div>
@@ -125,6 +125,8 @@
         <span class="hint">Translation is sent only when you press Translate. It requires the local companion service with a configured API key.</span>
       </div>
       <div class="trans-block">
+        <p class="hint" id="transSetupStatus" role="status"></p>
+        <button class="btn small" id="btnTranslationSetup" type="button">Settings / Connect</button>
         <label class="sr-only" for="transSource">Text to translate</label>
         <textarea id="transSource" rows="4" class="trans-text" maxlength="4000" placeholder="Select text in the PDF, then press Translate selection" aria-label="Source text"></textarea>
         <div class="trans-actions">
