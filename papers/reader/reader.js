@@ -71,6 +71,7 @@ const PURIFY_CONFIG = {
   FORBID_ATTR:['onerror','onclick','onload','onmouseover','onfocus','onfocusin','srcdoc','style'],
   ALLOW_DATA_ATTR:true,
   ALLOW_UNKNOWN_PROTOCOLS:false,
+  ALLOWED_URI_REGEXP:/^(?:(?:(?:f|ht)tps?|mailto|tel|callto|sms|cid|xmpp|matrix):|zotero:\/\/(?:open-pdf|select|note)\/|[^a-z]|[a-z+.\-]+(?:[^a-z+.\-:]|$))/i,
   USE_PROFILES:{html:true},
 };
 function sanitizeHtml(html){ try{ return DOMPurify.sanitize(String(html||''), PURIFY_CONFIG); }catch{ return esc(html); } }
@@ -83,7 +84,10 @@ function renderStateChips(){
   else if(st==='error') setChip('stateChip','error','Sync error - drafts kept');
   else setChip('stateChip','snapshot','Published snapshot');
   const c = state.companion;
-  if(c.connected && c.status){
+  const paperLinked=!!(state.data?.zotero?.parentKey||state.paper?.zotero?.parentKey);
+  if(state.data && !paperLinked) setChip('zoteroChip','off','Zotero: paper not linked');
+  else if(state.data?.mapping?.status==='unmatched') setChip('zoteroChip','warn','Zotero: PDF version not matched');
+  else if(c.connected && c.status){
     const z=c.status.zotero||{};
     const label = z.writable ? `Zotero: connected${z.version?' '+z.version:''}` : (z.readable ? 'Zotero: read-only' : 'Zotero: not reachable');
     setChip('zoteroChip', z.writable?'ok':(z.readable?'warn':'off'), label);
@@ -114,6 +118,7 @@ async function boot(){
     await loadPaper(id);
   }catch(e){ showPdfError('Could not load paper data: '+e.message); return; }
   await loadLocalState();
+  renderStateChips();
   renderPanels();
   if(state.notes.length) selectNote(state.selectedNote && state.notes.some(n=>n.id===state.selectedNote) ? state.selectedNote : state.notes[0].id);
   else { showTab('notes'); refreshActiveEditor(); }
