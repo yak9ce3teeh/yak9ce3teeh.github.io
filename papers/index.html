@@ -20,13 +20,30 @@
 @media(max-width:560px){.filter-row{grid-template-columns:repeat(2,minmax(0,1fr))}.topic-control,.code-control,.keyword-control{grid-column:span 2}.result-toolbar{flex-direction:column}.result-tools{justify-content:flex-start;align-items:center;flex-direction:row;gap:10px 15px}.sort-wrap label{display:inline}.sort-wrap select{width:178px}.paper{grid-template-columns:50px minmax(0,1fr);gap:10px}.paper-title{font-size:15px}.code-badge,.keyword-chip,.community-badge{font-size:9px;padding:2px 6px}.paper-tags{gap:5px}.metadata-details dl{grid-template-columns:1fr;gap:2px}.metadata-details dd{margin-bottom:6px}.paper-category{font-size:10px}.library-stats{row-gap:5px}}
 @media print{.keyword-chip{color:#444}.metadata-details:not([open]){display:none}}
 .library-actions{display:flex;flex-direction:column;align-items:flex-end;gap:10px}
-@media(max-width:700px){.library-actions{align-items:flex-start}}
+.library-actions>.summary-link{max-width:none;text-align:inherit}.quick-add{position:relative}.add-paper-button{display:flex;align-items:center;justify-content:center;gap:5px;list-style:none;cursor:pointer;background:var(--accent);color:white;font-size:13px;font-weight:600;padding:9px 16px;border-radius:6px;white-space:nowrap}.add-paper-button::-webkit-details-marker{display:none}.add-paper-button:hover,.quick-add[open]>.add-paper-button{background:#1f4c41}.quick-add-panel{position:absolute;z-index:20;right:0;top:calc(100% + 10px);width:350px;max-width:calc(100vw - 36px);max-height:calc(100dvh - 130px);overflow:auto;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:20px;box-shadow:0 12px 40px #202c2a21;font-size:13px;line-height:1.65}.quick-add-panel h2{font-size:18px}.quick-add-panel p{margin:10px 0;color:var(--muted)}.quick-add-panel ol{padding-left:20px;margin:14px 0 18px}.quick-add-panel li+li{margin-top:11px}.quick-add-panel strong{color:var(--ink);font-weight:600}.open-quick-add{display:inline-flex;align-items:center;gap:6px;padding:8px 13px;border-radius:5px;background:var(--selected);color:var(--accent);font-weight:600;text-decoration:none}.open-quick-add:hover{background:#dbe7de}.quick-add-panel .quick-add-hint{font-size:11px;margin:13px 0 0}
+@media(max-width:700px){.masthead{flex-direction:column;gap:18px}.library-actions{flex-direction:row;flex-wrap:wrap;align-items:center;gap:14px}.quick-add-panel{left:0;right:auto;max-height:calc(100dvh - 260px)}}
+@media print{.library-actions{display:none!important}}
 .zotero-link{display:none}.home-link{font-size:12px;text-decoration:none;white-space:nowrap;margin-top:8px}</style>
 </head>
 <body>
 <a class="skip-link" href="#results">Skip to papers</a>
 <div class="shell">
-  <header class="masthead"><div><div class="brand-heading"><span class="library-mark" aria-hidden="true"><i></i><i></i><i></i></span><div><p class="eyebrow">Personal research</p><h1>Paper Library</h1></div></div><p class="description">Browse papers, code, and reading notes by research topic.</p><p class="library-stats"><span><strong>75</strong> files</span><span><strong>8</strong> research areas</span><span><strong>37</strong> with code</span><span><strong>42</strong> with linked notes</span></p></div><nav class="library-actions" aria-label="Library connection"><a class="summary-link" id="libraryConnect" href="reader/?connect=1">Connect translation &amp; Zotero</a><a class="home-link" href="../index.html">← Home</a></nav></header>
+  <header class="masthead"><div><div class="brand-heading"><span class="library-mark" aria-hidden="true"><i></i><i></i><i></i></span><div><p class="eyebrow">Personal research</p><h1>Paper Library</h1></div></div><p class="description">Browse papers, code, and reading notes by research topic.</p><p class="library-stats"><span><strong>75</strong> files</span><span><strong>8</strong> research areas</span><span><strong>37</strong> with code</span><span><strong>42</strong> with linked notes</span></p></div><nav class="library-actions" aria-label="Library actions">
+    <details class="quick-add" id="quick-add">
+      <summary class="add-paper-button"><span aria-hidden="true">＋</span> Add paper</summary>
+      <section class="quick-add-panel" aria-labelledby="quick-add-title">
+        <h2 id="quick-add-title">Add a paper</h2>
+        <p>Import an arXiv link or upload a PDF using your local Paper Library workspace.</p>
+        <ol>
+          <li>In your Papers folder, double-click <strong>Add Paper.cmd</strong>. The private form opens in your browser.</li>
+          <li>Paste a paper link and choose <strong>Fetch details</strong>, or upload a PDF. Choose a category, then select <strong>Add paper</strong>.</li>
+          <li>Check <strong>Publish to website</strong> in the form to update this online library.</li>
+        </ol>
+        <a class="open-quick-add" href="http://127.0.0.1:8731/open" target="_blank" rel="noopener noreferrer">Open Quick Add <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a>
+        <p class="quick-add-hint">Start the launcher first and use the same browser. Quick Add runs on the computer where your paper files are stored.</p>
+      </section>
+    </details>
+    <a class="summary-link" id="libraryConnect" href="reader/?connect=1">Connect translation &amp; Zotero</a><a class="home-link" href="../index.html">← Home</a></nav></header>
   <div class="library">
     <aside class="sidebar js-only"><nav aria-label="Research areas"><p class="nav-label">Research areas</p><button class="area-button" type="button" data-area="" aria-pressed="true"><span>All areas</span><span class="area-count">75</span></button><button class="area-button" type="button" data-area="Agent Foundations" aria-pressed="false"><span>Agent Foundations</span><span class="area-count">7</span></button><button class="area-button" type="button" data-area="Embodied Navigation" aria-pressed="false"><span>Embodied Navigation</span><span class="area-count">6</span></button><button class="area-button" type="button" data-area="Foundations and Surveys" aria-pressed="false"><span>Foundations and Surveys</span><span class="area-count">1</span></button><button class="area-button" type="button" data-area="Humanoid Robotics" aria-pressed="false"><span>Humanoid Robotics</span><span class="area-count">26</span></button><button class="area-button" type="button" data-area="Multi-Agent Systems" aria-pressed="false"><span>Multi-Agent Systems</span><span class="area-count">8</span></button><button class="area-button" type="button" data-area="Robotic Manipulation" aria-pressed="false"><span>Robotic Manipulation</span><span class="area-count">9</span></button><button class="area-button" type="button" data-area="Scene Understanding and Memory" aria-pressed="false"><span>Scene Understanding and Memory</span><span class="area-count">12</span></button><button class="area-button" type="button" data-area="World Models and World Action Models" aria-pressed="false"><span>World Models and World Action Models</span><span class="area-count">6</span></button></nav><p class="sidebar-note">A working collection on robotics, embodied intelligence, and agent systems.</p></aside>
     <main class="results-panel" id="results" tabindex="-1">
@@ -811,6 +828,11 @@
   [controls.topic,controls.year,controls.notes,controls.code,controls.keyword,controls.sort,controls.group].forEach(control=>control.addEventListener('change',render));
   $('clear-filters').addEventListener('click',clearFilters);
   $('clear-empty').addEventListener('click',()=>{clearFilters();controls.search.focus();});
+  const quickAdd = $('quick-add');
+  if(quickAdd) {
+    document.addEventListener('click',event=>{if(!quickAdd.contains(event.target)) quickAdd.open=false;});
+    document.addEventListener('keydown',event=>{if(event.key==='Escape' && quickAdd.open){quickAdd.open=false;quickAdd.querySelector('summary').focus();}});
+  }
   render();
   document.documentElement.classList.add('enhanced');
 })();
