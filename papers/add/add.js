@@ -15,12 +15,18 @@ function summaries(){const z=connection(),g=gh(),health=zoteroHealth?.token===z?
   $('connectionStatus').textContent='Zotero '+label+' · '+(g?'GitHub publishing ready':'Connect GitHub to publish');}
 async function refreshConnections(){
   if(healthRequest)return healthRequest;
-  const raw=get(localStorage,CONNECTION_KEY);
-  if(!raw||raw.disconnected&&!raw.expired){zoteroHealth=null;summaries();return;}
   healthRequest=(async()=>{
-    try{const status=await zotero('/api/status');zoteroHealth={token:connection()?.token,writable:!!status.zotero?.writable};}
-    catch{zoteroHealth={token:connection()?.token,offline:true};}
-    summaries();
+    for(;;){
+      const before=localStorage.getItem(CONNECTION_KEY),raw=get(localStorage,CONNECTION_KEY);
+      if(!raw||raw.disconnected&&!raw.expired){zoteroHealth=null;summaries();return;}
+      let health;
+      try{const status=await zotero('/api/status');health={token:raw.token,writable:!!status.zotero?.writable};}
+      catch{health={token:raw.token,offline:true};}
+      // Expiry renewal or another tab may replace the session during this GET.
+      // Check the replacement before resolving any joined refresh callers.
+      if(localStorage.getItem(CONNECTION_KEY)!==before)continue;
+      zoteroHealth=health;summaries();return;
+    }
   })();
   try{return await healthRequest;}finally{healthRequest=null;}
 }
