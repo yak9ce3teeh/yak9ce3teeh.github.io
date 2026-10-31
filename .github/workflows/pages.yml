@@ -1,0 +1,59 @@
+name: Publish personal homepage
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: personal-homepage-pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pages: read
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Add queued papers
+        if: github.actor == github.repository_owner
+        run: |
+          git config user.name 'Paper Library'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          python tools/paper_add/cloud_add.py "$GITHUB_WORKSPACE"
+          for attempt in 1 2 3; do
+            if git push origin HEAD:main; then break; fi
+            test "$attempt" -lt 3 || exit 1
+            git fetch origin main
+            git rebase origin/main
+          done
+      - uses: actions/configure-pages@v5
+      - name: Prepare public files
+        run: python tools/paper_add/package_site.py
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v5

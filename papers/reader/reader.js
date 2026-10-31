@@ -1211,7 +1211,7 @@ async function apiFetch(path,opts={},candidate=null){
   if(!c.token) throw new Error('No session token');
   const session={url:validatedCompanionUrl(c.url),token:c.token};
   if(!/^\/api\/[A-Za-z0-9_/?=&%.-]+$/.test(path)) throw new Error('Invalid companion API path');
-  const url=session.url+path;
+  const url=session.url+(new URL(session.url).port==='23119'?'/paper-library':'')+path;
   const headers={'Authorization':'Bearer '+session.token};
   let body;
   if(opts.body!==undefined){ headers['Content-Type']='application/json'; body=JSON.stringify(opts.body); }
@@ -1219,7 +1219,7 @@ async function apiFetch(path,opts={},candidate=null){
   try{
     res=await fetch(url,{method:opts.method||'GET',headers,body,mode:'cors',credentials:'omit',cache:'no-store',redirect:'error'});
   }catch(e){
-    throw new Error('Could not reach local companion at '+c.url+'. Start it locally, or use Open local reader / export drafts.');
+    throw new Error(new URL(session.url).port==='23119'?'Could not reach Zotero. Keep Zotero open and connect again in Add paper → Settings / Connect.':'Could not reach local companion at '+c.url+'. Start it locally, or use Open local reader / export drafts.');
   }
   if(res.status===401){ rejectSharedConnection(session); throw new Error('Authorization rejected by local companion (token expired?). Open the local reader again for a fresh token.'); }
   if(res.status===403) throw new Error('Local companion refused the request (origin or host not allowed).');

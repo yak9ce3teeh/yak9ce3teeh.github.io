@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Browse research papers by topic, code availability, keywords, publication month, repository stars and citations.">
+<title>Paper Library</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='10' fill='%23275e50'/%3E%3Cpath d='M10 10h8v21h-8zm12 0h8v21h-8z' fill='%23f6f5f1'/%3E%3C/svg%3E">
+<style>__CSS__</style>
+</head>
+<body>
+<a class="skip-link" href="#results">Skip to papers</a>
+<div class="shell">
+  <header class="masthead"><div><div class="brand-heading"><span class="library-mark" aria-hidden="true"><i></i><i></i><i></i></span><div><p class="eyebrow">Personal research</p><h1>Paper Library</h1></div></div><p class="description">Browse papers, code, and reading notes by research topic.</p><p class="library-stats"><span><strong>__TOTAL__</strong> files</span><span><strong>__AREAS__</strong> research areas</span><span><strong>__CODE_COUNT__</strong> with code</span><span><strong>__NOTES_COUNT__</strong> with linked notes</span></p></div><nav class="library-actions" aria-label="Library actions">
+    <a class="add-paper-button" href="add/"><span aria-hidden="true">＋</span> Add paper</a>
+    <a class="summary-link" id="libraryConnect" href="reader/?connect=1">Connect translation &amp; Zotero</a><span class="local-label">Personal collection</span></nav></header>
+  <div class="library">
+    <aside class="sidebar js-only"><nav aria-label="Research areas"><p class="nav-label">Research areas</p><button class="area-button" type="button" data-area="" aria-pressed="true"><span>All areas</span><span class="area-count">__TOTAL__</span></button>__AREA_BUTTONS__</nav><p class="sidebar-note">A working collection on robotics, embodied intelligence, and agent systems.</p></aside>
+    <main class="results-panel" id="results" tabindex="-1">
+      <div class="controls js-only">
+        <div class="mobile-area"><label class="control-label" for="area-select">Research area</label><select id="area-select"><option value="">All areas</option>__AREA_OPTIONS__</select></div>
+        <label class="control-label" for="search">Search papers</label>
+        <div class="search-wrap"><svg class="search-icon" viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.5" stroke="currentColor" stroke-width="1.6"/><path d="m13 13 4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg><input id="search" type="search" placeholder="Search titles, keywords, or YYYY-MM…" autocomplete="off"></div>
+        <div class="filter-row">
+          <div class="topic-control"><label class="control-label" for="topic-select">Topic</label><select id="topic-select"><option value="">All topics</option>__TOPIC_OPTIONS__</select></div>
+          <div><label class="control-label" for="year-select">Year</label><select id="year-select"><option value="">All years</option>__YEAR_OPTIONS__<option value="unknown">Date unknown</option></select></div>
+          <div><label class="control-label" for="notes-select">Notes</label><select id="notes-select"><option value="">All files</option><option value="yes">With linked notes</option><option value="no">Without linked notes</option></select></div>
+          <div class="code-control"><label class="control-label" for="code-select">Code</label><select id="code-select"><option value="">All statuses</option><option value="available">Code available</option><option value="open">Open source</option><option value="public">Public code · license unclear / custom</option><option value="restricted">Restricted license</option><option value="not_released">Code not released</option><option value="not_found">Code not found</option><option value="unverified">Code unverified</option><option value="resources">Survey / paper-list resources</option></select></div>
+          <div class="keyword-control"><label class="control-label" for="keyword-select">Keyword</label><select id="keyword-select"><option value="">All keywords</option>__KEYWORD_OPTIONS__</select></div>
+        </div>
+      </div>
+      <noscript><p class="noscript">All files are listed below, with available code first. Enable JavaScript to use search, filters, and other sorting options.</p></noscript>
+      <div class="result-toolbar"><p id="result-count" class="result-count" role="status" aria-live="polite" aria-atomic="true">Showing <strong>__TOTAL__</strong> files</p><div class="result-tools"><button class="clear-button js-only" type="button" id="clear-filters">Clear filters</button><label class="group-toggle js-only"><input type="checkbox" id="group-toggle">Group by topic</label><div class="sort-wrap js-only"><label for="sort-select" id="sort-label">Sort by</label><select id="sort-select"><option value="code">Code available first</option><option value="stars">Most stars</option><option value="citations">Most citations</option><option value="newest">Newest first</option><option value="oldest">Oldest first</option><option value="title">Title A–Z</option></select></div></div></div>
+      <div id="flat-list" class="flat-list">__ROWS__</div>
+      <div id="topic-groups" hidden>__GROUPS__</div>
+      <div id="empty-state" class="empty-state" hidden><h2>No files match your search.</h2><p>Try a different keyword, code status, or date.</p><button class="clear-button" type="button" id="clear-empty">Clear filters</button></div>
+      <footer class="site-footer"><p>Stars are repository snapshots from GitHub. Citations are paper snapshots from Semantic Scholar. Unknown values are shown explicitly and sort last.</p><p>Dates use the first arXiv submission where available; other date sources and month precision are listed in Details. Keywords are curated from paper titles and methods. Code labels describe code licensing; model weights may use separate terms.</p><p>Some files may have notes in Zotero that are not linked here. Images and internal links in exported notes may require Zotero.</p><p class="snapshot">Metadata checked __CHECKED_DATE__ · __MONTH_COUNT__ files with a confirmed month. Includes original reading-note exports.</p></footer>
+    </main>
+  </div>
+</div>
+<script>__JS__</script>
+</body>
+</html>
