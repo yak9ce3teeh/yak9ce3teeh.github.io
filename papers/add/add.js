@@ -32,7 +32,7 @@ async function syncExisting(item){
       const z={parentKey:result.parentKey,attachmentKey:result.attachmentKey,pdfSha256:result.pdfSha256};
       setResult('Linking existing paper','Publishing the verified Zotero association to its existing record…');
       await submitPublication(gh().token,{requestId,metadata:meta,zotero:z},pdf);
-      const active={id:requestId,title:meta.title,zotero:true,at:Date.now()};put(localStorage,ACTIVE,active);await watchPublication(active);
+      const active={id:requestId,title:meta.title,zotero:true,attachmentKey:z.attachmentKey,at:Date.now()};put(localStorage,ACTIVE,active);await watchPublication(active);
     }else {setResult('Saved in Zotero',item.title+' uses its existing library record. Connect GitHub and select website publishing to share the association with the web reader.');link('Open in Zotero','zotero://select/library/items/'+result.parentKey);link('Read paper','../reader/?id='+item.file_id);}
   }catch(e){setResult('Could not sync to Zotero',e.message,true);}finally{working=false;}
 }
@@ -61,7 +61,7 @@ async function watchPublication(active){
       if(result?.fileId!==undefined){
         setResult(result.status==='already_exists'?'Already in your library':'Publishing website',result.status==='already_exists'?'The existing paper record has been kept.':'The paper has been processed. Waiting for the website update…');
         const response=await fetch('../reader/data/'+result.fileId+'.json?v='+encodeURIComponent(active.id),{cache:'no-store'});
-        if(response.ok){const snapshot=await response.json();if(snapshot.fileId===result.fileId){
+        if(response.ok){const snapshot=await response.json();if(snapshot.fileId===result.fileId&&(!active.attachmentKey||snapshot.zotero?.attachmentKey===active.attachmentKey)){
           remove(localStorage,ACTIVE);setResult(result.status==='already_exists'?'Already in your library':'Paper published',result.title+(active.zotero?' · Saved in local Zotero.':''));link('Read paper','../reader/?id='+result.fileId);link('View library','../?v='+active.id);return;
         }}
       }
@@ -92,7 +92,7 @@ async function submit(event){
     }
     if(toWebsite){
       setResult('Uploading paper','Uploading this publication request to your GitHub repository…');
-      active={id:requestId,title:meta.title,zotero:!!z,at:Date.now()};
+      active={id:requestId,title:meta.title,zotero:!!z,attachmentKey:z?.attachmentKey||null,at:Date.now()};
       await submitPublication(gh().token,{requestId,metadata:meta,zotero:z},pdf);
       put(localStorage,ACTIVE,active);
       setResult('Publishing paper','GitHub is adding this paper and updating your website. You can leave this page and return later.');
