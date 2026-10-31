@@ -11,7 +11,7 @@ const $ = (id) => document.getElementById(id);
 const LS = (() => { try { const k='__pl_probe'; localStorage.setItem(k,'1'); localStorage.removeItem(k); return true; } catch { return false; } })();
 const STATUS_KEY='plr.status', SETTINGS_KEY='plr.settings', TRANS_KEY='plr.translation', TOKEN_KEY='plr.token';
 const CONNECTION_KEY='plr.connection', CONNECTION_TTL=8*60*60*1000;
-let connectionGeneration=0, fragmentSession=null;
+let connectionGeneration=0, fragmentSession=null, connectionRenewal=null, statusRefresh=null, lastStatusCheck=0;
 const paperKey = (id, suffix) => `plr.p${id}.${suffix}`;
 
 function lsGet(key){ try { return LS ? localStorage.getItem(key) : null; } catch { return null; } }
@@ -96,7 +96,7 @@ function renderStateChips(){
   } else setChip('zoteroChip','off', 'Zotero: not connected');
   const t = c.status && c.status.translation;
   if(t) setChip('translationChip', t.available?'ok':'warn', t.available?`Translation: ${t.model||'available'}`:'Translation: unavailable');
-  else setChip('translationChip','off','Translation: needs local companion');
+  else setChip('translationChip','off','Translation: connect Zotero');
   const translationHelp=translationSetupMessage();
   $('btnTranslate').disabled = state.translationBusy || !$('transSource').value.trim();
   $('btnTranslateSel').disabled = !selectedTranslationText();
@@ -161,7 +161,10 @@ function saveSettings(){ lsSet(SETTINGS_KEY, JSON.stringify({url:state.companion
 function clearLegacyToken(){ try{ sessionStorage.removeItem(TOKEN_KEY); }catch{} }
 
 async function maybeConnectFromToken(){
-  if(!state.companion.token) return;
+  if(!state.companion.token){
+    try{const renewed=await renewAddonConnection();if(renewed)adoptSharedConnection(renewed);}catch{}
+    if(!state.companion.token)return;
+  }
   const url = state.companion.url || (['127.0.0.1','localhost'].includes(location.hostname) ? location.origin : 'http://127.0.0.1:23120');
   const shared=readSharedConnection();
   await connectCompanion(url, state.companion.token, true, fragmentSession?null:shared);
@@ -1080,9 +1083,9 @@ function bindTranslationControls(){
 }
 function translationSetupMessage(){
   const c=state.companion;
-  if(!c.connected || !c.url || !c.token) return 'This reader is not connected to the local companion. Start Paper Reader.cmd on this computer, then use Settings / Connect to connect to the existing DeepSeek service. Translation keys stay on the companion.';
-  if(!c.status?.translation) return 'Translation status is not available yet. Refresh status in Settings / Connect to check the existing DeepSeek service.';
-  if(!c.status.translation.available) return 'The connected companion has no configured DeepSeek API key. Check its existing local configuration, restart it, then reconnect in Settings / Connect. Keys stay on the companion.';
+  if(!c.connected || !c.url || !c.token) return 'Open Zotero and use Settings / Connect → Connect library services once. DeepSeek translation is shared by every paper on this site.';
+  if(!c.status?.translation) return 'Refresh the library connection to check DeepSeek availability.';
+  if(!c.status.translation.available) return 'DeepSeek is not available in this connection. Update the Paper Library Web Zotero extension and check the existing local DeepSeek API key.';
   return '';
 }
 function translateSelection(){
@@ -1110,8 +1113,7 @@ async function doTranslate(){
   state.translationBusy=true;
   $('btnTranslate').disabled=true;
   try{
-    const shared=refreshSharedConnection();
-    if(shared && !state.companion.connected) await connectCompanion(shared.url,shared.token,true,shared);
+    await refreshServiceStatus(true);
     const c=state.companion,setupMessage=translationSetupMessage();
     if(setupMessage){ $('transStatus').textContent=setupMessage; $('settingsDialog').showModal(); return; }
     const t=c.status&&c.status.translation;
@@ -1163,7 +1165,14 @@ function readSharedConnection(){
     const record=JSON.parse(raw);
     if(record.disconnected) return null;
     const url=validatedCompanionUrl(record.url),now=Date.now();
-    if(typeof record.token!=='string' || !/^[A-Za-z0-9_-]{1,4096}$/.test(record.token) || !Number.isFinite(record.createdAt) || !Number.isFinite(record.expiresAt) || record.createdAt>now || record.expiresAt<=now || record.expiresAt<=record.createdAt || record.expiresAt-record.createdAt>CONNECTION_TTL) throw new Error('Expired or invalid connection');
+    if(typeof record.token!=='string' || !/^[A-Za-z0-9_-]{1,4096}$/.test(record.token) || !Number.isFinite(record.createdAt) || !Number.isFinite(record.expiresAt) || record.createdAt>now || record.expiresAt<=record.createdAt || record.expiresAt-record.createdAt>CONNECTION_TTL) throw new Error('Expired or invalid connection');
+    if(record.expiresAt<=now){
+      if(url==='http://127.0.0.1:23119'&&record.transport==='zotero-addon'){
+        if(lsGet(CONNECTION_KEY)===raw)lsSet(CONNECTION_KEY,JSON.stringify({disconnected:true,expired:true,url,transport:'zotero-addon',at:now}));
+        return null;
+      }
+      throw new Error('Expired connection');
+    }
     return {...record,url};
   }catch{
     // A tombstone suppresses legacy sessionStorage credentials in every tab.
@@ -1196,6 +1205,10 @@ function rejectSharedConnection(rejected){
 }
 function bindConnectionSharing(){
   window.addEventListener('storage',async event=>{
+    if(event.key===TRANS_KEY){
+      try{state.translateEnabled=!!JSON.parse(lsGet(TRANS_KEY)||'{}').enabled;}catch{state.translateEnabled=false;}
+      $('chkTranslate').checked=state.translateEnabled;return;
+    }
     if(event.key!==CONNECTION_KEY && event.key!==null) return;
     connectionGeneration++;
     const record=readSharedConnection();
@@ -1203,6 +1216,58 @@ function bindConnectionSharing(){
     adoptSharedConnection(record);
     await connectCompanion(record.url,record.token,true,record);
   });
+}
+async function renewAddonConnection(rejected=null,explicit=false){
+  if(connectionRenewal)return connectionRenewal;
+  const renew=async()=>{
+    const initial=lsGet(CONNECTION_KEY);
+    let previous;try{previous=JSON.parse(initial||'null');}catch{}
+    if(!explicit&&(!previous||previous.url!=='http://127.0.0.1:23119'||previous.transport!=='zotero-addon'||(previous.disconnected&&!previous.expired)))return null;
+    const current=readSharedConnection();
+    if(!explicit&&rejected&&current&&current.token!==rejected.token)return current;
+    const before=lsGet(CONNECTION_KEY);
+    const response=await fetch('http://127.0.0.1:23119/paper-library/connect',{
+      method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({authorizeZotero:false}),
+      credentials:'omit',mode:'cors',redirect:'error',cache:'no-store'
+    });
+    const record=await response.json();
+    if(!response.ok)throw new Error(record.error?.message||'Could not connect to Zotero.');
+    if(record.url!=='http://127.0.0.1:23119'||record.transport!=='zotero-addon'||!/^[A-Za-z0-9_-]{32,4096}$/.test(record.token||'')||!Number.isFinite(record.createdAt)||!Number.isFinite(record.expiresAt)||record.createdAt>Date.now()||record.expiresAt<=Date.now()||record.expiresAt<=record.createdAt||record.expiresAt-record.createdAt>CONNECTION_TTL)throw new Error('Invalid Zotero connection response.');
+    // A disconnect or replacement in another tab always wins over this request.
+    if(lsGet(CONNECTION_KEY)!==before)return readSharedConnection();
+    if(!lsSet(CONNECTION_KEY,JSON.stringify(record)))throw new Error('Allow browser storage to share the library connection.');
+    return record;
+  };
+  connectionRenewal=(async()=>{
+    if(typeof navigator!=='undefined'&&navigator.locks?.request)return navigator.locks.request('plr.connection.renew',renew);
+    return renew();
+  })();
+  try{return await connectionRenewal;}finally{connectionRenewal=null;}
+}
+async function refreshServiceStatus(force=false){
+  if(statusRefresh)return statusRefresh;
+  if(!force&&Date.now()-lastStatusCheck<10000)return;
+  statusRefresh=(async()=>{
+    refreshSharedConnection();
+    if(!state.companion.token){const record=await renewAddonConnection();if(record)adoptSharedConnection(record);}
+    if(!state.companion.token)return;
+    if(!state.companion.connected){
+      const record=readSharedConnection();
+      await connectCompanion(state.companion.url,state.companion.token,true,record);
+    }else{
+      const st=await apiFetch('/api/status');
+      state.companion.status=st;lastStatusCheck=Date.now();renderStateChips();
+    }
+  })();
+  try{return await statusRefresh;}finally{statusRefresh=null;}
+}
+async function connectLibraryServices(){
+  $('btnLibraryConnect').disabled=true;$('connectStatus').textContent='Connecting to Zotero and DeepSeek…';
+  try{
+    const record=await renewAddonConnection(null,true);
+    if(record)await connectCompanion(record.url,record.token,false,record);
+  }catch(e){$('connectStatus').textContent='Open Zotero with the Paper Library Web extension installed. '+e.message;}
+  finally{$('btnLibraryConnect').disabled=false;}
 }
 async function apiFetch(path,opts={},candidate=null){
   if(!candidate) refreshSharedConnection();
@@ -1219,10 +1284,16 @@ async function apiFetch(path,opts={},candidate=null){
   try{
     res=await fetch(url,{method:opts.method||'GET',headers,body,mode:'cors',credentials:'omit',cache:'no-store',redirect:'error'});
   }catch(e){
+    if(!candidate&&state.companion.url===session.url&&state.companion.token===session.token){state.companion.connected=false;state.companion.status=null;renderStateChips();}
     throw new Error(new URL(session.url).port==='23119'?'Could not reach Zotero. Keep Zotero open and connect again in Add paper → Settings / Connect.':'Could not reach local companion at '+c.url+'. Start it locally, or use Open local reader / export drafts.');
   }
-  if(res.status===401){ rejectSharedConnection(session); throw new Error('Authorization rejected by local companion (token expired?). Open the local reader again for a fresh token.'); }
-  if(res.status===403) throw new Error('Local companion refused the request (origin or host not allowed).');
+  if(res.status===401){
+    if(new URL(session.url).port==='23119'){
+      if(!candidate&&!opts.renewed){const record=await renewAddonConnection(session);if(record){adoptSharedConnection(record);return apiFetch(path,{...opts,renewed:true});}}
+      const error=new Error('The shared Zotero session needs to be refreshed.');error.code='session_expired';throw error;
+    }
+    rejectSharedConnection(session);throw new Error('Authorization rejected by local companion (token expired?). Open the local reader again for a fresh token.');
+  }
   let data=null; try{ data=await res.json(); }catch{}
   if(!candidate){
     refreshSharedConnection();
@@ -1232,7 +1303,7 @@ async function apiFetch(path,opts={},candidate=null){
   return data;
 }
 
-async function connectCompanion(url,token,quiet,sharedRecord=null){
+async function connectCompanion(url,token,quiet,sharedRecord=null,renewed=false){
   if(!url){ toast('Enter a local companion URL.','error'); return; }
   if(!token){ toast('Enter the per-launch session token.','error'); return; }
   if(token.startsWith('http://')) { try { const sessionLink=new URL(token); validatedCompanionUrl(sessionLink.origin); if(sessionLink.username||sessionLink.password||sessionLink.pathname!=='/reader/'||sessionLink.search && !/^\?id=\d*$/.test(sessionLink.search)) throw new Error(); token=new URLSearchParams(sessionLink.hash.slice(1)).get('token')||''; url=sessionLink.origin; } catch { toast('Invalid local session link.','error'); return; } }
@@ -1246,12 +1317,12 @@ async function connectCompanion(url,token,quiet,sharedRecord=null){
     const st=await apiFetch('/api/status',{},candidate);
     if(connectionGeneration!==generation) return;
     if(sharedRecord){ const current=readSharedConnection(); if(!current || current.token!==token || current.url!==url) return; }
-    const now=Date.now(),record=sharedRecord||{url,token,createdAt:now,expiresAt:now+CONNECTION_TTL};
+    const now=Date.now(),record=sharedRecord||{url,token,createdAt:now,expiresAt:now+CONNECTION_TTL,...(st.transport==='zotero-addon'?{transport:'zotero-addon'}:{})};
     const sharedSaved=!!sharedRecord || lsSet(CONNECTION_KEY,JSON.stringify(record));
     adoptSharedConnection(record); saveSettings();
     if(!sharedSaved){ state.companion.sharedRecord=null; state.companion.tabOnlyRecord=record; }
     const acceptedGeneration=connectionGeneration;
-    state.companion.status=st; state.companion.connected=true;
+    state.companion.status=st; state.companion.connected=true;lastStatusCheck=Date.now();
     if(st.zotero && st.zotero.serverId){
       const prev=state.companion.serverId;
       if(prev && prev!==st.zotero.serverId){
@@ -1262,12 +1333,15 @@ async function connectCompanion(url,token,quiet,sharedRecord=null){
       }
       if(!prev || prev===st.zotero.serverId) state.companion.serverId=st.zotero.serverId;
     }
-    $('connectStatus').textContent=sharedSaved?'Library connection ready for all papers and tabs on this site (up to 8 hours).':'Connected in this tab only; browser storage is unavailable for sharing.';
+    $('connectStatus').textContent=sharedSaved?'Library services are shared by every paper and tab on this site. Keep Zotero open; sessions refresh automatically.':'Connected in this tab only; browser storage is unavailable for sharing.';
     renderStateChips();
     if(state.data?.zotero?.parentKey && !state.companion.serverMismatch) await pullFromZotero(true);
     if(!quiet) toast('Connected to local companion.','ok');
   }catch(e){
     if(connectionGeneration!==generation) return;
+    if(e.code==='session_expired'&&!renewed){
+      try{const record=await renewAddonConnection({url,token});if(record)return await connectCompanion(record.url,record.token,quiet,record,true);}catch(error){e=error;}
+    }
     state.companion.connected=false; state.companion.status=null;
     $('connectStatus').textContent='Connection failed: '+e.message;
     renderStateChips();
@@ -1520,11 +1594,12 @@ function resolveConflict(c,choice){
 
 /* Authorize */
 async function authorizeZotero(){
-  if(!state.companion.connected){ toast('Connect the local companion first.','error'); return; }
+  if(!state.companion.connected){ toast('Connect library services first.','error'); return; }
   try{
+    $('zoteroStatusDialog').textContent='Check Zotero for its authorization window and choose Always Allow.';
     const r=await apiFetch('/api/zotero/authorize',{method:'POST',body:{}});
-    toast('Authorization requested. Allow access in the Zotero dialog.','ok',6000);
-    setTimeout(async()=>{ try{ const st=await apiFetch('/api/status'); state.companion.status=st; renderStateChips(); $('connectStatus').textContent='Status refreshed after authorization.'; }catch{} },1500);
+    await refreshServiceStatus(true);
+    toast(r?.authorized?'Zotero authorization ready for every paper.':'Authorization requested. Check Zotero.','ok',6000);
   }catch(e){ toast('Authorization failed: '+e.message,'error'); }
 }
 
@@ -1700,8 +1775,9 @@ function localReaderUrl(){
 function bindEvents(){
   setupDivider();
   bindConnectionSharing();
+  window.addEventListener('focus',()=>{if(!document.hidden)refreshServiceStatus().catch(()=>{});});
   window.addEventListener('beforeunload',()=>{ flushNoteSaveSync(); persistLocal({quiet:true}); });
-  document.addEventListener('visibilitychange',()=>{ if(document.hidden) { flushNoteSaveSync(); persistLocal({quiet:true}); } });
+  document.addEventListener('visibilitychange',()=>{ if(document.hidden) { flushNoteSaveSync(); persistLocal({quiet:true}); } else refreshServiceStatus().catch(()=>{}); });
   window.addEventListener('resize',debounce(()=>{ applySplit(); if(state.fitMode) requestRerender(); else reRenderAll(); updateCurrentPageFromScroll(); },250));
   ['tabAnno','tabNotes','tabTrans'].forEach(id=>$(id).addEventListener('click',()=>showTab(id==='tabAnno'?'anno':id==='tabNotes'?'notes':'trans')));
   $('btnPrev').addEventListener('click',()=>goToPage(state.curPage-1));
@@ -1743,6 +1819,7 @@ function bindEvents(){
   $('btnAddTransToNote').addEventListener('click',()=>addTranslationToNote());
   $('btnInvertPending').addEventListener('click',()=>{ if(!state.pending.length){ toast('No unsynced local changes to revert.','info'); return; } if(!confirm('Discard unsynced local changes and restore the last snapshot? Export drafts first if you want a backup.')) return; state.editorDirty=false; if(state.saveTimer) state.saveTimer.cancel(); state.pending=[]; state.baselines={}; state.tombstones={}; const original=state.liveSnapshot||state.data||{}; state.annotations=(original.annotations||[]).map(normalizeAnno); state.notes=(original.notes||[]).map(normalizeNote); persistLocal({quiet:true}); renderAllOverlays(); renderPanels(); refreshActiveEditor(); setSyncState('snapshot','Reverted view to snapshot'); toast('Local view reverted to snapshot.','ok'); });
   $('btnSettings').addEventListener('click',()=>$('settingsDialog').showModal());
+  $('btnLibraryConnect').addEventListener('click',connectLibraryServices);
   $('btnConnect').addEventListener('click',()=>{ const url=$('localUrlInput').value.trim(); const tok=$('tokenInput').value.trim(); connectCompanion(url,tok,false); });
   $('btnDisconnect').addEventListener('click',disconnectCompanion);
   $('btnOpenLocal').addEventListener('click',()=>{ window.open(localReaderUrl(),'_blank','noopener'); });

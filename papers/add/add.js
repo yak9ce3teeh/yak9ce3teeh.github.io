@@ -104,7 +104,7 @@ async function submit(event){
 $('settingsButton').addEventListener('click',settings);$('openConnections').addEventListener('click',settings);$('closeSettings').addEventListener('click',()=>$('settings').close());
 $('connectZotero').addEventListener('click',async()=>{
   $('connectZotero').disabled=true;$('zoteroStatus').textContent='Connecting… Check Zotero for its authorization request.';
-  try {const record=await zotero('/connect',{});if(record.url!==ZOTERO||!record.token||!record.serverId)throw new Error('Unexpected Zotero connection response.');if(!put(localStorage,CONNECTION_KEY,record))throw new Error('Allow browser storage to share this connection with the reader.');$('zoteroStatus').textContent='Zotero connected for this site. You can close Settings.';summaries();}
+  try {const record=await zotero('/connect',{authorizeZotero:true});if(record.url!==ZOTERO||!record.token||!record.serverId)throw new Error('Unexpected Zotero connection response.');if(!put(localStorage,CONNECTION_KEY,record))throw new Error('Allow browser storage to share this connection with the reader.');$('zoteroStatus').textContent='Zotero and DeepSeek share this connection across all papers. You can close Settings.';summaries();}
   catch(e){$('zoteroStatus').textContent=e.message;}finally{$('connectZotero').disabled=false;}
 });
 $('disconnectZotero').addEventListener('click',()=>{put(localStorage,CONNECTION_KEY,{disconnected:true,at:Date.now()});$('zoteroStatus').textContent='Zotero disconnected on this site.';summaries();});

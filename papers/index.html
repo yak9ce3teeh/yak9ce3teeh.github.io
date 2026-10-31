@@ -732,6 +732,12 @@
 </div>
 <script>(() => {
   'use strict';
+  // File pages and HTTPS pages have separate browser storage. Use one origin
+  // for every reader and the add form, even from the offline catalog.
+  if(location.protocol==='file:')for(const link of document.querySelectorAll('a[href]')){
+    const href=link.getAttribute('href');
+    if(/^(?:\.\/)?(?:reader\/|add\/)/.test(href||''))link.href=new URL(href,'https://yak9ce3teeh.github.io/papers/').href;
+  }
   const $ = id => document.getElementById(id);
   const rows = [...document.querySelectorAll('.paper')];
   const groups = [...document.querySelectorAll('.topic-group')];

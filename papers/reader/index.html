@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Paper Library Reader</title>
+<script>if(location.protocol==='file:')location.replace('https://yak9ce3teeh.github.io/papers/reader/'+location.search);</script>
 <link rel="stylesheet" href="./assets/vendor/pdfjs/web/pdf_viewer.css">
 <link rel="stylesheet" href="./reader.css?v=20261029-global-2">
 <script type="importmap">
@@ -143,10 +144,11 @@
 <dialog id="settingsDialog" class="dialog" aria-label="Library connection">
   <form method="dialog" class="dialog-inner">
     <h2>Library connection</h2>
-    <p class="hint">Connection applies to all papers and tabs on this site (up to 8 hours). Keep Zotero open to synchronize notes and annotations. Disconnect clears this site's shared connection.</p>
-    <p><a class="btn" href="../add/#connections">Connect with the Zotero extension</a></p>
-    <p class="hint">Install Paper Library Web once in Zotero and connect on the Add paper page. This connection needs only the webpage and Zotero. The optional local reader settings below support the existing translation service.</p>
-    <p class="hint">Read and edit browser-local drafts from the published snapshot. Translation and native Zotero sync require the local workspace running on your computer.</p>
+    <p class="hint">One connection for every paper and tab on this site, in this browser. Keep Zotero open. Sessions refresh automatically; Disconnect applies to all papers.</p>
+    <div class="dialog-actions"><button class="btn primary" type="button" id="btnLibraryConnect">Connect library services</button><button type="button" class="btn" id="btnDisconnect">Disconnect</button><a class="btn" href="../add/#connections">Add paper settings</a></div>
+    <p class="hint" id="connectStatus" aria-live="polite"></p>
+    <p class="hint">Paper Library Web 1.1.0 or later provides DeepSeek translation inside Zotero. It uses your existing local DeepSeek API key; no extra service is needed. Each paper keeps its own notes, while translation and Zotero connections are shared. Translation sends only the passage you choose to DeepSeek when you click Translate.</p>
+    <details><summary>Legacy local reader connection</summary>
     <fieldset>
       <legend>Local companion</legend>
       <label for="tokenInput">Local session link or token</label>
@@ -155,12 +157,11 @@
       <input id="localUrlInput" type="text" value="http://127.0.0.1:23120" class="wide-input" spellcheck="false">
       <div class="dialog-actions">
         <button type="button" class="btn primary" id="btnConnect">Connect</button>
-        <button type="button" class="btn" id="btnDisconnect">Disconnect</button>
         <button type="button" class="btn" id="btnOpenLocal">Open local reader</button>
         <button type="button" class="btn" id="btnCopySession">Copy local session link</button>
       </div>
-      <p class="hint" id="connectStatus" aria-live="polite"></p>
     </fieldset>
+    </details>
     <fieldset>
       <legend>Zotero</legend>
       <div class="dialog-actions">
@@ -180,7 +181,7 @@
       </div>
       <p class="hint">Browser drafts are stored locally and are never published by this page.</p>
     </fieldset>
-    <fieldset>
+    <details><summary>Legacy local reader setup</summary><fieldset>
       <legend>Starting the local companion</legend>
       <ol class="setup-steps">
         <li>Double-click <strong>Paper Reader.cmd</strong> in your Papers folder to open the private local workspace.</li>
@@ -188,7 +189,7 @@
         <li>The launcher connects automatically. For a public-page connection, copy the temporary session link from the local workspace and use its token here only if your browser allows localhost access.</li>
         <li>Translation needs a configured DeepSeek key on the companion; keys are never requested by this page.</li>
       </ol>
-    </fieldset>
+    </fieldset></details>
     <div class="dialog-actions end">
       <button type="submit" class="btn" value="close">Close</button>
     </div>
@@ -207,6 +208,6 @@
 </dialog>
 
 <div id="toast" class="toast" role="status" aria-live="assertive" hidden></div>
-<script type="module" src="./reader.js?v=20261029-global-2"></script>
+<script type="module" src="./reader.js?v=20261031-deepseek-1"></script>
 </body>
 </html>
