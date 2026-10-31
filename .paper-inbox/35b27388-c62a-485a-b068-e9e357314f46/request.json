@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "requestId": "35b27388-c62a-485a-b068-e9e357314f46",
+  "metadata": {
+    "title": "Learning Force-Reactive Humanoid Loco-Manipulation",
+    "date": "2026-10-26",
+    "category": "Humanoid Robotics/Whole-Body Control and Loco-Manipulation",
+    "source": "https://arxiv.org/abs/2610.35862v1",
+    "method": "",
+    "keywords": [
+      "Loco-manipulation",
+      "Whole-body control",
+      "Force sensing",
+      "Force tracking",
+      "Diffusion policy",
+      "Contact-rich manipulation",
+      "Robot-free demonstrations"
+    ],
+    "authors": [
+      "Sihang Li",
+      "Xiaofeng Guo",
+      "Jinkun Cao",
+      "Charlie Cheng",
+      "Ruihan Yang",
+      "Chen Feng",
+      "Guanya Shi",
+      "Haozhi Qi"
+    ]
+  },
+  "zotero": {
+    "parentKey": "3GXTD3PM",
+    "attachmentKey": "GKEFY9DU",
+    "pdfSha256": "97222db3e0e662bb5c97cbd037642b58c7890e727cb6fb23025627e63b122953"
+  },
+  "pdf": "paper.pdf"
+}
