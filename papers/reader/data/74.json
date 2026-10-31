@@ -5,10 +5,15 @@
     "url": "../Humanoid%20Robotics/Whole-Body%20Control%20and%20Loco-Manipulation/2026-10%20-%20FLoRe.pdf",
     "sha256": "97222db3e0e662bb5c97cbd037642b58c7890e727cb6fb23025627e63b122953"
   },
-  "zotero": null,
+  "zotero": {
+    "libraryType": "user",
+    "libraryId": 1,
+    "parentKey": "3GXTD3PM",
+    "attachmentKey": "GKEFY9DU"
+  },
   "mapping": {
-    "status": "unlinked",
-    "basis": "none"
+    "status": "matched",
+    "basis": "Verified exact PDF from the web import"
   },
   "annotations": [],
   "notes": [],
