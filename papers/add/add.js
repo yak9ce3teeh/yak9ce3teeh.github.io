@@ -1,7 +1,7 @@
 import {REPO,ZOTERO,CONNECTION_KEY,connection,zotero,duplicate,fileBase64,github,submitPublication,publicationResult} from './client.mjs';
 const $=id=>document.getElementById(id);
 const DRAFT='pl.add.form',ACTIVE='pl.add.active',GITHUB='pl.add.github';
-let records=[],registry=[],extra={},working=false,watching=false;
+let records=[],registry=[],extra={},working=false,watching=false,zoteroHealth=null,healthRequest=null;
 function get(store,key){try{return JSON.parse(store.getItem(key)||'null');}catch{return null;}}
 function put(store,key,value){try{store.setItem(key,JSON.stringify(value));return true;}catch{return false;}}
 function remove(store,key){try{store.removeItem(key);}catch{}}
@@ -9,7 +9,21 @@ function gh(){const value=get(sessionStorage,GITHUB)||get(localStorage,GITHUB);i
 function setResult(heading,text,error=false){$('result').hidden=false;$('result').classList.toggle('error',error);$('resultHeading').textContent=heading;$('resultText').textContent=text;$('resultLinks').replaceChildren();}
 function link(label,href){const a=document.createElement('a');a.textContent=label;a.href=href;$('resultLinks').append(a);}
 function settings(){if(!$('settings').open)$('settings').showModal();}
-function summaries(){const z=connection(),g=gh();$('zoteroSummary').textContent='Zotero: '+(z?'connected':'not connected');$('githubSummary').textContent='GitHub: '+(g?'connected':'not connected');$('connectionStatus').textContent=(z?'Zotero connected':'Connect Zotero for local synchronization')+' · '+(g?'GitHub publishing ready':'Connect GitHub to publish');}
+function summaries(){const z=connection(),g=gh(),health=zoteroHealth?.token===z?.token?zoteroHealth:null;
+  const label=!z?'not connected':!health?'checking':health.offline?'offline':health.writable?'connected':'read-only';
+  $('zoteroSummary').textContent='Zotero: '+label;$('githubSummary').textContent='GitHub: '+(g?'connected':'not connected');
+  $('connectionStatus').textContent='Zotero '+label+' · '+(g?'GitHub publishing ready':'Connect GitHub to publish');}
+async function refreshConnections(){
+  if(healthRequest)return healthRequest;
+  const raw=get(localStorage,CONNECTION_KEY);
+  if(!raw||raw.disconnected&&!raw.expired){zoteroHealth=null;summaries();return;}
+  healthRequest=(async()=>{
+    try{const status=await zotero('/api/status');zoteroHealth={token:connection()?.token,writable:!!status.zotero?.writable};}
+    catch{zoteroHealth={token:connection()?.token,offline:true};}
+    summaries();
+  })();
+  try{return await healthRequest;}finally{healthRequest=null;}
+}
 function fields(){return {title:$('title').value.trim(),date:$('date').value.trim(),category:$('category').value.trim(),method:$('method').value.trim(),keywords:$('keywords').value.split(',').map(s=>s.trim()).filter(Boolean),source:document.querySelector('[name=mode]:checked').value==='link'?$('source').value.trim():'',authors:extra.authors||[],abstract:extra.abstract||'',doi:extra.doi||''};}
 function saveDraft(){put(localStorage,DRAFT,{...fields(),keywords:$('keywords').value,mode:document.querySelector('[name=mode]:checked').value,sync:$('syncZotero').checked,publish:$('publish').checked});}
 function mode(){const file=document.querySelector('[name=mode]:checked').value==='file';$('fileFields').hidden=!file;$('linkFields').hidden=file;}
@@ -104,7 +118,8 @@ async function submit(event){
 $('settingsButton').addEventListener('click',settings);$('openConnections').addEventListener('click',settings);$('closeSettings').addEventListener('click',()=>$('settings').close());
 $('connectZotero').addEventListener('click',async()=>{
   $('connectZotero').disabled=true;$('zoteroStatus').textContent='Connecting… Check Zotero for its authorization request.';
-  try {const record=await zotero('/connect',{authorizeZotero:true});if(record.url!==ZOTERO||!record.token||!record.serverId)throw new Error('Unexpected Zotero connection response.');if(!put(localStorage,CONNECTION_KEY,record))throw new Error('Allow browser storage to share this connection with the reader.');$('zoteroStatus').textContent='Zotero and DeepSeek share this connection across all papers. You can close Settings.';summaries();}
+  const before=localStorage.getItem(CONNECTION_KEY);
+  try {const record=await zotero('/connect',{authorizeZotero:true});if(record.url!==ZOTERO||!record.token||!record.serverId)throw new Error('Unexpected Zotero connection response.');if(localStorage.getItem(CONNECTION_KEY)!==before){$('zoteroStatus').textContent='The connection changed in another tab. Its latest choice has been kept.';await refreshConnections();return;}if(!put(localStorage,CONNECTION_KEY,record))throw new Error('Allow browser storage to share this connection with the reader.');$('zoteroStatus').textContent='Zotero and DeepSeek share this connection across all papers. You can close Settings.';await refreshConnections();}
   catch(e){$('zoteroStatus').textContent=e.message;}finally{$('connectZotero').disabled=false;}
 });
 $('disconnectZotero').addEventListener('click',()=>{put(localStorage,CONNECTION_KEY,{disconnected:true,at:Date.now()});$('zoteroStatus').textContent='Zotero disconnected on this site.';summaries();});
@@ -118,10 +133,11 @@ $('connectGithub').addEventListener('click',async()=>{
 $('disconnectGithub').addEventListener('click',()=>{remove(localStorage,GITHUB);remove(sessionStorage,GITHUB);$('githubToken').value='';$('githubStatus').textContent='GitHub disconnected.';summaries();});
 $('source').addEventListener('input',()=>{extra={};});document.querySelectorAll('[name=mode]').forEach(r=>r.addEventListener('change',()=>{extra={};}));
 $('fetchDetails').addEventListener('click',inspect);$('paperForm').addEventListener('submit',submit);$('paperForm').addEventListener('input',saveDraft);$('paperForm').addEventListener('change',()=>{mode();saveDraft();});
-window.addEventListener('storage',event=>{if([CONNECTION_KEY,GITHUB,null].includes(event.key))summaries();});
+window.addEventListener('storage',event=>{if([CONNECTION_KEY,GITHUB,null].includes(event.key)){summaries();refreshConnections();}});
+window.addEventListener('focus',()=>{refreshConnections();});
 async function init(){
   const draft=get(localStorage,DRAFT);if(draft){for(const key of ['source','title','date','category','method','keywords'])if(typeof draft[key]==='string')$(key).value=draft[key];if(draft.mode==='file')document.querySelector('[name=mode][value=file]').checked=true;if(typeof draft.sync==='boolean')$('syncZotero').checked=draft.sync;if(typeof draft.publish==='boolean')$('publish').checked=draft.publish;extra={authors:draft.authors||[],abstract:draft.abstract||'',doi:draft.doi||''};}
-  mode();summaries();
+  mode();summaries();refreshConnections();
   try {const [a,b]=await Promise.all([fetch('../paper-metadata.json',{cache:'no-cache'}),fetch('../reader/papers.json',{cache:'no-cache'})]);if(a.ok)records=(await a.json()).records||[];if(b.ok){registry=(await b.json()).papers||[];const categories=[...new Set(registry.map(p=>p.category))].sort();for(const value of categories){const option=document.createElement('option');option.value=value;$('categories').append(option);}}}catch{$('metadataStatus').textContent='Catalog could not be refreshed. You can enter paper details manually.';}
   if(location.hash==='#connections')settings();
   const active=get(localStorage,ACTIVE);if(active&&gh()){setResult('Checking publication','Loading your last publication request…');watchPublication(active);}

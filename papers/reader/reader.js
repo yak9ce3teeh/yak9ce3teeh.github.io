@@ -128,8 +128,9 @@ async function boot(){
   renderPanels();
   if(state.notes.length) selectNote(state.selectedNote && state.notes.some(n=>n.id===state.selectedNote) ? state.selectedNote : state.notes[0].id);
   else { showTab('notes'); refreshActiveEditor(); }
+  const servicesReady=maybeConnectFromToken();
   await loadPdf();
-  await maybeConnectFromToken();
+  await servicesReady;
   setStatusMsg(state.pending.length ? 'Local drafts retained' : 'Ready · published notes and annotations');
 }
 
@@ -1256,10 +1257,24 @@ async function refreshServiceStatus(force=false){
       await connectCompanion(state.companion.url,state.companion.token,true,record);
     }else{
       const st=await apiFetch('/api/status');
-      state.companion.status=st;lastStatusCheck=Date.now();renderStateChips();
+      await acceptServiceStatus(st);
     }
   })();
   try{return await statusRefresh;}finally{statusRefresh=null;}
+}
+async function acceptServiceStatus(st,generation=connectionGeneration){
+  state.companion.status=st;state.companion.connected=true;lastStatusCheck=Date.now();
+  if(st.zotero?.serverId){
+    const previous=state.companion.serverId;
+    if(previous&&previous!==st.zotero.serverId){
+      state.companion.serverMismatch=true;
+      setStatusMsg('A different Zotero library is open. Use Review new Zotero library before syncing.');
+      await persistLocal({quiet:true});
+      if(connectionGeneration!==generation)return false;
+    }
+    if(!previous||previous===st.zotero.serverId)state.companion.serverId=st.zotero.serverId;
+  }
+  renderStateChips();return true;
 }
 async function connectLibraryServices(){
   $('btnLibraryConnect').disabled=true;$('connectStatus').textContent='Connecting to Zotero and DeepSeek…';
@@ -1322,17 +1337,7 @@ async function connectCompanion(url,token,quiet,sharedRecord=null,renewed=false)
     adoptSharedConnection(record); saveSettings();
     if(!sharedSaved){ state.companion.sharedRecord=null; state.companion.tabOnlyRecord=record; }
     const acceptedGeneration=connectionGeneration;
-    state.companion.status=st; state.companion.connected=true;lastStatusCheck=Date.now();
-    if(st.zotero && st.zotero.serverId){
-      const prev=state.companion.serverId;
-      if(prev && prev!==st.zotero.serverId){
-        setStatusMsg('A different Zotero library is open. Use Review new Zotero library before syncing.');
-        state.companion.serverMismatch=true;
-        await persistLocal({quiet:true});
-        if(connectionGeneration!==acceptedGeneration) return;
-      }
-      if(!prev || prev===st.zotero.serverId) state.companion.serverId=st.zotero.serverId;
-    }
+    if(!await acceptServiceStatus(st,acceptedGeneration))return;
     $('connectStatus').textContent=sharedSaved?'Library services are shared by every paper and tab on this site. Keep Zotero open; sessions refresh automatically.':'Connected in this tab only; browser storage is unavailable for sharing.';
     renderStateChips();
     if(state.data?.zotero?.parentKey && !state.companion.serverMismatch) await pullFromZotero(true);
