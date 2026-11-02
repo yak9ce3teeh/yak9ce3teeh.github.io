@@ -739,7 +739,7 @@
     if(/^(?:\.\/)?(?:reader\/|add\/)/.test(href||''))link.href=new URL(href,'https://yak9ce3teeh.github.io/papers/').href;
   }
   try{
-    const response=await fetch('https://yak-paper-library-cloud.thebadlyegg.chatgpt.site/api/papers',{signal:AbortSignal.timeout(5000),credentials:'omit'});
+    const response=await fetch('https://yak-paper-library-cloud.thebadlyegg.chatgpt.site/api/papers',{signal:AbortSignal.timeout(15000),credentials:'omit'});
     if(!response.ok)throw new Error('Cloud catalog unavailable');
     const {papers}=await response.json(),known=new Set([...document.querySelectorAll('.paper')].map(e=>e.dataset.title));
     const list=document.querySelector('.paper-list')||document.getElementById('flat-list');
@@ -757,7 +757,7 @@
     }
     const all=[...document.querySelectorAll('.paper')];const total=document.querySelector('.library-stats strong');if(total)total.textContent=String(all.length);
     for(const button of document.querySelectorAll('.area-button')){const count=button.querySelector('.area-count');if(count)count.textContent=String(all.filter(r=>!button.dataset.area||r.dataset.area===button.dataset.area).length);}
-  }catch{const p=document.createElement('p');p.className='hint';p.textContent='Cloud additions could not be loaded. Existing papers remain available.';document.getElementById('results')?.prepend(p);}
+  }catch(error){console.warn('Cloud catalog load failed:',error);const p=document.createElement('p');p.className='hint';p.textContent='Cloud additions could not be loaded. Existing papers remain available.';document.getElementById('results')?.prepend(p);}
   const $ = id => document.getElementById(id);
   const rows = [...document.querySelectorAll('.paper')];
   const groups = [...document.querySelectorAll('.topic-group')];
