@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="referrer" content="no-referrer"><title>Add a paper · Paper Library</title><link rel="stylesheet" href="add.css"></head>
+<body><main class="shell">
+  <header><a class="back" href="../">← Paper Library</a><div class="heading"><div><p class="eyebrow">PERSONAL RESEARCH</p><h1>Add a paper</h1><p class="intro">Save a paper, publish it to your library, and sync it with Zotero.</p></div><button class="secondary" id="settingsButton" type="button">Settings / Connect</button></div><p class="connection" id="connectionStatus" role="status">Checking connections…</p></header>
+  <noscript><p class="notice">Enable JavaScript to use the web add form.</p></noscript>
+  <div class="layout"><form id="paperForm" class="card">
+    <fieldset class="source"><legend>1. Choose a paper</legend><div class="modes"><label><input type="radio" name="mode" value="link" checked> From a link</label><label><input type="radio" name="mode" value="file"> Upload a PDF</label></div>
+      <div id="linkFields"><label for="source">arXiv ID or PDF URL</label><div class="fetch-row"><input id="source" placeholder="2610.35862 or https://…/paper.pdf" autocomplete="off"><button type="button" class="secondary" id="fetchDetails">Fetch details</button></div></div>
+      <div id="fileFields" hidden><label for="pdf">PDF file</label><input id="pdf" type="file" accept="application/pdf,.pdf"><p class="hint">Up to 50 MB. You can enter the title and date below.</p></div><p class="hint" id="metadataStatus" role="status"></p>
+    </fieldset>
+    <fieldset><legend>2. Review the details</legend><div class="fields">
+      <label class="wide">Title<input id="title" required maxlength="500"></label>
+      <label>Publication date<input id="date" required placeholder="YYYY-MM or YYYY-MM-DD" pattern="\d{4}-\d{2}(-\d{2})?" maxlength="10"></label>
+      <label>Method short name<input id="method" placeholder="Optional; used in filename" maxlength="100"></label>
+      <label class="wide">Category<input id="category" list="categories" required placeholder="Area/Topic" maxlength="160"><datalist id="categories"></datalist></label>
+      <label class="wide">Keywords<input id="keywords" placeholder="e.g. Humanoid control, Reinforcement learning" maxlength="1500"></label>
+    </div></fieldset>
+    <fieldset><legend>3. Save and sync</legend><label class="check"><input id="syncZotero" type="checkbox" checked> Sync this paper and its PDF to local Zotero</label><label class="check"><input id="publish" type="checkbox" checked> Publish this paper and PDF to my website</label><p class="hint">Reading notes and annotations stay private unless you choose to publish them separately.</p></fieldset>
+    <div class="actions"><button id="submitPaper" class="primary" type="submit">Add paper</button><span class="hint">Text fields are kept in this browser. Re-select a PDF after reloading.</span></div>
+    <section id="result" class="result" hidden aria-live="polite"><h2 id="resultHeading">Adding paper</h2><p id="resultText"></p><div class="actions" id="resultLinks"></div></section>
+  </form>
+  <aside><section class="card"><h2>One web workflow</h2><ol><li>Paste a link or choose a PDF.</li><li>Review the title, month, category, and keywords.</li><li>Add it to Zotero and publish it from this page.</li></ol><p class="hint">Keep Zotero open for local synchronization. No separate local service is needed.</p><a href="paper-library-web.xpi" download>Download Zotero extension</a></section><section class="card"><h2>Your connections</h2><p id="zoteroSummary">Zotero: not connected</p><p id="githubSummary">GitHub: not connected</p><button class="secondary" type="button" id="openConnections">Manage connections</button></section></aside></div>
+  <dialog id="settings" aria-labelledby="settingsTitle"><div class="dialog-inner"><div class="heading"><h2 id="settingsTitle">Library connections</h2><button class="secondary" id="closeSettings" type="button">Close</button></div>
+    <section><h3>Local Zotero</h3><p>Install <a href="paper-library-web.xpi" download>Paper Library Web</a> once in Zotero → Tools → Plugins → Install Add-on From File. Open Zotero, then connect here. Choose <strong>Always Allow</strong> in Zotero when prompted.</p><button id="connectZotero" class="primary" type="button">Connect Zotero</button><button id="disconnectZotero" class="secondary" type="button">Disconnect</button><p id="zoteroStatus" class="hint" role="status"></p></section>
+    <section><h3>GitHub publishing</h3><p>Use a fine-grained token limited to <strong>yak9ce3teeh.github.io</strong>, with <strong>Contents: Read and write</strong>. Publishing uses GitHub Actions.</p><a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener noreferrer">Create a repository token ↗</a><label for="githubToken">GitHub token</label><input id="githubToken" type="password" autocomplete="off" spellcheck="false" placeholder="Paste your repository token here"><label class="check"><input id="rememberGithub" type="checkbox"> Remember on this browser</label><div class="actions"><button id="connectGithub" class="primary" type="button">Connect GitHub</button><button id="disconnectGithub" class="secondary" type="button">Disconnect</button></div><p id="githubStatus" class="hint" role="status"></p></section>
+  </div></dialog>
+</main><script type="module" src="add.js"></script></body></html>

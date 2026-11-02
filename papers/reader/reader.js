@@ -175,7 +175,8 @@ async function maybeConnectFromToken(){
 /* ---------------- Paper + snapshot ---------------- */
 async function loadPaper(id){
   let idx=null;
-  try{ const r=await fetch('./papers.json',{cache:'no-cache'}); if(!r.ok) throw new Error('papers.json HTTP '+r.status); idx=await r.json(); }catch(e){ idx=null; }
+  if(id>=1000000){const base='https://yak-paper-library-cloud.thebadlyegg.chatgpt.site';const r=await fetch(base+'/api/papers/'+id+'/reader',{cache:'no-store'});if(!r.ok)throw new Error('Cloud paper unavailable (HTTP '+r.status+').');const cloud=await r.json();idx={papers:[{fileId:id,title:cloud.title,pdfUrl:cloud.pdf.url,dataUrl:base+'/api/papers/'+id+'/reader'}]};}
+  if(!idx)try{ const r=await fetch('./papers.json',{cache:'no-cache'}); if(!r.ok) throw new Error('papers.json HTTP '+r.status); idx=await r.json(); }catch(e){ idx=null; }
   let entry=null;
   if(idx && Array.isArray(idx.papers)) entry=idx.papers.find(p=>Number(p.fileId)===id)||null;
   if(entry){
@@ -1265,6 +1266,7 @@ async function refreshServiceStatus(force=false){
 async function acceptServiceStatus(st,generation=connectionGeneration){
   state.companion.status=st;state.companion.connected=true;lastStatusCheck=Date.now();
   if(st.zotero?.serverId){
+    if(state.fileId>=1000000&&state.data?.zoteroLinks){state.data.zotero=state.data.zoteroLinks[st.zotero.serverId]||null;state.data.mapping={status:state.data.zotero?'matched':'unlinked'};}
     const previous=state.companion.serverId;
     if(previous&&previous!==st.zotero.serverId){
       state.companion.serverMismatch=true;
