@@ -1,4 +1,4 @@
-import {createCloudTranslation} from './cloud-translation.js?v=20261103-remember-1';
+import {createCloudTranslation} from './cloud-translation.js?v=20261103-remember-3';
 import * as pdfjsLib from 'pdfjs-dist/build/pdf.mjs';
 import DOMPurify from './assets/vendor/dompurify/purify.es.mjs';
 

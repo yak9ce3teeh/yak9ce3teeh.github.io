@@ -1,5 +1,5 @@
 // Independent service connection, shared by all pages on the personal website.
-import {KEY,VERSION,ownerVersion,CHANGE,getOwnerKey,rememberOwner,forgetOwner} from './owner-session.js';
+import {KEY,VERSION,ownerVersion,CHANGE,getOwnerKey,rememberOwner,forgetOwner} from './owner-session.js?v=20261103-remember-3';
 export {KEY};
 export function createCloudTranslation(changed=()=>{}){
  let issue='',configured=null,base='';
