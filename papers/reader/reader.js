@@ -97,7 +97,8 @@ function renderStateChips(){
     setChip('zoteroChip', z.writable?'ok':(z.readable?'warn':'off'), label);
   } else setChip('zoteroChip','off', 'Zotero: not connected');
   const cloudReady=!!cloudTranslation.session();
-  setChip('translationChip',cloudReady?'ok':'off',cloudReady?'Translation: DeepSeek · cloud':'Translation: connect cloud');
+  const configured=cloudTranslation.configured;
+  setChip('translationChip',cloudReady&&configured===true?'ok':cloudReady?'warn':'off',!cloudReady?'Translation: connect cloud':configured===true?'Translation: DeepSeek · cloud':configured===false?'Translation: unavailable':'Translation: checking cloud');
   const translationHelp=translationSetupMessage();
   $('btnTranslate').disabled = state.translationBusy || !$('transSource').value.trim();
   $('btnTranslateSel').disabled = !selectedTranslationText();
