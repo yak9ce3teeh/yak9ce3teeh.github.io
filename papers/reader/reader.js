@@ -1,3 +1,4 @@
+import {createCloudTranslation} from './cloud-translation.js';
 import * as pdfjsLib from 'pdfjs-dist/build/pdf.mjs';
 import DOMPurify from './assets/vendor/dompurify/purify.es.mjs';
 
@@ -12,6 +13,7 @@ const LS = (() => { try { const k='__pl_probe'; localStorage.setItem(k,'1'); loc
 const STATUS_KEY='plr.status', SETTINGS_KEY='plr.settings', TRANS_KEY='plr.translation', TOKEN_KEY='plr.token';
 const CONNECTION_KEY='plr.connection', CONNECTION_TTL=8*60*60*1000;
 let connectionGeneration=0, fragmentSession=null, connectionRenewal=null, statusRefresh=null, lastStatusCheck=0;
+const cloudTranslation=createCloudTranslation(()=>renderStateChips());
 const paperKey = (id, suffix) => `plr.p${id}.${suffix}`;
 
 function lsGet(key){ try { return LS ? localStorage.getItem(key) : null; } catch { return null; } }
@@ -94,9 +96,8 @@ function renderStateChips(){
     const label = z.writable ? `Zotero: connected${z.version?' '+z.version:''}` : (z.readable ? 'Zotero: read-only' : 'Zotero: not reachable');
     setChip('zoteroChip', z.writable?'ok':(z.readable?'warn':'off'), label);
   } else setChip('zoteroChip','off', 'Zotero: not connected');
-  const t = c.status && c.status.translation;
-  if(t) setChip('translationChip', t.available?'ok':'warn', t.available?`Translation: ${t.model||'available'}`:'Translation: unavailable');
-  else setChip('translationChip','off','Translation: connect Zotero');
+  const cloudReady=!!cloudTranslation.session();
+  setChip('translationChip',cloudReady?'ok':'off',cloudReady?'Translation: DeepSeek · cloud':'Translation: connect cloud');
   const translationHelp=translationSetupMessage();
   $('btnTranslate').disabled = state.translationBusy || !$('transSource').value.trim();
   $('btnTranslateSel').disabled = !selectedTranslationText();
@@ -109,6 +110,7 @@ function renderStateChips(){
 /* ---------------- Bootstrap ---------------- */
 async function boot(){
   bindEvents();
+  cloudTranslation.refresh();
   await consumeFragment();
   loadSettings();
   const params = new URLSearchParams(location.search);
@@ -175,7 +177,7 @@ async function maybeConnectFromToken(){
 /* ---------------- Paper + snapshot ---------------- */
 async function loadPaper(id){
   let idx=null;
-  if(id>=1000000){const base='https://yak-paper-library-cloud.thebadlyegg.chatgpt.site';const r=await fetch(base+'/api/papers/'+id+'/reader',{cache:'no-store'});if(!r.ok)throw new Error('Cloud paper unavailable (HTTP '+r.status+').');const cloud=await r.json();idx={papers:[{fileId:id,title:cloud.title,pdfUrl:cloud.pdf.url,dataUrl:base+'/api/papers/'+id+'/reader'}]};}
+  if(id>=1000000){const config=await fetch('/papers/service-config.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('Library service configuration unavailable.');return r.json();});const base=new URL(config.apiBase).origin;const r=await fetch(base+'/api/papers/'+id+'/reader',{cache:'no-store'});if(!r.ok)throw new Error('Cloud paper unavailable (HTTP '+r.status+').');const cloud=await r.json();idx={papers:[{fileId:id,title:cloud.title,pdfUrl:cloud.pdf.url,dataUrl:base+'/api/papers/'+id+'/reader'}]};}
   if(!idx)try{ const r=await fetch('./papers.json',{cache:'no-cache'}); if(!r.ok) throw new Error('papers.json HTTP '+r.status); idx=await r.json(); }catch(e){ idx=null; }
   let entry=null;
   if(idx && Array.isArray(idx.papers)) entry=idx.papers.find(p=>Number(p.fileId)===id)||null;
@@ -1073,7 +1075,9 @@ function bindTranslationControls(){
     if(state.translateEnabled){ const text=selectedTranslationText(); if(text) openTranslate(text); }
   });
   $('btnTranslateSel').addEventListener('click',translateSelection);
-  $('btnTranslationSetup').addEventListener('click',()=>$('settingsDialog').showModal());
+  $('btnTranslationSetup').addEventListener('click',beginCloudTranslation);
+  $('btnCloudTranslationConnect').addEventListener('click',connectCloudService);
+  $('btnCloudTranslationDisconnect').addEventListener('click',()=>cloudTranslation.disconnect().catch(e=>toast(e.message,'error')));
   // Keep the PDF range intact for mouse, pen and touch popup actions.
   $('selPopup').addEventListener('pointerdown',e=>{ if(e.target.closest('button')) e.preventDefault(); });
   $('selPopup').addEventListener('click',e=>{ const b=e.target.closest('button'); if(!b) return; const act=b.dataset.act;
@@ -1083,12 +1087,16 @@ function bindTranslationControls(){
     else if(act==='underline'){ createAnnoFromSelection('underline'); }
   });
 }
-function translationSetupMessage(){
-  const c=state.companion;
-  if(!c.connected || !c.url || !c.token) return 'Open Zotero and use Settings / Connect → Connect library services once. DeepSeek translation is shared by every paper on this site.';
-  if(!c.status?.translation) return 'Refresh the library connection to check DeepSeek availability.';
-  if(!c.status.translation.available) return 'DeepSeek is not available in this connection. Update the Paper Library Web Zotero extension and check the existing local DeepSeek API key.';
-  return '';
+function translationSetupMessage(){return cloudTranslation.message;}
+function beginCloudTranslation(){
+ $('cloudServiceKey').value=cloudTranslation.session()?.token||'';
+ $('cloudServiceStatus').textContent='Enter the library owner access key once. DeepSeek credentials stay on the server.';
+ if(!$('settingsDialog').open)$('settingsDialog').showModal();
+}
+async function connectCloudService(){
+ $('cloudServiceStatus').textContent='Checking cloud service…';$('btnCloudTranslationConnect').disabled=true;
+ try{await cloudTranslation.connect($('cloudServiceKey').value.trim());$('cloudServiceStatus').textContent='Cloud DeepSeek connected for all papers.';$('transStatus').textContent='Cloud translation connected.';toast('Cloud translation connected for all papers.','ok');}catch(e){$('cloudServiceStatus').textContent=e.message;}
+ finally{$('btnCloudTranslationConnect').disabled=false;renderStateChips();}
 }
 function translateSelection(){
   const text=selectedTranslationText();
@@ -1115,14 +1123,11 @@ async function doTranslate(){
   state.translationBusy=true;
   $('btnTranslate').disabled=true;
   try{
-    await refreshServiceStatus(true);
-    const c=state.companion,setupMessage=translationSetupMessage();
-    if(setupMessage){ $('transStatus').textContent=setupMessage; $('settingsDialog').showModal(); return; }
-    const t=c.status&&c.status.translation;
-    $('transStatus').textContent='Translating\u2026';
-    const res=await apiFetch('/api/translate',{method:'POST',body:{text,targetLanguage:'zh-CN',sourceLanguage:'auto'}});
+    if(!cloudTranslation.session()){beginCloudTranslation();return;}
+    $('transStatus').textContent='Translating in the cloud…';
+    const res=await cloudTranslation.translate(text);
     const out=res&&res.text?res.text:'';
-    state.translation={original:text,translated:out,model:res.model||t.model||''};
+    state.translation={original:text,translated:out,model:res.model||'deepseek-flash'};
     const box=$('transResult'); box.hidden=false;
     box.innerHTML='';
     const o=document.createElement('div'); o.className='orig'; o.textContent=text; box.appendChild(o);

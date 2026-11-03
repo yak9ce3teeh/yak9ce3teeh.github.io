@@ -126,8 +126,8 @@
         <span class="hint">Translate with DeepSeek through Zotero. The connection is shared by all papers. Text is sent only when you press Translate.</span>
       </div>
       <div class="trans-block">
-        <p class="hint" id="transSetupStatus" role="status">Open Zotero and use Settings / Connect → Connect library services. Your DeepSeek API key stays on this computer.</p>
-        <button class="btn small" id="btnTranslationSetup" type="button">Settings / Connect</button>
+        <p class="hint" id="transSetupStatus" role="status">Connect cloud translation once for all papers. Your DeepSeek API key stays encrypted on the server.</p>
+        <button class="btn small" id="btnTranslationSetup" type="button">Connect cloud translation</button>
         <label class="sr-only" for="transSource">Text to translate</label>
         <textarea id="transSource" rows="4" class="trans-text" maxlength="4000" placeholder="Select text in the PDF, then press Translate selection" aria-label="Source text"></textarea>
         <div class="trans-actions">
@@ -145,9 +145,9 @@
   <form method="dialog" class="dialog-inner">
     <h2>Library connection</h2>
     <p class="hint">One connection for every paper and tab on this site, in this browser. Keep Zotero open. Sessions refresh automatically; Disconnect applies to all papers.</p>
-    <div class="dialog-actions"><button class="btn primary" type="button" id="btnLibraryConnect">Connect library services</button><button type="button" class="btn" id="btnDisconnect">Disconnect</button><a class="btn" href="../add/#connections">Add paper settings</a></div>
+    <label>Library owner access key<input id="cloudServiceKey" type="password" autocomplete="off"></label><p id="cloudServiceStatus" role="status"></p><div class="dialog-actions"><button class="btn primary" type="button" id="btnCloudTranslationConnect">Connect cloud translation</button><button class="btn" type="button" id="btnCloudTranslationDisconnect">Disconnect translation</button></div><p>Translation runs in the cloud through DeepSeek. Connect once for all papers in this browser. Zotero is only needed for local synchronization.</p><div class="dialog-actions"><button class="btn primary" type="button" id="btnLibraryConnect">Connect Zotero</button><button type="button" class="btn" id="btnDisconnect">Disconnect</button><a class="btn" href="../add/#connections">Add paper settings</a></div>
     <p class="hint" id="connectStatus" aria-live="polite"></p>
-    <p class="hint">Paper Library Web 1.1.1 or later provides DeepSeek translation inside Zotero. It uses your existing local DeepSeek API key; no extra service is needed. Each paper keeps its own notes, while translation and Zotero connections are shared. Translation sends only the passage you choose to DeepSeek when you click Translate.</p>
+    <p class="hint">Paper Library Web 1.2.0 or later synchronizes notes and annotations with local Zotero. Translation has its own cloud connection and sends only the passage you choose when you click Translate.</p>
     <details><summary>Legacy local reader connection</summary>
     <fieldset>
       <legend>Local companion</legend>
@@ -187,7 +187,7 @@
         <li>Double-click <strong>Paper Reader.cmd</strong> in your Papers folder to open the private local workspace.</li>
         <li>Ensure Zotero 10 is open; use <em>Authorize Zotero</em> to grant access when prompted.</li>
         <li>The launcher connects automatically. For a public-page connection, copy the temporary session link from the local workspace and use its token here only if your browser allows localhost access.</li>
-        <li>Translation needs a configured DeepSeek key on the companion; keys are never requested by this page.</li>
+        <li>Translation uses the encrypted DeepSeek key on the cloud service; keys are never requested by this page.</li>
       </ol>
     </fieldset></details>
     <div class="dialog-actions end">
@@ -208,6 +208,6 @@
 </dialog>
 
 <div id="toast" class="toast" role="status" aria-live="assertive" hidden></div>
-<script type="module" src="./reader.js?v=20261102-cloud-1"></script>
+<script type="module" src="./reader.js?v=20261103-independent-1"></script>
 </body>
 </html>

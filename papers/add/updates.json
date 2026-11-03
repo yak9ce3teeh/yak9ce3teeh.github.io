@@ -3,9 +3,9 @@
     "paper-library-web@yak9ce3teeh.github.io": {
       "updates": [
         {
-          "version": "1.2.0",
+          "version": "1.2.1",
           "update_link": "https://yak9ce3teeh.github.io/papers/add/paper-library-web.xpi",
-          "update_hash": "sha256:87d17ea3eef204c9a9d9cba96becf551dec2332b4da5eb6d1af7a8dc582c2f72",
+          "update_hash": "sha256:9fe3a75cd301128ebb23effcd7ba91d45f878b8cb2267e15b7369c5d2f1ca3ef",
           "applications": {
             "zotero": {
               "strict_min_version": "10.0",

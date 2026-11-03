@@ -1,5 +1,6 @@
 (async () => {
   'use strict';
+  if(location.protocol==='file:'){location.replace('https://yak9ce3teeh.github.io/papers/');return;}
   // File pages and HTTPS pages have separate browser storage. Use one origin
   // for every reader and the add form, even from the offline catalog.
   if(location.protocol==='file:')for(const link of document.querySelectorAll('a[href]')){
@@ -7,7 +8,8 @@
     if(/^(?:\.\/)?(?:reader\/|add\/)/.test(href||''))link.href=new URL(href,'https://yak9ce3teeh.github.io/papers/').href;
   }
   try{
-    const response=await fetch('https://yak-paper-library-cloud.thebadlyegg.chatgpt.site/api/papers',{signal:AbortSignal.timeout(15000),credentials:'omit'});
+    const config=await fetch('/papers/service-config.json',{cache:'no-store'}).then(r=>r.json());
+    const response=await fetch(new URL('/api/papers',config.apiBase),{signal:AbortSignal.timeout(15000),credentials:'omit'});
     if(!response.ok)throw new Error('Cloud catalog unavailable');
     const {papers}=await response.json(),known=new Set([...document.querySelectorAll('.paper')].map(e=>e.dataset.title));
     const list=document.querySelector('.paper-list')||document.getElementById('flat-list');
