@@ -1,4 +1,5 @@
-import {createCloudTranslation} from './cloud-translation.js?v=20261103-remember-3';
+import {readerAccount,endpoint} from './library-accounts.js?v=20261103-spaces-1';
+import {createCloudTranslation} from './cloud-translation.js?v=20261103-spaces-1';
 import * as pdfjsLib from 'pdfjs-dist/build/pdf.mjs';
 import DOMPurify from './assets/vendor/dompurify/purify.es.mjs';
 
@@ -14,7 +15,7 @@ const STATUS_KEY='plr.status', SETTINGS_KEY='plr.settings', TRANS_KEY='plr.trans
 const CONNECTION_KEY='plr.connection', CONNECTION_TTL=8*60*60*1000;
 let connectionGeneration=0, fragmentSession=null, connectionRenewal=null, statusRefresh=null, lastStatusCheck=0;
 const cloudTranslation=createCloudTranslation(()=>renderStateChips());
-const paperKey = (id, suffix) => `plr.p${id}.${suffix}`;
+const paperKey = (id, suffix) => `plr.${id>=1000000&&state.cloudOrigin&&state.cloudOrigin!==state.defaultService?'space'+encodeURIComponent(state.cloudOrigin)+'.':''}p${id}.${suffix}`;
 
 function lsGet(key){ try { return LS ? localStorage.getItem(key) : null; } catch { return null; } }
 function lsSet(key,val){ try { if(!LS) return false; localStorage.setItem(key,val); return true; } catch { return false; } }
@@ -178,7 +179,7 @@ async function maybeConnectFromToken(){
 /* ---------------- Paper + snapshot ---------------- */
 async function loadPaper(id){
   let idx=null;
-  if(id>=1000000){const config=await fetch('/papers/service-config.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('Library service configuration unavailable.');return r.json();});const base=new URL(config.apiBase).origin;const r=await fetch(base+'/api/papers/'+id+'/reader',{cache:'no-store'});if(!r.ok)throw new Error('Cloud paper unavailable (HTTP '+r.status+').');const cloud=await r.json();idx={papers:[{fileId:id,title:cloud.title,pdfUrl:cloud.pdf.url,dataUrl:base+'/api/papers/'+id+'/reader'}]};}
+  if(id>=1000000){const config=await fetch('/papers/service-config.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('Library service configuration unavailable.');return r.json();});const defaultBase=endpoint(config.apiBase),profile=readerAccount(defaultBase),base=profile?.apiBase||defaultBase;state.cloudOrigin=base;state.defaultService=defaultBase;const r=await fetch(base+'/api/papers/'+id+'/reader',{cache:'no-store'});if(!r.ok)throw new Error('Cloud paper unavailable (HTTP '+r.status+').');const cloud=await r.json();idx={papers:[{fileId:id,title:cloud.title,pdfUrl:cloud.pdf.url,dataUrl:base+'/api/papers/'+id+'/reader'}]};}
   if(!idx)try{ const r=await fetch('./papers.json',{cache:'no-cache'}); if(!r.ok) throw new Error('papers.json HTTP '+r.status); idx=await r.json(); }catch(e){ idx=null; }
   let entry=null;
   if(idx && Array.isArray(idx.papers)) entry=idx.papers.find(p=>Number(p.fileId)===id)||null;
@@ -1293,6 +1294,7 @@ async function connectLibraryServices(){
   finally{$('btnLibraryConnect').disabled=false;}
 }
 async function apiFetch(path,opts={},candidate=null){
+  if(path.startsWith('/api/papers/')&&state.cloudOrigin&&state.cloudOrigin!==state.defaultService)throw Error('The installed Zotero bridge supports the original cloud space only. Cloud drafts are retained.');
   if(!candidate) refreshSharedConnection();
   const c=candidate||state.companion;
   if(!c.url) throw new Error('No local companion URL configured');
@@ -1372,6 +1374,7 @@ function disconnectCompanion(){
 
 /* Pull fresh remote, keeping drafts. Does not overwrite pending items. */
 async function pullFromZotero(quiet){
+  if(state.cloudOrigin&&state.cloudOrigin!==state.defaultService){toast('This additional space supports cloud reading and private drafts. The installed Zotero bridge supports the original space only.','error');return;}
   await flushNoteSave();
   if(!state.companion.connected){ toast('Connect the local companion first.','error'); return; }
   if(!state.fileId && state.fileId!==0){ toast('No paper id.','error'); return; }
@@ -1414,6 +1417,7 @@ function findRemoteConflicts(remote){
 }
 
 async function reconcileLibrary(){
+  if(state.cloudOrigin&&state.cloudOrigin!==state.defaultService){toast('This additional space supports cloud reading and private drafts. The installed Zotero bridge supports the original space only.','error');return;}
   if(syncing){ toast('Wait for Sync to finish before reviewing the library.','error'); return; }
   if(!state.companion.connected){ toast('Connect the local companion first.','error'); return; }
   try{
@@ -1474,6 +1478,7 @@ function mergeRemote(remote){
 /* Sync */
 let syncing=false;
 async function syncNow(){
+  if(state.cloudOrigin&&state.cloudOrigin!==state.defaultService){toast('This additional space supports cloud reading and private drafts. The installed Zotero bridge supports the original space only.','error');return;}
   if(syncing) return;
   if(!state.companion.connected || !state.companion.token){ toast('Connect the local companion before syncing.','error'); return; }
   if(state.companion.serverMismatch){ toast('Server identity changed. Pull from Zotero and reconcile before writing.','error'); return; }
@@ -1620,7 +1625,7 @@ async function authorizeZotero(){
 async function exportDrafts(){
   await flushNoteSave();
   await persistLocal({quiet:true});
-  const out={schemaVersion:1,kind:'plr-drafts',exportedAt:new Date().toISOString(),fileId:state.fileId,state:null};
+  const out={schemaVersion:1,kind:'plr-drafts',exportedAt:new Date().toISOString(),fileId:state.fileId,serviceOrigin:state.cloudOrigin||null,pdfSha256:state.data?.pdf?.sha256||null,state:null};
   try{ out.state=await storeGet(paperKey(state.fileId,'state'))||{pending:state.pending,baselines:state.baselines,tombstones:state.tombstones,keyMap:state.keyMap}; }catch{ out.state={pending:state.pending}; }
   // safety: include current in-memory drafts too
   out.current={annotations:state.annotations,notes:state.notes,pending:state.pending,baselines:state.baselines};
@@ -1639,6 +1644,11 @@ function validateDraftDocument(parsed){
   visit(parsed);
   if(!parsed||parsed.schemaVersion!==1||parsed.kind!=='plr-drafts') throw new Error('Unsupported reader drafts schema');
   if(!Number.isSafeInteger(parsed.fileId)||parsed.fileId!==state.fileId) throw new Error('Drafts file belongs to a different paper');
+  if(state.fileId>=1000000){
+    if(parsed.serviceOrigin){if(endpoint(parsed.serviceOrigin)!==state.cloudOrigin)throw Error('Drafts belong to a different cloud space');}
+    else if(state.cloudOrigin!==state.defaultService)throw Error('These old drafts do not identify this cloud space');
+    if(parsed.pdfSha256&&parsed.pdfSha256!==state.data?.pdf?.sha256)throw Error('Drafts belong to a different PDF');
+  }
   const validId=id=>typeof id==='string'&&/^[A-Za-z0-9][A-Za-z0-9_-]{0,199}$/.test(id)&&!forbidden.has(id);
   const record=value=>value&&typeof value==='object'&&!Array.isArray(value);
   for(const source of [parsed.state,parsed.current]){
@@ -1781,7 +1791,7 @@ function updatePdfError(msg){
 }
 function localReaderUrl(){
   const base=(state.companion.url||'http://127.0.0.1:23120').replace(/\/$/,'');
-  return base+'/reader/?id='+(state.fileId!=null?state.fileId:'')+(state.companion.token?'#token='+encodeURIComponent(state.companion.token):'');
+  return base+'/reader/?id='+(state.fileId!=null?state.fileId:'')+(state.cloudOrigin?'&service='+encodeURIComponent(state.cloudOrigin):'')+(state.companion.token?'#token='+encodeURIComponent(state.companion.token):'');
 }
 
 /* ---------------- Events ---------------- */
