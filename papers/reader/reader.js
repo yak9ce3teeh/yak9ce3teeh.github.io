@@ -3,7 +3,7 @@ import {createCloudTranslation} from './cloud-translation.js?v=20261103-spaces-1
 import * as pdfjsLib from 'pdfjs-dist/build/pdf.mjs';
 import DOMPurify from './assets/vendor/dompurify/purify.es.mjs';
 
-pdfjsLib.GlobalWorkerOptions.workerSrc = new URL('./assets/vendor/pdfjs/build/pdf.worker.mjs', import.meta.url).href;
+pdfjsLib.GlobalWorkerOptions.workerSrc = new URL('./assets/vendor/pdfjs/legacy/build/pdf.worker.mjs?v=20261104-pdf-compat-1', import.meta.url).href;
 
 const CMAP = new URL('./assets/vendor/pdfjs/cmaps/', import.meta.url).href;
 const STDFONT = new URL('./assets/vendor/pdfjs/standard_fonts/', import.meta.url).href;

@@ -18,10 +18,15 @@
       if(![...document.querySelectorAll('.topic-group')].some(e=>e.dataset.topic===p.category))continue;
       const row=document.createElement('article');row.className='paper';
       Object.assign(row.dataset,{id:String(p.fileId),area:p.category.split('/')[0],topic:p.category,year:p.date.slice(0,4),month:p.date.slice(5,7),notes:'no',code:'unverified',available:'no',stars:'',citations:'',keywords:p.keywords.join('|'),title:p.title.toLowerCase(),search:[p.title,p.category,p.date,...p.keywords].join(' ').toLowerCase()});
-      const year=document.createElement('div');year.className='paper-year';year.textContent=p.date.slice(0,7);row.append(year);
+      const year=document.createElement('div');year.className='paper-year';const time=document.createElement('time');time.dateTime=p.date;const month=document.createElement('span');month.className='month-name';month.textContent=new Date(p.date.slice(0,7)+'-01T00:00:00Z').toLocaleString('en-US',{month:'short',timeZone:'UTC'});const dateYear=document.createElement('span');dateYear.className='date-year';dateYear.textContent=p.date.slice(0,4);time.append(month,dateYear);year.append(time);row.append(year);
       const body=document.createElement('div');body.className='paper-body';const title=document.createElement('h3'),link=document.createElement('a');link.className='paper-title';link.href='https://yak9ce3teeh.github.io/papers/reader/?'+new URLSearchParams({id:String(p.fileId),service:config.apiBase});link.textContent=p.title;title.append(link);body.append(title);
       const category=document.createElement('p');category.className='paper-category';category.textContent=p.category.replaceAll('/',' / ');body.append(category);
-      const tags=document.createElement('div');tags.className='paper-tags';for(const keyword of ['Cloud PDF','Code unverified',...p.keywords]){const tag=document.createElement('span');tag.className='tag';tag.textContent=keyword;tags.append(tag);}body.append(tags);row.append(body);list.append(row);known.add(p.title.toLowerCase());
+      const tags=document.createElement('div');tags.className='paper-tags';
+      for(const [text,style] of [['Cloud PDF','community-badge'],['Code unverified','code-badge']]){const badge=document.createElement('span');badge.className=style;badge.textContent=text;tags.append(badge);}
+      for(const keyword of p.keywords){const tag=document.createElement('button');tag.className='keyword-chip';tag.type='button';tag.dataset.keyword=keyword;tag.setAttribute('aria-pressed','false');tag.textContent=keyword;tags.append(tag);}
+      body.append(tags);const actions=document.createElement('div');actions.className='paper-actions';
+      for(const [label,href,style] of [['Read paper',link.href,'reader-button'],['Open PDF',new URL(p.pdfUrl,config.apiBase).href,'pdf-button']]){const a=document.createElement('a');a.textContent=label;a.href=href;a.className=style;a.target='_blank';a.rel='noopener';actions.append(a);}
+      body.append(actions);row.append(body);list.append(row);known.add(p.title.toLowerCase());
       const years=document.getElementById('year-select');if(![...years.options].some(o=>o.value===p.date.slice(0,4)))years.add(new Option(p.date.slice(0,4),p.date.slice(0,4)));
       const keys=document.getElementById('keyword-select');for(const keyword of p.keywords)if(![...keys.options].some(o=>o.value===keyword))keys.add(new Option(keyword,keyword));
     }
