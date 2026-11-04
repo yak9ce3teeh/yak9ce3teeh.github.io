@@ -50,7 +50,8 @@ export function keywordCandidates(meta,existing=[]){
   // specific existing tag ("Zero-shot navigation") already covers its evidence.
   return phrases.some(phrase=>!relevant.some(tag=>(' '+plain(tag)+' ').includes(' '+phrase+' ')));
  }).map(([label])=>label);
- return preferExistingKeywords([...relevant,...(matched.length?uncovered:relevant.length?[]:generated)],existing,30);
+ const fallback=chunks.filter(chunk=>chunk.length).map(chunk=>chunk.join(' ')).filter(phrase=>phrase.length>=3&&phrase.length<=100);
+ return preferExistingKeywords([...relevant,...(matched.length?uncovered:relevant.length?[]:fallback)],existing,30);
 }
 export function selectKeywords(candidates,limit=6){
  const selected=[];for(const value of candidates){const words=value.toLowerCase().replace(/s\b/g,'');if(selected.some(v=>{const prior=v.toLowerCase().replace(/s\b/g,'');return prior.includes(words)||words.includes(prior);} ))continue;selected.push(value);if(selected.length===limit)break;}return selected;
@@ -79,8 +80,9 @@ export function preferExistingKeywords(candidates,existing=[],limit=6){
  const coverage=value=>' '+keywordKey(value).replace(/\brl\b/g,'reinforcement learning')+' ';
  const reused=canonical.filter(x=>known.has(keywordKey(x))).filter(value=>!canonical.some(other=>
   known.has(keywordKey(other))&&coverage(other)!==coverage(value)&&coverage(other).includes(coverage(value))));
- const proposed=canonical.filter(x=>!known.has(keywordKey(x))).filter(value=>!reused.some(prior=>
+ const rawProposals=canonical.filter(x=>!known.has(keywordKey(x))).filter(value=>!reused.some(prior=>
   coverage(prior).includes(coverage(value))||(keywordKey(value)==='humanoid robotic'&&keywordKey(prior).startsWith('humanoid '))));
+ const proposed=rawProposals.filter(value=>!rawProposals.some(other=>coverage(other)!==coverage(value)&&coverage(other).includes(coverage(value))));
  return [...reused,...proposed].filter((value,index,all)=>{
   const key=keywordKey(value);return !all.slice(0,index).some(prior=>keywordKey(prior)===key);
  }).slice(0,limit);

@@ -1,4 +1,4 @@
-import {keywordCandidates,mergeKeywordVocabulary,keywordKey,preferExistingKeywords} from './keywords.mjs?v=20261104-tags-1';
+import {keywordCandidates,mergeKeywordVocabulary,keywordKey,preferExistingKeywords} from './keywords.mjs?v=20261104-tags-2';
 let extractorPromise;
 export async function rankSuggestions(meta,categories,extractor,existing=[]){
  const grounded=keywordCandidates(meta,existing),vocabulary=mergeKeywordVocabulary(existing);
