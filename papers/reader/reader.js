@@ -15,6 +15,7 @@ const LS = (() => { try { const k='__pl_probe'; localStorage.setItem(k,'1'); loc
 const STATUS_KEY='plr.status', SETTINGS_KEY='plr.settings', TRANS_KEY='plr.translation', TOKEN_KEY='plr.token';
 const CONNECTION_KEY='plr.connection', CONNECTION_TTL=8*60*60*1000;
 let connectionGeneration=0, fragmentSession=null, connectionRenewal=null, statusRefresh=null, lastStatusCheck=0;
+const hostedLibrary=location.hostname==='yak9ce3teeh.github.io';
 const cloudTranslation=createCloudTranslation(()=>renderStateChips());
 const paperKey = (id, suffix) => `plr.${id>=1000000&&state.cloudOrigin&&state.cloudSpaceId!=='personal'?'space'+encodeURIComponent(state.cloudSpaceId)+'.':''}p${id}.${suffix}`;
 
@@ -112,6 +113,11 @@ function renderStateChips(){
 
 /* ---------------- Bootstrap ---------------- */
 async function boot(){
+  const requestId=new URLSearchParams(location.search).get('id');
+  if(hostedLibrary&&!accountSession()){
+    location.replace('/papers/'+(requestId&&/^(0|[1-9][0-9]{0,8})$/.test(requestId)?'?next='+requestId:''));
+    return;
+  }
   bindEvents();
   cloudTranslation.refresh();
   await consumeFragment();
@@ -180,12 +186,12 @@ async function maybeConnectFromToken(){
 /* ---------------- Paper + snapshot ---------------- */
 async function loadPaper(id){
   let idx=null;
-  if(id>=1000000){
+  if(hostedLibrary||id>=1000000){
     const session=accountSession();
     if(!session)throw new Error('Log in from My Library to read this private paper.');
     const base=await accountOrigin();
     const r=await accountFetch('/api/papers/'+id+'/reader',{},session);
-    if(r.status===401){if(accountSession()?.token===session.token)saveSession(null);throw Error('Your session ended. Log in again.');}
+    if(r.status===401){if(accountSession()?.token===session.token)saveSession(null);if(hostedLibrary)location.replace('/papers/?next='+id);throw Error('Your session ended. Log in again.');}
     if(!r.ok)throw Error(r.status===404?'This paper is not in your account.':'Private paper unavailable. Try again.');
     if(accountSession()?.token!==session.token)throw Error('Your account changed. Reopen the paper.');
     const cloud=await r.json();
@@ -194,11 +200,18 @@ async function loadPaper(id){
     state.cloudSession=session;
     state.data=cloud;
     idx={papers:[{fileId:id,title:cloud.title,pdfUrl:cloud.pdf.url}]};
-    const recheck=()=>{if(accountSession()?.token!==session.token)location.replace('/papers/add/');};
+    const recheck=()=>{if(accountSession()?.token!==session.token)location.replace('/papers/');};
     window.addEventListener(SESSION_EVENT,recheck);
     window.addEventListener('storage',e=>{if(e.key===SESSION_KEY||e.key===null)recheck();});
     window.addEventListener('pageshow',recheck);
     setInterval(recheck,2000);
+    setInterval(async()=>{
+      if(document.hidden||accountSession()?.token!==session.token)return;
+      try{
+        const verify=await accountFetch('/api/account/session',{},session);
+        if(verify.status===401&&accountSession()?.token===session.token)saveSession(null);
+      }catch{}
+    },60000);
   }
   if(!idx)try{ const r=await fetch('./papers.json',{cache:'no-cache'}); if(!r.ok) throw new Error('papers.json HTTP '+r.status); idx=await r.json(); }catch(e){ idx=null; }
   let entry=null;
@@ -247,7 +260,7 @@ async function loadPaper(id){
     state.notes=(state.data.notes||[]).map(normalizeNote);
     if(state.data.zotero && state.data.zotero.serverId) state.companion.serverId=state.data.zotero.serverId;
   }
-  $('backLink').href=state.cloudOrigin?'../add/':'../index.html';
+  $('backLink').href='../index.html';
 }
 
 function normalizeAnno(a){
@@ -1813,8 +1826,8 @@ function updatePdfError(msg){
   if(!msg){ el.hidden=true; el.textContent=''; return; }
   el.hidden=false; el.innerHTML='';
   const p=document.createElement('p'); p.textContent=msg; el.appendChild(p);
-  const isPrivate=Number(new URLSearchParams(location.search).get('id'))>=1000000;
-  const library=document.createElement('a'); library.className='btn'; library.href=isPrivate?'../add/':'../index.html'; library.textContent=isPrivate?'My Library':'Choose from library'; el.appendChild(library);
+  const isPrivate=hostedLibrary||Number(new URLSearchParams(location.search).get('id'))>=1000000;
+  const library=document.createElement('a'); library.className='btn'; library.href='../index.html'; library.textContent=isPrivate?'My Library':'Choose from library'; el.appendChild(library);
   if(!state.paper) return;
   const local=document.createElement('button'); local.type='button'; local.className='btn'; local.textContent='Open local reader'; local.addEventListener('click',()=>window.open(localReaderUrl(),'_blank','noopener')); if(!isPrivate)el.appendChild(local);
   const direct=$('pdfDirect').cloneNode(true); direct.className='btn'; direct.textContent=isPrivate?'Download PDF':'Open PDF directly';

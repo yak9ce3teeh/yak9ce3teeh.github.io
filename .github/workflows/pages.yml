@@ -16,7 +16,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     permissions:
-      contents: write
+      contents: read
       pages: read
     steps:
       - uses: actions/checkout@v4
@@ -26,18 +26,6 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Add queued papers
-        if: github.actor == github.repository_owner
-        run: |
-          git config user.name 'Paper Library'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          python tools/paper_add/cloud_add.py "$GITHUB_WORKSPACE"
-          for attempt in 1 2 3; do
-            if git push origin HEAD:main; then break; fi
-            test "$attempt" -lt 3 || exit 1
-            git fetch origin main
-            git rebase origin/main
-          done
       - uses: actions/configure-pages@v5
       - name: Prepare public files
         run: python tools/paper_add/package_site.py
