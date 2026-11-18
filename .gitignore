@@ -17,3 +17,5 @@ Thumbs.db
 /papers/add/integrations/github.mjs
 /papers/add/pdfjs/pdf.mjs
 /papers/add/pdfjs/pdf.worker.mjs
+
+__pycache__/
