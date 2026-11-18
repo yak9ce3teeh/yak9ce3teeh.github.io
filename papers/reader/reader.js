@@ -3,6 +3,7 @@ import {createCloudTranslation} from './cloud-translation.js?v=20261118-accounts
 import {accountOrigin,accountFetch,accountSession,SESSION_KEY,SESSION_EVENT,saveSession} from './account-client.js?v=20261118-accounts';
 import * as pdfjsLib from 'pdfjs-dist/build/pdf.mjs';
 import {renderReadingText,readingSelection,rangeForReading} from './reading-text.js?v=reading-materials-1';
+import {fetchProjection,mountProjection} from './web-projection.js?v=web-projection-1';
 import DOMPurify from './assets/vendor/dompurify/purify.es.mjs';
 
 pdfjsLib.GlobalWorkerOptions.workerSrc = new URL('./assets/vendor/pdfjs/legacy/build/pdf.worker.mjs?v=20261104-pdf-compat-1', import.meta.url).href;
@@ -135,11 +136,14 @@ async function boot(){
   try{
     await loadPaper(id);
   }catch(e){ $('pdfLoading').hidden=true; $('pdfDirect').hidden=true; $('btnNewNote').disabled=true; state.fileId=null; showPdfError('Could not load paper data: '+e.message); return; }
-  await loadLocalState();
+  if(!state.webProjection)await loadLocalState();
   renderStateChips();
-  renderPanels();
-  if(state.notes.length) selectNote(state.selectedNote && state.notes.some(n=>n.id===state.selectedNote) ? state.selectedNote : state.notes[0].id);
-  else { showTab('notes'); refreshActiveEditor(); }
+  if(state.webProjection)showTab('trans');
+  else{
+    renderPanels();
+    if(state.notes.length) selectNote(state.selectedNote && state.notes.some(n=>n.id===state.selectedNote) ? state.selectedNote : state.notes[0].id);
+    else { showTab('notes'); refreshActiveEditor(); }
+  }
   const servicesReady=state.readingMaterial?Promise.resolve():maybeConnectFromToken();
   await loadPdf();
   await servicesReady;
@@ -201,6 +205,7 @@ async function loadPaper(id){
     state.cloudSession=session;
     state.data=cloud;
     state.readingMaterial=!!cloud.materialType&&cloud.materialType!=='paper';
+    state.webProjection=state.readingMaterial&&cloud.originalFormat==='web';
     if(state.readingMaterial)configureReadingMaterial();
     idx={papers:[{fileId:id,title:cloud.title,pdfUrl:cloud.pdf?.url}]};
     const recheck=()=>{if(accountSession()?.token!==session.token)location.replace('/papers/');};
@@ -229,7 +234,7 @@ async function loadPaper(id){
     if(textReading){
       const source=state.data.source;
       a.hidden=typeof source!=='string'||!/^https?:\/\//i.test(source);
-      if(!a.hidden){a.href=source;a.textContent='Open original';a.setAttribute('aria-label','Open original reading');}
+      if(!a.hidden){a.href=source;a.rel='noopener noreferrer';a.textContent='Open original';a.setAttribute('aria-label','Open original reading');}
     }else if(state.cloudOrigin){
       a.href='#download';
       a.addEventListener('click',async event=>{
@@ -355,7 +360,7 @@ function applyLocalToSnapshot(){
 }
 
 async function persistLocal(opts={}){
-  if(state.fileId==null) return;
+  if(state.fileId==null||state.webProjection) return;
   const payload = {
     schemaVersion:1, fileId:state.fileId, serverId:state.companion.serverId||null, serverMismatch:!!state.companion.serverMismatch, liveSnapshot:state.liveSnapshot||null,
     pending:state.pending, baselines:state.baselines, tombstones:state.tombstones, keyMap:state.keyMap, selectedNote:state.selectedNote, conflicts:state.conflicts, current:{annotations:state.annotations,notes:state.notes},
@@ -476,7 +481,42 @@ function configureReadingMaterial(){
   }
   for(const element of document.querySelectorAll('[data-zotero-settings]'))element.hidden=true;
   $('pdfPane').setAttribute('aria-label',state.data.format==='text'?'Reading text':'PDF document');
+  if(state.webProjection){
+    $('pdfPane').classList.add('web-reading');
+    $('pdfPane').setAttribute('aria-label','Web reading');
+    $('pdfScroll').setAttribute('aria-label','Web page view');
+    $('pdfPane').querySelector('.toolbar').setAttribute('aria-label','Web reading controls');
+    $('transSource').placeholder='Select text on the page, then choose Translate';
+    $('pdfLoading').lastElementChild.textContent='Loading original page…';
+    for(const id of ['btnFirst','btnPrev','btnNext','btnLast','pageTotal','btnZoomOut','zoomVal','btnZoomIn','btnFitWidth','btnFitPage','btnRotate'])$(id).hidden=true;
+    $('btnExportDrafts').closest('fieldset').hidden=true;
+    $('pageInput').closest('label').hidden=true;
+    for(const separator of $('pdfPane').querySelectorAll('.toolbar .sep'))separator.hidden=true;
+    for(const id of ['btnHighlight','btnUnderline','btnPointNote','tabAnno','tabNotes']){
+      $(id).disabled=true;$(id).title='Unavailable for web pages';
+    }
+    for(const action of $('selPopup').querySelectorAll('[data-act="highlight"], [data-act="underline"]'))action.hidden=true;
+  }
 }
+
+async function loadWebProjection(){
+  $('pdfLoading').hidden=false;
+  try{
+    const projection=await fetchProjection(state.data.source,source=>accountFetch(
+      '/api/readings/source?space='+encodeURIComponent(state.cloudSpaceId),
+      {method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({url:source,projection:true})},state.cloudSession));
+    await mountProjection($('pagesContainer'),projection,(text,rect,show)=>{
+      state.lastSelection=text?{text}:null;
+      $('btnTranslateSel').disabled=!text;
+      if(show&&rect)showSelPopup(rect);else hideSelPopup();
+    });
+    setStatusMsg('Ready · original page view');
+  }catch(error){
+    setStatusMsg('Original page view unavailable');
+    showPdfError(error.message+' Use Open original to visit the page.');
+  }finally{$('pdfLoading').hidden=true;}
+}
+
 function loadReadingText(){
   const article=renderReadingText(state.data.content);
   const wrapper=document.createElement('div');
@@ -499,6 +539,7 @@ function loadReadingText(){
   if(typeof ResizeObserver==='function')new ResizeObserver(()=>renderAllOverlays()).observe(article);
 }
 async function loadPdf(){
+  if(state.webProjection){await loadWebProjection();return;}
   if(state.data?.format==='text'){loadReadingText();return;}
   const src = state.paper._pdfUrl;
   $('pdfLoading').hidden=false;
@@ -834,7 +875,7 @@ function mergeRects(rects){
   }
   return out.map(r=>[r.x1,r.y1,r.x2,r.y2]);
 }
-function getSelectedPdfText(){ const sel=window.getSelection(); return sel?sel.toString().trim():''; }
+function getSelectedPdfText(){ if(state.webProjection)return state.lastSelection?.text||'';const sel=window.getSelection(); return sel?sel.toString().trim():''; }
 // Controls can take focus and collapse the DOM selection before their click fires.
 function selectedTranslationText(){ return state.lastSelection?.text || collectSelectionRects()?.text || ''; }
 
@@ -859,6 +900,7 @@ function handleSelectionEnd(){
 }
 
 async function createAnnoFromSelection(type){
+  if(state.webProjection)return;
   const info=state.lastSelection || collectSelectionRects();
   if(!info || !info.pages.length){ toast('Select text in the document first.','error'); return; }
   const color = type==='underline' ? '#b5362a' : (await lastUsedColor()||'#ffd400');
@@ -1229,13 +1271,13 @@ async function doTranslate(){
     const o=document.createElement('div'); o.className='orig'; o.textContent=text; box.appendChild(o);
     const tr=document.createElement('div'); tr.textContent=out; box.appendChild(tr);
     const m=document.createElement('div'); m.className='hint'; m.textContent=res.model?('Model: '+res.model):''; box.appendChild(m);
-    $('btnAddTransToNote').disabled=false;
+    $('btnAddTransToNote').disabled=!!state.webProjection;
     $('transStatus').textContent='Done.';
   }catch(e){ $('transStatus').textContent='Translation failed: '+e.message; }
   finally{ state.translationBusy=false; renderStateChips(); }
 }
 function addTranslationToNote(){
-  if(!state.translation) return;
+  if(!state.translation||state.webProjection) return;
   showTab('notes');
   if(!state.selectedNote) newNote(false);
   const ed=$('noteEditor');
@@ -1886,6 +1928,10 @@ function updatePdfError(msg){
   const isPrivate=hostedLibrary||Number(new URLSearchParams(location.search).get('id'))>=1000000;
   const library=document.createElement('a'); library.className='btn'; library.href='../index.html'; library.textContent=isPrivate?'My Library':'Choose from library'; el.appendChild(library);
   if(!state.paper) return;
+  if(state.webProjection){
+    if(!$('pdfDirect').hidden){const original=$('pdfDirect').cloneNode(true);original.removeAttribute('id');el.appendChild(original);}
+    return;
+  }
   const local=document.createElement('button'); local.type='button'; local.className='btn'; local.textContent='Open local reader'; local.addEventListener('click',()=>window.open(localReaderUrl(),'_blank','noopener')); if(!isPrivate)el.appendChild(local);
   const direct=$('pdfDirect').cloneNode(true); direct.className='btn'; direct.textContent=isPrivate?'Download PDF':'Open PDF directly';
   if(isPrivate)direct.addEventListener('click',event=>{event.preventDefault();$('pdfDirect').click();});

@@ -11,7 +11,7 @@ PAPER_FILES = {
     'add/updates.json', 'add/assets/app.js', 'add/assets/app.css',
     'add/integrations/zotero.mjs', 'add/pdfjs/legacy/pdf.mjs', 'add/pdfjs/legacy/pdf.worker.mjs',
     'reader/index.html', 'reader/reader.js', 'reader/reader.css', 'reader/reading-text.js', 'reader/cloud-translation.js',
-    'reader/account-client.js', 'reader/library-accounts.js', 'reader/owner-session.js',
+    'reader/account-client.js', 'reader/library-accounts.js', 'reader/owner-session.js', 'reader/web-projection.js',
 }
 
 

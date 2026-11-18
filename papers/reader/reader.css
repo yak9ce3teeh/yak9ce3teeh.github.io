@@ -116,6 +116,10 @@ a{color:var(--green-dark)}
 .pane-tabs{display:flex;border-bottom:1px solid var(--border);background:#f6f3ea;flex:0 0 auto}
 .pane-tab{border:0;background:transparent;padding:9px 12px;cursor:pointer;font-size:13px;color:var(--muted);border-bottom:2px solid transparent;white-space:nowrap}
 .pane-tab.active{color:var(--green-dark);border-bottom-color:var(--green);background:var(--panel);font-weight:600}
+.pane-tab:disabled{opacity:.45;cursor:not-allowed}
+.web-reading .pdf-scroll{padding:0;overflow:hidden}
+.web-reading .pages,.web-projection{height:100%;width:100%}
+.web-projection{display:block;border:0;background:#fff}
 .count{font-size:10px;background:var(--green-soft);border-radius:999px;padding:0 6px;color:var(--green-dark);margin-left:2px}
 .pane-body{display:flex;flex-direction:column;flex:1 1 auto;min-height:0;overflow:auto}
 .pane-body[hidden]{display:none}
