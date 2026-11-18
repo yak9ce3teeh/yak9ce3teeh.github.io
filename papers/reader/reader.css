@@ -215,3 +215,22 @@ code{background:#f0efe6;padding:0 4px;border-radius:3px;font-size:12px}
   .chip{font-size:11px}
 }
 @media (prefers-reduced-motion:reduce){*{animation-duration:0s !important;transition:none !important}}
+.reading-document {
+  box-sizing: border-box;
+  width: min(100%, 860px);
+  overflow: visible;
+  padding: clamp(18px, 4vw, 58px);
+}
+.reading-text {
+  color: #243129;
+  font: normal calc(1rem * var(--reading-scale, 1))/1.75 system-ui, sans-serif;
+  overflow-wrap: anywhere;
+  user-select: text;
+}
+.reading-text .reading-block { margin: 0 0 1.15em; }
+.reading-text h2 { font-size: 1.45em; line-height: 1.35; margin-top: 1.35em; }
+.reading-text blockquote { border-left: 3px solid #b6c8b5; padding-left: .85em; }
+.reading-text pre { font: .9em/1.6 ui-monospace, monospace; white-space: pre-wrap; background: #eef2ee; padding: .8em; }
+.reading-text .reading-block-list { padding-left: 1em; display: list-item; list-style-position: inside; }
+.reading-overlay { position: absolute; inset: 0; pointer-events: none; }
+.reading-overlay .anno-mark { pointer-events: none; }

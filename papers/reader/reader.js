@@ -2,6 +2,7 @@ import {endpoint} from './library-accounts.js?v=20261103-spaces-1';
 import {createCloudTranslation} from './cloud-translation.js?v=20261118-accounts';
 import {accountOrigin,accountFetch,accountSession,SESSION_KEY,SESSION_EVENT,saveSession} from './account-client.js?v=20261118-accounts';
 import * as pdfjsLib from 'pdfjs-dist/build/pdf.mjs';
+import {renderReadingText,readingSelection,rangeForReading} from './reading-text.js?v=reading-materials-1';
 import DOMPurify from './assets/vendor/dompurify/purify.es.mjs';
 
 pdfjsLib.GlobalWorkerOptions.workerSrc = new URL('./assets/vendor/pdfjs/legacy/build/pdf.worker.mjs?v=20261104-pdf-compat-1', import.meta.url).href;
@@ -139,10 +140,10 @@ async function boot(){
   renderPanels();
   if(state.notes.length) selectNote(state.selectedNote && state.notes.some(n=>n.id===state.selectedNote) ? state.selectedNote : state.notes[0].id);
   else { showTab('notes'); refreshActiveEditor(); }
-  const servicesReady=maybeConnectFromToken();
+  const servicesReady=state.readingMaterial?Promise.resolve():maybeConnectFromToken();
   await loadPdf();
   await servicesReady;
-  if(state.pdf)setStatusMsg(state.pending.length?'Local drafts retained':state.cloudOrigin?'Ready · private cloud paper':'Ready · published notes and annotations');
+  if(state.pdf||state.readingText)setStatusMsg(state.pending.length?'Local drafts retained':state.cloudOrigin?'Ready · private library item':'Ready · published notes and annotations');
 }
 
 async function consumeFragment(){
@@ -199,7 +200,9 @@ async function loadPaper(id){
     state.cloudSpaceId=cloud.spaceId;
     state.cloudSession=session;
     state.data=cloud;
-    idx={papers:[{fileId:id,title:cloud.title,pdfUrl:cloud.pdf.url}]};
+    state.readingMaterial=!!cloud.materialType&&cloud.materialType!=='paper';
+    if(state.readingMaterial)configureReadingMaterial();
+    idx={papers:[{fileId:id,title:cloud.title,pdfUrl:cloud.pdf?.url}]};
     const recheck=()=>{if(accountSession()?.token!==session.token)location.replace('/papers/');};
     window.addEventListener(SESSION_EVENT,recheck);
     window.addEventListener('storage',e=>{if(e.key===SESSION_KEY||e.key===null)recheck();});
@@ -220,9 +223,14 @@ async function loadPaper(id){
     state.paper=entry;
     document.title=(entry.title||('Paper '+id))+' - Paper Library Reader';
     $('paperTitle').textContent=entry.title||('Paper '+id);
-    const pdfUrl = entry.pdfUrl || `data/${id}.pdf`;
+    const textReading=state.data?.format==='text';
+    const pdfUrl = textReading?null:entry.pdfUrl || `data/${id}.pdf`;
     const a=$('pdfDirect');
-    if(state.cloudOrigin){
+    if(textReading){
+      const source=state.data.source;
+      a.hidden=typeof source!=='string'||!/^https?:\/\//i.test(source);
+      if(!a.hidden){a.href=source;a.textContent='Open original';a.setAttribute('aria-label','Open original reading');}
+    }else if(state.cloudOrigin){
       a.href='#download';
       a.addEventListener('click',async event=>{
         event.preventDefault();
@@ -230,7 +238,7 @@ async function loadPaper(id){
           const response=await accountFetch('/api/papers/'+id+'/pdf',{},state.cloudSession);
           if(!response.ok)throw Error('PDF unavailable. Log in again if your session ended.');
           const url=URL.createObjectURL(await response.blob()),link=document.createElement('a');
-          link.href=url;link.download='paper.pdf';link.click();setTimeout(()=>URL.revokeObjectURL(url),60000);
+          link.href=url;link.download=state.readingMaterial?'reading.pdf':'paper.pdf';link.click();setTimeout(()=>URL.revokeObjectURL(url),60000);
         }catch(error){toast(error.message,'error');}
       });
     }else{a.href=pdfUrl;a.setAttribute('download','');}
@@ -462,7 +470,36 @@ function setupDivider(){
 }
 
 /* ---------------- PDF loading / lazy pages ---------------- */
+function configureReadingMaterial(){
+  for(const name of ['zoteroChip','btnLibraryConnect','btnConnect','btnDisconnect','btnOpenLocal','btnCopySession','btnAuthorize','btnPull','btnReconcile','btnSync']){
+    $(name).hidden=true;
+  }
+  for(const element of document.querySelectorAll('[data-zotero-settings]'))element.hidden=true;
+  $('pdfPane').setAttribute('aria-label',state.data.format==='text'?'Reading text':'PDF document');
+}
+function loadReadingText(){
+  const article=renderReadingText(state.data.content);
+  const wrapper=document.createElement('div');
+  wrapper.className='pdf-page reading-document';
+  wrapper.dataset.page='1';
+  const overlay=document.createElement('div');
+  overlay.className='reading-overlay';
+  wrapper.append(article,overlay);
+  $('pagesContainer').replaceChildren(wrapper);
+  state.readingText=article;
+  state.pages=[{num:1,wrapper,textLayer:article,overlayEl:overlay}];
+  state.numPages=1;state.curPage=1;
+  for(const id of ['btnFirst','btnPrev','btnNext','btnLast','btnFitWidth','btnFitPage','btnRotate','btnPointNote','pageTotal']){
+    $(id).hidden=true;
+  }
+  $('pageInput').closest('label').hidden=true;
+  $('pdfLoading').hidden=true;
+  wrapper.style.setProperty('--reading-scale',String(clamp(state.scale,.6,2.5)));
+  renderAllOverlays();
+  if(typeof ResizeObserver==='function')new ResizeObserver(()=>renderAllOverlays()).observe(article);
+}
 async function loadPdf(){
+  if(state.data?.format==='text'){loadReadingText();return;}
   const src = state.paper._pdfUrl;
   $('pdfLoading').hidden=false;
   try{
@@ -635,7 +672,7 @@ function goToPage(n, smooth=true){
   n=clamp(Math.round(n),1,state.numPages);
   state.curPage=n; $('pageInput').value=n;
   scrollToPage(n,smooth);
-  const p=state.pages[n-1]; if(p) renderPage(n);
+  const p=state.pages[n-1]; if(p&&state.pdf) renderPage(n);
   saveUi();
 }
 function scrollToPage(n,smooth){
@@ -659,7 +696,11 @@ function updateCurrentPageFromScroll(){
 
 /* ---------------- Zoom / fit / rotate ---------------- */
 function setZoom(scale){
-  state.scale=clamp(scale,0.15,6); state.fitMode=null;
+  state.scale=state.readingText?clamp(scale,.6,2.5):clamp(scale,0.15,6); state.fitMode=null;
+  if(state.readingText){
+    state.pages[0].wrapper.style.setProperty('--reading-scale',String(state.scale));
+    renderAllOverlays();
+  }
   $('zoomVal').textContent=Math.round(state.scale*100)+'%';
   $('btnFitWidth').setAttribute('aria-pressed','false'); $('btnFitPage').setAttribute('aria-pressed','false');
   requestRerender(); saveUi();
@@ -715,6 +756,16 @@ function addAnnoMark(layer,a,p){
     el.addEventListener('click',ev=>{ ev.stopPropagation(); selectAnnotation(a.id,true); });
     el.addEventListener('keydown',ev=>{ if(ev.key==='Enter'||ev.key===' '){ ev.preventDefault(); selectAnnotation(a.id,true); } });
     return el; };
+  if(state.readingText){
+    const range=rangeForReading(state.readingText,a.position?.text);
+    if(!range)return;
+    const box=p.wrapper.getBoundingClientRect();
+    for(const rect of range.getClientRects()){
+      if(!rect.width||!rect.height)continue;
+      layer.appendChild(makeMark({left:rect.left-box.left,top:rect.top-box.top,width:rect.width,height:rect.height}));
+    }
+    return;
+  }
   if(type==='note' || !rects.length){
     let g=null;
     if(rects.length) g=pdfRectToCss(rects[0],p);
@@ -737,6 +788,11 @@ function collectSelectionRects(){
   const sel=window.getSelection();
   if(!sel || sel.isCollapsed || !sel.rangeCount) return null;
   const range=sel.getRangeAt(0);
+  if(state.readingText){
+    const reading=readingSelection(state.readingText,range);
+    if(!reading)return null;
+    return {text:reading.text,clientRect:reading.clientRect,pages:[{pageIndex:0,rects:[],text:reading.text,reading:reading.position}]};
+  }
   const perPage=new Map();
   for(const p of state.pages){
     if(!p.viewport || !p.textLayer || !range.intersectsNode(p.textLayer)) continue;
@@ -804,23 +860,23 @@ function handleSelectionEnd(){
 
 async function createAnnoFromSelection(type){
   const info=state.lastSelection || collectSelectionRects();
-  if(!info || !info.pages.length){ toast('Select text in the PDF first.','error'); return; }
+  if(!info || !info.pages.length){ toast('Select text in the document first.','error'); return; }
   const color = type==='underline' ? '#b5362a' : (await lastUsedColor()||'#ffd400');
   const ids=[];
   for(const pg of info.pages){
     const id=uuid(); ids.push(id);
     const anno={
       id, kind:'annotation', type, text: pg.text??info.text, comment:'', color,
-      pageLabel: String(pg.pageIndex+1), position:{pageIndex:pg.pageIndex, rects:pg.rects},
+      pageLabel:pg.reading?'Text':String(pg.pageIndex+1), position:{pageIndex:pg.pageIndex,rects:pg.rects,...(pg.reading?{text:pg.reading}:{})},
       tags:[], dateModified:new Date().toISOString(), local:true
     };
     state.annotations.push(normalizeAnno(anno));
     enqueue({action:'create',kind:'annotation',id,value:cleanAnnoValue(anno)});
   }
-  window.getSelection()?.removeAllRanges(); hideSelPopup();
+  window.getSelection()?.removeAllRanges(); state.lastSelection=null; hideSelPopup();
   renderAllOverlays(); renderPanels();
   if(ids.length) selectAnnotation(ids[0],true);
-  toast(type[0].toUpperCase()+type.slice(1)+' added locally on '+ids.length+' page(s).','ok');
+  toast(type[0].toUpperCase()+type.slice(1)+(state.readingText?' added locally.':' added locally on '+ids.length+' page(s).'),'ok');
 }
 let _lastColor=null;
 async function lastUsedColor(){ if(_lastColor) return _lastColor; const v=await storeGet('plr.lastColor'); if(v) _lastColor=v; return _lastColor; }
@@ -868,7 +924,7 @@ function selectAnnotation(id,scrollTo){
   if(card && scrollTo) card.scrollIntoView({block:'nearest',behavior:'smooth'});
   const pi=Number(a.position&&a.position.pageIndex);
   if(Number.isInteger(pi) && scrollTo){
-    goToPage(pi+1);
+    if(!state.readingText)goToPage(pi+1);
     setTimeout(()=>{ const mark=document.querySelector(`.anno-mark[data-id="${CSS.escape(id)}"]`); if(mark) mark.scrollIntoView({block:'center',behavior:'smooth'}); },200);
   }
   const q=state.annotations.find(x=>x.id===id);
@@ -881,7 +937,7 @@ function renderAnnoList(){
   $('annoCount').textContent=String(state.annotations.length);
   if(!state.annotations.length){
     const e=document.createElement('div'); e.className='empty-state';
-    e.textContent='No annotations for this paper. Select text in the PDF (or use Point note) to add highlights, underlines and notes.';
+    e.textContent=state.readingMaterial?'No annotations yet. Select text to add a highlight or underline.':'No annotations for this paper. Select text in the PDF (or use Point note) to add highlights, underlines and notes.';
     list.appendChild(e); return;
   }
   const sorted=[...state.annotations].sort((a,b)=>{ const pa=Number(a.position&&a.position.pageIndex)||0, pb=Number(b.position&&b.position.pageIndex)||0; return pa-pb; });
@@ -900,7 +956,7 @@ function renderAnnoCard(a){
   if(a.local) { const b=document.createElement('span'); b.className='badge loc'; b.textContent='Local draft'; head.appendChild(b); }
   if(a.readOnly){ const b=document.createElement('span'); b.className='badge ro'; b.textContent='Read-only (external)'; head.appendChild(b); }
   if(!['highlight','underline','note'].includes(a.type)){ const b=document.createElement('span'); b.className='badge ro'; b.textContent='Unsupported type: '+(a.type||'unknown'); head.appendChild(b); }
-  const pg=document.createElement('span'); pg.className='ac-page'; pg.textContent='p. '+(a.pageLabel||(a.position&&Number(a.position.pageIndex)!=null?Number(a.position.pageIndex)+1:'?')); head.appendChild(pg);
+  const pg=document.createElement('span'); pg.className='ac-page'; pg.textContent=state.readingText?'Text':'p. '+(a.pageLabel||(a.position&&Number(a.position.pageIndex)!=null?Number(a.position.pageIndex)+1:'?')); head.appendChild(pg);
   card.appendChild(head);
   if(a.text){ const q=document.createElement('div'); q.className='ac-quote'; q.textContent=a.text; card.appendChild(q); }
   const cm=document.createElement('div'); cm.className='ac-comment'; cm.contentEditable = a.readOnly?'false':'true';
@@ -915,7 +971,7 @@ function renderAnnoCard(a){
   const quoteBtn=document.createElement('button'); quoteBtn.type='button'; quoteBtn.className='btn small'; quoteBtn.textContent='Quote to note';
   quoteBtn.addEventListener('click',e=>{ e.stopPropagation(); quoteToNote(a); }); acts.appendChild(quoteBtn);
   const locateBtn=document.createElement('button'); locateBtn.type='button'; locateBtn.className='btn small'; locateBtn.textContent='Show page';
-  locateBtn.addEventListener('click',e=>{ e.stopPropagation(); const pi=Number(a.position&&a.position.pageIndex); if(Number.isInteger(pi)) goToPage(pi+1); }); acts.appendChild(locateBtn);
+  locateBtn.addEventListener('click',e=>{ e.stopPropagation(); const pi=Number(a.position&&a.position.pageIndex); if(state.readingText)selectAnnotation(a.id,true);else if(Number.isInteger(pi))goToPage(pi+1); }); acts.appendChild(locateBtn);
   const delBtn=document.createElement('button'); delBtn.type='button'; delBtn.className='btn small danger'; delBtn.textContent='Delete';
   delBtn.disabled=!!a.readOnly;
   delBtn.addEventListener('click',e=>{ e.stopPropagation(); deleteAnnotation(a.id); }); acts.appendChild(delBtn);
@@ -1140,7 +1196,7 @@ function beginCloudTranslation(){
 }
 function translateSelection(){
   const text=selectedTranslationText();
-  if(!text){ toast('Select text in the PDF first.','error'); return; }
+  if(!text){ toast('Select text in the document first.','error'); return; }
   state.translateEnabled=true;
   $('chkTranslate').checked=true;
   lsSet(TRANS_KEY,JSON.stringify({enabled:true}));
@@ -1332,6 +1388,7 @@ async function connectLibraryServices(){
   finally{$('btnLibraryConnect').disabled=false;}
 }
 async function apiFetch(path,opts={},candidate=null){
+  if(path.startsWith('/api/papers/')&&state.readingMaterial)throw Error('Readings use local notes and annotations.');
   if(path.startsWith('/api/papers/')&&state.cloudOrigin&&state.cloudSpaceId!=='personal')throw Error('The installed Zotero bridge supports the original cloud space only. Cloud drafts are retained.');
   if(!candidate) refreshSharedConnection();
   const c=candidate||state.companion;
@@ -1668,7 +1725,7 @@ async function authorizeZotero(){
 async function exportDrafts(){
   await flushNoteSave();
   await persistLocal({quiet:true});
-  const out={schemaVersion:1,kind:'plr-drafts',exportedAt:new Date().toISOString(),fileId:state.fileId,serviceOrigin:state.cloudOrigin||null,pdfSha256:state.data?.pdf?.sha256||null,state:null};
+  const out={schemaVersion:1,kind:'plr-drafts',exportedAt:new Date().toISOString(),fileId:state.fileId,serviceOrigin:state.cloudOrigin||null,pdfSha256:state.data?.contentSha256||state.data?.pdf?.sha256||null,state:null};
   try{ out.state=await storeGet(paperKey(state.fileId,'state'))||{pending:state.pending,baselines:state.baselines,tombstones:state.tombstones,keyMap:state.keyMap}; }catch{ out.state={pending:state.pending}; }
   // safety: include current in-memory drafts too
   out.current={annotations:state.annotations,notes:state.notes,pending:state.pending,baselines:state.baselines};
@@ -1690,7 +1747,7 @@ function validateDraftDocument(parsed){
   if(state.fileId>=1000000){
     if(parsed.serviceOrigin){if(endpoint(parsed.serviceOrigin)!==state.cloudOrigin)throw Error('Drafts belong to a different cloud space');}
     else if(state.cloudOrigin!==state.defaultService)throw Error('These old drafts do not identify this cloud space');
-    if(parsed.pdfSha256&&parsed.pdfSha256!==state.data?.pdf?.sha256)throw Error('Drafts belong to a different PDF');
+    if(parsed.pdfSha256&&parsed.pdfSha256!==(state.data?.contentSha256||state.data?.pdf?.sha256))throw Error('Drafts belong to a different PDF');
   }
   const validId=id=>typeof id==='string'&&/^[A-Za-z0-9][A-Za-z0-9_-]{0,199}$/.test(id)&&!forbidden.has(id);
   const record=value=>value&&typeof value==='object'&&!Array.isArray(value);
@@ -1832,7 +1889,7 @@ function updatePdfError(msg){
   const local=document.createElement('button'); local.type='button'; local.className='btn'; local.textContent='Open local reader'; local.addEventListener('click',()=>window.open(localReaderUrl(),'_blank','noopener')); if(!isPrivate)el.appendChild(local);
   const direct=$('pdfDirect').cloneNode(true); direct.className='btn'; direct.textContent=isPrivate?'Download PDF':'Open PDF directly';
   if(isPrivate)direct.addEventListener('click',event=>{event.preventDefault();$('pdfDirect').click();});
-  el.appendChild(direct);
+  if(!$('pdfDirect').hidden)el.appendChild(direct);
   const exp=document.createElement('button'); exp.type='button'; exp.className='btn'; exp.textContent='Export drafts (JSON)'; exp.addEventListener('click',exportDrafts); el.appendChild(exp);
 }
 function localReaderUrl(){
@@ -1860,13 +1917,13 @@ function bindEvents(){
   $('btnFitWidth').addEventListener('click',()=>chooseFit('width'));
   $('btnFitPage').addEventListener('click',()=>chooseFit('page'));
   $('btnRotate').addEventListener('click',rotatePage);
-  $('btnHighlight').addEventListener('click',()=>{ if(getSelectedPdfText()){ state.lastSelection=collectSelectionRects(); createAnnoFromSelection('highlight'); } else { toast('Select text in the PDF, then press Highlight.','error'); } });
-  $('btnUnderline').addEventListener('click',()=>{ if(getSelectedPdfText()){ state.lastSelection=collectSelectionRects(); createAnnoFromSelection('underline'); } else { toast('Select text in the PDF, then press Underline.','error'); } });
+  $('btnHighlight').addEventListener('click',()=>{ if(getSelectedPdfText()){ state.lastSelection=collectSelectionRects(); createAnnoFromSelection('highlight'); } else { toast('Select text in the document, then press Highlight.','error'); } });
+  $('btnUnderline').addEventListener('click',()=>{ if(getSelectedPdfText()){ state.lastSelection=collectSelectionRects(); createAnnoFromSelection('underline'); } else { toast('Select text in the document, then press Underline.','error'); } });
   $('btnPointNote').addEventListener('click',togglePointNote);
   $('btnUndoDelete').addEventListener('click',undoLocalDeletion);
   $('btnCopy').addEventListener('click',async()=>{ const t=getSelectedPdfText(); if(!t){ toast('Select text first.','error'); return; } try{ await navigator.clipboard.writeText(t); toast('Copied selected text.','ok'); }catch{ toast('Copy failed; select and copy manually.','error'); } });
   bindTranslationControls();
-  document.addEventListener('selectionchange',()=>{ if(!state.pdf) return; const sel=window.getSelection(); if(!sel||sel.isCollapsed){ hideSelPopup(); return; } const an=sel.anchorNode; if(an && pageElementFromNode(an)) handleSelectionEnd(); });
+  document.addEventListener('selectionchange',()=>{ if(!state.pdf&&!state.readingText) return; const sel=window.getSelection(); if(!sel||sel.isCollapsed){ hideSelPopup(); return; } const an=sel.anchorNode; if(an && pageElementFromNode(an)) handleSelectionEnd(); });
   document.addEventListener('mousedown',e=>{ if(!$('selPopup').hidden && !$('selPopup').contains(e.target)){ const inPdf=pageElementFromNode(e.target); if(!inPdf) hideSelPopup(); } });
   $('pdfScroll').addEventListener('click',e=>{ if(pointToolActive){ placePointNote(e.clientX,e.clientY); return; } });
   $('pdfScroll').addEventListener('scroll',debounce(()=>{ updateCurrentPageFromScroll(); },150));

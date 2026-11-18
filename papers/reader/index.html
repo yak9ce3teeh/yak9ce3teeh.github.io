@@ -6,7 +6,7 @@
 <title>Paper Library Reader</title>
 <script>if(location.protocol==='file:')location.replace('https://yak9ce3teeh.github.io/papers/reader/'+location.search);</script>
 <link rel="stylesheet" href="./assets/vendor/pdfjs/web/pdf_viewer.css">
-<link rel="stylesheet" href="./reader.css?v=20261029-global-2">
+<link rel="stylesheet" href="./reader.css?v=reading-materials-1">
 <script type="importmap">
 {"imports":{"pdfjs-dist/build/pdf.mjs":"./assets/vendor/pdfjs/legacy/build/pdf.mjs?v=20261104-pdf-compat-1"}}
 </script>
@@ -145,10 +145,10 @@
   <form method="dialog" class="dialog-inner">
     <h2>Library connection</h2>
     <p class="hint">One connection for every paper and tab on this site, in this browser. Keep Zotero open. Sessions refresh automatically; Disconnect applies to all papers.</p>
-    <p>DeepSeek translation uses your Paper Library login. Zotero handles local synchronization.</p><div class="dialog-actions"><button class="btn primary" type="button" id="btnLibraryConnect">Connect Zotero</button><button type="button" class="btn" id="btnDisconnect">Disconnect</button><a class="btn" href="../add/#connections">Add paper settings</a></div>
+    <p>DeepSeek translation uses your Paper Library login.</p><div class="dialog-actions"><button class="btn primary" type="button" id="btnLibraryConnect">Connect Zotero</button><button type="button" class="btn" id="btnDisconnect">Disconnect</button><a class="btn" href="../add/#connections">Library settings</a></div>
     <p class="hint" id="connectStatus" aria-live="polite"></p>
     <p class="hint">Paper Library Web 1.2.0 or later synchronizes notes and annotations with local Zotero. Translation has its own cloud connection and sends only the passage you choose when you click Translate.</p>
-    <details><summary>Legacy local reader connection</summary>
+    <details data-zotero-settings><summary>Legacy local reader connection</summary>
     <fieldset>
       <legend>Local companion</legend>
       <label for="tokenInput">Local session link or token</label>
@@ -170,7 +170,7 @@
         <button type="button" class="btn" id="btnReconcile">Review new Zotero library</button>
         <button type="button" class="btn primary" id="btnSync">Sync with Zotero</button>
       </div>
-      <p class="hint" id="zoteroStatusDialog" aria-live="polite"></p>
+      <p class="hint" data-zotero-settings id="zoteroStatusDialog" aria-live="polite"></p>
     </fieldset>
     <fieldset>
       <legend>Drafts and recovery</legend>
@@ -181,7 +181,7 @@
       </div>
       <p class="hint">Browser drafts are stored locally and are never published by this page.</p>
     </fieldset>
-    <details><summary>Legacy local reader setup</summary><fieldset>
+    <details data-zotero-settings><summary>Legacy local reader setup</summary><fieldset>
       <legend>Starting the local companion</legend>
       <ol class="setup-steps">
         <li>Double-click <strong>Paper Reader.cmd</strong> in your Papers folder to open the private local workspace.</li>
@@ -208,6 +208,6 @@
 </dialog>
 
 <div id="toast" class="toast" role="status" aria-live="assertive" hidden></div>
-<script type="module" src="./reader.js?v=private-library-1"></script>
+<script type="module" src="./reader.js?v=reading-materials-1"></script>
 </body>
 </html>
