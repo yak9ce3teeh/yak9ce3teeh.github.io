@@ -1,17 +1,22 @@
-// Translation uses the same explicitly selected library profile as the reader.
-import {KEY,VERSION,CHANGE,getOwnerKey,ownerVersion,forgetOwner} from './owner-session.js?v=20261103-spaces-1';
-import {ACCOUNTS,ACCOUNT_CHANGE,accounts,readerAccount,saveAccount,activateAccount,removeAccount,endpoint} from './library-accounts.js?v=20261103-spaces-1';
-export {KEY};
+import {accountApi,accountSession,jsonRequest,SESSION_KEY,SESSION_EVENT} from './account-client.js?v=20261118-accounts';
 export function createCloudTranslation(changed=()=>{}){
- let issue='',configured=null,defaultBase='';
- async function target(){const p=readerAccount(defaultBase);if(p)return p;if(!defaultBase){const r=await fetch('/papers/service-config.json',{cache:'no-store'});if(!r.ok)throw Error('Service configuration unavailable.');defaultBase=endpoint((await r.json()).apiBase);}const saved=readerAccount(defaultBase);if(saved)return saved;return {apiBase:defaultBase,key:accounts().length?'':getOwnerKey(),name:'Personal Paper Library',id:''};}
- function session(){try{const p=readerAccount(defaultBase),token=p?p.key:accounts().length?'':getOwnerKey();return /^[a-f0-9]{64}$/.test(token||'')?{token}:null;}catch{return null;}}
- async function call(path,options={},pinned=null){const p=pinned||await target(),headers=new Headers(options.headers);if(p.key&&!headers.has('Authorization'))headers.set('Authorization','Bearer '+p.key);let r;try{r=await fetch(p.apiBase+path,{...options,headers,credentials:'omit',redirect:'error',signal:AbortSignal.timeout(path.includes('translate')?70000:12000)});}catch{throw Error('Cloud service unreachable or timed out. Try again.');}const v=await r.json();if(!r.ok){const e=Error(v.error?.message||v.error||'Cloud request failed.');e.status=r.status;throw e;}return v;}
- async function refresh(){try{if(session())await call('/api/session/status');configured=(await call('/api/translation/status')).configured;issue='';}catch(e){issue=e.message;}changed();}
- async function connect(key){if(!/^[a-f0-9]{64}$/.test(key||''))throw Error('Enter this space’s owner access key.');const p=await target(),before=localStorage.getItem(ACCOUNTS),version=ownerVersion();try{const v=await call('/api/session/status',{headers:{Authorization:'Bearer '+key}},p);if(!v.owner)throw Error('Owner access was not verified.');if(localStorage.getItem(ACCOUNTS)!==before||ownerVersion()!==version||(await target()).apiBase!==p.apiBase)throw Error('Saved spaces changed while connecting. Please retry.');const saved=saveAccount({name:p.name,apiBase:p.apiBase,key});activateAccount(saved.id);issue='';try{configured=(await call('/api/translation/status')).configured;}catch{configured=null;issue='Owner connected. Translation status could not be checked.';}changed();return v;}catch(e){issue=e.message;changed();throw e;}}
- async function disconnect(){const p=readerAccount(defaultBase);if(p?.id&&accounts().some(x=>x.id===p.id))removeAccount(p.id);else forgetOwner();issue='Saved space disconnected in this browser.';changed();}
- async function translate(text){if(!session())throw Error('Connect this paper’s library space first.');return call('/api/translation/translate',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({text,targetLanguage:'zh-CN'})});}
- window.addEventListener(CHANGE,()=>{issue='';changed();});window.addEventListener(ACCOUNT_CHANGE,()=>{issue='';configured=null;changed();refresh();});
- window.addEventListener('storage',e=>{if([KEY,VERSION,ACCOUNTS].includes(e.key)||e.key===null){issue='';configured=null;changed();refresh();}});
- return {session,connect,disconnect,translate,refresh,get message(){return issue||(configured===false?'Cloud DeepSeek translation is not configured.':session()?'':'Connect this paper’s saved library space. Zotero is optional.');},get configured(){return configured;}};
+ let issue='',configured=null,epoch=0;
+ function session(){const current=accountSession();return current?.user?.admin?current:null;}
+ async function refresh(){
+  const job=++epoch;configured=null;issue='';
+  if(session()){
+   try{const info=await accountApi('/api/translation/status');if(job===epoch)configured=info.configured;}
+   catch(error){if(job===epoch)issue=error.message;}
+  }
+  if(job===epoch)changed();
+ }
+ async function translate(text){
+  if(!session())throw Error('Log in to the site owner account to use cloud translation.');
+  return accountApi('/api/translation/translate',jsonRequest({text,targetLanguage:'zh-CN'}));
+ }
+ window.addEventListener(SESSION_EVENT,refresh);
+ window.addEventListener('storage',event=>{if(event.key===SESSION_KEY||event.key===null)refresh();});
+ return {session,translate,refresh,get message(){
+  return issue||(configured===false?'Cloud DeepSeek translation is not configured.':session()?'':'Log in to the site owner account for DeepSeek translation.');
+ },get configured(){return configured;}};
 }
