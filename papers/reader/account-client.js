@@ -8,7 +8,8 @@ export async function accountOrigin(){
       if(!response.ok)throw Error();
       const {apiBase}=await response.json();
       const url=new URL(apiBase);
-      if(url.origin!==DEFAULT_API)throw Error();
+      const localPreview=globalThis.location?.origin==='http://127.0.0.1:8000'&&url.origin==='http://127.0.0.1:8787';
+      if(url.origin!==DEFAULT_API&&!localPreview)throw Error();
       return url.origin;
     }).catch(()=>DEFAULT_API);
 }

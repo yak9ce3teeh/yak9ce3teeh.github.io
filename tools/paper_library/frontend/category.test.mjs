@@ -1,0 +1,10 @@
+import assert from 'node:assert/strict';
+import {categoryGroups,selectionFor,changeArea} from './category-model.mjs';
+const categories=['Vision/Detection','Vision/Segmentation','Language/Translation','Language/Reasoning'];
+const groups=categoryGroups(categories);assert.deepEqual(groups.get('Vision'),[{value:'Vision/Detection',label:'Detection'},{value:'Vision/Segmentation',label:'Segmentation'}]);
+let value='Vision/Detection';let area='';assert.equal(selectionFor(value,area).area,'Vision');
+const manual=changeArea('Language');value=manual.value;area=manual.area;assert.equal(value,'');assert.equal(selectionFor(value,area).area,'Language');assert.equal(selectionFor(value,area).topic,'');
+value=groups.get(area)[0].value;assert.equal(value,'Language/Translation');
+value='Vision/Segmentation';assert.deepEqual(selectionFor(value,area),{area:'Vision',topic:'Segmentation'});
+assert.equal(categoryGroups(['Vision/3D/Geometry']).get('Vision')[0].label,'3D/Geometry');
+console.log('PASS exact server categories, leaf labels, automatic selection, manual area clearing and later AI override');

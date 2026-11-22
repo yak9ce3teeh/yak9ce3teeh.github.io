@@ -1,0 +1,11 @@
+name = "paper-library-service"
+main = "worker.ts"
+compatibility_date = "2026-10-01"
+[[r2_buckets]]
+binding = "BUCKET"
+bucket_name = "paper-library-pdfs"
+[[d1_databases]]
+binding = "DB"
+database_name = "paper-library"
+migrations_dir = "migrations"
+# Insert database_id from wrangler d1 create before deployment.

@@ -1,0 +1,13 @@
+import assert from 'node:assert/strict';
+import {fileURLToPath} from 'node:url';
+import React from 'react';
+import {renderToStaticMarkup} from 'react-dom/server';
+import {build} from 'esbuild';
+const bundle=await build({entryPoints:[fileURLToPath(new URL('usage.tsx',import.meta.url))],bundle:true,write:false,format:'esm',platform:'node',define:{'process.env.NODE_ENV':'"production"'}});
+const view=await import('data:text/javascript;base64,'+Buffer.from(bundle.outputFiles[0].text).toString('base64'));
+const data={selected:true,busy:false,error:'',refresh(){},sample:{sampledAt:'2026-11-04T00:00:00Z',r2:{complete:true,bytes:3548167,objects:1},d1:{bytes:123456},deepseek:{balances:[{total:3.82,currency:'CNY'}]},translation:{dayUsed:2}}};
+const html=renderToStaticMarkup(React.createElement(view.default,{owner:false,data}));
+assert.ok(html.includes('3.55 MB'));for(const privateValue of ['3.82','Metadata database','DeepSeek balance','Translation requests'])assert.ok(!html.includes(privateValue));
+const summary=renderToStaticMarkup(React.createElement(view.SpaceSummary,{data}));assert.ok(summary.includes('3.55 MB'));assert.ok(summary.includes('0.035'));
+const noSpace=renderToStaticMarkup(React.createElement(view.default,{owner:false,data:{...data,selected:false,sample:undefined}}));assert.ok(noSpace.includes('Choose a space'));assert.ok(!noSpace.includes('Loading usage'));
+console.log('PASS selected-space storage summary, no private account totals, no-space prompt');

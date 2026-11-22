@@ -1,0 +1,41 @@
+name: Paper Library checks
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'tools/paper_library/**'
+      - 'tools/paper_add/package_site.py'
+      - 'papers/**'
+      - '.github/workflows/paper-library-checks.yml'
+  pull_request:
+    paths:
+      - 'tools/paper_library/**'
+      - 'tools/paper_add/package_site.py'
+      - 'papers/**'
+      - '.github/workflows/paper-library-checks.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: npm --prefix tools/paper_library/frontend ci
+      - run: npm --prefix tools/paper_library/service ci
+      - run: npm --prefix tools/paper_library/frontend test
+      - run: npm --prefix tools/paper_library/service test
+      - run: node tools/paper_library/zotero/test_addon.cjs
+      - run: python tools/paper_library/zotero/package_addon.py
+      - run: npm --prefix tools/paper_library/frontend run release
+      - run: git diff --exit-code -- papers/index.html papers/add
+      - run: python tools/paper_add/package_site.py

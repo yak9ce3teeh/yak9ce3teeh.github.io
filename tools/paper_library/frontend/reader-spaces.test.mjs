@@ -1,0 +1,18 @@
+import assert from 'node:assert/strict';
+import {readFile} from 'node:fs/promises';
+import {endpoint} from '../../../papers/reader/library-accounts.js';
+const source=await readFile(new URL('../../../papers/reader/reader.js',import.meta.url),'utf8');
+const a='https://a.workers.dev',b='https://b.workers.dev',hash='a'.repeat(64);
+const state={fileId:1000001,cloudOrigin:b,cloudSpaceId:'secondary',defaultService:a,data:{pdf:{sha256:hash}},companion:{url:'http://127.0.0.1:23119'}};
+const validator=source.slice(source.indexOf('function validateDraftDocument('),source.indexOf('function draftPair('));
+const validate=new Function('state','endpoint',validator+';return validateDraftDocument;')(state,endpoint);
+const draft={schemaVersion:1,kind:'plr-drafts',fileId:1000001,state:{pending:[]},serviceOrigin:b,pdfSha256:hash};
+assert.doesNotThrow(()=>validate(draft));assert.throws(()=>validate({...draft,serviceOrigin:a}),/different cloud space/);
+assert.throws(()=>validate({...draft,pdfSha256:'b'.repeat(64)}),/different PDF/);
+assert.throws(()=>validate({...draft,serviceOrigin:undefined}),/old drafts/);
+state.cloudOrigin=a;assert.doesNotThrow(()=>validate({...draft,serviceOrigin:undefined}));
+const keyLine=source.split('\n').find(s=>s.startsWith('const paperKey = '));const key=new Function('state',keyLine+';return paperKey;')(state);
+state.cloudSpaceId='personal';const keyA=key(1000001,'state');state.cloudOrigin=b;state.cloudSpaceId='other';assert.notEqual(key(1000001,'state'),keyA);assert.equal(key(5,'state'),'plr.p5.state');
+const local=source.slice(source.indexOf('function localReaderUrl(){'),source.indexOf('/* ---------------- Events'));
+const localUrl=new Function('state',local+';return localReaderUrl();')(state);assert.equal(new URL(localUrl).searchParams.get('service'),b);
+console.log('PASS identical-ID draft isolation, service/PDF import checks, original-space draft compatibility, qualified local reader links');

@@ -1,0 +1,46 @@
+import assert from 'node:assert/strict';
+import {accountFetch,accountSession,saveSession,SESSION_KEY,SESSION_EVENT,DEFAULT_API} from '../../../papers/reader/account-client.js';
+import {serviceFetch,selectSpace,readerUrl} from './service.ts';
+
+const storage=new Map(),requests=[];
+globalThis.window=new EventTarget();
+globalThis.localStorage={getItem:key=>storage.get(key)||null,setItem:(key,value)=>storage.set(key,value),removeItem:key=>storage.delete(key)};
+let changes=0;
+window.addEventListener(SESSION_EVENT,()=>changes++);
+globalThis.fetch=async (url,options)=>{
+ if(url==='/papers/service-config.json')return Response.json({apiBase:'https://different.workers.dev'});
+ requests.push({url:String(url),options});
+ return Response.json({ok:true});
+};
+const token='a'.repeat(64);
+saveSession({token,user:{id:'test-id'},expires:Date.now()+60000,recovery:'fixture-recovery'});
+assert.ok(!storage.get(SESSION_KEY).includes('fixture-recovery'));
+selectSpace('test-space');
+await serviceFetch('/api/papers');
+assert.equal(requests.at(-1).url,DEFAULT_API+'/api/papers?space=test-space');
+assert.equal(requests.at(-1).options.headers.get('Authorization'),'Bearer '+token);
+assert.equal(requests.at(-1).options.redirect,'error');
+await assert.rejects(accountFetch('https://different.workers.dev/api'),/Unexpected/);
+await assert.rejects(async()=>serviceFetch('https://different.workers.dev/api'),/Unexpected/);
+assert.equal(readerUrl(1000001),'/papers/reader/?id=1000001');
+assert.throws(()=>readerUrl(NaN),/Invalid/);
+saveSession(null);
+await serviceFetch('/api/papers');
+assert.equal(requests.at(-1).options.headers.get('Authorization'),null);
+assert.equal(changes,2);
+saveSession({token,user:{id:'test-id'},expires:Date.now()-1});
+assert.equal(accountSession(),null);
+console.log('PASS same-service authorization, account-space scope, no recovery retention, logout and expiry');
+
+globalThis.fetch=async()=>Response.json({apiBase:'http://127.0.0.1:8787'});
+globalThis.location={origin:'http://127.0.0.1:8000'};
+const local=await import('../../../papers/reader/account-client.js?case=local');
+assert.equal(await local.accountOrigin(),'http://127.0.0.1:8787');
+globalThis.location={origin:'https://yak9ce3teeh.github.io'};
+const hosted=await import('../../../papers/reader/account-client.js?case=hosted');
+assert.equal(await hosted.accountOrigin(),DEFAULT_API);
+globalThis.location={origin:'http://127.0.0.1:8000'};
+globalThis.fetch=async()=>Response.json({apiBase:'https://other-example.workers.dev'});
+const unexpected=await import('../../../papers/reader/account-client.js?case=unexpected');
+assert.equal(await unexpected.accountOrigin(),DEFAULT_API);
+console.log('PASS preview opts into the local Worker only from the matching loopback site');

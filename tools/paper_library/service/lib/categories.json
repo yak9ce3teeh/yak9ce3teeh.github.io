@@ -1,0 +1,23 @@
+[
+  "Agent Foundations/Reasoning and Chain of Thought",
+  "Agent Foundations/Robot Task Planning",
+  "Embodied Navigation/Language-Vision Navigation and Reasoning",
+  "Embodied Navigation/Navigation Methods and Surveys",
+  "Foundations and Surveys/Efficient Foundation Models",
+  "Humanoid Robotics/Behavior Foundation Models and Zero-Shot RL",
+  "Humanoid Robotics/Motion Skills and Tracking",
+  "Humanoid Robotics/Tactile and Contact Sensing",
+  "Humanoid Robotics/Whole-Body Control and Loco-Manipulation",
+  "Multi-Agent Systems/Communication and System Design",
+  "Multi-Agent Systems/Embodied Cooperation and Planning",
+  "Multi-Agent Systems/Surveys",
+  "Robotic Manipulation/Dexterous Manipulation and Human Data",
+  "Robotic Manipulation/Open-World Mobile Manipulation",
+  "Robotic Manipulation/VLA Surveys and Efficiency",
+  "Robotic Manipulation/VLA and Contact-Rich Manipulation",
+  "Scene Understanding and Memory/3D Scene Graphs",
+  "Scene Understanding and Memory/Retrieval and Embodied Memory",
+  "Scene Understanding and Memory/Spatial Reasoning",
+  "World Models and World Action Models/Surveys and Foundation Models",
+  "World Models and World Action Models/World Action Model Methods"
+]

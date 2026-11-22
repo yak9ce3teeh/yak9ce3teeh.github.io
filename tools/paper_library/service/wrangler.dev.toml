@@ -1,0 +1,20 @@
+name = "paper-library-local"
+main = "worker.ts"
+compatibility_date = "2026-10-01"
+
+[dev]
+ip = "127.0.0.1"
+port = 8787
+
+[vars]
+DEV_ORIGIN = "http://127.0.0.1:8000"
+
+[[r2_buckets]]
+binding = "BUCKET"
+bucket_name = "paper-library-local-pdfs"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "paper-library-local"
+database_id = "00000000-0000-0000-0000-000000000001"
+migrations_dir = "migrations"

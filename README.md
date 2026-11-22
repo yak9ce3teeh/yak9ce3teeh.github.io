@@ -1,11 +1,13 @@
 # Personal Homepage
 
-Personal homepage for the yak9ce3teeh GitHub account. The homepage includes the Paper Library entry, a YakBot placeholder marked "Coming soon", a BanG Dream! section featuring Ave Mujica, Mugendai MewType, and millsage, and a month-grouped anime log for 2026.10, 2026.07, and 2026.04. The BanG Dream! section links to our unofficial [millsage fan site](https://millsage-website.onrender.com/). Watching entries have green live indicators, watched entries are gray, and personal rating fields are intentionally blank. Interface text is in English, while anime titles use their original Japanese names. The YakBot placeholder has no destination until a website is available. All library files and images remain in `papers/`.
+Personal homepage for the yak9ce3teeh GitHub account. It links to Paper Library and includes a YakBot placeholder, a BanG Dream! section, and a monthly anime log. The BanG Dream! section links to our unofficial [millsage fan site](https://millsage-website.onrender.com/).
 
 - Homepage: https://yak9ce3teeh.github.io/
 - Paper library: https://yak9ce3teeh.github.io/papers/
 - Repository: https://github.com/yak9ce3teeh/yak9ce3teeh.github.io
 
-The site contains a static homepage, paper PDFs, exported reading notes, topic summaries, and available note images. No build step is required. Enable GitHub Pages with **Deploy from a branch**, **main**, and **/(root)**. The `.nojekyll` file preserves the static site structure.
+## Develop Paper Library
 
-Publication status must be checked on GitHub; these URLs are the intended destinations.
+Start with the [developer README](tools/paper_library/README.md) for the source map, local preview, tests, and deployment instructions. The repo includes the React frontend, Cloudflare Worker and database migrations, browser reader, and Zotero add-on source.
+
+[GitHub Actions](.github/workflows/pages.yml) packages and deploys the static site from `main`. Cloudflare Workers serves the library API, with D1 for records and R2 for uploaded files.

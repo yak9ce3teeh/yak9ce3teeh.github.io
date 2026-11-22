@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "Paper Library Web",
+  "version": "1.2.3",
+  "description": "Connect the personal Paper Library website to Zotero without another local application.",
+  "author": "Yak9ce3teeh",
+  "applications": {
+    "zotero": {
+      "id": "paper-library-web@yak9ce3teeh.github.io",
+      "update_url": "https://yak9ce3teeh.github.io/papers/add/updates.json",
+      "strict_min_version": "10.0",
+      "strict_max_version": "10.0.*"
+    }
+  }
+}

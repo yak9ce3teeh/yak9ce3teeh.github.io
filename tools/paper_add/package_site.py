@@ -2,7 +2,7 @@
 from pathlib import Path
 import shutil
 
-ROOT = Path.cwd().resolve()
+ROOT = Path(__file__).resolve().parents[2]
 OUT = ROOT / '_site'
 PAPER_FILES = {
     'index.html', 'service-config.json',
@@ -22,14 +22,14 @@ EXCLUDED = {'.git', '.github', 'tools', '.paper-inbox', '.paper-results', '_site
             '__pycache__', '.paper-library-private', '.gitignore', '.gitattributes', 'README.md'}
 
 
-def main():
-    if OUT.exists():
+def main(out=OUT):
+    if out.exists():
         raise RuntimeError('Use a clean build checkout; _site already exists.')
-    OUT.mkdir()
+    out.mkdir()
     for entry in ROOT.iterdir():
         if entry.name in EXCLUDED:
             continue
-        target = OUT / entry.name
+        target = out / entry.name
         if entry.name == 'papers':
             for file in entry.rglob('*'):
                 if file.is_file() and public_paper_asset(file.relative_to(entry).as_posix()):
@@ -41,7 +41,7 @@ def main():
             shutil.copytree(entry, target, ignore=shutil.ignore_patterns('__pycache__', '*.pyc', '.DS_Store'))
         else:
             shutil.copy2(entry, target)
-    if not (OUT / 'index.html').is_file() or not (OUT / 'papers/add/index.html').is_file():
+    if not (out / 'index.html').is_file() or not (out / 'papers/add/index.html').is_file():
         raise RuntimeError('The homepage or paper form is missing.')
     print('Public homepage and paper library packaged.')
 
